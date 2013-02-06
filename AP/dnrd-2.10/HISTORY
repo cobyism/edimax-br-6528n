@@ -1,0 +1,140 @@
+version  2.10
+-------------
+Thomas Steffen <t.steffen@tu-harburg.de>
+ - Fixed more unaligned access errors.
+
+Brad Garcia <garsh@home.com>
+ - Changed non-portable use of bitfields to masks, shifts & bitwise operators
+   (see Harbison & Steele, 5.6.6).  Also fixes resolution of 127.0.0.1
+
+version   2.9
+-------------
+Thomas Steffen <t.steffen@tu-harburg.de>
+ - Fixed incorrect use of ntohl to swap bytes.
+ - Fixed more unaligned access errors.
+ - Fixed little endian assumption in bitfield access.
+
+Rainer Weikusat <weikusat@mail.Uni-Mainz.de>
+ - Fixed segfault.
+
+version   2.8
+-------------
+Brad Garcia <garsh@home.com>
+ - Partially-working port to sparc-solaris
+   Only seems to work with -d option.
+   Long form of command-line options don't work.
+   Must be built using cons - Makefile has not been updated.
+ - fix some unaligned access errors.
+
+Rick Price <rickp@mitra.com>
+ - fix SIGHUP causing segv.
+
+version   2.7
+-------------
+Brad Garcia <garsh@home.com>
+ - Fix bug with resolving names with capital letters.
+ - Add '-l' option to cause DNRD to not send any messages to the terminal,
+   but to send all messages to syslog.
+
+version   2.6
+-------------
+Brad Garcia <garsh@home.com>
+ - Switch to uid & gid to "nobody" by default (revert of v2.4 change).
+ - Fixed bug where names in /etc/hosts without a "." were handled incorrectly.
+ - Do some sanity checking on the /etc/dnrd directory for security purposes.
+ - Print error if non-root user attempts a "dnrd -k".
+
+version   2.5
+-------------
+Brad Garcia <garsh@home.com>
+ - Fixed a bug that caused extra threads to be spawned.
+ - Wrote a man page.
+ - Switch to uid & gid 65534 by default rather than 65535.
+
+version   2.4
+-------------
+Brad Garcia <garsh@home.com>
+ - Completion of tcp support.  Handles multiple servers, caching, and
+   mastering correctly.  "nslookup -vc" now works.
+ - Spawn a thread rather than a process to handle tcp connections so that
+   we can still update the cache from tcp DNS replies.
+ - Switch to uid & gid 65535 by default rather than "nobody".
+ - Change master configuration file from /etc/dnrd.master to /etc/dnrd/master.
+ - At startup, change current working directory and root directory to /etc/dnrd
+
+version   2.3
+-------------
+Brad Garcia <garsh@home.com>
+ - Fix critical bug introduced in 2.2.
+
+version   2.2
+-------------
+Brad Garcia <garsh@home.com>
+ - Change some syslog NOTICE messages to only be printed out when debugging.
+ - Fix "-k" option.
+ - Use setuid() and setgid() rather than setresuid() and setresgid().
+
+Wolfgang Zekoll <wzk@quietsche-entchen.de>
+ - Fix case sensitivity problem
+ - Don't expire cache items when caching is turned off.
+
+version   2.1
+-------------
+Brad Garcia <garsh@home.com>
+ - Enhanced debugging & error reporting - all messages go to stderr whenever
+   we are attached to a terminal, otherwise they go to syslog.
+ - Multi-level debugging.  Give -d option twice to get packet dumps.
+
+Wolfgang Zekoll <wzk@quietsche-entchen.de>
+ - Add local caching of DNS server responses.
+ - Add much better local DNS master support.
+ - Add SIGHUP handler to re-read configuration.
+ - Wait for all possible fatal errors before entering background
+ - Change back to unconnected sockets.
+
+version   2.0
+-------------
+Brad Garcia <garsh@home.com>
+ - Add ability to act as primary nameserver for hosts found in /etc/hosts.
+ - Add automatic dependency generation to Makefile (CONS is still better).
+ - update INSTALL file to include examples of how to use dnrd.
+ - switch to the "nobody" uid by default after starting up.
+
+Matthew Kirkwood <weejock@ferret.lmh.ox.ac.uk>
+ - Add ability to drop root privileges.
+ - Look up domain port (in /etc/services) instead of assuming port 53
+
+Wolfgang Zekoll <wzk@quietsche-entchen.de>
+ - Added TCP support via transparent proxying (incomplete)
+ - Add ability to bind to a specific address
+
+version   1.4
+-------------
+Brad Garcia <garsh@home.com>
+ - Add ability to send queries to different servers based on domain name.
+
+version   1.3
+-------------
+Matthew Kirkwood <weejock@ferret.lmh.ox.ac.uk>
+ - SIGUSR1 now toggles debugging
+ - Use -1 rather than 0 as an indication of an invalid fd
+ - Set umask to 077 to protect the pid file from non-root users
+
+version   1.2
+-------------
+Bernhard Ehlers <BEhlers@t-online.de>
+ - Added a real Makefile
+ - Added support for multiple DNS servers.  Simply use the '-s' option
+   multiple times.
+ - Handle SIGQUIT & SIGINT as well as SIGTERM.
+
+version   1.1
+-------------
+Brad Garcia <garsh@home.com>
+ - When dnrd starts, it now attempts to kill any currently running dnrd.
+   This version was not released to the public.
+
+version   1.0
+-------------
+Brad Garcia <garsh@home.com>
+ - The first public release of DNRD.

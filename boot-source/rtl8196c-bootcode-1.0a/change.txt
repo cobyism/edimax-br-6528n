@@ -1,0 +1,208 @@
+-----------------------------------------------------------------------------
+ * DATE/WHOM/TYPE:
+ - 2010/03/29, Jason, feature fine-tune
+
+ * DIGEST:
+ - Added low speed spi flash support.
+
+ * TEST METHOD:
+ - Update the bootcode to the target with low speed spi flash and test read/write functions. 
+   Check linux booting successfully and flash driver normally.
+
+ * MODIFIED FILES:
+ - rtl865x/bootcode_rtl8196c_98/config.in - revision: 1.7
+ - rtl865x/bootcode_rtl8196c_98/boot/flash/spi_flash.c - revision: 1.6
+
+ * DESCRIPTION [description about the change]:
+ - Added the menuconfig of the low speed spi flash support including MXIC MX1605D series. 
+-----------------------------------------------------------------------------
+ * DATE/WHOM/TYPE:
+ - 2010/03/29, Jason, feature fine-tune
+
+ * DIGEST:
+ - Added auto hardware identification for router mode or pocket ap.
+
+ * TEST METHOD:
+ - use diffenent hardware to test router or pocket AP mode. 
+   Use the different hardware including pocket AP or router to test auto identification.
+
+ * MODIFIED FILES:
+ - rtl865x/bootcode_rtl8196c_98/btcode/start.S - revision: 1.15
+ - rtl865x/bootcode_rtl8196c_98/config.in - revision: 1.6
+
+ * DESCRIPTION [description about the change]:
+ - Added auto hardware identification  router or pocket AP mode using hardware strap register(0xb800008).
+-----------------------------------------------------------------------------
+ * DATE/WHOM/TYPE:
+ - 2010/03/29, Jason, feature fine-tune
+
+ * DIGEST:
+ - Added auto identification for AP mode or Router mode.
+
+ * TEST METHOD:
+ - use diffenent hardware strap pin target to test AP mode and Router mode. Use tftp test OK by download linux.bin or root.bin
+
+ * MODIFIED FILES:
+ - rtl865x/bootcode_rtl8196c_98/boot/rtl8196x/swNic_poll.c - revision: 1.7
+ - rtl865x/bootcode_rtl8196c_98/boot/include/rtl8196x/asicregs.h - revision: 1.2
+
+ * DESCRIPTION [description about the change]:
+ - Added auto identification for AP mode or Router mode. 
+   Idenfity the bit 20 of the hardware strap register(0xb800008) to decide the AP mode then port list.
+ 
+-----------------------------------------------------------------------------
+ * DATE/WHOM/TYPE:
+ - 2010/03/16, Jason, feature fine-tune
+
+ * DIGEST:
+ - Modified switch PHY patch for AOI TEST pass setting, fix EEE long link and Switch Corner test pass setting.
+
+ * TEST METHOD:
+ - use high-low temperature environment test by anson.
+
+ * MODIFIED FILES:
+ - rtl865x/bootcode_rtl8196c_98/boot/rtl8196x/swCore.c - revision: 1.9
+
+ * DESCRIPTION [description about the change]:
+ -Improve switch PHY eye diagram failure cases,and corner case error.
+ 
+-----------------------------------------------------------------------------
+ * DATE/WHOM/TYPE:
+ - 2010/03/16, Jason, feature fine-tune
+
+ * DIGEST:
+ - Modified to enable supress-spectrum,"dis_ssc_norm" for Pocet AP but other demo board disable.
+ - Modified SDRAM driving current and signal slew-rate control,8mA and smoothing.
+
+ * TEST METHOD:
+ - use the chariot test and high-low temperature environment test.
+
+ * MODIFIED FILES:
+ - rtl865x/bootcode_rtl8196c_98/btcode/start.S - revision: 1.14.
+
+ * DESCRIPTION [description about the change]:
+ -Improve RF anti-noise capability.
+
+-----------------------------------------------------------------------------
+ * DATE/WHOM/TYPE:
+ - 2010/03/16, Jason, feature fine-tune
+
+ * DIGEST:
+ - Added Switch PHY patch 
+ - Added Switch PHY delay for RTL8198.
+
+ * TEST METHOD:
+ - use the parameter of PHY and pass EYE diagram for Switch PHY. 
+
+ * MODIFIED FILES:
+ - rtl865x//boot/rtl8196x/swCore.c - revision: 1.7
+
+ * DESCRIPTION [description about the change]:
+ -Added support for rtl8198 test chip and switch PHT patch. 
+-----------------------------------------------------------------------------
+ * DATE/WHOM/TYPE:
+ - 2010/03/08, Jason, feature fine-tune
+
+ * DIGEST:
+ - remove unused code and sink code sizes.
+ - Added "CONFIG_AUTO_IDENTIFY" to distinguish from the source code of auto-identify chip version.
+ - Enable Http server in the "def-rtl8196c-config".
+
+ * TEST METHOD:
+ - use default code will cause the size of boot.bin larger than 24K(24576 bytes),
+ 	then hw setting will be update
+ - use http server to update boot code successfully.
+
+ * MODIFIED FILES:
+ - rtl865x/bootcode_rtl8196c_98/def-rtl8196c-config - revision: 1.4
+ - rtl865x/bootcode_rtl8196c_98/boot/monitor/monitor.c - revision: 1.10
+ - rtl865x/bootcode_rtl8196c_98/boot/init/ver.h - revision: 1.4
+ - rtl865x/bootcode_rtl8196c_98/boot/rtl8196x/swNic_poll.c - revision: 1.6
+
+ * DESCRIPTION [description about the change]:
+- remove code that are used in debug command,
+ 	, since the size of boot.bin will larger than 24K when http server is enabled.
+- Added "CONFIG_AUTO_IDENTIFY" to distinguish from the source code of auto-identify chip version.
+	When disable CONFIG_AUTO_IDENTIFY, the boot code will not support auto detect for rtl8196c Normal chip and Test chip.
+	It can be used for Normal chip only.
+
+-----------------------------------------------------------------------------
+ * DATE/WHOM/TYPE:
+ - 2010/03/01, BradHuang, feature fine-tune
+
+ * DIGEST:
+ - remove unused code for KLD package.
+
+ * TEST METHOD:
+ - use default code will cause the size of boot.bin larger than 24K(24576 bytes),
+ 	then hw setting will be update
+
+ * MODIFIED FILES:
+ - rtl865x/bootcode_rtl8196c_98/boot/rtl8196x/swCore.c - revision: 1.6
+ - rtl865x/bootcode_rtl8196c_98/boot/init/main.c - revision: 1.23
+ - rtl865x/bootcode_rtl8196c_98/boot/rtl8196x/swNic_poll.c - revision: 1.5
+
+ * DESCRIPTION [description about the change]:
+- remove code that are unused in KLD package, and remove "CONFIG_RTL8196C_SWITCH_PATCH"
+ 	, since the size of boot.bin will larger than 24K, than default hw setting will be updated.
+- KLD boot code will not support auto detect for rtl8196c Normal chip and Test chip, it can be used
+	for Normal chip only 	
+
+-----------------------------------------------------------------------------
+ * DATE/WHOM/TYPE:
+ - 2010/02/24, jason, feature fine-tune
+
+ * DIGEST:
+ - Added CONFIG_RTL8196C_REVISION_B configuration support and auto-check revision rtl8196c.
+
+ * TEST METHOD:
+ - Added configuration option, "CONFIG_RTL8196C_REVISION_B", for formal rtl8196c and test chip.
+   Rebuit the whole source code and test OK in the target including "tftp" test.
+
+ * MODIFIED FILES:
+ - ./boot/include/asm/rtl8196.h - revision: 1.2
+ - ./boot/include/asm/rtl8196x.h - revision: 1.2
+ - ./boot/init/main.c - revision: 1.22
+ - ./boot/rtl8196x/swCore.c - revision: 1.5
+ - ./boot/monitor/monitor.c - revision: 1.8
+ - ./boot/rtl8196x/swNic_poll.c - revision: 1.4
+ - ./bootcode_rtl8196c_98/config.in - revision: 1.5
+ - ./btcode/start.S - revision 1.13
+
+ * DESCRIPTION [description about the change]:
+ - fix 8196C formal chip reliability issue for PCIE.
+ - Modified timer register data(TCxDATA) offset from 8 bits to 4 bits and enlarge to mutipile 16 timer range .
+ - Added switch (ADC bias current) PHY patch for formal rtl8196c. 
+ - Disable 10M power saving mode for formal rtl8196c.
+ - Added auto check for test and formal chip.
+ - Change memory controller setting for SDRAM Tx/Rx delay to 5/4.
+
+-----------------------------------------------------------------------------
+ * DATE/WHOM/TYPE:
+ - 2010/02/17, jason, feature fine-tune
+
+ * DIGEST:
+ - Added rtl8196c formal chip support
+
+ * TEST METHOD:
+ - Added configuration option, "CONFIG_RTL8196C_FORMALCHIP_A", for formal rtl8196c chip.
+   Rebuit the whole source code and test OK in the target including "tftp" test.
+
+ * MODIFIED FILES:
+ - ./boot/init/main.c,v - revision: 1.19
+ - ./boot/monitor/monitor.c - revision: 1.6
+ - ./boot/rtl8196x/swCore.c - revision: 1.3
+ - ./btcode/start.S - revision 1.8
+
+ * DESCRIPTION [description about the change]:
+ - fix 8196C formal chip reliability issue for PCIE.
+ - Modified timer register data(TCxDATA) offset from 8 bits to 4 bits.
+ - Added switch (ADC bias current) PHY patch for formal rtl8196c. 
+ - Disable 10M power saving mode for formal rtl8196c.
+
+
+-----------------------------------------------------------------------------
+###### Dec-21-2009 ####
+Description:
+1. Removed the uart message in start.S and disabled the uart setting in start.S.
+3. When the writing size equaling to sector size, the next sector is over erased.

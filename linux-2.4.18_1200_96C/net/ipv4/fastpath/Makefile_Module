@@ -1,0 +1,63 @@
+LD=mips-linux-ld
+CC=mips-linux-gcc
+CPP=mips-linux-gcc
+STRIP=mips-linux-strip
+AS=mips-linux-as
+
+# Source and obj and target definitions
+FASTPATH_MODULE=fastpath.o
+
+FASTPATH_SRC=fastpath_core.c filter.c fast_pptp_core.c fast_l2tp_core.c #filter_sch.c
+
+FASTPATH_OBJ=fastpath_core.o filter.o fast_pptp_core.o fast_l2tp_core.o #filter_sch.o
+
+export-objs :=fastpath_core.o filter.o fast_pptp_core.o fast_l2tp_core.o #filter_sch.o
+
+# List of modules to build
+MODULES=
+
+
+# Implicit rules to handle the separate obj dirs
+OBJ_DIR=./
+
+$(OBJ_DIR)/%.o : %.c
+	$(CC) -c $(CFLAGS) $(CPPFLAGS) $< -o $@
+
+
+# Compiler Options
+LINUX_SRC=../../..
+CFLAGS = -D__KERNEL__ -Wall -Wstrict-prototypes -Wno-trigraphs -O2 -fno-strict-aliasing -fno-common -fomit-frame-pointer -I/usr/local/sunplus/mipsel/mipsel-linux/include -I../../include -G 0 -mno-abicalls -fno-pic -pipe -mtune=r3000 -mips1 -DMODULE -DEXPORT_SYMTAB -mlong-calls
+
+# Preprocessor Options
+CPPFLAGS=-D__LINUX_WLAN__ -D__KERNEL__ -DMODULE=1 \
+	-I$(LINUX_SRC)/include
+
+# Dependency Source List
+DEP_SRC=$(FASTPATH_SRC)
+
+# Rules
+all : .depend $(FASTPATH_MODULE)
+
+dep .depend: $(DEP_SRC)
+	$(CPP) -M $(CPPFLAGS) $(DEP_SRC) > .depend
+
+#dirs : 
+#	mkdir -p $(OBJ_DIR)
+
+$(FASTPATH_MODULE) : $(FASTPATH_OBJ)
+	$(LD) -r -o $@ $(FASTPATH_OBJ)
+	$(STRIP) -S $@
+	chmod -x $@
+
+clean: 
+	rm -f core core.* *.o .*.o *.s *.a .depend tmp_make *~ tags	
+	rm -fr $(FASTPATH_MODULE)
+
+#
+# Include a dependency file (if one exists)
+#
+ifneq ($(MAKECMDGOALS), clean)
+ifeq (.depend,$(wildcard .depend))
+include .depend
+endif
+endif

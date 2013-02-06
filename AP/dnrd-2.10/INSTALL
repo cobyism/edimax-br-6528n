@@ -1,0 +1,120 @@
+
+BUILDING DNRD
+-------------
+dnrd can be built by using either make or cons.
+
+CONS is a make replacement.  It has many features that make does not
+possess, like automatic dependency checking, and the use of MD5 checksums
+to determine when files need to be rebuilt (no more "make clean" to make
+sure that your change gets re-compiled).  You can get CONS from
+http://members.home.com/garsh/cons
+
+To build dnrd, either type "cons" in the directory containing the Construct
+file, or "make" in the src directory.  The binary is placed in the "final"
+directory using cons, or in the src directory using make.  You may copy this
+file to /usr/local/sbin, or some other place of your choosing.
+
+Type "dnrd -h" for a description of all options.
+
+
+
+SETTING UP A SINGLE MACHINE TO USE DNRD
+---------------------------------------
+
+Dnrd is useful when you have a single machine that you use to dial into
+one of several ISPs (for instance, sometimes you dial into your ISP,
+other times you dial into work).
+
+The first thing you need to do is to make sure you're not running another
+name server like bind.  Next, create the directory "/etc/dnrd".  This
+directory does not need to have anything in it, but it does need to exist.
+Then, whenever you dial into an ISP, run dnrd with that ISP's nameserver
+as an argument:
+
+    dnrd -s 1.2.3.4
+
+Also, you need to change /etc/resolv.conf to point to yourself.  So if
+your machine's address is 5.6.7.8, you'd need a line like:
+
+    nameserver 5.6.7.8
+
+The following should also work:
+
+    nameserver 127.0.0.1
+
+Of course, instead of running dnrd yourself each time you dial in, you
+can have it run automatically.  Instructions for setting this up with
+mserver appear later in this file.
+
+
+
+SETTING UP AN ENTIRE NETWORK TO USE DNRD
+----------------------------------------
+
+First of all, follow the single-machine instructions to set up the machine
+that is going to run dnrd itself.
+
+Then, for every other machine in the network, simply update the
+/etc/resolv.conf file to point to the dnrd machine as the nameserver:
+
+    nameserver 5.6.7.8
+
+
+
+DNRD WITH REDUNDANT SERVERS
+---------------------------
+
+You can run dnrd with multiple, redundant servers as follows:
+
+    dnrd -s 1.1.1.1 -s 2.2.2.2 -s 3.3.3.3
+
+If dnrd stops getting replies from the first server, it will time out and
+start forwarding all queries to the second server, etc.
+
+
+
+USING DNRD WITH MULTIPLE SIMULTANEOUS NETWORK CONNECTIONS
+---------------------------------------------------------
+
+Let's say you have a machine with connections to two networks at once.
+This is the situation when you are connected to your ISP, and then have
+a Virtual Private Network (VPN) connection to the network at work, for
+instance.  Although it could be just as simple as having two modems with
+two phone lines dialed in at the same time.
+
+In this case, you may wish to use the DNS server at work for all the machines
+behind the company firewall, while using your ISP's DNS server for all other
+queries.  Then just start dnrd as follows:
+
+    dnrd -s 1.1.1.1:work.com -s 2.2.2.2
+
+Where:
+    work.com  is the domain name for all the machines at the company.
+    1.1.1.1   is the DNS server at the company.
+    2.2.2.2   is the DNS server for your ISP.
+
+Then all DNS queries for machines in the "work.com" domain will be forwarded
+to 1.1.1.1, while all other queries will be forwarded to 2.2.2.2.  This can
+be extended to more than two DNS servers, but they should all have domains
+associated with them (except for the last "default" DNS server).
+
+
+
+USING DNRD WITH MSERVER
+-----------------------
+When using dnrd in conjuction with mserver, change the *_kill and *_script
+from:
+    isp_script = "/sbin/ifup ppp0"
+to:
+    isp_script = "/sbin/ifup ppp0; /usr/local/sbin/dnrd -s 1.2.3.4"
+
+
+and from:
+    isp_kill = "/sbin/ifdown ppp0"
+to:
+    isp_kill = "/sbin/ifdown ppp0; /usr/local/sbin/dnrd"
+
+When the link comes up, dnrd will forward DNS queries to the listed server.
+When the link goes down, dnrd will reply with "entry not found" to all DNS
+queries (since it has no servers to which to forward requests).
+

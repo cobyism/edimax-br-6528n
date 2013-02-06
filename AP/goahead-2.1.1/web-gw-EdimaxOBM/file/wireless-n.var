@@ -1,0 +1,1207 @@
+﻿var keyPre=new Array
+(
+"Pre-shared Key",
+"Pre-shared Schlüssel",
+"Clave pre-compartida",
+"Clé pré-partagée",
+"Pre-shared Key",
+"Identiek beveiligingswachtwoord",
+"Chave pré-partilhada",
+"Přednastavený klíč",
+"Przydzielony klucz ",
+"Cheie Pre-Shared",
+"Ключ доступа",
+"Pre-shared kľúč",
+"公用金鑰",
+"公用密钥"
+);
+var channelNum=new Array
+(
+"Channel Number",
+"Kanalnummer",
+"Número de canal",
+"Numéro de canal",
+"Numero canale",
+"Kanaalnummer",
+"Número do canal",
+"Číslo kanálu",
+"Numer kanału ",
+"Numarul Canalului",
+"Номер канала",
+"Číslo kanálu",
+"頻道編號",
+"频道编号"
+);
+var mode=new Array
+(
+"Mode",
+"Modus",
+"Modo",
+"Mode",
+"Modalità",
+"Stand",
+"Modo",
+"Režim",
+"Tryb",
+"Mod",
+"Мода",
+"Mód",
+"模式",
+"模式"
+);
+var secure=new Array
+(
+"Security",
+"Sicherheit",
+"Seguridad",
+"Sécurité",
+"Sicurezza",
+"Beveiliging",
+"Segurança",
+"Bezpečnost",
+"Zabezpieczenie",
+"Securitate",
+"Безопасность",
+"Bezpečnosť",
+"安全機制",
+"安全机制"
+);
+var essid=new Array
+(
+"Essid",
+"ESSID",
+"ESSID",
+"ESSID",
+"ESSID",
+"ESSID",
+"Essid",
+"Essid",
+"Nazwa sieci",
+"Essid",
+"Essid",
+"ESSID",
+"Essid",
+"Essid"
+);
+var wirelessWSet=new Array
+(
+"Wireless WAN Setting",
+"Wireless WAN-Einstellung",
+"Configuración WAN inalámbrica",
+"Paramètres WAN sans fil",
+"Impostazione WAN wireless",
+"Instellingen draadloos WAN",
+"Definição WAN sem fios",
+"Nastavení bezdrátové WAN",
+"Ustawienie bezprzewodowego WAN",
+"Setari Wireless WAN",
+"Настройка беспроводного подключения WAN",
+"nastavenia bezdrôtovej WAN",
+"無線廣域網路設定",
+"无线广域网设定"
+);
+var wlCtrlWAP=new Array
+(
+"WPA Unicast Cipher Suite",
+"WPA Unicast Cipher Suite",
+"Continuación del WPA Unicast Cipher",
+"WPA Unicast Cipher Suite",
+"Cipher suite Unicast WPA",
+"WPA Unicast Cipher Suite",
+"WPA Unicast Cipher Suite",
+"WPA Unicast Cipher Suite (Typ šifry/zabezpečení)",
+"Pakiet szyfrowania emisji WPA",
+"WPA Unicast Cipher Suite",
+"Одноканальный цифровой комплект WPA",
+"Súbor šifier WPA Unicast",
+"WPA Unicast Cipher Suite",
+"WPA Unicast Cipher Suite"
+);
+var keyFrm=new Array
+(
+"Key Format",
+"Schlüsselformat:",
+"Formato de la clave",
+"Format de la clé",
+"Formato chiave",
+"Sleutelformaat:",
+"Formato de chave",
+"Formát klíče",
+"Format klucza ",
+"Formatul Cheii",
+"Формат ключа",
+"Formát kľúča",
+"金鑰格式",
+"密钥格式"
+);
+var rate=new Array
+(
+"Rate",
+"Rate",
+"Índice",
+"Débit",
+"Velocità",
+"Snelheid",
+"Taxa",
+"Rychlost",
+"Szybkość",
+"Rata",
+"Скорость",
+"Sadzba",
+"速率",
+"速率"
+);
+var wlAcTble=new Array
+(
+"Active Wireless Client Table",
+"Aktive Wireless-Clients Tabelle",
+"Tabla de cliente inalámbrico activo",
+"Tableau client sans fil actif",
+"Tabella client wireless attivo",
+"Tabel actieve draadloze client",
+"Actitabela de clientes sem fios",
+"Tabulka aktivních bezdrátových klientů",
+"Tabela aktywnych klientów bezprzewodowych ",
+"Tabela Clientilor Wireless Activi",
+"Таблица активных беспроводных клиентов",
+"Tabuľka aktívnych bezdrôtových klientov",
+"無線終端使用列表",
+"无线终端使用列表"
+);
+var wlValidateKeyAlert4=new Array
+(
+" characters.",
+" Zeichen.",
+" caracteres.",
+" caractères.",
+" caratteri.",
+" tekens.",
+" caracteres.",
+" znaků.",
+"Znaki",
+"caractere.",
+"символ",
+"znaky.",
+"字元",
+"字符"
+);
+var wlValidateKeyAlert2=new Array
+(
+"Invalid length of Key",
+"Ungültige Schlüssellänge",
+"Largo de la clave inválido",
+"Longueur de clé incorrecte.",
+"Lunghezza della chiave non valida",
+"Ongeldige sleutellengte",
+"Comprimento de chave inválido",
+"Neplatná délka klíče",
+"Niewłaściwa długośc klucza ",
+"Lungimea invalida a cheii",
+"Неправильная длина ключа",
+"Nesprávna dĺžka kľúča",
+"無效的金鑰長度",
+"无效的密钥长度"
+);
+var refresh=new Array
+(
+"Refresh",
+"Aktualisieren",
+"Actualizar",
+"Actualiser",
+"Aggiorna",
+"Vernieuwen",
+"Actualizar",
+"Obnovit",
+"Odśwież",
+"Reactualizare",
+"Обновить",
+"Obnoviť",
+"更新",
+"更新"
+);
+var passphrase=new Array
+(
+"Passphrase",
+"Kennwortfolge",
+"Contraseña",
+"Phrase de passe",
+"",
+"Wachtzin",
+"Frase de acesso",
+"Heslo",
+"Hasło",
+"Cod",
+"Пароль",
+"Vstupná fráza",
+"密碼",
+"密码"
+);
+var keyTx=new Array
+(
+"Default Tx Key",
+"Standard Tx Schlüssel",
+"Tecla predefinida Tx",
+"Clé Tx par défaut",
+"Chiave Tx predefinita",
+"Standaard verzendsleutel",
+"Chave Tr predefinida",
+"Výchozí klíč Tx",
+"Domyślny klucz Tx",
+"Cheia Tx Initiala",
+"Tx ключ по умолчанию",
+"Prednastavený kľúč Tx",
+"預設金鑰",
+"预设密钥"
+);
+var address=new Array
+(
+"address ",
+"Adresse ",
+"Dirección ",
+"Adresse ",
+"Indirizzo ",
+"Adres ",
+"endereço ",
+"Adresa ",
+"Adres",
+"adresa",
+"Адрес",
+"adresa",
+"位址",
+"地址"
+);
+var packet=new Array
+(
+"Packets",
+"Pakete",
+"Paquetes",
+"Paquets",
+"Pacchetti",
+"Pakketten",
+"Pacotes",
+"Pakety",
+"Pakiet ",
+"Pachete",
+"Пакеты",
+"Pakety",
+"封包",
+"封包"
+);
+var keyFrmPre=new Array
+(
+"Pre-shared Key Format",
+"Pre-shared Schlüsselformat",
+"Formato de la clave pre-compartida",
+"Format de la clé pré-partagée",
+"Formato della Pre-shared Key",
+"Identiek beveiligingswachtwoord",
+"Formato da chave pré-partilhada",
+"Formát přednastaveného sdíleného klíče",
+"Format przydzielonego klucza",
+"Formatul Cheii Pre-Shared",
+"Формат ключа доступа",
+"Formát pre-shared kľúč",
+"公用金鑰格式",
+"公用密钥格式"
+);
+var keyEncry=new Array
+(
+"Encryption Key",
+"Verschlüsselung",
+"Tecla de codificación",
+"Clé d'encodage",
+"Chiave di codifica",
+"Encryptiesleutel",
+"Chave de encriptação",
+"Šifrovací klíč",
+"Klucz szyfrowania ",
+"Cheia de Encriptie",
+"Ключ кодировки",
+"Šifrovací kľúč",
+"加密金鑰",
+"加密密钥"
+);
+var period=new Array
+(
+"Period",
+"Zeitraum",
+"Periodo",
+"Période",
+"Periodo",
+"Periode",
+"Período",
+"Perioda",
+"Okres",
+"Perioada",
+"Период, точка",
+"Perióda",
+"時期",
+"时期"
+);
+var wlExpTime=new Array
+(
+"Expired Time",
+"Verstrichene Zeit",
+"Tiempo incurrido",
+"Durée écoulée",
+"Tempo trascorso",
+"Verstreken tijd",
+"Tempo expirado",
+"Uplynulý čas",
+"Wykorzystany czas ",
+"Timp Expirat",
+"Время ожидания",
+"Uplynulý čas",
+"過期時間",
+"过期时间"
+);
+var txRate=new Array
+(
+"Tx Rate",
+"Tx Rate",
+"Velocidad de transmisión",
+"Débit Tx",
+"Velocità Tx",
+"Verzendsnelheid",
+"Velocidade de Tr",
+"Tx Rate",
+"Prędkość Tx",
+"Rata Tx",
+"Tx скорость",
+"Tx sadzba",
+"發送速率",
+"发送速率"
+);
+var wlstatblContent=new Array
+(
+"This table shows the MAC address, transmission, receiption packet counters for each associated wireless client.",
+"Diese Tabelle zeigt die MAC-Adresse, den Zähler für übertragene und empfangene Pakete jedes zugehörigen WLAN-Clients an.",
+"Esta tabla indica la dirección MAC; la transmisión, los contadores de paquetes recibidos para cada cliente inalámbrico asociado.",
+"Ce tableau montre l'adresse MAC, les compteurs d'envoi et de réception de paquets pour chaque client sans fil associé.",
+"Questa tabella illustra l'indirizzo MAC e i conteggi dei pacchetti in entrata e in uscita per ciascun client wireless associato.",
+"Deze tabel toont het MAC-adres, de overdachtsnelheid, en het aantal ontvangen pakketten voor elke verbonden draadloze client.",
+"Esta tabela mostra o endereço MAC, os contadores de pacotes de transmissão e recepção para cada cliente sem fios associado.",
+"Tato tabulka zobrazuje adresu MAC a počítadlo vysílaných a přijatých paketů pro každého přiřazeného bezdrátového klienta.",
+"W tabeli zamieszczono adres MAC, wysyłanie , odbieranie pakietów dla każdego bezprzewodowego klienta. ",
+"Aceasta tabela arata adresele MAC, transmisia, contorul de receptie al pachetelor pentru fiecare client wireless asociat",
+"На этой таблице приведены MAC адреса, счетчики отправленных и полученных пакетов для каждого подключенного беспроводного клиента.",
+"Táto tabuľka ukazuje MAC adresy, prenos, počítadlo prijatých paketov pre každý priradený bezdrôtový kľúč.",
+"此表顯示無線終端的MAC位址，傳輸或回饋封包。",
+"此表显示无线终端的MAC地址，传输或回馈封包。"
+);
+var saveChangesAlert4=new Array
+(
+"Pre-shared key value should be less than 64 characters.",
+"Der Pre-Shared Schlüssel sollte weniger als 64 Zeichen besitzen.",
+"El valor de la clave pre-compartida deberá ser inferior a 64 caracteres.",
+"La valeur de la clé pré-partagée doit contenir moins de 64 caractères.",
+"Il valore della Pre-Shared Key dovrebbe essere composto da meno di 64 caratteri.",
+"Identiek beveiligingswachtwoord moet uit minder dan 64 tekens bestaan.",
+"O valor da chave pré-partilhada deve ter menos de 64 caracteres.",
+"Hodnota přednastaveného klíče by měla být menší než 64 znaků.",
+"Wartość przydzielonego klucza winna mieć mniej niż 64 znaki.",
+"Valoarea cheii pre-shared trebuie sa fie mai mica de 64 caractere",
+"Ключ доступа должен быть меньше 64 символов",
+"Hodnota pre-shared kľúč musí mať menej ako 64 znakov.",
+"公用金鑰值應小於 64個字元。",
+"公用密钥值应小于 64个字符。"
+);
+var selectSite=new Array
+(
+"Select Site Survey",
+"Standortaufnahme auswählen",
+"Seleccionar el sondeo del centro",
+"Sélectionner Etude de site",
+"Seleziona indagine sito",
+"Kies overzicht van website",
+"Seleccionar inquérito do local",
+"Vybrat zjišťování sítě",
+"Wybierz dostępną sieć",
+"Selectati Cautare Retele",
+"Выберите обзор узлов связи",
+"Vyberte prehľadávanú stránku",
+"選擇網站搜尋",
+"选择网站搜寻"
+);
+var saveChangesAlert2=new Array
+(
+"Invalid pre-shared key value. It should be in hex number (0-9 or a-f).",
+"Ungültiger Pre-Shared Schlüssel. Es sollte eine Hexadezimalzahl sein (0-9 oder a-f).",
+"Valor inválido de la clave pre-compartida. Deberá ser un número hexagonal (0-9 o a-f).",
+"Valeur de la clé pré-partagée incorrecte. Il doit s'agir d'un chiffre hexadécimal (0-9 ou a-f).",
+"Valore della Pre-Shared Key non valido. Deve essere composto da numeri esadecimali (0-9 o a-f).",
+"Ongeldig identiek beveiligingswachtwoord. Het moet hexadecimaal zijn (0-9 of a-f).",
+"Valor da chave pré-partilhada inválido. Deve ser um número hexadecimal (0 a 9 ou a-f).",
+"Neplatná hodnota přednastaveného klíče. Zadejte šestnáctkové číslo (0-9 nebo a-f).",
+"Niewłaściwa wartość przydzielonego klucza. Wartość powinna być w systemie szesnastkowym (0-9 lub a-f).",
+"Valuare invalida a cheii pre-shared. Trebuie sa fie numar hexazecimal (0-9 sau a-f) ",
+"Неверно значение ключа доступа. Должно быть HEX числом (0-9 или A-F)",
+"Nesprávna hodnota pre-shared kľúča. Musí to byť hexadecimálne číslo (0-9 alebo a-f).",
+"公用金鑰的值是無效的。它應該是十六進位碼（0-9或A-F）。",
+"公用密钥的值是无效的。它应该是十六进制码（0-9或A-F）。"
+);
+var siteSurvey=new Array
+(
+"Site Survey",
+"Standortaufnahme",
+"Sondeo del centro",
+"Etude du site",
+"Indagine sito",
+"Overzicht van de site",
+"Inquérito do local",
+"Zjišťování stanic",
+"Wyszukaj dostępne sieci",
+"Cautare Retele",
+"Обзор узлов связи",
+"Prehľadávanú stránku",
+"站台搜尋",
+"站台搜寻"
+);
+var txError=new Array
+(
+"Tx Error",
+"Tx Fehler",
+"Índice de error",
+"Erreur Tx",
+"Errore Tx",
+"Verzendfout",
+"Erro de Tr",
+"Chyba Tx",
+"Błąd Tx",
+"Eroare Tx",
+"Ошибка Tx ",
+"Tx chyba",
+"發送錯誤",
+"发送错误"
+);
+var wlwdstblContent=new Array
+(
+" This table shows the MAC address, transmission, receiption packet counters and state information for each configured WDS AP.",
+" Diese Tabelle zeigt die MAC-Adresse, den Zähler für übertragene und empfangene Pakete und Statusinformationen für jeden konfigurierten WDS AP an.",
+" Esta tabla indica la dirección MAC, la transmisión, los contadores de recepción de paquetes y la información de estado para cada WDS AP configurada.",
+" Ce tableau montre l'adresse MAC, les compteurs d'envoi et de réception de paquets et les informations sur l'état de chaque PA WDS configuré.",
+" Questa tabella illustra l'indirizzo MAC, i conteggi dei pacchetti in entrata e in uscita e le informazioni di stato per ciascun AP WDS configurato.",
+" Deze tabel toont het MAC-adres, de overdachtsnelheid, het aantal ontvangen pakketten en de status van elk WDS-accesspoint in de configuratie.",
+" Esta tabela mostra o endereço MAC, os contadores de pacote de transmissão, recepção e informações sobre estado de cada PA WDS configurado.",
+" Tato tabulka zobrazuje adresu MAC a počítadlo vysílaných a přijatých paketů a stavové informace pro každý konfigurovaný WDS AP.",
+"W tabeli zamieszczono adres MAC, liczniki wysyłanych, odbieranych pakietów oraz informacje dla każdego skonfigurowanego WDS AP.",
+"Aceasta tabela arata adresele MAC, transmisia, contorul de receptie al pachetelor si informatia de stare pentru fiecare AP WDS configurat.",
+"На этой таблице приведены MAC адреса, счетчики отправленных и полученных пакетов, статусная информация для всех настроенных WDS AP ",
+"Táto stránka ukazuje MAC adresy, prenos, počítadlo prijatých paketov a stav informácií pre každý konfigurovaných WDS AP.",
+"此表可顯示使用WDS組態的AP的MAC位址、傳輸或回饋封包和狀態資訊。",
+"此表可显示使用WDS组态的AP的MAC地址、传输或回馈封包和状态信息。"
+);
+var transmit =new Array
+(
+"Transmit ",
+"Übermitteln ",
+"Transmitir ",
+"Transmettre ",
+"Trasmissione ",
+"Verzenden ",
+"Transmitir ",
+"Vysílání ",
+"Transmisja",
+"Transimite",
+"Отправить",
+"Prenos",
+"發送",
+"发送"
+);
+var wdsSecureSet=new Array
+(
+"WDS Security Setting",
+"WDS Sicherheitseinstellung",
+"Configuración de seguridad de WDS",
+"Paramètres de sécurité WDS",
+"Impostazioni di sicurezza WDS",
+"WDS-beveiligingsinstellingen",
+"Definição de segurança WDS",
+"Bezpečnostní nastavení WDS",
+"Ustawienia zabezpieczenia WDS",
+"Setare de Securitate WDS",
+"Настройка безопасности WDS",
+"WDS bezpečnostné nastavenia",
+"WDS的安全設置",
+"WDS的安全设置"
+);
+var disabled=new Array
+(
+"Disabled",
+"Deaktiviert",
+"Desactivado",
+"Désactivé",
+"Disattivato",
+"Uitgeschakeld",
+"Desactivado",
+"Vypnuto",
+"Wyłączony",
+"Dezactivat",
+"Выключить",
+"Vypnúť",
+"關閉",
+"关闭"
+);
+var macAddress=new Array
+(
+"MAC address ",
+"MAC-Adresse ",
+"Dirección MAC ",
+"Adresse MAC ",
+"Indirizzo MAC ",
+"MAC-adres ",
+"Endereço MAC ",
+"MAC adresa ",
+"Adres MAC",
+"Adresa MAC",
+"MAC адрес",
+"MAC adresy",
+"MAC位址",
+"MAC地址"
+);
+var number=new Array
+(
+"Number",
+"Nummer",
+"Número",
+"Numéro",
+"Numero",
+"Nummer",
+"Número",
+"Číslo",
+"Numer ",
+"Numar",
+"Номер",
+"Číslo",
+"數字",
+"数字"
+);
+var wpaKey=new Array
+(
+"WPA pre-shared key",
+"WPA Pre-shared Schlüssel",
+"Clave pre-compartida WPA",
+"Clé WPA",
+"",
+"Identiek WPA-beveiligingswachtwoord",
+"Chave pré-partilhada WPA",
+"WPA přednastavený sdílený klíč",
+"Przydzielony klucz WPA",
+"Cheie pre-shared WPA",
+"Ключ доступа WPA",
+"WPA pre-shared kľúč",
+"WPA的公用金鑰",
+"WPA的公用密钥"
+);
+var saveChangesAlert=new Array
+(
+"Pre-shared key value should be 64 characters.",
+"Der Pre-Shared Schlüssel sollte 64 Zeichen besitzen.",
+"El valor de la clave pre-compartida deberá ser de 64 caracteres.",
+"La valeur de la clé pré-partagée doit contenir 64 caractères.",
+"Il valore della Pre-Shared Key dovrebbe essere composto da 64 caratteri.",
+"Identiek beveiligingswachtwoord moet uit 64 tekens bestaan.",
+"O valor da chave pré-partilhada deve ter 64 caracteres.",
+"Hodnota přednastaveného klíče by měla mít 64 znaků.",
+"Wartość przydzielonego klucza powinna mieć do 64 znaki. ",
+"Valoarea cheii pre-shared trebuie sa fie de 64 caractere",
+"Ключ доступа должен состоять из 64 символов",
+"Hodnota pre-shared kľúča musí mať 64 znakov.",
+"公用金鑰的值應為 64個字元。",
+"公用密钥的值应为 64个字符。"
+);
+var applys=new Array
+(
+"Apply",
+"Übernehmen",
+"Aplicar",
+"Appliquer",
+"Applica",
+"Toepassen",
+"Aplicar",
+"Použít",
+"Zastosuj",
+"Aplica",
+"Применить",
+"Použiť",
+"套用",
+"套用"
+);
+var wep=new Array
+(
+"WEP",
+"WEP",
+"WEP",
+"WEP",
+"WEP",
+"WEP",
+"WEP",
+"WEP",
+"WEP",
+"WEP",
+"WEP",
+"WEP ",
+"WEP",
+"WEP"
+);
+var channel=new Array
+(
+"Channel",
+"Kanal",
+"Canal",
+"Canal",
+"Canale",
+"Kanaal",
+"Canal",
+"Kanál",
+"Kanał",
+"Canal",
+"Канал",
+"Kanál",
+"頻道",
+"频道"
+);
+var wlSavPower=new Array
+(
+"Power Saving",
+"Energiesparen",
+"Ahorro de energía",
+"Economie d'énergie",
+"Risparmio energetico",
+"Energiebesparing",
+"Poupança de energia",
+"Úsporný režim",
+"Tryb oszczędzania energii",
+"Economisirea curentului",
+"Энергосбережение",
+"Úspora energie",
+"省電功能",
+"省电功能"
+);
+var wlWdsTbl=new Array
+(
+"WDS AP Table",
+"WDS AP Tabelle",
+"Tabla WDS AP",
+"Tableau PA WDS",
+"Tabella AP WDS",
+"Tabel WDS-accesspoint",
+"Tabela de PA WDS",
+"Tabulka WDS AP",
+"Tabela ADS AP",
+"Tabela AP WDS",
+"Таблица WDS AP",
+"Tabuľka WDS AP",
+"WDS AP Table",
+"WDS AP Table"
+);
+var close1=new Array
+(
+"Close",
+"Schließen",
+"Cerrar",
+"Fermer",
+"Chiudi",
+"Sluiten",
+"Fechar",
+"Uzavřít",
+"Zamknij",
+"Inchide",
+"Закрыть",
+"Zatvoriť",
+"關閉",
+"关闭"
+);
+var reset=new Array
+(
+"Reset",
+"Reset",
+"Reinicio",
+"Réinitialisation",
+"Reset",
+"Reset",
+"Repor",
+"Reset",
+"Skasuj",
+"Reseteaza",
+"Переустановить",
+"Reset",
+"重置",
+"重置"
+);
+var survey=new Array
+(
+"Survey",
+"Suche",
+"Encuesta",
+"Etude",
+"Indagine",
+"Overzicht",
+"Inquérito",
+"Zjišťování",
+"Badanie",
+"Cautare",
+"Узел связи",
+"Prehľadať",
+"搜尋",
+"搜寻"
+);
+var error=new Array
+(
+"Errors",
+"Fehler",
+"Errores",
+"Erreurs",
+"Errori",
+"Fouten",
+"Erros",
+"Chyby",
+"Błędy",
+"Erori",
+"Ошибки",
+"Chyby",
+"錯誤",
+"错误"
+);
+var wlValidateKeyAlert=new Array
+(
+"The encryption key you selected as the \'Tx Default Key\' cannot be blank.",
+"Die von Ihnen ausgewählte Verschlüsselung für den \'Tx Standardschlüssel\' darf nicht leer sein.",
+"La clave de codificación que ha seleccionado como \clave predefinida tx\ no puede permanecer en blanco.",
+"La clé d'encodage sélectionnée en tant que \'clé par défaut Tx\' ne peut pas rester vide.",
+"Il campo della chiave di codifica selezionata come chiave Tx predefinita non può essere vuoto.",
+"De encryptiesleutel die u als \'Tx standaardsleutel\' (verzendsleutel) hebt gekozen mag niet leeg zijn.",
+"A chave de encriptação que seleccionou como \'Tx Default Key\' (Chave predefinida Tr) não pode estar em branco.",
+"Šifrovací klíč vybraný jako \'výchozí klíč Tx\' nemůže být prázdný.",
+"Konieczne wprowadzenie klucza szyfrowania  wybranego jako \"Klucz domyślny Tx\”",
+"Cheia de encriptie pe care ati selectat-o drept \'Cheie Tx Initiala'\ nu poate fi spatiu liber",
+"Ключ кодировки, выбранный вами как \"Tx ключ по умолчанию\", не может быть пустым",
+"Šifrovací kľúč, ktorý ste vybrali ako (Tx prednastavený kľúč) nemôže byť prázdny.",
+"你選擇的加密金鑰不能是空白。",
+"你选择的加密密钥不能是空白。"
+);
+var wlValidateKeyAlert5=new Array
+(
+"Invalid key value. It should be in hex number (0-9 or a-f).",
+"Ungültiger Schlüsselwert. Es sollte eine Hexadezimalzahl sein (0-9 oder a-f).",
+"Valor inválido de la clave. Deberá ser un número hexagonal (0-9 o a-f).",
+"Valeur de clé incorrecte. Il doit s'agir d'un chiffre hexadécimal (0-9 ou a-f).",
+"Valore della chiave non valido. Deve essere composto da numeri esadecimali (0-9 o a-f).",
+"Ongeldig beveiligingswachtwoord. Het moet hexadecimaal zijn (0-9 of a-f).",
+"Valor de chave inválido. Deve ser um número hexadecimal (0 a 9 ou a-f).",
+"Neplatná hodnota klíče. Zadejte šestnáctkové číslo (0-9 nebo a-f).",
+"Niewłaściwa wartość klucza. Wartość powinna być w systemie szesnastkowym (0-9 lub a-f).",
+"Valoare invalida a cheii. Trebuie sa fie in numar hexazecimal",
+"Неверно значение ключа. Должно быть HEX числом (0-9 или A-F)",
+"Nesprávna hodnota kľúča. Musí to byť hexadecimálne číslo (0-9 alebo a-f).",
+"無效的金鑰。它應該是十六進位碼（0-9或A-F）。",
+"无效的密钥。它应该是十六进制码（0-9或A-F）。"
+);
+var wlValidateKeyAlert3=new Array
+(
+" value. It should be ",
+" Wert. Dieser sollte sein ",
+" valor. Debería ser ",
+" valeur. Elle doit contenir ",
+" valore. Deve essere ",
+" waarde. Het moet zijn ",
+" valor. Deve ser ",
+" hodnota. Měla by být ",
+"Wartość powinna wynosić",
+"valoare. Trebuie sa fie",
+"значение. Должно быть",
+"hodnota. Musí byť.",
+"數值應該是",
+"数值应该是"
+);
+var select=new Array
+(
+"Select",
+"Auswählen",
+"Seleccionar",
+"Selectionner",
+"Seleziona",
+"Selecteer",
+"Seleccionar",
+"Výběr",
+"Wybierz",
+"Selectati",
+"Выберите",
+"Vybrať",
+"選擇",
+"选择"
+);
+var wlWdsEnp=new Array
+(
+"This page allows you setup the WDS security. The value depends on your AP Security settings.",
+"Diese Seite ermöglicht Ihnen die Konfiguration der WDS-Sicherheit. Der Wert ist abhängig von Ihren AP-Sicherheitseinstellungen.",
+"Esta página le permite configurar la seguridad WDS. El valor depende de su configuración de seguridad AP.",
+"Cette page vous permet de configurer les paramètres de sécurité WDS. La valeur dépend de vos paramètres de sécurité PA.",
+"Questa pagina consente di impostare la sicurezza WDS. Il valore dipende dalle impostazioni di sicurezza AP.",
+"Op deze pagina kunt u de WDS-beveiliging instellen. De waarde is afhankelijk van de beveiligingsinstellingen van uw accesspoint.",
+"Esta página permite configurar a segurança de WDS. O valor depende das suas definições de segurança do PA.",
+"Na této stránce můžete nastavit zabezpečení WDS. Hodnota závisí na nastavení zabezpečení přístupového bodu.",
+"Strona ta pozwala na ustawienia zabezpieczenia WDS. Wartość zależy od ustawień zabezpieczenia AP.",
+"Pagina va permite sa setati securitatea WDS. Valoarea depide de setarea Securitatii AP",
+"Эта страница позволит вам настроить WDS безопасность. Значение зависит от настройки безопасности вашей AP.",
+"Táto stránka vám umožní nastaviť bezpečnosť WDS. Hodnoty záležia na nastavení bezpečnosti vášho AP.",
+"此頁面允許你設定無線安全性。",
+"此页面允许你设定无线安全性。"
+);
+var enable=new Array
+(
+"Enable",
+"Aktivieren",
+"Activar",
+"Activer",
+"Attiva",
+"Inschakelen",
+"Activar",
+"Povolit",
+"Włącz",
+"Activati",
+"Включить",
+"Zapnúť",
+"啟用",
+"启用"
+);
+var encryption=new Array
+(
+"Encryption",
+"Verschlüsselung",
+"Codificación",
+"Encodage",
+"Codifica",
+"Encryptie",
+"Encriptação",
+"Šifrování",
+"Szyfrowanie",
+"Encriptie",
+"Кодировка",
+"Šifrovanie",
+"加密",
+"加密"
+);
+var saveChangesAlert3=new Array
+(
+"Pre-Shared Key value should be set at least 8 characters.",
+"Der Pre-Shared Schlüssel sollte mindestens 8 Zeichen besitzen.",
+"El valor de la clave pre-compartida deberá ser de al menos 8 caracteres.",
+"La valeur de la clé pré-partagée doit contenir au moins 8 caractères.",
+"Il valore della Pre-Shared Key dovrebbe essere composto da almeno 8 caratteri.",
+"Identiek beveiligingswachtwoord moet uit minstens 8 tekens bestaan.",
+"O valor da chave pré-partilhada deve ter pelo menos 8 caracteres.",
+"Hodnota přednastaveného klíče by měla být nejméně 8 znaků.",
+"Wartość przydzielonego klucza powinna mieć przynajmniej 8 znaków.",
+"Valoarea cheii pre-shared trebuie sa fie de cel putin 8 caractere",
+"Ключ доступа должен состоять по крайней мере из 8 символов",
+"Hodnota pre-shared kľúča musí mať najmenej 8 znakov.",
+"公用金鑰值應設定至少8個字元。",
+"公用密钥值应设定至少8个字符。"
+);
+var settings=new Array
+(
+"Settings",
+"Einstellungen",
+"Configuración",
+"Paramètres",
+"Impostazioni",
+"Instellingen",
+"Definições",
+"Nastavení",
+"Ustawienia",
+"Setari",
+"Настройки",
+"Nastavenia",
+"設定",
+"设定"
+);
+var keyLen=new Array
+(
+"Key Length",
+"Schlüssellänge",
+"Largo de la clave",
+"Longueur de la clé",
+"Lunghezza della chiave",
+"Sleutellengte",
+"Comprimento da chave",
+"Délka klíče",
+"Długość klucza",
+"Lungimea cheii",
+"Длина ключа",
+"Dĺžka kľúča",
+"金鑰長度",
+"密钥长度"
+);
+var txPacket=new Array
+(
+"Tx Packet",
+"Tx Paket",
+"Paquete de transmisión",
+"Paquet Tx",
+"Pacchetto Tx",
+"Verzendpakket",
+"Pacote Tr",
+"Vysílané pakety",
+"Pakiet Tx",
+"Pachet tx",
+"Tx пакет",
+"Tx pakety",
+"發送封包",
+"发送封包"
+);
+var wireless=new Array
+(
+"Wireless",
+"Drahtlos",
+"Inalámbrico",
+"Sans fil",
+"Wireless",
+"Draadloos",
+"Sem fios",
+"Bezdrátová síť",
+"Bezprzewodowy",
+"Wireless",
+"Беспроводная связь",
+"Bezdrôtová",
+"無線",
+"无线"
+);
+var rxPacket=new Array
+(
+"Rx Packet",
+"Rx Paket",
+"Paquete Rx",
+"Paquet Rx",
+"Pacchetto Rx",
+"Ontvangpakket",
+"Pacote Re",
+"Přijaté pakety",
+"Pakiet Rx",
+"Pachet Rx",
+"Rx пакет",
+"Rx pakety",
+"接收封包",
+"接收封包"
+);
+var wlencryptStrCharaolitec=new Array
+(
+" characters",
+" Zeichen",
+" caracteres",
+" caractères",
+" caratteri",
+" tekens",
+" caracteres",
+" znaků",
+"Znaki",
+" caractere",
+"символы",
+"znaky",
+"字元",
+"字符"
+);
+var wlss=new Array
+(
+"Wireless Site Survey",
+"WLAN Standortaufnahme",
+"Sondeo de centro inalámbrico",
+"Etude site sans fil",
+"Indagine sito wireless",
+"Overzicht draadloze omgeving",
+"Inquérito no local sem fios",
+"Zjišťování bezdrátových stanic",
+"Wyszukanie sieci bezprzewodowych",
+"Cautare Retele Wireless",
+"Обзор беспроводных узлов связи",
+"Bezdrôtové prehľadávanie stránky",
+"搜尋無線基地台",
+"搜寻无线基地台"
+);
+var wlss1=new Array
+(
+"This page provides tool to scan the wireless network. If any Access Point or IBSS is found, you could choose to connect it manually when client mode is enabled.",
+"Diese Seite bietet Ihnen eine Funktion , um das Drahtlosnetzwerk abzutasten. Wenn ein Access Point oder IBSS gefunden wird, können Sie zu diesen manuell eine Verbindung herstellen, wenn der Client-Modus aktiviert ist.",
+"Esta página ofrece las herramietnas para buscar las redes inalámbricas. Si se encuentra cualquier Punto de Acceso o IBSS podrá elegir conectarlo manualmente cuando el modo de cliente se active.",
+"Cette page fournit un outil permettant d'effectuer des recherches sur le réseau sans fil. Si un point d'accès ou un IBSS est détecté, vous pouvez choisir de vous y connecter manuellement si le mode client est activé",
+"Questa pagina fornisce gli strumenti per scansionare la rete wireless. Se viene trovato un punto di accesso o IBSS, è possibile scegliere di connettersi manualmente quando la modalità client è attivata.",
+"Met de voorzieningen op deze pagina kunt de het draadloze netwerk doorzoeken. Als er een accesspoint of IBSS gevonden wordt, kunt u ervoor kiezen het handmatig aan te sluiten als de client-stand is ingeschakeld.",
+"Esta página fornece a ferramenta necessária para analisar a rede sem fios. Se for encontrado qualquer Ponto de acesso ou IBSS, deve ligá-la manualmente quando o modo de cliente estiver activado.",
+"Tato stránka obsahuje nástroje pro prohledávání bezdrátové sítě. Je-li nalezen přístupový bod nebo IBSS, můžete jej vybrat pro ruční připojení při povolení klientského režimu.",
+"Strona ta zapewnia narzędzie do wyszukania sieci bezprzewodowych. W przypadku znalezienia punktu dostępowego lub IBSS możliwe jest podłaczenie ręczne po włączeniu trybu klienta.  ",
+"Aceasta pagina ofera o unealta pentru scanarea retelei wireless. Daca gasiti orice Acces Point sau IBSS, veti putea alege sa va conectati la ele manual cand modul client este activat",
+"На этой странице содержится инструмент сканирования беспроводных сетей. При обнаружении точки доступа или IBSS, вы можете выбрать подключение вручную, если установлена мода клиента.",
+"Táto stránka vám poskytuje nástroj pre skenovanie bezdrôtovej siete. Pokiaľ je nájdené akýkoľvek prístupový bod alebo IBSS, môžete si vybrať či sa chcete manuálne pripojiť, pokiaľ je zapnutý klientsky mód.",
+"此網頁提供的工具可以用來掃描無線網路。",
+"此网页提供的工具可以用来扫描无线网络。"
+);
+var SSID=new Array
+(
+"SSID",
+"SSID",
+"SSID",
+"SSID",
+"SSID",
+"SSID",
+"SSID",
+"SSID",
+"SSID",
+"SSID",
+"SSID",
+"SSID",
+"SSID",
+"SSID"
+);
+var BSSID=new Array
+(
+"BSSID",
+"BSSID",
+"BSSID",
+"BSSID",
+"BSSID",
+"BSSID",
+"BSSID",
+"BSSID",
+"BSSID",
+"BSSID",
+"BSSID",
+"BSSID",
+"BSSID",
+"BSSID"
+);
+var type=new Array
+(
+"Type",
+"Typ",
+"Tipo",
+"Type",
+"Tipo",
+"Type",
+"Tipo",
+"Typ",
+"Rodzaj",
+"Tip",
+"Тип",
+"Typ",
+"類型",
+"类型"
+);
+var encrypt=new Array
+(
+"Encrypt",
+"Verschlüsseln",
+"Codificar",
+"Encodage",
+"Codifica",
+"Versleuteling",
+"Encriptar",
+"Šifrovat",
+"Szyfruj ",
+"Encripteaza",
+"Закодировать",
+"Šifrovať",
+"加密",
+"加密"
+);
+var signal=new Array
+(
+"Signal",
+"Signal",
+"Señal",
+"Signal",
+"Segnale",
+"Signaal",
+"Sinal",
+"Signál",
+"Sygnał",
+"Semnal",
+"Сигнал",
+"Signál",
+"信號",
+"信号"
+);
+var connect=new Array
+(
+"Connect",
+"Anschluss",
+"Conectar",
+"Connexion",
+"Connetti",
+"Aansluiting",
+"Ligar",
+"Připojit",
+"Podłącz",
+"Conectare",
+"Подключить",
+"Pripojiť",
+"連線",
+"联机"
+);
+var done=new Array
+(
+"Done",
+"Fertig",
+"Hecho",
+"Fait",
+"Fatto",
+"Gereed",
+"Concluído",
+"Provedeno",
+"Wykonane",
+"Incheiat",
+"Сделано",
+"Dokončiť",
+"完成",
+"完成"
+);
+var cancel1=new Array
+(
+"Cancel",
+"Abbrechen",
+"Cancelar",
+"Annuler",
+"Annulla",
+"Annuleren",
+"Cancelar",
+"Zrušit",
+"Skasuj",
+"Anulare",
+"Выйти",
+"Zrušiť",
+"取消",
+"取消"
+);
+var keyolitec=new Array
+(
+"Key",
+"Schlüssel",
+"Clave",
+"Clé",
+"Chiave",
+"Sleutel",
+"Chave",
+"Klíč",
+"Klucz",
+"Cheie",
+"Ключ",
+"Kľúč",
+"金鑰",
+"密钥"
+);
+var authentication=new Array
+(
+"Authentication",
+"Authentication",
+"Authentication",
+"Authentication",
+"Authentication",
+"Authentication",
+"Authentication",
+"Authentication",
+"Authentication",
+"Authentication",
+"Authentication",
+"Authentication",
+"認證",
+"认证"
+);

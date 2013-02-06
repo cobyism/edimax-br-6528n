@@ -1,0 +1,49 @@
+/* ld.script
+ * 
+ * This file is subject to the terms and conditions of the GNU
+ * General Public License.  See the file "COPYING" in the main
+ * directory of this archive for more details.
+ *
+ * Copyright (C) 2000, Jay Carlson
+ */
+
+OUTPUT_ARCH(mips)
+ENTRY(__start)
+
+/* Someday I'll figure out how this works */
+/* MEMORY { vtboot : ORIGIN = 0x80400000, LENGTH = 64k } */
+/* MEMORY { rom : ORIGIN = 0x80410000, LENGTH = 2M } */
+
+
+SECTIONS
+{
+        /* The loader itself */
+        . = 0x80500000;
+        .text : { *(.text) } 
+        .rodata : { *(.rodata) } 
+
+        . = ALIGN(4);
+        /* Compressed kernel ELF image */
+
+
+		 .data    :
+  		{
+    		_fdata = . ;
+    		*(.data)
+   			. = ALIGN(1024);
+   			__vmlinux_start = .;
+   			*(.vmlinux)
+   			__vmlinux_end = .;
+   			. = ALIGN(1024);
+    		CONSTRUCTORS
+  		}
+
+        .bss : { _bstart = . ; *(.bss) ; *(.sbss) ; *(COMMON) ; _bend = . ; }
+
+        /* /DISCARD/ : { *(.reginfo) ; *(.mdebug) ; *(.note) ; *(.comment) *(__ex_table) ; } */
+        /DISCARD/ : { *(.reginfo) ;  *(.note) ; *(.comment) *(__ex_table) ; }
+
+        /* .filler : */
+}
+        
+        

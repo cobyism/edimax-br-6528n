@@ -1,0 +1,1 @@
+active-filter \'outbound and (udp ortcp[13] & 4 = 0 or icmp[0]=8 or icmp[0]=13 or icmp[0]=15)'

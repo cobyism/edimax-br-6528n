@@ -1,0 +1,10850 @@
+﻿var aspformVirtualSvErrFullAdd=new Array
+(
+"Cannot add new entry because table is full!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspGetDefaultRoute25=new Array
+(
+"encrKey=%s",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormVpnSetup7=new Array
+(
+"Error! SPI length too long.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTcpipSetup10=new Array
+(
+"ERROR: Set user name to MIB database failed.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspsetUserProfileErrgroup=new Array
+(
+"ERROR: Unable to add group.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt25=new Array
+(
+"Error! invalid psk value.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStcIpSetup1=new Array
+(
+"Invalid DNS address value!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormDDNSSetup8=new Array
+(
+"Set Authentication Type flag error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTcpipSetup11=new Array
+(
+"ERROR: Set user password to MIB database failed.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt22=new Array
+(
+"Error! no psk format.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTcpipSetup34=new Array
+(
+"Set DHCP client end address error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormL2TPSetup1=new Array
+(
+"Set IP Mode failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformSecLogType=new Array
+(
+"Content-Type: application/octet-stream;",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspDumpIpsecTunnel3=new Array
+(
+"Local Info",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlSiteSurvey5=new Array
+(
+"Please refresh again!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformVirtualSvInvValuePublic=new Array
+(
+"Error! Invalid value of public-port.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformPasswordSetupErrDelUser=new Array
+(
+"ERROR: Unable to delete user account.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformFilterInvIpWan=new Array
+(
+"Invalid IP address! It should be set within the WAN subnet.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformConnectShPppoe=new Array
+(
+"/bin/pppoe.sh connect",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformTriggerPortInvPortTo=new Array
+(
+"Error! Invalid value of  to-port.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformPasswordSetupErrSaveCfg=new Array
+(
+"ERROR: Unable to save user configuration.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformPortFwErrSetPort=new Array
+(
+"Setting port range has overlapped with used port numbers!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspError=new Array
+(
+"Error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTELBPSetup2=new Array
+(
+"Set user password MIB error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformPortFwErrCmtLong=new Array
+(
+"Error! Comment length too long.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormAdvanceSetup10=new Array
+(
+"Error! Invalid Turbo value.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormAdvanceSetup37=new Array
+(
+"Set MIB_WLAN_PROTECTION_DISABLED failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormAdvanceSetup16=new Array
+(
+"Set Tx basic rate failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspDumpIpsecTunnel22=new Array
+(
+"ipsecPfs =%d",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformPortFwErrGetNum=new Array
+(
+"Get entry number error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormPPTPSetup5=new Array
+(
+"Set PPTP idle time MIB error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormAdvanceSetup21=new Array
+(
+"Error! Invalid value of DTIM period.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormVpnSetup11=new Array
+(
+"Get entry number error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformUploadPragma=new Array
+(
+"Pragma: no-cache",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformFilterErrDelAll=new Array
+(
+"Delete all table error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlanSetup26=new Array
+(
+"Error! Invalid MAC3 address.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformDebugDisp=new Array
+(
+"Content-Disposition: attachment;filename=\"report.txt\" ",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormRoute9=new Array
+(
+"Duplicate with entry %d!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformQoSErrMacInv=new Array
+(
+"Error! Invalid MAC of source address.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformUploadInvform=new Array
+(
+"Invalid file format!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormPreventionSetup4=new Array
+(
+"Invalid time of Ping of Death!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlAc6=new Array
+(
+"Add table entry error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformQoSInvDelOther=new Array
+(
+"Other entry can\'t delete!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformSaveConfigMibfail=new Array
+(
+"Re-initialize AP MIB failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt2=new Array
+(
+"Key length must exist!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlanSetup1=new Array
+(
+"Set disabled flag error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformUrlbErrDelAll=new Array
+(
+"Delete all table error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlEnable2=new Array
+(
+"Set Wireless Enable failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlanSetup30=new Array
+(
+"Error! Invalid MAC5 address.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormAdvanceSetup7=new Array
+(
+"Set Beacon interval failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlEncrypt8=new Array
+(
+"Error! Invalid value of RS port number.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformVirtualSvErrDelEntry=new Array
+(
+"Delete table entry error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormReManagementSetup1=new Array
+(
+"Error! Invalid value of Port Number.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspWirelessClientList2=new Array
+(
+"Read wlan sta info failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormL2TPSetup19=new Array
+(
+"PPPoE disconnected.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTcpipSetup22=new Array
+(
+"Set Domain Name MIB error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTcpipSetup7=new Array
+(
+"ERROR: Unable to add user account.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformQoSOther=new Array
+(
+"Other entry can\'t edit!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormRoute18=new Array
+(
+"Get table entry error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTcpipSetup19=new Array
+(
+"Get DHCP MIB error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformVirtualSvErrSetRange=new Array
+(
+"Setting port range has overlapped with used port numbers!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormAdvanceSetup23=new Array
+(
+"Error! Invalid IAPP value.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformAcceptAuth=new Array
+(
+"killall auth upnpd udhcpc iwcontrol diagd cleanlog.sh udhcpd",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt3=new Array
+(
+"Invalid key length value!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspMain3=new Array
+(
+"No upgrade file specified!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspKernelRouteList1=new Array
+(
+"Unsuported kernel route format",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspMain9=new Array
+(
+"BOOT-CODE",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormVpnConn3=new Array
+(
+"RSA len exceed len",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormRoute12=new Array
+(
+"Get entry number error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormVpnSetup13=new Array
+(
+"set entry %d",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformFilterInvPtcType=new Array
+(
+"Error! Invalid protocol type.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformFilterErrNoMac=new Array
+(
+"Error! No mac address to set.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformQoSErrCfgTbl=new Array
+(
+"configure table entry error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspDumpIpsecTunnel14=new Array
+(
+"espAuth=%d ",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspMain10=new Array
+(
+"CONFIG-DATA",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt16=new Array
+(
+"Invalid key 3 length!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformFilterErrPortTo=new Array
+(
+"Error! Invalid value of to-port.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlSiteSurvey12=new Array
+(
+"Connect successfully!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt11=new Array
+(
+"Invalid wep-key1 value!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormPreventionSetup13=new Array
+(
+"Error! Invalid value of burst of Sync Flood.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlEncrypt14=new Array
+(
+"Set RS password error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormPSSetup6=new Array
+(
+"Set PrinterServer LPR Enable/Disable failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlanSetup10=new Array
+(
+"Set 1x enable flag error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormVpnSetup10=new Array
+(
+"Error! Authentication Key length too long.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormL2TPSetup16=new Array
+(
+"Invalid PPP type value!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormDDNSSetup6=new Array
+(
+"Set HostID failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformSysLogHttp10=new Array
+(
+"HTTP/1.0 200 OK",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformQoSInvIpStart=new Array
+(
+"Invalid start ip of source address! It should be set within the current subnet.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt33=new Array
+(
+"Set MIB_STA_EAP_PASS error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformTriggerPortErrAddTbl=new Array
+(
+"Add table entry error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTcpipSetup1=new Array
+(
+"ERROR: Password is not matched!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspSysReset=new Array
+(
+"System Restarting! Please wait for a while !",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormVpnConn2=new Array
+(
+"open rsa file error",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWdsEncrypt2=new Array
+(
+"encrypt value not valid!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformReboot=new Array
+(
+"System Restarting! Please wait for a while !",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformPasswordSetupErrSetPasswd=new Array
+(
+"ERROR: Set user password to MIB database failed.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformTriggerPortErrGetTbl=new Array
+(
+"Get table entry error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspDumpIpsecTunnel4=new Array
+(
+"lcType=%d",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformSaveConfigInvCfg=new Array
+(
+"Invalid configuration file!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspMain11=new Array
+(
+"Read file %s error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformQoSInvIpEnd=new Array
+(
+"Invalid End ip of source address! It should be set within the current subnet.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormPreventionSetup12=new Array
+(
+"Set time of Sync Flood error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformTriggerPortErrFlag=new Array
+(
+"Set enabled flag error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformSaveConfigHttp10=new Array
+(
+"HTTP/1.0 200 OK",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt30=new Array
+(
+"Set MIB_STA_PASS error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformFilterErrGetNum=new Array
+(
+"Get entry number error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspWlSiteSurveyTbl1=new Array
+(
+"Get AP_MODE failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormL2TPSetup11=new Array
+(
+"Connected to server successfully.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlanSetup32=new Array
+(
+"Error! Invalid MAC6 address.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformSaveConfigCache=new Array
+(
+"Cache-Control: no-cache",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlSiteSurvey14=new Array
+(
+"Change Root AP Successfully!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormAdvanceSetup6=new Array
+(
+"Error! Invalid value of Beacon Interval.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTELBPSetup1=new Array
+(
+"Set user name MIB error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormRadiusl1=new Array
+(
+"Error! input argument is not enough",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormDDNSSetup9=new Array
+(
+"Set DHIS password MIB error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt19=new Array
+(
+"Invalid wep-key4 value!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformSecLogShSeclog=new Array
+(
+"/bin/seclog.sh clean",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlEncrypt12=new Array
+(
+"Set RS IP-address error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormPPTPSetup6=new Array
+(
+"Set PPTP Connection ID MIB error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormVpnSetup8=new Array
+(
+"Error! Encryption Key length too long.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormAdvanceSetup20=new Array
+(
+"Error! Invalid hiddenSSID value.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformFilterInvIpPortTo=new Array
+(
+"Error! Invalid value of  to-port.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformDdnsErrPasswd=new Array
+(
+"Set DDNS Password String error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt9=new Array
+(
+"Set default tx key id error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTcpipSetup2=new Array
+(
+"ERROR: Get supervisor name MIB error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformQoSErrPortSrcOrd=new Array
+(
+"Invalid source port range! 1st port value should be less than 2nd value",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormPreventionSetup11=new Array
+(
+"Invalid time of Sync Flood!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormFilterError=new Array
+(
+"Error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformSaveConfigPragma=new Array
+(
+"Pragma: no-cache",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlEncrypt6=new Array
+(
+"Set MIB_WLAN_WPA_PSK error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspSetWlanModeError=new Array
+(
+"Set WLAN Mode error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormRoute13=new Array
+(
+"Cannot add new entry because table is full!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormAdvanceSetup17=new Array
+(
+"Set Tx operation rate failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformHwSetWlan=new Array
+(
+"flash set HW_WLAN_ADDR %s",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt17=new Array
+(
+"Invalid wep-key3 value!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformPasswordSetupErrorlimit=new Array
+(
+"ERROR: Unable to add access limit.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormL2TPSetup3=new Array
+(
+"Set L2TP gateway error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTcpipSetup20=new Array
+(
+"Invalid DHCP value!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlanSetup13=new Array
+(
+"Error! Invalid auto MAC Clone value.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlanSetup27=new Array
+(
+"Set MIB_WL_LINKMAC3 mib error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspsetUserProfileErrAdduser=new Array
+(
+"ERROR: Unable to add user account.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlAc5=new Array
+(
+"Cannot add new entry because table is full!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspSetWispWanIdError=new Array
+(
+"Set WISP WAN Id error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlAc7=new Array
+(
+"Delete table entry error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlanSetup31=new Array
+(
+"Set MIB_WL_LINKMAC5 mib error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformUploadFilefail=new Array
+(
+"File open failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt24=new Array
+(
+"Set MIB_STA_WPA_PSK_FORMAT failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTcpipSetup31=new Array
+(
+"Invalid DHCP client start address!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformTriggerPortInvPortFr=new Array
+(
+"Error! Invalid value of  form-port.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformFilterInvHopCount=new Array
+(
+"Error! Invalid value of Hop Count.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormVpnSetup19=new Array
+(
+"Get WAN IP error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTimeZoneSetup1=new Array
+(
+"Error! Invalid value of Time Zone.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlAc4=new Array
+(
+"Get entry number error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlanSetup21=new Array
+(
+"Set MIB_ELAN_MAC_ADDR mib error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformDebugType=new Array
+(
+"Content-Type: application/octet-stream;",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformQoSInvIpRange=new Array
+(
+"Invalid source IP address range! end IP address should be greater than start IP address.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspAddDefaultRoute=new Array
+(
+"Add route [ ] error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormAdvanceSetup30=new Array
+(
+"Error! Invalid value of Transmit Burst Mode.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTcpipSetup6=new Array
+(
+"ERROR: Unable to add supervisor account.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlanSetup19=new Array
+(
+"Set MIB_WLAN_MAC_ADDR mib error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt34=new Array
+(
+"Set MIB_STA_ENCLT_CER error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTcpipSetup17=new Array
+(
+"Set MIB_ELAN_MAC_ADDR mib error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformPortFwErrPortForm=new Array
+(
+"Error! No from-port value to be set.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformQoSErrAddEntry=new Array
+(
+"Add table entry error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTimeZoneSetup5=new Array
+(
+"Error! Invalid value of Start Month",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormPSSetup5=new Array
+(
+"Error! Invalid PS_LPREnable value.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormPSSetup4=new Array
+(
+"Set PrinterServer IPP Enable/Disable failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt1=new Array
+(
+"Set MIB_STA_ENCRYPT error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformFilterErrSetMac=new Array
+(
+"Set MAC filter Deny Enable failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlSiteSurvey3=new Array
+(
+"Read site-survey status failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformVirtualSvErrDelAll=new Array
+(
+"Delete all table error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspWlAcList1=new Array
+(
+"Get table entry error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspOK=new Array
+(
+"OK!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformFilterInvIpLan=new Array
+(
+"Invalid IP address! It should be set within the LAN subnet.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformPasswordSetupCannotuse=new Array
+(
+"ERROR: Cannot use the same user name as supervisor.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformVirtualSvInvValuePrivate=new Array
+(
+"Error! Invalid value of private-port.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspMain2=new Array
+(
+"No output file specified!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormL2TPSetup17=new Array
+(
+"Set PPP type MIB error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt18=new Array
+(
+"Set wep-key3 error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspDumpIpsecTunnel20=new Array
+(
+"ikeKeyGroup =%d",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspMain16=new Array
+(
+"Create upgrade file %s error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspMain17=new Array
+(
+"Merge upgrade",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformFilterErrGetTbl=new Array
+(
+"Get table entry error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTimeZoneSetup7=new Array
+(
+"Error! Invalid value of Start Day.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTimeZoneSetup4=new Array
+(
+"Set IP-address error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformDdnsErrUser=new Array
+(
+"Set DDNS User String error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformConnectShL2tp=new Array
+(
+"/bin/l2tp.sh connect",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormDDNSSetup7=new Array
+(
+"Set ISAddr error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlSiteSurvey2=new Array
+(
+"scan request timeout!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormRoute7=new Array
+(
+"Cannot add new entry because table is full!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormVpnSetup5=new Array
+(
+"Error! Invalid value of RemoteIP mask",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlEncrypt15=new Array
+(
+"Error! Invalid wepkeylen value.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlanSetup23=new Array
+(
+"Set MIB_WL_LINKMAC1 mib error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformPortFwErrPtcType=new Array
+(
+"Error! Protocol type cannot be empty.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspWirelessClientList1=new Array
+(
+"Allocate buffer failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspMain7=new Array
+(
+"Stat file %s error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormRoute15=new Array
+(
+"Duplicate with entry %d!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormPreventionSetup9=new Array
+(
+"Error! Invalid value of packet of Sync Flood.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformVirtualSvInvPtcType=new Array
+(
+"Error! Invalid protocol type.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspDumpIpsecTunnel19=new Array
+(
+"ikeLifeTime =%lu",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormPSSetup8=new Array
+(
+"Set PrinterServer Port1 Name error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformVirtualSvErrCmtLong=new Array
+(
+"Error! Comment length too long.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformFilterErrDelTbl=new Array
+(
+"Delete table entry error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt6=new Array
+(
+"Invalid key type value!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspsetUserProfileErrAddsup=new Array
+(
+"ERROR: Unable to add supervisor account.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlanSetup33=new Array
+(
+"Set MIB_WL_LINKMAC6 mib error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformFilterErrInput=new Array
+(
+"Error! input argument is not enough",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormL2TPSetup9=new Array
+(
+"Set L2TP type MIB error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTcpipSetup24=new Array
+(
+"Set IP-address error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt13=new Array
+(
+"Invalid key 2 length!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormVpnSetup15=new Array
+(
+"after Addentry number =%d",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt36=new Array
+(
+"Set MIB_STA_ENSER_CER error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlEncrypt11=new Array
+(
+"Invalid RS IP-address value!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTcpipSetup3=new Array
+(
+"ERROR: Cannot use the same user name as supervisor.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt35=new Array
+(
+"Set MIB_STA_CLIENT_PASS error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspMain=new Array
+(
+"Invalid input file !",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformSysLogCache=new Array
+(
+"Cache-Control: no-cache",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTimeZoneSetup11=new Array
+(
+"Error! Invalid value of End Day.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlanSetup4=new Array
+(
+"Invalid band value!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTcpipSetup32=new Array
+(
+"Set DHCP client start address error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformQoSErrPortDstTo=new Array
+(
+"Error! Invalid value of destination to-port.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformQoSErrGetTbl=new Array
+(
+"Get table entry error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlEncrypt2=new Array
+(
+"Set MIB_WLAN_ENABLE_SUPP_NONWPA mib error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformPasswordSetupErrorAdduser=new Array
+(
+"ERROR: Unable to add user account.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformPasswordSetupErrorgroup=new Array
+(
+"ERROR: Unable to add group.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormALGSetup=new Array
+(
+"Set ALG failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormRoute1=new Array
+(
+"Set enabled flag error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformSaveConfigFail=new Array
+(
+"Allocate buffer failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformPortFwErrDelTbl=new Array
+(
+"Delete table entry error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormRoute21=new Array
+(
+"Delete table entry error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormAdvanceSetup5=new Array
+(
+"Set RTS threshold failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformPortFwErrDelAll=new Array
+(
+"Delete all table error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformPasswordSetupErrorAddsup=new Array
+(
+"ERROR: Unable to add supervisor account.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformFilterErrNoIp=new Array
+(
+"Error! No ip address to set.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormAdvanceSetup31=new Array
+(
+"Set Transmit Burst Mode failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformTriggerPortInvPtcType=new Array
+(
+"Error! Invalid trigger-port protocol type.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormRoute3=new Array
+(
+"Set RIP WAN Rx  error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlanSetup20=new Array
+(
+"Error! Invalid Elan Mac address.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformPasswordSetupNotmatch=new Array
+(
+"ERROR: Password is not matched !",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspGetDefaultRoute26=new Array
+(
+"authKey=%s",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTcpipSetup30=new Array
+(
+"Set default-gateway error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormVpnSetup18=new Array
+(
+"Can\'t set ipsec with pptp wan type.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormDDNSSetup11=new Array
+(
+"Set AUTHP2  MIB error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormPSSetup7=new Array
+(
+"Set PrinterServer Name error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWanTcpipSetup2=new Array
+(
+"Set TTL failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTimeZoneSetup6=new Array
+(
+"Set Start Month failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspDumpIpsecTunnel9=new Array
+(
+"rt_ipAddr=%s",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlanSetup28=new Array
+(
+"Error! Invalid MAC4 address.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlSiteSurvey9=new Array
+(
+"connect-request timeout!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspDumpIpsecTunnel10=new Array
+(
+"rt_maskLen=%d",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformFilterInvPortRange=new Array
+(
+"Invalid port range! 1st port value should be less than 2nd value",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformPortFwErrFlag=new Array
+(
+"Set enabled flag error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspDumpIpsecTunnel21=new Array
+(
+"ipsecLifeTime =%lu",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspsetUserProfileErrlimit=new Array
+(
+"ERROR: Unable to add access limit.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlSiteSurvey4=new Array
+(
+"scan timeout!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspDumpIpsecTunnel1=new Array
+(
+"Enable=%d",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspMain15=new Array
+(
+"%s ok, size=%d (pending to %d)",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWdsEncrypt=new Array
+(
+"Set MIB_WLAN_WPA_PSK_FORMAT failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormVpnSetup6=new Array
+(
+"Error! Preshared Key length too long.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformTriggerPortErrCmtLong=new Array
+(
+"Error! Comment length too long.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormAdvanceSetup25=new Array
+(
+"Error! Invalid Wireless Isolation value.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTcpipSetup5=new Array
+(
+"ERROR: Unable to add access limit.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlEncrypt16=new Array
+(
+"Set MIB_WLAN_WEP failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformUSBStorage=new Array
+(
+"/bin/storage.sh %s",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformUploadBufferfail=new Array
+(
+"Allocate buffer failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformUrlbErrAddTbl=new Array
+(
+"Add table entry error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormRoute14=new Array
+(
+"get entry error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlanSetup22=new Array
+(
+"Error! Invalid MAC1 address.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTcpipSetup12=new Array
+(
+"Error! Invalid value of Lease Time.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt10=new Array
+(
+"Invalid key 1 length!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformUploadReadfail=new Array
+(
+"Read file failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformConnectShDisc=new Array
+(
+"/bin/disconnect.sh all",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormVpnSetup3=new Array
+(
+"Error! Invalid value of Local IP mask",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformVirtualSvErrIpNo=new Array
+(
+"Error! No ip address to set.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormDynIpSetup3=new Array
+(
+"Set MIB_WAN_MAC_ADDR mib error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspDumpIpsecTunnel18=new Array
+(
+"ikeAuth =%d",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormDDNSSetup4=new Array
+(
+"Set DDNS Account / E-Mail MIB error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformFilterInvIpPortFr=new Array
+(
+"Error! Invalid value of  from-port.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTcpipSetup4=new Array
+(
+"ERROR: Unable to add group.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormAdvanceSetup22=new Array
+(
+"Set DTIM period failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlanSetup11=new Array
+(
+"Set MIB_WLAN_ENCRYPT error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt20=new Array
+(
+"Set wep-key4 error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformSaveConfigDisp=new Array
+(
+"Content-Disposition: attachment;filename=\"config.bin\" ",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTcpipSetup21=new Array
+(
+"Set DHCP error!\"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormAdvanceSetup32=new Array
+(
+"Error! Invalid value of Network Authentication.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlanSetup2=new Array
+(
+"Invalid WLAN Mode!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlSiteSurvey11=new Array
+(
+"connect timeout!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormAdvanceSetup4=new Array
+(
+"Error! Invalid value of RTS threshold.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlEncrypt9=new Array
+(
+"Set RS port error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt37=new Array
+(
+"Set MIB_STA_SERVER_PASS error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspGetDefaultRoute23=new Array
+(
+"Manual Key",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlEncrypt3=new Array
+(
+"Set MIB_WLAN_SUPP_NONWPA mib error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformFilterErrPtcTypeEmpty=new Array
+(
+"Error! Protocol type cannot be empty.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformVirtualSvErrGetNum=new Array
+(
+"Get entry number error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlanSetup3=new Array
+(
+"Set WLAN Mode error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormUPNPSetup1=new Array
+(
+"Error! Invalid UPnP value.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormRoute2=new Array
+(
+"Set RIP WAN Tx error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspSuccess=new Array
+(
+"Success!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormL2TPSetup14=new Array
+(
+"Set PPP user name MIB error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormRoute22=new Array
+(
+"Delete all table error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformSysLogType=new Array
+(
+"Content-Type: application/octet-stream;",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlEncrypt10=new Array
+(
+"No RS IP address!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspSetFirewallFail=new Array
+(
+"Set Firewall Enable failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformQoSErrPortSrcFr=new Array
+(
+"Error! Invalid value of source form-port.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormL2TPSetup8=new Array
+(
+"Invalid L2TP type value!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTimeZoneSetup12=new Array
+(
+"Set End Day failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformVirtualSvErrFlag=new Array
+(
+"Set enabled flag error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTimeZoneSetup3=new Array
+(
+"Invalid IP-address value!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformApply=new Array
+(
+"System Restarting! Please wait for a while !",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormAdvanceSetup14=new Array
+(
+"Set rate adaptive failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt23=new Array
+(
+"Error! invalid psk format.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt4=new Array
+(
+"Set STA WEP error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformConnectFailPppoe=new Array
+(
+"PPPoE disconnected.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspadministrators=new Array
+(
+"administrators",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformFilterErrSetIp=new Array
+(
+"Set IP filter Deny Enable failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlanSetup29=new Array
+(
+"Set MIB_WL_LINKMAC4 mib error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormPreventionSetup14=new Array
+(
+"Set burst of Sync Flood  failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspMain4=new Array
+(
+"No valid input image found!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformUploadStatfail=new Array
+(
+"Stat file failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformUrlbErrCmtLong=new Array
+(
+"Error! Comment length too long.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt29=new Array
+(
+"Set MIB_STA_ID error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormRoute17=new Array
+(
+"Add table entry error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformPortFwErrAdd=new Array
+(
+"Cannot add new entry because table is full!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt26=new Array
+(
+"Set MIB_STA_WPA_PSK error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormDDNSSetup2=new Array
+(
+"Set DDNS Provider MIB error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformFilterInvIp=new Array
+(
+"Invalid IP address! It should be set within the current subnet.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformConnectSuccess=new Array
+(
+"Connected to server successfully.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlEncrypt4=new Array
+(
+"Set MIB_WLAN_AUTH_TYPE failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformSysLogDisp=new Array
+(
+"Content-Disposition: attachment;filename=\"syslog.txt\" ",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformTriggerPortErrPortRange=new Array
+(
+"Trigger port range has overlapped with used port numbers!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspDumpIpsecTunnel2=new Array
+(
+"tunnelId=%d",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormPreventionSetup1=new Array
+(
+"Set enabled flag error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspShowHelp2=new Array
+(
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformTriggerPortErrPortFr=new Array
+(
+"Error! No from-port value to be set.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTcpipSetup16=new Array
+(
+"Error! Invalid MAC address.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformPortFwInvIp=new Array
+(
+"Invalid IP address! It should be set within the current subnet.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformTriggerPortInvPortType=new Array
+(
+"Error! Invalid incoming-port protocol type.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt15=new Array
+(
+"Set wep-key2 error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformSecLogDisp=new Array
+(
+"Content-Disposition: attachment;filename=\"security.txt\" ",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformDdnsErrType=new Array
+(
+"Set DDNS Type error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspSetOpmodeError=new Array
+(
+"Set Opmode error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormVpnSetup4=new Array
+(
+"Error! Cannot set Any Address in Remote Site for more than one entry.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormRadiusl3=new Array
+(
+"Error! Password length too long.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTcpipSetup13=new Array
+(
+"Set Lease Time failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformPortFwErrGetTbl=new Array
+(
+"Get table entry error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformConnectFailL2tp=new Array
+(
+"L2TP disconnected.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlanSetup7=new Array
+(
+"Set Repeater SSID error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformQoSInvIpDest=new Array
+(
+"Invalid destination IP address range! end IP address should be greater than start IP address.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlAc1=new Array
+(
+"Set enabled flag error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormL2TPSetup4=new Array
+(
+"Set L2TP user name MIB error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformStatsErrWlan=new Array
+(
+"Set WLAN Mode error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormAdvanceSetup34=new Array
+(
+"Error! Invalid value of CTS Protection.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTcpipSetup29=new Array
+(
+"Invalid default-gateway value!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformQoSErrPortDstOrd=new Array
+(
+"Invalid destination port range! 1st port value should be less than 2nd value",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormVpnSetup17=new Array
+(
+"get entry %d",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt8=new Array
+(
+"Invalid default tx key id!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormRoute20=new Array
+(
+"route del -net %s netmask %s gw %s",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormRoute11=new Array
+(
+"Add table entry error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlanSetup6=new Array
+(
+"Set Universal Repeater Mode error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspGetStats=new Array
+(
+"Warning: cannot open /proc/net/dev",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWdsEncrypt4=new Array
+(
+"Invalid wep key length!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt5=new Array
+(
+"Key type must exist!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt12=new Array
+(
+"Set wep-key1 error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspCheckDupEntry3=new Array
+(
+"Duplicate Connection Name with Tunnel",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormPSSetup1=new Array
+(
+"Error! Invalid PSEnable value.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt38=new Array
+(
+"Set MIB_STA_SEC_MODE error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformFilterErrPortRange=new Array
+(
+"Error! Invalid port range.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormAdvanceSetup33=new Array
+(
+"Set Network Authentication failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspGetDefaultRoute24=new Array
+(
+"spi=%s ",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormVpnConn4=new Array
+(
+"Create WPA config file error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormAdvanceSetup27=new Array
+(
+"Set Transmit Rate MIB error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspDumpIpsecTunnel16=new Array
+(
+"Pskey =%s",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormRoute5=new Array
+(
+"Set RIP LAN Rx error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformHwSetComd=new Array
+(
+"comd",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormVpnSetup21=new Array
+(
+"Get Lan Mask Error",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTcpipSetup28=new Array
+(
+"Get subnet-mask error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormL2TPSetup15=new Array
+(
+"Set PPP user password MIB error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformPortFwErrNoIp=new Array
+(
+"Error! No ip address to set.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformTriggerPort2=new Array
+(
+"Error! Invalid value of trigger to-port.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformTriggerPortErrAdd=new Array
+(
+"Cannot add new entry because table is full!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormPreventionSetup8=new Array
+(
+"Set Items of Port Scan failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspDumpIpsecTunnel11=new Array
+(
+"rt_gwAddr=%s",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspCheckDupEntry1=new Array
+(
+"Get Mib ipsec tunnel error",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormDDNSSetup5=new Array
+(
+"Set DDNS user password MIB error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWanTcpipSetup6=new Array
+(
+"Get DNS3 MIB error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformTriggerPort3=new Array
+(
+"Error! Invalid trigger port range.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormL2TPSetup7=new Array
+(
+"Set MTU failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTimeZoneSetup10=new Array
+(
+"Set End Month failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformStatsErrWanId=new Array
+(
+"Set WISP WAN Id error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormAdvanceSetup15=new Array
+(
+"Set fix rate failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformVirtualSvInvIp=new Array
+(
+"Invalid IP address! It should be set within the current subnet.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformDebugShSavelog=new Array
+(
+"/bin/savelog.sh",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormPreventionSetup7=new Array
+(
+"Set burst of Ping of Death  failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTcpipSetup35=new Array
+(
+"Invalid DHCP client range!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormAdvanceSetup1=new Array
+(
+"Error! Invalid authentication value.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformVirtualSvErrNoPrivate=new Array
+(
+"Error! No private-port value to be set.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormDDNSSetup10=new Array
+(
+"Set AUTHP1 MIB error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformQoSErrGetNum=new Array
+(
+"Get entry number error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlEncrypt5=new Array
+(
+"Set WEP MIB error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformTriggerPortInvPortTypeEmpty=new Array
+(
+"Error! incoming-port protocol type cannot be empty.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormVpnSetup22=new Array
+(
+"Invalid Local Site IP address! It should be set within the current subnet.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlSiteSurvey7=new Array
+(
+"Set MIB_AP_MODE failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTimeZoneSetup8=new Array
+(
+"Set Start Day failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTcpipSetup14=new Array
+(
+"Set IP Disabled mib error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformUploadType=new Array
+(
+"Content-Type: application/octet-stream;",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspDumpIpsecTunnel7=new Array
+(
+"Remote Info",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformFilterInvIpSubnet=new Array
+(
+"Invalid IP address! It should be set within the current subnet.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormDynIpSetup1=new Array
+(
+"Set Wan Mode error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformUSBStorageSh=new Array
+(
+"/bin/storage.sh",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlAc8=new Array
+(
+"Delete all table error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormUPNPSetup2=new Array
+(
+"Set UPnP failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspKernelRouteList2=new Array
+(
+"Unsuported kernel route format",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspShowHelp3=new Array
+(
+"usage: mgbin -o outputfile -u upgradefile bootcode config linux",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormRoute4=new Array
+(
+"Set RIP LAN Tx error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormPPTPSetup1=new Array
+(
+"Set PPTP user name MIB error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformUploadHttp10=new Array
+(
+"HTTP/1.0 200 OK",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformQoSInvEditOther=new Array
+(
+"Other entry can\'t edit!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTcpipSetup23=new Array
+(
+"Invalid IP-address value!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt21=new Array
+(
+"Set MIB_STA_WPA_CIPHER_SUITE failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlSiteSurvey1=new Array
+(
+"Site-survey request failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlanSetup14=new Array
+(
+"Set auto MAC Clone failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformHwSetNic0=new Array
+(
+"flash set HW_NIC0_ADDR %s",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformDebugError=new Array
+(
+"ERROR: Invalid value of Command !",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspCheckDupEntry4=new Array
+(
+"Error :Duplicate Local and Remote Setting with Tunnel %d",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformTriggerPortErrGetNum=new Array
+(
+"Get entry number error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspMain8=new Array
+(
+"allocate buffer failed %d!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTimeZoneSetup9=new Array
+(
+"Error! Invalid value of End Month.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormVpnSetup1=new Array
+(
+"Error! Connection Name length too long.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt39=new Array
+(
+"Set MIB_ADHOC_SEC_MODE error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormReManagementSetup2=new Array
+(
+"Set Port Number failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlanSetup5=new Array
+(
+"Set band error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormAdvanceSetup35=new Array
+(
+"Set CTS Protection failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformHwSetNic1=new Array
+(
+"flash set HW_NIC1_ADDR %s",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformTriggerPortErrDelAll=new Array
+(
+"Delete all table error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStcIpSetup3=new Array
+(
+"Get DNS1 MIB error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformUploadFound=new Array
+(
+"Found CSYS image in %lx, Len = %lx",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormVpnSetup20=new Array
+(
+"Get Lan Ip Error",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormL2TPSetup6=new Array
+(
+"Error! Invalid value of MTU.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformUrlbErrDelTbl=new Array
+(
+"Delete table entry error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformDdnsErrFlag=new Array
+(
+"Set enabled flag error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspContinueApply=new Array
+(
+"You may press CONTINUE button to continue configuring other settings or press APPLY button to restart the system for changes to take effect",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlEncrypt1=new Array
+(
+"Error! no encryption method.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformPortFwErrPortTo=new Array
+(
+"Error! Invalid value of to-port.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormAdvanceSetup24=new Array
+(
+"Set MIB_WLAN_IAPP_DISABLED failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformUploadUpsuccess=new Array
+(
+"Update successfully (size = %d bytes)!<br><br>Please wait a while for rebooting...",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormVpnSetup9=new Array
+(
+"Error! Authentication Key length too long.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlanSetup25=new Array
+(
+"Set MIB_WL_LINKMAC2 mib error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformFilterErrCmtLong=new Array
+(
+"Error! Comment length too long.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformTriggerPort1=new Array
+(
+"Error! Invalid value of trigger from-port.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformFilterInvIpType=new Array
+(
+"Invalid IP address! It should be %d.%d.%d.%d.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlanSetup9=new Array
+(
+"Set MIB_SECURITY_MODE error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWanTcpipSetup5=new Array
+(
+"Get DNS2 MIB error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformStatsErrRep=new Array
+(
+"Set Universal Repeater Mode error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormVpnSetup14=new Array
+(
+"Add table entry error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformSaveConfigFlash=new Array
+(
+"/bin/flash default",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt28=new Array
+(
+"Set MIB_STA_EAP_TYPE error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlSiteSurvey8=new Array
+(
+"Join request failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormL2TPSetup12=new Array
+(
+"Connect to server failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspMain18=new Array
+(
+"Upgrade file %s ok, size=%d (need not pending)",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspDumpIpsecTunnel17=new Array
+(
+"ikeEncr =%d",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformTriggerPortErrPtcTypeEmpty=new Array
+(
+"Error! trigger-port protocol type cannot be empty.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormAdvanceSetup12=new Array
+(
+"Error! Invalid WMM value.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWanTcpipSetup1=new Array
+(
+"Error! Invalid TTL value.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormDDNSSetup3=new Array
+(
+"Set DDNS user name MIB error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformQoSErrPortDstFr=new Array
+(
+"Error! Invalid value of destination form-port.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformConnectShInit=new Array
+(
+"/bin/init.sh gw all",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformSecLogCache=new Array
+(
+"Cache-Control: no-cache",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspDumpIpsecTunnel12=new Array
+(
+"keymode=%d",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformFilterErrAddTbl=new Array
+(
+"Add table entry error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormPreventionSetup10=new Array
+(
+"Set packet of Sync Flood  failed!\"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormVpnConn5=new Array
+(
+"Set RSA file error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformTriggerPortErrDelTbl=new Array
+(
+"Delete table entry error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormPPTPSetup3=new Array
+(
+"Invalid PPTP type value!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformAcceptProcess=new Array
+(
+"killall processes",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormAdvanceSetup28=new Array
+(
+"Error! Invalid value of Basic Rates Mode.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormPPTPSetup7=new Array
+(
+"PPTP disconnected.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormDDNSSetup13=new Array
+(
+"Set AUTHQ2  MIB error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormL2TPSetup5=new Array
+(
+"Set L2TP user password MIB error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspMain6=new Array
+(
+"Create output file %s error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformUploadShReboot=new Array
+(
+"/bin/reboot.sh Reboot",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormVpnConn1=new Array
+(
+"Set enabled flag error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspDumpIpsecTunnel8=new Array
+(
+"rtType=%d",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTcpipSetup8=new Array
+(
+"ERROR: Unable to delete user account.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTcpipSetup18=new Array
+(
+"Set MIB_WLAN_MAC_ADDR mib error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspSaveSetSuccess=new Array
+(
+"Save setting successfully!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlSiteSurvey10=new Array
+(
+"Get Join result failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspMain13=new Array
+(
+"pending",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWanTcpipSetup7=new Array
+(
+"Get WAN DHCP MIB error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspDeleteDefaultRoute1=new Array
+(
+"Create socket error",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspMain12=new Array
+(
+"Write output file %s error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformQoSErrMacNo=new Array
+(
+"Error! No mac of source address to set.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformUploadUpfail=new Array
+(
+"upgrade fail: Invalid file format! ( %s should be %s )",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTcpipSetup27=new Array
+(
+"Set subnet-mask error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformFilterInvPortFr=new Array
+(
+"Error! Invalid value of from-port.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformPortFwErrAddTbl=new Array
+(
+"Add table entry error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormAdvanceSetup9=new Array
+(
+"Set TX power failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformDebugHttp10=new Array
+(
+"HTTP/1.0 200 OK",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormDDNSSetup12=new Array
+(
+"Set AUTHQ1 MIB error!\"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt32=new Array
+(
+"Set MIB_STA_EAP_ID error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormNatEnable=new Array
+(
+"Set Firewall Enable failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormVpnSetup2=new Array
+(
+"Error! Invalid value of tunnel id",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformQoSErrPortSrcTo=new Array
+(
+"Error! Invalid value of source to-port.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformConnectFailPptp=new Array
+(
+"PPTP disconnected.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTcpipSetup26=new Array
+(
+"Invalid subnet-mask value!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormL2TPSetup2=new Array
+(
+"Set L2TP Host Name MIB error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspAPPLY=new Array
+(
+"APPLY!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormPPTPSetup2=new Array
+(
+"Set PPTP user password MIB error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlEnable1=new Array
+(
+"Error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspGetConnName1=new Array
+(
+"ipsec auto --status | grep %s",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformDebugPragma=new Array
+(
+"Pragma: no-cache",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformUploadCache=new Array
+(
+"Cache-Control: no-cache",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformSaveConfigType=new Array
+(
+"Content-Type: application/octet-stream;",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormAdvanceSetup11=new Array
+(
+"Set hidden ssid failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformUploadReaderrorX=new Array
+(
+"Read image error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformPortFwErrPortRange=new Array
+(
+"Error! Invalid port range.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWanTcpipSetup8=new Array
+(
+"Invalid IP mode value!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformUrlbErrGetNum=new Array
+(
+"Get entry number error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformPortFwInvPortForm=new Array
+(
+"Error! Invalid value of from-port.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformDebugCache=new Array
+(
+"Cache-Control: no-cache",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformQoSInvAddEntry=new Array
+(
+"Cannot add new entry because table is full!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlEncrypt7=new Array
+(
+"No RS port number!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormL2TPSetup18=new Array
+(
+"Set PPP idle time MIB error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWdsEncrypt3=new Array
+(
+"Invalid wep key format value!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformUploadWritefailX=new Array
+(
+"File write failed.<br> ferror=%d locWrite=%d numLeft=%d numWrite=%d Size=%d bytes.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWanTcpipSetup4=new Array
+(
+"Get DNS MIB error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlanSetup12=new Array
+(
+"Set authentication failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormAdvanceSetup19=new Array
+(
+"Set Preamble failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlanSetup24=new Array
+(
+"Error! Invalid MAC2 address.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformStatsErrOp=new Array
+(
+"Set Opmode error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormAdvanceSetup3=new Array
+(
+"Set fragment threshold failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformHwSetReg=new Array
+(
+"flash set HW_REG_DOMAIN %s",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspCONTINUE=new Array
+(
+"CONTINUE!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlSiteSurvey6=new Array
+(
+"Connect failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformQoSErrDelAll=new Array
+(
+"Delete all table error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormPSSetup9=new Array
+(
+"Set PrinterServer Port2 Name error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormPreventionSetup3=new Array
+(
+"Set packet of Ping of Death  failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspsetUserProfileFailget=new Array
+(
+"Get user account MIB failed",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlAc3=new Array
+(
+"Error! Comment length too long.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTimeZoneSetup2=new Array
+(
+"Set Time Zone failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlSiteSurvey13=new Array
+(
+"Set Root AP SSID error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformQoSErrFlag=new Array
+(
+"Set enabled flag error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspDumpIpsecTunnel13=new Array
+(
+"espEncr=%d",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormAdvanceSetup13=new Array
+(
+"Set WMM failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormRoute16=new Array
+(
+"Set Route error",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormPSSetup3=new Array
+(
+"Error! Invalid PS_IPPEnable value.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformPortFwInvPtcType=new Array
+(
+"Error! Invalid protocol type.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspDumpIpsecTunnel5=new Array
+(
+"lc_ipAddr=%s",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt14=new Array
+(
+"Invalid wep-key2 value!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformUrlbErrGetTbl=new Array
+(
+"Get table entry error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlanSetup16=new Array
+(
+"Invalid channel number!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormL2TPSetup13=new Array
+(
+"L2TP disconnected.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormPreventionSetup6=new Array
+(
+"Error! Invalid value of burst of Ping of Death.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspDumpIpsecTunnel6=new Array
+(
+"lc_maskLen=%d",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTcpipSetup33=new Array
+(
+"Invalid DHCP client end address!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformFilterErrAdd=new Array
+(
+"Cannot add new entry because table is full!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlanSetup18=new Array
+(
+"Error! Invalid Wlan Mac address.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformUploadDisp=new Array
+(
+"Content-Disposition: attachment;filename=\"apcode.bin\" ",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormAdvanceSetup29=new Array
+(
+"Set Basic Rates Mode failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformSecLogHttp10=new Array
+(
+"HTTP/1.0 200 OK",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTcpipSetup9=new Array
+(
+"ERROR: Unable to save user configuration.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormVpnSetup16=new Array
+(
+"Get entry error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWanTcpipSetup3=new Array
+(
+"Invalid DNS mode value!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormL2TPSetup10=new Array
+(
+"Set L2TP idle time MIB error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformSaveConfigReloadSuccess=new Array
+(
+"Reload setting successfully!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt7=new Array
+(
+"Set WEP key type error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormRadiusl2=new Array
+(
+"Error! UserName length too long.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormAdvanceSetup8=new Array
+(
+"Error! Invalid value of TX power.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspMain5=new Array
+(
+"Invalid input file sequence!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformSecLogPragma=new Array
+(
+"Pragma: no-cache",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspMain14=new Array
+(
+"Error !!!, %s out of size",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStcIpSetup2=new Array
+(
+"Set DNS MIB error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlanSetup8=new Array
+(
+"Set MIB_WLAN_NETWORK_TYPE failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt27=new Array
+(
+"Set MIB_STA_ENRADIUS error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormRoute6=new Array
+(
+"Get entry number error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformPasswordSetupErrSetName=new Array
+(
+"ERROR: Set user name to MIB database failed.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspSetUniRepModeError=new Array
+(
+"Set Universal Repeater Mode error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormPPTPSetup4=new Array
+(
+"Set PPTP type MIB error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformTriggerPortInvPortRange=new Array
+(
+"Invalid port range! 1st port value should be less than 2nd value",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformFilterInvNoMac=new Array
+(
+"Error! Invalid MAC address.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormRoute10=new Array
+(
+"Set Route error",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspShowHelp1=new Array
+(
+"RTL8181 utility to merge binary.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormAdvanceSetup36=new Array
+(
+"Error! Invalid 11g Protection value.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormRoute8=new Array
+(
+"get entry error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormPSSetup2=new Array
+(
+"Set PrinterServer Enable/Disable failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformSysLogPragma=new Array
+(
+"Pragma: no-cache",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformUploadMismatch=new Array
+(
+"<b>Image checksum mismatched!, checksum=0x%x</b><br>",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlAc2=new Array
+(
+"Error! Invalid MAC address.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformVirtualSvErrAdd=new Array
+(
+"Add table entry error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformQoSErrLong=new Array
+(
+"Error! rule name length too long.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformFilterErrSetIpPub=new Array
+(
+"Setting public ip has overlapped with used ip address!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformUploadFormat=new Array
+(
+"numLeft=%d locWrite=%d Size=%d bytes.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformFilterErrSetFlag=new Array
+(
+"Set enabled flag error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformUploadReadError=new Array
+(
+"Read image header error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormPreventionSetup5=new Array
+(
+"Set time of Ping of Death error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformQoSOtherD=new Array
+(
+"Other entry can\'t delete!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformUploadWritefail=new Array
+(
+"File write failed.<br> locWrite=%d numLeft=%d numWrite=%d Size=%d bytes.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormRoute19=new Array
+(
+"Delete table entry error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspDeleteDefaultRoute2=new Array
+(
+"Delete route [ ] error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspWlSiteSurveyTbl2=new Array
+(
+"Get bssinfo failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspGetDefaultRoute=new Array
+(
+"Open /proc/net/route  file error.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformUploadUpfailX=new Array
+(
+"upgrade fail: Invalid file format! ( %s should be %s or %s )",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlanSetup15=new Array
+(
+"Set SSID error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormAdvanceSetup26=new Array
+(
+"Set MIB_WLAN_BLOCK_RELAY failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormVpnSetup12=new Array
+(
+"Cannot add new entry because table is full!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformVirtualSvErrPtcTypeEmpty=new Array
+(
+"Error! Protocol type cannot be empty.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformConnectFailDynIp=new Array
+(
+"Dynamic IP renew successfully.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTcpipSetup25=new Array
+(
+"Get IP-address error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformSysLogShSyslog=new Array
+(
+"/bin/syslog.sh clean",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormAdvanceSetup18=new Array
+(
+"Error! Invalid Preamble value.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformUploadOpenfail=new Array
+(
+"Open file failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformUrlbErrFlag=new Array
+(
+"Set enabled flag error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlEncrypt13=new Array
+(
+"RS password length too long!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformFilterErrPortFr=new Array
+(
+"Error! No from-port value to be set.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormWlanSetup17=new Array
+(
+"Set channel number error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformPasswordSetupGeterror=new Array
+(
+"ERROR: Get supervisor name MIB error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormTcpipSetup15=new Array
+(
+"Set STP mib error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformConnectFail=new Array
+(
+"Connect to server failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformVirtualSvErrGetTbl=new Array
+(
+"Get table entry error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormPreventionSetup2=new Array
+(
+"Error! Invalid value of packet of Ping of Death.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformSaveConfigUpSuccess=new Array
+(
+"Update successfully!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormStaEncrypt31=new Array
+(
+"Set MIB_STA_PROTOCOL error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormDDNSSetup1=new Array
+(
+"Set DDNS Enable failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormLicence1=new Array
+(
+" Set licence flag failed!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormAdvanceSetup2=new Array
+(
+"Error! Invalid value of fragment threshold.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformConnectShPptp=new Array
+(
+"/bin/pptp.sh connect",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspformQoSErrEditTbl=new Array
+(
+"Edit table entry error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspCheckDupEntry2=new Array
+(
+"Get Mib -ipsec tunnel entry %d error",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspFormDynIpSetup2=new Array
+(
+"Set AP Host Name MIB error!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspDumpIpsecTunnel15=new Array
+(
+"ConType=%d",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var apply1=new Array
+(
+"Apply",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ok1=new Array
+(
+"OK",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var continue1=new Array
+(
+"Continue",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var sysrst=new Array
+(
+"System Restarting! Please wait for a while !",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspApplyToReset=new Array
+(
+"Please press APPLY button to restart the system for changes to take effect.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var time_second=new Array
+(
+"Second",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var complete=new Array
+(
+"Complete",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspInvalidMaxDownBw=new Array
+(
+"Error! Invalid value of Max Download Bandwidth.",
+"Error! Invalid value of Max Download Bandwidth.",
+"Error! Invalid value of Max Download Bandwidth.",
+"Error! Invalid value of Max Download Bandwidth.",
+"Error! Invalid value of Max Download Bandwidth.",
+"Error! Invalid value of Max Download Bandwidth.",
+"Error! Invalid value of Max Download Bandwidth.",
+"Error! Invalid value of Max Download Bandwidth.",
+"Error! Invalid value of Max Download Bandwidth.",
+"Error! Invalid value of Max Download Bandwidth.",
+"Error! Invalid value of Max Download Bandwidth.",
+"Error! Invalid value of Max Download Bandwidth.",
+"",
+""
+);
+var aspInvalidMaxUpBw=new Array
+(
+"Error! Invalid value of Max Upload Bandwidth.",
+"Error! Invalid value of Max Upload Bandwidth.",
+"Error! Invalid value of Max Upload Bandwidth.",
+"Error! Invalid value of Max Upload Bandwidth.",
+"Error! Invalid value of Max Upload Bandwidth.",
+"Error! Invalid value of Max Upload Bandwidth.",
+"Error! Invalid value of Max Upload Bandwidth.",
+"Error! Invalid value of Max Upload Bandwidth.",
+"Error! Invalid value of Max Upload Bandwidth.",
+"Error! Invalid value of Max Upload Bandwidth.",
+"Error! Invalid value of Max Upload Bandwidth.",
+"Error! Invalid value of Max Upload Bandwidth.",
+"",
+""
+);

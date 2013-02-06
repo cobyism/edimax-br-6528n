@@ -1,0 +1,4 @@
+#/bin/sh
+set -e
+./PREPARE.sh
+./COMPILING-SCRIPT.sh	BR6258GN	EdimaxOBM	GPL_1.10	RTL8196C_1200

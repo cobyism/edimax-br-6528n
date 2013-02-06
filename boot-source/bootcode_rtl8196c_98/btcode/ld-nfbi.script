@@ -1,0 +1,40 @@
+OUTPUT_ARCH(mips)
+ENTRY(__start)
+SECTIONS
+{
+  /* Read-only sections, merged into text segment: */
+  . = 0x807f0000;
+  .init          : { *(.init)		} =0
+  .text      :
+  {
+    _ftext = . ;
+    *(.text)
+    *(.rodata)
+    *(.rodata1)
+    /* .gnu.warning sections are handled specially by elf32.em.  */
+    *(.gnu.warning)
+  } =0
+  .data    :
+  {
+    _fdata = . ;
+    *(.data)
+
+   /* Align the initial ramdisk image (INITRD) on page boundaries. */
+   . = ALIGN(4);
+   __boot_start = .;
+   *(.initrd)
+   __boot_end = .;
+   . = ALIGN(4);
+
+    CONSTRUCTORS
+  }
+  __bss_start = .;
+  _fbss = .;
+  .sbss      : { *(.sbss) *(.scommon) }
+  .bss   :
+  {
+   *(.bss)
+   *(COMMON)
+  }
+  __bss_end = .;
+}

@@ -1,0 +1,73 @@
+#!/bin/sh
+# Sample udhcpc renew script
+_MODEL_="`cat /web/FUNCTION_SCRIPT | grep \"^_MODEL_=\" | cut -f 2 -d \\\"`"
+_MODE_="`cat /web/FUNCTION_SCRIPT | grep \"^_MODE_=\" | cut -f 2 -d \\\"`"
+AP_MODE="`cat /var/flash.inc | grep \"^AP_MODE=\" | cut -f 2 -d =`"
+IP_ADDR="`cat /var/flash.inc | grep \"^IP_ADDR=\" | cut -f 2 -d \'`"
+
+
+echo "######## br0.bound ########"
+
+RESOLV_CONF="/etc/udhcpc/resolv.conf"
+[ -n "$broadcast" ] && BROADCAST="broadcast $broadcast"
+[ -n "$subnet" ] && NETMASK="netmask $subnet"
+
+if [ "$_MODE_" = "Customer" ]; then
+	#if [ "$AP_MODE" = "2" -a "$IP_ADDR" = "192.168.1.249" ] || [ "$AP_MODE" != "2" -a "$IP_ADDR" = "192.168.1.250" ]; then
+		tmp_ip_1="`echo $ip | cut -f 1 -d .`"
+		tmp_ip_2="`echo $ip | cut -f 2 -d .`"
+		tmp_ip_3="`echo $ip | cut -f 3 -d .`"
+		tmp_ip_4="`echo $IP_ADDR | cut -f 4 -d .`"
+		/sbin/ifconfig $interface ${tmp_ip_1}.${tmp_ip_2}.${tmp_ip_3}.${tmp_ip_4} $BROADCAST $NETMASK
+	#else
+	#	/sbin/ifconfig $interface $ip $BROADCAST $NETMASK
+	#fi
+else
+	/sbin/ifconfig $interface $ip $BROADCAST $NETMASK
+fi
+
+if [ "$router" ]
+then
+	echo "deleting routers"
+	while route del -net default gw 0.0.0.0 dev $interface
+	do :
+	done
+
+	for i in $router
+	do
+		route add -net default gw $i dev $interface
+	done
+fi
+
+if [ "$_MODE_" = "Customer" ]; then
+	if [ "$_MODEL_" = "BR6258GN" ]; then
+		echo "$ip rp.setup" > /etc/hosts
+	elif [ "$_MODEL_" = "BR6428GNL" ]; then
+		echo "$ip mf.setup" > /etc/hosts
+	fi
+	
+	if [ ! -f /tmp/now_is_router ]; then
+		echo -n > /etc/resolv.conf
+		[ -n "$domain" ] && echo domain $domain >> /etc/resolv.conf
+		
+		for i in $dns
+		do
+			echo adding dns $i
+			echo nameserver $i >> /etc/resolv.conf
+		done
+	fi
+	> /tmp/pci_lan_dhcp
+else
+	echo -n > $RESOLV_CONF
+	[ -n "$domain" ] && echo domain $domain >> $RESOLV_CONF
+	
+	for i in $dns
+	do
+		echo adding dns $i
+		echo nameserver $i >> $RESOLV_CONF
+	done
+	#cp $RESOLV_CONF /etc/resolv.conf
+	
+	# start 802.1x, and IAPP daemon
+	iappauth.sh br0
+fi

@@ -1,0 +1,3 @@
+if [ "$CONFIG_IPSEC_ALG" = "y" ]; then
+  tristate '        HMAC_MD5 auth algorithm (modular alg)' CONFIG_IPSEC_ALG_MD5
+fi

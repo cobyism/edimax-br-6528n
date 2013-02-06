@@ -1,0 +1,3 @@
+if [ "$CONFIG_IPSEC_ALG" = "y" ]; then
+  tristate '        CAST encryption algorithm' CONFIG_IPSEC_ALG_CAST
+fi

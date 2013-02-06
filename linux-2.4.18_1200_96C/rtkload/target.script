@@ -1,0 +1,27 @@
+/* ld.script
+ * 
+ * This file is subject to the terms and conditions of the GNU
+ * General Public License.  See the file "COPYING" in the main
+ * directory of this archive for more details.
+ *
+ * Copyright (C) 2000, Jay Carlson
+ */
+
+OUTPUT_FORMAT("elf32-littlemips")
+OUTPUT_ARCH(mips)
+
+/* Someday I'll figure out how this works */
+/* MEMORY { bootcode : ORIGIN = 0x80000000, LENGTH = 512 bytes } */
+/* MEMORY { nandjrom : ORIGIN = 0x80000200, LENGTH = 2M - 512 bytes } */
+/* MEMORY { ext2n    : ORIGIN = 0x80200000, LENGTH = 2M bytes } */
+
+SECTIONS
+{
+        . = 0x80000000 ;
+	BOOTCODE : { bootcode* }
+	NANDJROM : { nandrom* }
+	EXT2N	 : { ext2n* }
+
+}
+        
+        

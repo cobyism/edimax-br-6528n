@@ -1,0 +1,187 @@
+***************
+*** 174,180 ****
+  extern __inline__ void set_bit(int nr, volatile void * addr)
+  {
+  	int	mask;
+- 	int	*a = addr;
+  	__bi_flags;
+  
+  	a += nr >> 5;
+--- 202,208 ----
+  extern __inline__ void set_bit(int nr, volatile void * addr)
+  {
+  	int	mask;
++ 	volatile int	*a = addr;
+  	__bi_flags;
+  
+  	a += nr >> 5;
+***************
+*** 184,219 ****
+  	__bi_restore_flags(flags);
+  }
+  
+- extern __inline__ void clear_bit(int nr, volatile void * addr)
+  {
+  	int	mask;
+- 	int	*a = addr;
+- 	__bi_flags;
+  
+  	a += nr >> 5;
+  	mask = 1 << (nr & 0x1f);
+- 	__bi_save_and_cli(flags);
+- 	*a &= ~mask;
+- 	__bi_restore_flags(flags);
+  }
+  
+- extern __inline__ void change_bit(int nr, volatile void * addr)
+  {
+  	int	mask;
+- 	int	*a = addr;
+  	__bi_flags;
+  
+  	a += nr >> 5;
+  	mask = 1 << (nr & 0x1f);
+  	__bi_save_and_cli(flags);
+- 	*a ^= mask;
+  	__bi_restore_flags(flags);
+  }
+  
+  extern __inline__ int test_and_set_bit(int nr, volatile void * addr)
+  {
+  	int	mask, retval;
+- 	int	*a = addr;
+  	__bi_flags;
+  
+  	a += nr >> 5;
+--- 212,249 ----
+  	__bi_restore_flags(flags);
+  }
+  
++ extern __inline__ void __set_bit(int nr, volatile void * addr)
+  {
+  	int	mask;
++ 	volatile int	*a = addr;
+  
+  	a += nr >> 5;
+  	mask = 1 << (nr & 0x1f);
++ 	*a |= mask;
+  }
+  
++ extern __inline__ void clear_bit(int nr, volatile void * addr)
+  {
+  	int	mask;
++ 	volatile int	*a = addr;
+  	__bi_flags;
+  
+  	a += nr >> 5;
+  	mask = 1 << (nr & 0x1f);
+  	__bi_save_and_cli(flags);
++ 	*a &= ~mask;
+  	__bi_restore_flags(flags);
+  }
+  
++ /*
++  * It will also imply a memory barrier, thus it must clobber memory
++  * to make sure to reload anything that was cached into registers
++  * outside _this_ critical section.
++  */
+  extern __inline__ int test_and_set_bit(int nr, volatile void * addr)
+  {
+  	int	mask, retval;
++ 	volatile int	*a = addr;
+  	__bi_flags;
+  
+  	a += nr >> 5;
+***************
+*** 226,235 ****
+  	return retval;
+  }
+  
+  extern __inline__ int test_and_clear_bit(int nr, volatile void * addr)
+  {
+  	int	mask, retval;
+- 	int	*a = addr;
+  	__bi_flags;
+  
+  	a += nr >> 5;
+--- 256,278 ----
+  	return retval;
+  }
+  
++ extern __inline__ int __test_and_set_bit(int nr, volatile void * addr)
++ {
++ 	int mask, retval;
++ 	volatile int *a = addr;
++ 
++ 	a += nr >> 5;
++ 	mask = 1 << (nr & 0x1f);
++ 	retval = (mask & *a) != 0;
++ 	*a |= mask;
++ 
++ 	return retval;
++ }
++ 
+  extern __inline__ int test_and_clear_bit(int nr, volatile void * addr)
+  {
+  	int	mask, retval;
++ 	volatile int	*a = addr;
+  	__bi_flags;
+  
+  	a += nr >> 5;
+***************
+*** 242,251 ****
+  	return retval;
+  }
+  
+  extern __inline__ int test_and_change_bit(int nr, volatile void * addr)
+  {
+  	int	mask, retval;
+- 	int	*a = addr;
+  	__bi_flags;
+  
+  	a += nr >> 5;
+--- 285,307 ----
+  	return retval;
+  }
+  
++ extern __inline__ int __test_and_clear_bit(int nr, volatile void * addr)
++ {
++ 	int	mask, retval;
++ 	volatile int	*a = addr;
++ 
++ 	a += nr >> 5;
++ 	mask = 1 << (nr & 0x1f);
++ 	retval = (mask & *a) != 0;
++ 	*a &= ~mask;
++ 
++ 	return retval;
++ }
++ 
+  extern __inline__ int test_and_change_bit(int nr, volatile void * addr)
+  {
+  	int	mask, retval;
++ 	volatile int	*a = addr;
+  	__bi_flags;
+  
+  	a += nr >> 5;
+***************
+*** 259,267 ****
+  }
+  
+  #undef __bi_flags
+- #undef __bi_cli()
+- #undef __bi_save_flags(x)
+- #undef __bi_restore_flags(x)
+  
+  #endif /* MIPS I */
+  
+--- 315,323 ----
+  }
+  
+  #undef __bi_flags
++ #undef __bi_cli
++ #undef __bi_save_flags
++ #undef __bi_restore_flags
+  
+  #endif /* MIPS I */
+  

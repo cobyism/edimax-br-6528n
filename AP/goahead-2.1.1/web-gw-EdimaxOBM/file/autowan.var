@@ -1,0 +1,1128 @@
+﻿var ChekError=new Array
+(
+"Check Error!",
+"Überprüfen Sie den Fehler!",
+"¡Error de comprobación!",
+"Erreur de contrôle!",
+"Controlla errore!",
+"Controleer fout!",
+"Verificar erro!",
+"Zkontrolujte chybu!",
+"Błąd kontroli!",
+"Verificare eroare!",
+"Проверьте ошибку!",
+"Chyba kontroly!",
+"檢查錯誤！",
+"检查错误！",
+"Kontrollér fejl!",
+"Kontrollera fel",
+"A kapcsolódás sikertelen!",
+"Hata Kontrol!",
+"Kiểm tra lỗi"
+);
+var TryitAgain=new Array
+(
+"Try it again",
+"Versuchen Sie es noch einmal",
+"Intente de nuevo",
+"Réessayer",
+"Riprova",
+"Probeer het opnieuw",
+"Tente novamente",
+"Zkuste znovu",
+"Spróbuj ponownie",
+"Încercaţi din nou",
+"Попробуйте снова",
+"Skúste to znova",
+"再試一次",
+"再试一次",
+"Prøv igen",
+"Försök igen",
+"Próbálja újra.",
+"Tekrar deneyin",
+"Thử lại lần nữa"
+);
+var ReEnter=new Array
+(
+"Re-enter",
+"Geben Sie noch einmal ein",
+"Re-introducir",
+"Saisir à nouveau",
+"Reinserisci",
+"Opnieuw invoeren a.u.b.",
+"Introduza novamente",
+"Zadejte znovu",
+"Wpisz ponownie",
+"Reintroducere",
+"Повторный ввод",
+"Opätovne zadajte",
+"重新輸入",
+"重新输入",
+"Indtast igen",
+"Mata in igen",
+"Adja meg újra",
+"Tekrar giriş",
+"Nhập lại"
+);
+var CheckingInternet=new Array
+(
+"Checking Internet connection",
+"Internetverbindung wird überprüft",
+"Comprobando conexión de Internet",
+"Contrôle de connexion Internet",
+"Controllo della connessione Internet",
+"Controleren van internetverbinding",
+"A verificar a ligação à Internet",
+"Kontrola připojení k internetu",
+"Sprawdzanie połączenia internetowego",
+"Verificare conexiune Internet",
+"Проверка интернет соединения",
+"Kontroluje sa pripojenie k internetu",
+"檢查Internet連接狀態",
+"检查Internet连接状态",
+"Kontrollerer internetforbindelse",
+"Kontrollera Internet-anslutning",
+"Internet kapcsolat ellenőrzése",
+"Internet bağlantısı kontrol ediliyor",
+"Kiểm tra kết nối Internet"
+);
+var PleaseCheck=new Array
+(
+"Please Check your Internet cable connections!",
+"Überprüfen Sie bitte Ihre Internetkabelverbindungen!",
+"¡Compruebe sus conexiones a Internet por cable!",
+"Veuillez contrôler les connexions du câble Internet!",
+"Controllare i collegamenti dei cavi Internet!",
+"Controleer a.u.b. uw internetkabelverbindingen",
+"Verifique as ligações do cabo da Internet!",
+"Zkontrolujte kabel pro připojení k internetu!",
+"Sprawdź połączenie przewodowe z Internetem!",
+"Vă rugăm să verificaţi conexiunile calului de internet!",
+"Пожалуйста, проверьте ваше кабельное интернет соединение",
+"Skontrolujte káblové pripojenia k internetu!",
+"請檢查您的Internet連接線！",
+"请检查您的Internet连接线！",
+"Kontrollér venligst dine internetkabelforbindelser!",
+"Kontrollera din Internet-anslutningskabel!",
+"Ellenőrizze az internet kábel csatlakozást.",
+"Lütfen Internet bağlanto kablonuzu kontrol edin",
+"Vui lòng kiểm tra cáp kết nối Internet"
+);
+var PleaseSelect=new Array
+(
+"Please select and configure your Internet connect type",
+"Wählen und konfigurieren Sie bitte Ihren Internetverbindungstyp",
+"Seleccione y configure su tipo de conexión a Internet",
+"Veuillez choisir et configurer votre type de connexion Internet",
+"Selezionare e configurare il proprio tipo di connessione Internet",
+"Selecteer en configureer uw verbindingstype",
+"Seleccione e configure o seu tipo de ligação à Internet",
+"Prosím vyberte a nakonfigurujte váš typ připojení k internetu",
+"Wybierz i skonfiguruj typ połączenia internetowego",
+"Vă rugăm să selectaţi şi să configuraţi tipul de conexiune la internet",
+"Пожалуйста, выберите тип вашего интернет соединения и настройте его",
+"Vyberte a nakonfigurujte svoj typ pripojenia k internetu",
+"請選擇您的Internet連接類型",
+"请选择您的Internet连接类型",
+"Venligst vælg og konfigurer din internettilslutningstype",
+"Välj och konfigurera din Internetanslutningstyp",
+"Válassza ki és konfigurálja a megfelelő kapcsolati típust.",
+"Lütfen Internet bağlantı tipinizi seçin ve yeniden konfigüre edin",
+"Vui lòng chọn và cấu hình dạng kết nối Internet"
+);
+var detectDynamic=new Array
+(
+"Select \"Dynamic IP\" if your Internet service provider gives you IP address automatically(e.g. cable Internet providers).",
+"Wählen Sie \"Dynamic IP\", wenn Ihr Internet Service Provider Ihnen automatisch eine IP-Adresse gibt (z.B. Kabelinternet Provider)",
+"Seleccione “IP dinámica” si su proveedor de servicios a Internet le ofrece una dirección IP automáticamente (por ejemplo, proveedores de Internet por cable)",
+"Sélectionner \"IP dynamique\" si votre FAI vous attribue automatiquement une adresse IP (par ex. FAI câble).",
+"Selezionare \"IP dinamico\" se il proprio Internet service fornisce l'indirizzo IP automaticamente (es. provider di Internet via cavo).",
+"Selecteer \"Dynamisch IP\" als uw internetprovider u automatisch een IP-adres toewijst (bv. kabelinternetproviders).",
+"Seleccione \"IP dinâmico\" se o seu fornecedor de serviços Internet lhe fornecer um endereço IP automaticamente (por exemplo, fornecedores de cabo Internet).",
+"Zvolte položku „Dynamic IP” (Dynamická adresa IP), pokud vám váš poskytovatel připojení k internetu poskytuje adresu IP automaticky (např. poskytovatelé kabelového připojení k internetu).",
+"Wybierz \"Dynamiczny IP\", jeśli dostawca usług internetowych automatycznie przydziela Ci adres IP (np. dostawcy Internetu w sieci kablowej).",
+"Selectaţi „IP dinamic\" în cazul în care furnizorul de servicii internet vă alocă automat o adresă IP (ex. furnizorii de internet prin cablu).",
+"Выберите \"Динамический IP\", если ваш провайдер предоставляет вам IP адрес автоматически  (например, кабельный интернет провайдер).",
+"Vyberte položku „Dynamická adresa IP“, ak vám váš poskytovateľ internetovej služby automaticky priradí IP adresu (napr. poskytovatelia káblového internetu).",
+"如果您的ISP業者提供自動分配IP位址，請選擇“動態IP“。",
+"如果您的ISP运行商提供自动分配IP地址，请选择“动态IP“。",
+"Vælg \"Dynamic IP\" hvis din internetserviceudbyder automatisk giver dig en IP adresse(fx. kabelinternetudbydere).",
+"Välj \"Dynamisk IP\" om din Internet-leverantör ger dig IP-adress automatiskt (t.ex. Internet-leverantörer via kabel).",
+"Automatikus IP-cím kiosztás esetén válassza a \"Dynamic IP\" opciót. (pl.: kábel-szolgáltatás)",
+"Internet servis sağlayıcınız size otomatik olarak IP numarası veriyorsa\"Dynamic IP\" seçeneğini seçin.(Örnek: Kablo internet sağlayıcıları)",
+"Chọn \"Dynamic IP\" nếu nhà cung cấp dịch vụ internet cấp cho bạn địa chỉ IP động (ví dụ: truyền hình cáp)"
+);
+var detectStatic=new Array
+(
+"Select \"Static IP\" if your Internet service provider has given you a fixed IP address.",
+"Wählen Sie \"Static IP\", wenn Ihr Internet Service Provider Ihnen eine feste IP-Adresse gegeben hat.",
+"Seleccione “IP estática” si su proveedor de servicios a Internet le ofrece una dirección IP fija.",
+"Sélectionner \"IP statique\" si votre FAI vous a attribué une adresse IP fixe.",
+"Selezionare \"IP statico\" se l'Internet service provider ha fornito un indirizzo IP fisso.",
+"Selecteer \"Statisch IP\" als uw internet service provider u een vast IP-adres heeft toegewezen. ",
+"Seleccione \"IP estático\" se o seu fornecedor de serviços Internet lhe fornecer um endereço IP fixo.",
+"Zvolte položku „Static IP” (Statická adresa IP), pokud vám váš poskytovatel připojení k internetu přidělil pevnou adresu IP.",
+"Dostawca usług internetowych przydzielił Ci stały adres IP.",
+"Selectaţi  „IP static\" în cazul în care furnizorul de servicii internet vă alocă o adresă IP fixă.",
+"Выберите \"Статический IP\", если ваш провайдер предоставил вам фиксированный IP адрес.",
+"Vyberte položku „Statická adresa IP“, ak vám váš poskytovateľ internetovej služby pridelil fixnú IP adresu.",
+"如果您的ISP業者提供給你一個固定的IP位址，請選擇“靜態IP“。",
+"如果您的ISP运行商提供给你一个固定的IP地址，请选择“静态IP“。",
+"Vælg \"Static IP\" hvis din internetserviceudbyder har givet dig en bestemt IP adresse.",
+"Välj \"Static IP\"om din Internetleverantör har gett dig en fast IP-adress.",
+"Fix IP-címmel rendelkező internet kapcsolat beállításához válassza a \"Static IP\" funkciót.",
+"Iternet servis sağlayıcınız size sabit bir IP numarası veriyorsa \"Static IP\" seçeneğini seçin.",
+"Chọn \"Static IP\" nếu nhà cung cấp dịch vụ internet cấp cho bạn địa chỉ IP cố định"
+);
+var detectPPPoE=new Array
+(
+"Select \"PPPoE\" if you are using ADSL(username and password required).",
+"Wählen Sie \"PPPoE\", wenn Sie ADSL benutzen (Benutzername und Passwort erforderlich).",
+"Seleccione “PPPoE” si está utilizando ADSL (necesitará el nombre de usuario y la contraseña).",
+"Sélectionner \"PPPoE\" en cas d'utilisation de l'ADSL (nom d'utilisateur et mot de passe nécessaires).",
+"Selezionare \"PPPoE\" se si utilizza l'ADSL (sono richiesti nome utente e password).",
+"Selecteer \"PPPoE\" als u ADSL gebruikt (gebruikersnaam en wachtwoord vereist)",
+"Seleccione \"PPPoE\" se utilizar ADSL (é necessário introduzir o nome de utilizador e a palavra-passe).",
+"Zvolte položku „PPPoE”, pokud používáte ADSL (je vyžadováno uživatelské jméno a heslo).",
+"Wybierz \"PPPoE\", jeśli korzystasz z ADSL (wymagane nazwa użytkownika i hasło).",
+"Selectaţi „PPPoE\" în cazul în care folosiţi ADSL (nume de utilizator şi parola sunt necesare).",
+"Выберите \"PPPoE\", если ваш провайдер предоставляет PPPoE тип соединения (потребуется ввести имя пользователя и пароль).",
+"Vyberte položku „PPPoE“, ak používate ADSL (vyžaduje sa meno používateľa a heslo).",
+"如果您的ISP業者提供ADSL撥接，請選擇“PPPoE“。",
+"如果您的ISP运行商提供ADSL拨接，请选择“PPPoE“。",
+"Vælg \"PPPoE\" hvis du bruger ADSL(brugernavn og password er nødvendig).",
+"Välj \"PPPoE\" om du använder ADSL (användarnamn och lösenord krävs).",
+"ADSL kapcsolat megléte esetén válassza a \"PPPoE\" opciót.",
+"ADSL kullanıyorsanız \"PPPoE\" seçin.(Kullanıcı adı ve şifre gereklidir.)",
+"Chọn \"PPPoE\" nếu bạn sử dụng đường truyền ADSL (yêu cầu có thông tin tài khoản và mật khẩu)"
+);
+var detectPPTP=new Array
+(
+"If your PPTP service provider gives you dynamic IP addresses, select \"Obtain an IP address automatically\". If your IP address is fixed, input the one provided by your ISP(username and password required).",
+"Wenn Ihr PPTP Service Provider Ihnen dynamische IP-Adressen gibt, wählen Sie \"Obtain an IP address auotmatically (IP-Adresse automatisch erhalten)\". Wenn Ihre IP-Adresse fest ist, geben Sie diejenige ein, die Sie von Ihrem Internet Service Provider erhalten haben (Benutzername und Passwort erforderlich).",
+"Si su proveedor de servicios PPTP le ofrece una dirección IP dinámica, seleccione “Obtener una dirección IP automáticamente”. Si su dirección IP es fija, indique una suministrada por su ISP (necesitará el nombre de usuario y la contraseña).",
+"Si votre fournisseur PPTP vous attribue des adresses IP dynamiques, sélectionner \"Obtenir automatiquement une adresse IP\". Si votre adresse IP est fixe, saisir celle fournie par votre FAI (nom d'utilisateur et mot de passe nécessaires).",
+"Se il proprio PPTP service provider fornisce indirizzi IP dinamici, selezionare \"Ottieni un indirizzo IP automaticamente\". Se l'indirizzo IP è fisso, inserire quello fornito dal proprio ISP(sono richiesti nome utente e password).",
+"Als uw PPTP serviceprovider u een dynamisch IP adres heeft toegewezen, selecteer dan \"automatisch een IP-adres verkrijgen\". Als u een vast IP-adres heeft, voer dan het adres in dat u is toegewezen door uw ISP (gebruikersnaam en wachtwoord vereist). ",
+"Se o seu fornecedor de serviços PPTP lhe fornecer endereços IP dinâmicos, seleccione \"Obter um endereço IP automaticamente\". Se o seu endereço IP for fixo, introduza o endereço fornecido pelo seu ISP (é necessário introduzir o nome de utilizador e a palavra-passe).",
+"Pokud vám váš poskytovatel služby PPTP poskytuje dynamické adresy IP, zvolte položku „Obtain an IP address automatically” (Získat adresu IP automaticky). Pokud máte pevnou adresu IP, zadejte adresu, kterou jste získali od svého poskytovatele ISP (je vyžadováno uživatelské jméno a heslo).",
+"Jeśli dostawca usług PPTP przydziela Ci dynamiczne adresy IP, wybierz \"Uzyskaj adres IP automatycznie\". Jeśli masz stały adres IP, wpisz adres podany przez dostawcę usług (wymagane nazwa użytkownika i hasło)",
+"În cazul în care furnizorul de servicii PPTP vă oferă o adresă IP dinamică, selectaţi „Obţinere automată adresă IP\". În cazul în care adresa IP este fixă, introduceţi-o pe cea furnizată de ISP (nume de utilizator şi parola sunt necesare).",
+"Если ваш PPTP провайдер предоставляет IP адреса динамически, выберите опцию \"Получить IP адреса автоматически\". Если же IP адреса фиксированы, то введите эти адреса (предоставляются провайдером) в соответствующие поля (потребуется ввести имя пользователя и пароль).",
+"Ak vám váš poskytovateľ služby PPTP priradí dynamické IP adresy, vyberte položku „Automaticky získať IP adresu“. Ak je vaša IP adresa fixná, zadajte tú, ktorú vám poskytol ISP (vyžaduje sa meno používateľa a heslo).",
+"如果您的ISP業者提供PPTP撥接，請選擇“PPTP“。",
+"如果您的ISP运行商提供PPTP拨接，请选择“PPTP“。",
+"Hvis din PPTP serviceudbyder giver dig dynamiske IP adresser, vælg \"Obtain an IP address automatically\" (få automatisk en IP adresse). Hvis din IP adresse er fast, indtast den, du modtog fra dine internetserviceudbyder (brugernavn og password er nødvendig).",
+"Om din PPTP tjänsteleverantör ger dig dynamiska IP-adresser, välj \"Erhåll en IP-adress automatiskt\". Om din IP-adress är fast, ange den du fått från din Internetleverantör (användarnamn och lösenord krävs).",
+"PPTP internet kapcsolat esetén beállíthat automatikus \"Dynamic IP\" vagy Fix \"Static IP\" IP címet. Ezeken felül felhasználónév ill. jelszó megadása szükséges.",
+"PPTP servis sağlayıcınız size dinamik IP veriyorsa \" Otomatik IP adresi Edin.\" seçeneğini seçin. IP adresiniz sabit ise ISP tarafından size verilen IP' yi kullanın.(Şifre ve kullanıcı adı gerekli olabilir.)",
+"Trong trường hợp nhà cung cấp dịch vụ PPTP cấp cho bạn địa chỉ IP động, bạn chọn \"Obtain an IP address automatically\". Nếu bạn được cấp IP tĩnh, bạn hãy nhập vào thông tin được cấp bởi nhà cung cấp dịch vụ (yêu cầu có thông tvar in tài khoản và mật khẩu)"
+);
+var detectL2TP=new Array
+(
+"If your L2TP service provider gives you dynamic IP addresses, select \"Obtain an IP address automatically\". If your IP address is fixed, input the one provided by your ISP(username and password required).",
+"Wenn Ihr L2TP Service Provider Ihnen dynamische IP-Adressen gibt, wählen Sie \"Obtain an IP address auotmatically (IP-Adresse automatisch erhalten)\". Wenn Ihre IP-Adresse fest ist, geben Sie diejenige ein, die Sie von Ihrem Internet Service Provider erhalten haben (Benutzername und Passwort erforderlich)..",
+"Si su proveedor de servicios L2TP le ofrece una dirección IP dinámica, seleccione “Obtener una dirección IP automáticamente”. Si su dirección IP es fija, indique una suministrada por su ISP (necesitará el nombre de usuario y la contraseña).",
+"Si votre fournisseur L2TP vous attribue des adresses IP dynamiques, sélectionner \"Obtenir automatiquement une adresse IP\". Si votre adresse IP est fixe, saisir celle fournie par votre FAI (nom d'utilisateur et mot de passe nécessaires).",
+"Se il proprio L2TP service provider fornisce indirizzi IP dinamici, selezionare \"Ottieni un indirizzo IP automaticamente\". Se l'indirizzo IP è fisso, inserire quello fornito dal proprio ISP(sono richiesti nome utente e password).",
+"Als uw L2TP serviceprovider u een dynamische IP-adressen geeft, selecteer dan \"automatisch een IP-adres verkrijgen\". Als uw een vast IP-adres heeft, voer dan het adres is verkregen van uw provider (gebruikersnaam en wachtwoord vereist). ",
+"Se o seu fornecedor de serviços L2TP lhe fornecer endereços IP dinâmicos, seleccione \"Obter um endereço IP automaticamente\". Se o seu endereço IP for fixo, introduza o endereço fornecido pelo seu ISP (é necessário introduzir o nome de utilizador e a palavra-passe).",
+"Pokud vám váš poskytovatel služby L2TP poskytuje dynamické adresy IP, zvolte položku „Obtain an IP address automatically” (Získat adresu IP automaticky). Pokud máte pevnou adresu IP, zadejte adresu, kterou jste získali od svého poskytovatele ISP (je vyžadováno uživatelské jméno a heslo).",
+"Jeśli dostawca usług L2TP przydziela Ci dynamiczne adresy IP, wybierz \"Uzyskaj adres IP automatycznie\". Jeśli masz stały adres IP, wpisz adres podany przez dostawcę usług (wymagane nazwa użytkownika i hasło)",
+"În cazul în care furnizorul de servicii L2TP vă oferă o adresă IP dinamică, selectaţi „Obţinere automată adresă IP\". În cazul în care adresa IP este fixă, introduceţi-o pe cea furnizată de ISP (nume de utilizator şi parola sunt necesare).",
+"Если ваш L2TP провайдер предоставляет IP адреса динамически, выберите опцию \"Получить IP адреса автоматически\". Если же IP адреса фиксированы, то введите эти адреса (предоставляются провайдером) в соответствующие поля (потребуется ввести имя пользователя и пароль).",
+"Ak vám váš poskytovateľ služby L2TP priradí dynamické IP adresy, vyberte položku „Automaticky získať IP adresu“. Ak je vaša IP adresa fixná, zadajte tú, ktorú vám poskytol ISP (vyžaduje sa meno používateľa a heslo).",
+"如果您的ISP業者提供L2TP撥接，請選擇“L2TP“。",
+"如果您的ISP运行商提供L2TP拨接，请选择“L2TP“。",
+"Hvis din L2TP serviceudbyder giver dig dynamiske IP adresser, vælg \"Obtain an IP address automatically\" (få automatisk en IP adresse). Hvis din IP adresse er fast, indtast den, du modtog fra dine internetserviceudbyder (brugernavn og password er nødvendig).",
+"Om din L2TP tjänsteleverantör ger dig dynamiska IP-adresser, välj \"Erhåll en IP-adress automatiskt\". Om din IP-adress är fast, ange den du fått från din Internetleverantör (användarnamn och lösenord krävs).",
+"L2TP internet kapcsolat esetén beállíthat automatikus \"Dynamic IP\" vagy Fix \"Static IP\" IP címet. Ezeken felül felhasználónév ill. jelszó megadása szükséges.",
+"L2TP servis sağlayıcınız size dinamik IP veriyorsa \" Otomatik IP adresi Edin.\" seçeneğini seçin. IP adresiniz sabit ise ISP tarafından size verilen IP' yi kullanın.(Şifre ve kullanıcı adı gerekli olabilir.)",
+"Trong trường hợp nhà cung cấp dịch vụ L2TP cấp cho bạn địa chỉ IP động, bạn chọn \"Obtain an IP address automatically\". Nếu bạn được cấp IP tĩnh, bạn hãy nhập vào thông tin được cấp bởi nhà cung cấp dịch vụ (yêu cầu có thông tin tài khovar ản và mật khẩu)"
+);
+var ConfigureYourWireless=new Array
+(
+"Configure your wireless security settings",
+"Konfigurieren Sie Ihre Drahtlossicherheitseinstellungen",
+"Configure sus parámetros de seguridad inalámbrica",
+"Configurer vos paramètres de sécurité sans fil",
+"Configurare le impostazioni di sicurezza wireless",
+"Configureer uw draadloze instellingen",
+"Configure as suas definições de segurança sem fios",
+"Nakonfigurujte parametry zabezpečení vašeho bezdrátového připojení",
+"Skonfiguruj ustawienia zabezpieczeń sieci bezprzewodowej",
+"Configuraţi setările de securitate wireless",
+"Установите защиту вашей беспроводной сети",
+"Nakonfigurujte svoje nastavenia bezdrôtového zabezpečenia",
+"設定您的無線安全",
+"配置您的无线安全设置",
+"Konfigurér dine trådløse sikkerhedsindstillinger",
+"Konfigurera dina inställningar för trådlös säkerhet",
+"Konfigurálja a WiFi biztonsági beállításait",
+"Kablosuz güvenlik ayarlarınızı güncelleyin",
+"Cấu hình bảo mật mạng không dây"
+);
+var PleaseEnterYourWireless=new Array
+(
+"1.Please enter your wireless network name(SSID):",
+"1. Geben Sie bitte Ihren Drahtlosnetzwerknamen (SSID) ein:",
+"1. Indique el nombre de su red inalámbrica (SSID):",
+"1. Veuillez saisir votre nom de réseau sans fil (SSID):",
+"1.Inserire il nome della propria rete wireless(SSID):",
+"Voer a.u.b. uw draadloze netwerknaam in (SSID):",
+"1. Introduza o nome da sua rede sem fios (SSID):",
+"1. Zadejte prosím název vaší bezdrátové sítě (SSID):",
+"1. Wpisz nazwę swojej sieci bezprzewodowej (SSID):",
+"1.Vă rugăm să introduceţi numele de reţea wireless (SSID):",
+"1. Пожалуйста, введите имя вашей беспроводной сети (SSID):",
+"1. Zadajte názov svojej bezdrôtovej siete (SSID):",
+"1. 請輸入您的無線網路名稱（SSID）：",
+"1. 请输入您的无线网络名称（SSID）：",
+"1.Indtast venligst navnet på dit trådløse netværk (SSID):",
+"1. Ange ditt trådlösa nätverk (SSID):",
+"Adja meg vezeték-nélküli hálózatának azonosítóját (SSID)",
+"1.Lütfen kablosuz network ismini giriniz(SSID)",
+"1. Vui lòng đặt tên cho mạng không dây của bạn"
+);
+var PleaseEnterYourSecurity=new Array
+(
+"2.Please enter your security password:",
+"2. Geben Sie bitte Ihr Sicherheitspasswort ein:",
+"2. Indique su contraseña de seguridad:",
+"2. Veuillez saisir votre mot de passe de sécurité:",
+"2.Inserire la password di sicurezza:",
+"Voer uw beveiligingswachtwoord in:",
+"2. Introduza a sua palavra-passe de segurança:",
+"2. Zadejte prosím vaše bezpečnostní heslo:",
+"2. Wpisz hasło zabezpieczające:",
+"2.Vă rugăm să introduceţi parola de securitate:",
+"2. Пожалуйста, введите кодовое слово",
+"2. Zadajte svoje bezpečnostné heslo:",
+"2. 請輸入您的安全密碼：",
+"2. 请输入您的安全密码：",
+"2.Indtast venligst dit sikkerhedspassword:",
+"2. Ange ditt personliga lösenord:",
+"Adja meg a biztonsági jelszót",
+"2.Lütfen güvenlik şifrenizi giriniz",
+"2. Vui lòng đặt khóa bảo mật "
+);
+var YourConnectType=new Array
+(
+"Your connection type is PPPoE.",
+"Ihr Verbindungstyp ist PPPoE.",
+"Su tipo de conexión es PPPoE.",
+"Votre type de connexion est PPPoE.",
+"Il vostro tipo di connessione è PPPoE.",
+"Uw verbindingstype is PPPoE",
+"O seu tipo de ligação é PPPoE.",
+"Váš typ připojení je PPPoE.",
+"Twój typ połączenia to PPPoE.",
+"Tipul de conexiune este PPPoE.",
+"Ваш тип подключения - PPPoE",
+"Typ vášho pripojenia je PPPoE.",
+"您的連接類型是PPPoE協定。",
+"您的连接类型是PPPoE协议。",
+"Din tilslutningstype er PPPoE.",
+"Din anslutningstyp är PPPoE.",
+"A kapcsolat típusa PPPoe",
+"Bağlantı tipiniz PPPoE",
+"Dạng kết nối của bạn là PPPoE"
+);
+var PleaseEntertheUsername=new Array
+(
+"Please enter the username and password provided by your Internet service provider.",
+"Geben Sie bitte den Benutzernamen und das Passwort ein, das Sie vom Internet Service Provider erhalten haben.",
+"Indique el nombre de usuario y la contraseña suministrada por su proveedor de servicios a Internet.",
+"Veuillez saisir le nom d'utilisateur et le mot de passe fournis par votre FAI.",
+"Inserire il nome utente e la password forniti dal proprio Internet service provider.",
+"Voer a.u.b de gebruikersnaam en het wachtwoord in dat u heeft gekregen van uw internet service provider",
+"Introduza o seu nome de utilizador e a palavra-passe fornecidos pelo seu fornecedor de serviços de Internet.",
+"Zadejte prosím uživatelské jméno a heslo, které jste získali od svého poskytovatele připojení k internetu.",
+"Wpisz nazwę użytkownika i hasło przekazane przez dostawcę usług internetowych.",
+"Vă rugăm să introduceţi numele de utilizator şi parola puse la dispoziţie de furnizorul de servicii Internet.",
+"Пожалуйста, введите имя пользователя и пароль, предоставленные вашим провайдером.",
+"Zadajte názov používateľa a heslo, ktoré vám poskytol poskytovateľ internetovej služby.",
+"請輸入您的用戶名和密碼。",
+"请输入您的用户名和密码。",
+"Venligst indtast det brugernavn og password, som du modtog af din internetserviceudbyder.",
+"Fyll i användarnamn och lösenord som tillhandahålls av din Internet-leverantör.",
+"Állítsa be a szolgáltató általl megadott felhasználónevet ill. jelszót.",
+"Internet sağlayıcınız tarafından verilen kullanıcı ismini ve şifreyi giriniz.",
+"Vui lòng nhập vào thông tin tài khoản và mật khẩu được cấp bởi nhà cung cấp dịch vụ Internet"
+);
+var Congratulations=new Array
+(
+"Congratulations! You are connected to the Internet.",
+"Glückwunsch! Sie sind mit dem Internet verbunden.",
+"¡Felicidades! Se ha conectado a Internet.",
+"Félicitations! Vous êtes connecté à Internet.",
+"Congratulazioni! La connessione Internet è stata stabilita con successo.",
+"Gefeliciteerd! U heeft verbinding met het internet!",
+"Parabéns! Foi estabelecida ligação à Internet.",
+"Blahopřejeme! Jste připojeni k internetu.",
+"Gratulujemy! Jesteś połączony z Internetem!",
+"Felicitări! Sunteţi conectat la Internet.",
+"Поздравляем! Вы подключены к Интернету!",
+"Blahoželáme vám! Ste pripojení k internetu.",
+"恭喜！您已連接到Internet。",
+"恭喜！您已连接到Internet。",
+"Tillykke! Du er tilsluttet til internettet.",
+"Grattis! Du är ansluten till Internet.",
+"Gratulálunk! Sikeresen kapcsolódott az internetre.",
+"Tebrikler! Internet bağlantınız gerçekleşti",
+"Xin chúc mừng ! Bạn đã kết nối ra Internet"
+);
+var SetupWirelessSec=new Array
+(
+"Setup wireless security (recommended)",
+"Einrichtung der Drahtlossicherheit (empfohlen)",
+"Configuración de la seguridad inalámbrica (aconsejada)",
+"Configurer la sécurité sans fil (recommandé)",
+"Configurazione della sicurezza wireless (raccomandata)",
+"Instellen van draadloze beveiliging (aanbevolen)",
+"Configurar segurança sem fios (recomendada)",
+"Nastavení zabezpečení bezdrátového připojení (doporučeno)",
+"Skonfiguruj zabezpieczenia sieci bezprzewodowej (zalecane)",
+"Configurare securitate wireless (recomandat)",
+"Установите беспроводную защиту (рекомендуется)",
+"Nastavenie bezdrôtového zabezpečenia (odporúča sa)",
+"設置無線安全（建議）",
+"设置无线安全（推荐）",
+"Opsæt trådløs sikkerhed(anbefales)",
+"Ställ in trådlös säkerhet (rekommenderas)",
+"WiFi biztonsági beállítások konfigurálása (ajánlott)",
+"Kablosuz Güvenliği kurun (Önerilen)",
+"Cài đặt bảo mật không dây (đề xuất)"
+);
+var SetupWirelessSec1=new Array
+(
+"Setup wireless security",
+"Richten Sie die Drahtlossicherheit ein",
+"Configurar seguridad inalámbrica",
+"Configurer la sécurité sans fil",
+"Configurazione della sicurezza wireless",
+"Instellen draadloze beveiliging",
+"Configurar segurança sem fios",
+"Nastavení zabezpečení bezdrátového připojení",
+"Skonfiguruj zabezpieczenia sieci bezprzewodowej",
+"Configurare securitate wireless",
+"Установка беспроводной защиты",
+"Nastavenie bezdrôtového zabezpečenia",
+"設置無線安全",
+"设置无线安全",
+"Opsæt trådløs sikkerhed",
+"Ställ in trådlös säkerhet",
+"WiFi biztonsági beállítások elvégzése",
+"Kablosuz Güvenliği kurun",
+"Cài đặt bảo mật không dây"
+);
+var Exit=new Array
+(
+"Exit",
+"Beenden",
+"Salir",
+"Quitter",
+"Esci",
+"Exit",
+"Sair",
+"Konec",
+"Wyjdź",
+"Ieşire",
+"Выйти",
+"Ukončiť",
+"退出",
+"退出",
+"Afslut",
+"Avsluta",
+"Kilépés",
+"Çıkış",
+"Thoát"
+);
+var YouHaveSuccessfully=new Array
+(
+"You have successfully connected to the Internet. Do you want to set up your wireless security?",
+"Sie haben sich erfolgreich mit dem Internet verbunden. Möchten Sie Ihre Drahtlossicherheit einrichten?",
+"Se ha conectado correctamente a Internet. ¿Desea configurar su seguridad inalámbrica?",
+"La connexion à Internet a réussi. Voulez-vous configurer la sécurité sans fil?",
+"La connessione a Internet è stata stabilita con successo. Configurare la sicurezza wireless?",
+"De verbinding met het internet is geslaagd. Wilt u nu uw draadloze beveiliging instellen?",
+"A ligação à Internet foi estabelecida com sucesso. Pretende configurar a sua segurança sem fios?",
+"Úspěšně jste se připojili k internetu. Chcete nastavit zabezpečení vašeho bezdrátového připojení?",
+"Połączyłeś się z Internetem. Czy chcesz skonfigurować zabezpieczenia sieci bezprzewodowej?",
+"V-aţi conectat cu succes la Internet. Doriţi să configuraţi securitatea Internet?",
+"Вы успешно подключились к Интернету. Не хотите ли установить защиту вашей беспроводной сети!",
+"Úspešne ste sa pripojili k internetu. Chcete nastaviť svoje bezdrôtové zabezpečenie?",
+"您已成功連接到Internet。你想設定無線安全嗎？",
+"您已成功连接到Internet。你想设置无线安全吗？",
+"Du er nu tilsluttet til internettet. Ønsker du at opsætte din trådløse sikkerhed?",
+"Du är nu ansluten till Internet. Vill du ställa in din trådlösa säkerhet?",
+"Sikeresen kapcsolódott az internetre. Szeretné konfigurálni WiFi hálózatának biztonsági beállításait?",
+"Internet bağlantınız başarılı. Kablosuz güvenlik ayarlarını yapmak istermisiniz?",
+"Bạn đã kết nối ra Internet thành công. Bạn có muốn thiết lập bảo mật không dây hay không ?"
+);
+var Yes1=new Array
+(
+"Yes (recommended)",
+"Ja (empfohlen)",
+"Sí (aconsejado)",
+"Oui( recommandé)",
+"Sì (raccomandato)",
+"Ja (aanbevolen)",
+"Sim (recomendado)",
+"Ano (doporučeno)",
+"Tak (zalecane)",
+"Yes (recomandat)",
+"Да (рекомендуется)",
+"Áno (odporúča sa)",
+"是（建議）",
+"是（推荐）",
+"Ja (anbefales)",
+"Ja (rekommenderas)",
+"Igen (ajánlott)",
+"Evet(Önerilen)",
+"Có (đề xuất)"
+);
+var Yes2=new Array
+(
+"Yes",
+"Ja",
+"Sí",
+"Oui",
+"Sì   ",
+"Ja ",
+"Sim",
+"Ano",
+"Tak",
+"Da",
+"Да",
+"Áno",
+"是的",
+"是的",
+"Ja",
+"Ja",
+"Igen",
+"Evet",
+"Không"
+);
+var Askme=new Array
+(
+"Ask me later",
+"Später fragen",
+"Pregúnteme más tarde",
+"Me demander plus tard",
+"Chiedimelo dopo",
+"Vraag me later",
+"Perguntar mais tarde",
+"Dotažte se mě později",
+"Zapytaj później",
+"Întreabă-mă mai târziu",
+"Повторите вопрос позже",
+"Opýtať sa ma neskôr",
+"稍後再問我",
+"稍后再问我",
+"Spørg mig senere",
+"Fråga mig senare",
+"Kérdezzen rá később.",
+"Daha sonra sor",
+"Hãy hỏi lại sau"
+);
+var Nodonot=new Array
+(
+"No, do not ask me again",
+"Nein, nicht noch einmal fragen ",
+"No, no me lo pregunte de nuevo",
+"Non, ne plus me demander",
+"No, non chiedermelo più",
+"Nee, vraag me niet opnieuw",
+"Não perguntar novamente",
+"Ne, již se nedotazujte",
+"Nie, nie pytaj ponownie",
+"Nu, nu mă mai întreba din nou",
+"Нет, не повторяйте этот вопрос больше",
+"Opätovne sa nepýtať",
+"不要再問我",
+"不要再问我",
+"Nej spørg mig ikke igen",
+"Nej, fråga mig inte igen",
+"Nem, ne kérdezze többször.",
+"Tekrar sorma",
+"Không, đừng hỏi lại nữa"
+);
+var PleaseClickok=new Array
+(
+"Please, click \"OK\" to restart your router",
+"Klicken Sie bitte auf \"OK\", um Ihren Router neu zu starten.",
+"Pulse \"OK\" para reiniciar su enrutador",
+"Veuillez cliquer sur « OK » pour redémarrer votre routeur",
+"Fare clic su \"OK\" per riavviare il router",
+"Klik op \"OK\" om uw router te opnieuw op te starten",
+"Clique em \"OK\" para reiniciar o router",
+"Pro restart vašeho routeru stiskněte prosím \"OK\".",
+"Kliknij \"OK\", aby ponownie uruchomić router.",
+"Vă rugăm să faceţi clic pe „OK\" pentru a reporni routerul",
+"Нажмите «OK», чтобы перезапустить маршрутизатор",
+"Pre reštart vášho routera stlačte prosím \"OK\".",
+"請按\"確定\"重新啟動寬頻路由器",
+"请按\"确定\"重新启动宽带路由器",
+"Venligst klik på \"OK\" for at genstarte din router",
+"Klicka på \"OK\" för att starta om din router",
+"Kérem, kattintson az \"OK\" gombra a router újraindításához.",
+".Router’ınızı tekrar başlatmak için lütfen ‘’OK’’ ‘a basınız.",
+"vui lòng click ok để khởi động lại router"
+);
+var OK=new Array
+(
+"OK",
+"OK",
+"OK",
+"OK",
+"OK",
+"OK",
+"OK",
+"OK",
+"OK",
+"OK",
+"OK",
+"OK",
+"確定",
+"确定",
+"OK",
+"OK",
+"OK",
+"OK",
+" đồng ý"
+);
+var PerformIQ=new Array
+(
+"Perform iQ Setup",
+"iQ Setup ausführen",
+"Realizar configuración de iQ",
+"Configurer iQ",
+"Esegui iQ Setup",
+"Voer iQ setup uit",
+"Efectuar configuração de iQ",
+"Proveďte iQ (rychlé) nastavení",
+"Przeprowadź konfigurację iQ",
+"Efectuaţi configurarea iQ",
+"Сделайте iQ установку",
+"Vykonať inteligentné nastavenie",
+"執行iQ Setup自動安裝",
+"执行IQ安装程序自动安装",
+"Udfør iQ opsætning",
+"Utför iQ-inställning",
+"iQ beállítása",
+"iQ kurulumunu çalıştır",
+"Tiến hành cài đặt tính năng iQ"
+);
+var ConnectManaually=new Array
+(
+"Connect to the Internet manually",
+"Manuell mit dem Internet verbinden",
+"Conectar a Internet manualmente",
+"Connecter à Internet manuellement",
+"Connetti a Internet manualmente",
+"Maak handmatig verbinding met het internet",
+"Estabelecer ligação à Internet manualmente",
+"Připojte se k internetu ručně",
+"Połącz się z Internetem ręcznie",
+"Conectare manuală la Internet",
+"Подключитесь к Интернету вручную",
+"Pripojiť sa k internetu manuálne",
+"手動設定網路連線",
+"手动设置网络连接",
+"Tilslut manuelt til internettet",
+"Anslut till Internet manuellt",
+"Csatlakozás az internethez manuálisan",
+"Internete manuel bağlan",
+"Thiết lập cài đặt kết nối Internet"
+);
+var EdimaxAsDefault=new Array
+(
+"(\"Edimax\" as default)",
+"(\"Edimax\" als Standard)",
+"(\"Edimax\" por defecto)",
+"(\"Edimax\" par défaut)",
+"(\"Edimax\" come predefinito)",
+"(\"Edimax\" als standaard)",
+"(A predefinição é \"Edimax\")",
+"(\"Edimax\" jako výchozí)",
+"(domyślnie \"Edimax\")",
+"(„Edimax\" ca implicit)",
+"(по умолчанию \"Edimax\")",
+"(Predvolene „Edimax“)",
+"(預設為Edimax)",
+"(默认为Edimax)",
+"(\"Edimax\" som standard)",
+"(\"Edimax\" som standard)",
+"(\"Edimax\" alapértelmezés szerint)",
+"(varsayılan seçim \"Edimax\" )",
+"(Khai báo mặc định là “Edimax\")"
+);
+var Morethan8=new Array
+(
+"(more than 8 digits)",
+"(mehr als 8 Ziffern)",
+"(más de 8 dígitos)",
+"(au moins 8 chiffres)",
+"(più di 8 cifre)",
+"(meer dan 8 cijfers)",
+"(mais de 8 dígitos)",
+"(více než 8 číslic)",
+"(ponad 8 znaków)",
+"(mai mult de 8 caractere)",
+"(более 8 цифр)",
+"(viac ako 8 číslic)",
+"(至少8位元)",
+"(最少8位)",
+"(mere end 8 tegn)",
+"(mer än 8 siffror)",
+"(több mint 8 számjegy)",
+"(8 basamaktan fazla)",
+"(Tối thiểu là 08 ký tự khi khai báo)"
+);
+var Indexconnect=new Array
+(
+"You are not connected to the Internet",
+"Sie sind nicht mit dem Internet verbunden",
+"No está conectado a internet",
+"Vous n’êtes pas connecté à Internet",
+"Non sei connesso a Internet",
+"U hebt geen verbinding met het Internet",
+"Não está ligado à Internet",
+"Nejste připojeni k internetu",
+"Nie jesteś podłączony do Internetu",
+"Nu sunteţi conectat la Internet",
+"Вы НЕ подключены к Интернету",
+"Nie ste pripojení k internetu ",
+"您尚未與Internet連線",
+"您尚未与Internet连线",
+"Du er ikke tilsluttet til internettet",
+"Du är inte ansluten till Internet",
+"Ön nem csatlakozik az internethez",
+"İnternete bağlı değilsiniz",
+"Bạn không kết nối được đến Internet"
+);
+var UserName=new Array
+(
+"User Name",
+"Benutzername",
+"Nombre de usuario",
+"Nom d'utilisateur",
+"Nome Utente",
+"Gebruikersnaam",
+"Nome de utilizador",
+"Jméno uživatele",
+"Nome de utilizador",
+"Nume utilizator",
+"Имя пользователя",
+"Používateľské meno",
+"使用者名字",
+"使用者名字"
+);
+var DynamicIP=new Array
+(
+"Dynamic IP",
+"Dynamische IP",
+"Dirección IP dinámica",
+"IP dynamique",
+"IP dinamico",
+"Dynamisch IP",
+"IP dinâmico",
+"Dynamická IP",
+"IP dinâmico",
+"IP dinamic",
+"Динамический IP",
+"Dynamická adresa IP",
+"動態的 IP",
+"动态的 IP"
+);
+var Password=new Array
+(
+"Password",
+"Passwort",
+"Contraseña",
+"Mot de Passe",
+"Password",
+"Wachtwoord",
+"Palavra-passe",
+"Heslo",
+"Palavra-passe",
+"Parola",
+"Пароль",
+"Heslo",
+"密碼",
+"密码"
+);
+var NEXT=new Array
+(
+"NEXT",
+"WEITER",
+"SIGUIENTE",
+"SUIVANT",
+"AVANTI",
+"VOLGENDE",
+"NEXT (SEGUINTE)",
+"NEXT (Další)",
+"NEXT (SEGUINTE)",
+"URMATORUL",
+"Далее",
+"ĎALEJ",
+"下一個",
+"下一个"
+);
+var BACK=new Array
+(
+"BACK",
+"ZURÜCK",
+"ATRÁS",
+"Retour",
+"Indietro",
+"TERUG",
+"VOLTAR",
+"ZPĚT",
+"VOLTAR",
+"INAPOI",
+"Назад",
+"SPÄŤ",
+"返回",
+"返回"
+);
+var HostName=new Array
+(
+"Host Name",
+"Hostname",
+"Nombre host",
+"Nom de l'hôte",
+"Nome host",
+"Hostnaam",
+"Nome do anfitrião",
+"Název hostitelského PC",
+"Nome do anfitrião",
+"Host Name",
+"Имя хоста",
+"Názov hostiteľa",
+"主機名稱",
+"主机名"
+);
+var MACAddress=new Array
+(
+"MAC Address",
+"MAC-Adresse",
+"Dirección MAC",
+"Adresse MAC",
+"Indirizzo MAC",
+"MAC-adres",
+"Endereço MAC",
+"MAC adresa",
+"Endereço MAC",
+"Adresa MAC",
+"MAC адрес",
+"Adresa MAC",
+"MAC 地址",
+"MAC 地址"
+);
+var DNSAddess=new Array
+(
+"DNS Address",
+"DNS-Adresse",
+"Dirección DNS",
+"Adresse DNS",
+"Indirizzo DNS",
+"DNS-adres:",
+"Endereço de DNS",
+"Adresa DNS",
+"Endereço de DNS",
+"Adresa DNS",
+"DNS адрес",
+"Adresa DNS",
+"DNS 地址",
+"DNS 地址"
+);
+var PrimaryDNS=new Array
+(
+"Primary DNS",
+"Primäres DNS",
+"DNS primario",
+"DNS primaire",
+"DNS primario",
+"Primaire DNS",
+"DNS principal",
+"Primární DNS",
+"DNS principal",
+"Primary DNS",
+"Первичный DNS сервер",
+"Hlavný server DNS",
+"DNS 1",
+"DNS 1"
+);
+var SecondaryDNS=new Array
+(
+"Secondary DNS",
+"Sekundäres DNS",
+"DNS secundario",
+"DNS secondaire",
+"DNS secondario",
+"Tweede DNS",
+"DNS secundário",
+"Sekundární DNS",
+"DNS secundário",
+"Secondary DNS",
+"Вторичный DNS",
+"Sekundárny DNS",
+"DNS 2",
+"DNS 2"
+);
+var StaticIP=new Array
+(
+"Static IP",
+"Statische IP",
+"Dirección IP estática",
+"IP fixe",
+"IP statico",
+"Statisch IP",
+"IP Estático",
+"Statická IP",
+"IP Estático",
+"IP static",
+"Статический IP",
+"Statická adresa IP",
+"靜態 IP",
+"静态 IP"
+);
+var IPAddress=new Array
+(
+"IP Address",
+"IP-Adresse",
+"Dirección IP",
+"Adresse IP",
+"Indirizzo IP",
+"IP-adres",
+"Endereço IP",
+"IP adresa",
+"Endereço IP",
+"Adresa IP",
+"IP адрес",
+"IP adresa",
+"IP 位址",
+"IP 地址"
+);
+var SubnetMask=new Array
+(
+"Subnet Mask",
+"Subnetzmaske",
+"Máscara de subred",
+"Masque de sous-réseau",
+"Maschera Sottorete",
+"Subnetmasker",
+"Máscara de sub-rede",
+"Maska podsítě",
+"Máscara de sub-rede",
+"Subnet mask",
+"Маска сети",
+"Maska podsiete",
+"子網路遮罩",
+"子网掩码"
+);
+var TelBP=new Array
+(
+"Telstra Big Pond",
+"Telstra Big Pond",
+"Telstra Big Pond",
+"Telstra Big Pond",
+"Telstra Big Pond",
+"Telstra Big Pond",
+"Telstra Big Pond",
+"Telstra Big Pond",
+"Telstra Big Pond",
+"Telstra Big Pond",
+"Telstra Big Pond",
+"Telstra Big Pond",
+"Telstra Big Pond",
+"Telstra Big Pond"
+);
+var TelBPContentMain=new Array
+(
+"Telstra Big Pond is a Internet service is provided in Australia.",
+"Telstra Big Pond ist ein Internet Service Provider in Australien.",
+"Telstra Big Pond Es un servicio de Internet proporcionado en Australia.",
+"Telstra Big Pond est un service Internet fourni en Australie.",
+"Telstra Big Pond è un servizio Internet disponibile in Australia.",
+"Telstra Big Pond wordt geleverd in Australië.",
+"Telstra Big Pond é um serviço de Internet fornecido na Austrália.",
+"Telstra Big Pond je Internetová služba poskytovaná v Austrálii.",
+"Telstra Big Pond é um serviço de Internet fornecido na Austrália.",
+"Telstra Big Pond este un ISP din Australia.",
+"Telstra Big Pond - Австралийский провайдер.",
+"Telstra Big Pond je internetová služba poskytovaná v Austrálii.",
+"Telstra Big Pond is a Internet service is provided in Australia.",
+"Telstra Big Pond is a Internet service is provided in Australia."
+);
+var AssignLoginServerManually=new Array
+(
+"Assign login server manually",
+"Ordnen Sie den Login-Server manuell zu",
+"Asignar servidor de inicio de sesión manualmente",
+"Attribuer manuellement un identifiant de serveur",
+"Assegna manualmente il server di accesso",
+"De loginserver handmatig toekennen",
+"Atribuir servidor de inicio de sessão manualmente",
+"Přiřadit přihlašovací server ručně",
+"Atribuir servidor de inicio de sessão manualmente",
+"Asignati serverul de logare manual",
+"Ввести сервер вручную",
+"Prihlasovací server priradiť ručne",
+"手動指定登錄伺服器",
+"手动指定登录服务器"
+);var ServerIPAddress=new Array
+(
+"Server IP Address",
+"IP-Adresse des Servers",
+"Dirección IP del servidor",
+"Adresse IP Serveur",
+"Indirizzo IP del server",
+"IP-adres server",
+"Endereço IP do servidor",
+"IP adresa serveru",
+"Endereço IP do servidor",
+"Adresa IP server",
+"IP адрес сервера",
+"Adresa IP servera",
+"伺服器 IP 位址",
+"服务器 IP 地址"
+);
+var ObtainIPAddressAutomatically=new Array
+(
+"Obtain an IP Address Automatically",
+"Enthält automatisch eine IP-Adresse",
+"Obtener una dirección IP automáticamente",
+"Obtenir une adresse IP automatiquement",
+"Ottenere automaticamente l'indirizzo IP",
+"IP-adres automatisch verkrijgen",
+"Obter um endereço IP automaticamente",
+"Získat IP adresu automaticky",
+"Obter um endereço IP automaticamente",
+"Obtine adresa IP automat",
+"Получить IP адрес автоматически.",
+"Získať adresu IP automaticky",
+"自動取得 IP位址",
+"自动取得 IP地址"
+);
+var Enable=new Array
+(
+"Enable",
+"Aktivieren",
+"Habilitar",
+"Activer",
+"Attiva",
+"Inschakelen",
+"Activar",
+"Povolit",
+"Activar",
+"Activare",
+"Включить",
+"Povoliť",
+"啟用",
+"启用"
+);
+var Disable=new Array
+(
+"Disable",
+"Deaktivieren",
+"Deshabilitar",
+"Désactiver",
+"Disattiva",
+"Uitschakelen",
+"Desactivar",
+"Zakázat",
+"Desactivar",
+"Dezactiveaza",
+"Отключить",
+"Zakázať",
+"關閉",
+"关闭"
+);
+var Optional=new Array
+(
+"Optional",
+"Optional",
+"Opcional",
+"Facultatif",
+"Opzionale",
+"Niet verplicht",
+"Opcional",
+"Volitelné",
+"Opcional",
+"Optional",
+"Опционно",
+"Voliteľné",
+"可選擇的",
+"可选择的"
+);
+var UseFollowingIPAddress=new Array
+(
+"Use The Following IP Address",
+"Benutzen Sie die folgende IP-Adresse",
+"Usar la siguiente dirección IP",
+"Utiliser l'adresse IP suivante",
+"Utilizzare il seguente indirizzo IP",
+"Gebruik het volgende IP-adres",
+"Utilizar o seguinte endereço IP",
+"Použít následující IP adresu",
+"Utilizar o seguinte endereço IP",
+"Utilizeaza urmatoarea adresa IP",
+"Используйте следующий IP адрес",
+"Použiť tieto adresy IP",
+"使用下面的IP位址",
+"使用下列的 IP 地址"
+);
+var PPPoE=new Array
+(
+"PPPoE",
+"PPPoE",
+"PPPoE",
+"PPPoE",
+"PPPoE",
+"PPPoE",
+"PPPoE",
+"PPPoE",
+"PPPoE",
+"PPPoE",
+"PPPoE",
+"PPPoE",
+"PPPoE",
+"PPPoE"
+);
+var MTU=new Array
+(
+"MTU",
+"MTU",
+"MTU",
+"MTU",
+"MTU",
+"MTU",
+"MTU",
+"MTU",
+"MTU",
+"MTU",
+"MTU",
+"MTU",
+"MTU",
+"MTU"
+);
+var L2TP=new Array
+(
+"L2TP",
+"L2TP",
+"L2TP",
+"L2TP",
+"L2TP",
+"L2TP",
+"L2TP",
+"L2TP",
+"L2TP",
+"L2TP",
+"L2TP",
+"L2TP",
+"L2TP",
+"L2TP"
+);

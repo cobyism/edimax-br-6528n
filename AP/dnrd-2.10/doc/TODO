@@ -1,0 +1,6 @@
+What if started without a terminal in the first place?  Detect it and start
+syslogging right away.
+
+Several potential buffer overflows exist.  Fix them.
+
+Reproduce some of the examples found in INSTALL in the man page.

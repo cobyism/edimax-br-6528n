@@ -1,0 +1,167 @@
+CPU id = c601
+CPU revision is: 0000c601
+cpu type: 00000002
+Linux version 2.4.19-uc1 (root@rupertn) (gcc version 3.2.3) #53 Thu Dec 25 14:32:49 CST 2003
+On node 0 totalpages: 2048
+zone(0): 0 pages.
+zone(1): 2048 pages.
+zone(2): 0 pages.
+Calibrating delay loop... 8.57 BogoMIPS
+Memory: 6020k/8192k available (1121k kernel code, 2172k reserved, 248k data, 44k init, 0k highmem)
+Dentry cache hash table entries: 1024 (order: 1, 8192 bytes)
+Inode cache hash table entries: 512 (order: 0, 4096 bytes)
+Mount-cache hash table entries: 512 (order: 0, 4096 bytes)
+Buffer-cache hash table entries: 1024 (order: 0, 4096 bytes)
+Page-cache hash table entries: 2048 (order: 1, 8192 bytes)
+Checking for 'wait' instruction...  unavailable.
+POSIX conformance testing by UNIFIX
+Linux NET4.0 for Linux 2.4
+Based upon Swansea University Computer Society NET3.039
+Initializing RT netlink socket
+Starting kswapd
+pty: 256 Unix98 ptys configured
+Serial driver version 5.05c (2001-07-08) with no serial options enabled
+Blkmem copyright 1998,1999 D. Jeff Dionne
+Blkmem copyright 1998 Kenneth Albanowski
+Blkmem 1 disk images:
+0: 801BA930-801E512F [VIRTUAL 801BA930-801E512F] (RO)
+loop: loaded (max 8 devices)
+usb.c: registered new driver usbdevfs
+usb.c: registered new driver hub
+usb-ohci.c:USB HC reset_hc usb-: ctrl = 0x0 ;
+usb.c: new USB bus registered, assigned bus number 1
+fminterval 662187743 27782edf
+usb-ohci.c:roothub.portstatus [0] = 0x00010101 CSC PPS CCS
+usb-ohci.c:roothub.portstatus [0] = 0x00010101 CSC PPS CCS
+usb-ohci.c:roothub.portstatus [0] = 0x00010101 CSC PPS CCS
+usb-ohci.c:roothub.portstatus [0] = 0x00010101 CSC PPS CCS
+usb-ohci.c:roothub.portstatus [0] = 0x00010101 CSC PPS CCS
+usb.c:kmalloc IF 80239440, numif 1
+usb-ohci.c:roothub.portstatus [0] = 0x00010101 CSC PPS CCS
+usb.c:new device strings: Mfr=0, Product=2, SerialNumber=1
+usb-ohci.c:roothub.portstatus [0] = 0x00010101 CSC PPS CCS
+usb.c:USB device number 1 default language ID 0x0
+usb-ohci.c:roothub.portstatus [0] = 0x00010101 CSC PPS CCS
+Product: USB OHCI Root Hub
+usb-ohci.c:roothub.portstatus [0] = 0x00010101 CSC PPS CCS
+SerialNumber: bd000000
+hub.c: USB hub found
+usb-ohci.c:roothub.portstatus [0] = 0x00010101 CSC PPS CCS
+hub.c: 1 port detected
+hub.c:standalone hub
+hub.c:ganged power switching
+hub.c:no over-current protection
+hub.c:Port indicators are not supported
+hub.c:power on to power good time: 100ms
+hub.c:hub controller current requirement: 0mA
+hub.c:port removable status: F
+usb-ohci.c:roothub.portstatus [0] = 0x00010101 CSC PPS CCS
+hub.c:local power source is good
+hub.c:no over-current condition exists
+hub.c:enabling power on all ports
+usb-ohci.c:roothub.portstatus [0] = 0x00010101 CSC PPS CCS
+usb-ohci.c:roothub.portstatus [0] = 0x00010101 CSC PPS CCS
+hub.c:port 1, portstatus 101, change 1, 12 Mb/s
+hub.c:port 1 connection change
+hub.c:port 1, portstatus 101, change 1, 12 Mb/s
+usb-ohci.c:roothub.portstatus [0] = 0x00000101 PPS CCS
+usb-ohci.c:roothub.portstatus [0] = 0x00000101 PPS CCS
+hub.c:port 1, portstatus 101, change 0, 12 Mb/s
+usb-ohci.c:roothub.portstatus [0] = 0x00000101 PPS CCS
+hub.c:port 1, portstatus 101, change 0, 12 Mb/s
+usb-ohci.c:roothub.portstatus [0] = 0x00000101 PPS CCS
+hub.c:port 1, portstatus 101, change 0, 12 Mb/s
+usb-ohci.c:roothub.portstatus [0] = 0x00000101 PPS CCS
+hub.c:port 1, portstatus 101, change 0, 12 Mb/s
+usb-ohci.c:roothub.portstatus [0] = 0x00000111 PPS PRS CCS
+usb.c:hub driver claimed interface 80239440
+NET4: Linux TCP/IP 1.0 for NET4.0
+IP Protocols: ICMP, UDP, TCP
+IP: routing cache hash table of 512 buckets, 4Kbytes
+TCP: Hash tables configured (established 512 bind 1024)
+NET4: Unix domain sockets 1.0/SMP for Linux NET4.0.
+VFS: Mounted root (romfs filesystem) readonly.
+Freeing unused kernel memory: 44k freed
+usb-ohci.c:roothub.portstatus [0] = 0x00100103 PRSC PPS PES CCS
+hub.c:port 1, portstatus 103, change 10, 12 Mb/s
+usb-ohci.c:roothub.portstatus [0] = 0x00000103 PPS PES CCS
+hub.c: USB new device connect on bus1/1, assigned device number 2
+usb.c:kmalloc IF 80239980, numif 1
+usb.c:new device strings: Mfr=1, Product=2, SerialNumber=3
+Shellusb.c:USB device number 2 default language ID 0x409
+ invManufacturer: REALTEK
+oked to ruProduct: USB 10/100 LAN
+n file: /SerialNumber: 0489
+eusb.c:unhandled interfaces on device
+tusb.c: USB device 2 (vend/prod 0xbda/0x8150) is not claimed by any active driver.
+  Length              = 18
+  DescriptorType      = 01
+  USB version         = 1.10
+  Vendor:Product      = 0bda:8150
+  MaxPacketSize0      = 8
+  NumConfigurations   = 1
+  Device version      = 1.00
+  Device Class:SubClass:Protocol = 00:00:00
+    Per-interface classes
+Configuration:
+  bLength             =    9
+  bDescriptorType     =   02
+  wTotalLength        = 0027
+  bNumInterfaces      =   01
+c  bConfigurationValue =   01
+  iConfiguration      =   00
+  bmAttributes        =   a0
+  MaxPower            =  120mA
+
+  Interface: 0
+  Alternate Setting:  0
+    bLength             =    9
+    bDescriptorType     =   04
+    bInterfaceNumber    =   00
+    bAlternateSetting   =   00
+/    bNumEndpoints       =   03
+    bInterface Class:SubClass:Protocol =   00:00:00
+r    iInterface          =   00
+    Endpoint:
+      bLength             =    7
+      bDescriptorType     =   05
+      bEndpointAddress    =   81 (in)
+c      bmAttributes        =   02 (Bulk)
+      wMaxPacketSize      = 0040
+      bInterval           =   00
+    Endpoint:
+
+      bLength             =    7
+      bDescriptorType     =   05
+C      bEndpointAddress    =   02 (out)
+      bmAttributes        =   02 (Bulk)
+      wMaxPacketSize      = 0040
+      bInterval           =   00
+    Endpoint:
+      bLength             =    7
+o      bDescriptorType     =   05
+      bEndpointAddress    =   83 (in)
+      bmAttributes        =   03 (Interrupt)
+      wMaxPacketSize      = 0008
+      bInterval           =   01
+usb-ohci.c:roothub.portstatus [0] = 0x00000103 PPS PES CCS
+usb-ohci.c:roothub.portstatus [0] = 0x00000103 PPS PES CCS
+mhub.c:port 1, portstatus 103, change 0, 12 Mb/s
+usb-ohci.c:roothub.portstatus [0] = 0x00000103 PPS PES CCS
+mand: mount -t proc proc /proc
+Command: mount -t ramfs ramfs  /var
+Command: mkdir /var/tmp
+Command: mkdir /var/ppp/
+Command: mkdir /var/log
+Command: mkdir /var/run
+Command: mkdir /var/lock
+Command: /bin/webs start&
+/bin/webs: Bad command or file name
+
+sh 8: Child 9 died
+[9]
+Command: 
+Execution Finished, Exiting
+
+Sash command shell (version 1.1.1)
+/> 

@@ -1,0 +1,28 @@
+taiclock(1)                                                        taiclock(1)
+
+
+
+[1mNAME[0m
+       taiclock - check a system's clock through TAICLOCK
+
+[1mSYNOPSIS[0m
+       [1mtaiclock [4m[22mhost[0m
+
+[1mDESCRIPTION[0m
+       [1mtaiclock [22mconnects to a TAICLOCK server on [4mhost[24m.  [4mhost[24m must be a dotted-
+       decimal IP address.
+
+       [1mtaiclock [22mprints a 16-byte TAI64NA adjustment that, when  added  to  the
+       local  UNIX clock, will produce the TAI clock on [4mhost[24m.  [1mtaiclock [22mlimits
+       the adjustment to 2 days.
+
+[1mNOTES[0m
+       See [1mhttp://pobox.com/~djb/proto/taiclock.txt [22mfor a description  of  the
+       TAICLOCK protocol.
+
+[1mSEE ALSO[0m
+       clockspeed(1), clockadd(1), clockview(1), sntpclock(1), taiclockd(1)
+
+
+
+                                                                   taiclock(1)

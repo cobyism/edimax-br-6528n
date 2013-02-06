@@ -1,0 +1,26 @@
+taiclockd(1)                                                      taiclockd(1)
+
+
+
+[1mNAME[0m
+       taiclockd - announce the system's clock through TAICLOCK
+
+[1mSYNOPSIS[0m
+       [1mtaiclockd[0m
+
+[1mDESCRIPTION[0m
+       [1mtaiclockd [22mannounces the local UNIX clock through the TAICLOCK protocol.
+       It listens for TAICLOCK requests through UDP and responds with the sys-
+       tem's current time.
+
+       [1mDO   NOT  RUN  taiclockd  IF  YOUR  SYSTEM  IS  TUNED  BY  xntpd.   [22mSee
+       [1mhttp://pobox.com/~djb/proto/utctai.html [22mfor further discussion.
+
+       [1mtaiclockd [22mdoes not need to run as root.
+
+[1mSEE ALSO[0m
+       taiclock(1)
+
+
+
+                                                                  taiclockd(1)

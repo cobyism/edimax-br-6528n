@@ -1,0 +1,211 @@
+Change History
+==============
+
+* DATE/WHOM/TYPE:
+- 2010/07/02, victorlo, bug fix
+
+* DIGEST:
+- Add a set of BAR response method for compatibility (ex. WNDA3200)
+
+-----------------------------------------------------------------------------
+
+* DATE/WHOM/TYPE:
+- 2010/07/01, jimmylin, bug fix
+
+* DIGEST:
+- Fix not restricting HT capability in WPA/WPA2 mixed mode
+
+-----------------------------------------------------------------------------
+
+* DATE/WHOM/TYPE:
+- 2010/06/29, jimmylin, bug fix
+
+* DIGEST:
+- Fix client mode connection unstable issue
+
+-----------------------------------------------------------------------------
+
+* DATE/WHOM/TYPE:
+- 2010/06/28, jimmylin, new feature
+
+* DIGEST:
+- Add MP CTX of single carrier
+
+-----------------------------------------------------------------------------
+
+* DATE/WHOM/TYPE:
+- 2010/06/24, button, bug fix
+
+* DIGEST:
+- Fix link unstable for NDSi under WEP encryption
+
+-----------------------------------------------------------------------------
+
+* DATE/WHOM/TYPE:
+- 2010/06/23, jimmylin, new feature
+
+* DIGEST:
+- Decrease the number of proc files
+
+-----------------------------------------------------------------------------
+
+* DATE/WHOM/TYPE:
+- 2010/06/21, jimmylin, new feature
+
+* DIGEST:
+- Add external high power PA support
+
+-----------------------------------------------------------------------------
+
+* DATE/WHOM/TYPE:
+- 2010/06/18, victorlo, bug fix
+
+* DIGEST:
+- Fix WPA/WPA2 group key rekey fail under power save enabled
+
+-----------------------------------------------------------------------------
+
+* DATE/WHOM/TYPE:
+- 2010/06/18, jimmylin, bug fix
+
+* DIGEST:
+- Fix wrong sequence of beacon with broadcast bit set in DTIM field and
+  queued broadcast packets
+
+-----------------------------------------------------------------------------
+
+* DATE/WHOM/TYPE:
+- 2010/6/10, ericyeh, bug fixed
+
+* DIGEST:
+- Fix some connection fail under WEP shared key (ex. WNDA3100-v1)
+
+-----------------------------------------------------------------------------
+
+* DATE/WHOM/TYPE:
+- 2010/06/07, button, bug fix
+
+* DIGEST:
+- Modify initialization flow to improve stability
+
+-----------------------------------------------------------------------------
+
+* DATE/WHOM/TYPE:
+- 2010/05/31, jimmylin, bug fix
+
+* DIGEST:
+- Fix connection issue with iPhone 3GS
+
+-----------------------------------------------------------------------------
+
+* DATE/WHOM/TYPE:
+- 2010/05/24, jimmylin, bug fix
+
+* DIGEST:
+- Fix DTIM broadcast bit didn't be set if broadcast packets are queued in
+  MBSSID interfaces
+
+-----------------------------------------------------------------------------
+
+* DATE/WHOM/TYPE:
+- 2010/05/21, jimmylin, bug fix
+
+* DIGEST:
+- Fix bug of handling QoS Null Data in WMM-PS
+
+-----------------------------------------------------------------------------
+
+* DATE/WHOM/TYPE:
+- 2010/05/19, jimmylin, feature fine-tune
+
+* DIGEST:
+- Add mib to control t/r switch
+
+-----------------------------------------------------------------------------
+
+* DATE/WHOM/TYPE:
+- 2010/05/18, button, bug fix
+
+* DIGEST:
+- Fix beacon content error in MBSSID interfaces
+
+-----------------------------------------------------------------------------
+
+* DATE/WHOM/TYPE:
+- 2010/05/07, brian, new feature
+
+* DIGEST:
+- Enable user specify multicast rate used
+
+-----------------------------------------------------------------------------
+
+* DATE/WHOM/TYPE:
+- 2010/05/07, jimmylin, feature fine-tune
+
+* DIGEST:
+- Add GPIO8 LED2 lighting pattern 12
+
+-----------------------------------------------------------------------------
+
+* DATE/WHOM/TYPE:
+- 2010/05/06, brian, new feature
+
+* DIGEST:
+- Enable config EDCA parameters manually
+
+-----------------------------------------------------------------------------
+
+* DATE/WHOM/TYPE:
+- 2010/04/23, victorlo, new feature
+
+* DIGEST:
+- Pass WiFi logo 1x1 and 2x2 test
+
+-----------------------------------------------------------------------------
+
+* DATE/WHOM/TYPE:
+- 2010/04/23, victorlo, new feature
+
+* DIGEST:
+- Add Japan 2.4G band (safety) spec support
+
+-----------------------------------------------------------------------------
+
+* DATE/WHOM/TYPE:
+- 2010/04/22, Button, bug fix
+
+* DIGEST:
+- Fix Reperater mode connection issue in 20M mode
+
+-----------------------------------------------------------------------------
+
+* DATE/WHOM/TYPE:
+- 2010/04/21, Button, feature bug fix
+
+* DIGEST:
+- Fix beacon stop issue in ad-hoc mode
+
+-----------------------------------------------------------------------------
+
+* DATE/WHOM/TYPE:
+- 2010/04/21, pluswang, merge code
+
+* DIGEST:
+- Add MP receiving filters of DA and BSSID
+
+-----------------------------------------------------------------------------
+
+* DATE/WHOM/TYPE:
+- 2010/04/20, victorlo, new feature
+
+* DIGEST:
+- Support up to 64 clients by compiler option
+
+-----------------------------------------------------------------------------
+
+* DATE/WHOM/TYPE:
+- 2010/04/09, Button, feature fine-tune
+
+* DIGEST:
+- Forbid WEP used in 11N mode
+

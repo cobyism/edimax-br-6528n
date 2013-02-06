@@ -1,0 +1,3 @@
+ifeq (-nostdinc -g -DJACKSON_NET_WORK -march=5181 -mno-abicalls -fno-pic -D__KERNEL__ -I.//include -I./ -I.//include/asm/gcc -Wall -Wstrict-prototypes -Wno-trigraphs -O -fomit-frame-pointer -fno-strict-aliasing -fno-common -G 0 :,$(strip $(subst $(comma),:,$(CFLAGS) $(EXTRA_CFLAGS) $(CFLAGS_src/io/timer/timer.o))))
+FILES_FLAGS_UP_TO_DATE += src/io/timer/timer.o
+endif

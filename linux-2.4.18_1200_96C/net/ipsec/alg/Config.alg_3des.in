@@ -1,0 +1,3 @@
+if [ "$CONFIG_IPSEC_ALG" = "y" ]; then
+  tristate '        3DES encryption algorithm (modular alg)' CONFIG_IPSEC_ALG_3DES
+fi

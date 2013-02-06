@@ -1,0 +1,12 @@
+CROSSDIR=/home/RTL8196C/toolchain/rtl8196c-toolchain-1.1/rsdk-96c
+CROSS_COMPILE=${CROSSDIR}/bin/rsdk-linux-
+
+ROOTDIR=/home/RTL8196C
+  LINUXDIR=${ROOTDIR}/linux-2.4.18_1200_96C
+  IMAGEDIR=${ROOTDIR}/image
+  APPDIR=${ROOTDIR}/AP
+    MODDIR=${APPDIR}/module/
+    ROMFSDIR=${APPDIR}/mkimg/romfs
+    GOAHEADDIR=${APPDIR}/goahead-2.1.1
+    APPLIB=${CROSSDIR}/lib
+    LIB_VER=0.9.30

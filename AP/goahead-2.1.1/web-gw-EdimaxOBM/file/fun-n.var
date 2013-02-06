@@ -1,0 +1,1122 @@
+﻿var date=new Array
+(
+"Date",
+"Datum",
+"Fecha",
+"Date",
+"Data",
+"Datum",
+"Data",
+"Datum",
+"Data",
+"Data",
+"Дата",
+"Dátum",
+"日期",
+"日期"
+);
+var functionAlert6=new Array
+(
+" range in 2nd digit. It should be 0-255.",
+" Bereich an 2. Stelle. Dieser sollte 0-255 sein.",
+" serie de 2º dígito. Debe ser entre 0-255.",
+" intervalle en 2ème chiffre. Il doit être compris entre 0 et 255.",
+" intervallo nella 2a cifra. Dovrebbe essere compreso tra 0 e 255.",
+" bereik van tweede cijferreeks. Het moet liggen tussen 0 en 255.",
+" intervalo no 2º dígito. Deve ser entre 0 e 255.",
+" rozsahu na druhé pozici. Zadejte 0-255.",
+"Zakres drugiej cyfry winien wynosić 0-255.",
+"Valoare invalida in campul 2. Trebuie sa fie cuprinsa intre 0-255",
+"Число 2го периода должно быть в пределах 0-255",
+"rozsah v druhom čísle. Musí byť 0-255",
+"第2組數字。它應該介於0-255的數字。",
+"第2组数字。它应该介于0-255的数字。"
+);
+var functionAlert7=new Array
+(
+" range in 3rd digit. It should be 0-255.",
+" Bereich an 3. Stelle. Dieser sollte 0-255 sein.",
+" serie de 3º dígito. Debe ser entre 0-255.",
+" intervalle en 3ème chiffre. Il doit être compris entre 0 et 255.",
+" intervallo nella 3a cifra. Dovrebbe essere compreso tra 0 e 255.",
+" bereik van derde cijferreeks. Het moet liggen tussen 0 en 255.",
+" intervalo no 3º dígito. Deve ser entre 0 e 255.",
+" rozsahu na třetí pozici. Zadejte 0-255.",
+"Zakres trzeciej cyfry winien wynosić 0-255.",
+"Valoare invalida in campul 3. Trebuie sa fie cuprinsa intre 0-255",
+"Число 3го периода должно быть в пределах 0-255",
+"rozsah v treťom čísle. Musí byť 0-255.",
+"第3組數字。它應該介於0-255的數字。",
+"第3组数字。它应该介于0-255的数字。"
+);
+var alertFunctionRemoteRange=new Array
+(
+"Remote Port Range ",
+"Remote Port-Bereich ",
+"Serie de puerto a distancia ",
+"Intervalle Port Déporté ",
+"Intervallo porta remota ",
+"Bereik van externe poort ",
+"Intervalo da porta remota ",
+"Rozsah vzdáleného portu ",
+"Zakres portu zdalnego",
+"Remote Port Range",
+"Диапазон удаленных портов",
+"Rozsah vzdialeného portu",
+"遠程埠的範圍",
+"远程埠的范围"
+);
+var ntpDate=new Array
+(
+"NTP Date/Time updated",
+"NTP Datum/Uhrzeit aktualisiert",
+"Fecha NTP /Tiempo actualizado",
+"Date/Heure NTP mis à jour",
+"Data/ora NTP aggiornata",
+"NTP datum/tijd bijgewerkt",
+"Hora/Data NTP actualizada",
+"Aktualizováno NTP datum/čas",
+"Data NTP/Czas zaaktualizowany",
+"Data NTP / Ora actualizata",
+"Дата/время обновления NTP",
+"Aktualizácia NTP Dátumu/Času",
+"NTP的日期/時間更新",
+"NTP的日期/时间更新"
+);
+var functionAlert10=new Array
+(
+"Invalid",
+"Ungültig",
+"Inválido",
+"Incorrect",
+"Non valido",
+"Ongeldig",
+"Inválido",
+"Neplatné",
+"Nieprawidłowy",
+"invalida",
+"Неверно",
+"Nesprávne",
+"無效",
+"无效"
+);
+var alertFunctionQoSWan4=new Array
+(
+"Current QoS of WAN4 Table ",
+"Aktuelle QoS der WAN4 Tabelle ",
+"QoS actual del cuadro WAN4 ",
+"QoS actuel de la table WAN4 ",
+"QoS corrente della tabella WAN4 ",
+"Huidige QoS van WAN4 ",
+"QoS actual da tabela WAN4 ",
+"Tabulka aktuální QoS WAN4 ",
+"Bieżący Qos tabeli WAN4",
+"Tabelul QoS pentru WAN4",
+"Текущее QoS таблицы WAN4",
+"Terajší QoS WAN4 tabuľky",
+"現有WAN4的QoS 表",
+"现有WAN4的QoS 表"
+);
+var alertFunctionSave=new Array
+(
+"Save",
+"Speichern",
+"Guardar",
+"Sauvegarder",
+"Salva",
+"Opslaan",
+"Guardar",
+"Uložit",
+"Zapisz",
+"Salveaza",
+"Сохранить",
+"Uložiť",
+"儲存",
+"储存"
+);
+var alertFunctionRule=new Array
+(
+"Rule Name ",
+"Regelname ",
+"Nombre de la regla ",
+"Nom de la règle ",
+"Nome regola ",
+"Regelnaam ",
+"Nome da regra ",
+"Název pravidla ",
+"Nazwa reguły",
+"Nume Regula",
+"Имя правила",
+"Názov pravidla",
+"規則名稱",
+"规则名称"
+);
+var alertFunctionInvMask4th=new Array
+(
+"Invalid subnet mask in 4rd digit. It should be the number of 0, 128, 192, 224, 240, 248, 252 or 254.",
+"Ungültige Subnetzmaske an 4. Stelle. ",
+"Máscara de subred inválida en 4 dígitos. ",
+"4ème chiffre du masque de sous-réseau incorrect. ",
+"4a cifra della maschera sottorete non valida. ",
+"Ongeldig subnetmasker in vierde cijferreeks. ",
+"Máscara de subrede inválida no 4º dígito. ",
+"Neplatná hodnota masky podsítě na čtvrté pozici. ",
+"Nieważna wartośc czwartej cyfry maski podsieci. ",
+"Valoare invalida a subnet mask-ului in campul 4.",
+"Неверная маска подсети в 4м периоде",
+"Nesprávna maska podsiete v 4 číslici.",
+"第1組的子網路遮罩是無效的。它應該是 0，128，192，224，240，248，252或254。",
+"第1组的子网掩码是无效的。它应该是 0，128，192，224，240，248，252或254。"
+);
+var alertFunctionWanPort=new Array
+(
+"WAN Port ",
+"WAN-Port ",
+"Puerto WAN ",
+"Port réseau étendu ",
+"Porta WAN ",
+"WAN-poort ",
+"Porta WAN ",
+"Port WAN ",
+"Port WAN.",
+"Port WAN",
+"WAN порт",
+"WAN Port",
+"廣域網埠",
+"广域网埠"
+);
+var alertFunctionMacAddr=new Array
+(
+"MAC Address ",
+"MAC-Adresse ",
+"Dirección MAC ",
+"Adresse MAC ",
+"Indirizzo MAC ",
+"MAC-adres ",
+"Endereço MAC ",
+"MAC adresa ",
+"Adres MAC.",
+"Adresa MAC",
+"MAC адрес",
+"MAC Adresa",
+"MAC位址",
+"MAC位址"
+);
+var alertFunctionMoveDn=new Array
+(
+"Move Down",
+"Nach unten bewegen",
+"Mover hacia abajo",
+"Déplacer vers le bas",
+"Sposta in basso",
+"Omlaag",
+"Mover para baixo",
+"Posunout dolů",
+"Przesuń w dół.",
+"In Jos",
+"Вниз",
+"Posunúť dole",
+"向下移動",
+"向下移动"
+);
+var alertFunctionLocalIp=new Array
+(
+"Local IP Address ",
+"Lokale IP-Adresse ",
+"Dirección IP local ",
+"Adresse IP locale ",
+"Indirizzo IP locale ",
+"Lokaal IP-adres ",
+"Endereço IP local ",
+"Místní IP adresa ",
+"Lokalny adres IP",
+"Adresa IP Locala",
+"Локальный IP адрес",
+"Lokálna IP adresa",
+"本地IP位址",
+"本地IP位址"
+);
+var functionAlert=new Array
+(
+"It should be the number of 0, 128, 192, 224, 240, 248, 252 or 254",
+"Es sollte eine Zahl von 0, 128, 192, 224, 240, 248, 252 oder 254 sein",
+"Deberá ser el número 0, 128, 192, 224, 240, 248, 252 o 254",
+"Il doit s'agit du nombre 0, 128, 192, 224, 240, 248, 252 ou 254",
+"Deve essere un numero quale 0, 128, 192, 224, 240, 248, 252 o 254",
+"Het moet 0, 128, 192, 224, 240, 248, 252 of 254 zijn",
+"Deve ser um dos seguintes números:  0, 128, 192, 224, 240, 248, 252 ou 254",
+"Zadejte číslo z možností 0, 128, 192, 224, 240, 248, 252 nebo 254",
+"Adres powinien się składać z liczb 0, 128, 192, 224, 240, 248, 252 lub 254",
+"Introducte una din valorile: 0, 128, 192, 224, 240, 248, 252 sau 254",
+"Должно быть одно из чисел ряда 0, 128, 192, 224, 240, 248, 252, 254.",
+"Musí to byť číslo 0, 128, 192, 224, 240, 248, 252 alebo 254.",
+"它應該是 0，128，192，224，240，248，252或254。",
+"它应该是 0，128，192，224，240，248，252或254。"
+);
+var functionAlert12=new Array
+(
+" cannot be empty! You should set a value between ",
+" darf nicht leer sein! Sie sollten einen Wert zwischen ",
+" ¡no puede estar vacía! Deberá fijar un valor entre  ",
+" ne peut pas être vide ! Vous devez définir une valeur comprise entre ",
+" non può essere vuoto! Impostare un valore compreso tra ",
+" mag niet leeg zijn! U moet een waarde instellen tussen ",
+" Deve definir um número entre ",
+" nemůže být prázdné! Nastavte hodnotu v rozsahu ",
+" nie może być pusty. Podaj wartość pomiędzy ",
+" nu poate ramane necompletat! Introduceti o valoare cuprinsa intre",
+" Не может быть пустым! Вам нужно установить значение между",
+" nesmie byť prázdna! Musí to byť hodnota medzi",
+"不能是空白！你應該設置一個值之間",
+"不能是空白！你应该设置一个值之间"
+);
+var alertFunctionQoS=new Array
+(
+"QoS ",
+"QoS ",
+"QoS ",
+"QoS ",
+"QoS ",
+"QoS ",
+"QoS ",
+"Qos ",
+"Qos",
+"QoS",
+"QoS",
+"QoS",
+"QoS ",
+"QoS"
+);
+var time=new Array
+(
+"Time",
+"Zeit",
+"Tiempo",
+"Heure",
+"Ora",
+"Tijd",
+"Hora",
+"Čas",
+"Czas",
+"Ora",
+"Время",
+"Čas",
+"時間",
+"时间"
+);
+var alertFunctionQoSWan3=new Array
+(
+"Current QoS of WAN3 Table ",
+"Aktuelle QoS der WAN3 Tabelle ",
+"QoS actual del cuadro WAN3 ",
+"QoS actuel de la table WAN3 ",
+"QoS corrente della tabella WAN3 ",
+"Huidige QoS van WAN3 ",
+"QoS actual da tabela WAN3 ",
+"Tabulka aktuální QoS WAN3 ",
+"Bieżący Qos tabeli WAN3",
+"Tabelul QoS pentru WAN3",
+"Текущее QoS таблицы WAN3",
+"Terajšia QoS WAN3 tabuľky",
+"現有WAN3的QoS 表",
+"现有WAN3的QoS 表"
+);
+var functionAlert17=new Array
+(
+"Input MAC address is not complete. It should be 12 digits in hex.",
+"Eingabe der MAC-Adresse ist nicht abgeschlossen. Es sollten 12 Stellen in Hexadezimalzahlen sein.",
+"La dirección MAC indicada no está completa. Deberá tener 12 dígitos en hexagonal.",
+"L'adresse MAC n'est pas complète. Elle doit contenir douze chiffres héxadécimaux.",
+"L'indirizzo MAC inserito non è completo. Deve essere composto da 12 cifre esadecimali.",
+"Input voor MAC-adres is niet compleet. Het moet uit 12 hexadecimale tekens bestaan.",
+"O endereço MAC de entrada não está completo. Deve ter 12 dígitos em números hexadecimais.",
+"Zadání adresy MAC není kompletní. Zadejte 12 šestnáctkových číslic.",
+"Podany adres MAC nie jest kompletny. Wartość powinna być 12 cyframi w systemie szesnastkowym",
+"Adresa MAC incompleta. Trebuie sa fie 12 caractere hexazecimale",
+"Введенный МАС адрес не полон. Он должен быть 12ти значным HEX числом.",
+"Vložená MAC adresa nie je kompletná. Musí to byť 12 miestne číslo v hexadecimálnom tvare.",
+"輸入的 MAC位址是不完整的。它應該是12個16進位數字。",
+"输入的 MAC位址是不完整的。它应该是12个16进位数字。"
+);
+var alertFunctionPriority=new Array
+(
+"Priority ",
+"Priorität ",
+"Prioridad ",
+"Priorité ",
+"Priorità ",
+"Voorrang ",
+"Prioridade ",
+"Priorita ",
+"Priorytet",
+"Prioritate",
+"Приоритет",
+"Priorita",
+"優先權限",
+"优先权限"
+);
+var userTimeOut=new Array
+(
+"User from 192.168.2.100 timed out",
+"Benutzer von 192.168.2.100 hat Zeit überschritten",
+"Usuario desde el tiempo incurrido 192.168.2.100",
+"Délai écoulé pour l'utilisateur 192.168.2.100",
+"Connessione scaduta utente da 192.168.2.100",
+"Time-out voor gebruiker van 192.168.2.100",
+"Utilizador de 192.168.2.100 excedeu o limite de tempo",
+"Uživateli adresou 192.168.2.100 vypršel čas",
+"Przekroczony czas użytkownika 192.168.2.100",
+"Utilizatorul cu IP-ul 192.168.2.100 nu raspunde",
+"Истекло время для пользователя 192.168.2.100",
+"Platnosť užívateľa z 192.168.2.100 vypršala",
+"來源 192.168.2.100的使用者逾時",
+"来源 192.168.2.100的使用者逾时"
+);
+var functionAlert2=new Array
+(
+"Subnet mask cannot be empty! It should be filled with 4 digit numbers as xxx.xxx.xxx.xxx.",
+"Subnetzmaske darf nicht leer sein! Diese sollte mit 4-stelligen Zahlen gefüllt werden, beispielsweise xxx.xxx.xxx.xxx.",
+"¡La máscara de subred no puede estar vacía! Deberá cumplimentarse con 4 números digitales como xxx.xxx.xxx.xxx.",
+"Le masque de sous-réseau ne peut pas rester vide ! Elle doit contenir des nombres à 4 chiffres tels que xxx.xxx.xxx.xxx.",
+"Il campo Maschera sottorete non può essere vuoto! Deve contenere 4 numeri suddivisi come segue: xxx.xxx.xxx.xxx.",
+"Subnetmasker mag niet leeg zijn! Het moet gevuld zijn met 4 cijferreeksen zoals xxx.xxx.xxx.xxx.",
+"A máscara de subrede não pode estar em branco! Deve ser preenchido com 4 números de dígitos, tal como xxx.xxx.xxx.xxx.",
+"Maska podsítě nemůže být prázdná! Zadejte čtyři čísla ve formátu xxx.xxx.xxx.xxx.",
+"Maska podsieci nie może być pusta. Wartość powinna być w postaci 4 cyfrowej liczby xxx.xxx.xxx.xxx   ",
+"Campul Subnet Mask nu poate ramane necompletat! Trebuie sa fie de forma xxx.xxx.xxx.xxx",
+"Маска подсети не может быть пустой! Она должна быть заполнена цифрами в 4х периодах  xxx.xxx.xxx.xxx.",
+"Maska podsiete nesmie byť prázdna! Musí byť vyplnená 4 číslami v tvare xxx.xxx.xxx.xxx.",
+"子網路遮罩不能是空白！它應該是由4組(0-255)的數字組成：xxx.xxx.xxx.xxx",
+"子网掩码不能是空白！它应该是由4组(0-255)的数字组成：xxx.xxx.xxx.xxx"
+);
+var functionAlert11=new Array
+(
+"! It should be located in the same subnet of current IP address.",
+"! Diese sollte sich im gleichen Subnetz der gegenwärtigen IP-Adresse befinden.",
+"Deberá ubicarse en la misma subred de la dirección IP actual.",
+"Il doit être situé dans le même sous-réseau que l'adresse IP actuelle.",
+"! Deve trovarsi nella stessa sottorete dell'indirizzo IP corrente.",
+"! Het moet in hetzelfde subnet staan als het huidige IP-adres.",
+"! Deve estar localizado na mesma subrede do endereço actual.",
+"! Měla by být umístěna na stejné podsíti s místní IP adresou.",
+"Wartość powinna należeć do tej samej podsieci co adres IP",
+"Trebuie sa fie in aceeasi subretea ca si IP-ul curent",
+"Он должен принадлежать той же подсети, что и введенный IP адрес.",
+"! Musí byť umiestnená v rovnakej podsieti ako terajšia IP adresa.",
+"！它的IP位址應該位於同一個子網路遮罩。",
+"！它的IP位址应该位于同一个子网掩码。"
+);
+var alertFunctionLocalAddr=new Array
+(
+"Local Address ",
+"Lokale Adresse ",
+"Dirección local ",
+"Adresse locale ",
+"Indirizzo locale ",
+"Lokaal adres ",
+"Endereço local ",
+"Místní adresa ",
+"Adres lokalny ",
+"Adresa Locala",
+"Локальный адрес",
+"Lokálna adresa",
+"本地位址",
+"本地位址"
+);
+var alertFunctionProtocol=new Array
+(
+"Protocol ",
+"Protokoll ",
+"Protocolo ",
+"Protocole ",
+"Protocollo ",
+"Protocol ",
+"Protocolo ",
+"Protokol ",
+"Protokół",
+"Protocol",
+"Протокол",
+"Protokol",
+"協定",
+"协定"
+);
+var alertFunctionReset=new Array
+(
+"Reset",
+"Reset",
+"Reinicio",
+"Réinitialisation",
+"Reset",
+"Reset",
+"Repor",
+"Reset",
+"Resetuj ",
+"Resetare",
+"Переустановка",
+"Reset",
+"重置",
+"重置"
+);
+var functionAlert9=new Array
+(
+"cannot be empty! It should be filled with 4 digit numbers as xxx.xxx.xxx.xxx.",
+"darf nicht leer sein! Diese sollte mit 4-stelligen Zahlen gefüllt werden, beispielsweise xxx.xxx.xxx.xxx.",
+"¡no puede estar vacía! Deberá cumplimentarse con 4 números digitales como xxx.xxx.xxx.xxx.",
+"ne peut pas être vide ! Elle doit contenir des nombres à 4 chiffres tels que xxx.xxx.xxx.xxx.",
+"non può essere vuoto! Deve contenere 4 numeri suddivisi come segue: xxx.xxx.xxx.xxx.",
+"mag niet leeg zijn! Het moet gevuld zijn met 4 cijferreeksen zoals xxx.xxx.xxx.xxx.",
+" Deve ser preenchido com 4 números de dígitos, tal como xxx.xxx.xxx.xxx.",
+"nemůže být prázdné! Zadejte čtyři čísla ve formátu xxx.xxx.xxx.xxx.",
+"Pole nie może być puste. Wartość powinna zostać podana jako 4 cyfrowa liczba xxx.xxx.xxx.xxx  ",
+"nu poate ramane necompletat! Trebuie sa fie de forma xxx.xxx.xxx.xxx",
+"Не может быть пустой! Она должна быть заполнена цифрами в 4х периодах  xxx.xxx.xxx.xxx.",
+"nesmie byť prázdna! Musí to byť vyplnená 4 číslami v tvare xxx.xxx.xxx.xxx.",
+"不能是空白！它應該是由4組(0-255)的數字組成：xxx.xxx.xxx.xxx",
+"不能是空白！它应该是由4组(0-255)的数字组成：xxx.xxx.xxx.xxx"
+);
+var ntpDat=new Array
+(
+"NTP Date/Time updated",
+"NTP Datum/Uhrzeit aktualisiert",
+"Fecha NTP /Tiempo actualizado",
+"Date/Heure NTP mis à jour",
+"Data/ora NTP aggiornata",
+"NTP datum/tijd bijgewerkt",
+"Hora/Data NTP actualizada",
+"Aktualizováno NTP datum/čas",
+"Data NTP/Czas zaktualizowany",
+"Data NTP / Ora actualizata",
+"Дата/время обновления NTP",
+"Aktualizácia NTP Dátumu/Času",
+"NTP的日期/時間更新",
+"NTP的日期/时间更新"
+);
+var alertFunctionEdit=new Array
+(
+"Edit",
+"Bearbeiten",
+"Editar",
+"Editer",
+"Modifica",
+"Bewerken",
+"Editar",
+"Úprava",
+"Edytuj",
+"Editeaza",
+"Редактировать",
+"Upraviť",
+"編輯",
+"编辑"
+);
+var functionAlert18=new Array
+(
+"Invalid MAC address. It should be in hex number (0-9 or a-f).",
+"Ungültige MAC-Adresse. Es sollte eine Hexadezimalzahl sein (0-9 oder a-f).",
+"Dirección MAC inválida. Deberá ser un número hexagonal (0-9 o a-f).",
+"Adresse MAC incorrecte. Il doit s'agir d'un chiffre hexadécimal (0-9 ou a-f).",
+"Indirizzo MAC non valido. Deve essere composto da numeri esadecimali (0-9 o a-f).",
+"Ongeldig MAC-adres. Het moet hexadecimaal zijn (0-9 of a-f).",
+"Endereço MAC inválido. Deve ser um número hexadecimal (0 a 9 ou a-f).",
+"Neplatná adresa MAC. Zadejte šestnáctkové číslo (0-9 nebo a-f).",
+"Niewłaściwy adres MAC. Wartość winna być liczbą szesnastkową (0-9 lub a-f).",
+"Adresa MAC invalida. Trebuie sa fie in caractere hexazecimale (0-9 sau a-f)",
+"Неверен MAC адрес. Он должен быть HEX числом (0-9 или A-F)",
+"Nesprávna MAC adresa. Musí to by hexadecimálne číslo (0-9 alebo a-f).",
+"無效的MAC位址。它應該是十六進位數字（0-9或A-F）。",
+"无效的MAC位址。它应该是十六进制数字（0-9或A-F）。"
+);
+var functionAlert3=new Array
+(
+"Invalid subnet mask value. It should be the decimal number (0-9).",
+"Ungültiger Subnetzmasken-Wert. Es sollte eine Dezimalzahl sein (0-9).",
+"Valor incorrecto de la máscara de subred. Deberá ser un número decimal (entre 0-9).",
+"Valeur de masque de sous-réseau incorrecte. Il doit s'agir d'un nombre décimal (0-9).",
+"Valore della maschera sottorete non valido. Deve essere un numero decimale (0-9).",
+"Ongeldige waarde submasker. Het moet een decimaal teken zijn (0-9).",
+"Valor de máscara de subrede inválido. Deve ser um número decimal (0 a 9).",
+"Neplatná hodnota masky podsítě. Zadejte desítkové číslo z intervalu (0-9).",
+"Niewłaściwa maska podsieci. Wartość winna być liczba dziesiętną (0-9).",
+"Subnet Mask invalid. Trebuie sa fie numere zecimale (0-9)",
+"Неверное значение маски подсети. Должно быть десятичным числом (0-9)",
+"Nesprávna hodnota masky podsiete. Musí to byť desiatkové číslo (0-9).",
+"無效的子網路遮罩值。它應該是十進位數字（0-9）。",
+"无效的子网掩码值。它应该是十进制数（0-9）。"
+);
+var alertFunctionRemoteIp=new Array
+(
+"Remote IP Address ",
+"Remote IP-Adresse ",
+"Dirección IP remota ",
+"Adresse IP déportée ",
+"Indirizzo IP remoto ",
+"Remote IP-adres ",
+"Endereço IP remoto ",
+"Vzdálená IP adresa ",
+"Zdalny adres IP",
+"Adresa IP Remote",
+"Удаленный IP адрес",
+"Vzdialená IP adresa",
+"遠程 IP位址",
+"远程 IP位址"
+);
+var alertFunctionMoveUp=new Array
+(
+"Move Up",
+"Nach oben bewegen",
+"Subir",
+"Déplacer vers le haut",
+"Sposta in alto",
+"Omhoog",
+"Mover para cima",
+"Posunout nahoru",
+"Przesuń do góry ",
+"In Sus",
+"Вверх",
+"Posunúť hore",
+"向上移動",
+"向上移动"
+);
+var functionAlert8=new Array
+(
+" range in 4th digit. It should be 1-254.",
+" Bereich an 4. Stelle. Dieser sollte 1-254 sein.",
+" serie de 4º dígito. Debe ser entre 1-254.",
+" intervalle en 4ème chiffre. Il doit être compris entre 1 et 254.",
+" intervallo nella 4a cifra. Deve essere compreso tra 1 e 254.",
+" bereik van vierde cijferreeks. Het liggen tussen 1 en 254.",
+" intervalo no 4º dígito. Deve ser entre 1 e 254.",
+" na čtvrté pozici. Zadejte 1-254.",
+"Zakres czwartej cyfry winien wynosić 0-255",
+"Valoare invalida in campul 4. Trebuie sa fie cuprinsa intre 1-254",
+"Число 4го периода должно быть в пределах 1-254",
+"rozsah v 4. čísle. Musí byť 1-254.",
+"第4組數字。它應該介於0-255的數字。",
+"第4组数字。它应该介于0-255的数字。"
+);
+var alertFunctionInvMask2nd=new Array
+(
+"Invalid subnet mask in 2nd digit. It should be the number of 0, 128, 192, 224, 240, 248, 252, 254 or 255.",
+"Ungültige Subnetzmaske an 2. Stelle. ",
+"Máscara de subred inválida en 2 dígitos. ",
+"2ème chiffre du masque de sous-réseau incorrect. ",
+"2a cifra della maschera sottorete non valida. ",
+"Ongeldig subnetmasker in tweede cijferreeks. ",
+"Máscara de subrede inválida no 2º dígito. ",
+"Neplatná hodnota masky podsítě na druhé pozici. ",
+"Niewłaściwa druga cyfra maski podsieci",
+"Valoare invalida in campul 2 al subnet mask-ului",
+"Неверная маска подсети во 2м периоде",
+"Nesprávna maska podsiete v 2. čísle.",
+"第1組的子網路遮罩是無效的。它應該是 0，128，192，224，240，248，252，254或255。",
+"第1组的子网掩码是无效的。它应该是 0，128，192，224，240，248，252，254或255。"
+);
+var functionAlert5=new Array
+(
+" range in 1st digit. It should be 0-255.",
+" Bereich an 1. Stelle. Dieser sollte 0-255 sein.",
+" serie de 1º dígito. Debe ser entre 0-255.",
+" intervalle en 1er chiffre. Il doit être compris entre 0 et 255.",
+" intervallo nella 1a cifra. Dovrebbe essere compreso tra 0 e 255.",
+" bereik van eerste cijferreeks. Het moet liggen tussen 0 en 255.",
+" intervalo no 1º dígito. Deve ser entre 0 e 255.",
+" rozsahu na první pozici. Zadejte 0-255.",
+"Zakres pierwszej cyfry winien wynosić 0-255",
+"Valoare invalida in campul 1. Trebuie sa fie cuprinsa intre 0-255",
+"Число 1го периода должно быть в пределах 0-255",
+"rozsah v 1. čísle. Musí byť 0-255.",
+"第1組數字。它應該介於0-255的數字。",
+"第1组数字。它应该介于0-255的数字。"
+);
+var alertFunctionQoSWan2=new Array
+(
+"Current QoS of WAN2 Table ",
+"Aktuelle QoS der WAN2 Tabelle ",
+"QoS actual del cuadro WAN2 ",
+"QoS actuel de la table WAN2 ",
+"QoS corrente della tabella WAN2 ",
+"Huidige QoS van WAN2 ",
+"QoS actual da tabela WAN2 ",
+"Tabulka aktuální QoS WAN2 ",
+"Obecny Qos tabeli WAN",
+"Tabelul QoS pentru WAN2",
+"Текущее QoS таблицы WAN2",
+"Terajšie QoS WAN2 tabuľky",
+"當前的QoS WAN2表",
+"当前的QoS WAN2表"
+);
+var alertFunctionBandwidth=new Array
+(
+"Bandwidth ",
+" Bandbreite ",
+"Banda ancha ",
+"Bande passante ",
+"Larghezza di banda ",
+" Bandbreedte ",
+"Largura de banda ",
+"Přenosové pásmo ",
+"Szerokość pasma",
+"Latime Banda",
+"Ширина полосы",
+"Prenosová rýchlosť",
+"頻寬",
+"带宽"
+);
+var functionConfirm2=new Array
+(
+"Do you really want to delete the all entries?",
+"Möchten Sie wirklich alle Einträge löschen?",
+"¿Desea realmente eliminar todas las entradas?",
+"Souhaitez-vous vraiment supprimer toutes les entrées ?",
+"Eliminare tutte le immissioni?",
+"Weet u zeker dat u alle invoer wilt verwijderen?",
+"Pretende mesmo apagar todas as entradas?",
+"Opravdu chcete vymazat všechny zadané hodnoty?",
+"Czy naprawdę chcesz skasować wszystkie wpisy?",
+"Sunteti sigur ca vreti sa stergeti toate inregistrarile?",
+"Вы действительно хотите удалить все введенные данные?",
+"Chcete skutočne vymazať všetky zadané položky?",
+"你真的要刪除所有項目？",
+"你真的要删除所有项目？"
+);
+var functionAlert14=new Array
+(
+"! It should be the decimal number (0-9).",
+"! Es sollte eine Dezimalzahl sein (0-9).",
+"Deberá ser un número decimal (entre 0-9).",
+"Il doit s'agir d'un nombre décimal (0-9).",
+"! Deve essere un numero decimale (0-9).",
+"! Het moet een decimaal teken zijn (0-9).",
+"! Deve ser um número decimal (0 a 9)).",
+"! Zadejte desítkové číslo z intervalu (0-9).",
+"Wartość powinna być liczbą dziesiętną (0-9)",
+"Trebuie sa fie un numar zecimal (0-9)",
+"Должно быть десятичным числом (0-9).",
+"! Musí to byť desiatkové číslo (0-9).",
+"！它應該是十進位數字（0-9）。",
+"！它应该是十进制数（0-9）。"
+);
+var dhcpReceiveOffer=new Array
+(
+"DHCP Client: Receive Offer from 192.168.1.3",
+"DHCP-Client: Angebot von 192.168.1.3 erhalten",
+"Cliente DHCP: Recibir oferta desde 192.168.1.3",
+"Client DHCP : Offre de réception depuis 192.168.1.3",
+"Client DHCP: segnale ricevuto da 192.168.1.3",
+"DHCP-client: Ontvang aanbod van 192.168.1.3",
+"Cliente DHCP: Receber oferta de 192.168.1.3",
+"DHCP klient: Přijata nabídka od 192.168.1.3",
+"Klient DHCP: otrzymano od 192.168.1.3",
+"Client DHCP: primeste IP de la 192,168,1,3",
+"DHCP клиент: получено предложение от 192.168.1.3",
+"DHCP Klient: prijatá ponuka z 192.168.1.3",
+"DHCP終端：從 192.168.1.3接收指示",
+"DHCP终端：从 192.168.1.3接收指示"
+);
+var alertFunctionLocalRange=new Array
+(
+"Local Port Range ",
+"Lokaler Port-Bereich ",
+"Serie de puerto local ",
+"Intervalle du Port Local ",
+"Intervallo porte locali ",
+"Bereik lokale poort ",
+"Intervalo da porta local ",
+"Rozsah místních portů ",
+"Zakres wartości lokalnego portu",
+"Raza Porturi locale",
+"Диапазон локальных портов",
+"Rozsah lokálne portu",
+"本地埠範圍",
+"本地埠范围"
+);
+var functionAlert4=new Array
+(
+"value. It should be the decimal number (0-9).",
+"Wert. Es sollte eine Dezimalzahl sein (0-9).",
+"valor. Deberá ser un número decimal (entre 0-9).",
+"valeur. Il doit s'agir d'un nombre décimal (0-9).",
+"valore. Deve essere un numero decimale (0-9).",
+"waarde. Het moet een decimaal teken zijn (0-9).",
+"valor. Deve ser um número decimal (0 a 9).",
+"hodnota. Zadejte desítkové číslo z intervalu (0-9).",
+"Wartość powinna być liczbą dziesiętną (0-9)",
+"valoare. Trebuie sa fie numere zecimale (0-9)",
+"Значение. Должно быть десятичным числом (0-9)",
+"hodnota. Musí to byť desiatkové číslo (0-9).",
+"數值它應該是十進位數字（0-9）。",
+"数值它应该是十进制数（0-9）。"
+);
+var functionAlert15=new Array
+(
+"! You should set a value between ",
+"! Sie sollten einen Wert einstellen, der zwischen ",
+"Deberá fijar un valor entre ",
+"Vous devez définir une valeur comprise entre ",
+"! Impostare un valore compreso tra ",
+"! U moet een waarde instellen tussen ",
+"! Deve definir um valor entre ",
+"! Nastavte hodnotu v rozsahu ",
+"Wybierz wartość w zakresie ",
+"Introduceti o valoare cuprinsa intre",
+"Необходимо установить значение между",
+"! Musí to byť hodnota zadaná medzi",
+"！你應該設置一個值之間",
+"！你应该设置一个值之间"
+);
+var alertFunctionDnBand=new Array
+(
+"Download Bandwidth ",
+"Download-Bandbreite ",
+"Descargar banda ancha ",
+"Bande passante descendante ",
+"Larghezza di banda in fase di download ",
+"Download bandbreedte ",
+"Largura de banda de transferência ",
+"Přenosové pásmo pro stahování ",
+"Szerokość pasma wejściowego",
+"Latime Banda pentru Download",
+"Введите ширину полосы",
+"Prenosová rýchlosť sťahovanie",
+"下載頻寬",
+"下载带宽"
+);
+var alertFunctionDelSelect=new Array
+(
+"Delete Selected",
+"Gewählte löschen",
+"Borrar selección",
+"Supprimer la sélection",
+"Elimina selezionato",
+"Wis selectie",
+"Apagar opções seleccionadas",
+"Vymazat vybrané",
+"Skasuj wybrane wartości ",
+"Sterge Selectia",
+"Удалить выделенное",
+"Vymazať vybrané",
+"刪除所選",
+"删除所选"
+);
+var alertFunctionAdd=new Array
+(
+"Add",
+"Hinzufügen",
+"Añadir",
+"Ajouter",
+"Aggiungi",
+"Voeg toe",
+"Adicionar",
+"Přidat",
+"Dodaj",
+"Adauga",
+"Добавить",
+"Pridať",
+"新增",
+"新增"
+);
+var dhcpClientSend=new Array
+(
+"DHCP Client: Send Request,Request IP=192.168.1.25",
+"DHCP-Client: Anfrage senden, Anfrage IP=192.168.1.25",
+"Cliente DHCP: Enviar solicitud, Solicitar IP=192.168.1.25",
+"Client DHCP : Démande d'envoi, IP demandeur = 192.168.1.25",
+"Client DHCP: invia richiesta, IP richiesta=192.168.1.25",
+"DHCP-client: Verzendverzoek, verzoek IP=192.168.1.25",
+"Cliente DHCP: Enviar pedido,IP de pedido=192.168.1.25",
+"DHCP klient: Odeslat požadavek, IP požadavku=192.168.1.25",
+"Klient DHCP: Wysłane żądanie, Żądane IP =192.168.1.25 ",
+"Client DHCP: trimite cerere, cere IP 192.168.1.25",
+"DHCP клиент: послан запрос, IP адрес запроса=192.168.1.25",
+"DHCP Klient: poslať požiadavku, požiadavku IP=192.168.1.25",
+"DHCP終端：發送請求，請求的IP = 192.168.1.25",
+"DHCP终端：发送请求，请求的IP = 192.168.1.25"
+);
+var logMess=new Array
+(
+"Log Message",
+"Log-Meldung",
+"Mensaje de registro",
+"Message de connexion",
+"Messaggio di accesso",
+"Log bericht",
+"Mensagem de registo",
+"Zpráva protokolu",
+"Logowanie wiadomości",
+"Mesaj Log",
+"Log сообщение",
+"Správa protokolu",
+"日誌訊息",
+"日志讯息"
+);
+var logSucc=new Array
+(
+"login success",
+"Anmeldung erfolgreich",
+"identificación exitosa",
+"connexion réussie",
+"Accesso riuscito",
+"Login gelukt",
+"início de sessão efectuado com sucesso",
+"přihlášení úspěšné",
+"Logowanie zakończone powodzeniem",
+"Logare cu succes",
+"успешный вход",
+"úspešné prihlásenie",
+"登錄成功",
+"登录成功"
+);
+var alertFunctionDelAll=new Array
+(
+"Delete All",
+"Alle löschen",
+"Borrar todos",
+"Tout supprimer",
+"Elimina tutto",
+"Alles wissen",
+"Apagar tudo",
+"Vymazat vše",
+"Skasuj wszystkie",
+"Sterge Tot",
+"Удалить все",
+"Vymazať všetko",
+"全部刪除",
+"全部删除"
+);
+var alertFunctionQoSEnable=new Array
+(
+"Enable QoS ",
+"QoS aktivieren ",
+"ActiQoS ",
+"Activer QoS ",
+"Abilita QoS ",
+"QoS toestaan ",
+"ActiQoS ",
+"Povolit QoS ",
+"Włącz QoS",
+"Activeaza QoS",
+"Включить QoS",
+"Zapnúť QoS",
+"啟用QoS",
+"启用QoS"
+);
+var alertFunctionInvMask1st=new Array
+(
+"Invalid subnet mask in 1st digit. It should be the number of 0, 128, 192, 224, 240, 248, 252, 254 or 255.",
+"Ungültige Subnetzmaske an 1. Stelle. ",
+"Máscara de subred inválida en 1 dígito. ",
+"Le 1er chiffre du masque de sous-réseau est incorrect. ",
+"1a cifra della maschera sottorete non valida. ",
+"Ongeldig subnetmasker in eerste cijferreeks. ",
+"Máscara de subrede inválida no 1º dígito. ",
+"Neplatná hodnota masky podsítě na první pozici. ",
+"Niewłaściwa pierwsza cyfra maski podsieci",
+"Valoare invalida a subnet mask-ului in campul 1",
+"Неверная маска подсети в 1м периоде",
+"Nesprávna maska podsiete v 1 čísle.",
+"第1組的子網路遮罩是無效的。它應該是 0，128，192，224，240，248，252，254或255。",
+"第1组的子网掩码是无效的。它应该是 0，128，192，224，240，248，252，254或255。"
+);
+var alertFunctionInvalid=new Array
+(
+"Invalid ",
+"Ungültig ",
+"Inválido ",
+"Incorrect ",
+"Non valido ",
+"Ongeldig ",
+"Inválido ",
+"Neplatné ",
+"Nieważny",
+"Invalid",
+"Неверно",
+"Nesprávny",
+"無效的",
+"无效的"
+);
+var alertFunctionSelect=new Array
+(
+"Select",
+"Auswählen",
+"Seleccionar",
+"Selectionner",
+"Seleziona",
+"Selecteer",
+"Seleccionar",
+"Výběr",
+"Wybierz",
+"Selecteaza",
+"Выберите",
+"Vybrať",
+"選擇",
+"选择"
+);
+var functionAlert16=new Array
+(
+"Invalid port range! 1st port value should be less than 2nd value.",
+"Ungültiger Portbereich! 1. Portwert sollte kleiner als der 2. Wert sein.",
+"¡Serie de puerto inválida! El valor del 1º puerto debe ser inferior al segundo valor.",
+"Intervalle de port incorrect ! La valeur du 1er port doit être inférieure à la 2ème valeur.",
+"Intervallo porte non valido! Il valore della 1a porta deve essere minore del valore della 2a porta.",
+"Ongeldig poortbereik! Eerste poortwaarde moet lager zijn dan tweede waarde.",
+"Intervalo de porta inválido! O 1º valor da porta deve ser inferior ao 2º valor.",
+"Neplatný rozsah portů! Hodnota portu na první pozici by měla být nižší než na druhé pozici.",
+"Niewłaściwy zakres portu. Wartość pierwszego portu winna być mniejsza od drugiej wartości",
+"Raza Porturi invalida. Prima valoare trebuie sa fie mai mica decat valoarea 2",
+"Неверен диапазон портов. 1й порт должен быть меньше 2го",
+"Nesprávny rozsah portu! 1. hodnota portu musí byť menšia ako 2. hodnota.",
+"無效的埠範圍！第1埠的值要小於第2埠的值。",
+"无效的埠范围！第1埠的值要小于第2埠的值。"
+);
+var alertFunctionTraffic=new Array
+(
+"Traffic Type ",
+"Traffic-Typ ",
+"Tipo de tráfico ",
+"Type de traffic ",
+"Tipo di traffico ",
+"Soort verkeer ",
+"Tipo de tráfego ",
+"Typ provozu ",
+"Rodzaj ruchu",
+"Tipul Traficului",
+"Тип трафика",
+"Typ prevádzky",
+"交通型",
+"交通型"
+);
+var dhcpClientReceive=new Array
+(
+"DHCP Client: Receive Ack from 192.168.1.3,Lease time=300",
+"DHCP-Client: Bestätigung von 192.168.1.3 erhalten,Lease-Zeit=300",
+"Cliente DHCP: Recibir acuse de recibo de 192.168.1.3, Tiempo incurrido=300",
+"Client DHCP : Réception Accusé de réception depuis 192.168.1.3, Durée de location=300",
+"Client DHCP: ricevi Ack da 192.168.1.3, tempo di Lease=300",
+"DHCP-client: Ontvang Ack van 192.168.1.3, lease time=300",
+"Cliente DHCP: Receber notificação de 192.168.1.3,Tempo de concessão=300",
+"DHCP klient: Přijato potvrzení od 192.168.1.3,Doba pronájmu=300",
+"Klient DHCP: Przyjęto potwierdzenie od 192.168.1.3, Czas wynajmu =300 ",
+"Client DHCP: prineste Ack de la 192.168.1.3, lease time=300",
+"DHCP клиент: получено подтверждение от 192.168.1.3, время аренды = 300",
+"DHCP Klient: Prijaté potvrdenie z 192.168.1.3, Čas prenájmu=300",
+"DHCP終端：自 192.168.1.3接收回應，回應時間 = 300",
+"DHCP终端：自 192.168.1.3接收响应，响应时间 = 300"
+);
+var alertFunctionQoSTable=new Array
+(
+"Current QoS Table ",
+"Aktuelle QoS Tabelle ",
+"Actual tabla QoS ",
+"Table QoS actuel ",
+"Tabella QoS corrente ",
+"Huidige QoS ",
+"Tabela de QoS actual ",
+"Aktuální tabulka QoS ",
+"Obecna tabela QoS",
+"Tabel QoS",
+"Текущая таблица QoS",
+"Terajšia QoS tabuľka",
+"目前的QoS表",
+"目前的QoS表"
+);
+var alertFunctionUpBand=new Array
+(
+"Upload Bandwidth ",
+"Upload-Bandbreite ",
+"Cargar banda ancha ",
+"Bande passante ascendante ",
+"Larghezza di banda in upload ",
+"Bandbreedte voor uploaden ",
+"Largura de banda de envio ",
+"Přenosové pásmo pro odesílání ",
+"Szerokość pasma wyjściowego",
+"Latime de Banda pentru Upload",
+"Исходящая ширина полосы",
+"Prenosová rýchlosť odosielania",
+"上傳頻寬",
+"上传带宽"
+);
+var functionConfirm=new Array
+(
+"Do you really want to delete the selected entry?",
+"Möchten Sie den gewählten Eintrag wirklich löschen?",
+"¿Desea realmente eliminar la entrada seleccionada?",
+"Souhaitez-vous vraiment supprimer l'entrée sélectionnée ?",
+"Eliminare l'immissione selezionata?",
+"Weet u zeker dat u de selectie wilt verwijderen?",
+"Pretende mesmo apagar a entrada seleccionada?",
+"Opravdu chcete vymazat vybranou hodnotu?",
+"Czy naprawdę chcesz skasować wybrane wpisy?",
+"Doriti sa stergeti toate inregistrarile selectate?",
+"Вы действительно хотите удалить выделенные данные?",
+"Chcete skutočne vymazať všetky zadané položky?",
+"你真的要刪除所選的項目？",
+"你真的要删除所选的项目？"
+);
+var cannotEmpty=new Array
+(
+"cannot be empty!",
+"darf nicht leer sein!",
+"¡no puede estar vacía!",
+"ne peut pas être vide !",
+"non può essere vuoto!",
+"mag niet leeg zijn!",
+"não pode estar em branco!",
+"nemůže být prázdné!",
+"nie może być puste!",
+"nu poate ramane necompletat",
+"Не может быть пустым! ",
+"nesmie byť prázdne!",
+"不能是空白！",
+"不能是空白！"
+);
+var functionAlert13=new Array
+(
+" is invalid value.",
+" Ungültiger Wert von",
+" Vor inválido de",
+" Valeur incorrecte pour",
+" Valore non accettabile di",
+" Ongeldige waarde van",
+" Valor inválido de",
+" Neplatná hodnota",
+" Niewłaściwa wartość ",
+" valoare invalida a",
+" Неверное значение ",
+" Nesprávna hodnota z",
+"是無效的值。",
+"是无效的值。"
+);
+var alertFunctionInvMask3rd=new Array
+(
+"Invalid subnet mask in 3rd digit. It should be the number of 0, 128, 192, 224, 240, 248, 252, 254 or 255.",
+"Ungültige Subnetzmaske an 3. Stelle. ",
+"Máscara de subred inválida en 3 dígitos. ",
+"3ème chiffre du masque de sous-réseau incorrect. ",
+"3a cifra della maschera sottorete non valida. ",
+"Ongeldig subnetmasker in derde cijferreeks. ",
+"Máscara de subrede inválida no 3º dígito. ",
+"Neplatná hodnota masky podsítě na třetí pozici. ",
+"Niewłaściwa trzecia cyfra maski podsieci ",
+"Valoare invalida a subnet mask-ului in campul 3",
+"Неверная маска подсети в 4м периоде",
+"Nesprávna maska podsiete v 3 čísle.",
+"第1組的子網路遮罩是無效的。它應該是 0，128，192，224，240，248，252，254或255。",
+"第1组的子网掩码是无效的。它应该是 0，128，192，224，240，248，252，254或255。"
+);
+var dhcpSendDis=new Array
+(
+"DHCP Client: Send Discover",
+"DHCP Client: Discover senden",
+"Cliente DHCP: Enviar descubrimiento",
+"Client DHCP : Envoyer Découvert",
+"Client DHCP: Invia Discover",
+"DHCP-client: Send Discover",
+"Cliente DHCP: Enviar descoberta",
+"DHCP klient: Odeslání hledání",
+"Klient DHCP: Wyślij rozpoznanie ",
+"Client DHCP: trimite descoperire",
+"DHCP клиент: послан запрос на обнаружение",
+"DHCP klient: poslať objaviť",
+"DHCP終端：探索",
+"DHCP终端：探索"
+);

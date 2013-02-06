@@ -1,0 +1,20 @@
+ERROR: Couldn't kill dnrd: No such process
+Debug: cache low/high: 800/1000
+Debug: initialising master DNS database
+Debug: no master configuration: /etc/dnrd/master
+Debug: initialising from /etc/hosts, domain= <none>
+Debug: /etc/hosts: 3 records
+Debug: added authority for 0.0.127.in-addr.arpa
+Debug: added authority for 30.20.172.in-addr.arpa
+Debug: 7 records in master DNS database
+Debug: Received DNS query for "www.deja.com"
+Debug: Forwarding the query to DNS server 172.20.1.10
+Debug: Received DNS reply for "www.deja.com"
+Debug: cache: added www.deja.com, type= 1, class: 1, ans= 3
+Debug: Forwarding the reply to the host
+Debug: Received DNS query for "100.1.168.192.in-addr.arpa"
+Debug: Forwarding the query to DNS server 172.20.1.10
+Debug: Received DNS reply for "100.1.168.192.in-addr.arpa"
+Debug: cache: added 100.1.168.192.in-addr.arpa, type= 12, class: 1, ans= 0
+Debug: Forwarding the reply to the host
+Debug: Shutting down...

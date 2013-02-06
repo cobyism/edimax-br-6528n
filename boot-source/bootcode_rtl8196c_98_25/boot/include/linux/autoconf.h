@@ -1,0 +1,341 @@
+/*
+ * Automatically generated C config: don't edit
+ */
+#define AUTOCONF_INCLUDED
+
+/*
+ * Code maturity level options
+ */
+#define CONFIG_EXPERIMENTAL 1
+
+/*
+ * Machine selection
+ */
+#undef  CONFIG_CLASS_DESKTOP
+#define CONFIG_CLASS_PDA 1
+#undef  CONFIG_SGI_IP22
+#undef  CONFIG_DECSTATION
+#undef  CONFIG_AGENDA_VR3
+#undef  CONFIG_CASIO_E10
+#undef  CONFIG_CASIO_E15
+#undef  CONFIG_CASIO_E105
+#undef  CONFIG_CASIO_E125
+#undef  CONFIG_COMPAQ_8XX_201X
+#undef  CONFIG_COMPAQ_AERO_15XX
+#undef  CONFIG_COMPAQ_AERO_21XX
+#undef  CONFIG_EVEREX_FREESTYLE
+#undef  CONFIG_IBM_WORKPAD
+#undef  CONFIG_NEC_MOBILEPRO_700
+#undef  CONFIG_NEC_MOBILEPRO_750C
+#undef  CONFIG_NEC_MOBILEPRO_770
+#undef  CONFIG_NEC_MOBILEPRO_800
+#undef  CONFIG_NEC_MOBILEGEAR2_R300
+#undef  CONFIG_NEC_MOBILEGEAR2_R320
+#undef  CONFIG_NEC_MOBILEGEAR2_R430
+#undef  CONFIG_NEC_MOBILEGEAR2_R500
+#undef  CONFIG_NEC_MOBILEGEAR2_R510
+#undef  CONFIG_NEC_MOBILEGEAR2_R520
+#undef  CONFIG_NEC_MOBILEGEAR2_R530
+#undef  CONFIG_NEC_MOBILEGEAR2_R700
+#undef  CONFIG_NEC_MOBILEGEAR2_R730
+#undef  CONFIG_DOCOMO_SIGMARION
+#undef  CONFIG_NEC_OSPREY
+#undef  CONFIG_NEC_UEB30
+#undef  CONFIG_PHILIPS_NINO
+#undef  CONFIG_PHILIPS_VELO
+#undef  CONFIG_SHARP_MOBILON
+#define CONFIG_VTECH_HELIO 1
+#undef  CONFIG_VADEM_CLIO_1000
+#undef  CONFIG_VADEM_CLIO_1050
+#define CONFIG_CPU_R39XX 1
+#define CONFIG_MAIN_MEMORY (16)
+#define CONFIG_EXP_MEMORY (0)
+#undef  CONFIG_VTECH_HELIO_EMULATOR
+#undef  CONFIG_CPU_HAS_LLSC
+#undef  CONFIG_CPU_HAS_WB
+#define CONFIG_CPU_NO_FPU 1
+#undef  CONFIG_ISA
+#undef  CONFIG_PCI
+#undef  CONFIG_I8259
+
+/*
+ * Loadable module support
+ */
+#undef  CONFIG_MODULES
+
+/*
+ * General setup
+ */
+#define CONFIG_CPU_LITTLE_ENDIAN 1
+#define CONFIG_KCORE_ELF 1
+#define CONFIG_ELF_KERNEL 1
+#undef  CONFIG_BINFMT_AOUT
+#define CONFIG_BINFMT_ELF 1
+#undef  CONFIG_BINFMT_MISC
+#undef  CONFIG_MIPS_FPU_EMULATOR
+#define CONFIG_NET 1
+#undef  CONFIG_HOTPLUG
+#undef  CONFIG_PCMCIA
+#define CONFIG_SYSVIPC 1
+#undef  CONFIG_BSD_PROCESS_ACCT
+#define CONFIG_SYSCTL 1
+#undef  CONFIG_XIP_ROM
+#undef  CONFIG_LINK_OVERRIDE
+
+/*
+ * Parallel port support
+ */
+#undef  CONFIG_PARPORT
+#undef  CONFIG_PM
+
+/*
+ * Memory Technology Devices (MTD)
+ */
+#undef  CONFIG_MTD
+
+/*
+ * Block devices
+ */
+#undef  CONFIG_BLK_DEV_FD
+#undef  CONFIG_BLK_DEV_XD
+#undef  CONFIG_PARIDE
+#undef  CONFIG_BLK_CPQ_DA
+#undef  CONFIG_BLK_CPQ_CISS_DA
+#undef  CONFIG_BLK_DEV_DAC960
+#undef  CONFIG_BLK_DEV_LOOP
+#undef  CONFIG_BLK_DEV_NBD
+#define CONFIG_BLK_DEV_RAM 1
+#define CONFIG_BLK_DEV_RAM_SIZE (4096)
+#define CONFIG_BLK_DEV_INITRD 1
+#undef  CONFIG_BLK_DEV_ROM
+
+/*
+ * Multi-device support (RAID and LVM)
+ */
+#undef  CONFIG_MD
+#undef  CONFIG_BLK_DEV_MD
+#undef  CONFIG_MD_LINEAR
+#undef  CONFIG_MD_RAID0
+#undef  CONFIG_MD_RAID1
+#undef  CONFIG_MD_RAID5
+#undef  CONFIG_BLK_DEV_LVM
+#undef  CONFIG_LVM_PROC_FS
+
+/*
+ * Networking options
+ */
+#undef  CONFIG_PACKET
+#undef  CONFIG_NETLINK
+#undef  CONFIG_NETFILTER
+#undef  CONFIG_FILTER
+#define CONFIG_UNIX 1
+#define CONFIG_INET 1
+#undef  CONFIG_IP_MULTICAST
+#undef  CONFIG_IP_ADVANCED_ROUTER
+#undef  CONFIG_IP_PNP
+#undef  CONFIG_NET_IPIP
+#undef  CONFIG_NET_IPGRE
+#undef  CONFIG_INET_ECN
+#undef  CONFIG_SYN_COOKIES
+#undef  CONFIG_IPV6
+#undef  CONFIG_KHTTPD
+#undef  CONFIG_ATM
+
+/*
+ *  
+ */
+#undef  CONFIG_IPX
+#undef  CONFIG_ATALK
+#undef  CONFIG_DECNET
+#undef  CONFIG_BRIDGE
+#undef  CONFIG_X25
+#undef  CONFIG_LAPB
+#undef  CONFIG_LLC
+#undef  CONFIG_ECONET
+#undef  CONFIG_WAN_ROUTER
+#undef  CONFIG_NET_FASTROUTE
+#undef  CONFIG_NET_HW_FLOWCONTROL
+
+/*
+ * QoS and/or fair queueing
+ */
+#undef  CONFIG_NET_SCHED
+
+/*
+ * ATA/IDE/MFM/RLL support
+ */
+#undef  CONFIG_IDE
+#undef  CONFIG_BLK_DEV_IDE_MODES
+#undef  CONFIG_BLK_DEV_HD
+
+/*
+ * Network device support
+ */
+#define CONFIG_NETDEVICES 1
+
+/*
+ * ARCnet devices
+ */
+#undef  CONFIG_ARCNET
+#undef  CONFIG_DUMMY
+#undef  CONFIG_BONDING
+#undef  CONFIG_EQUALIZER
+#undef  CONFIG_TUN
+#undef  CONFIG_NET_SB1000
+
+/*
+ * Ethernet (10 or 100Mbit)
+ */
+#undef  CONFIG_NET_ETHERNET
+
+/*
+ * Ethernet (1000 Mbit)
+ */
+#undef  CONFIG_ACENIC
+#undef  CONFIG_HAMACHI
+#undef  CONFIG_YELLOWFIN
+#undef  CONFIG_SK98LIN
+#undef  CONFIG_FDDI
+#undef  CONFIG_HIPPI
+#define CONFIG_PPP 1
+#define CONFIG_PPP_MULTILINK 1
+#define CONFIG_PPP_ASYNC 1
+#undef  CONFIG_PPP_SYNC_TTY
+#define CONFIG_PPP_DEFLATE 1
+#define CONFIG_PPP_BSDCOMP 1
+#undef  CONFIG_PPPOE
+#undef  CONFIG_SLIP
+
+/*
+ * Wireless LAN (non-hamradio)
+ */
+#undef  CONFIG_NET_RADIO
+
+/*
+ * Token Ring devices
+ */
+#undef  CONFIG_TR
+#undef  CONFIG_NET_FC
+#undef  CONFIG_RCPCI
+#undef  CONFIG_SHAPER
+
+/*
+ * Wan interfaces
+ */
+#undef  CONFIG_WAN
+
+/*
+ * IrDA (infrared) support
+ */
+#undef  CONFIG_IRDA
+
+/*
+ * Character devices
+ */
+#undef  CONFIG_VT
+#define CONFIG_SERIAL 1
+#define CONFIG_SERIAL_CONSOLE 1
+#undef  CONFIG_TOUCH_PANEL
+#undef  CONFIG_BUTTONS
+#undef  CONFIG_RTC
+#undef  CONFIG_UNIX98_PTYS
+
+/*
+ * File systems
+ */
+#undef  CONFIG_QUOTA
+#undef  CONFIG_AUTOFS_FS
+#undef  CONFIG_AUTOFS4_FS
+#undef  CONFIG_ADFS_FS
+#undef  CONFIG_ADFS_FS_RW
+#undef  CONFIG_AFFS_FS
+#undef  CONFIG_HFS_FS
+#undef  CONFIG_BFS_FS
+#undef  CONFIG_FAT_FS
+#undef  CONFIG_MSDOS_FS
+#undef  CONFIG_UMSDOS_FS
+#undef  CONFIG_VFAT_FS
+#undef  CONFIG_EFS_FS
+#undef  CONFIG_JFFS_FS
+#undef  CONFIG_CRAMFS
+#undef  CONFIG_RAMFS
+#undef  CONFIG_ISO9660_FS
+#undef  CONFIG_JOLIET
+#undef  CONFIG_MINIX_FS
+#undef  CONFIG_NTFS_FS
+#undef  CONFIG_NTFS_RW
+#undef  CONFIG_HPFS_FS
+#define CONFIG_PROC_FS 1
+#undef  CONFIG_DEVFS_FS
+#undef  CONFIG_DEVFS_MOUNT
+#undef  CONFIG_DEVFS_DEBUG
+#undef  CONFIG_DEVPTS_FS
+#undef  CONFIG_QNX4FS_FS
+#undef  CONFIG_QNX4FS_RW
+#undef  CONFIG_ROMFS_FS
+#define CONFIG_EXT2_FS 1
+#undef  CONFIG_SYSV_FS
+#undef  CONFIG_SYSV_FS_WRITE
+#undef  CONFIG_UDF_FS
+#undef  CONFIG_UDF_RW
+#undef  CONFIG_UFS_FS
+#undef  CONFIG_UFS_FS_WRITE
+
+/*
+ * Network File Systems
+ */
+#undef  CONFIG_CODA_FS
+#undef  CONFIG_NFS_FS
+#undef  CONFIG_NFS_V3
+#undef  CONFIG_ROOT_NFS
+#undef  CONFIG_NFSD
+#undef  CONFIG_NFSD_V3
+#undef  CONFIG_SUNRPC
+#undef  CONFIG_LOCKD
+#undef  CONFIG_SMB_FS
+#undef  CONFIG_NCP_FS
+#undef  CONFIG_NCPFS_PACKET_SIGNING
+#undef  CONFIG_NCPFS_IOCTL_LOCKING
+#undef  CONFIG_NCPFS_STRONG
+#undef  CONFIG_NCPFS_NFS_NS
+#undef  CONFIG_NCPFS_OS2_NS
+#undef  CONFIG_NCPFS_SMALLDOS
+#undef  CONFIG_NCPFS_MOUNT_SUBDIR
+#undef  CONFIG_NCPFS_NDS_DOMAINS
+#undef  CONFIG_NCPFS_NLS
+#undef  CONFIG_NCPFS_EXTRAS
+
+/*
+ * Partition Types
+ */
+#define CONFIG_PARTITION_ADVANCED 1
+#undef  CONFIG_ACORN_PARTITION
+#undef  CONFIG_OSF_PARTITION
+#undef  CONFIG_AMIGA_PARTITION
+#undef  CONFIG_ATARI_PARTITION
+#undef  CONFIG_MAC_PARTITION
+#define CONFIG_MSDOS_PARTITION 1
+#undef  CONFIG_BSD_DISKLABEL
+#undef  CONFIG_SOLARIS_X86_PARTITION
+#undef  CONFIG_UNIXWARE_DISKLABEL
+#define CONFIG_SGI_PARTITION 1
+#undef  CONFIG_ULTRIX_PARTITION
+#undef  CONFIG_SUN_PARTITION
+#undef  CONFIG_NLS
+
+/*
+ * USB support
+ */
+#undef  CONFIG_USB
+
+/*
+ * Input core support
+ */
+#undef  CONFIG_INPUT
+
+/*
+ * Kernel hacking
+ */
+#define CONFIG_CROSSCOMPILE 1
+#undef  CONFIG_REMOTE_DEBUG
+#undef  CONFIG_MAGIC_SYSRQ

@@ -1,0 +1,115 @@
+hfload is a simple, second stage ELF bootloader for the VTech Helio.
+It is probably generalizable to other Philips R3912 devices with a
+friendly boot rom and flash.
+
+It works on both real Helio hardware and the Helio emulator.
+
+LEGAL STUFF
+===========
+
+This software is subject to the terms and conditions of the GNU
+General Public License.  See the file "COPYING" in the main directory
+of this archive for more details.
+
+Copyright (C) 2000 by Jay Carlson.
+
+Many files originated in the Linux kernel.  
+
+Note that my intent is that the last two stages of the build process
+(production of the ELF memory image, and conversion to a raw ROM
+image) are "mere aggregation [...]  on a volume of a storage or
+distribution medium" in the sense of the last paragraph of section 2
+of the GPL.  If necessary, I will arrange that the aggregation
+mechanism is "/bin/cat" or a simple C program, if anyone has a problem
+with my use of a "linker" to throw together files in a single box.  No
+real linking is done at this stage; the Linux kernel is treated as
+pure data.
+
+QUICK START
+===========
+
+Point the Makefile at your kernel build directory.  If building for
+the emulator, uncomment the EMULATOR line in the Makefile.
+
+If you don't have a romdisk image, touch romdisk.  
+
+Put the first 64K of a 2M VT-OS rom image in "vtboot"; if you're
+building for the real hardware you can fake it with "make fake-vtboot".
+
+"make" produces "tryrom" and "linux.bin".  tryrom is a full 2M ROM
+image for the emulator containing the VTOS bootloader, hfload, a
+compressed stripped copy of your vmlinux, and the contents of romdisk.
+linux.bin is a 2M-128k OS upgrade image without the VTOS bootloader,
+suitable for use with the VTech "dt.exe" flash programming tool.
+
+WHAT IT DOES
+============
+
+On startup, the VT-OS bootroom sets up the hardware a little, installs
+a 4k stack, and jumps to 0x9fc10000 in ROM.  hfload begins here.
+
+Setup
+-----
+
+start.S zeroes the hfload bss area.  It moves the stack to somewhere
+more spacious (paranoia), and jumps to main().  (It should turn on the
+serial port too.)
+
+main() immediately prints a message on serial port A.  (It used to try
+to initialize the Helio LCD hardware, but that's commented out now.)
+
+Decompression
+-------------
+
+The contents of the input_data-input_data_end region are gunzip'd from
+flash to the 4M mark in memory, at the start of the second DRAM bank.
+
+input_data typically points to a gzip'd stripped Linux kernel.
+
+ELF load
+--------
+
+main() reads in the ELF header from the decompressed data.
+(Currently, the only error checking is verification that the declared
+sizes of structures match the expected sizes; this catches most
+errors.)  The ELF image is copied to its destinations declared in the
+program headers, and excess memory is properly zeroed.
+
+Kernel start
+------------
+
+main() hands the ELF entry address to start.S:start_kernel.
+start_kernel places the address of the romdisk area at 0x80030000,
+restores the stack, and calls entry_address(0,0,0).
+
+WHY THE IMAGE READ FUNCTIONS ARE SO UGLY
+========================================
+
+I originally debugged this application as a userland binary, reading
+the image from a file descriptor.  I then realized I could mmap() the
+kernel image.  The restrictions on read_struct, copy_to_region, and
+seek_forward came out of this.  As it turns out, the "can only seek
+forward, must be aligned" characteristics may be useful in the future.
+There's no reason why the entire kernel has to be uncompressed as a
+big blob; the stream reading functions could be rewritten to process
+the 32k decompressed windows as a coroutine to the decompression
+process.  ELF images over about 2M are going to need this.
+
+WHY THIS WHOLE APP IS SO UGLY
+=============================
+
+Most of this will be rewritten once I understand better what I'm
+trying to do.  Why make throwaway code pretty?
+
+VTBOOT
+======
+
+The file "vtboot" is not included with this distribution.  It is an
+image of the VTech VT-OS bootloader that's hardwired into real Helio
+devices.  It's the first 64k of a full VT-OS rom image.  Given such a
+rom image, it can be extracted by:
+
+  dd if=VTOS-1-1-03.rom of=vtboot bs=64k count=1
+
+If you're building for the real hardware, you don't need this file.
+"make fake-vtboot" produces 64k of zeroes.

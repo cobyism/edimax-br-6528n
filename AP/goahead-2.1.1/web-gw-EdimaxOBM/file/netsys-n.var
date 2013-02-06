@@ -1,0 +1,4964 @@
+﻿var provider=new Array
+(
+"Provider ",
+"Provider ",
+"Proveedor ",
+"Fournisseur ",
+"Provider ",
+"Provider ",
+"Fornecedor ",
+"Poskytovatel ",
+"Dostawca",
+"Provider ",
+"Провайдер ",
+"Poskytovateľ",
+"提供者",
+"提供者"
+);
+var IPAddrInfo=new Array
+(
+"3.IP Address Info",
+"3.IP-Adresse Info",
+"3. Información de dirección IP",
+"3.Infos adresse IP",
+"3.Info indirizzo IP",
+"3. Informatie over IP-adres",
+"3.Informações sobre o endereço IP",
+"3. Informace o IP adrese",
+"Informacje o adresie IP ",
+"3. Informatii Adresa IP",
+"3. Информация по IP адресу",
+"3. IP adresa info",
+"3、IP位址信息",
+"3、IP地址信息"
+);
+var telPass=new Array
+(
+"Telstra Big Pond password",
+"Telstra Big Pond Kennwort",
+"Contraseña Telstra Big Pond",
+"Mot de passe Telstra Big Pond",
+"Password Telstra Big Pond",
+"Wachtwoord Telstra Big Pond",
+"Palavra-passe de Telstra Big Pond",
+"Heslo Telstra Big Pond",
+"Hasło dostępu Telstra Big Pond",
+"Parola Telstra Big Pond",
+"Пароль Telstra Big Pond",
+"Telstra Big Pond heslo",
+"Telstra Big Pond password",
+"Telstra Big Pond password"
+);
+var enableFunction=new Array
+(
+"Enable Function",
+"Funktion aktivieren",
+"Actifunción",
+"Activer la fonction",
+"Funzione attivata",
+"Schakel de functie in",
+"Actifunção",
+"Povolit funkci",
+"Włącz funkcję ",
+"Activare Functie ",
+"Включить функцию",
+"Zapnúť funkciu",
+"啟用功能",
+"启用功能"
+);
+var ddnsPass=new Array
+(
+"DDNS password",
+"DDNS Kennwort",
+"Contraseña DDNS",
+"Mot de passe DDNS",
+"Password DDNS",
+"DDNS-wachtwoord",
+"Palavra-passe do DDNS",
+"Heslo DDNS",
+"Hasło DDNS",
+"Parola DDNS",
+"Пароль DDNS",
+"DDNS heslo",
+"動態網域名稱密碼",
+"动态域名密码"
+);
+var wanInterSet=new Array
+(
+"WAN Interface Settings",
+"WAN Schnittstelleneinstellungen",
+"Configuración de interfaz WAN",
+"Paramètres de l'interface WAN",
+"Impostazioni interfaccia WAN",
+"Instellingen WAN-interface",
+"Definições da interface WAN",
+"Nastavení rozhraní WAN",
+"Ustawienia interfejsu WAN",
+"Setari Interfata WAN",
+"Настройки WAN интерфейса",
+"Nastavenie WAN rozhrania",
+"廣域網路界面設定",
+"广域网界面设定"
+);
+var setTimeZone=new Array
+(
+"Set Time Zone ",
+"Zeitzone einstellen ",
+"Fijar zona horaria ",
+"Définir Zone Horaire ",
+"Imposta fuso orario ",
+"Stel tijdzone in ",
+"Definir fuso horário ",
+"Nastavení časového pásma ",
+"Ustawienie strefy czasowej ",
+"Selectati Fusul Orar",
+"Установить Временую Зону",
+"Nastavenie časovej zóny",
+"設定時區",
+"设定时区"
+);
+var halfd=new Array
+(
+"Half day",
+"Halbtags",
+"Medio día",
+"Demie-journée",
+"Mezza giornata",
+"Halve dag",
+"Meio dia",
+"Půlden",
+"Połowa dnia ",
+"Jumatate de Zi",
+"Полдня",
+"Polovica dňa",
+"半天",
+"半天"
+);
+var password=new Array
+(
+"Password ",
+"Kennwort ",
+"Contraseña ",
+"Mot de Passe ",
+"Password ",
+"Wachtwoord ",
+"Palavra-passe ",
+"Heslo ",
+"Hasło",
+"Parola",
+"Пароль",
+"Heslo",
+"密碼",
+"密码"
+);
+var userName=new Array
+(
+"User Name ",
+"Benutzername ",
+"Nombre de usuario ",
+"Nom d'utilisateur ",
+"Nome utente ",
+"Gebruikersnaam ",
+"Nome de utilizador ",
+"Jméno uživatele ",
+"Nazwa użytkownika ",
+"Nume Utilizator",
+"Имя пользователя",
+"Užívateľské meno",
+"使用者名稱",
+"使用者名称"
+);
+var enabled=new Array
+(
+"Enabled",
+"Aktiviert",
+"Activado",
+"Activé",
+"Attivato",
+"Ingeschakeld",
+"Activado",
+"Povoleno",
+"Włączony",
+"Activat",
+"Включить",
+"Zapnúť",
+"啟用",
+"启用"
+);
+var wandnsContent=new Array
+(
+"A Domain Name System (DNS) server is like an index of IP Addresses and Web Addresses. If you type a Web address into your browser, such as www.broadbandrouter.com, a DNS server will find that name in its index and find the matching IP address. Most ISPs provide a DNS server for speed and convenience. Since your Service Provider may connect you to the Internet through dynamic IP settings, it is likely that the DNS server IP Address is also provided dynamically. However, if there is a DNS server that you would rather use, you need to specify the IP Address of that DNS server. The primary DNS will be used for domain name access first, in case the primary DNS access failures, the secondary DNS will be used.</br>Has your Internet service provider given you a DNS address?<br>",
+"Ein Domain Name System (DNS) Server ist wie ein Index von IP-Adressen und Web-Adressen. Wenn Sie eine Web-Adresse in Ihren Browser eingeben, beispielsweise www.broadbandrouter.com, wird ein DNS-Server diesen Namen und die zugehörige IP-Adresse in seinem Index finden. Die meisten Internetdienstanbieter stellen einen DNS-Server zur Verfügung, um höhere Geschwindigkeiten und mehr Komfort zu erreichen. Da Ihr Internetdiensteanbieter Sie unter Umständen mittels dynamischer IP-Einstellungen mit dem Internet verbindet, ist es wahrscheinlich, dass die IP-Adresse des DNS-Servers auch dynamisch bereitgestellt wird. Wenn jedoch ein DNS-Server vorhanden ist, den Sie lieber verwenden möchten, müssen Sie die IP-Adresse dieses DNS-Servers festlegen. Der primäre DNS wird als erster für den Zugriff auf den Domainnamen verwendet. Wenn der primäre DNS-Zugriff fehlschlägt, wird der sekundäre DNS verwendet.</br>Hat Ihnen Ihr Internetdiensteanbieter eine DNS-Adresse genannt?<br>",
+"Un servidor de sistema de nombre de dominio (DNS) es como un índice de la dirección IP y la dirección Web. Si indica una dirección Web en su navegador, como www.broadbandrouter.com, un servidor DNS encontrará el nombre en este índice y encuentre la dirección IP correspondiente. La mayoría de los ISP ofrecen un servidor DNS para su velocidad y su comodidad. Como su proveedor de servicios puede conectarle a Internet mediante los parámetros IP dinámicos, es probable que la dirección IP del servidor DNS también se ofrezca dinámicamente. Sin embargo, si existe un servidor DNS que le gustaría utilizar, tendrá que indicar la dirección IP de dicho servidor DNS. El DNS primario se utilizará para el acceso del nombre de dominio primeramente, en caso de fallos de acceso DNS primario, se utilizará el DNS secundario.</br>¿Le ha ofrecido su proveedor de servicios a Internet una dirección DNS?<br>",
+"Un serveur DNS est un index d'adresses IP et d'adresses Web. Si vous saisissez une adresse Web dans votre navigateur, telle que www.broadbandrouter.com, un serveur DNS trouve ce nom et son index ainsi que l'adresse IP correspondante. La plupart des FAI disposent d'un serveur DNS pour plus de rapidité et de commodité. De la même manière que votre FAI vous connecte à Internet grâce à un paramétrage IP dynamique, l'adresse IP du serveur DNS est également fournit de façon dynamique. Cependant, si vous souhaitez utiliser un serveur DNS en particulier, vous devez spécifier son adresse IP. Le DNS primaire est d'abord utilisé pour l'accès au nom de domaine, en cas d'échec du DNS primaire, c'est le DNS secondaire qui est utilisé.</br>Votre FAI vous-a-t-il donné une adresse DNS ?<br>",
+"Un server Domain Name System (DNS) corrisponde a un indice di indirizzi IP e indirizzi Web. Se si digita un indirizzo Web nel browser, come www.broadbandrouter.com, un server DNS troverà quel nome all'interno dell'indice, insieme all'indirizzo IP corrispondente. La maggior parte degli ISP fornisce un server DNS per maggior velocità e convenienza. Poiché il Service Provider potrebbe connettere il PC dell'utente tramite impostazioni IP di tipo dinamico, è probabile che l'indirizzo IP del server DNS venga a sua volta fornito dinamicamente. Tuttavia, se è disponibile un server DNS che si preferisce usare, è necessario specificare lvar 'indirizzo IP di quel server DNS. Il DNS primario verrà utilizzato prima per accedere al nome del dominio, nel caso in cui l'accesso al DNS primario fallisca, verrà usato il DNS secondario.</br>Il provider di servizi Internet ha fornito un indirizzo DNS?<br>",
+"Een DNS-server (Domain Name System-server) is een soort index van IP-adressen en internetadressen. Als u een internetadres intypt in uw browser, bijvoorbeeld www.broadbandrouter.com, zoekt een DNS-server die naam en het bijbehorende IP-adres op in zijn index. De meeste ISP's bieden een DNS-server aan, vanwege de snelheid en het gemak. Omdat uw internetprovider u mogelijk met internet verbindt met behulp van dynamische IP-instellingen, is het waarschijnlijk dat het IP-adres van de DNS-server ook dynamisch is. Als u liever een bepaalde DNS-server gebruikt, moet u het IP-adres van die DNS-server specificeren. Het primaire DNS wordt als eerste gebruikt voor toegang tot de domeinnaam, en als toegang via het primaire DNS mislukt, wordt de tweede DNS gebruikt.</br>Heeft uw provider u een DNS-adres gegeven?<br>",
+"Um servidor Sistema do nome do domínio (DNS) é como um índice de endereços IP e Web. Se introduzir um endereço Web no browser, tal como www.broadbandrouter.com, um servidor DNS irá localizar esse nome no respectivo índice e encontrar o endereço IP correspondente. A maioria dos ISP fornecem um servidor DNS em termos de velocidade e conveniência. Uma vez que o Fornecedor de serviços lhe permite estabelecer ligação à Internet através de definições de IP dinâmico, é provável  que o endereço IP do servidor DNS seja também fornecido de maneira dinâmica. Contudo, se pretender utilizar outro servidor DNS, terá de especificar o endereço IP desse servidor DNS. O DNS principal será utilizado primeiro para aceder ao nome do domínio. No caso do DNS principal falhar, será utilizado o DNS secundário.</br>O seu Fornecedor de serviços Internet forneceu-lhe um endereço DNS?<br>",
+"Server systému doménových jmen (DNS) představuje rejstřík IP adres a internetových adres. Zadáte-li v prohlížeči internetovou adresu, například www.broadbandrouter.com, DNS server nalezne v rejstříku název a odpovídající IP adresu. Většina poskytovatelů Internetu nabízí DNS server pro větší rychlost a pohodlí. Vzhledem k tomu, že vás poskytovatel služeb může připojit do Internetu prostřednictvím dynamického nastavení IP, je pravděpodobné, že IP adresa DNS serveru je poskytována automaticky. Existuje-li DNS server, který chcete používat raději, je potřeba nastavit IP adresu DNS serveru. Primární DNS se použije pro přístup k názvu domény jako první. V případě, že selže přístup k primárnímu DNS, použije se sekundární DNS.</br>Poskytl vám ISP DNS adresu?<br>",
+"System domenowych serwerów nazw (DNS) indeksuje listę adresów IP oraz adresów stron. Po wpisaniu adresu strony w przeglądarce jak np. www.broadbandrouter.com, serwer DNS odnajdzie nazwę w indeksie oraz odpowiadajacy jej adres IP. Większość ISP dostarcza serwer DNS w celu ułatwienia ustawień. Ponieważ dostawca dostępu do sieci może zapewnić połączenia za pomocą ustawień dynamicznych IP, możliwe jest, że także adres serwera DNS będzie dynamiczny. Jednakże jeśli chcesz korzystać z innego serwera DNS, należy go wpisać adres IP tego serwera. Wybrany DNS będzie stosowany jako pierwszorzędny serwer DNS,a w przypadku gdy pierwszy DNS będzie dostępny, użyty zostanie drugi adres DNS.<br> Czy dostawca internetu przydzilił Ci adres DNS?",
+"Un Server DNS este ca un index de adrese IP si adrese web. Daca introduceti in browser o adresa web, de exemplu www.broadbandrouter.com, un server DNS va gasi acest nume in indexul lui si adresa IP corespunzatoare. Majoritatea providerilor de internet ofera servere DNS  pentru viteza si convenienta. Daca providerul va ofera conectare prin IP dinamic este cel mai probabil ca si serverul DNS sa fie alocat dinamic. Daca doriti sa folositi un server de DNS specific, acesta trebuie specificat in aceasta pagina. DNS-ul primar va fi accesat prima data pentru cautarea domeniului, in caz de nefunctionare se va folosi cel de-al doilea DNS. </br> Avar veti o adresa DNS de la provider? <br>",
+"DNS (Domain Name System) сервер ставит в соответствие IP и веб адреса. При  введении веб адреса в ваш браузер, например, www.broadbandrouter.com, DNS сервер найдет это имя и соответствующий ему IP адрес. Большинство ISP провайдеров предоставляют DNS серверы для быстроты и удобства. Если ваш провайдер подключает к Интернету с помощью динамического IP адреса, то IP адрес DNS сервера тоже предоставляется динамически. Однако, если существует предпочтительный DNS сервер, вам нужно ввести IP адрес вашего DNS сервера на этой странице. Первичный DNS сервер будет использоваться для разрешения доменного имени первым, в случае отказа будет использоваться вторичный DNS сервер. Получили ли вы от ISP провайдера адрес DNS сервера?",
+"Domain meno systém (DNS) server je niečo ako index IP adries a webových adries. Pokiaľ napíšete webovú adresu to vášho prehliadača, ako napríklad www.broadbandrouter.com, DNS server nájde toto meno vo svojom indexe a nájde potrebnú IP adresu. Väčšina poskytovateľov internetu poskytuje DNS servery pre rýchlosť a pohodlie. pretože váš poskytovateľ internetu váš môže pripojiť k internetu pomocou dynamicky nastavení IP, je tiež veľmi pravdepodobné, že DNS server poskytuje IP adresy dynamicky. Akokoľvek, je tu DNS server, ktorý by ste radšej použili, musíte zadať IP adresu toho DNS serveru. Primárny DNS server bude použitý pre získavanie mien domén najskôr. V prípade ak zlyhá primárny DNS server, bude použitý sekundárny DNS server. <\br> Dal vám váš poskytovateľ internetového pripojenia adresu DNS?",
+"A Domain Name System (DNS) server is like an index of IP Addresses and Web Addresses. If you type a Web address into your browser, such as www.broadbandrouter.com, a DNS server will find that name in its index and find the matching IP address. Most ISPs provide a DNS server for speed and convenience. Since your Service Provider may connect you to the Internet through dynamic IP settings, it is likely that the DNS server IP Address is also provided dynamically. However, if there is a DNS server that you would rather use, you need to specify the IP Address of that DNS server. The primary DNS will be used for domain name access first, in case the primary DNS access failures, the secondary DNS will be used.</br>Has your Internet service provider given you a DNS address?<br>",
+"A Domain Name System (DNS) server is like an index of IP Addresses and Web Addresses. If you type a Web address into your browser, such as www.broadbandrouter.com, a DNS server will find that name in its index and find the matching IP address. Most ISPs provide a DNS server for speed and convenience. Since your Service Provider may connect you to the Internet through dynamic IP settings, it is likely that the DNS server IP Address is also provided dynamically. However, if there is a DNS server that you would rather use, you need to specify the IP Address of that DNS server. The primary DNS will be used for domain name access first, in case the primary DNS access failures, the secondary DNS will be used.</br>Has your Internet service provider given you a DNS address?<br>"
+);
+var serviceName=new Array
+(
+"Service Name ",
+"Servicename ",
+"Nombre del servicio ",
+"Nom du service ",
+"Nome servizio ",
+"Servicenaam ",
+"Nome do serviço ",
+"Název služby ",
+"Nazwa usługi",
+"Nume Serviciu",
+"Имя сервиса",
+"Názov služby",
+"服務名稱",
+"服务名称"
+);
+var pptpSet=new Array
+(
+"PPTP Settings",
+"PPTP-Einstellungen",
+"Configuración PPTP",
+"Paramètres PPTP",
+"Impostazioni PPTP",
+"PPTP-instellingen",
+"Definições PPTP",
+"Nastavení PPTP",
+"Ustawienia PPTP",
+"Setari PPTP",
+"Настройка PPTP",
+"Nastavení PPTP",
+"PPTP的設定",
+"PPTP的设定"
+);
+var TelstraBigPond=new Array
+(
+"Telstra Big Pond (Australia Only)",
+"Telstra Big Pond (nur Australien)",
+"Telstra Big Pond (sólo Australia)",
+"Telstra Big Pond (Australie uniquement)",
+"Telstra Big Pond (solo Australia)",
+"Telstra Big Pond (alleen voor Australië)",
+"Telstra Big Pond (Apenas na Austrália)",
+"Telstra Big Pond (pouze Austrálie)",
+"Internet Telstra Big Pond (tylko Australia)",
+"Telstra Big Pond (doar in Australia)",
+"Telstra Big Pond (только для Австралии)",
+"Telstra Big Pond (len Austrália)",
+"Telstra Big Pond (Australia Only)",
+"Telstra Big Pond (Australia Only)"
+);
+var gateAddr=new Array
+(
+"Default Gateway Address ",
+"Dienstanbieter Gateway-Adresse ",
+"Dirección de puerta de acceso del proveedor de servicio ",
+"Adresse Passerelle FAI ",
+"Indirizzo del gateway del Service Provider ",
+"Gateway-adres van de serviceprovider ",
+"Endereço do gateway do fornecedor de serviços ",
+"Adresa brány poskytovatele služeb ",
+"Adres bramki dostawcy usługi ",
+"Adresa Gateway a Providerului",
+"Адрес шлюза провайдера",
+"",
+"預設閘道器位址",
+"默认网关地址"
+);
+var wansipContent2=new Array
+(
+"Enter the IP Address, Subnet Mask, Gateway IP Address and DNS IP Address provided to you by your ISP in the appropriate fields.",
+"Geben Sie IP-Adresse, Subnetzmaske, Gateway IP-Adresse und DNS IP-Adresse, die Sie von Ihrem Internetdiensteanbieter erhalten haben, in die entsprechenden Felder ein.",
+"Indique la dirección IP, la máscara de subred, la dirección IP de la puerta de acceso y la dirección IP DNS suministrada por su ISP en los campos adecuados.",
+"Saisissez dans les champs correspondants l'adresse IP, le masque de sous-réseau, l'adresse IP passerelle et l'adresse IP DNS fournis par votre fournisseur.",
+"Inserire l'indirizzo IP, la maschera sottorete, l'indirizzo IP del gateway e l'indirizzo IP del DNS forniti dall'ISP nei campi appropriati.",
+"Voer in de daarvoor bestemde velden het IP-adres, het subnetmasker, het gateway IP-adres en het DNS IP-adres in die u van uw provider gekregen hebt.",
+"Introduza o endereço IP, máscara de subrede, endereço IP do gateway e endereço IP DNS fornecido pelo seu ISP nos campos adequados.",
+"Zadejte IP adresu, masku podsítě, IP adresu brány a IP adresu DNS podle údajů dodaných vaším ISP do odpovídajících polí.",
+"Wpisz w odpowiednie pola Adres IP, maskę podsieci, adres IP bramy oraz adres IP DNS dostarczony przez ISP.   ",
+"Introduceti Adresa IP, Masca de Subretea, Gaeway, si IP-urile de DNS alocate de ISP in campurile corespunzatoare.",
+"Введите в соответствующие поля IP адрес, маску подсети, IP адрес шлюза и IP адрес DNS сервера, предоставленные вам ISP провайдером.",
+"Zadajte IP Adresu, Masku podsiete, bránu, IP adresu a DNS IP Adresu poskytnutú vaším ISP do určených políčok.",
+"請輸入由你的ISP業者提供的 IP位址，子網路遮罩，閘道器 和DNS。",
+"请输入由你的ISP业者提供的 IP地址，子网掩码，网关 和DNS。"
+);
+var connectDemand=new Array
+(
+"Connect on Demand",
+"Verbindungsherstellung auf Anfrage",
+"Conectar bajo pedido",
+"Connexion sur demande",
+"Connetti su richiesta",
+"Verbinding op aanvraag",
+"Ligação mediante pedido",
+"Připojení na vyžádání",
+"Połączenie na żądanie ",
+"Conectare la Cerere",
+"Подключение по требованию",
+"Pripojenie za požiadanie",
+"需求時連接",
+"需求时连接"
+);
+var currentPass=new Array
+(
+"Current Password ",
+"Aktuelles Kennwort： ",
+"Contraseña actual ",
+"Mot de passe actuel ",
+"Password corrente ",
+"Huidig wachtwoord ",
+"Palavra-passe actual ",
+"Aktuální heslo ",
+"Obecne hasło ",
+"Parola Curenta",
+"Текущий пароль",
+"Terajšie heslo",
+"現在的密碼",
+"现在的密码"
+);
+var accoutEm=new Array
+(
+"Account/E-Mail",
+"Benutzerkonto/E-Mail",
+"Cuenta/ Dirección de correo electrónico",
+"Compte/e-mail",
+"Account/E-mail",
+"Account/E-mail",
+"Conta/Correio electrónico",
+"Účet/E-Mail",
+"Konto mailowe ",
+"Cont / E-mail",
+"Учетная запись/e-mail",
+"Účet/e-mail",
+"帳戶 /電子郵件",
+"帐户 /电子邮件"
+);
+var wansetPageContent7=new Array
+(
+"Telstra Big Pond is a Internet service is provided in Australia.",
+"Telstra Big Pond ist ein Internetdiensteanbieter in Australien.",
+"Telstra Big Pond es un servicio de Internet suministrado en Australia.",
+"Telstra Big Pond est un service Interent fourni en Australie.",
+"Telstra Big Pond è un servizio Internet disponibile in Australia.",
+"Telstra Big Pond wordt geleverd in Australië.",
+"Telstra Big Pond é um serviço da Internet fornecido na Austrália.",
+"Telstra Big Pond je Internetová služba poskytovaná v Austrálii.",
+"Telstra Big Pond jest dostawcą internetu w Australii ",
+"Telstra Big Pond este un serviciu de internet oferit in Australia.",
+"Telstra Big Pond - Интернет сервис предоставляемый в Австралии.",
+"Telstra Big Pond je internetová služba poskytovaná v Austrálií.",
+"Telstra Big Pond is a Internet service is provided in Australia.",
+"Telstra Big Pond is a Internet service is provided in Australia."
+);
+var timeZone1=new Array
+(
+"Time Zone",
+"Zeitzone",
+"Zona horaria",
+"Zone horaire",
+"Fuso orario",
+"Tijdzone",
+"Fuso horário",
+"Časové pásmo",
+"Strefa czasowa",
+"Fus Orar",
+"Временная Зона",
+"Časová zóna",
+"時區",
+"时区"
+);
+var timeZone1menu=new Array
+(
+"1.Time Zone",
+"1.Zeitzone",
+"1. Zona horaria",
+"1Zone horaire",
+"1. Fuso orario",
+"1. Tijdzone",
+"1.Fuso horário",
+"1. Časové pásmo",
+"Strefa czasowa 1 ",
+"1. Fus Orar",
+"1. Временная Зона",
+"1. Časová zóna",
+"1、時區",
+"1、时区"
+);
+var wan=new Array
+(
+"WAN",
+"WAN",
+"WAN",
+"WAN",
+"WAN",
+"WAN",
+"WAN",
+"WAN",
+"WAN",
+"WAN",
+"WAN",
+"WNA",
+"廣域網路設定",
+"广域网设定"
+);
+var twods=new Array
+(
+"Two days",
+"Zwei Tage",
+"Dos días",
+"Deux jours",
+"Due giorni",
+"Twee dagen",
+"Dois dias",
+"Dva dny",
+"Dwa dni ",
+"Doua Zile",
+"Два дня",
+"Dva dni",
+"兩天",
+"两天"
+);
+var oneh=new Array
+(
+"One hour",
+"Eine Stunde",
+"Una hora",
+"Une heure",
+"Un'ora",
+"Een uur",
+"Uma hora",
+"Jedna hodina",
+"Jedna godzina ",
+"O Ora",
+"Один час",
+"Jedna hodina",
+"一小時",
+"一小时"
+);
+var system=new Array
+(
+"System",
+"System",
+"Sistema",
+"Système",
+"Sistema",
+"Systeem",
+"Sistema",
+"Systém",
+"System ",
+"Sistem",
+"Система",
+"Systém",
+"系統",
+"系统"
+);
+var advancedSet=new Array
+(
+"Advanced Settings",
+"Erweiterte Einstellungen",
+"Configuración avanzada",
+"Paramètres Avancés",
+"Impostazioni avanzate",
+"Geavanceerde instellingen",
+"Definições avançadas",
+"Pokročilá nastavení",
+"Ustawienia zaawansowane ",
+"Setari avansate",
+"Дополнительные настройки",
+"Pokročilé nastavenia",
+"進階設定",
+"进阶设定"
+);
+var wanpptpAlert=new Array
+(
+"Invalid PPTP default gateway address!It should be located in the same subnet of current IP address.",
+"Ungültige PPTP Standardgateway-Adresse! Diese sollte sich im gleichen Subnetz der gegenwärtigen IP-Adresse befinden.",
+"¡Dirección de la puerta de acceso PPTP predefinida incorrecta! Deberá ubicarse en la misma subred de la dirección IP actual.",
+"Adresse de passerelle PPTP par défaut incorrecte ! Elle doit se trouver dans le même sous-réseau que l'adresse IP actuelle.",
+"Indirizzo del gateway PPTP predefinito non valido! Dovrebbe trovarsi nella stessa sottorete dell'indirizzo IP corrente.",
+"Ongeldig PPTP standaard gateway-adres! Het moet in hetzelfde subnet staan als het huidige IP-adres.",
+"Endereço de gateway PPTP predefinido inválido!Deve estar localizado na mesma subrede do endereço IP local.",
+"Neplatná PPTP adresa výchozí brány! Měla by být umístěna na stejné podsíti s místní IP adresou.",
+"Nieprawidłowy adres domyślnej bramy PPTP. Adres powinien należeć do tej samej podsieci, co obecny adres IP. ",
+"Adresa Gateway Implicit PPTP invalida. Trebuie sa fie in aceeasi subretea ca si IP-ul current.",
+"Неправильный адрес PPTP шлюза! Должен быть локализован в той же подсети,что и текущий адрес. ",
+"Nesprávna prednastavená PPTP adresa brány! Mala by byť umiestnená v rovnakej podsieti ako terajšia IP adresa.",
+"PPTP的預設閘道器位址是無效的！它應該與現有的IP位址在同一個網段。",
+"PPTP的默认网关地址是无效的！它应该与现有的IP地址在同一个网段。"
+);
+var lanAlert5=new Array
+(
+"Invalid Domain Name. It should be alphanumeric characters.",
+"Ungültiger Domainname. Es sollten alphanumerische Zeichen sein.",
+"Nombre de dominio inválido. Deberán ser caracteres alfanuméricos.",
+"Nom de domaine incorrect. Il doit contenir des caractères alphanumériques.",
+"Nome di dominio non valido. Dovrebbe contenere caratteri alfanumerici.",
+"Ongeldige domeinnaam. Het moet uit alfanumerieke tekens bestaan.",
+"Nome de domínio inválido. Deve ter caracteres alfanuméricos.",
+"Neplatné doménové jméno. Mělo by obsahovat alfanumerické znaky.",
+"Niewłaściwa nazwa domeny. Nazwa powinna mieć postać znaków alfanumerycznych.",
+"Nume Domeniu Invalid. Trebuie sa fie caractere alfanumerice.",
+"Неправильное имя домена. Должно состоять из алфавитных и числовых символов.",
+"Nesprávne meno Domény. Musí byť z alfanumerických znakov.",
+"無效的網域名稱。它應該是由字母、數字或有效字元所組成。",
+"无效的域名。它应该是由字母、数字或有效字符所组成。"
+);
+var StaticIPAddr=new Array
+(
+"Fixed IP Address",
+"IP-Adresse, die Ihr Diensteanbieter Ihnen zugewiesen hat ",
+"Direcicón IP atribuida por su Proveedor de Servicios ",
+"Adresse IP assignée par votre FAI ",
+"Indirizzo IP assegnato dal Service Provider ",
+"IP-adres dat u van de provider gekregen hebt ",
+"Endereço IP atribuído pelo seu fornecedor de serviços ",
+"IP adresa přiřazená vaším poskytovatelem služeb ",
+"Adres IP przydzielony przez dostawcę usługi. ",
+"Adresa IP alocata de provider.",
+"IP адрес назначенный вашим провайдером",
+"IP adresa priradená vaším poskytovateľom internetového pripojenia.",
+"固定IP位址",
+"固定IP地址"
+);
+var lanAlert2=new Array
+(
+"Invalid DHCP client start IP address!It should be located in the same subnet of current IP address.",
+"Ungültige DHCP-Client Start-IP-Adresse! Diese sollte sich im gleichen Subnetz der gegenwärtigen IP-Adresse befinden.",
+"¡Dirección IP de inicio de cliente DHCP incorrecta! Deberá ubicarse en la misma subred de la dirección IP actual.",
+"Adresse de début client DHCP incorrecte ! Elle doit se trouver dans le même sous-réseau que l'adresse IP actuelle.",
+"Indirizzo IP iniziale del client DHCP non valido! Dovrebbe trovarsi nella stessa sottorete dell'indirizzo IP corrente.",
+"Ongeldig DHCP client start IP-adres! Het moet in hetzelfde subnet staan als het huidige IP-adres.",
+"Endereço IP inicial de cliente DHCP inválido!Deve estar localizado na mesma subrede do endereço IP local.",
+"Neplatná počáteční IP adresa DHCP klienta! Měla by být umístěna na stejné podsíti s místní IP adresou.",
+"Niewłaściwy początkowy adres IP klienta  DHCP. Adres powinien być w tej samej podsieci co obecny adres IP. ",
+"Adresa IP de start client I DHCP invalida! Trebuie sa fie in aceeasi subretea ca si adresa IP curenta.",
+"Неправильный стартовый адрес DHCP клиентов! Должен быть локализован в той же подсети,что и текущий адрес.  ",
+"Nesprávny začiatok IP adresy DHCP klienta! Musí umiestnený v rovnakej podsieti ako terajšia IP adresa.",
+"DHCP的啟動IP位址是無效的！它應該與現有的IP位址在同一個網段。",
+"DHCP的启动IP地址是无效的！它应该与现有的IP地址在同一个网段。"
+);
+var loginServer=new Array
+(
+"Login Server ",
+"Anmeldeserver ",
+"Servidor de identificación ",
+"Serveur d'ouverture de session ",
+"Server di accesso ",
+"Login-server ",
+"Servidor de acesso ",
+"Přihlašovací server ",
+"Login serwera",
+"Server Logare",
+"Сервер входа",
+"Prihlasovací server",
+"登錄伺服器",
+"登录服务器"
+);
+var gatewayAddr=new Array
+(
+"gateway address ",
+"Gateway-Adresse ",
+"dirección de la puerta de acceso: ",
+"Adresse Passerelle ",
+"indirizzo gateway ",
+"Gateway-adres ",
+"endereço de gateway ",
+"Adresa brány ",
+"Adres bramy",
+"Adresa Gateway",
+"адрес шлюза",
+"adresa brány",
+"閘道器位址",
+"网关地址"
+);
+var jan=new Array
+(
+"January",
+"Januar",
+"Enero",
+"Janvier",
+"Gennaio",
+"Januari",
+"Janeiro",
+"Leden",
+"Styczeń",
+"Ianuarie",
+"Январь",
+"Január",
+"一月",
+"一月"
+);
+var wansipContent=new Array
+(
+"If your service provider assigns a fixed IP address to you, enter the IP address, subnet mask and Gateway IP address provided by your service provider here.",
+"Wenn Ihr Diensteanbieter Ihnen eine feste IP-Adresse zugewiesen hat, geben Sie die zugewiesene IP-Adresse, Subnetzmaske und die Gateway IP-Adresse ein.",
+"Si su proveedor de servicio ha atribuido una dirección IP fija, indique la dirección IP atribuida, la máscara de subred y la dirección IP de la puerta de acceso suministrada.",
+"Si votre FAI vous a assigné une adresse IP fixe, saisissez l'adresse IP, le masque de sous-réseau et l'adresse IP passerelle fournie.",
+"Se il proprio Service Provider ha assegnato un indirizzo IP fisso; inserire l'indirizzo IP assegnato, la maschera sottorete e l'indirizzo IP del gateway forniti.",
+"Als uw provider een vast IP-adres heeft toegewezen; voer dan het toegewezen IP-adres, subnetmakser en gateway IP-adres in.",
+"Se o seu fornecedor de serviços atribuiu um endereço IP fixo; introduza o endereço IP atribuído, máscara de subrede e o endereço IP de gateway fornecidos.",
+"Přiřadil-li vám poskytovatel pevnou IP adresu, zadejte tuto adresu, masku podsítě a IP adresu brány získanou od poskytovatele.",
+"Jeśli dostawca dostępu do internetu przydzielił stały adres IP, wpisz ten adres IP, maskę podsieci, oraz adres IP bramy.",
+"Daca providerul v-a alocat o adresa IP Fixa; introduceti adresa IP, Masca de subretea si Gateway-ul primate.",
+"Если ваш провайдер назначил вам фиксированный IP адрес, введите этот адрес, маску подсети и IP адрес шлюза преоставленные провайдером.",
+"Pokiaľ vám váš ISP priradil pevnú IP adresu, zadajte priradenú IP adresu, masku podsiete a IP adresu brány.",
+"If your Service Provider has assigned a Fixed IP address; enter the assigned IP Address, Subnet Mask and the Gateway IP Address provided.",
+"If your Service Provider has assigned a Fixed IP address; enter the assigned IP Address, Subnet Mask and the Gateway IP Address provided."
+);
+var wansipContentshort=new Array
+(
+"If your service provider assigns a fixed IP address to you, enter the IP address, subnet mask and ",
+"Wenn Ihr Diensteanbieter Ihnen eine feste IP-Adresse zugewiesen hat, geben Sie die zugewiesene IP-Adresse, S",
+"Si su proveedor de servicio ha atribuido una dirección IP fija, indique la dirección IP atribuida, la máscar",
+"Si votre FAI vous a assigné une adresse IP fixe, saisissez l'adresse IP, le masque de sous-réseau et l'adres",
+"Se il proprio Service Provider ha assegnato un indirizzo IP fisso; inserire l'indirizzo IP assegnato, la mas",
+"Als uw provider een vast IP-adres heeft toegewezen; voer dan het toegewezen IP-adres, subnetmakser en gatewa",
+"Se o seu fornecedor de serviços atribuiu um endereço IP fixo; introduza o endereço IP atribuído, máscara de ",
+"Přiřadil-li vám poskytovatel pevnou IP adresu, zadejte tuto adresu, masku podsítě a IP adresu brány získanou",
+"Jeśli dostawca dostępu do internetu przydzielił stały adres IP, wpisz ten adres IP, maskę podsieci, oraz adr",
+"Daca providerul v-a alocat o adresa IP Fixa; introduceti adresa IP, Masca de subretea si Gateway-ul primate.",
+"Если ваш провайдер назначил вам фиксированный IP адрес, введите этот адрес, маску подсети и IP адрес шлюза п",
+"Pokiaľ vám váš ISP priradil pevnú IP adresu, zadajte priradenú IP adresu, masku podsiete a IP adresu brány.",
+"",
+""
+);
+var lanAlert4=new Array
+(
+"Invalid DHCP client IP address range!Ending address should be greater than starting address.",
+"Ungültiger DHCP-Client IP-Adressbereich! Die Endadresse sollte größer als die Startadresse sein.",
+"¡Dirección IP incorrecta de cliente DHCP! La dirección final deberá ser mayor que la dirección de inicio.",
+"Intervalle d'adresses clients DHCP incorrect ! L'adresse de fin doit être supérieure à l'adresse de début.",
+"Intervallo di indirizzi IP del client DHCP non valido! L'indirizzo finale deve essere maggiore dell'indirizzo iniziale.",
+"Ongeldig bereik DHCP client IP-adres! Eindadres moet hoger zijn dan startadres.",
+"Intervalo inválido de endereço IP do cliente DHCP!O endereço final deve ser maior do que o endereço inicial.",
+"Neplatný rozsah IP adres DHCP klientů! Koncová adresa by měla být vyšší než počáteční.",
+"Niewłaściwy zakres adresów IP klienta DHCP. Adres końcowy powinien być większy od adresu początkowego. ",
+"Raza adrese IP clienti DHCP invalida! Adresa de sfarsit trebuie sa fie mai mare decat cea de inceput.",
+"Неправильный диапвзон IP адресов DHCP клиентов! Конечный адрес должен быть больше начального.",
+"Nesprávny rozsah IP adries klienta DHCP! Koniec adresy musí byť väčší ako začiatok adresy.",
+"Invalid DHCP client IP address range!Ending address should be greater than starting address.",
+"Invalid DHCP client IP address range!Ending address should be greater than starting address."
+);
+var BEZEQ=new Array
+(
+"BEZEQ-ISRAEL ",
+"BEZEQ-ISRAEL ",
+"BEZEQ-ISRAEL ",
+"BEZEQ-ISRAEL ",
+"BEZEQ-ISRAELE ",
+"BEZEQ-ISRAEL ",
+"BEZEQ-ISRAEL ",
+"BEZEQ-ISRAEL ",
+"BEZEQ-IZRAEL",
+"BEZEQ-ISRAEL ",
+"BEZEQ-ISRAEL ",
+"BEZEQ-ISRAEL ",
+"BEZEQ-ISRAEL ",
+"BEZEQ-ISRAEL"
+);
+var telUserName=new Array
+(
+"Telstra Big Pond user name",
+"Telstra Big Pond Benutzername",
+"Nombre de usuario de Telstra Big Pond",
+"Nom d'utilisateur Telstra Big Pond",
+"Nome utente Telstra Big Pond",
+"Gebruikersnaam Telstra Big Pond",
+"Nome de utilizador do Telstra Big Pond",
+"Uživatelské jméno Telstra Big Pond",
+"Nazwa użytkownika Telstra Big Pond",
+"Nume Utilizator Telstra Big Pond",
+"Telstra Big Pond имя пользователя",
+"Užívateľské meno Telstra Big Pond",
+"Telstra Big Pond user name",
+"Telstra Big Pond user name"
+);
+var PPTPDSL=new Array
+(
+"PPTP xDSL",
+"PPTP xDSL",
+"PPTP xDSL",
+"PPTP xDSL",
+"PPTP  xDSL",
+"PPTP  xDSL",
+"PPTP  xDSL",
+"PPTP xDSL",
+"PPTP xDSL",
+"PPTP xDSL",
+"PPTP xDSL",
+"PPTP xDSL",
+"PPTP xDSL",
+"PPTP xDSL"
+);
+var secDnsAddr=new Array
+(
+"Secondary DNS Address (optional) ",
+"Sekundäre DNS-Adresse (optional) ",
+"Dirección DNS secundaria (opcional) ",
+"Secondary DNS Address (optional) ",
+"Indirizzo DNS secondario (opzionale) ",
+"Tweede DNS-adres (niet verplicht) ",
+"Endereço DNS secundário (opcional) ",
+"Adresa sekundárního DNS (volitelně) ",
+"Drugi adres DNS (Opcjonalnie)",
+"Adresa DNS Secundara (optionala) ",
+"Адрес вторичного DNS сервера  (опционно)",
+"Sekundárna adresa DNS (voliteľne)",
+"DNS2 位址",
+"DNS2 地址"
+);
+var hostAddr=new Array
+(
+"Host address ",
+"Hostadresse ",
+"Dirección de centro ",
+"Adresse hôte ",
+"Indirizzo host ",
+"Hostadres ",
+"Endereço do anfitrião ",
+"Adresa hostitele ",
+"Adres IP komputera",
+"Adresa Gazda",
+"Адрес хоста",
+"Host adresy",
+"主機位址",
+"主机地址"
+);
+var settypeContent2=new Array
+(
+"A connection through a cable modem requires minimal configuration. When you set up an account with your Cable provider, the Cable provider and your Broadband router will automatically establish a connection, so you probably do not need to enter anything more.",
+"Eine Verbindung über ein Kabelmodem erfordert nur eine minimale Konfiguration. Wenn Sie ein Benutzerkonto bei Ihrem Kabelanbieter einrichten, wird die Verbindung zwischen Kabelanbieter und Ihrem Breitbandrouter automatisch hergestellt, so dass Sie wahrscheinlich keine weiteren Angaben machen müssen.",
+"Una conexión a través del módem por cable exige una configuración mínima. Cuando configure una cuenta con su proveedor de cable, el proveedor de cable y su enrutador de banda ancha establecerán automáticamente una conexión, por lo que probablemente no necesite indicar nada más.",
+"Une connexion par modem câble nécessite une configuration minime. Lorsque vous configurez un compte avec votre fournisseur de câble, ce dernier établit automatiquement une connexion avec le routeur et vous n'aurez sans doute pas besoin de saisir quoi que ce soit d'autre.",
+"Una connessione tramite modem via cavo richiede una configurazione minima. Quando si imposta un account con il proprio provider via cavo, il provider via cavo e il router a banda larga stabiliranno automaticamente una connessione, pertanto probabilmente non sarà necessario inserire ulteriori dati.",
+"Voor een verbinding met een kabelmodem is een minimale configuratie vereist. Als u een account configureert bij uw kabelprovider, zullen de kabelprovider en uw breedbandrouter automatisch een verbinding tot stand brengen, dus waarschijnlijk hoeft u niets meer in te voeren.",
+"Uma ligação através de um modem por cabo requer uma configuração mínima. Se configurar uma conta com o fornecedor de cabo, este e o seu router de banda larga irá estabelecer automaticamente uma ligação, por isso não será provavelmente necessário introduzir mais dados.",
+"Připojení prostřednictvím kabelového modemu vyžaduje minimální konfiguraci. Nastavíte-li účet podle poskytovatele kabelového připojení, poskytovatel kabelového připojení a váš širokopásmový směrovač automaticky vytvoří připojení a pravděpodobně nebudete muset zadávat nic jiného.",
+"Połączenie za pomocą modemu przewodowego wymaga minimum konfiguracji. Po uzyskaniu konta u dostawcy usługi, dostawca oraz router umożliwią automatyczne podłączenie bez żadnych innych operacji.",
+"O conexiune prin cablu modem necesita configurare minima. Intre router si provider se va stabili automat conexiunea, deci nu va trebui sa mai introduceti nimic.",
+"Подключение через кабельный модем требует минимум настройки. После получения учетной записи вашего кабельного провайдера, ваш  маршрутизатор и устройство вашего провайдера автоматически установят соединение и вам нет нужды что-либо вводить.",
+"Pripojenie cez káblový móde potrebuje minimálnu konfiguráciu. Pokiaľ si nastavíte účet s vaším káblovým poskytovateľom, káblový poskytovať a váš širokopásmový router automaticky založí pripojenie, takže nebude potrebovať zadávať nič ďalšie.",
+"A connection through a cable modem requires minimal configuration. When you set up an account with your Cable provider, the Cable provider and your Broadband router will automatically establish a connection, so you probably do not need to enter anything more.",
+"A connection through a cable modem requires minimal configuration. When you set up an account with your Cable provider, the Cable provider and your Broadband router will automatically establish a connection, so you probably do not need to enter anything more."
+);
+var sysrmContent=new Array
+(
+"The remote management function allows you to designate a specific IP address on Internet to have management/configuration access to the Broadband router from a remote site. Enter the designated IP Address in the Host IP Address field.",
+"Die Fernverwaltungs-Funktion ermöglicht Ihnen das Festlegen eines Hosts im Internet, um den Breitbandrouter von einem entfernt gelegenen Standort zu verwalten/konfigurieren. Geben Sie die festgelegte Host IP-Adresse in das Host IP-Adressfeld ein.",
+"La función de gestión remota le permite designar un centro en Internet para tener acceso de configuración/gestión al enrutador de banda ancha desde un centro remoto. Indique la dirección IP de centro designada en el campo de dirección IP central.",
+"La fonction d'administration déportée vous permet de désigner un hôte sur Internet ayant un accès à l'administration/configuration du routeur à partir d'un site déporté. Saisissez l'adresse IP hôte dans le champ Adresse IP hôte.",
+"La funzione di gestione remota consente di designare un host su Internet per ottenere l'accesso alle funzioni di gestione/configurazione del router a banda larga da una postazione remota Inserire l'indirizzo IP dell'host designato nel campo Indirizzo IP host.",
+"Met de functie extern beheer kunt u een host op internet aanwijzen die vanaf een externe site toegang heeft tot beheer/configuratie van de breedbandrouter. Voer het aangewezen host IP-adres in in het veld 'Host IP-adres'.",
+"A função de gestão remota permite designar um anfitrião na Internet para que tenha um acesso de gestão/configuração ao router de banda larga a partir de um site remoto. Introduza o endereço IP anfitrião designado no campo Endereço IP de anfitrião.",
+"Funkce dálkové správy vám umožňuje určit hostitele v Internetu, který bude mít vzdálený přístup pro správu/konfiguraci širokopásmového směrovače. Zadejte IP adresu určeného hostitele do pole IP adresa hostitele.",
+"Funkcja zdalnego zarządzania pozwala na wyznaczenie komputera do zarządzania i zdalnej konfiguracji routera szerokopasmowego. Wpisz adres IP administratora w polu adresu IP.    ",
+"Functia de managemet de la distanta permite definirea unei gazde din internet  care sa aiba acces la configurarea routerului de la o locatie departata. Introduceti adresa IP in campul corespunzator.",
+"Функция удаленного управления позволит вам назначить хост в Интернете для доступа к управлению (конфигурированию) широкополосным маршрутизатором с удаленного узла связи. Введите IP адрес этого хоста в поле \"Адрес хоста\".",
+"Vzdialená správa umožňuje určených hostom v internet mať spravovací/konfiguračný prístup k širokopásmovému routeru zo vzdialenej stránky. Vložte určenú IP adresu hosta do políčka Host IP adresa.",
+"The remote management function allows you to designate a host in the Internet to have management/configuration access to the Broadband router from a remote site. Enter the designated host IP Address in the Host IP Address field.",
+"The remote management function allows you to designate a host in the Internet to have management/configuration access to the Broadband router from a remote site. Enter the designated host IP Address in the Host IP Address field."
+);
+var sysrmContentshort=new Array
+(
+"The remote management function allows you to designate a specific IP address on Internet to have management/c",
+"Die Fernverwaltungs-Funktion ermöglicht Ihnen das Festlegen eines Hosts im Internet, um den Breitbandrouter v",
+"La función de gestión remota le permite designar un centro en Internet para tener acceso de configuración/ges",
+"La fonction d'administration déportée vous permet de désigner un hôte sur Internet ayant un accès à l'adminis",
+"La funzione di gestione remota consente di designare un host su Internet per ottenere l'accesso alle funzioni",
+"Met de functie extern beheer kunt u een host op internet aanwijzen die vanaf een externe site toegang heeft t",
+"A função de gestão remota permite designar um anfitrião na Internet para que tenha um acesso de gestão/config",
+"Funkce dálkové správy vám umožňuje určit hostitele v Internetu, který bude mít vzdálený přístup pro správu/ko",
+"Funkcja zdalnego zarządzania pozwala na wyznaczenie komputera do zarządzania i zdalnej konfiguracji routera s",
+"Functia de managemet de la distanta permite definirea unei gazde din internet  care sa aiba acces la configur",
+"Функция удаленного управления позволит вам назначить хост в Интернете для доступа к управлению (конфигурирова",
+"Vzdialená správa umožňuje určených hostom v internet mať spravovací/konfiguračný prístup k širokopásmovému ro",
+"",
+""
+);
+var toolset=new Array
+(
+"Tools Setting",
+"Tools-Einstellung",
+"Configuración de herramientas",
+"Paramètres des outils",
+"Impostazione strumenti",
+"Instellingen gereedschappen",
+"Definição de ferramentas",
+"Nastavení nástrojů",
+"Ustawienia narzędzi",
+"Setari Unelte",
+"Инструменты настройки",
+"Nastavenia nástrojov",
+"工具設定",
+"工具设定"
+);
+var quickSetup=new Array
+(
+"Quick Setup",
+"Schnelles Setup",
+"Configuración rápida",
+"Configuration Rapide",
+"Impostazione rapida",
+"Snelle configuratie",
+"Configuração rápida",
+"Rychlé nastavení",
+"Ustawienia ogólne",
+"Configurare Rapida",
+"Быстрая установка",
+"Rýchle nastavenie",
+"快速安裝",
+"快速安装"
+);
+var vpn=new Array
+(
+"VPN",
+"VPN",
+"VPN",
+"VPN",
+"VPN",
+"VPN",
+"VPN",
+"VPN",
+"VPN",
+"VPN",
+"VPN",
+"VPN",
+"VPN",
+"VPN"
+);
+var sta2info=new Array
+(
+"Status and Information",
+"Status und Information",
+"Estado e información",
+"Etat et Informations",
+"Stato e informazioni",
+"Status en bevestiging",
+"Estado e informações",
+"Stav a informace",
+"Stan i informacje",
+"Stare si Informatii",
+"Статус и информация",
+"Stav a informácie",
+"狀態和資訊",
+"状态和信息"
+);
+var fixedIP=new Array
+(
+"Fixed-IP xDSL",
+"xDSL mit fester IP",
+"IP fija x DSL",
+"IP fixe xDSL",
+"IP xDSL fisso",
+"Vaste-IP xDSL",
+"IP fixo xDSL",
+"xDSL s pevnou adresou",
+"Stały adres IP xDSL",
+"IP Fix xDSL",
+"Фиксированный IP xDSL",
+"Pevná IP xDSL",
+"Fixed-IP xDSL",
+"Fixed-IP xDSL"
+);
+var setLanguage=new Array
+(
+"Language",
+"Sprache einstellen",
+"Configuración de idioma",
+"Paramètres de la lanque",
+"Impostazione della lingua",
+"Talen",
+"Definir idioma",
+"Nastavení jazyka",
+"Wybór języka ",
+"Alegere Limba",
+"Установка языка",
+"Sada jazykov",
+"語言",
+"语言"
+);
+var passSet=new Array
+(
+"Password Settings",
+"Kennworteinstellungen",
+"Configuración de contraseña",
+"Paramètres Mot de passe",
+"Impostazioni password",
+"Wachtwoorden instellen",
+"Definições da palavra-passe",
+"Nastavení hesla",
+"Ustawienia hasła",
+"Setari Parola",
+"Установка пароля",
+"Nastavenie hesla",
+"密碼設定",
+"密码设定"
+);
+var wansetPageContent5=new Array
+(
+"Point-to-Point Tunneling Protocol is a common connection method used in xDSL connections. Please select connection type (obtain an IP address automatically, or input an IP address), and complete PPTP connection settings by inputting information given by your service provider.",
+"Das Punkt-zu-Punkt Tunneling Protocol (PPTP) ist eine gebräuchliche Verbindungsmethode, die bei xDSL-Verbindungen eingesetzt wird.",
+"El protocolo de túnel punto a punto es un método de conexión común utilizado en las conexiones xDSL.",
+"Le protocole PPTP est une méthode de connexion commune utilisée pour les connexions xDSL.",
+"Il Point-to-Point Tunneling Protocol è un comune metodo di connessione utilizzato nelle connessioni xDSL.",
+"Point-to-Point Tunneling Protocol (PPTP) is een algemene aansluitmethode die in xDSL-verbindingen wordt gebruikt.",
+"Protocolo de encaminhamento ponto a ponto é um método de ligação comum utilizado em ligações xDSL.",
+"Tunelovací protokol Point-to-Point je běžný způsob připojení používaný pro xDSL připojení.",
+"Protokół tunelowania warstwy drugiej jest standardowym połączeniem używanym w połączeniach xDSL.",
+"Point-to-Point Tunneling Protocol este folosit in conectarile de tip xDSL.",
+"Point-to-Point Tunneling Protocol является распространенным методом подключения при xDSL типе связи.",
+"Point-to-point tunelovací protokol je bežné pripojovacie metóda používa v xDSL pripojeniach.",
+"",
+""
+);
+var wansetPageContent5short=new Array
+(
+"Point-to-Point Tunneling Protocol is a common connection method used in xDSL connections. Please select conne",
+"Das Punkt-zu-Punkt Tunneling Protocol (PPTP) ist eine gebräuchliche Verbindungsmethode, die bei xDSL-Verbindu",
+"El protocolo de túnel punto a punto es un método de conexión común utilizado en las conexiones xDSL.",
+"Le protocole PPTP est une méthode de connexion commune utilisée pour les connexions xDSL.",
+"Il Point-to-Point Tunneling Protocol è un comune metodo di connessione utilizzato nelle connessioni xDSL.",
+"Point-to-Point Tunneling Protocol (PPTP) is een algemene aansluitmethode die in xDSL-verbindingen wordt gebru",
+"Protocolo de encaminhamento ponto a ponto é um método de ligação comum utilizado em ligações xDSL.",
+"Tunelovací protokol Point-to-Point je běžný způsob připojení používaný pro xDSL připojení.",
+"Protokół tunelowania warstwy drugiej jest standardowym połączeniem używanym w połączeniach xDSL.",
+"Point-to-Point Tunneling Protocol este folosit in conectarile de tip xDSL.",
+"Point-to-Point Tunneling Protocol является распространенным методом подключения при xDSL типе связи.",
+"Point-to-point tunelovací protokol je bežné pripojovacie metóda používa v xDSL pripojeniach.",
+"",
+""
+);
+var optional=new Array
+(
+"Optional",
+"Optional",
+"Opcional",
+"Facultatif",
+"Opzionale",
+"Niet verplicht",
+"Opcional",
+"Volitelné",
+"Opcjonalnie ",
+"Optional",
+"Опционно",
+"Voliteľne",
+"選擇性的",
+"选择性的"
+);
+var qos=new Array
+(
+"QoS",
+"QoS",
+"QoS",
+"QoS",
+"QoS",
+"QoS",
+"QoS",
+"QoS",
+"QoS",
+"QoS",
+"QoS",
+"QoS",
+"QoS",
+"QoS"
+);
+var wanpppoeContent=new Array
+(
+"Enter the User Name and Password required by your ISP in the appropriate fields. If your ISP has provided you with a \"Service Name\" enter it in the Service Name field, otherwise, leave it blank.",
+"Geben Sie Benutzernamen und Kennwort Ihres Internetdienstanbieters in die entsprechenden Felder ein. Wenn Ihr Internetanbieter Ihnen einen \"Servicename\" bereitgestellt hat, geben Sie diesen in das Feld Servicename ein. Anderenfalls lassen Sie das Feld frei frei.",
+"Indique el nombre de usuario y la contraseña exigida por su ISP en los campos adecuados. Si su ISP le ha suministrado un \"Nombre de servicio\" indíquelo en el campo del nombre de servicio, o de lo contrario, déjelo en blanco.",
+"Saisissez le nom d'utilisateur, le mot de passe demandé par votre FAI dans les champs correspondants. Si votre FAI vous a transmis un \"Nom de Service\", saisisez-le dans le champ Nom de Service, sinon laissez ce dernier vide.",
+"Inserire il nome utente e la password richiesti dall'ISP negli appositi campi. Se l'ISP ha fornito un \"Nome di servizio\, inserirlo nel campo Nome di servizio, altrimenti lasciarlo vuoto.",
+"Voer de gebruikersnaam en het wachtwoord die uw provider vraagt in de juiste velden in. Als uw provider u een \"Service Name\" (servicenaam) gegeven heeft, vul die dan in in het veld 'Service Name', laat het anders leeg.",
+"Introduza o nome de utilizador e a palavra-passe solicitadas pelo seu ISP nos campos adequados. Se o seu ISP lhe tiver fornecido um \"Service Name\" (Nome de serviço), introduza-o no campo Service Name (Nome do serviço), caso contrário, deixe-o em branco\.",
+"Do odpovídajících polí zadejte jméno uživatele a heslo vyžadované ISP. Poskytl-li vám ISP \„Název služby\", zadejte jej do pole Název služby, jinak jej ponechte prázdné.",
+"Wpisz w odpowiednich polach nazwę użytkownika i hasło wymagane przez ISP. Jeśli ISP przydzielił nazwę usługi, należy ją wpisać w polu nazwy usługi lub pozostawić je puste.     ",
+"Introduceti Numele de Utilizator si Parola cerute de ISP in campurile corespunzatoare. Daca ati primit si un \"Service Name\" de la provider introduceti-l in campul Service Name, daca nu lasati campul necompletat.",
+"Введите имя пользователя и пароль, требуемые вашим ISP провайдером, в соответствующие поля. Если ваш ISP предоставил вам \"Имя сервиса\" введите его в это поле, в противном случае оставьте его пустым.",
+"Vložte užívateľské meno a heslo požadované vaším ISP do príslušných políčok. Pokiaľ vám váš ISP poskytol Servisné meno, vložte servisné meno do príslušného políčka, v opačnom prípade ho nechajte prázdne.",
+"Enter the User Name and Password required by your ISP in the appropriate fields. If your ISP has provided you with a \"Service Name\" enter it in the Service Name field, otherwise, leave it blank.",
+"Enter the User Name and Password required by your ISP in the appropriate fields. If your ISP has provided you with a \"Service Name\" enter it in the Service Name field, otherwise, leave it blank."
+);
+var july=new Array
+(
+"July",
+"Juli",
+"Julio",
+"Juillet",
+"Luglio",
+"Juli",
+"Julho",
+"Červenec",
+"Lipiec",
+"Iulie",
+"Июль",
+"Júl",
+"七月",
+"七月"
+);
+var userID=new Array
+(
+"User ID ",
+"Benutzer ID ",
+"ID de usuario ",
+"Identifiant utilisateur ",
+"ID utente ",
+"Gebruikers-ID ",
+"ID de utilizador ",
+"ID uživatele ",
+"ID użytkownika ",
+"ID Utilizator",
+"ID пользователя",
+"ID užívateľa",
+"用戶帳號",
+"用户账号"
+);
+var pptpGate=new Array
+(
+"PPTP Gateway ",
+"PPTP-Gateway ",
+"Puerta de acceso PPTP ",
+"Passerelle PPTP ",
+"Gateway PPTP ",
+"PPTP-gateway: ",
+"Gateway PPTP ",
+"PPTP brána ",
+"Bramka PPTP",
+"Gateway PPTP",
+"PPTP шлюз",
+"PPTP brána",
+"PPTP的閘道器",
+"PPTP的网关"
+);
+var march=new Array
+(
+"March",
+"März",
+"Marzo",
+"Mars",
+"Marzo",
+"Maart",
+"Março",
+"Březen",
+"Marzec",
+"Martie",
+"Март",
+"Marec",
+"三月",
+"三月"
+);
+var printServer=new Array
+(
+"Print Server",
+"i-Watcher",
+"Servidor de impresión",
+"Serveur d'impression",
+"Server stampante",
+"Printerserver",
+"Servidor de impressão",
+"Tiskový server",
+"Serwer druku",
+"Print Server",
+"Принт-сервер",
+"Tlačový server",
+"列印伺服器",
+"打印服务器"
+);
+var genSetPageContent=new Array
+(
+"This page includes the basic configuration tools for the Broadband router\'s remote management access function.",
+"Diese Seite beinhaltet die grundlegenden Konfigurations-Tools für die Fernverwaltungsfunktion des Breitbandrouters.",
+"Esta página incluye las herramientas de configuración básica para la función de acceso remoto de banda ancha.",
+"Cette page contient les outils de configuration de base pour la fonction d'accès à l'administration déportée du routeur.",
+"Questa pagina include gli strumenti di configurazione di base per la funzione di accesso alla gestione remota del router a banda larga.",
+"Deze pagina bevat de basale configuratiegereedschappen voor het externe beheer van de breedbandrouter.",
+"Esta página inclui as ferramentas de configuração básica da função de acesso de gestão remota do router de banda larga.",
+"Tato stránka obsahuje základní konfigurační nástroje pro funkci vzdáleného přístupu k širokopásmovému směrovači.",
+"Na stronie tej znajdują się narzędzia zapewniające podstawową konfigurację zdalnego zarządzania routerem szerokopasmowym.",
+"Aceasta pagina include uneltele de baza pentru configurarea functiei de control de la distanta a routerului.",
+"На этой странице представлены базовые инструменты конфигурации для функции удаленного управления маршрутизатором.",
+"Táto stránka obsahuje základné konfiguračné nástroje pre vzdialenú správu  širokopásmového routeru.",
+"此網頁包含寬頻路由器的基本配置工具和遠程管理功能。",
+"此网页包含宽带路由器的基本配置工具和远程管理功能。"
+);
+var portForwarding=new Array
+(
+"Port Forwarding",
+"Portweiterleitung",
+"Reenvío de puerto",
+"Réacheminement de port",
+"Inoltro porte",
+"Port Forwarding",
+"Encaminhamento de portas",
+"Přesměrování portu",
+"Przekierowanie portów",
+"Port Forwarding",
+"Перенаправление портов",
+"Smerovanie portu",
+"Port Forwarding",
+"Port Forwarding"
+);
+var idleTime=new Array
+(
+"Idle Time Out ",
+"Leerlauf-Abmeldezeit ",
+"Tiempo en espera ",
+"Dépassement temps mort ",
+"Time out inattivo ",
+"Idle time-out ",
+"Desligar tempo de inactividade ",
+"Vypršení času nečinnosti ",
+"Czas bezczynności",
+"Idle Time Out ",
+"Время ожидания истекло",
+"Doba nečinnosti",
+"閒置時間超時",
+"空闲时间超时"
+);
+var toolsContent=new Array
+(
+"Broadband router Tools - Tools include Configuration tools, Firmware upgrade and Reset.Configuration tools allow you to Backup, Restore, or Restore to Factory Default setting for your Broadband router. The Firmware upgrade tool allows you to upgrade your Broadband router\'s firmware. The RESET tool allows you to reset your Broadband router.",
+"Breitbandrouter-Tools - Die Tools beinhalten Konfiguration-Tools, Firmwareupgrade und Reset. Die Konfigurations-Tools ermöglichen Ihnen das Sichern, Wiederherstellen oder Zurücksetzen des Breitbandrouters auf Standard-Werkseinstellungen. Das Firmwareupgrade-Tool ermöglicht Ihnen, die Firmware des Breitbandrouters zu aktualisieren. Das RESET-Tool ermöglicht Ihnen, den Breitbandrouter zurückzusetzen.",
+"Herramientas de enrutador de banda ancha - Entre las herramientas, se incluyen las herramientas de configuración, la actualización del Firmware y las herramientas de configuración de reinicio que le permiten realizar copias de seguridad, recuperar o reiniciar los parámetros de fábrica para su enrutador de banda ancha. Esta herramienta de actualización del firmware le permite actualizar el firmware del enrutador de banda ancha. La herramieta de REINICIO le permite reiniciar su enrutador de banda ancha.",
+"Outil routeur large bande - Les outils contiennent des outils de configuration, la mise à jour du microprogramme et la Reinitialisation. Les outils de configuration vous permettent d'effectuer des sauvegardes, de restaurer le routeur ou de restaurer ses paramètres d'usine par défaut. L'outil de mise à jour du microprogramme vous permet de mettre à jour le microprogramme du système du routeur à large bande. L'outil REINITIALISATION vous permet de réinitialiser le routeur.",
+"Strumenti del router a banda larga - Comprendono strumenti di configurazione, aggiornamento e reset del firmware. Gli strumenti di configurazione consentono di eseguire il backup, resettare o riportare alle impostazioni di fabbrica il router a banda larga. Lo strumento di aggiornamento del firmware consente di aggiornare il firmware del router a banda larga. Lo strumento RESET consente di resettare il router a banda larga.",
+"Gereedschappen voor de breedbandrouter - de gereedschappen bestaan uit configuratiegereedschappen, firmware upgrade en reset. Met de configuratiegereedschappen kunt u backups maken, instellingen terugzetten of teruggaan naar de standaard fabrieksinstellingen van uw breedbandrouter. Met de firmware upgradefunctie kunt u de systeemfirmware van de breedbandrouter upgraden. Met RESET kunt u de breedbandrouter resetten.",
+"Ferramentas do router de banda larga - As ferramentas incluem as opções Ferramentas de configuração, Actualização de firmware e Reposição. As ferramentas de configuração incluem as opções Criar cópia de segurança, Reposição ou Repor para a predefinição de origem do seu router de banda larga. A ferramenta de actualização de firmware permite actualizar o firmware do router de banda larga. A ferramenta RESET (Reposição) permite repor o router de banda larga.",
+"Nástroje širokopásmového směrovače obsahují Konfigurační nástroje, aktualizaci firmwaru a resetování Konfigurační nástroj umožňují zálohování, obnovení nebo obnovení nastavení širokopásmového směrovače na výchozí hodnoty. Nástroj aktualizace firmwaru vám umožňuje aktualizovat firmware širokopásmového směrovače. Nástroj RESET vám umožňuje resetovat širokopásmový směrovač.",
+"Narzędzia routera szerokopasmowego obejmują narzędzie konfiguracji, uaktualnienie oprogramowania systemowego oraz kasowanie ustawień. Narzędzia konfiguracji obejmują: zachowanie i przywrócenie ustawień z pliku, przywrócenie ustawień fabrycznych. Narzędzie aktualizacji oprogramowania pozwala na uaktualnienie oprogramowania sprzętowego. Reset powala na ponowne uruchomienie routera bez zmiany ustawień.",
+"Uneltele Routerului – includ unelte de Configurare, Upgrade de Firmware si Reset. Uneltele de configurare va permit sa Salvati / Restabiliti setarile routerului sau sa faceti un Reset la Setarile din Fabrica. Functia de Upgrade de Firmware va permite sa uvar pdatati firmware-ul routerului. Unealta de RESET va permite sa resetati routerul.",
+"Инструменты широкополосного маршрутизатора включают в себя: инструменты конфигурации, замена встроенной программы и функция переустановки. Инструменты конфигурации позволят вам сделать Backup, восстановить настройки, восстановить заводские настройки вашего маршрутизатора.Инструмент замены встроенной программы дает возможность переустановить встроенную программу маршрутизатора. Функция переустановки позволяет переустановить маршрутизатор.",
+"Nástroje širokopásmového router - obsahujú konfiguračné nástroje, aktualizáciu firmware a reset. Konfiguračné nástroje vám umožnia zálohovať, obnoviť alebo obnoviť továrenské nastavenia vášho širokopásmového routeru. Nástroj aktualizácie firmware vám umožni aktualizovať firmware vášho širokopásmového routeru. Nástroj RESET vám umožní resetovať širokopásmový router.",
+"Broadband router Tools - Tools include Configuration tools, Firmware upgrade and Reset.Configuration tools allow you to Backup, Restore, or Restore to Factory Default setting for your Broadband router. The Firmware upgrade tool allows you to upgrade your Broadband router\'s firmware. The RESET tool allows you to reset your Broadband router.",
+"Broadband router Tools - Tools include Configuration tools, Firmware upgrade and Reset.Configuration tools allow you to Backup, Restore, or Restore to Factory Default setting for your Broadband router. The Firmware upgrade tool allows you to upgrade your Broadband router\'s firmware. The RESET tool allows you to reset your Broadband router."
+);
+var wansetPageContent=new Array
+(
+"The Broadband router can be connected to your Service Provider through the following methods",
+"Der Breitbandrouter kann über folgende Methoden mit Ihrem Internetdiensteanbieter verbunden werden.",
+"El enrutador de banda ancha puede conectarse a su Proveedor de Servicios a través de los siguientes métodos",
+"Le routeur peut être connecté à votre FAI par la méthode suivante",
+"Il router a banda larga può essere connesso al Service Provider utilizzando i seguenti metodi",
+"De breedbandrouter kan op de volgende manieren verbonden worden met uw provider",
+"O router de banda larga pode ser ligado ao seu fornecedor de serviços através dos seguintes métodos:",
+"Širokopásmový směrovač může být připojen k poskytovateli služeb následujícími způsoby",
+"Router szerokopasmowy może być podłączony następującymi metodami:  ",
+"Routerul se poate conecta la providerul dvs prin urmatoarele metode:",
+"Широкополосный маршрутизатор может подключиться к вашему провайдеру следующими способами",
+"Širokopásmový router môže byť pripojený to vášmu ISP pomocou nasledujúcich metód",
+"寬頻路由器可以連接到你的服務提供商通過下列方法",
+"宽带路由器可以连接到你的服务提供商通过下列方法"
+);
+var setupWizardContent=new Array
+(
+"The Quick Setup Wizard provides only the necessary configurations to connect your Broadband router to your Internet Service Provider (ISP) through an external cable or a DSL modem.",
+"Der Quick Setup-Assistent ermöglicht die notwendigen Konfigurationen, um Ihren Breitbandrouter über ein externes Kabel- oder DSL-Modem mit Ihrem Internetdiensteanbieter zu verbinden.",
+"El asistente de configuración rápida ofrece sólo las configuraciones necesarias para conectar su enrutador de banda ancha a su Proveedor de Servicios a Internet (ISP) a través de un cable externo o un módem DSL",
+"L'assistant de Configuration rapide vous fournit les paramètres de configuration nécessaires pour connecter votre routeur large bande à votre FAI grâce à un modem câble externe ou un modem DSL.",
+"La procedura guidata di impostazione rapida fornisce solo le configurazioni necessarie a connettere il router a banda larga all'Internet Service Provider (ISP) per mezzo di un cavo esterno o di un modem DSL.",
+"In de Quick Setup Wizard staan alleen de configuraties die nodig zijn om uw breedbandrouter verbinding te laten maken met uw Internet Service Provider (ISP, provider) door middel van een externe kabel of een DSL-modem.",
+"O Assistente de configuração rápida fornece apenas as configurações necessárias para ligar o seu router de banda larga ao seu Fornecedor de serviços Internet (ISP) através de um cabo externo ou modem DSL.",
+"Průvodce rychlým nastavení nastavuje pouze parametry nutné pro připojení širokopásmového směrovače k vašemu poskytovateli internetových služeb (ISP) prostřednictvím externího kabelu nebo DSL modemu.",
+"Szybka instalacja zapewnia tylko konieczną konfigurację do połączenia routera do sieci internetowej za pomocą kabla lub modemu DSL.",
+"Wizardul de Instalare Rapida face doar configurarile necesare conectarii routerului la internet printr-un cablu sau modem DSL.",
+"Wizard быстрой установки обеспечивает только самую необходимую конфигурацию для подключения маршрутизатора к вашему ISP провайдеру через внешний кабель или DSL модем ",
+"Sprievodca rýchlou inštaláciou poskytuje len nevyhnutné konfigurácie pre pripojenie vášho širokopásmového routeru k vášmu ISP pomocou externého káblového alebo DSL modelu.",
+"The Quick Setup Wizard provides only the necessary configurations to connect your Broadband router to your Internet Service Provider (ISP) through an external cable or a DSL modem.",
+"The Quick Setup Wizard provides only the necessary configurations to connect your Broadband router to your Internet Service Provider (ISP) through an external cable or a DSL modem."
+);
+var may=new Array
+(
+"May",
+"Mai",
+"Mayo",
+"Mai",
+"Maggio",
+"Mei",
+"Maio",
+"Květen",
+"Maj",
+"Mai",
+"Май",
+"Máj",
+"五月",
+"五月"
+);
+var L2TPDSL=new Array
+(
+"L2TP xDSL",
+"L2TP xDSL",
+"L2TP xDSL",
+"L2TP xDSL",
+"L2TP xDSL",
+"L2TP xDSL",
+"L2TP xDSL",
+"L2TP xDSL",
+"L2TP xDSL",
+"L2TP xDSL",
+"L2TP xDSL",
+"L2TP xDSL",
+"L2TP xDSL",
+"L2TP xDSL"
+);
+var TelBP=new Array
+(
+"Telstra Big Pond",
+"Telstra Big Pond",
+"Telstra Big Pond",
+"Telstra Big Pond",
+"Telstra Big Pond",
+"Telstra Big Pond",
+"Telstra Big Pond",
+"Telstra Big Pond",
+"Telstra Big Pond",
+"Telstra Big Pond",
+"Telstra Big Pond",
+"Telstra Big Pond",
+"Telstra Big Pond",
+"Telstra Big Pond"
+);
+var setUpMainContent=new Array
+(
+"The Broadband router supports advanced functions like Virtual Server, Access Control, Hacker Attack Detection and DMZ.<br>We highly recommend you keep the default settings.",
+"Der Breitbandrouter unterstützt erweiterte Funktionen, wie z. B. Virtual Server, Zugangssteuerung, Hackerattacken-Erkennung und DMZ.<br>Wir empfehlen Ihnen dringend, die Standardeinstellungen beizubehalten.",
+"El enrutador de banda ancha acepta funciones avanzadas como el Servidor virtual, el control de acceso, la detección de ataques de intrusos y DMZ.<br>Le aconsejamos encarecidamente que mantenga los parámetros de inicio.",
+"Le routeur large bande dispose de fonctions avancées : Serveur Virtuel, Contrôle d'Accès, Détection d'attaque de hackers et DMZ.<br>Nous vous recommandons fortement de garder les paramètres par défaut.",
+"Il router a banda larga supporta le funzioni avanzate quali Server virtuale, Controllo degli accessi, Rilevamento degli attacchi hacker e DMZ.<br>Consigliamo vivamente di mantenere le impostazioni predefinite.",
+"De breedbandrouter ondersteunt geavanceerde functies zoals een virtuele server, toegangscontrole, het waarnemen van aanvallen door hackers en DMZ.<br>We raden u ten zeerste aan de standaardinstellingen te handhaven.",
+"O router de banda larga suporta funções avançadas como Servidor Virtual, Controlo de acesso, Detecção de ataques de piratas informáticos e DMZ.<br>Recomendamos vivamente que guarde as predefinições.",
+"Širokopásmový směrovač podporuje pokročilé funkce, například virtuální server, řízení přístupu, detekování hackerských útoků a DMZ.<br>Velmi doporučujeme ponechat výchozí nastavení.",
+"Router obsługuje funkcje zaawansowane jak serwer wirtualny, sterowanie dostępem, wykrywanie ataków hakerów, DMZ. Zalecamy stosowanie ustawień domyślnych.",
+"Routerul suporta functii avansate cum ar fi Virtual Server, Controlul Accesului, Detectarea Atacurilor de Hacker si DMZ. <br> Recomandam sa pastrati setarile initiale.",
+"Широкополосный маршрутизатор поддерживает дополнительные функции, такие, как виртуальный сервер, контроль доступа, детектор хакерских атак и DMZ. Мы рекомендуем вам оставить настройки по умолчанию.",
+"Širokopásmový router podporuje pokročilé funkcie ako virtuálny server, kontrolu prístupu, detekciu útoku hackerov a DMZ.<br> Dôrazne vám odporúčame udržať prednastavené nastavenia.",
+"The Broadband router supports advanced functions like Virtual Server, Access Control, Hacker Attack Detection and DMZ.<br>We highly recommend you keep the default settings.",
+"The Broadband router supports advanced functions like Virtual Server, Access Control, Hacker Attack Detection and DMZ.<br>We highly recommend you keep the default settings."
+);
+var pppoePass=new Array
+(
+"PPPoE password",
+"PPPoE Kennwort",
+"Contraseña PPPoE",
+"Mot de passe PPPoE",
+"Password PPPoE",
+"PPPoE-wachtwoord",
+"Palavra-passe de PPPoE",
+"Heslo PPPoE",
+"Hasło PPPoE",
+"Parola PPPoE",
+"PPPoE пароль",
+"Heslo PPPoE",
+"PPPoE的密碼",
+"PPPoE的密码"
+);
+var obtainIP=new Array
+(
+"Obtain an IP address automatically ",
+"IP-Adresse automatisch beziehen ",
+"Obtener automáticamente una dirección IP ",
+"Obtenir une adresse IP automatiquement ",
+"Ottenere automaticamente l'indirizzo IP ",
+"IP-adres automatisch verkrijgen ",
+"Obter um endereço IP automaticamente ",
+"Získat IP adresu automaticky ",
+"Uzyskaj automatycznie adres IP ",
+"Obtinere Adresa IP Automat",
+"Получить IP адрес автоматически",
+"Automatické získanie IP adresy",
+"自動取得 IP位址",
+"自动取得 IP地址"
+);
+var useIPAddr=new Array
+(
+"Use the following IP address ",
+"Folgende IP-Adresse verwenden ",
+"Utilice la siguiente dirección IP ",
+"Utiliser l'adresse IP suivante ",
+"Utilizzare il seguente indirizzo IP ",
+"Gebruik het volgende IP-adres ",
+"Utilize o seguinte endereço IP ",
+"Použít následující adresu ",
+"Użyj następującego adresu IP ",
+"Foloseste Urmatoarea Adresa IP",
+"Использовать следующие IP адреса",
+"Použite nasledujúcu IP adresu",
+"使用下列的IP位址",
+"使用下列的IP地址"
+);
+var firewall=new Array
+(
+"Firewall",
+"Firewall",
+"Firewall",
+"Pare-feu",
+"Firewall",
+"Firewall",
+"Firewall",
+"Firewall",
+"Firewall",
+"Firewall",
+"Брандмауэр",
+"Firewall",
+"防火牆",
+"防火墙"
+);
+var syspasswdAlert=new Array
+(
+"Password is not matched. Please type the same password between \'new\' and \'confirmed\' box.",
+"Kennwort stimmt nicht überein. Bitte geben Sie das gleiche Kennwort in den Feldern \'neu\' und \'bestätigen\' ein.",
+"La contraseña no coincide. Por favor, indique la misma contraseña entre la caja \'nueva\' y \'confirmada\'.",
+"Le mot de passe ne corespond pas. Saisissez le même mot de passe dans les champs \'nouveau\' et \'confirmé\' .",
+"La password non corrisponde. Inserire la stessa password nelle caselle \'nuova\' e \'conferma\'.",
+"Wachtwoord komt niet overeen. Voer hetzelfde wachtwoord in in de velden \'new\' (nieuw) en \'confirmed\' (bevestigd).",
+"A palavra-passe não corresponde. Introduza a mesma palavra-passe entre a caixa \'new\' (nova) e \'confirmed\' (confirmada).",
+"Heslo nesouhlasí. Do políček \'nové\' a \'potvrzení\' laskavě zadejte stejné heslo.",
+"Niewłaściwe hasło. Wpisz to samo hasło w polach “nowe” i “potwierdzenie”.",
+"Parola nu este aceeasi. Introduceti aceeasi parola in campurile \'noua\' si \'confirmat\'.",
+"Пароль не совпадает. Пожалуйста набирите одинаковый пароль в окнах \"новый\" и \"подтвердить\".",
+"Heslo sa nezhoduje. Prosím zadajte rovnaké heslo ešte raz do políčok \'new\' a \'confirmed\'.",
+"密碼無法匹配。請輸入相同的密碼，英文字母必須區分大小寫。",
+"密码无法匹配。请输入相同的密码，英文字母必须区分大小写。"
+);
+var halfh=new Array
+(
+"Half hour",
+"Halbstündlich",
+"Media hora",
+"Demie-heure",
+"Mezz'ora",
+"Half uur",
+"Meia hora",
+"Půl hodiny",
+"Pół godziny",
+"Jumatate de Ora",
+"Полчаса",
+"Pol hodiny",
+"半小時",
+"半小时"
+);
+var lanContent=new Array
+(
+"You can enable the Broadband router\'s DHCP server to dynamically allocate IP Addresses to your LAN client PCs.  The broadband router must have an IP Address for the Local Area Network.",
+"Sie können den DHCP-Server des Breitbandrouters aktivieren, um Ihren LAN Client-PCs die IP-Adressen dynamisch zuzuweisen.  Der Breitbandrouter muss eine IP-Adresse für das lokale Netzwerk besitzen.",
+"Podrá actiel servidor DHCP del enrutador de banda ancha para atribuir dinámicamente direcciones IP a sus PC cliente de LAN.  El enrutador de banda ancha debe tener una dirección IP para la red de zona local.",
+"Vous pouvez activer le serveur DHCP du routeur automatiquement pour allouer des adresses IP dynamiques à vos PC clients LAN.  Le routeur doit disposer d'une adresse IP LAN.",
+"È possibile attivare l'allocazione dinamica degli indirizzi IP sui PC del client LAN da parte del server DHCP del router a banda larga.  Il router a banda larga deve disporre di un indirizzo IP per la Local Area Network.",
+"U kunt de DHCP-server van de breedbandrouter zo instellen dat hij dynamisch IP-adressen toewijst aan de client-pc's in uw LAN.  De breedbandrouter heeft een IP-adres nodig voor het LAN.",
+"Pode actio servidor DHCP do router de banda larga para atribuir endereços IP de maneira dinâmica aos PC do cliente LAN.  O router de banda larga deve ter um endereço IP para a rede local.",
+"Můžete povolit DHCP server širokopásmového směrovače pro dynamické přidělování IP adresy klientským počítačům v LAN.  Širokopásmový směrovač musí mít nastavenou IP adresu pro místní síť.",
+"Istnieje możliwość przydzielania przez router adresów IP w sposób dynamiczny klientom w sieci LAN. Konieczne jest podanie lokalnego adresu IP.",
+"Puteti activa serverul de DHCP pentru a aloca adrese IP automat calculatoarelor din retea. Routerul trebuie sa aiba o adresa pentru reteaua LAN.",
+"Вы можете включить DHCP сервер маршрутизатора для динамического назначения IP адресов клиенским компьютерам вашей LAN сети. Маршрутизатор должен иметь IP адрес локальной сети.",
+"Môžete povoliť širokopásmovému routeru aby DHCP server dynamicky alokoval IP adresy k vašim PC LAN klientom. Širokopásmový router musí mať IP adresu pre LAN.",
+"You can enable the Broadband router\'s DHCP server to dynamically allocate IP Addresses to your LAN client PCs.  The broadband router must have an IP Address for the Local Area Network.",
+"You can enable the Broadband router\'s DHCP server to dynamically allocate IP Addresses to your LAN client PCs.  The broadband router must have an IP Address for the Local Area Network."
+);
+var urlBlock=new Array
+(
+"URL Blocking",
+"URL-Blockierung",
+"Bloqueo de URL",
+"Blocage URL",
+"Blocco URL",
+"URL-blokkering",
+"Bloqueio de URL",
+"Blokování URL",
+"Blokowanie URL",
+"Blocare URL",
+"Блокировка URL",
+"Blokovanie URL",
+"URL阻斷",
+"URL阻断"
+);
+var PPPoE=new Array
+(
+"PPPoE",
+"PPPoE",
+"PPPoE",
+"PPPoE",
+"PPPoE",
+"PPPoE",
+"PPPoE",
+"PPPoE",
+"PPoE",
+"PPPoE",
+"PPPoE",
+"PPPoE",
+"PPPoE",
+"PPPoE"
+);
+var staticRoute=new Array
+(
+"Static Routing",
+"Statisches Routing",
+"Enrutamiento estático",
+"Routage statique",
+"Routing statico",
+"Statische routing",
+"Encaminhamento estático",
+"Statické směrování",
+"Routing statyczny",
+"Routare Statica",
+"Статическая маршрутизация",
+"Statické routovanie",
+"靜態路由",
+"静态路由"
+);
+var dhcpStart1=new Array
+(
+"1DHCP client start address ",
+"1DHCP Client Startadresse ",
+"1Dirección inicial de cliente DHCP ",
+"1Adresse de début client DHCP ",
+"Indirizzo iniziale client 1DHCP ",
+"1 DHCP-client startadres ",
+"1Endereço de início do cliente DHCP ",
+"Počáteční adresa DHCP klienta ",
+"Początkowy adres klienta 1DHCP",
+"1Adresa de Inceput clienti DHCP ",
+"1DHCP клиентский начальный адрес",
+"začiatok adresy 1DHCP klienta",
+"1DHCP的起始IP位址",
+"1DHCP的起始IP地址"
+);
+var state=new Array
+(
+"Status",
+"Status",
+"Estado",
+"Etat",
+"Stato",
+"Status",
+"Estado",
+"Stav",
+"Status",
+"Stare",
+"Статус",
+"Status",
+"狀態",
+"状态"
+);
+var useInISRAEL=new Array
+(
+"Enable (for BEZEQ network in ISRAEL use only)",
+"Aktivieren (nur für das BEZEQ-Netzwerk in ISRAEL)",
+"Acti(para la red BEZEQ en ISRAEL, sólo su uso)",
+"Activer (pour réseau BEZEQ en ISRAEL uniquement)",
+"Abilita (per la rete BEZEQ usata solo in ISRAELE)",
+"Inschakelen (alleen voor  BEZEQ in ISRAEL)",
+"Acti(para a rede BEZEQ apenas utilizado em Israel)",
+"Povolit (použijte pouze pro síť BEZEQ v IZRAELI)",
+"Włącz (dotyczy tylko sieci BEZEQ w Izraelu). ",
+"Activare (doar pentru reteaua BEZEQ din ISRAEL)",
+"Включить (только для  BEZEQ сети в Израиле)",
+"Zapnúť (pre BEZEQ sieť používanú len v Izraeli)",
+"Enable (for BEZEQ network in ISRAEL use only)",
+"Enable (for BEZEQ network in ISRAEL use only)"
+);
+var authenType=new Array
+(
+"Authentication Type ",
+"Authentifizierungstyp ",
+"Tipo de autenticación ",
+"Type d'authentification ",
+"Tipo di autenticazione ",
+"Authentiecatietype ",
+"Tipo de autenticação ",
+"Typ autorizace ",
+"Rodzaj autoryzacji ",
+"Tip Autentificare",
+"Тип аутентификации",
+"Typ autentifikácie",
+"認證類型",
+"认证类型"
+);
+var startIP=new Array
+(
+"Start IP ",
+"Start IP ",
+"IP de inicio ",
+"IP de début ",
+"IP iniziale ",
+"Start-IP ",
+"IP inicial ",
+"Počáteční IP ",
+"Początkowy IP ",
+"IP de Start",
+"Начальный IP ",
+"Začiatok IP",
+"起始IP",
+"起始IP"
+);
+var wansetPageContent4=new Array
+(
+"PPP over Ethernet is a common connection method used in xDSL connections.",
+"PPP over Ethernet ist eine gebräuchliche Verbindungsmethode, die bei xDSL-Verbindungen eingesetzt wird.",
+"PPP sobre Ethernet es un método común de conexión utilizado en las conexiones xDSL.",
+"PPP via Ethernet est une méthode de connexion commune utilisée pour les connexions xDSL .",
+"PPP over Ethernet è un metodo di connessione utilizzato comunemente nelle connessioni xDSL.",
+"PPP over Ethernet (PPPoE) is een algemene aansluitmethode die in xDSL-verbindingen wordt gebruikt.",
+"PPP over Ethernet é um método de ligação comum utilizado em ligações xDSL.",
+"PPP over Ethernet je běžný způsob připojení používaný pro xDSL připojení.",
+"Protokół PPPoE jest standardowym połączeniem używanym w połączeniach xDSL.",
+"PPP over Ethernet este un protocol folosit in conexiuni de tip xDSL.",
+"PPP over Ethernet является распространенным способом подключения при  xDSL типе связи.",
+"PPPoE je bežnou metódou pripojenia používaných pri xDSL.",
+"PPP over Ethernet is a common connection method used in xDSL connections.",
+"PPP over Ethernet is a common connection method used in xDSL connections."
+);
+var twohs=new Array
+(
+"Two hours",
+"Zwei Stunden",
+"Dos horas",
+"Deux heures",
+"Due ore",
+"Twee uur",
+"Duas horas",
+"Dvě hodiny",
+"Dwie godziny",
+"Doua Ore",
+"Два часа",
+"Dve hodiny",
+"兩小時",
+"两小时"
+);
+var passKey=new Array
+(
+"Password / Key ",
+"Kennwort / Schlüssel ",
+"Contraseña/clave ",
+"Mot de passe / Clé ",
+"Password / Chiave ",
+"Wachtwoord/Sleutel ",
+"Palavra-passe / Chave ",
+"Heslo / Klíč ",
+"Hasło/klucz",
+"Parola / Cheie",
+"Пароль / ключ",
+"Heslo / Kľúč",
+"密碼 /金鑰",
+"密码 /密钥"
+);
+var twowks=new Array
+(
+"Two weeks",
+"Zwei Wochen",
+"Dos semanas",
+"Deux semaines",
+"Due settimane",
+"Twee weken",
+"Duas semanas",
+"Dva týdny",
+"Dwa tygodnie",
+"Doua Saptamani",
+"Две недели",
+"Dva týždne",
+"兩個星期",
+"两个星期"
+);
+var pppoeContent=new Array
+(
+"Enter PPPoE Username and Password assigned by your Service Provider. Service name is optional generally, but may be required by some Service Providers. Enter an idle Time (in minutes) to define the time period which this Broadband router should maintain connection when there’s no Internet access. After such time period, the Broadband router will drop the connection. You can enable Connect on Demand option and Broadband router will establish Internet connection again automatically. If your Internet Service Provider requires the use of PPPoE, enter the information below.",
+"Geben Sie den PPPoE-Benutzernamen und das Kennwort ein, das Ihr Dienstanbieter Ihnen zugewiesen hat. Der Servicename ist normalerweise optional, kann aber bei einigen Dienstanbietern erforderlich sein.  Geben Sie eine Leerlaufzeit (in Minuten) ein, um den maximalen Zeitraum zu definieren, in dem die Internetverbindung bei Inaktivität aufrechterhalten wird.  Wenn die Verbindung länger als die maximale Leerlaufzeit inaktiv ist, wird die Verbindung getrennt.  Sie können die Option Verbindungsherstellung auf Anfrage aktivieren, um die Verbindung automatisch wiederherzustellen, sobald Sie versuchen, auf das Internet zugreifen.</br>Wenn Ihr Internetdiensteanbieter die Anwendung von PPPoE erfordert, geben Sie die nachfolgenden Informationen ein.",
+"Indique el nombre de usuario PPPoE y la contraseña atribuida por su proveedor de servicio. El nombre de servicio es normalmente opcional, pero puede ser exigido por algunos proveedores de servicio.  Indique un título intermedio (en minutos) para definir un periodo máximo de tiempo durante el cual la conexión a Internet se mantiene durante la inactividad.  Si la conexión está inactiva durante más del tiempo máximo de espera, a continuación, la conexión se caerá.  Podrá actila opción de conexión bajo demanda para reestablecer automáticamente la conexión tan pronto como intente acceder a Internet de nuevo.</br>Si su Proveedor de Servicios a Internet exige el uso de PPPoE, indique la información indicada a continuación.",
+"Saisissez le nom d'utilisateur PPPoE et le mot de passe qui vous ont été assignés par votre FAI. Le nom de service est normallement facultatif mais peut être demandé par certains fournisseurs.  Saisissez une durée de temps mort (en minutes) pour définir le durée maximum au cours de laquelle la connexion Internet est maintenue malgré l'inactivité.  Si la connexion est inactive plus longtemps que le maximum de la durée de temps mort, elle se coupe automatiquement.  Vous pouvez activer l'option de connexion sur demande pour automatiquement établir la connexion dès que vous tentez d'accéder à Internet.</br>Si votre FAI nécessite l'utilisation du protocole PPPoE, renseignez les informations ci-dessous.",
+"Inserire il nome utente e la password PPPoE assegnati dal Service Provider. Il nome del servizio è solitamente opzionale, ma potrebbe essere richiesto da alcuni service provider.  Inserire un tempo di inattività (in minuti) per definire un periodo di tempo massimo di mantenimento della connessione a Internet in fase di inattività.  Se la connessione rimane inattiva per un periodo superiore del tempo massimo di inattività, la connessione verrà interrotta.  È possibile attivare l'opzione Connetti su richiesta di modo che ristabilisca automaticamente la connessione non appena si tenta nuovamente di accedere a Internet.</br>Se l'Internet Service Provider richiede l'uso di PPPoE, inserire le informazioni nel campo sottostante.",
+"Voer de PPPoE-gebruikersnaam en het wachtwoord in die u van uw provider gekregen hebt. Meestal is de 'Service Name' (servicenaam) optioneel, maar bij sommige providers is hij vereist.  Voer een waarde in voor de idle time (in minuten) om de maximale periode aan te geven waarin de internetverbinding in stand moet blijven als er geen activiteit is.  Als de verbinding niet actief is gedurende een tijd die langer is dan bij 'Maximum Idle Time' ( maximale inactieve tijdsduur) is ingesteld, wordt de verbinding verbroken.  U kunt Connect on Demand (verbinding maken op aanvraag) zvar o instellen dat de verbinding automatisch hersteld wordt als u internet weer op wilt.</br>Als voor uw provider het gebruik van PPPoE nodig is, vul de gegevens dan hieronder in.",
+"Introduza o nome de utilizador e a palavra-passe da PPPoE atribuídos pelo Fornecedor de serviços. O Nome do serviço é normalmente opcional, mas pode ser solicitado por alguns fornecedores de serviços.  Introduza o tempo de inactividade (em minutos) para definir um período máximo de tempo durante o qual a ligação à Internet é mantida durante o tempo de inactividade.  Se a ligação estiver inactiva durante um período de tempo superior ao tempo máximo de inactividade, a ligação é desligada.  Pode actia opção Connect on Demand (Ligação mediante pedido) para estabelecer novamente a ligação de maneira automática quando tentar aceder novamente à Internet.</br>Se o seu Fornecedor de serviços Internet solicitar a utilização de PPPoE, introduza as informações indicadas abaixo.",
+"Zadejte uživatelské jméno a heslo PPPoE přiřazené vaším poskytovatelem služeb. Název služby je obvykle volitelný, ale může být některými ISP vyžadován.  Zadejte dobu nečinnosti (v minutách) pro určení maximální periody času, po kterou bude zachováno připojení k Internetu bez aktivity.  Je-li připojení neaktivní déle než je nastavena maximální doba nečinnosti, dojde k jeho odpojení.  Můžete povolit možnost připojení na vyžádání pro automatické znovu vytvoření připojení, při pokusu o přístup na Internet.</br>Vyžaduje-li váš poskytovatel internetového připojení použití PPPoE, zadejte níže uvedené údaje.",
+"Wpisz nazwę użytkownika PPPoE oraz hasło otrzymane od dostawcy internetu. Nawa usługi jest opcjonalna, ale może być wymagana przez niektórych operatorów. Wpisz czas bezczynności (w minutach), aby określić maksymalny okres czasu utrzymania połączenia z siecią podczas braku aktywności. Jesli połączenie jest nieaktywne powyżej okreslonego czasu, połączenie to zostanie zerwane. Możliwe jest połączenie na żądanie, aby automatycznie przywrócić połączenie zaraz po otrzymaniu dostępu do sieci. </br> Jesli twój operator internetu wymaga używania PPPoE, wpisz te informacje poniżej.",
+"Introduceti Numele de Utilizator si Parola PPPoE oferite de ISP. Numele Serviciului este de obicei optional, dar poate fi necesar pentru unii provideri. Introduceti un timp limita (in minute) pentru a defini o perioada maxima in care conexiunea sa fie mentinuta chiar daca nu este activitate pe internet. Daca conexiunea este inactive pentru mai mult timp decat Timpul Limita, atunci conexiunea va fi oprita. Puteti activa optiunea de Conectare la Cerere pentru a restabili conexiunea automat cand se incearca accesarea Internetului. </br> Daca providerul necesita conectare PPPoE, introduceti informatiile mai jos.",
+"Введите PPPoE  имя пользователя и пароль назначенные вам провайдером. Имя пользователя обычно опционно, но может потребоваться для подключения к некоторым ISP провайдерам. Введите время ожидания (в минутах) для определения максимального периода времени, в течение которого поддерживается интернет соединение неактивного клиента. Если клиент остается неактивным в теченнии времени большем, чем время ожидания, связь прекратится. Вы можете включить опцию \"Подключение по требованию\" для автоматической установки связи при попытке подключения к Интернету. Если ваш ISP провайдер требует использования PPPoE, введите информацию ниже.",
+"Vložte PPPoE užívateľské meno a heslo pridelené vašim ISP. Servisné meno je normálne voliteľne, ale môže byť niekedy požadované ISP. Zadajte dobu nečinnosť (Idle Time) pre definovanie maximálnej periódy času počas ktorej spravované internetové pripojenie v dobe nečinnosti. pokiaľ je pripojenie nečinné dlhšie ako maximálna doba nečinnosti, potom bude spojenie ukončené. Môžete zapnúť voľbu pripojiť na požiadanie pre automatické opätovný pripojenia skôr sa pokúsite o prístup na internet. <\br>  Pokiaľ váš ISP požaduje PPPoE, vložte informácie zobrazené dole.",
+"Enter the PPPoE User Name and Password assigned by your Service Provider. The Service Name is normally optional, but may be required by some Sevar rvice Providers.  Enter a Idle Time (in minutes) to define a maximum period of time for which the Internet connection is maintained during inactivity.  If the connection is inactive for longer than the Maximum Idle Time, then the connection will be dropped.  You can enable the Connect on Demand option to automatically re-establish the connection as soon as you attempt to access the Internet again.</br>If your Internet Service Provider requires the use of PPPoE, enter the information below.",
+"Enter the PPPoE User Name and Password assigned by your Service Provider. The Service Name is normally optional, but may be required by some Service Providers.  Enter a Idle Time (in minutes) to define a maximum period of time for which the Internet connection is maintained during inactivity.  If the connection is inactive for longer than the Maximum Idle Time, then the connection will be dropped.  You can enable the Connect on Demand option to automatically re-establish the connection as soon as you attempt to access the Internet again.</br>If your Internet Service Provider requires the use of PPPoE, enter the information below."
+);
+var pppoeContentshort=new Array
+(
+"Enter PPPoE Username and Password assigned by your Service Provider. Service name is optional generally, bu",
+"Geben Sie den PPPoE-Benutzernamen und das Kennwort ein, das Ihr Dienstanbieter Ihnen zugewiesen hat. Der Se",
+"Indique el nombre de usuario PPPoE y la contraseña atribuida por su proveedor de servicio. El nombre de ser",
+"Saisissez le nom d'utilisateur PPPoE et le mot de passe qui vous ont été assignés par votre FAI. Le nom de ",
+"Inserire il nome utente e la password PPPoE assegnati dal Service Provider. Il nome del servizio è solitame",
+"Voer de PPPoE-gebruikersnaam en het wachtwoord in die u van uw provider gekregen hebt. Meestal is de 'Servi",
+"Introduza o nome de utilizador e a palavra-passe da PPPoE atribuídos pelo Fornecedor de serviços. O Nome do",
+"Zadejte uživatelské jméno a heslo PPPoE přiřazené vaším poskytovatelem služeb. Název služby je obvykle voli",
+"Wpisz nazwę użytkownika PPPoE oraz hasło otrzymane od dostawcy internetu. Nawa usługi jest opcjonalna, ale ",
+"Introduceti Numele de Utilizator si Parola PPPoE oferite de ISP. Numele Serviciului este de obicei optional",
+"Введите PPPoE  имя пользователя и пароль назначенные вам провайдером. Имя пользователя обычно опционно, но м",
+"Vložte PPPoE užívateľské meno a heslo pridelené vašim ISP. Servisné meno je normálne voliteľne, ale môže byť",
+"",
+""
+);
+var passSettingContent=new Array
+(
+"By default, the router’s password is 1234.  This function allows you to change the router\’s password. This password can contain 0 to 30 alphanumeric characters and is case sensitive.",
+"Sie können das Kennwort für die Anmeldung der webbasierten Systemverwaltung des Breitbandrouters ändern. Standardmäßig lautet das Kennwort 1234. Legen Sie daher bitte so schnell wie möglich ein Kennwort für den Administrator an und speichern Sie es an einem sicheren Ort. Kennwörter können 0 bis 30  alphanumerische Zeichen beinhalten und unterscheiden Groß- und Kleinschreibung.",
+"Podrá cambiar la contraseña exigida para registrarse en la gestión basada en Web del enrutador de banda ancha. Por defecto, la contraseña es 1234. Por lo tanto, por favor, atribuya una contraseña al administrador lo antes posible, y guárdela en un lugar seguro. Las contraseñas pueden incluir entre 0 y 30 caracteres alfanuméricos, y son sensibles ante las mayúsculas y minúsculas.",
+"Vous pouvez modifier le mot de passe nécessaire pour ouvrir une session administrateur du routeur via le Web. Par défaut, le mot de passe est 1234. Vous devez donc assigner dès que possible un mot de passe Administrateur et le conserver dans un endroit sûr. Les mots de passe peuvent contenir entre 0 et 30 caractères alphanumériques, ils sont sensibles à la casse (min/MAJ).",
+"È possibile cambiare la password richiesta per accedere al sistema di gestione web-based del router a banda larga. Per impostazione predefinita, la password è 1234. Pertanto assegnare una password all'amministratore il prima possibile, e conservarla in un luogo sicuro. Le password possono contenere da 0 a 30 caratteri alfanumerici, e riconoscono la differenza tra maiuscole e minuscole.",
+"U kunt het wachtwoord aanpassen dat nodig is om toegang te krijgen tot het webbased beheer van de breedbandrouter. Standaard is het wachtwoord \"1234\". Ken dus zo snel mogelijk een wachtwoord toe aan de beheerder, en bewaar het op een veilige plaats. Wachtwoorden kunnen bestaan uit 0 tot 30 alfanumerieke tekens en zijn hoofdlettergevoelig.",
+"Pode alterar a palavra-passe solicitada para aceder à gestão baseada na Web do sistema do router de banda larga. Por predefinição, a palavra-passe é 1234. Por isso, atribua uma palavra-passe ao administrador assim que possível e guarde-a num local seguro. As palavras-passe podem conter entre 0 e 30 caracteres alfanuméricos e são sensíveis a maiúsculas e minúsculas.",
+"Můžete změnit heslo vyžadované pro přihlášení k webovému rozhraní pro správu širokopásmového směrovače. Ve výchozím nastavení je heslo 1234. Z toho důvodu nastavte co nejdříve heslo Správce a uložte jej na bezpečném místě. Heslo může obsahovat 0 až 30 alfanumerických znaků a rozlišuje se velikost písmen.",
+"Możesz zmienić hasło wymagane podczas logowania do routera. Ustawieniem domyślnym jest hasło 1234. Podaj administratorowi hasło najszybciej jak to możliwe i przechowuj je w bezpiecznym miejscu. Hasło może składać się z ciągu do 30 znaków alfanumerycznych.",
+"Puteti schimba parola necesara accesarii interfetei de management a routerului. Initial aceasta este 1234. Alocati o noua parola administratorului cat mai repede posibil. Parola poate contine 0 – 30 caractere alfanumerice.",
+"Вы можете изменить пароль для входа в  систему управления маршрутизатором по веб протоколу. Пароль по умолчанию 1234. Назначьте другой пароль администратору как можно быстрее, и храните его в безопасном месте. Пароль может состоять из 0-30 алфавитных и цифровых символов, чувствительных к регистру.",
+"Môžete zmeniť heslo požadované pre prístup do webového správcovského systému širokopásmového routeru. Prednastavené heslo je 1234. Prosím zadajte heslo Administrátorovi čim skôr, a uložte na bezpečnom mieste. Heslo musí obsahovať 0 až 30 alfanumerických znakov a zohľadňuje veľké a malé písmena",
+"",
+""
+);
+var passSettingContentshort=new Array
+(
+"By default, the router’s password is 1234.  This function allows you to change the router\’s password. This",
+"Sie können das Kennwort für die Anmeldung der webbasierten Systemverwaltung des Breitbandrouters ändern. St",
+"Podrá cambiar la contraseña exigida para registrarse en la gestión basada en Web del enrutador de banda anc",
+"Vous pouvez modifier le mot de passe nécessaire pour ouvrir une session administrateur du routeur via le We",
+"È possibile cambiare la password richiesta per accedere al sistema di gestione web-based del router a banda",
+"U kunt het wachtwoord aanpassen dat nodig is om toegang te krijgen tot het webbased beheer van de breedband",
+"Pode alterar a palavra-passe solicitada para aceder à gestão baseada na Web do sistema do router de banda l",
+"Můžete změnit heslo vyžadované pro přihlášení k webovému rozhraní pro správu širokopásmového směrovače. Ve ",
+"Możesz zmienić hasło wymagane podczas logowania do routera. Ustawieniem domyślnym jest hasło 1234. Podaj ad",
+"Puteti schimba parola necesara accesarii interfetei de management a routerului. Initial aceasta este 1234. ",
+"Вы можете изменить пароль для входа в  систему управления маршрутизатором по веб протоколу. Пароль по умолч",
+"Môžete zmeniť heslo požadované pre prístup do webového správcovského systému širokopásmového routeru. Predn",
+"",
+""
+);
+var hostName=new Array
+(
+"Host Name ",
+"Hostname ",
+"Nombre de la central ",
+"Nom de l'hôte ",
+"Nome host ",
+"Hostnaam ",
+"Nome de anfitrião ",
+"Název hostitelského PC ",
+"Nazwa komputera",
+"Nume Gazda",
+"Имя хоста",
+"Host meno",
+"主機名",
+"主机名"
+);
+var accessControl=new Array
+(
+"Access Control",
+"Zugangssteuerung",
+"Control del acceso",
+"Contrôle d'accès",
+"Controllo degli accessi",
+"Toegangscontrole",
+"Controlo de acesso",
+"Řízení přístupu",
+"Sterowanie dostępem ",
+"Control Acces",
+"Контроль доступа",
+"Kontrola prístupu",
+"存取控制",
+"访问控制"
+);
+var endIP=new Array
+(
+"End IP ",
+"End-IP ",
+"IP final ",
+"IP de fin ",
+"IP finale ",
+"Doel-IP ",
+"IP final ",
+"Koncová IP ",
+"Końcowy IP",
+"IP de Sfarsit ",
+"Конечный IP",
+"Koniec IP",
+"結束 IP",
+"结束 IP"
+);
+var statusInfos=new Array
+(
+"Status",
+"Status",
+"Estado",
+"Etat",
+"Stato",
+"Status",
+"Estado",
+"Stav",
+"Status ",
+"Stare",
+"Статус",
+"Status",
+"狀態",
+"状态"
+);
+var userLogin=new Array
+(
+"User decide login server manually",
+"Benutzer entscheiden Anmeldeserver manuell",
+"El usuario decide registrar el servidor manualmente",
+"Accès au serveur manuel défini par l'utilisateur",
+"L'utente stabilisce manualmente l'accesso al server",
+"Handmatig inloggen op de server",
+"O utilizador decide iniciar sessão manualmente no servidor",
+"Ručně zvolené přihlášení k serveru",
+"Ręcznie wprowadzony przez użytkownika login serwera ",
+"Userul alege serverul de logare manual",
+"Выберите сервер входа вручную",
+"Užívateľ manuálne vyberie prihlasovací server",
+"用戶登錄伺服器手動設定",
+"用户登录服务器手动设定"
+);
+var defaultGateway=new Array
+(
+"Default Gateway ",
+"Standard Gateway ",
+"Puerta predefinida ",
+"Passerelle par défaut ",
+"Gateway predefinito ",
+"Standaard Gateway ",
+"Gateway predefinido ",
+"Výchozí brána ",
+"Brama domyślna ",
+"Gateway Implicit",
+"Шлюз по умолчанию",
+"Prednastavená brána",
+"預設閘道器",
+"默认网关"
+);
+var august=new Array
+(
+"August",
+"August",
+"Agosto",
+"Août",
+"Agosto",
+"Augustus",
+"Agosto",
+"Srpen",
+"Sierpień",
+"August",
+"Август",
+"August",
+"八月",
+"八月"
+);
+var configTool=new Array
+(
+"Configuration Tool",
+"Konfigurations-Tool",
+"Herramienta de configuración",
+"Outil de Configuration",
+"Strumento di configurazione",
+"Configuratiegereedschap",
+"Ferramenta de configuração",
+"Konfigurační nástroje",
+"Narzędzie  konfiguracji ",
+"Unelte Configurare",
+"Инструменты конфигурации",
+"Konfiguračný nástroj",
+"配置工具",
+"配置工具"
+);
+var hostPass=new Array
+(
+"HostPass ",
+"HostPass ",
+"Contraseña de centro ",
+"Mot de passe Hôte ",
+"HostPass ",
+"Wachtwoord Host ",
+"HostPass ",
+"Heslo hostitele ",
+"Hasło",
+"Parola Gazda",
+"Путь к хосту",
+"HostPass",
+"Host Pass",
+"Host Pass"
+);
+var DHCPServer=new Array
+(
+"DHCP Server ",
+"DHCP-Server  ",
+"Servidor DHCP ",
+"Serveur DHCP ",
+"Server DHCP ",
+" DHCP-server  ",
+"Servidor DHCP ",
+"DHCP server ",
+"Serwer DHCP",
+"Server DHCP",
+"DHCP сервер",
+"DHCP Server ",
+"DHCP伺服器",
+"DHCP服务器"
+);
+var feb=new Array
+(
+"February",
+"Februar",
+"Febrero",
+"February",
+"Febbraio",
+"Februari",
+"Fevereiro",
+"Únor",
+"Luty",
+"Februarie",
+"Февраль",
+"Február",
+"二月",
+"二月"
+);
+var subnetMask=new Array
+(
+"Subnet Mask ",
+"Subnetzmaske ",
+"Máscara de subred ",
+"Masque de sous réseau ",
+"Maschera sottorete ",
+"Subnetmasker ",
+"Máscara de subrede ",
+"Maska podsítě ",
+"Maska podsieci",
+"Masca Subretea",
+"Маска подсети",
+"Maska podsiete",
+"子網路遮罩",
+"子网掩码"
+);
+var nat=new Array
+(
+"NAT",
+"NAT",
+"NAT",
+"NAT",
+"NAT",
+"NAT",
+"NAT",
+"NAT",
+"NAT",
+"NAT",
+"NAT",
+"NAT",
+"NAT",
+"NAT"
+);
+var manual=new Array
+(
+"Manual",
+"Manuell",
+"Manual",
+"Manuel",
+"Manuale",
+"Handmatig",
+"Manual",
+"Ručně",
+"Ręczny ",
+"Manual",
+"Инструкция",
+"Manuálne",
+"手動",
+"手动"
+);
+var usePPPoE=new Array
+(
+"Use PPPoE Authentication",
+"PPPoE-Authentifizierung verwenden",
+"Utilizar la autentificación PPPoE",
+"Utiliser l'authentification PPPoE",
+"Usa autenticazione PPPoE",
+"Gebruik de PPPoE-authenticatie",
+"Utilizar a Autenticação PPPoE",
+"Použít autorizaci PPPoE",
+"Użyj uwierzytelniania PPPoE",
+"Foloseste Autentificare PPPoE",
+"Использовать PPPoE аутентификацию",
+"Použi autentifikáciu PPPoE",
+"使用PPPoE認證",
+"使用PPPoE认证"
+);
+var dnsAddr=new Array
+(
+"DNS address",
+"DNS-Adresse ",
+"Dirección DNS: ",
+"Adresse DNS ",
+"Indirizzo DNS ",
+"DNS-adres ",
+"Endereço DNS ",
+"Adresa DNS ",
+"Adres DNS",
+"Adresa DNS",
+"Адрес DNS",
+"adresa DNS",
+"DNS 位址",
+"DNS 地址"
+);
+var dnsAddr1=new Array
+(
+"DNS1 address ",
+"DNS1 Adresse ",
+"Dirección DNS1 ",
+"Adresse DNS1 ",
+"Indirizzo DNS1 ",
+"DNS1-adres ",
+"Endereço DNS1 ",
+"Adresa DNS1 ",
+"Adres DNS1",
+"Adresa DNS1",
+"DNS1 адрес",
+"DNS1 adresa",
+"DNS1 位址",
+"DNS1 地址"
+);
+var dnsAddr2=new Array
+(
+"DNS2 address ",
+"DNS2-Adresse ",
+"Dirección DNS2 ",
+"Adresse DNS2 ",
+"Indirizzo DNS2 ",
+"DNS2-adres ",
+"Endereço DNS2 ",
+"Adresa DNS2 ",
+"Adres DNS2",
+"Adresa DNS2",
+"Адрес DNS2",
+"adresa DNS2",
+"DNS2 位址",
+"DNS2 地址"
+);
+var dnsAddr3=new Array
+(
+"DNS3 address ",
+"DNS3-Adresse ",
+"Dirección DNS3 ",
+"Adresse DNS3 ",
+"Indirizzo DNS3 ",
+"DNS3-adres ",
+"Endereço DNS3 ",
+"Adresa DNS3 ",
+"Adres DNS3",
+"Adresa DNS3",
+"Адрес DNS3",
+"adresa DNS3",
+"DNS3 位址",
+"DNS3 地址"
+);
+var wandipAlert2=new Array
+(
+"Invalid MAC address. It should be in hex number (0-9 or a-f).",
+"Ungültige MAC-Adresse. Es sollte eine Hexadezimalzahl sein (0-9 oder a-f).",
+"Dirección MAC inválida. Deberá ser un número hexagonal (0-9 o a-f).",
+"Adresse MAC incorrecte. Il doit s'agir d'un chiffre hexadécimal (0-9 ou a-f).",
+"Indirizzo MAC non valido. Deve essere composto da numeri esadecimali (0-9 o a-f).",
+"Ongeldig MAC-adres. Het moet hexadecimaal zijn (0-9 of a-f).",
+"Endereço MAC inválido. Deve ser um número hexadecimal (0 a 9 ou a-f).",
+"Neplatná adresa MAC. Zadejte šestnáctkové číslo (0-9 nebo a-f).",
+"Nieprawidłowy adres MAC. Adres powinien być liczbą szesnastkową (0-9 lub a-f). ",
+"Adresa MAC Invalida. Trebuie sa fie caractere hexazecimale (0-9 sau a-f).",
+"Неправильный MAC адрес. Должен быть HEX числом (0-9 или A-F)",
+"Nesprávna MAC adresa. Musí obsahovať hexadecimálne čísla (0-9 alebo a-f).",
+"無效的MAC位址。它應該在十六進位碼（0-9或A-F）。",
+"无效的MAC地址。它应该在十六进制码（0-9或A-F）。"
+);
+var tool=new Array
+(
+"Tools",
+"Tool",
+"Herramienta",
+"Outil",
+"Strumento",
+"Instellingen",
+"Ferramenta",
+"Nástroje",
+"Narzędzia",
+"Unelte",
+"Системные инструменты",
+"Nástroj",
+"工具",
+"工具"
+);
+var timeServerAddr=new Array
+(
+"Time Server Address ",
+"Zeitserver-Adresse ",
+"Dirección del servidor de tiempo ",
+"Adresse Serveur de synchronisation ",
+"Indirizzo server temporizzato ",
+"Adres van de timeserver ",
+"Endereço do servidor de tempo ",
+"Adresa časového serveru ",
+"Adres serwera czasu ",
+"Adresa Server Ora",
+"Адрес сервера времени",
+"Adresa časového serveru",
+"時間伺服器位址",
+"时间服务器地址"
+);
+var confirmPass=new Array
+(
+"Confirmed Password ",
+"Kennwort bestätigen： ",
+"Confirme su nueva contraseña ",
+"Confirmation du mot de passe ",
+"Password confermata ",
+"Bevestig wachtwoord ",
+"Palavra-passe confirmada ",
+"Potvrzené heslo ",
+"Potwierdzenie hasła",
+"Parola Confirmata",
+"Пароль подтверждения",
+"Potvrdenie hesla",
+"確認密碼",
+"确认密码"
+);
+var securitySet=new Array
+(
+"Security Settings",
+"Sicherheitseinstellungen",
+"Parámetros de seguridad",
+"Paramètres de sécurité",
+"Impostazioni di sicurezza",
+"Veiligheidsinstellingen",
+"Definições de segurança",
+"Bezpečnostní nastavení",
+"Ustawienia bezpieczeństwa",
+"Setari Securitate",
+"Настройка безопасности",
+"Bezpečnostné funkcie",
+"安全設定",
+"安全设定"
+);
+var wantelstraPageContent=new Array
+(
+"If your Internet service is provided by Telstra Big Pond in Australia, you will need to enter your information below, This information is provided by Teistra BigPond. ",
+"Wenn Sie sich über Telstra Big Pond in Australien mit dem Internet verbinden, müssen Sie die nachfolgenden Informationen eingeben. Diese Informationen werden von Telstra BigPond Zur Verfügung gestellt. ",
+"Si su servicio de Internet está suministrado por Telstra Big Pond en Australia, tendrá que indicar su información a continuación. Esta información se suministra por Teistra BigPond. ",
+"Si vos services Internet vous sont fournis par Telstra Big Pond en Australie, vous avez besoin de renseigner les informations ci-dessous. Ces informations vous sont fournies par Teistra BigPond. ",
+"Se il servizio Internet viene fornito da Telstra Big Pond in Australia, sarà necessario fornire le informazioni nel campo sottostante. Queste informazioni sono fornite da Teistra BigPond. ",
+"Als u internettoegang hebt via Telstra Big Pond in Australië, moet u hieronder informatie invoeren. Deze informatie wordt door Teistra Big Pond verstrekt. ",
+"Se o seu serviço da Internet for fornecido pela Telstra Big Pond na Austrália, terá de introduzir as suas informações abaixo. Estas informações são fornecidas pela Telstra Big Pond. ",
+"Je-li vaše připojení k Internetu poskytováno službou Telstra Big Pond v Austrálii, bude potřeba zadat níže uvedené informace. Tyto informace získáte od Teistra BigPond. ",
+"Jeśli dostęp do internetu zapewnia w Australii Tesltra Big Pond, konieczne jest wpisanie poniżej podanych informacji uzyskanych od dostawcy internetu. ",
+"Daca serviciul internet este furnizat de Telstra Big Pond in Australia, trebuie sa introduceti informatiile necesare mai jos. Aceste informatii sunt oferite de providerul Tesla Big Pond.",
+"Если ваш интернет сервис предоставляется Telstra Big Pond  в Австралии, вам необходимо ввести информацию ниже. Эта информация предоставлена Telstra Big Pond.",
+"If your Internet service is provided by Telstra Big Pond in Australia, you will need to enter your information below, This information is provided by Teistra BigPond. ",
+"If your Internet service is provided by Telstra Big Pond in Australia, you will need to enter your information below, This information is provided by Teistra BigPond. ",
+"If your Internet service is provided by Telstra Big Pond in Australia, you will need to enter your information below, This information is provided by Teistra BigPond."
+);
+var spanTree=new Array
+(
+"802.1d Spanning Tree ",
+"802.1d Spannbaum ",
+"802.1d Arbol de expansión ",
+"STA 802.1d ",
+"802.1d Spanning Tree ",
+"802.1d Spanning Tree ",
+"802.1d Árvore abrangente ",
+"802.1d Spanning Tree ",
+"802.1d Spanning Tree ",
+"802.1d Spanning Tree ",
+"802.1d Spanning Tree ",
+"802.1d Spanning Tree ",
+"802.1d Spanning Tree ",
+"802.1d Spanning Tree"
+);
+var settypeContent=new Array
+(
+"Specify the WAN connection type required by your Internet Service Provider. Specify a Cable modem, Fixed-IP xDSL, PPPoE xDSL or PPTP xDSL connection.",
+"Legen Sie die WAN-Verbindungsart fest, die bei Ihrem Internetdiensteanbieter erforderlich ist. Machen Sie Angaben zur Kabelmodem-, Fest-IP xDSL-, PPPoE xDSL- oder PPTP xDSL-Verbindung.",
+"Indique el tipo de conexión WAN requerido por su proveedor de servicios a Internet. Indique un módem de cable, la IP fija, xDSL, PPPoE xDSL o una conexión PPTP xDSL.",
+"Spécifiez le type de connexion WAN nécessaire pour votre FAI. Précisez s'il s'agit d'une connexion modem câble, xDSL IP fixe, xDSL PPPoE ou xDSL PPTP.",
+"Specificare il tipo di connessione WAN richiesta dall'Internet Service Provider. Specificare una connessione tramite modem via cavo, xDSL con IP fisso, xDSL PPPoE o xDSL PPTP.",
+"Geef het soort WAN-verbinding aan dat vereist wordt door uw Internet Service Provider. Specificeer een kabelmodem, vast IP-adres voor xDSL, PPPoE xDSL of een PPTP xDSL-aansluiting.",
+"Especifique o tipo de ligação WAN solicitado pelo seu Fornecedor de serviços Internet. Especifique uma ligação de modem por cabo, IP fixo x DSL, PPPoE xDSL ou PPTP xDSL.",
+"Určení typu WAN připojení, který je vyžadován vaším poskytovatelem internetového připojení. Nastavte připojení kabelovým modemem, xDSL s pevnou IP adresou, PPPoE xDSL nebo PPTP xDSL.",
+"Określ rodzaj połączenia WAN wymagany przez dostawcę internetu. Wybierz modem kablowy, stały IP xDSL, PPPoE xDSL lub połączenie PPTP xDSL.",
+"Specificati tipul de conexiune WAN cerut de ISP-ul dumneavoastra. Alegeti tipul de conexiune: Modem cu Cablu, IP Fix xDSL, PPPoE xDSL sau PPTP xDSL.",
+"Выберите тип подключения требуемый вашим ISP.  Выберите кабельный модем, фиксированный IP, PPPoE или PPTP. ",
+"Špecifikujte WAN pripojenie požadované vaším ISP. Špecifikujte káblový modem, pevnú IP xDSL, PPPoE xDSL alebo PPTP xDSL pripojenie.",
+"Specify the WAN connection type required by your Internet Service Provider. Specify a Cable modem, Fixed-IP xDSL, PPPoE xDSL or PPTP xDSL connection.",
+"Specify the WAN connection type required by your Internet Service Provider. Specify a Cable modem, Fixed-IP xDSL, PPPoE xDSL or PPTP xDSL connection."
+);
+var idleTime2=new Array
+(
+"idle time",
+"Leerlaufzeit",
+"Tiempo de descanso",
+"Temps Mort",
+"Tempo di inattività",
+"idle time",
+"Tempo de inactividade",
+"Doba nečinnosti",
+"Czas bezczynności ",
+"Timp Limita",
+"время ожидания",
+"Doba nečinnosti",
+"閒置時間",
+"空闲时间"
+);
+var DynamicDNS=new Array
+(
+"Dynamic DNS ",
+"Dynamisches DNS ",
+"DNS dinámica ",
+"DNS dynamique ",
+"DNS dinamico ",
+"Dynamisch DNS ",
+"DNS dinâmico ",
+"Dynamická DNS ",
+"Dynamiczny DNS",
+"DNS Dinamic",
+"Динамический DNS",
+"Dynamická DNS",
+"動態網域名稱伺服器",
+"动态域名服务器"
+);
+var tools=new Array
+(
+"Tools",
+"Tools",
+"Herramientas",
+"Outils",
+"Strumenti",
+"Gereedschappen",
+"Ferramentas",
+"Nástroje",
+"Narzędzia",
+"Unelte",
+"Инструменты",
+"Nástroje",
+"工具",
+"工具"
+);
+var settypeContent5=new Array
+(
+"If you connect to the Internet using an xDSL Modem and your ISP has provided you with a Password, Local IP Address, Remote IP Address and a Connection ID, then your ISP uses PPTP to establish a connection. You must choose this option and enter the required information.",
+"Wenn Sie sich mit einem xDSL-Modem mit dem Internet verbinden und Ihr Internetdienstanbieter Ihnen ein Kennwort, lokale IP-Adresse, Remote IP-Adresse und eine Verbindungs-ID zur Verfügung gestellt hat, dann nutzt Ihr Internetdienstanbieter PPTP, um die Verbindung herzustellen. Sie müssen diese Optionen wählen und die erforderlichen Informationen eingeben.",
+"Si se conecta a Internet utilizando un módem DSL y su ISP le ha ofrecido una contraseña, dirección IP local, dirección IP a distancia, y una conexión ID, su ISP utilizará PPTP para establecer una conexión. Deberá elegir esta opción e indicar la información requerida.",
+"Si vous vous connectez à Internet en utilisant un modem xDSL et que votre FAI vous a fourni un mot de passe, une adresse IP locale, une adresse IP déportée et un identifiant de connexion, cela signifie que votre FAI utilise le protocole PPTP pour établir une connexion. Vous devez choisir cette option et saisir les informations demandées.",
+"Se ci si connette ad Internet utilizzando un modem xDSL e il proprio ISP ha fornito una password, un indirizzo IP locale, un indirizzo IP remoto e un ID di connessione, l'ISP utilizza il PPTP per stabilire una connessione. È necessario scegliere questa opzione ed inserire le informazioni richieste.",
+"Als u verbinding maakt met het internet door het gebruik van een xDSL-modem en uw ISP heeft u een wachtwoord, lokaal IP-adres, remote IP-adres en een aansluit-ID gegeven, dan maakt uw ISP gebruik van PPTP om de verbinding tot stand te brengen. U moet deze optie selecteren en de benodigde informatie invoeren.",
+"Se estabelecer ligação à Internet utilizando um modem xDSL e o seu ISP lhe fornecer uma palavra-passe, endereço IP local, endereço IP remoto e um ID de ligação, então o seu ISP utiliza PPTP para estabelecer uma ligação. Deve seleccionar esta opção e introduzir as informações necessárias.",
+"Připojujete-li se k Internetu prostřednictvím xDSL modemu a ISP vám poskytl heslo, místní IP adresu, vzdálenou IP adresu a identifikátor připojení, používá ISP pro vytvoření připojení PPTP. Musíte zvolit tuto možnost a zadat požadované informace.",
+"W przypadku połączenia z internetem za pomacą modemu xDSL dostawca internetu przydziela hasło, lokalny adres IP, zdalny adres IP oraz nazwę połączenia, a nastepnie ustanawia połączenie PPTP. Wybierz tę opcję i wprowadź wymagane informacje. ",
+"Daca va conectati la internet folosind un modem xDSL si ISP-ul v-a furnizat o Parola, Adresa IP Locala, Adresa IP Remote si un ID de Conectare, atunci ISP-ul foloseste protocolul PPTP pentru a stabili o conexiune. Alegeti aceasta optiune si introduceti informatiile necesare.",
+"При подключении к Интернету через xDSL модем, если ваш ISP провайдер предоставил вам пароль, локальный IP адрес, удаленный IP адрес, ID подключения и использует PPTP тип связи, вам нужно выбрать эту опцию и ввести требуемую информацию.",
+"Ak sa pripájate k internetu pomocou xDSL modemu a váš ISP vám poskytol Heslo, lokálnu IP adresu, vzdialenú IP adresu a IP pripojenia, potom váš ISP používa PPTP pre vytvorenia pripojenia. Musíte vybrať túto možnosť a vložiť potrebné informácie.",
+"If you connect to the Internet using an xDSL Modem and your ISP has provided you with a Password, Local IP Address, Remote IP Address and a Connection ID, then your ISP uses PPTP to establish a connection. You must choose this option and enter the required information.",
+"If you connect to the Internet using an xDSL Modem and your ISP has provided you with a Password, Local IP Address, Remote IP Address and a Connection ID, then your ISP uses PPTP to establish a connection. You must choose this option and enter the required information."
+);
+var minute=new Array
+(
+"minutes",
+"Minuten",
+"minutos",
+"minutes",
+"minuti",
+"minuten",
+"minutos",
+"minut",
+"minuty",
+"Minute",
+"минуты",
+"minúty",
+"分鐘",
+"分钟"
+);
+var pppoeUser=new Array
+(
+"PPPoE User",
+"PPPoE Benutzer",
+"Usuario PPPoE",
+"Utilisateur PPPoE",
+"Utente PPPoE",
+"PPPoE-gebruiker",
+"Utilizador PPPoE",
+"Uživatel PPPoE",
+"Użytkonik PPPoE ",
+"Utilizator PPPoE",
+"Польователь PPPoE",
+"PPPoE Užívateľ",
+"PPPoE用戶",
+"PPPoE用户"
+);
+var pptpGateAddr=new Array
+(
+"PPTP gateway address ",
+"PPTP Gateway-Adresse ",
+"Dirección de puerta de acceso PPTP ",
+"Adresse passerelle PPTP ",
+"Indirizzo gateway PPTP ",
+"PPTP gateway-adres ",
+"Endereço de gateway PPTP ",
+"Adresa brány PPTP ",
+"Adres bramy PPTP",
+"Adresa Gateway PPTP",
+"адрес PPTP шлюза",
+"PPTP adresa brány",
+"PPTP的閘道器位址",
+"PPTP的网关地址"
+);
+var setupWizard=new Array
+(
+"Quick Setup Wizard",
+"Quick Setup-Assistent",
+"Asistente de configuración rápida",
+"Assistant configuration rapide",
+"Procedura guidata di impostazione rapida",
+"Quick Setup Wizard",
+"Assistente de configuração rápida",
+"Průvodce rychlým nastavení",
+"Kreator szybkiej instalacji",
+"Wizard Instalare Rapida",
+"Wizard быстрой установки ",
+"Rýchly sprievodca inštaláciou",
+"快速安裝嚮導",
+"快速安装向导"
+);
+var nov=new Array
+(
+"November",
+"November",
+"Noviembre",
+"Novembre",
+"Novembre",
+"November",
+"Novembro",
+"Listopad",
+"Listopad",
+"Noiembrie",
+"Ноябрь",
+"November",
+"十一月",
+"十一月"
+);
+var domainName=new Array
+(
+"Domain Name ",
+"Domainname ",
+"Nombre de dominio ",
+"Nom de domaine ",
+"Nome di dominio ",
+"Domeinnaam ",
+"Nome de domínio ",
+"Doménové jméno ",
+"Nazwa domeny ",
+"Nume Domeniu",
+"Имя домена",
+"Meno domény",
+"網域名稱",
+"域名"
+);
+var generalSetupContent=new Array
+(
+"The Broadband router supports advanced functions like Virtual Server, Access Control, Hacker Attack Detection and DMZ. We highly recommend you keep the default settings.",
+"Der Breitbandrouter unterstützt erweiterte Funktionen, wie z. B. Virtual Server, Zugangssteuerung, Hackerattacken-Erkennung und DMZ. Wir empfehlen Ihnen dringend, die Standardeinstellungen beizubehalten.",
+"El enrutador de banda ancha acepta las funciones avanzadas como el Servidor Virtual, el Control del Acceso, la detección de ataques de intrusos y el DMZ. Le aconsejamos encarecidamente que conserve sus parámetros predefinidos.",
+"Le routeur large bande dispose de fonctions avancées : serveur virtuel, contrôle d'accès, Détection d'attaques de hackers et DMZ. Nous vous recommandons fortement de ne pas modifier les paramètres par défaut.",
+"Il router a banda larga supporta funzioni avanzate quali Server virtuale, Controllo degli accessi, Rilevamento di attacchi hacker e DMZ. Consigliamo vivamente di mantenere le impostazioni predefinite.",
+"De breedbandrouter ondersteunt geavanceerde functies zoals een virtuele server, toegangscontrole, waarnemen van aanvallen door hackers en DMZ. We raden u met klem aan de standaardinstellingen te handhaven.",
+"O router de banda larga suporta funções avançadas como Servidor Virtual, Controlo de acesso, Detecção de ataque de piratas informáticos e DMZ. Recomendamos vivamente que mantenha as predefinições.",
+"Širokopásmový směrovač podporuje pokročilé funkce, například virtuální server, řízení přístupu, detekování hackerských útoků a DMZ. Velmi doporučujeme ponechat výchozí nastavení.",
+"Router szerokopasmowy obsługuje zaawanasowane funkcje jak serwer wirtualny, sterowanie dostępem, wykrywanie ataków hakerów oraz DMZ. Zalecamy stosowanie ustawień domyślnych.",
+"Routerul suporta functii avansate cum ar fi Virtual Server, Controlul Accesului, Detectarea Atacurilor de Hacker si DMZ. Recomandam sa pastrati setarile initiale.",
+"Широкополосный маршрутизатор поддерживает дополнительные функции, такие, как виртуальный сервер, контроль доступа, детектор хакерских атак и DMZ. Мы рекомендуем вам оставить настройки по умолчанию.",
+"Širokopásmový router podporuje pokročilé funkcie ako virtuálny server, kontrolu prístupu, detekciu útoku hackerov a DMZ. Dôrazne vám odporúčame udržať prednastavené nastavenia.",
+"寬頻路由器支持先進的功能，如虛擬伺服器，存取控制，黑客攻擊檢測和DMZ。我們強烈建議你保留預設設定。",
+"宽带路由器支持先进的功能，如虚拟服务器，访问控制，黑客攻击检测和DMZ。我们强烈建议你保留预设设定。"
+);
+var PPTP=new Array
+(
+"PPTP",
+"PPTP",
+"PPTP",
+"PPTP",
+"PPTP",
+"PPTP",
+"PPTP",
+"PPTP",
+"PPTP",
+"PPTP",
+"PPTP",
+"PPTP",
+"PPTP",
+"PPTP"
+);
+var l2tpSet=new Array
+(
+"L2TP Settings",
+"L2TP Einstellungen",
+"Configuración L2TP",
+"Paramètres L2TP",
+"Impostazioni L2TP",
+"L2TP-instellingen",
+"Definições de L2TP",
+"Nastavení L2TP",
+"Ustawienia L2TP",
+"Setari L2TP",
+"L2TP настройка",
+"L2TP nastavenia",
+"L2TP 設定",
+"L2TP 设定"
+);
+var leaseTime=new Array
+(
+"Lease Time ",
+"Lease-Zeit ",
+"Tiempo de espera ",
+"Temps de location ",
+"Tempo di lease ",
+"Lease Time (Gebruikstijd van het adres) ",
+"Tempo de concessão ",
+"Doba pronájmu ",
+"Czas dzierżawy",
+"Timp Alocat",
+"Время аренды",
+"Čas prenájmu",
+"租賃時間",
+"租赁时间"
+);
+var dec=new Array
+(
+"December",
+"Dezember",
+"Diciembre",
+"Décembre",
+"Dicembre",
+"December",
+"Dezembro",
+"Prosinec",
+"Grudzień",
+"Dembrie",
+"Декабрь",
+"December",
+"十二月",
+"十二月"
+);
+var settypeContent3=new Array
+(
+"Some xDSL Internet Service Providers may assign a Fixed IP Address for your Broadband router. If you have been provided with this information, choose this option and enter the assigned IP Address, Subnet Mask, Gateway IP Address and DNS IP Address for your Broadband router.",
+"Einige xDSL Internetdiensteanbieter können Ihrem Breitbandrouter eine feste IP-Adresse zuweisen. Wenn Ihnen diese Informationen zur Verfügung gestellt wurden, wählen Sie diese Option und geben Sie die zugewiesene IP-Adresse, Subnetz-Maske, Gateway-IP-Adresse und DNS IP-Adresse für Ihren Breitbandrouter ein.",
+"Algunos proveedores de servicio a Internet xDSL podrán atribuir una dirección IP fija desde su enrutador de banda ancha. Si ha indicado esta información, elija esta opción e indique la dirección IP atribuida, la máscara de subred, la dirección IP de la puerta de acceso y la dirección IP DNS para su enrutador de banda ancha.",
+"Certains fournisseurs de services xDSL assigne une adresse IP fixe à votre routeur à large bande. Si vous connaissez ces informations, choisissez cette option et saisissez l'adresse IP, le masque de sous-réseau, l'adresse IP passerelle et l'adresse IP DNS de votre routeur large bande qui vous ont été attribuées.",
+"Alcuni provider di servizi Internet xDSL potrebbero assegnare un indirizzo IP fisso al router a banda larga. Se si è in possesso di queste informazioni, scegliere questa opzione e inserire l'indirizzo IP, la maschera sottorete, l'indirizzo IP del Gateway e l'indirizzo IP del DNS assegnati per il router a banda larga.",
+"Sommige xDSL Internet Service Providers kennen een vast IP-adres toe aan uw breedbandrouter. Als u deze informatie hebt ontvangen, kies dan voor deze optie en voer het toegekende IP-adres, subnetmasker, gateway IP-adres en DNS IP-adres voor uw breedbandrouter in.",
+"Alguns fornecedores de serviços Internet xDSL pode atribuir um endereço IP fixo ao seu router de banda larga. Se recebeu estas informações, seleccione esta opção e introduza o endereço IP, máscara de subrede, endereço IP de gateway atribuídos ao seu router de banda larga.",
+"Někteří poskytované internetu přes xDSL mohou vašemu širokopásmovému směrovači přiřadit pevnou IP adresu. Znáte-li tento údaj, použijte tuto volbu a zadejte přiřazenou IP adresu, masku podsítě, IP adresu brány a IP adresu DNS vašeho širokopásmového směrovače.",
+"Niektórzy dostawcy internetu  mogą przydzielić stały adres IP dla routera. W przypadku otrzymania takiej informacji należy wybrać właściwą opcję i wpisać przydzielony adres IP, maskę podsieci, adres IP bramy oraz adres IP serwera DNS.",
+"Unii provideri xDSL va pot aloca o adresa IP Fixa pentru router. Daca vi s-au furnizat aceste informatii, selectati optiunea corespunzatoare si introduceti datele necesare.",
+"Некоторые xDSL ISP провайдеры могут назначить вам фиксированный IP адрес. Если вы знаете необходимую информацию, выберите эту опцию и введите назначенные IP адрес, маску подсети, IP адрес шлюза и IP адрес DNS сервера для вашего маршрутизатора.",
+"Niektorý xDSL ISP vám môžu poskytnúť pevnú IP adresu pre váš širokopásmový router. Pokiaľ ste dostali tieto informácie, vyberte túto možnosť a zadajte poskytnutú IP adresu, masku podsiete, IP adresu brány a IP adresu DNS pre širokopásmový router.",
+"Some xDSL Internet Service Providers may assign a Fixed IP Address for your Broadband router. If you have been provided with this information, choose this option and enter the assigned IP Address, Subnet Mask, Gateway IP Address and DNS IP Address for your Broadband router.",
+"Some xDSL Internet Service Providers may assign a Fixed IP Address for your Broadband router. If you have been provided with this information, choose this option and enter the assigned IP Address, Subnet Mask, Gateway IP Address and DNS IP Address for your Broadband router."
+);
+var RemoteM=new Array
+(
+"Remote Management",
+"Fernmanagement",
+"Gestión remota",
+"Gestion à distance",
+"Remote Management",
+"Extern beheer",
+"Gestão remota",
+"Dálková správa",
+"Zdalne zarządzanie",
+"Management de la Distanta",
+"Удаленное управление",
+"Vzdialená správa",
+"遠程管理",
+"远程管理"
+);
+var to=new Array
+(
+"To",
+"Zu",
+"Hacia",
+"vers",
+"A",
+"naar",
+"Para",
+"Do",
+"Dla",
+"Catre ",
+"К",
+"Do",
+"To",
+"To"
+);
+var l2tpPass=new Array
+(
+"L2TP password",
+"L2TP Kennwort",
+"Contraseña L2TP",
+"Mot de passe L2TP",
+"Password L2TP",
+"L2TP-wachtwoord",
+"Palavra-passe de L2TP",
+"Heslo L2TP",
+"Hasło L2TP",
+"Parola L2TP",
+"L2TP пароль",
+"Heslo L2TP",
+"L2TP 密碼",
+"L2TP 密码"
+);
+var DoS=new Array
+(
+"DoS",
+"DoS",
+"DoS",
+"DoS",
+"DoS",
+"DoS",
+"DoS",
+"DoS",
+"DoS",
+"DoS",
+"DoS",
+"DoS",
+"DoS",
+"DoS"
+);
+var daylightSave=new Array
+(
+"Daylight Savings ",
+"Zeitumstellungen ",
+"Ahorro de luz diaria ",
+"Sauvegardes en journée ",
+"Ora legale ",
+"Zomertijd ",
+"Hora de Verão ",
+"Přechod na letní čas ",
+"Zmiana czasu",
+"Ora de Vara",
+"Сезонное смещение времени",
+"úspora denného osvetlenia",
+"夏令節約時間",
+"夏令节约时间"
+);
+var wanddnsContent=new Array
+(
+"DDNS allows users to map the static domain name to a dynamic IP address. You must get a account, password and your static domain name from the DDNS service providers. Our products have DDNS support for www.dyndns.org and www.tzo.com now.",
+"DDNS ermöglicht den Benutzern die Zuordnung des statischen Domännamens für eine dynamische IP-Adresse. Sie müssen ein Benutzerkonto, Kennwort und Ihren statischen Domainnamen von den DDNS Dienstanbietern erfragen. Unsere Produkte besitzen nun DDNS-Support für www.dyndns.org und www.tzo.com.",
+"DDNS permite que los usuarios puedan localizar el nombre de dominio estático en una dirección IP dinámica. Deberá obtener una cuenta, una contraseña y su nombre de dominio estático a partir de los proveedores de servicio DDNS. Nuestros productos tienen soporte DDNS para www.dyndns.org y www.tzo.com ahora.",
+"Le système DDNS permet aux utilisateurs de mapper le nom du domaine statique vers une adresse IP dynamique. Vous devez obtenir un compte, un mot de passe et le nom de votre domaine statique de la part de votre fournisseur de services DDNS. Nos produits disposent d'une assistance DDNS sur www.dyndns.org et www.tzo.com.",
+"Il DDNS consente agli utenti di mappare il nome di dominio statico con un indirizzo IP dinamico. È necessario procurarsi un account, una password e un nome di dominio statico dai provider di servizi DDNS. I nostri prodotti ad ora supportano il DDNS per www.dyndns.org e www.tzo.com.",
+"Met DDNS verbindt u de statische domeinnaam met een dynamisch IP-adres. U hebt een account nodig, een wachtwoord en uw statische domeinnaam van de DDNS serviceprovider. Onze producten ondersteunen nu DDNS van www.dyndns.org en www.tzo.com.",
+"DDNS permite aos utilizadores mapear o nome de domínio estático a um endereço IP dinâmico. Deve obter uma conta, palavra-passe e o seu nome de domínio estático a partir dos fornecedores de serviços DDNS. Os nossos produtos dispõem agora de suporte DDNS para www.dyndns.org e www.tzo.com.",
+"DDNS umožňuje uživateli namapovat statické doménové jméno na dynamickou IP adresu. Musíte získat účet, heslo a statické doménové jméno od poskytovatele služby DDNS. Naše výrobky jsou v současné době vybaveny DDNS podporou pro www.dyndns.org a www.tzo.com.",
+"DDNS umożliwia użytkownikom dynamiczne określanie statycznej nazwy domeny dla dynamicznego adresu IP. Konieczne jest uzyskanie konta, hasła, statycznej nazwy domeny od dostawy usługi DDNS. Nasze produkty obsługują serwisy www.dynds.org. oraz www.tzo.com. ",
+"DDNS va permite alocarea unui nume pentru o adresa IP dinamica. Trebuie sa aveti un cont, parola si numele domeniului de la un provider de servicii DDNS. Produsele noastre suporta acum www.dyndns.org si www.tzo.com",
+"DDNS сервер позволяет пользователям сопоставить статические доменные имена и динамические IP адреса. Вам нужно получить от DDNS провайдера учетную запись, пароль и статическое доменное имя. Наш продукт теперь имеет DDNS поддержку  www.dyndns.org и www.tzo.com.",
+"DDNS dovoľuje užívateľom na mapovať statické doménové meno dynamickej IP adresy. Musíte získať účet, heslo a vašu statické doménové meno z DDNS poskytovateľov. Náš produkt má podporu DDNS pre www.dyndns.org a www.tzo.com now.",
+"DDNS allows users to map the static domain name to a dynamic IP address. You must get a account, password and your static domain name from the DDNS service providers. Our products have DDNS support for www.dyndns.org and www.tzo.com now.",
+"DDNS allows users to map the static domain name to a dynamic IP address. You must get a account, password and your static domain name from the DDNS service providers. Our products have DDNS support for www.dyndns.org and www.tzo.com now."
+);
+var wanddnsContentshort=new Array
+(
+"DDNS allows users to map the static domain name to a dynamic IP address. You must get a account, passwor",
+"DDNS ermöglicht den Benutzern die Zuordnung des statischen Domännamens für eine dynamische IP-Adresse. S",
+"DDNS permite que los usuarios puedan localizar el nombre de dominio estático en una dirección IP dinámic",
+"Le système DDNS permet aux utilisateurs de mapper le nom du domaine statique vers une adresse IP dynamiq",
+"Il DDNS consente agli utenti di mappare il nome di dominio statico con un indirizzo IP dinamico. È neces",
+"Met DDNS verbindt u de statische domeinnaam met een dynamisch IP-adres. U hebt een account nodig, een wa",
+"DDNS permite aos utilizadores mapear o nome de domínio estático a um endereço IP dinâmico. Deve obter um",
+"DDNS umožňuje uživateli namapovat statické doménové jméno na dynamickou IP adresu. Musíte získat účet, h",
+"DDNS umożliwia użytkownikom dynamiczne określanie statycznej nazwy domeny dla dynamicznego adresu IP. Ko",
+"DDNS va permite alocarea unui nume pentru o adresa IP dinamica. Trebuie sa aveti un cont, parola si nume",
+"DDNS сервер позволяет пользователям сопоставить статические доменные имена и динамические IP адреса. Вам",
+"DDNS dovoľuje užívateľom na mapovať statické doménové meno dynamickej IP adresy. Musíte získať účet, hes",
+"",
+""
+);
+var pptpPass=new Array
+(
+"PPTP password",
+"PPTP Kennwort",
+"Contraseña PPTP",
+"Mot de passe PPTP",
+"Password PPTP",
+"PPTP-wachtwoord",
+"Palavra-passe de PPTP",
+"Heslo PPTP",
+"Hasło PPTP",
+"Parola PPTP",
+"PPTP пароль",
+"PPTP heslo",
+"PPTP 密碼",
+"PPTP 密码"
+);
+var home=new Array
+(
+"Home",
+"Home",
+"Inicio",
+"Accueil",
+"Home",
+"Beginpagina",
+"Início",
+"Domů",
+"Strona główna ",
+"Pagina Principala",
+"Дом",
+"Domov",
+"首頁",
+"首页"
+);
+var oct=new Array
+(
+"October",
+"Oktober",
+"Octubre",
+"Octobre",
+"Ottobre",
+"Oktober",
+"Outubro",
+"Říjen",
+"Październik",
+"Octombrie",
+"Октябрь",
+"Október",
+"十月",
+"十月"
+);
+var mtuVal=new Array
+(
+"MTU Value",
+"MTU-Wert",
+"Valor MTU",
+"Valeur MTU",
+"Valore MTU",
+"MTU-waarde",
+"Valor MTU",
+"Hodnota MTU",
+"Wartość MTUI ",
+"Valoare MTU",
+"MTU значение",
+"MTU hodnota",
+"MTU值",
+"MTU值"
+);
+var newPass=new Array
+(
+"New Password ",
+"Neues Kennwort： ",
+"Nueva contraseña ",
+"Nouveau mot de passe ",
+"Nuova password ",
+"Nieuw wachtwoord ",
+"Nova palavra-passe ",
+"Nové heslo ",
+"Nowe hasło ",
+"Parola Noua",
+"Новый пароль",
+"Nové heslo",
+"新密碼",
+"新密码"
+);
+var portNum=new Array
+(
+"Port Number",
+"Portnummer",
+"Número de puerto",
+"Numéro de port",
+"Numero di porta",
+"Poortnummer",
+"Número da porta",
+"Číslo portu",
+"Numer portu",
+"Numar Port",
+"Номер порта",
+"Číslo portu",
+"埠號",
+"埠号"
+);
+var lanAlert3=new Array
+(
+"Invalid DHCP client end IP address!It should be located in the same subnet of current IP address.",
+"Ungültige DHCP-Client End-IP-Adresse! Diese sollte sich im gleichen Subnetz der gegenwärtigen IP-Adresse befinden.",
+"¡Dirección IP de finalización de cliente DHCP incorrecta! Deberá ubicarse en la misma subred de la dirección IP actual.",
+"Adresse de fin client DHCP incorrecte ! Elle doit se trouver dans le même sous-réseau que l'adresse IP actuelle.",
+"Indirizzo IP finale del client DHCP non valido! Dovrebbe trovarsi nella stessa sottorete dell'indirizzo IP corrente.",
+"Ongeldig DHCP client eind IP-adres! Het moet in hetzelfde subnet staan als het huidige IP-adres.",
+"Endereço IP final de cliente DHCP inválido!Deve estar localizado na mesma subrede do endereço IP local.",
+"Neplatná koncová IP adresa DHCP klienta! Měla by být umístěna na stejné podsíti s místní IP adresou.",
+"Nieprawidłowy końcowy adres IP klienta DHCP! Adres powinien należeć do tej samej podsieci, co obecny adres IP.  ",
+"Adresa IP de Sfarsit client DHCP invalida! Trebuie sa fie in aceeasi subretea ca si adresa IP curenta.",
+"Неверен конечный IP адрес DHCP клиента. Должен быть из той же подсети, что и текущий IP адрес.",
+"Nesprávny koniec IP adresy DHCP klienta! Musí byť lokalizovaná v rovnakej podsieti ako terajšia IP adresa",
+"DHCP終端的結束IP是無效的！它應該和現有的IP位址位在同一網段。",
+"DHCP终端的结束IP是无效的！它应该和现有的IP地址位在同一网段。"
+);
+var wansetPageContent2=new Array
+(
+"Obtains an IP Address automatically from your Service Provider.",
+"Erhält automatisch eine IP-Adresse von Ihrem Dienstanbieter.",
+"Obtiene una dirección IP automáticamente de su Proveedor de Servicio.",
+"Permet d'obtenir une adresse IP automatiquement de votre FAI.",
+"Ottiene automaticamente un indirizzo IP dal Service Provider.",
+"Haalt automatisch een IP-adres op bij uw serviceprovider.",
+"Obtém um endereço IP automaticamente a partir do seu Fornecedor de serviços.",
+"Získá IP adresu automaticky od poskytovatele služeb.",
+"Uzyskuje adres IP automatycznie od dostawcy usługi",
+"Obtine o Adresa IP automat de la provider.",
+"Получить IP адрес автоматически от вашего провайдера. ",
+"Získanie IP adresy automaticky od vášho ISP.",
+"自動取得 IP位址",
+"自动取得 IP地址"
+);
+var account=new Array
+(
+"Account / E-Mail ",
+"Benutzerkonto/E-Mail ",
+"Cuenta/ Dirección de correo electrónico ",
+"Compte/e-mail ",
+"Account/E-mail ",
+"Account/E-mail ",
+"Conta/Correio electrónico ",
+"Účet/E-Mail ",
+"Konto/Email",
+"Cont / E-mail",
+"Учетная запись / e-mail",
+"Účet/e-mail",
+"帳戶 /電子郵件",
+"帐户 /电子邮件"
+);
+var statusInfo=new Array
+(
+"Status Information",
+"Statusinformation",
+"Información de estado",
+"informations d'etat",
+"Informazioni di stato",
+"Statusinformatie",
+"Informações sobre estado",
+"Informace o stavu",
+"Informacje o stanie urządzenia",
+"Informatii Stare",
+"Статусная информация",
+"Informácie o stave",
+"狀態資訊",
+"状态信息"
+);
+var fixedIPDSL=new Array
+(
+"Fixed-IP xDSL",
+"xDSL mit fester IP",
+"IP fija x DSL",
+"IP fixe xDSL",
+"IP xDSL fisso",
+"Vaste-IP xDSL",
+"IP fixo xDSL",
+"xDSL s pevnou adresou",
+"Stałe IP xDSL",
+"IP Fix xDSL",
+"Фиксированный IP xDSL",
+"Pevná IP xDSL",
+"Fixed-IP xDSL",
+"Fixed-IP xDSL"
+);
+var specialApp=new Array
+(
+"Special applications",
+"Spezielle Anwendungen",
+"Aplicaciones especiales",
+"Applications spéciales",
+"Applicazioni speciali",
+"Bijzondere toepassingen",
+"Aplicações especiais",
+"Speciální aplikace",
+"Aplikacje specjalne ",
+"Aplicatii Speciale ",
+"Специальные приложения",
+"Špeciálne aplikácie",
+"特殊應用",
+"特殊应用"
+);
+var wireless=new Array
+(
+"Wireless",
+"Drahtlos",
+"Inalámbrico",
+"Sans fil",
+"Wireless",
+"Draadloos",
+"Sem fios",
+"Bezdrátová síť",
+"Sieć bezprzewodowa",
+"Wireless",
+"Беспроводная связь",
+"Bezdrôtový",
+"無線",
+"无线"
+);
+var PPPoEDSL=new Array
+(
+"PPPoE xDSL",
+"PPPoE xDSL",
+"PPPoE xDSL",
+"PPPoE xDSL",
+"PPPoE xDSL",
+"PPPoE xDSL",
+"PPPoE xDSL",
+"PPPoE xDSL",
+"PPoE xDSL",
+"PPPoE xDSL",
+"PPPoE xDSL",
+"PPPoE xDSL",
+"PPPoE xDSL",
+"PPPoE xDSL"
+);
+var setup=new Array
+(
+"General Setup",
+"Allgemeines Setup",
+"Configuración general",
+"Configuration générale",
+"Impostazioni generali",
+"Algemene configuratie",
+"Configuração geral",
+"Obecné nastavení",
+"Ustawienia szczegółowe",
+"Setari Generale",
+"Основные настройки",
+"Všeobecné nastavenia",
+"一般安裝",
+"一般安装"
+);
+var wanddnsAlert=new Array
+(
+"Invalid HostID number! It should be the decimal number (0-9).",
+"Ungültige HostID-Nummer! Es sollte eine Dezimalzahl sein (0-9).",
+"¡Número ID de la central inválido! Deberá ser un número decimal (entre 0-9).",
+"Numéro identification d'hôte incorrect ! Il doit s'agir d'un nombre décimal (0-9).",
+"Numero HostID non valido! Deve essere un numero decimale (0-9).",
+"Ongeldig HostID-nummer! Het moet een decimaal teken zijn (0-9).",
+"Número de IDAnfitrião inválido! Deve ser um número decimal (0 a 9).",
+"Neplatné číslo HostID! Zadejte desítkové číslo z intervalu (0-9).",
+"Nieprawidłowy adres komputera. Adres nie może być taki sam jak adres IP LAN.",
+"Numar ID Gazda Invalid! Trebuie sa fie un numar zecimal (0-9).",
+"Неправильный номер ID хоста! Должно быть десятичным числом (0-9).",
+"Nesprávne HostID číslo! Musí to byť celé číslo (0-9).",
+"主ID的數字是無效的！它應該是十進位碼(0-9)。",
+"主ID的数字是无效的！它应该是十进制码(0-9)。"
+);
+var ipAddr11=new Array
+(
+"IP address ",
+"IP-Adresse ",
+"Dirección IP ",
+"Adresse IP ",
+"Indirizzo IP ",
+"IP-adres ",
+"Endereço IP ",
+"IP adresa ",
+"Adres IP",
+"Adresa IP",
+"IP адрес",
+"IP adresa",
+"IP 位址",
+"IP 地址"
+);
+var lanAlert=new Array
+(
+"Invalid DHCP client start IP address!It should not be the same as LAN IP Address.",
+"Ungültige DHCP-Client Start-IP-Adresse! Diese sollte nicht der LAN IP-Adresse entsprechen.",
+"¡Dirección IP de inicio de cliente DHCP incorrecta! No deberá ser la misma que la dirección IP LAN.",
+"Adresse IP de début client DHCP incorrecte ! Elle doit être la même que l'adresse IP LAN.",
+"Indirizzo IP iniziale del client DHCP non valido! Il valore non deve coincidere con l'indirizzo IP della LAN.",
+"Ongeldig DHCP-client start IP-adres! Het mag niet gelijk zijn aan het LAN IP-adres.",
+"Endereço IP inicial de cliente DHCP inválido!Não deve ser igual ao do endereço IP LAN.",
+"Neplatná počáteční adresa DHCP klienta! Neměla by být stejná jako IP adresa LAN.",
+"Nieprawidłowy adres początkowy IP klienta DHCP. Adres nie może być taki sam jak adres IP LAN.  ",
+"Adresa IP de start client DHCP invalida! Nu trebuie sa fie aceeasi cu adresa IP LAN.",
+"Неправильный начальный IP адрес DHCP клиента! Должен быть таим же как IP адрес LAN.",
+"Nesprávny začiatok IP adresy DHCP klienta! Nesmie byť rovnaký ako adresa IP LAN.",
+"DHCP終端的啟動IP位址是無效的！",
+"DHCP终端的启动IP地址是无效的！"
+);
+var hostID=new Array
+(
+"HostID ",
+"HostID ",
+"ID central ",
+"Identifiant hôte ",
+"HostID ",
+"HostID ",
+"IDAnfitrião ",
+"HostID ",
+"Nazwa komputera",
+"ID Gazda",
+"ID хоста",
+"HostID",
+"主ID",
+"主ID"
+);
+var timeZonePageContent=new Array
+(
+"Set the time zone of the Broadband router. This information is used for log entries and firewall settings.",
+"Stellen Sie die Zeitzone des Breitbandrouters ein. Diese Informationen werden für Einträge in der Log-Datei und für Firewalleinstellungen verwendet.",
+"Fije la zona horaria del enrutador de banda ancha. Esta información se utiliza para registrar las entradas y los parámetros del firewall.",
+"Paramétrez la zone horaire du routeur. Cette information est utilisée pour l'enregistrement des entrées et les paramètres du pare-feu.",
+"Impostare il fuso orario del router a banda larga. Questa informazione viene usata per le registrazioni degli accessi e le impostazioni del firewall.",
+"Stel de tijdzone van de breedbandrouter in. Deze informatie wordt gebruikt voor het maken van logboekaantekeningen en instellingen van de firewall.",
+"Defina o fuso horário do router de banda larga. Estas informações são utilizadas para entradas de registo e definições de firewall.",
+"Nastavte časové pásmo širokopásmového směrovače. Tyto informace se používají pro protokolování a nastavení brány firewall.",
+"Ustaw stefę czasu dla routera. Informacja ta używana jest do logowań oraz ustawień firewalla.",
+"Setati Fusul Orar pentru router. Aceasta informatie este folosita pentru inregistrarile din LOG si Firewall",
+"Установить Временую Зону широкополосного маршрутизатора. Эта информация используется для log записей и настроек брандмауэра.",
+"Nastavte časovú zónu bezdrôtového routeru. Táto informácia je použitá vstupy záznamu a nastavenia firewall.",
+"寬頻路由器的時區設定。日誌記錄和防火牆設定的時間標準會遵循此時區而定。",
+"宽带路由器的时区设定。日志记录和防火墙设定的时间标准会遵循此时区而定。"
+);
+var timeFrom=new Array
+(
+"Times From",
+"Zeit von",
+"Hora de inicio",
+"Fois depuis",
+"Ore da",
+"Tijden vanaf",
+"Hora de",
+"Čas od",
+"Czas",
+"Ora din",
+"Время от",
+"Čas od",
+"時間從",
+"时间从"
+);
+var moreConfig=new Array
+(
+"More Configuration",
+"Weitere Konfiguration",
+"Más configuración",
+"Configuration supplémentaire",
+"Configurazione modalità",
+"Meer configuratie",
+"Mais configurações",
+"Více nastavení",
+"Więcej opcji konfiguracji",
+"Mai multe Configuratii",
+"Дополнительная конфигурация",
+"Viacej konfigurácií",
+"更多的配置",
+"更多的配置"
+);
+var disconnect=new Array
+(
+"Disconnect",
+"Trennen",
+"Desconectar",
+"Déconnecter",
+"Disconnetti",
+"Verbinding verbreken",
+"Desligar",
+"Odpojit",
+"Rozłącz",
+"Deconectare",
+"Отключить связь",
+"Odpojiť",
+"離線",
+"脱机"
+);
+var upnp=new Array
+(
+"UPnP Setting",
+"UPnP-Einstellung",
+"Configuración UPnP",
+"Paramètres UPnP",
+"Impostazione UPnP",
+"UPnP-instelling",
+"Definição UPnP",
+"Nastavení UPnP",
+"Ustawienia UPnP",
+"Setari UPnP",
+"UPnP настройки",
+"UPnP nastavenia",
+"UPnP 設定",
+"UPnP 设定"
+);
+var cableModem=new Array
+(
+"Cable Modem",
+"Kabelmodem",
+"Modem por cable",
+"Modem câble",
+"Modem via cavo",
+"Kabelmodem",
+"Modem por cabo",
+"Kabelový modem",
+"Modem przewodowy",
+"Modem Cablu",
+"Кабельный модем",
+"Káblový modem",
+"Cable Modem",
+"Cable Modem"
+);
+var wansetPageContent6=new Array
+(
+"Layer Two Tunneling Protocol is a common connection method used in xDSL connections. Please select connection type (obtain an IP address automatically, or input an IP address), and complete L2TP connection settings by inputting information given by your service provider.",
+"Das Layer Two Tunneling Protocol (L2TP) ist eine gebräuchliche Verbindungsmethode, die bei xDSL-Verbindungen eingesetzt wird.",
+"El protocolo de dos túneles de capa es un método de conexión común utilizado en las conexiones xDSL.",
+"Le protocole L2TP est une méthode de connexion commune utilisée pour les connexions xDSL.",
+"Il Layer Two Tunneling Protocol è un comune metodo di connessione utilizzato nelle connessioni xDSL.",
+"Layer Two Tunneling Protocol (L2TP) is een algemene aansluitmethode die in xDSL-verbindingen wordt gebruikt.",
+"Protocolo de encaminhamento de segunda camada é um método de ligação comum utilizado em ligações xDSL.",
+"Tunelovací protokol úrovně dva je běžný způsob připojení používaný pro xDSL připojení.",
+"Protokół tunelowania warstwy drugiej jest standardowym połączeniem używanym w połączeniach xDSL.",
+"Layer Two Tunneling Protocol este folosit in conectari xDSL.",
+"Layer Two Tunneling Protocol (L2TP) - метод потключения обычно используемый в xDSL системах связи",
+"Tunelovací protokol druhej vrstvy je bežné pripojovacia metóda používa xDSL pripojenia.",
+"",
+""
+);
+var wansetPageContent6short=new Array
+(
+"Layer Two Tunneling Protocol is a common connection method used in xDSL connections. Please select connection type",
+"Das Layer Two Tunneling Protocol (L2TP) ist eine gebräuchliche Verbindungsmethode, die bei xDSL-Verbindung",
+"El protocolo de dos túneles de capa es un método de conexión común utilizado en las conexiones xDSL.",
+"Le protocole L2TP est une méthode de connexion commune utilisée pour les connexions xDSL.",
+"Il Layer Two Tunneling Protocol è un comune metodo di connessione utilizzato nelle connessioni xDSL.",
+"Layer Two Tunneling Protocol (L2TP) is een algemene aansluitmethode die in xDSL-verbindingen wordt gebruikt.",
+"Protocolo de encaminhamento de segunda camada é um método de ligação comum utilizado em ligações xDSL.",
+"Tunelovací protokol úrovně dva je běžný způsob připojení používaný pro xDSL připojení.",
+"Protokół tunelowania warstwy drugiej jest standardowym połączeniem używanym w połączeniach xDSL.",
+"Layer Two Tunneling Protocol este folosit in conectari xDSL.",
+"Layer Two Tunneling Protocol (L2TP) - метод потключения обычно используемый в xDSL системах связи",
+"Tunelovací protokol druhej vrstvy je bežné pripojovacia metóda používa xDSL pripojenia.",
+"",
+""
+);
+var lanIP=new Array
+(
+"LAN IP",
+"LAN IP",
+"IP LAN",
+"IP LAN",
+"IP LAN",
+"LAN-IP",
+"IP LAN",
+"LAN IP",
+"IP LAN",
+"IP LAN",
+"LAN IP",
+"LAN IP",
+"局域網路 IP",
+"局域网络 IP"
+);
+var clone=new Array
+(
+"Clone Mac address ",
+"MAC-Adresse klonen ",
+"Dirección MAC clonada ",
+"Clonage adresse MAC ",
+"Clonare Indirizzo MAC ",
+"Kloon MAC-adres ",
+"Clonar endereço MAC ",
+"Klonovat adresu Mac ",
+"Kopiuj adres MAC",
+"Clonare Adresa MAC",
+"Клонировать MAC адрес",
+"Klonovať MAC adresu",
+"複製MAC位址",
+"克隆MAC地址"
+);
+var oned=new Array
+(
+"One day",
+"Ein Tag",
+"Un día",
+"Un jour",
+"Un giorno",
+"Een dag",
+"Um dia",
+"Jeden den",
+"Jeden dzień",
+"O zi",
+"Один день",
+"Jeden deň",
+"一天",
+"一天"
+);
+var IPAddr=new Array
+(
+"IP address ",
+"IP-Adresse ",
+"Dirección IP ",
+"Adresse IP ",
+"Indirizzo IP ",
+"IP-adres ",
+"Endereço IP ",
+"IP adresa ",
+"Adres IP",
+"Adresa IP",
+"IP адрес",
+"IP adresa",
+"IP 位址",
+"IP 地址"
+);
+var systemset=new Array
+(
+"System Setting",
+"Systemeinstellung",
+"Configuración de sistema",
+"Paramétres Système.",
+"Impostazione sistema",
+"Systeeminstellingen",
+"Definição do sistema",
+"Nastavení systému",
+"Ustawienia systemu",
+"Setari de Sistem",
+"Настройка системы",
+"Systémové nastavenia",
+"系統設定",
+"系统设定"
+);
+var WANSettings=new Array
+(
+"WAN Settings",
+"WAN-Einstellungen",
+"Configuración WAN",
+"Paramètres WAN",
+"Impostazioni WAN",
+"WAN-instellingen",
+"Definições WAN",
+"Nastavení WAN",
+"Ustawienia WAN",
+"Setari WAN",
+"Настройка WAN",
+"Nastavenia WAN",
+"廣域網路設定",
+"广域网设定"
+);
+var wandipAlert=new Array
+(
+"Input MAC address is not complete. It should be 12 digits in hex.",
+"Eingabe der MAC-Adresse ist nicht abgeschlossen. Es sollten 12 Stellen in Hexadezimalzahlen sein.",
+"La dirección MAC indicada no está completa. Deberá tener 12 dígitos en hexagonal.",
+"L'adresse MAC n'est pas complète. Elle doit contenir douze chiffres héxadécimaux.",
+"L'indirizzo MAC inserito non è completo. Deve essere composto da 12 cifre esadecimali.",
+"Input voor MAC-adres is niet compleet. Het moet uit 12 hexadecimale tekens bestaan.",
+"O endereço MAC de entrada não está completo. Deve ter 12 dígitos em números hexadecimais.",
+"Zadání adresy MAC není kompletní. Zadejte 12 šestnáctkových číslic.",
+"Niepełny adres MAC . Adres winien składać się z 6 par w systemie szesnastkowym.    ",
+"Adresa MAC incompleta. Trebuie sa fie 12 caractere hexazecimale.",
+"Введение MAC адреса не закончено. Должно быть 12 HEX символов. ",
+"Vložená MAC adresa nie je kompletná. Musí to byť 12 miestne číslo v hexadecimálnom tvare.",
+"輸入的 MAC位址是不完整的。它應該由12組16進位碼所組成。",
+"输入的 MAC地址是不完整的。它应该由12组16进位码所组成。"
+);
+var wandipContent=new Array
+(
+"The Host Name is optional, but may be required by some Service Providers. The default MAC Address is the default MAC address of WAN interface of the Broadband router. If your service provider only allows specific MAC address to connect to Internet, you can input it manually or use the 'Clone MAC Address' button to copy the MAC Address of the Network Interface Card installed in your PC.",
+"Der Hostname ist optional, kann aber bei einigen Dienstanbietern erforderlich sein. Standard MAC-Adresse wird in der WAN-Benutzeroberfläche des Breitbandrouters eingestellt.  Wenn es von Ihrem Diensteanbieter erforderlich ist, können Sie die Schaltfläche \"MAC-Adresse klonen\" verwenden, um die MAC-Adresse der Netzwerkkarte, die in Ihrem PC installiert ist, zu kopieren und die WAN MAC-Adresse mit dieser MAC-Adresse zu ersetzen.",
+"El nombre de centro es opcional, pero puede ser exigido por algunos proveedores de servicio. La dirección MAC predefinida se configura en la interfaz física WAN del enrutador de banda ancha.  Si es requerido por su proveedor de servicio, podrá utilizar el botón de \"Clonar dirección MAC\" para copiar la dirección MAC de la tarjeta de interfaz de red instalada en su PC y sustituya la dirección MAC de WAN por esta dirección MAC.",
+"Le nom de l'hôte est facultatif mais peut être demandé par certains fournisseurs. L'adresse MAC par défaut est définie dans l'interface physique du WAN sur le routeur à large bande.  Si votre FAI le demande, utilisez la touche \"Clonage adresse MAC \" pour copier l'adresse MAC de la carte d'interface réseau installée dans votre PC et remplacer l'adresse MAC WAN par cette adresse MAC.",
+"Il nome host è opzionale, ma potrebbe essere richiesto da alcuni Service Provider. L'indirizzo MAC predefinito viene impostato nell'interfaccia fisica della WAN sul router a banda larga.  Se richiesto dal Service Provider, è possibile usare il pulsante \"Clona indirizzo MAC\" per copiare l'indirizzo MAC della scheda dell'interfaccia di rete del PC e sostituire l'indirizzo MAC WAN con questo indirizzo MAC.",
+"Meestal is de Hostnaam optioneel, maar bij sommige providers is hij vereist. Het standaard MAC-adres komt overeen met het fysieke adres van de WAN interface op de breedbandrouter.  Als de serviceprovider dit vereist, gebruik dan de knop \"Clone MAC Address\" om de MAC-adressen van de netwerkkaart in uw pc te kopiëren en vervang het MAC-adres van de WAN door dit MAC-adres.",
+"O Nome de anfitrião é normalmente opcional, mas pode ser solicitado por alguns fornecedores de serviços. O endereço MAC predefinido é definido para a interface física WAN no router de banda larga.  Se for solicitado pelo seu fornecedor de serviços, pode utilizar o botão \'Clone MAC Address\' (Clonar endereço MAC) para copiar o endereço MAC da placa de interface de rede instalada no seu PC e substituir o endereço MAC WAN por este endereço MAC.",
+"Název hostitele je obvykle volitelný, ale může být některými ISP vyžadován. Výchozí MAC adresa je nastavena na fyzické rozhraní WAN širokopásmového směrovače.  Je-li to vyžadováno vašim poskytovatelem služeb, můžete použít tlačítko \„Klonovat MAC adresu\" pro zkopírování MAC adresy síťového rozhraní instalovaného ve vašem počítači a záměnu MAC adresy WAN touto MAC adresou.",
+"Nazwa komputera jest opcjonalna ale może być wymagana przez niektórych dostawców internetu. Domyślny adres MAC jest przypisany dla fizycznego interfejsu WAN routera. Jeśli wymagany jest przez dostawcę usługi, można użyć przycisku   “Kopiuj adres MAC”, aby skopiować adres MAC karty sieciowej  zainstalowanej na komputerze oraz zamienić adres MAC portu WAN.      ",
+"Numele Gazdei este Optional, dar poate fi necesat pentru conectare la unii provideri. Adresa MAC este cea a portului WAN a routerului. Daca este nevoie puteti folosi butonul de \'Clonare Adresa MAC\' pentru a clona adresa MAC a placii de retea a calculatorului.",
+"Имя хоста опционно, но может требоваться некоторыми провайдерами. MAC адрес по умолчанию установлен  на  физическом интерфейсе WAN маршрутизатора. Если требуется вашим ISP провайдером, вы можетvar е использовать кнопку \"Клонировать MAC адрес\" для копирования MAC адреса сетевой карты вашего компьютера с последующей заменой WAN MAC адреса.",
+"Meno Host je voliteľné, ale môže byť vyžadované niektorými ISP. Prednastavená MAC adresa je nastavená k fyzickému rozhraniu WAN širokopásmového routeru. Pokiaľ je to požadované vaším ISP, môžete použiť tlačidlo \'Clone MAC Address\' pre kopírovanie MAC adresy sieťového rozhrania inštalovanej sieťovej karty vo vašom PC a zameniť ju za WAN MAC adresu s touto MAC adresou.",
+"The Host Name is optional, but may be required by some Service Providers. The default MAC Address is set to the WAN physical interface on the Broadband router.  If required by your Service Provider, you can use the \'Clone MAC Address\' button to copy the MAC Address of the Network Interface Card installed in your PC and replace the WAN MAC Address with this MAC Address.",
+"The Host Name is optional, but may be required by some Service Providers. The default MAC Address is set to the WAN physical interface on the Broadband router.  If required by your Service Provider, you can use the \'Clone MAC Address\' button to copy the MAC Address of the Network Interface Card installed in your PC and replace the WAN MAC Address with this MAC Address."
+);
+var wandipContentshort=new Array
+(
+"The Host Name is optional, but may be required by some Service Providers. The default MAC Address is the",
+"Der Hostname ist optional, kann aber bei einigen Dienstanbietern erforderlich sein. Standard MAC-Ad",
+"El nombre de centro es opcional, pero puede ser exigido por algunos proveedores de servicio. La dirección",
+"Le nom de l'hôte est facultatif mais peut être demandé par certains fournisseurs. L'adresse MAC par défau",
+"Il nome host è opzionale, ma potrebbe essere richiesto da alcuni Service Provider. L'indirizzo MAC predef",
+"Meestal is de Hostnaam optioneel, maar bij sommige providers is hij vereist. Het standaard MAC-adres komt",
+"O Nome de anfitrião é normalmente opcional, mas pode ser solicitado por alguns fornecedores de serviços. ",
+"Název hostitele je obvykle volitelný, ale může být některými ISP vyžadován. Výchozí MAC adresa je nastave",
+"Nazwa komputera jest opcjonalna ale może być wymagana przez niektórych dostawców internetu. Domyślny adre",
+"Numele Gazdei este Optional, dar poate fi necesat pentru conectare la unii provideri. Adresa MAC este cea",
+"Имя хоста опционно, но может требоваться некоторыми провайдерами. MAC адрес по умолчанию установлен  на  ",
+"Meno Host je voliteľné, ale môže byť vyžadované niektorými ISP. Prednastavená MAC adresa je nastavená k f",
+"",
+""
+);
+var lan=new Array
+(
+"LAN",
+"LAN",
+"LAN",
+"LAN",
+"LAN",
+"LAN",
+"Rede local",
+"LAN",
+"LAN",
+"LAN",
+"LAN",
+"LAN",
+"LAN",
+"LAN"
+);
+var mtu=new Array
+(
+"MTU ",
+"MTU ",
+"MTU ",
+"MTU (Unité maximale Tranférable) ",
+"MTU ",
+"MTU ",
+"MTU ",
+"MTU ",
+"MTU",
+"MTU ",
+"MTU ",
+"MTU",
+"MTU",
+"MTU"
+);
+var timeZone=new Array
+(
+"Time Zone",
+"Zeitzone",
+"Zona horaria",
+"Zone horaire",
+"Fuso orario",
+"Tijdzone",
+"Fuso horário",
+"Časové pásmo",
+"Strefa czasowa ",
+"Fus Orar",
+"Временная зона",
+"Časová zóna",
+"時區",
+"时区"
+);
+var pptpUserId=new Array
+(
+"PPTP User ID",
+"PPTP Benutzer ID",
+"ID de usuario PPTP",
+"Identifiant utilisateur PPTP",
+"ID utente PPTP",
+"PPTP gebruikers-ID",
+"ID do utilizador PPTP",
+"ID uživatele PPTP",
+"Nazwa użytkownika PPTP",
+"ID Utilizator PPTP",
+"ID PPTP пользователя",
+"PPTP ID užívateľa",
+"PPTP用戶 ID",
+"PPTP用户 ID"
+);
+var broadbandType2menu=new Array
+(
+"2.Broadband Type",
+"2.Breitbandtyp",
+"2. Tipo de banda ancha",
+"2Type de bande large",
+"2. Tipo di banda larga",
+"2. Soort breedband",
+"2.Tipo de banda larga",
+"2. Typ širokopásmového připojení",
+"2 rodzaj połączenia",
+"2.Tip Broadband",
+"2. Тип полосы",
+"2. typ širokopásmový",
+"2、寬頻類型",
+"2、宽带类型"
+);
+var broadbandType2=new Array
+(
+"Broadband Type",
+"Breitbandtyp",
+"Tipo de banda ancha",
+"Typ de large bande",
+"Tipo di banda larga",
+"Soort breedband",
+"Tipo de banda larga",
+"Typ širokopásmového připojení",
+"Rodzaj połączenia",
+"Tip Broadband",
+"Тип полосы",
+"Typ širokopásmového pripojenia",
+"寬頻類型",
+"宽带类型"
+);
+var wansetPageContent3=new Array
+(
+"Uses a Static IP Address. Your Service Provider gives a Static IP Address to access Internet services.",
+"Verwendet eine statische IP-Adresse. Ihr Dienstanbieter stellt eine statische IP-Adresse bereits, um auf Internetdienste zuzugreifen.",
+"Utiliza una dirección IP estática. Su proveedor de servicio le ofrece una dirección IP estática para acceder a los servicios de Internet.",
+"Utilise une adresse IP fixe. Votre FAI  fournit une adresse IP fixe pour accéder aux services Internet.",
+"Usa un indirizzo IP statico. Il Service Provider assegna un indirizzo IP statico per accedere ai servizi Internet.",
+"Gebruikt een statisch IP-adres. Uw provider geeft een statisch IP-adres om gebruik te maken van internet.",
+"Utiliza um endereço IP estático. O seu fornecedor de serviços fornece um endereço IP estático para aceder aos serviços da Internet.",
+"Použití statické IP adresy. Poskytovatel služeb vám přiřadí statickou IP adresu pro internetové služby.",
+"Wykorzystuje adres statyczny IP.  Dostawca usługi zapewnia statyczny adres IP.",
+"Foloseste o adresa IP Statica. Porviderul va aloca o Adresa IP Statica pentru acces la internet.",
+"Использовать статический IP адрес. Ваш провайдер предоставил статический IP адрес для подключения к Интернету.",
+"Používa statickú IP adresu. Váš ISP vám pridelil statickú IP adresu pre prístup k internetu.",
+"如果你使用靜態IP連接到Internet，你必須輸入靜態IP提供給IP位址或服務名稱等相關資料，始能正確連線上網。",
+"如果你使用静态IP连接到Internet，你必须输入静态IP提供给IP地址或服务名称等相关数据，始能正确联机上网。"
+);
+var beiJing=new Array
+(
+"(GMT+08:00)Beijing, Chongqing, Hong Kong, Urumqi",
+"(GMT+08:00) Peking, Chongqing, Hong Kong, Urumqi",
+"(GMT+08:00) Beijing, Chongqing, Hong Kong, Urumqi",
+"(GMT+08:00)Beijing, Chongqing, Hong Kong, Urumqi",
+"(GMT+08:00)Beijing, Chongqing, Hong Kong, Urumqi",
+"(GMT+08:00) Beijing, Chongqing, Hong Kong, Urumqi",
+"(GMT+08:00)Pequim, Chongqing, Hong Kong, Urumqi",
+"(GMT+08:00) Peking, Chongqing, Hong Kong, Urumqi",
+"(GMT + 08:00) Pekin, Hong Kong",
+"(GMT+08:00)Beijing, Chongqing, Hong Kong, Urumqi",
+"(GMT +08:00) Пекин, Гонг-Конг, Урумчи",
+"(GMT+08:00)Beijing, Chongqing, Hong Kong, Urumqi",
+"(GMT+08:00)Beijing, Chongqing, Hong Kong, Urumqi",
+"(GMT+08:00)Beijing, Chongqing, Hong Kong, Urumqi"
+);
+var statusInfosContent=new Array
+(
+"The Broadband router\'s status information provides the following information about your Broadband router: Hardware/Firmware version, Serial Number, and its current operating status. ",
+"Die Statusinformationen des Breitbandrouters liefern folgende Informationen über Ihren Breitbandrouter: Hardware-/Firmwareversion, Seriennummer und den gegenwärtigen Betriebsstatus. ",
+"La información de estado del enrutador de banda ancha ofrece la siguiente información sobre su enrutador de banda ancha: Versión material/Firmware, número de serie, y su estado operativo actual. ",
+"Les informations sur l'état du routeur vous indiquent les éléments suivants : Version matérielle/logicielle, Numéro de série, état de fonctionnement actuel. ",
+"Le informazioni di stato del router a banda larga forniscono le seguenti informazioni sul router: hardware/versione del firmware, numero seriale e stato operativo corrente. ",
+"De statusinformatie van de breedbandrouter geeft de volgende informatie: Hardware/firmwareversie, serienummer, huidige werking. ",
+"As informações sobre o estado do router de banda larga mostram os seguintes dados: versão do hardware/firmware, número de série e o respectivo estado de funcionamento actual. ",
+"Stavové informace širokopásmového směrovače obsahují následující údaje: Verzi hardwaru/firmwaru, sériové číslo a aktuální provozní stav. ",
+"Informacja o stanie routera szerokopasmowego dostarcza informacji o: wersji oprogramowania, sprzętu, numerze seryjnym, obecnym trybie pracy.   ",
+"Pagina de Informatiile de Stare a routerului ofera urmatoarele informatii: versiune Hardware / Firmware, Numar Serial si starea curenta de operare.",
+"Статусная информация маршрутизатора: физическая/программная версия, серийный номер, текущий статус настроек",
+"Informácie o stave širokopásmového routeru sú nasledovné: verzia firmware/hardware, sériové číslo a terajší operačný stav.",
+"你的寬頻路由器的狀態提供了以下資訊：硬體/韌體版本、序列號、其現行的狀況。",
+"你的宽带路由器的状态提供了以下信息：硬件/韧体版本、序列号、其现行的状况。"
+);
+var DynamicIP=new Array
+(
+"Dynamic IP",
+"Dynamische IP",
+"IP dinámica",
+"IP dynamique",
+"IP dinamico",
+"Dynamisch IP",
+"IP dinâmico",
+"Dynamická IP",
+"Dynamiczny IP ",
+"IP Dinamic",
+"Динамический IP",
+"Dynamická IP",
+"動態 IP",
+"动态 IP"
+);
+var port=new Array
+(
+"Port",
+"Port",
+"Puerto",
+"Port",
+"Porta",
+"Poort",
+"Porta",
+"Port",
+"Port ",
+"Port",
+"Порт",
+"Port",
+"埠",
+"埠"
+);
+var DNS=new Array
+(
+"DNS",
+"DNS",
+"DNS",
+"DNS",
+"DNS",
+"DNS",
+"DNS",
+"DNS",
+"DNS",
+"DNS",
+"DNS",
+"DNS",
+"DNS",
+"DNS"
+);
+var StaticIP=new Array
+(
+"Static IP",
+"Statische IP",
+"IP estática",
+"IP fixe",
+"IP statico",
+"Statisch IP",
+"IP estático",
+"Statická IP",
+"Statyczny IP",
+"IP Static",
+"Статический IP",
+"Statická IP",
+"靜態 IP",
+"静态 IP"
+);
+var lanAlert6=new Array
+(
+"IP address was modified, you have to re-connect the WebServer with the new address.",
+"Wenn die IP-Adresse geändert wurde, müssen Sie den WebServer mit der neuen Adresse wieder verbinden.",
+"La dirección IP fue modificada, deberá volver a conectar el Servidor Web con la nueva dirección.",
+"L'adresse IP a été modifiée, vous devez vous reconnecter au serveur Web avec la nouvelle adresse.",
+"L'indirizzo IP è stato modificato, è necessario riconnettersi a WebServer con il nuovo indirizzo.",
+"IP-adres is gewijzigd, maak opnieuw verbinding met de webserver met het nieuwe adres.",
+"O endereço IP foi modificado, tem de estabelecer novamente ligação ao Servidor Web com o novo endereço.",
+"IP adresa byla změněna, musíte znovu připojit webový server s novou adresou.",
+"Adres IP został zmodyfikowany. Konieczne jest ponowne połączenie z nowym adresem. ",
+"Adresa IP a fost modificata, trebuie sa va reconectati la adresa noua.",
+"IP адрес изменен, вам необходимо переподключиться к вебсерверу с новым IP адресом.",
+"IP adresa bola zmenená, musíte opätovne pripojiť k webovému serveru s novou adresou.",
+"IP位址已被修改，你必須重新使用新的IP位址連接網頁。",
+"IP地址已被修改，你必须重新使用新的IP地址连接网页。"
+);
+var IPAddrInf=new Array
+(
+"IP Address Info",
+"IP-Adresse Info",
+"Información de dirección IP",
+"Infos adresse IP",
+".Info indirizzo IP",
+". Informatie over IP-adres",
+"Informações sobre o endereço IP",
+"Informace o IP adrese",
+"Informacje o adresie IP",
+"Informatii Adresa IP",
+"Информация об IP адресе",
+"Info IP Adries",
+"IP位址信息",
+"IP地址信息"
+);
+var IPAddrInfmenu=new Array
+(
+"3.IP Address Info",
+"3.IP-Adresse Info",
+"3. Información de dirección IP",
+"3.Infos adresse IP",
+"3.Info indirizzo IP",
+"3. Informatie over IP-adres",
+"3.Informações sobre o endereço IP",
+"3. Informace o IP adrese",
+"Informacje o adresie IP 3",
+"3. Informatii Adresa IP",
+"3.Информация об IP адресе",
+"3.IP adries info",
+"3、IP位址信息",
+"3、IP地址信息"
+);
+var lanSet=new Array
+(
+"LAN Settings",
+"LAN-Einstellungen",
+"Configuración LAN",
+"Paramètres LAN",
+"Impostazioni LAN",
+"LAN-instellingen",
+"Definições de rede local",
+"Nastavení LAN",
+"Ustawienia LAN",
+"Setari LAN",
+"LAN настройки",
+"Nastavenia LAN",
+"局域網路設定",
+"局域网络设定"
+);
+var forever=new Array
+(
+"Forever",
+"Immer",
+"Siempre",
+"Pour toujours",
+"Sempre",
+"Voorgoed",
+"Para sempre",
+"Trvale",
+"Nieograniczony",
+"Totdeauna",
+"Всегда",
+"Navždy",
+"永遠",
+"永远"
+);
+var alg=new Array
+(
+"ALG Settings",
+"ALG Einstellungen",
+"Configuración ALG",
+"Paramètres ALG",
+"Impostazioni ALG",
+"ALG-instellingen",
+"Definições ALG",
+"Nastavení ALG",
+"Ustawienia ALG",
+"Setari ALG",
+"ALG настройки",
+"ALG nastavenia",
+"ALG設定",
+"ALG设定"
+);
+var onewk=new Array
+(
+"One week",
+"Eine Woche",
+"Una semana",
+"Une semaine",
+"Una settimana",
+"Een week.",
+"Uma semana",
+"Jeden týden",
+"Jeden tydzień",
+"O Saptamana",
+"Одна неделя",
+"Jeden týždeň",
+"一周",
+"一周"
+);
+var basicSet=new Array
+(
+"Basic Settings",
+"Grundlegende Einstellungen",
+"Configuración básica",
+"Paramètres de base",
+"Impostazioni di base",
+"Basisinstellingen",
+"Definições básicas",
+"Základní nastavení",
+"Ustawienia podstawowe",
+"Setari de Baza",
+"Базовые насторйки",
+"Základné nastavenia",
+"基本設定",
+"基本设定"
+);
+var SysTimeZone=new Array
+(
+"System Time Zone",
+"System Zeitzone",
+"Zona horaria del sistema",
+"Zone Horaire du système",
+"Fuso orario di sistema",
+"Tijdzone van het systeem",
+"Fuso horário do sistema",
+"Časová zóna systému",
+"Strefa czasowa",
+"Fus Orar Sistem",
+"Временная зона системы",
+"Systémová časová zóna",
+"系統時區",
+"系统时区"
+);
+var disabled=new Array
+(
+"Disabled",
+"Deaktiviert",
+"Desactivado",
+"Désactivé",
+"Disattivato",
+"Uitgeschakeld",
+"Desactivado",
+"Vypnuto",
+"Wyłączony",
+"Dezactivat",
+"Выключить",
+"Vypnutý",
+"關閉",
+"关闭"
+);
+var settypeContent4=new Array
+(
+"If you connect to the Internet using an xDSL Modem and your ISP has provided you with a Password and a Service Name, then your ISP uses PPPoE to establish a connection. You must choose this option and enter the required information.",
+"Wenn Sie sich über ein xDSL-Modem mit dem Internet verbinden und Ihr Internetdienstanbieter Ihnen ein Kennwort und einen Benutzernamen bereitgestellt hat, verwendet Ihr Internetdiensteanbieter PPPoE, um eine Verbindung herzustellen. Sie müssen diese Optionen wählen und die erforderlichen Informationen eingeben.",
+"Si se conecta a Internet utilizando un módem xDSL y su ISP le ha suministrado una contraseña y un nombre de servicio, su ISP utilizará PPPoE para establecer la conexión. Deberá elegir esta opción e indicar la información requerida.",
+"Si vous vous connectez à Internet en utilisant un modem xDSL et que votre FAI vous a fourni un mot de passe et un nom de service, cela signifie que votre FAI utilise le protocole PPPoE pour établir une connexion. Vous devez choisir cette option et saisir les informations demandées.",
+"Se ci si connette ad Internet per mezzo di un modem xDSL e l'ISP ha fornito la password e il nome del servizio, l'ISP utilizza il PPPoE per stabilire una connessione. È necessario scegliere questa opzione ed inserire le informazioni richieste.",
+"Als u met een xDSL-modem verbinding maakt met internet en uw provider heeft u voorzien van een wachtwoord en een servicenaam, dan gebruikt uw provider PPPoE om de verbinding tot stand te brengen. U moet deze optie selecteren en de benodigde informatie invoeren.",
+"Se estabelecer ligação à Internet com um modem xDSL e o seu ISP lhe tiver fornecido uma palavra-passe e um nome de serviço, isso significa que o seu ISP utiliza PPPoE para estabelecer ligação. Deve seleccionar esta opção e introduzir as informações necessárias.",
+"Připojujete-li se k Internetu pomocí xDSL modemu a ISP vám poskytl heslo a název služby, znamená to, že používá pro vytvoření připojení PPPoE. Musíte zvolit tuto možnost a zadat požadované informace.",
+"W przypadku podłączenia do internetu za pomocą modemu xDSL dostawca internetu zapewnia hasło oraz nazwę usługi, a następnie zapewnia podłączenie do sieci za pomocą PPPoE. Wybierz właściwą opcję i wprowadź wymagane informacje.   ",
+"Daca va conectati la internet folosind un modem xDSL si providerul v-a alocat un Nume de Servicu si o Parola, atunci ISP-ul foloseste protocolul PPPoE pentru a stabili o conexiune. Trebuie sa alegeti aceasta optiune si sa introduceti informatiile necesare.",
+"При подключении к Интернету через xDSL модем, если ваш ISP провайдер предоставил вам пароль и имя сервиса и использует PPPoE тип связи, вам нужно выбрать эту опцию и ввести требуемую информацию.",
+"Ak ste pripojený k internetu pomocou xDSL modemu a váš ISP vám poskytol heslo a servisné meno, potom váš ISP používa PPPoE pre nadviazanie pripojenia. Musíte vybrať nasledujúcu voľbu a zadať potrebné informácie",
+"如果你使用PPPoE連接到Internet，你必須輸入ISP提供給你的帳號、密碼或服務名稱等相關資料，始能正確連線上網。",
+"如果你使用PPPoE连接到Internet，你必须输入ISP提供给你的账号、密码或服务名称等相关数据，始能正确联机上网。"
+);
+var macAddr=new Array
+(
+"MAC address ",
+"MAC-Adresse ",
+"Dirección MAC ",
+"Adresse MAC ",
+"Indirizzo MAC ",
+"MAC-adres ",
+"Endereço MAC ",
+"MAC adresa ",
+"Adres MAC",
+"Adresa MAC",
+"MAC адрес",
+"MAC adresa",
+"MAC位址",
+"MAC地址"
+);
+var l2tpUserId=new Array
+(
+"L2TP User ID",
+"L2TP Benutzer ID",
+"ID de usuario L2TP",
+"Identifiant utilisateur L2TP",
+"ID utente L2TP",
+"L2TP gebruikers-ID",
+"ID do utilizador de L2TP",
+"ID uživatele L2TP",
+"ID użytkownika L2TP",
+"ID Utilizator L2TP",
+"ID L2TP пользователя",
+"ID užívateľa L2TP",
+"L2TP 用戶 ID",
+"L2TP 用户 ID"
+);
+var dhcpEnd1=new Array
+(
+"1DHCP client end address ",
+"1DHCP Client Endadresse ",
+"1Dirección final de cliente DHCP ",
+"1Adresse de fin client DHCP ",
+"Indirizzo finale client 1DHCP ",
+"1DHCP-client doeladres ",
+"1Endereço final do cliente DHCP ",
+"Koncová adresa 1DHCP klienta ",
+"Końcowy adres klienta 1DHCP",
+"1Adresa de Sfarsit client DHCP",
+"1DHCP клиентский конечный адрес",
+"Koniec adresy 1 DHCP klienta",
+"1、DHCP終端結束位址",
+"1、DHCP终端结束地址"
+);
+var DDNS=new Array
+(
+"DDNS",
+"DDNS",
+"DDNS",
+"DDNS",
+"DDNS",
+"DDNS",
+"DDNS",
+"DDNS",
+"DDNS",
+"DDNS",
+"DDNS",
+"DDNS",
+"動態網域名稱",
+"动态域名"
+);
+var dmz=new Array
+(
+"DMZ",
+"DMZ",
+"DMZ",
+"DMZ",
+"DMZ",
+"DMZ",
+"DMZ",
+"DMZ",
+"DMZ",
+"DMZ",
+"DMZ",
+"DMZ",
+"非軍事區",
+"非军事区"
+);
+var april=new Array
+(
+"April",
+"April",
+"Abril",
+"Avril",
+"Aprile",
+"April",
+"Abril",
+"Duben",
+"Kwiecień",
+"Aprilie",
+"Апрель",
+"Apríl",
+"四月",
+"四月"
+);
+var virtualServer=new Array
+(
+"Virtual Server",
+"Virtual Server",
+"Servidor virtual",
+"Serveur virtuel",
+"Server virtuale",
+"Virtuele server",
+"Servidor Virtual",
+"Virtuální server",
+"Serwer wirtualny",
+"Virtual Server",
+"Виртуальный сервер",
+"Virtuálny server",
+"虛擬伺服器",
+"虚拟服务器"
+);
+var L2TP=new Array
+(
+"L2TP",
+"L2TP",
+"L2TP",
+"L2TP",
+"L2TP",
+"L2TP",
+"L2TP",
+"L2TP",
+"L2TP",
+"L2TP",
+"L2TP",
+"L2TP",
+"L2TP",
+"L2TP"
+);
+var generalSetup=new Array
+(
+"General Setup",
+"Allgemeines Setup",
+"Configuración general",
+"Configuration générale",
+"Impostazioni generali",
+"Algemene configuratie",
+"Configuração geral",
+"Obecné nastavení",
+"Ustawienia szczegółowe",
+"Setari Generale",
+"Основные настройки",
+"Všeobecné nastavenia",
+"一般安裝",
+"一般安装"
+);
+var connect=new Array
+(
+"Connect",
+"Anschluss",
+"Conectar",
+"Connexion",
+"Connetti",
+"Aansluiting",
+"Ligar",
+"Připojení",
+"Połącz",
+"Conectare",
+"Подключить",
+"Pripojiť",
+"連線",
+"联机"
+);
+var connectType=new Array
+(
+"Connection Type ",
+"Verbindungsart ",
+"Tipo de conexión ",
+"Type de connexion ",
+"Tipo di connessione ",
+"Verbindingstype ",
+"Tipo de ligação ",
+"Typ připojení ",
+"Rodzaj połączenia ",
+"Tip Conexiune",
+"Тип связи",
+"Typ pripojenia",
+"連接類型",
+"连接类型"
+);
+var wanpptpAlert2=new Array
+(
+"default gateway value should be empty.",
+"Der Standardgateway-Wert sollte leer sein.",
+"el valor de la puerta de acceso predefinida debe estar vacío.",
+"La valeur passerelle par défaut doit être vide.",
+"il valore predefinito del gateway dovrebbe essere vuoto.",
+"standaardwaarde voor de gateway moet leeg zijn.",
+"o valor do gateway predefinido deve estar em branco.",
+"Hodnota výchozí brány nemůže být prázdná.",
+"Wartość domyślna bramy powinna być pusta ",
+"Campul Gateway Implicit nu poate ramane necompletat",
+"поле шлюза по умолчанию не может быть пустым",
+"hodnota prednastavenej brány má zostať prázdna.",
+"預設閘道器值應為空。",
+"默认网关值应为空。"
+);
+var L2TPGateway=new Array
+(
+"L2TP Gateway ",
+"L2TP-Gateway ",
+"Puerta de acceso L2TP ",
+"Passerelle L2TP ",
+"Gateway L2TP ",
+"L2TP-gateway ",
+"Gateway L2TP ",
+"Brána L2TP ",
+"Bramka L2TP ",
+"Gateway L2TP",
+"L2TP шлюз",
+"brána L2TP",
+"L2TP閘道器",
+"L2TP网关"
+);
+var advanceSet=new Array
+(
+"Advanced Settings",
+"Erweiterte Einstellungen",
+"Configuración avanzada",
+"Paramètres Avancés",
+"Impostazioni avanzate",
+"Geavanceerde instellingen",
+"Definições avançadas",
+"Pokročilá nastavení",
+"Ustawienia zaawansowane ",
+"Setari Avansate",
+"Дополнительные настройки",
+"Pokročilé nastavenia",
+"進階設定",
+"进阶设定"
+);
+var sep=new Array
+(
+"September",
+"September",
+"Septiembre",
+"Septembre",
+"Settembre",
+"September",
+"Setembro",
+"Září",
+"Wrzesień",
+"Septembrie",
+"Сентябрь",
+"September",
+"九月",
+"九月"
+);
+var june=new Array
+(
+"June",
+"Juni",
+"Junio",
+"Juin",
+"Giugno",
+"Juni",
+"Junho",
+"Červen",
+"Czerwiec",
+"Iunie",
+"Июнь",
+"Jún",
+"六月",
+"六月"
+);
+var syspasswdAlert2=new Array
+(
+"Cannot accept space character in password. Please try it again.",
+"Die Eingabe von Leerzeichen im Kennwort ist nicht zulässig. Bitte versuchen Sie es erneut.",
+"No puede aceptar el carácter del espacio en la contraseña. Por favor, indíquela de nuevo.",
+"Impossible d'accepter le caractère Espace dans le mot de passe. Réessayez.",
+"La password non può contenere spazi. Provare di nuovo.",
+"Wachtwoord mag geen spatie bevatten. Probeer opnieuw.",
+"O carácter de espaço não é permitido na palavra-passe. Tente novamente.",
+"V hesle nemohou být mezery. Zkuste to laskavě znovu.",
+"Znak spacji nie może być w haśle. Spróbuj ponownie.",
+"Caracterul “spatiu” nu poate fi introdus in parola. Va rugam reincercati.",
+"Нельзя использовать пробел в пароле. Пожалуйста, попробуйте снова",
+"Nemôže akceptovať medzery v heslo. Prosím opätovne vyskúšajte.",
+"不能接受有空格字元的密碼。請再試一次。",
+"不能接受有空格字符的密码。请再试一次。"
+);
+var wanddnsAlert2=new Array
+(
+"IP address cannot be empty! It should be FQDN name or IP address.",
+"IP-Adresse darf nicht leer sein! Es sollte der FQDN-Name oder die IP-Adresse sein.",
+"¡La dirección IP no puede estar vacía! Debe ser el nombre FQDN o la dirección IP.",
+"L'adresse IP ne peut pas être vide ! Il doit s'agir du nom FQDN ou de l'adresse IP.",
+"Il campo dell'indirizzo IP non può essere vuoto! Dovrebbe contenere il nome FQDN o l'indirizzo IP.",
+"IP-adres mag niet leeg zijn! Het moet gelijk zijn aan de FQDN-naam of het IP-adres.",
+"O endereço IP não pode estar em branco! Deve ser o nome de FQDN ou o endereço IP.",
+"IP adresa nemůže být prázdná! Měli byste použít název FQDN nebo IP adresu.",
+"Pole adresu IP nie może być puste! Podaj Adres IP lub nazwę FQDN ",
+"Adresa IP nu poate ramane necompletata! Trebuie sa fie un nume FQDN sau adresa IP.",
+"Поле IP адреса не может быть пустым! Должно быть FQDN имя или IP адрес.",
+"IP adresa nemôže zostať prázdna! Musí to byť FQDN meno alebo IP adresa.",
+"IP位址不能是空白！應該 FQDN名稱或IP位址。",
+"IP地址不能是空白！应该 FQDN名称或IP地址。"
+);
+var connectionID=new Array
+(
+"Connection ID ",
+"Verbindungs-ID ",
+"ID de conexión ",
+"Identifiant de connexion ",
+"ID di connessione ",
+"Aansluit-ID ",
+"ID de ligação ",
+"ID připojení ",
+"Połączenie ID",
+"ID de Conectare",
+"ID подключения",
+"ID pripojenia",
+"連接 ID",
+"连接 ID"
+);
+var bbrouter=new Array
+(
+"Broadband Router",
+"Breitbandrouter",
+"Enrutador de banda ancha",
+"Routeur large bande",
+"Router a banda larga",
+"Breedbandrouter",
+"Router de banda larga",
+"Širokopásmový směrovač",
+"Router szerokopasmowy",
+"Router Broadband",
+"Широкополосный маршрутизатор",
+"Širokopásmový router",
+"寬頻路由器",
+"宽带路由器"
+);
+var continuous=new Array
+(
+"Continuous",
+"Dauerhaft",
+"Continua",
+"En continu",
+"Continuo",
+"Continu",
+"Contínuo",
+"Nepřetržité",
+"Ciągłe",
+"Continua",
+"Непрерывный",
+"Pokračujúci",
+"連續",
+"连续"
+);
+var apply1=new Array
+(
+"Apply",
+"Übernehmen",
+"Aplicar",
+"Appliquer",
+"Applica",
+"Toepassen",
+"Aplicar",
+"Použít",
+"Zastosuj",
+"Aplica",
+"Применить",
+"Použiť",
+"套用",
+"套用"
+);
+var cancel1=new Array
+(
+"Cancel",
+"Abbrechen",
+"Cancelar",
+"Annuler",
+"Annulla",
+"Annuleren",
+"Cancelar",
+"Zrušit",
+"Skasuj",
+"Anulare",
+"Выйти",
+"Zrušiť",
+"取消",
+"取消"
+);
+var back1=new Array
+(
+"Back",
+"Zurück",
+"Volver",
+"Retour",
+"Indietro",
+"Terug",
+"Retroceder",
+"Zpět",
+"Z powrotem",
+"Inapoi ",
+"Назад",
+"Späť",
+"返回",
+"返回"
+);
+var next1=new Array
+(
+"Next",
+"Weiter",
+"Siguiente",
+"Suivant",
+"Avanti",
+"Volgende",
+"Seguinte",
+"Další",
+"Dalej",
+"Urmatorul",
+"Следующий",
+"Ďalší",
+"下一個",
+"下一个"
+);
+var ok1=new Array
+(
+"OK",
+"OK",
+"OK",
+"OK",
+"OK",
+"OK",
+"OK",
+"OK",
+"OK",
+"OK",
+"OK",
+"OK",
+"確定",
+"确定"
+);
+var staticdhcp1=new Array
+(
+"Static DHCP Leases Table",
+"Statische DHCP Lease-Tabelle",
+"Tabla de conexiones DHCP estáticas",
+"Table locations DHCP statique",
+"Tabella di lease DHCP statico",
+"Tabel leasetijden statisch DHCP",
+"Tabela de concessões de DHCP estático",
+"Tabulka pronájmu statických adres DHCP",
+"Tabela statycznego DHCP",
+"Tabela Alocari DHCP Static",
+"Таблица статической DHCP аренды ",
+"Tabuľka statických DHCP prenájmov",
+"靜態 DHCP租約表",
+"静态 DHCP租约表"
+);
+var staticdhcp2=new Array
+(
+"This allows only 16 sets of addresses.",
+"Es ermöglicht nur die Eingabe von 16 Adressen.",
+"Permite introducir hasta 16 direcciones exclusivamente",
+"Il n'est permis d'entrer que 16 adresses.",
+"Consente l'inserimento di indirizzi non oltre i 16 caratteri.",
+"U mag maar 16 adressen invoeren.",
+"Permite introduzir apenas 16 conjuntos de endereços.",
+"Umožňuje zadání pouze 16 sad adres.",
+"Możliwe wpisanie tylko 16 zestawów adresów IP",
+"Se pot introduce doar 16 seturi de adrese. ",
+"Можно ввести только 16 адресов.",
+"Umožňuje zadať sadu len 16 adries.",
+"只允許建立16組IP。",
+"只允许建立16组IP。"
+);
+var select1=new Array
+(
+"Select",
+"Auswählen",
+"Seleccionar",
+"Selectionner",
+"Seleziona",
+"Selecteer",
+"Seleccionar",
+"Výběr",
+"Wybierz",
+"Selectare",
+"Выбрать",
+"Vybrať",
+"選擇",
+"选择"
+);
+var deleteSelected=new Array
+(
+"Delete Selected",
+"Gewählte löschen",
+"Borrar selección",
+"Supprimer la sélection",
+"Elimina selezionato",
+"Wis selectie",
+"Apagar opções seleccionadas",
+"Vymazat vybrané",
+"Skasuj wybrane opcje",
+"Sterge Selectia",
+"Удалить выбранное",
+"Zmazať vybrané",
+"刪除所選",
+"删除所选"
+);
+var deleteAll=new Array
+(
+"Delete All",
+"Alle löschen",
+"Borrar todos",
+"Tout supprimer",
+"Elimina tutto",
+"Alles wissen",
+"Apagar tudo",
+"Vymazat vše",
+"Skasuj wszystko",
+"Sterge Tot",
+"Удалить все",
+"Zmazať všetko",
+"全部刪除",
+"全部删除"
+);
+var reset=new Array
+(
+"Reset",
+"Reset",
+"Reinicio",
+"Réinitialisation",
+"Reset",
+"Reset",
+"Repor",
+"Reset",
+"Resetuj",
+"Reset",
+"Переустановить",
+"Reset",
+"重置",
+"重置"
+);
+var enableStaticdhcp=new Array
+(
+"Enable Static DHCP Leases",
+"Statische DHCP Leases aktivieren",
+"Acticonexiones DHCP estáticas",
+"Activer locations DHCP statique",
+"Abilita lease DHCP statico",
+"Schakel tabel leasetijden statisch DHCP in",
+"Acticoncessões de DHCP",
+"Povolit pronájem statických adres DHCP",
+"Włacz statyczne DHCP",
+"Activare Alocare DHCP Static",
+"Включить статическую DHCP аренду",
+"Zapnúť statických DHCP prenájmov",
+"啟用靜態 DHCP租約",
+"启用静态 DHCP租约"
+);
+var new1=new Array
+(
+"New",
+"Neu",
+"Nuevo",
+"Nouveau",
+"Nuovo",
+"Nieuw",
+"Novo",
+"Nový",
+"Nowy ",
+"Nou",
+"Новый",
+"Nový",
+"新增",
+"新增"
+);
+var add1=new Array
+(
+"Add",
+"Hinzufügen",
+"Añadir",
+"Ajouter",
+"Aggiungi",
+"Voeg toe",
+"Adicionar",
+"Přidat",
+"Dodaj",
+"Adauga ",
+"Добавить",
+"Pridať",
+"新增",
+"新增"
+);
+var clear1=new Array
+(
+"Clear",
+"Löschen",
+"Borrar",
+"Effacer",
+"Cancella",
+"Leegmaken",
+"Apagar",
+"Vymazat",
+"Wyczyść",
+"Sterge",
+"Стереть",
+"Vyčistiť",
+"清除",
+"清除"
+);
+var configSet=new Array
+(
+"Configuration Setup",
+"Konfigurations-Setup",
+"Configuración de parámetros",
+"Configuration",
+"Impostazione configurazione",
+"Configuratie",
+"Definição da configuração",
+"Nastavení konfigurace",
+"Ustawienie konfiguracji ",
+"Date Configurare",
+"Настройка конфигурации",
+"Konfigurácia nastavenia",
+"配置安裝",
+"配置安装"
+);
+var deviceSet=new Array
+(
+"Device Configure",
+"Gerät konfigurieren",
+"Configurar dispositivo",
+"Configuration périphérique",
+"Configurazione dispositivo",
+"Configureer apparaat",
+"Configurar dispositivo",
+"Konfigurace zařízení",
+"Konfiguracja urządzenia",
+"Configurare Echipament",
+"Конфигурация устройства",
+"Konfigurácia zariadenia",
+"設備配置",
+"设备配置"
+);
+var configReset=new Array
+(
+"Rest Configre",
+"Konfiguration zurücksetzen",
+"Reiniciar configuración",
+"Reste Configuration",
+"Reset configurazione",
+"Rest Configure",
+"Repor configuração",
+"Ostatní nastavení",
+"Pozostała konfiguracja ",
+"Restart Configurare",
+"Остальный настройки",
+"Ostatné konfigurácie",
+"重置組態",
+"重置组态"
+);
+var wpsmenu=new Array
+(
+"WPS",
+"WPS",
+"WPS",
+"WPS",
+"WPS",
+"WPS",
+"WPS",
+"WPS",
+"WPS",
+"WPS",
+"WPS",
+"WPS",
+"WPS",
+"WPS"
+);
+var adslSet=new Array
+(
+"ADSL Setting",
+"ADSL Einstellung",
+"Configuración ADSL",
+"Paramètres ADSL",
+"Impostazione ADSL",
+"ADSL-instellingen",
+"Definição de ADSL",
+"Nastavení ADSL",
+"Ustawienia ADSL",
+"Setari ADSL",
+"ADSL настройки",
+"ADSL nastavenia",
+"ADSL Setting",
+"ADSL Setting"
+);
+var atmVcSet=new Array
+(
+"ATM VC Setting",
+"ATM VC Einstellung",
+"Configuración ATM VC",
+"Paramètres ATM VC",
+"Impostazione VC ATM",
+"ATM VC-instellingen",
+"Definição de ATM VC",
+"Nastavení ATM VC",
+"Ustawienia ATM VC",
+"Setari ATM VC",
+"ATM VC настройки",
+"ATM VC nastavenia",
+"ATM VC Setting",
+"ATM VC Setting"
+);
+var virtualCircuit=new Array
+(
+"Virtual Circult",
+"Virtual Circuit",
+"Circuito virtual",
+"Circuit virtuel",
+"Circuito virtuale",
+"Virtueel circuit",
+"Circuito virtual",
+"Virtuální obvod",
+"Obwód wirtualny",
+"Circuit Virtual",
+"Виртуальный канал",
+"Virtuálny okruh",
+"Virtual Circult",
+"Virtual Circult"
+);
+var vip=new Array
+(
+"VIP",
+"VIP",
+"VIP",
+"VIP",
+"VIP",
+"VIP",
+"VIP",
+"VIP",
+"VPI",
+"VIP",
+"VIP",
+"VIP",
+"VIP",
+"VIP"
+);
+var vci=new Array
+(
+"VCI",
+"VCI",
+"VCI",
+"VCI",
+"VCI",
+"VCI",
+"VCI",
+"VCI",
+"VCI",
+"VCI",
+"VCI",
+"VCI",
+"VCI",
+"VCI"
+);
+var range=new Array
+(
+"Range",
+"Bereich",
+"Serie",
+"Intervalle",
+"Intervallo",
+"Bereik",
+"Intervalo",
+"Rozsah",
+"Zakres",
+"Raza",
+"Диапазон",
+"Rozsah",
+"範圍",
+"范围"
+);
+var atmQos=new Array
+(
+"ATM Qos",
+"ATM Qos",
+"ATM Qos",
+"ATM Qos",
+"Qos ATM",
+"ATM Qos",
+"Qos ATM",
+"ATM Qos",
+"ATM QoS",
+"ATM Qos",
+"ATM Qos",
+"ATM QoS",
+"ATM Qos",
+"ATM Qos"
+);
+var pcr=new Array
+(
+"PCR",
+"PCR",
+"PCR",
+"PCR",
+"PCR",
+"PCR",
+"PCR",
+"PCR",
+"PCR",
+"PCR",
+"PCR",
+"PCR",
+"PCR",
+"PCR"
+);
+var scr=new Array
+(
+"SCR",
+"SCR",
+"SCR",
+"SCR",
+"SCR",
+"SCR",
+"SCR",
+"SCR",
+"SCR",
+"SCR",
+"SCR",
+"SCR",
+"SCR",
+"SCR"
+);
+var mbs=new Array
+(
+"MBS",
+"MBS",
+"MBS",
+"MBS",
+"MBS",
+"MBS",
+"MBS",
+"MBS",
+"MBS",
+"MBS",
+"MBS",
+"MBS",
+"MBS",
+"MBS"
+);
+var cellsSecond=new Array
+(
+"cells/second",
+"Zellen/Sekunden",
+"pilas/segundo",
+"cellules/seconde",
+"celle/secondo",
+"cellen/seconde",
+"células/segundo",
+"buněk/sekundu",
+"komórki/sek.",
+"Celule /secunda ",
+"пакетов/сек",
+"buniek/sekunda",
+"cells/second",
+"cells/second"
+);
+var cells=new Array
+(
+"cells",
+"Zellen",
+"pilas",
+"cellules",
+"celle",
+"cellen",
+"células",
+"buněk",
+"komórki",
+"Cellule",
+"пакеты",
+"bunky",
+"cells",
+"cells"
+);
+var adslModeType=new Array
+(
+"ADSL Mode/Type",
+"ADSL Modus/Typ",
+"Modo/Tipo ADSL",
+"Mode/Type ADSL",
+"Modalità  ADSL/Tipo",
+"ADSL-stand/soort",
+"Modo/tipo de ADSL",
+"Režim/typ ADSL",
+"Rodzaj/tryb ADSL",
+"Mod ADSL / Tip",
+"ADSL Мода/Тип",
+"ADSL mód/typ",
+"ADSL 模式/類型",
+"ADSL 模式/类型"
+);
+var adslMode=new Array
+(
+"ADSL Mode",
+"ADSL Modus",
+"Modo ADSL",
+"Mode ADSL",
+"Modalità ADSL",
+"ADSL-stand",
+"Modo de ADSL",
+"Režim ADSL",
+"Tryb ADSL",
+"Mod ADSL ",
+"ADSL Мода",
+"ADSL mód",
+"ADSL模式",
+"ADSL模式"
+);
+var adslType=new Array
+(
+"DSL Type",
+"DSL Typ",
+"Tipo DSL",
+"Type DSL",
+"Tipo DSL",
+"DSL-soort",
+"Tipo de DSL",
+"Typ DSL",
+"Rodzaj DSL",
+"Tip DSL",
+"ADSL Тип",
+"DSL typ",
+"DSL類型",
+"DSL类型"
+);
+var pppoeoa=new Array
+(
+"PPPoE/PPPoA",
+"PPPoE/PPPoA",
+"PPPoE/PPPoA",
+"PPPoE/PPPoA",
+"PPPoE/PPPoA",
+"PPPoE/PPPoA",
+"PPPoE/PPPoA",
+"PPPoE/PPPoA",
+"PPoE/PPPoA",
+"PPPoE/PPPoA",
+"PPPoE/PPPoA",
+"PPPoE/PPPoA",
+"PPPoE / PPPoA",
+"PPPoE / PPPoA"
+);
+var encaps=new Array
+(
+"Encapsulation",
+"Verkapselung",
+"Encapsulación",
+"Encapsulation",
+"Incapsulamento",
+"Encapsulatie",
+"Encapsulamento",
+"Shrnutí",
+"Enkapsulacja",
+"Incapsulare",
+"Инкапсуляция",
+"Encapsulation",
+"Encapsulation",
+"Encapsulation"
+);
+var bytes=new Array
+(
+"bytes",
+"Bytes",
+"bytes",
+"octets",
+"byte",
+"bytes",
+"bytes",
+"bytů",
+"Bajty",
+"Biti",
+"байт",
+"byty",
+"字節",
+"字节"
+);
+var dfroute=new Array
+(
+"Default Route",
+"Standard Route",
+"Ruta predefinida",
+"Route par défaut",
+"Percorso predefinito",
+"Standaardroute",
+"Rota predefinida",
+"Výchozí směrování",
+"Routing domyślny",
+"Ruta initiala",
+"Маршрутизатор по умолчанию",
+"Prednastavený router",
+"預設路由",
+"预设路由"
+);
+var getIP=new Array
+(
+"Get IP Address",
+"IP-Adresse erhalten",
+"Obtener dirección IP",
+"Obtenir adresse IP",
+"Ottieni indirizzo IP",
+"Haal IP-adres op",
+"Obter endereço IP",
+"Získat IP adresu",
+"Uzyskaj adres IP ",
+"Primeste Adresa IP",
+"Получить IP адрес",
+"získať IP adresu",
+"自動取得 IP位址",
+"自动取得 IP地址"
+);
+var static=new Array
+(
+"Static",
+"Statisch",
+"Estática",
+"Fixe",
+"Statico",
+"Statisch",
+"Estático",
+"Statická",
+"Statyczny",
+"Static",
+"Статический",
+"Statická",
+"靜態",
+"静态"
+);
+var dynamic=new Array
+(
+"Dynamic",
+"Dynamisch",
+"Dinámica",
+"Dynamique",
+"Dinamico",
+"Dynamisch",
+"Dinâmico",
+"Dynamická",
+"Dynamiczny ",
+"Dinamic",
+"Динамический",
+"Dynamická ",
+"動態",
+"动态"
+);
+var staticIPAdr=new Array
+(
+"Static IP Address",
+"Statische IP-Adresse",
+"Dirección IP estática",
+"Adresse IP fixe",
+"Indirizzo IP statico",
+"Statisch IP-adres",
+"Endereço IP estático",
+"Statická IP adresa",
+"IP adresu statycznego ",
+"Adresa IP Statica",
+"Статический IP адрес",
+"Statická IP adresa",
+"靜態 IP位址",
+"静态 IP地址"
+);
+var subMask=new Array
+(
+"IP Subnet Mask",
+"IP Subnetzmaske",
+"Máscara de subred IP",
+"IP masque de sous-réseau",
+"Maschera sottorete IP",
+"IP-subnetmasker",
+"Máscara de subrede IP",
+"IP adresa masky podsítě",
+"IP maski podsieci",
+"IP Masca Subretea",
+"IP маска подсети",
+"Maska podsiete IP",
+"IP子網路遮罩",
+"IP子网掩码"
+);
+var gateway=new Array
+(
+"Gateway",
+"Gateway",
+"Puerta de acceso",
+"Passerelle",
+"Gateway",
+"Gateway",
+"Gateway",
+"Brána",
+"Bramka",
+"Gateway",
+"Шлюз",
+"Brána",
+"閘道器",
+"网关"
+);
+var connSet=new Array
+(
+"Connection Setting",
+"Verbindungseinstellung",
+"Configuración de conexión",
+"Paramètres de connexion",
+"Impostazione connessione",
+"Aansluitinstellingen",
+"Definição da ligação",
+"Nastavení připojení",
+"Ustawienia połączenia ",
+"Setari Conexiune",
+"Настройка связи",
+"Nastavenia pripojenia",
+"連接設定",
+"连接设定"
+);
+var bridgMode=new Array
+(
+"Bridge Mode",
+"Bridge-Modus",
+"Modo de puente",
+"Mode Pont",
+"Modalità Bridge",
+"Bridge-stand",
+"Bridge Mode (Modo Bridge)",
+"Režim přemostění",
+"Tryb mostku",
+"Mod Bridge ",
+"Мода моста",
+"Mód premostenia",
+"Bridge Mode",
+"Bridge Mode"
+);
+var ipAdr=new Array
+(
+"IP Address",
+"IP Addresse",
+"Dirección IP",
+"Adresse IP",
+"Indirizzo IP",
+"IP-adres",
+"IP Address (Endereço IP)",
+"IP adresa",
+"Adres IP",
+"Adresa IP",
+"IP адрес",
+"IP adresy",
+"IP 位址",
+"IP 地址"
+);
+var GateWayAdr=new Array
+(
+"Gateway Address",
+"Gateway-Adresse",
+"dirección de la puerta de acceso:",
+"Adresse Passerelle",
+"indirizzo gateway",
+"Gateway-adres",
+"endereço de gateway",
+"Adresa brány",
+"Adres bramki",
+"Adresa Gateway",
+"Адрес шлюза",
+"Adresy brány",
+"閘道器位址",
+"网关地址"
+);
+var priDNSAdr=new Array
+(
+"Primary DNS Address",
+"Primäre DNS-Adresse",
+"Dirección DNS primaria",
+"Adresse DNS primaire",
+"Indirizzo DNS primario",
+"Primair DNS-adres",
+"Endereço DNS principal",
+"Primární adresa DNS",
+"Pierwszy adres DNS",
+"Adresa DNS Primara",
+"Адрес предпочитаемого  DNS сервера",
+"Primárny DNS adresy",
+"DNS1 位址",
+"DNS1 地址"
+);
+var secDNSAdr=new Array
+(
+"Secondary DNS Address",
+"Sekundäre DNS-Adresse",
+"Dirección DNS secundaria",
+"Adresse DNS secondaire (facultatif)",
+"Indirizzo DNS secondario",
+"Tweede DNS-adres",
+"Endereço DNS secundário",
+"Sekundární adresa DNS",
+"Drugi adres DNS",
+"Adresa DNS Secundara",
+"Адрес альтернативного  DNS сервера",
+"Sekundárny DNS adresy",
+"DNS2 位址",
+"DNS2 地址"
+);
+var selLanguage=new Array
+(
+"Select Language",
+"Select Language",
+"Select Language",
+"Select Language",
+"Select Language",
+"Selecteer uw taal",
+"Select Language",
+"Select Language",
+"Select Language",
+"Select Language",
+"Select Language",
+"Select Language",
+"選擇語言",
+"选择语言"
+);
+var IPStatus=new Array
+(
+"IP Status",
+"IP Status",
+"IP Status",
+"IP Status",
+"IP Status",
+"IP Status",
+"IP Status",
+"IP Status",
+"IP Status",
+"IP Status",
+"IP Status",
+"IP Status",
+"IP狀態",
+"IP状态"
+);
+var IPStatus_static=new Array
+(
+"Static IP",
+"Static IP",
+"Static IP",
+"Static IP",
+"Static IP",
+"Static IP",
+"Static IP",
+"Static IP",
+"Static IP",
+"Static IP",
+"Static IP",
+"Static IP",
+"靜態 IP",
+"静态 IP"
+);
+var IPStatus_dynamic=new Array
+(
+"Dynamic IP",
+"Dynamic IP",
+"Dynamic IP",
+"Dynamic IP",
+"Dynamic IP",
+"Dynamic IP",
+"Dynamic IP",
+"Dynamic IP",
+"Dynamic IP",
+"Dynamic IP",
+"Dynamic IP",
+"Dynamic IP",
+"動態 IP",
+"动态 IP"
+);
+var WPSconfigured=new Array
+(
+"Configured",
+"Configured",
+"Configured",
+"Configured",
+"Configured",
+"Configured",
+"Configured",
+"Configured",
+"Configured",
+"Configured",
+"Configured",
+"Configured",
+"配置",
+"配置"
+);
+var WPSunconfigured=new Array
+(
+"unConfigured",
+"unConfigured",
+"unConfigured",
+"unConfigured",
+"unConfigured",
+"niet ingesteld",
+"unConfigured",
+"unConfigured",
+"unConfigured",
+"unConfigured",
+"unConfigured",
+"unConfigured",
+"未配置",
+"未配置"
+);
+var MPPE=new Array
+(
+"MPPE",
+"MPPE",
+"MPPE",
+"MPPE",
+"MPPE",
+"MPPE",
+"MPPE",
+"MPPE",
+"MPPE",
+"MPPE",
+"MPPE",
+"MPPE",
+"MPPE",
+"MPPE"
+);
+var macthesame=new Array
+(
+"MAC address can not be the same!",
+"MAC address can not be the same!",
+"MAC address can not be the same!",
+"MAC address can not be the same!",
+"MAC address can not be the same!",
+"MAC address can not be the same!",
+"MAC address can not be the same!",
+"MAC address can not be the same!",
+"MAC address can not be the same!",
+"MAC address can not be the same!",
+"MAC address can not be the same!",
+"MAC address can not be the same!",
+"MAC位址不可以一樣！",
+"MAC地址不可以一样！"
+);
+var maccnatbe=new Array
+(
+"MAC can not be 00:00:00:00:00:00!",
+"MAC can not be 00:00:00:00:00:00!",
+"MAC can not be 00:00:00:00:00:00!",
+"MAC can not be 00:00:00:00:00:00!",
+"MAC can not be 00:00:00:00:00:00!",
+"MAC can not be 00:00:00:00:00:00!",
+"MAC can not be 00:00:00:00:00:00!",
+"MAC can not be 00:00:00:00:00:00!",
+"MAC can not be 00:00:00:00:00:00!",
+"MAC can not be 00:00:00:00:00:00!",
+"MAC can not be 00:00:00:00:00:00!",
+"MAC can not be 00:00:00:00:00:00!",
+"MAC位址不能00:00:00:00:00:00！",
+"MAC地址不能00:00:00:00:00:00！"
+);
+var ipcnatbe=new Array
+(
+"IP address can not be 0.0.0.0!",
+"IP address can not be 0.0.0.0!",
+"IP address can not be 0.0.0.0!",
+"IP address can not be 0.0.0.0!",
+"IP address can not be 0.0.0.0!",
+"IP address can not be 0.0.0.0!",
+"IP address can not be 0.0.0.0!",
+"IP address can not be 0.0.0.0!",
+"IP address can not be 0.0.0.0!",
+"IP address can not be 0.0.0.0!",
+"IP address can not be 0.0.0.0!",
+"IP address can not be 0.0.0.0!",
+"IP位址不能0.0.0.0！",
+"IP地址不能0.0.0.0！"
+);
+var WISP=new Array
+(
+"WISP",
+"WISP",
+"WISP",
+"FAI sans fil",
+"WISP",
+"WISP",
+"WISP",
+"WISP",
+"WISP",
+"WISP",
+"WISP",
+"WISP",
+"WISP",
+"WISP"
+);
+var WISPContent=new Array
+(
+"In this mode, all Ethernet ports are bridged together and this router will connect to ISP’s access point as a client by wireless interface. The NAT is enabled and PCs connected to Ethernet ports share the same IP address to connect to ISP through wireless interface. You must set the wireless network to client mode first, and connect to the ISP’s AP in Site-Survey page. The connection type can be setup in WAN page, available options are: PPPOE, DHCP client, PPTP client or static IP.",
+"In diesem Modus sind alle Ethernet-Anschlüsse zusammen überbrückt und der WLAN-Client wird eine Verbindung mit dem Access Point des Internetanbieters herstellen. NAT ist aktiviert und die PCs an den Ethernet-Anschlüssen teilen über das WLAN-Netzwerk die gleiche IP-Adresse für die Verbindung mit dem Internetanbieter. Sie müssen zuerst das WLAN auf Client-Modus stellen und auf der Site-Survey-Seite eine Verbindung mit dem ISP AP herstellen.  Der Verbindungstyp kann auf der WAN-Seite mithilfe von PPPOE , DHCP-Client, PPTP-Client oder statische IP eingestellt werden.",
+"En este modo, todos los puertos son unidos (bridged) juntos y el cliente inalámbrico conectará al punto de acceso ISP. El NAT está habilitado y los PCs en los puertos Ethernet comparten el mismo IP al ISP a través de LAN inalámbrica. Se debe configurar primero el inalámbrico al modo ISP AP en la página de Site-Survey. El tipo de conexión puede ser configurado en la página WAN utilizando PPPOE, cliente DHCP, cliente PPTP o IP estático.",
+"Dans ce mode, tous les ports Ethernet sont pontés ensemble et le client sans fil se connecte au point d\'accès de son FAI. Le NAT (Traduction d\'Adresse Réseau) est activé et les PC des ports Ethernet partagent la même IP vers le FAI via le réseau local sans fil. Vous devez d\'abord définir les paramètres sans fil en mode client puis vous connecter au point d\'accès FAI dans la page Site-Survey. Le type de connexion peut être configuré à la page WAN en utilisant les informations PPPOE, client DHCP, client PPTP ou IP fixe.",
+"In questa modalità, tutte le porte ethernet sono collegate insieme e il cliente wireless si connetterà al punto di accesso ISP. Il NAT viene abilitato e i PC nelle porte ethernet condividono lo stesso IP all'ISP attraverso il LAN wireless. E\' necessario impostare prima il wireless sulla modalità cliente e collegarsi al punto di accesso ISP AP nella pagina di sondaggio del sito.  Il tipo di connessione può essere configurato nella pagina WAN usando il cliente PPPOE, il cliente DHCP,  il cliente PPTP o l\'IP statico.",
+"In deze modus, vormen alle ethernetpoorten een brug met elkaar en zal de draadloze client verbinding maken met het ISP access point. De NAT is ingeschakeld en PC´s in ethernetpoorten delen hetzelfde IP naar de ISP draadloos LAN. U behoort eerst de draadloze client mode in te stellen en verbinding te maken met de ISP AP in de Site-Survey pagina. Het verbindingstype kan worden ingesteld in de WAN-pagina door het gebruik van PPPOE, DHCP client, PPTP client of statisch IP. ",
+"Neste modo, todas as portas são unidas (bridged) juntas e o cliente de rede sem fio conectará ao ponto de acesso ISP. O NAT é habilitado e os PCs nas portas Ethernet compartilham o mesmo IP ao ISP através de wireless LAN. Você deve configurar primeiro o wireless ao modo cliente e conectar ao ISP AP na página de Site-Survey. O tipo de conexão pode ser configurado na página de WAN utilizando PPPOE, cliente DHCP, cliente PPTP ou IP estático.",
+"V tomto režimu jsou ethernetové porty propojeny a bezdrátový klient se připojuje k přístupovému bodu (AP) poskytovatele (ISP). Je nastaven NAT: připojené PC sdílí jednu IP adresu pro bezdrátový přístup k ISP. Nejprve je třeba nastavit bezdrát do klientského režimu a připojit se k poskytovateli, vybranému pomocí \"Site-Survey\" (skenování stanoviště). Typ připojení se nastavuje ve WAN menu použitím PPPOE, DHCP klienta, PPTP klienta nebo pevné IP adresy.",
+"W tym trybie, wszystkie porty sieciowe są zmostkowane razem a klient sieci bezprzewodowej może się połączyć z siecią dostawcy internetu. Translacja var adresów NAT jest włączona, a klienci sieci LAN współdzielą adres IP dostawcy poprzez sieć bezprzewodową. Powinieneś przełączyć urządzenie w tryb klienta sieci bezprzewodowej, a następnie połączyć się z siecią dostawcy na stronie przeszukiwania sieci. Połączenie może zostać skonfigurowane na stronie WAN używając PPPoE, klient DHCP, PPTP oraz stały adres IP.",
+"In acest mod, toate porturile Ethernet sunt sunt legate intre ele iar clientul wireless se va conecta la access pointul ISP-ului. Functia NAT este activa iar calculatoarele legate prin cablu pot accesa internetul prin intermediul wireless LAN. Primul pas este setarea wireless-ului in modul client si apoi conectarea la ISP in pagina Site Survey. Tipul conexiunii poate fi selectat in pagina WAN (PPPoE, Client DHCP, PPTP sau IP fix)",
+"В этом режиме все Ethernet порты объединены вместе и беспроводной клиент подключит их к точке доступа ISP провайдера. Функция NAT будет включена и компьютеры, подключенные к Ethernet портам, подключатся к провайдеру через IP адрес беспроводного подключения. Вам нужно, в первую очередь, установить режим клиента  беспроводной связи, и, затем, подключиться к беспроводной точке доступа провайдера на странице \'Site-Survey\'. Тип подключения нужно установить на странице WAN, используя PPPOE, DHCP client, PPTP client или static IP типы подключения",
+"V tomto móde sú všetky eternetové porty premostené dohromady a bezdrôtový klient sa pripojí k prístupovému bodu ISP. Funkcia NAT je zapnutá a PC zapojené to eternetových portov zdieľajú jednu IP smerom k ISP cez bezdrôtovú LAN. Musíte nastaviť najskôr nastaviť bezdrôtové pripojenie do klientskeho módu a pripojiť sa prístupovému bodu ISP v stránke Site-Survey. Typ pripojenia môže byť nastavený na stránke WAN pomocou PPPOE, DHCP klient, PPTP klient alebo statická IP.",
+"In this mode, all ethernet ports are bridged together and the wireless client will connect to ISP access point. The NAT is enabled and PCs in ethernet ports share the same IP to ISP through wireless LAN. You must set the wireless to client mode first and connect to the ISP AP in Site-Survey page.  The connection type can be setup in WAN page by using PPPOE, DHCP client, PPTP client or static IP.,",
+"In this mode, all ethernet ports are bridged together and the wireless client will connect to ISP access point. The NAT is enabled and PCs in ethernet ports share the same IP to ISP through wireless LAN. You must set the wireless to client mode first and connect to the ISP AP in Site-Survey page.  The connection type can be setup in WAN page by using PPPOE, DHCP client, PPTP client or static IP.,"
+);
+var WISPContentshort=new Array
+(
+"In this mode, all Ethernet ports are bridged together and this router will connect to ISP’s access point a",
+"In diesem Modus sind alle Ethernet-Anschlüsse zusammen überbrückt und der WLAN-Client wird eine Verbindung ",
+"En este modo, todos los puertos son unidos (bridged) juntos y el cliente inalámbrico conectará al punto de ",
+"Dans ce mode, tous les ports Ethernet sont pontés ensemble et le client sans fil se connecte au point d\'ac",
+"In questa modalità, tutte le porte ethernet sono collegate insieme e il cliente wireless si connetterà al p",
+"In deze modus, vormen alle ethernetpoorten een brug met elkaar en zal de draadloze client verbinding maken ",
+"Neste modo, todas as portas são unidas (bridged) juntas e o cliente de rede sem fio conectará ao ponto de a",
+"V tomto režimu jsou ethernetové porty propojeny a bezdrátový klient se připojuje k přístupovému bodu (AP) p",
+"W tym trybie, wszystkie porty sieciowe są zmostkowane razem a klient sieci bezprzewodowej może się połączyć",
+"In acest mod, toate porturile Ethernet sunt sunt legate intre ele iar clientul wireless se va conecta la ac",
+"В этом режиме все Ethernet порты объединены вместе и беспроводной клиент подключит их к точке доступа ISP п",
+"V tomto móde sú všetky eternetové porty premostené dohromady a bezdrôtový klient sa pripojí k prístupovému ",
+"",
+""
+);
+var Relay=new Array
+(
+"DHCP Sever Relay",
+"DHCP Sever Relay",
+"DHCP Sever Relay",
+"DHCP Sever Relay",
+"DHCP Sever Relay",
+"DHCP Sever Relay",
+"DHCP Sever Relay",
+"DHCP Sever Relay",
+"DHCP Sever Relay",
+"DHCP Sever Relay",
+"DHCP Sever Relay",
+"DHCP Sever Relay",
+"DHCP中繼",
+"DHCP中继"
+);
+var save=new Array
+(
+"Save",
+"Speichern",
+"Guardar",
+"Sauvegarder",
+"Salva",
+"Opslaan",
+"Guardar",
+"Uložit",
+"Zapisz",
+"Salveaza",
+"Сохранить",
+"Uložiť",
+"儲存",
+"储存"
+);

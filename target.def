@@ -1,0 +1,11 @@
+PLATFORM=-D_RT305X_
+MODEL=-D_BR6258GN_
+ENDIAN=
+GATEWAY=y
+CROSS=/home/RTL8196C/toolchain/rtl8196c-toolchain-1.1/rsdk-96c/bin/rsdk-linux-
+CROSS_LINUX=/home/RTL8196C/toolchain/rtl8196c-toolchain-1.1/rsdk-96c/bin/rsdk-linux-
+CROSS_COMPILE=/home/RTL8196C/toolchain/rtl8196c-toolchain-1.1/rsdk-96c/bin/rsdk-linux-
+CROSS_PATH=/home/RTL8196C/toolchain/rtl8196c-toolchain-1.1/rsdk-96c
+WLDEV=-D_RALINK_WL_DEVICE_
+PSDEV=-D_OFF_PS_DEVICE_
+SDEV=-D_OFF_S_DEVICE_

@@ -1,0 +1,4 @@
+make clean
+. ../../target.def
+
+make install CC=${CROSS}gcc STRIP=${CROSS}strip LD=${CROSS}ld AR=${CROSS}ar RANLIB=${CROSS}ramnlib CLIENT=0 V=1

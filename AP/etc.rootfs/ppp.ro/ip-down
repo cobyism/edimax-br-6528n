@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# This file should not be modified -- make local changes to
+# /etc/ppp/ip-down.local instead
+
+LOGDEVICE=$6
+REALDEVICE=$1
+
+#/sbin/led off
+
+#echo '0' > /var/run/wan_status
+
+#export PATH=/sbin:/usr/sbin:/bin:/usr/bin
+
+#[ -x /etc/ppp/ip-down.local ] && /etc/ppp/ip-down.local "$@"
+
+#/etc/sysconfig/network-scripts/ifdown-post ifcfg-${LOGDEVICE}
+
+exit 0

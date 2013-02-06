@@ -1,0 +1,65 @@
+Very important note :
+-------------------
+	This release of the Wireless Tools is not compatible with Wireless
+	Extensions earlier than 9.
+	Kernels that support this version of the Wireless Tools are listed
+	below. For all kernels before that, please use the version v19 of
+	the Wireless Tools.
+	You might have headers troubles and it doesn't compile, see below...
+
+You need :
+--------
+	o Compiler and development environment
+	o A kernel supporting wireless extensions version 9 or higher
+		-> from 2.2.14 onward
+		-> from 2.3.24 onward
+		Note : CONFIG_NET_RADIO must be enabled
+	o (Optional) A Pcmcia package supporting Wireless Extension
+	o A driver supporting wireless extensions
+		-> Check my web pages for latest list of drivers,
+			otherwise patch your favourite driver...
+	Note : more recent kernels and drivers are likely to support
+		more wireless extension features...
+
+Compile wireless tools :
+----------------------
+	In theory, a "make" should suffice to create the tools.
+	In practice, there is big troubles with the kernel
+headers. See below for how to fix that.
+	Note : as some internal data structures change from kernel to
+kernel, you are advised to not use the precompiled version of the
+tools but to recompile your own.
+
+Installation :
+------------
+	If I were you, I would not trust a "make install". If you feel
+courageous, just do "make install". It may even do the right
+thing. Actually, with the various bugfixes that happened over the
+time, it nowadays tend to do the right thing.
+	I advise to copy the executable (iwconfig, iwspy and iwpriv)
+in /usr/local/sbin or /usr/sbin. The man pages (iwconfig.8, iwspy.8
+and iwpriv.8) should be copied in /usr/local/man/man8 or
+/usr/man/man8.
+	In fact, if you want to use Pcmcia wireless.opts, this step is
+mandatory...
+
+Kernel headers (why it doesn't compile) :
+---------------------------------------
+	Some changes in the kernel headers and glibc headers are
+making my life difficult. We now have a mechanism to automatically
+select the proper header based on various bits of information (libc
+version & kernel version), but it may fail to do the right thing.
+	You may also see the message :
+		"Your kernel/libc combination is not supported"
+	If this happens to you, you will need to hack the rules at the
+top of iwlib.h and send me the patch.
+
+	The second issue is that some distributions install some
+independant kernel headers in /usr/include. If you upgrade your
+kernel, those headers become out of sync and you don't benefit from
+the latest Wireless Extensions. Even worse, it can sometimes prevent
+the tools from compiling.
+	The trick is to copy the file .../include/linux/wireless.h
+from the kernel to the /usr/include headers.
+
+	Jean <jt@hpl.hp.com>

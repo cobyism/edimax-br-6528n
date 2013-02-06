@@ -1,0 +1,12 @@
+
+# $Id: Config.in,v 1.1.1.1 2007/08/06 10:04:48 root Exp $
+
+mainmenu_option next_comment
+comment 'Flash System @ Realtek'
+tristate 'Flash System @ Realtek support' CONFIG_FLASH
+if [ "$CONFIG_FLASH" = "y" ]; then
+	dep_tristate 'Flash System (NOR TYPE) support' CONFIG_FLASH_NOR
+	dep_tristate 'Flash System (NAND TYPE) support' CONFIG_FLASH_NAND
+	dep_tristate 'RTL8181/8186 GPIO support' CONFIG_RTL8181_GPIO
+fi
+endmenu

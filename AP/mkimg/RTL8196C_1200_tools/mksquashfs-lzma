@@ -1,0 +1,13 @@
+#!/bin/sh
+
+LINUX_VERSION=`uname -r|grep 2.4`
+
+#echo "$LINUX_VERSION"
+if [ "$LINUX_VERSION" = "" ]; then
+$PWD/tools/mksquashfs-lzma-2.6 $1 $2 $3
+elif [ "$LINUX_VERSION" != "" ]; then
+$PWD/tools/mksquashfs-lzma-2.4 $1 $2 $3
+else
+echo "can not find LZMA"
+fi
+

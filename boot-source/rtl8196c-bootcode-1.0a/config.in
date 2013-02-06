@@ -1,0 +1,172 @@
+
+# ATTENTION:
+# Brief explaination:
+#
+# 1. "make menuconfig" will see this file.
+# 2. make menuconfig save file will produce "/.config" and "/autoconf.h" two files.
+# 3. makefile will see the "/.config" file
+# 4. C code will see the "/autoconf.h"  
+#
+# in this file, declare variable xxx, please add the prefix "CONFIG_" word.  Example: "CONFIG_XXX"
+
+
+
+
+
+#===========================================================================
+mainmenu_name 'RTL Bootcode Configuration'
+mainmenu_option next_comment
+comment 'Target Platform Selection'
+comment 'Choose a Vendor/Product combination.'
+
+
+#===========================================================================
+# Different IC decalre in here.
+
+choice 'Product' "RTL8196B CONFIG_RTL8196B  \
+RTL8197B CONFIG_RTL8197B  \
+RTL8196C CONFIG_RTL8196C  \
+RTL8198 CONFIG_RTL8198  \
+" CONFIG_RTL8196B
+
+#===========================================================================
+# Different IC want contain with the different config in here 
+#
+if [ "$CONFIG_RTL8196B" = "y" ]; then
+		define_bool RTL8196  y
+		define_bool RTL8196B y
+		define_bool CONFIG_HISTORY_KEYIN		
+fi
+
+if [ "$CONFIG_RTL8197B" = "y" ]; then
+		define_bool RTL8196B y
+		define_bool RTL8197B y			
+fi
+
+if [ "$CONFIG_RTL8196C" = "y" ]; then
+		define_bool RTL8196  y
+		define_bool RTL8196B y		
+		define_bool RTL8196C y
+		define_bool CONFIG_HISTORY_KEYIN
+		define_bool CONFIG_RTL8196C_REVISION_B y				
+fi
+if [ "$CONFIG_RTL8198" = "y" ]; then
+		define_bool RTL8196  y
+		define_bool RTL8198 y
+		define_bool CONFIG_HISTORY_KEYIN				
+fi
+
+#===========================================================================
+# Common Config with every IC have this function in here. Don't litmit someone ic.
+#
+
+#if [ "$CONFIG_RTL8196B" = "y" ]; then
+choice 'is the target of HW Setting ' "Dram8M_8Mx1_16bit    CONFIG_D8_16 \
+Dram16M_16Mx1_16bit  CONFIG_D16_16 \
+Dram32M_32Mx1_16bit  CONFIG_D32_16 \
+Dram64M_64Mx1_16bit  CONFIG_D64_16 \
+" CONFIG_D32_16
+#fi
+
+#if [ "$CONFIG_RTL8196B" = "y"  ]; then
+choice 'is FLASH Type ' "NOR_FLASH  CONFIG_NOR_FLASH \
+SPI_FLASH  CONFIG_SPI_FLASH \
+NONE_FLASH  CONFIG_NONE_FLASH \
+" NOR_FLASH
+
+ if [ "$CONFIG_SPI_FLASH" = "y" ]; then
+
+choice 'is SPI IO Type'	"BOOT_SIO_8198_8196C CONFIG_BOOT_SIO_8198 \
+					 BOOT_DIO_8198_8196C CONFIG_BOOT_DIO_8198 \
+					 BOOT_QIO_8198_8196C CONFIG_BOOT_QIO_8198 \
+				      " BOOT_SIO_8198_8196C	
+bool "SPI CLCK LIMIT SPEED<40MHz" CONFIG_AUTO_PROBE_LIMITED_SPI_CLK_UNDER_40MHZ 
+fi
+			
+#fi
+
+#if [ "$CONFIG_RTL8196B" = "y" ]; then
+choice 'is SDRAM Type ' "NORMAL  CONFIG_SDRAM \
+DDR  CONFIG_DDR_SDRAM \
+" NORMAL
+#fi
+
+
+#if [ "$CONFIG_RTL8196B" = "y" ]; then
+choice 'is SWITCH Type ' "10M_100M  CONFIG_SW_100M \
+8366_GIGA  CONFIG_SW_8366GIGA \
+NONE  CONFIG_SW_NONE \
+" 10M_100M
+#fi
+
+choice 'is Edimax Model ' "6X28GN CONFIG_EDX_6X28GN \
+6X58GN CONFIG_EDX_6X58GN \
+6X68GN CONFIG_EDX_6X68GN \
+6X28HPN CONFIG_EDX_6X28HPN \
+" 6X28GN
+
+choice 'is DRAM (TxDly, RxDly) ' "T4-R8 CONFIG_EDX_TRX_DELAY_48 \
+T4-R7 CONFIG_EDX_TRX_DELAY_47 \
+T4-R6 CONFIG_EDX_TRX_DELAY_46 \
+T4-R5 CONFIG_EDX_TRX_DELAY_45 \
+T3-R8 CONFIG_EDX_TRX_DELAY_38 \
+" T4-R8
+
+choice 'DRAM Spreading Spectrum ' "OFF CONFIG_EDX_DRAM_SPREADING_OFF \
+ON CONFIG_EDX_DRAM_SPREADING_ON \
+" OFF
+
+bool "Support Flash Mapping Customize" CONFIG_RTL_FLASH_MAPPING_ENABLE
+if [ "$CONFIG_RTL_FLASH_MAPPING_ENABLE" = "y" ]; then
+hex 'LINUX image flash offset start' CONFIG_LINUX_IMAGE_OFFSET_START  0x10000
+hex 'LINUX image flash offset end'   CONFIG_LINUX_IMAGE_OFFSET_END    0x40000
+hex 'lINUX image check step'         CONFIG_LINUX_IMAGE_OFFSET_STEP   0x1000
+hex 'ROOT image flash offset start'  CONFIG_ROOT_IMAGE_OFFSET_START  0xE0000
+hex 'ROOT image flash offset end'    CONFIG_ROOT_IMAGE_OFFSET_END    0x130000
+hex 'ROOT image check step'          CONFIG_ROOT_IMAGE_OFFSET_STEP   0x1000
+fi
+
+bool 'LZMA Enable(Default GZip)'		CONFIG_LZMA_ENABLE
+bool 'Support DHCP Server'			CONFIG_DHCP_SERVER
+bool 'Support HTTP Update'			CONFIG_HTTP_SERVER
+bool 'Power On Self Test Enable'		CONFIG_POST_ENABLE
+bool 'Boot Code Debug Command Enable'		CONFIG_BOOT_DEBUG_ENABLE
+bool 'Support reset botton feature'		CONFIG_BOOT_RESET_ENABLE
+bool 'support boot time measure'		CONFIG_BOOT_TIME_MEASURE
+#bool 'Update Default Vendor Settings'		CONFIG_DEFAULTS_VENDOR_UPDATE
+#bool 'Support History Keyin'		CONFIG_HISTORY_KEYIN
+
+#===========================================================================
+# Different IP module. If want to add test IP module, add in here. Can limmit some IC
+#
+
+#---------------------------------------------------------------------------
+#bool 'Enable Test Host PCIE'	CONFIG_PCIE_MODULE
+#bool 'Enable Test Slave PCIE'	CONFIG_SPE_MODULE
+
+#if [ "$CONFIG_SPE_MODULE" = "y" ]; then
+
+#choice 'Slave PCIE Port Type'	"SPE_EP_Host CONFIG_SPE_HOST 			SPE_EP_Slave CONFIG_SPE_DEVICE \					
+#			" SPE_EP_Host			
+						
+#fi
+#---------------------------------------------------------------------------
+#bool 'Enable DRAM Test'	CONFIG_DRAM_TEST
+#bool 'Enable NOR Test'	CONFIG_NOR_TEST
+#bool 'Enable SPI Test'	CONFIG_SPI_TEST
+
+
+#bool 'Enable CPU sleep+DRAM Power Management Test'	CONFIG_CPUsleep_PowerManagement_TEST
+#bool 'Enable rtl8198 taroko cpu Test'	CONFIG_RTL8198_TAROKO
+#bool 'Enable PCM/IIS Test'	CONFIG_PCM_TEST
+
+
+#---------------------------------------------------------------------------
+
+
+
+#---------------------------------------------------------------------------
+
+
+#===========================================================================
+endmenu

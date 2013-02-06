@@ -1,0 +1,53 @@
+0. Introduction	
+   This file will show you how to build the boot code for RTL8651c system. 
+Besides, It will guide you how to download the built image to Realtek EV 
+(Evaluation) board. PLEASE NOTE, the update of boot code is very dangerous 
+because the EV board may not be booted any more if the boot code is corrupted.
+
+1. Build Environment 
+   RedHat 7.3/9.0
+
+2. Toolchain
+   You have to install the RSDK toolchain in advance.
+
+3. Build boot code and boot code loader
+
+3.0 choose hardware target:
+   - ==> if choosing the "RTL8651", please execute the command.
+	 >cp def-rtl8651-config .config
+   - ==> Or, if choosing the "RTL8652", please execute the command.
+	 >cp def-rtl8652-config .config 
+3.1 make menuconfig 
+   - ==> choose the hardware setting (RTL865x/8652) and memeory setting.
+   - ==> choose compressing tool(LZMA is default enable).
+3.2 make
+   - ==> boot is the binary file of boot code   
+   - ==> boot.bin is the image file for auto burn 
+   	 (Header is included for checksum checking)
+ 
+
+4. Burn boot code image to Realtek EV board
+   - Use a RS232 cable to connect COM port between a LINUX PC and EV board.
+   - Connect LINUX PC Ethernet port to the LAN port of EV board. Set PC IP
+     address to 192.168.1.x (e.g., type 'ifconfig eth0 192.168.1.1').
+   - Start a COM port console (e.g., minicom), and set COM port setting to 
+     38400, 8N1 and no flow control.
+   - Power on EV board, and press 'ESC' key in COM port console to escape the 
+     booting process. If ok, you may see "<RealTek>" prompt in the console.
+   - Start a TFTP client in LINUX PC, and connect to 192.168.1.6. Set file 
+     type to binary mode, and put boot file (boot) to TFTP server of EV 
+     board.
+   - After TFTP upload is completed, you may see a message in COM port
+     console as "**TFTP Client Upload File Size = 0000xxxx Bytes at 80300000".
+     "0000xxxx" and "80300000" indicate the hex value of upload file size and 
+     memory address stored image respectively. 
+   - Type command in COM port console as "flw 0 80300000 xxxx" to write upload
+     image to flash address "0" from SDRAM address "80300000" with size "xxxx"
+     in hex.
+   - Then that, you may see a message shown in COM port console as: 
+     "Flash Program from 80300000 to 00000000 with 0000xxxx bytes     ?
+     (Y)es, (N)o->". Type 'y' to confirm the writing. After the updated is
+     completed, you could power off/on the EV board, and the new boot code
+     will be effective.
+
+8/6/2007

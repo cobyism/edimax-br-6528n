@@ -1,0 +1,2250 @@
+
+vsprintf.o:     file format elf32-tradbigmips
+
+Sections:
+Idx Name          Size      VMA               LMA               File off  Algn
+  0 .text         000017b0  00000000  00000000  00000040  2**4
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  1 .data         00000000  00000000  00000000  000017f0  2**4
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000000  00000000  00000000  000017f0  2**4
+                  ALLOC
+  3 .reginfo      00000018  00000000  00000000  000017f0  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA, LINK_ONCE_SAME_SIZE
+  4 .pdr          00000180  00000000  00000000  00001808  2**2
+                  CONTENTS, RELOC, READONLY
+  5 .stab         000021cc  00000000  00000000  00001988  2**2
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+  6 .stabstr      00001a99  00000000  00000000  00003b54  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .rodata       00000340  00000000  00000000  000055f0  2**4
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, DATA
+  8 .comment      00000012  00000000  00000000  00005930  2**0
+                  CONTENTS, READONLY
+Disassembly of section .text:
+
+00000000 <simple_strtoul>:
+       0:	00804821 	move	t1,a0
+unsigned long simple_strtoul(const char *cp,char **endp,unsigned int base)
+{
+	unsigned long result = 0,value;
+
+	if (!base) {
+       4:	10c00032 	beqz	a2,d0 <simple_strtoul+0xd0>
+       8:	00005021 	move	t2,zero
+       c:	3c040000 	lui	a0,0x0
+      10:	24840000 	addiu	a0,a0,0
+		base = 10;
+		if (*cp == '0') {
+			base = 8;
+			cp++;
+			if ((*cp == 'x') && isxdigit(cp[1])) {
+				cp++;
+				base = 16;
+			}
+		}
+	}
+	while (isxdigit(*cp) &&
+	       (value = isdigit(*cp) ? *cp-'0' : toupper(*cp)-'A'+10) < base) {
+      14:	91270000 	lbu	a3,0(t1)
+      18:	00805821 	move	t3,a0
+      1c:	00eb1821 	addu	v1,a3,t3
+      20:	90620000 	lbu	v0,0(v1)
+      24:	00000000 	nop
+      28:	30420044 	andi	v0,v0,0x44
+      2c:	10400018 	beqz	v0,90 <simple_strtoul+0x90>
+      30:	00000000 	nop
+      34:	01606021 	move	t4,t3
+      38:	00ec1021 	addu	v0,a3,t4
+      3c:	90440000 	lbu	a0,0(v0)
+      40:	00071e00 	sll	v1,a3,0x18
+      44:	00031e03 	sra	v1,v1,0x18
+      48:	30840004 	andi	a0,a0,0x4
+      4c:	10800015 	beqz	a0,a4 <simple_strtoul+0xa4>
+      50:	2468ffd0 	addiu	t0,v1,-48
+      54:	0106102b 	sltu	v0,t0,a2
+      58:	1040000d 	beqz	v0,90 <simple_strtoul+0x90>
+      5c:	01460018 	mult	t2,a2
+		result = result*base + value;
+		cp++;
+      60:	25290001 	addiu	t1,t1,1
+      64:	91270000 	lbu	a3,0(t1)
+      68:	00000000 	nop
+      6c:	00eb1821 	addu	v1,a3,t3
+      70:	90640000 	lbu	a0,0(v1)
+      74:	00000000 	nop
+      78:	30840044 	andi	a0,a0,0x44
+      7c:	00001012 	mflo	v0
+	...
+      88:	1480ffeb 	bnez	a0,38 <simple_strtoul+0x38>
+      8c:	00485021 	addu	t2,v0,t0
+	}
+	if (endp)
+      90:	10a00002 	beqz	a1,9c <simple_strtoul+0x9c>
+      94:	00000000 	nop
+		*endp = (char *)cp;
+      98:	aca90000 	sw	t1,0(a1)
+	return result;
+      9c:	03e00008 	jr	ra
+      a0:	01401021 	move	v0,t2
+}
+
+static inline unsigned char __toupper(unsigned char c)
+{
+	if (islower(c))
+      a4:	3c020000 	lui	v0,0x0
+      a8:	00471021 	addu	v0,v0,a3
+      ac:	90420000 	lbu	v0,0(v0)
+      b0:	24e4ffe0 	addiu	a0,a3,-32
+      b4:	30420002 	andi	v0,v0,0x2
+      b8:	10400002 	beqz	v0,c4 <simple_strtoul+0xc4>
+      bc:	00e01821 	move	v1,a3
+		c -= 'a'-'A';
+      c0:	308300ff 	andi	v1,a0,0xff
+      c4:	306200ff 	andi	v0,v1,0xff
+      c8:	08000015 	j	54 <simple_strtoul+0x54>
+      cc:	2448ffc9 	addiu	t0,v0,-55
+      d0:	81230000 	lb	v1,0(t1)
+      d4:	24020030 	li	v0,48
+      d8:	1462ffcc 	bne	v1,v0,c <simple_strtoul+0xc>
+      dc:	2406000a 	li	a2,10
+      e0:	25290001 	addiu	t1,t1,1
+      e4:	81230000 	lb	v1,0(t1)
+      e8:	24020078 	li	v0,120
+      ec:	1462ffc7 	bne	v1,v0,c <simple_strtoul+0xc>
+      f0:	24060008 	li	a2,8
+      f4:	91230001 	lbu	v1,1(t1)
+      f8:	3c040000 	lui	a0,0x0
+      fc:	24840000 	addiu	a0,a0,0
+     100:	3c020000 	lui	v0,0x0
+     104:	00431021 	addu	v0,v0,v1
+     108:	90420000 	lbu	v0,0(v0)
+     10c:	00000000 	nop
+     110:	30420044 	andi	v0,v0,0x44
+     114:	1040ffbf 	beqz	v0,14 <simple_strtoul+0x14>
+     118:	00000000 	nop
+     11c:	25290001 	addiu	t1,t1,1
+     120:	08000005 	j	14 <simple_strtoul+0x14>
+     124:	24060010 	li	a2,16
+
+00000128 <simple_strtol>:
+     128:	27bdffe8 	addiu	sp,sp,-24
+     12c:	00801021 	move	v0,a0
+     130:	afbf0010 	sw	ra,16(sp)
+}
+
+/**
+ * simple_strtol - convert a string to a signed long
+ * @cp: The start of the string
+ * @endp: A pointer to the end of the parsed string will be placed here
+ * @base: The number base to use
+ */
+long simple_strtol(const char *cp,char **endp,unsigned int base)
+{
+	if(*cp=='-')
+     134:	80470000 	lb	a3,0(v0)
+     138:	2403002d 	li	v1,45
+     13c:	10e30007 	beq	a3,v1,15c <simple_strtol+0x34>
+     140:	24480001 	addiu	t0,v0,1
+		return -simple_strtoul(cp+1,endp,base);
+	return simple_strtoul(cp,endp,base);
+     144:	0c000000 	jal	0 <simple_strtoul>
+     148:	00000000 	nop
+}
+     14c:	8fbf0010 	lw	ra,16(sp)
+     150:	00000000 	nop
+     154:	03e00008 	jr	ra
+     158:	27bd0018 	addiu	sp,sp,24
+     15c:	0c000000 	jal	0 <simple_strtoul>
+     160:	01002021 	move	a0,t0
+     164:	08000053 	j	14c <simple_strtol+0x24>
+     168:	00021023 	negu	v0,v0
+
+0000016c <simple_strtoull>:
+     16c:	27bdfff8 	addiu	sp,sp,-8
+     170:	00c06821 	move	t5,a2
+     174:	afb00000 	sw	s0,0(sp)
+     178:	00806021 	move	t4,a0
+
+/**
+ * simple_strtoull - convert a string to an unsigned long long
+ * @cp: The start of the string
+ * @endp: A pointer to the end of the parsed string will be placed here
+ * @base: The number base to use
+ */
+unsigned long long simple_strtoull(const char *cp,char **endp,unsigned int base)
+{
+	unsigned long long result = 0,value;
+     17c:	00007021 	move	t6,zero
+     180:	00007821 	move	t7,zero
+
+	if (!base) {
+     184:	11a00053 	beqz	t5,2d4 <simple_strtoull+0x168>
+     188:	00a08021 	move	s0,a1
+     18c:	3c040000 	lui	a0,0x0
+     190:	24840000 	addiu	a0,a0,0
+		base = 10;
+		if (*cp == '0') {
+			base = 8;
+			cp++;
+			if ((*cp == 'x') && isxdigit(cp[1])) {
+				cp++;
+				base = 16;
+			}
+		}
+	}
+	while (isxdigit(*cp) && (value = isdigit(*cp) ? *cp-'0' : (islower(*cp)
+	    ? toupper(*cp) : *cp)-'A'+10) < base) {
+     194:	91890000 	lbu	t1,0(t4)
+     198:	0080c021 	move	t8,a0
+     19c:	01381821 	addu	v1,t1,t8
+     1a0:	90620000 	lbu	v0,0(v1)
+     1a4:	00000000 	nop
+     1a8:	30420044 	andi	v0,v0,0x44
+     1ac:	10400012 	beqz	v0,1f8 <simple_strtoull+0x8c>
+     1b0:	00000000 	nop
+     1b4:	0300c821 	move	t9,t8
+     1b8:	01391021 	addu	v0,t1,t9
+     1bc:	90430000 	lbu	v1,0(v0)
+     1c0:	01a02821 	move	a1,t5
+     1c4:	30620004 	andi	v0,v1,0x4
+     1c8:	10400030 	beqz	v0,28c <simple_strtoull+0x120>
+     1cc:	00002021 	move	a0,zero
+     1d0:	00091600 	sll	v0,t1,0x18
+     1d4:	00021603 	sra	v0,v0,0x18
+     1d8:	2442ffd0 	addiu	v0,v0,-48
+     1dc:	000257c3 	sra	t2,v0,0x1f
+     1e0:	00405821 	move	t3,v0
+     1e4:	0144102b 	sltu	v0,t2,a0
+     1e8:	1440000d 	bnez	v0,220 <simple_strtoull+0xb4>
+     1ec:	00000000 	nop
+     1f0:	108a0009 	beq	a0,t2,218 <simple_strtoull+0xac>
+     1f4:	0165102b 	sltu	v0,t3,a1
+		result = result*base + value;
+		cp++;
+	}
+	if (endp)
+     1f8:	12000002 	beqz	s0,204 <simple_strtoull+0x98>
+     1fc:	00000000 	nop
+		*endp = (char *)cp;
+     200:	ae0c0000 	sw	t4,0(s0)
+	return result;
+     204:	8fb00000 	lw	s0,0(sp)
+     208:	01c01021 	move	v0,t6
+     20c:	01e01821 	move	v1,t7
+     210:	03e00008 	jr	ra
+     214:	27bd0008 	addiu	sp,sp,8
+     218:	1040fff7 	beqz	v0,1f8 <simple_strtoull+0x8c>
+     21c:	00000000 	nop
+     220:	00002021 	move	a0,zero
+     224:	01e40018 	mult	t7,a0
+     228:	01a02821 	move	a1,t5
+     22c:	258c0001 	addiu	t4,t4,1
+     230:	91890000 	lbu	t1,0(t4)
+     234:	00000000 	nop
+     238:	01381021 	addu	v0,t1,t8
+     23c:	90470000 	lbu	a3,0(v0)
+     240:	00000000 	nop
+     244:	30e70044 	andi	a3,a3,0x44
+     248:	00004012 	mflo	t0
+	...
+     254:	01e50019 	multu	t7,a1
+     258:	00001010 	mfhi	v0
+     25c:	00001812 	mflo	v1
+     260:	00481021 	addu	v0,v0,t0
+     264:	006b7821 	addu	t7,v1,t3
+     268:	00ae0018 	mult	a1,t6
+     26c:	01eb202b 	sltu	a0,t7,t3
+     270:	00003012 	mflo	a2
+     274:	00461021 	addu	v0,v0,a2
+     278:	004a7021 	addu	t6,v0,t2
+     27c:	14e0ffce 	bnez	a3,1b8 <simple_strtoull+0x4c>
+     280:	01c47021 	addu	t6,t6,a0
+     284:	0800007e 	j	1f8 <simple_strtoull+0x8c>
+     288:	00000000 	nop
+     28c:	30620002 	andi	v0,v1,0x2
+     290:	1040000d 	beqz	v0,2c8 <simple_strtoull+0x15c>
+     294:	00091600 	sll	v0,t1,0x18
+}
+
+static inline unsigned char __toupper(unsigned char c)
+{
+	if (islower(c))
+     298:	3c020000 	lui	v0,0x0
+     29c:	00491021 	addu	v0,v0,t1
+     2a0:	90420000 	lbu	v0,0(v0)
+     2a4:	00000000 	nop
+     2a8:	30420002 	andi	v0,v0,0x2
+     2ac:	10400003 	beqz	v0,2bc <simple_strtoull+0x150>
+     2b0:	01201821 	move	v1,t1
+		c -= 'a'-'A';
+     2b4:	2522ffe0 	addiu	v0,t1,-32
+     2b8:	304300ff 	andi	v1,v0,0xff
+     2bc:	306200ff 	andi	v0,v1,0xff
+     2c0:	08000077 	j	1dc <simple_strtoull+0x70>
+     2c4:	2442ffc9 	addiu	v0,v0,-55
+     2c8:	00021603 	sra	v0,v0,0x18
+     2cc:	08000077 	j	1dc <simple_strtoull+0x70>
+     2d0:	2442ffc9 	addiu	v0,v0,-55
+     2d4:	81830000 	lb	v1,0(t4)
+     2d8:	24020030 	li	v0,48
+     2dc:	1462ffab 	bne	v1,v0,18c <simple_strtoull+0x20>
+     2e0:	240d000a 	li	t5,10
+     2e4:	258c0001 	addiu	t4,t4,1
+     2e8:	81830000 	lb	v1,0(t4)
+     2ec:	24020078 	li	v0,120
+     2f0:	1462ffa6 	bne	v1,v0,18c <simple_strtoull+0x20>
+     2f4:	240d0008 	li	t5,8
+     2f8:	91830001 	lbu	v1,1(t4)
+     2fc:	3c040000 	lui	a0,0x0
+     300:	24840000 	addiu	a0,a0,0
+     304:	3c020000 	lui	v0,0x0
+     308:	00431021 	addu	v0,v0,v1
+     30c:	90420000 	lbu	v0,0(v0)
+     310:	00000000 	nop
+     314:	30420044 	andi	v0,v0,0x44
+     318:	1040ff9e 	beqz	v0,194 <simple_strtoull+0x28>
+     31c:	00000000 	nop
+     320:	258c0001 	addiu	t4,t4,1
+     324:	08000065 	j	194 <simple_strtoull+0x28>
+     328:	240d0010 	li	t5,16
+
+0000032c <simple_strtoll>:
+     32c:	27bdffe8 	addiu	sp,sp,-24
+     330:	00801021 	move	v0,a0
+     334:	afbf0010 	sw	ra,16(sp)
+}
+
+/**
+ * simple_strtoll - convert a string to a signed long long
+ * @cp: The start of the string
+ * @endp: A pointer to the end of the parsed string will be placed here
+ * @base: The number base to use
+ */
+long long simple_strtoll(const char *cp,char **endp,unsigned int base)
+{
+	if(*cp=='-')
+     338:	80470000 	lb	a3,0(v0)
+     33c:	2403002d 	li	v1,45
+     340:	10e30007 	beq	a3,v1,360 <simple_strtoll+0x34>
+     344:	24480001 	addiu	t0,v0,1
+		return -simple_strtoull(cp+1,endp,base);
+	return simple_strtoull(cp,endp,base);
+     348:	0c000000 	jal	0 <simple_strtoul>
+     34c:	00000000 	nop
+}
+     350:	8fbf0010 	lw	ra,16(sp)
+     354:	00000000 	nop
+     358:	03e00008 	jr	ra
+     35c:	27bd0018 	addiu	sp,sp,24
+     360:	0c000000 	jal	0 <simple_strtoul>
+     364:	01002021 	move	a0,t0
+     368:	00031823 	negu	v1,v1
+     36c:	00021023 	negu	v0,v0
+     370:	0003202b 	sltu	a0,zero,v1
+     374:	00441023 	subu	v0,v0,a0
+     378:	080000d4 	j	350 <simple_strtoll+0x24>
+     37c:	00000000 	nop
+
+00000380 <skip_atoi>:
+     380:	00804021 	move	t0,a0
+
+static int skip_atoi(const char **s)
+{
+	int i=0;
+
+	while (isdigit(**s))
+     384:	8d060000 	lw	a2,0(t0)
+     388:	00000000 	nop
+     38c:	90c30000 	lbu	v1,0(a2)
+     390:	3c020000 	lui	v0,0x0
+     394:	00431021 	addu	v0,v0,v1
+     398:	90420000 	lbu	v0,0(v0)
+     39c:	00000000 	nop
+     3a0:	30420004 	andi	v0,v0,0x4
+     3a4:	10400010 	beqz	v0,3e8 <skip_atoi+0x68>
+     3a8:	00003821 	move	a3,zero
+		i = i*10 + *((*s)++) - '0';
+     3ac:	24c20001 	addiu	v0,a2,1
+     3b0:	80c50000 	lb	a1,0(a2)
+     3b4:	ad020000 	sw	v0,0(t0)
+     3b8:	00403021 	move	a2,v0
+     3bc:	90c40000 	lbu	a0,0(a2)
+     3c0:	00071080 	sll	v0,a3,0x2
+     3c4:	00471021 	addu	v0,v0,a3
+     3c8:	3c030000 	lui	v1,0x0
+     3cc:	00641821 	addu	v1,v1,a0
+     3d0:	90630000 	lbu	v1,0(v1)
+     3d4:	00021040 	sll	v0,v0,0x1
+     3d8:	00451021 	addu	v0,v0,a1
+     3dc:	30630004 	andi	v1,v1,0x4
+     3e0:	1460fff2 	bnez	v1,3ac <skip_atoi+0x2c>
+     3e4:	2447ffd0 	addiu	a3,v0,-48
+	return i;
+     3e8:	03e00008 	jr	ra
+     3ec:	00e01021 	move	v0,a3
+
+000003f0 <number>:
+     3f0:	27bdff48 	addiu	sp,sp,-184
+}
+
+#define ZEROPAD	1		/* pad with zero */
+#define SIGN	2		/* unsigned/signed long */
+#define PLUS	4		/* show plus */
+#define SPACE	8		/* space if plus */
+#define LEFT	16		/* left justified */
+#define SPECIAL	32		/* 0x */
+#define LARGE	64		/* use 'ABCDEF' instead of 'abcdef' */
+
+static char * number(char * buf, char * end, long long num, int base, int size, int precision, int type)
+{
+	char c,sign,tmp[66];
+	const char *digits;
+    const char small_digits[] = "0123456789abcdefghijklmnopqrstuvwxyz";
+     3f4:	3c080000 	lui	t0,0x0
+     3f8:	25080000 	addiu	t0,t0,0
+     3fc:	27a90048 	addiu	t1,sp,72
+     400:	31020003 	andi	v0,t0,0x3
+     404:	afb300a4 	sw	s3,164(sp)
+     408:	afb200a0 	sw	s2,160(sp)
+     40c:	afb1009c 	sw	s1,156(sp)
+     410:	00807021 	move	t6,a0
+     414:	afb700b4 	sw	s7,180(sp)
+     418:	afb600b0 	sw	s6,176(sp)
+     41c:	afb500ac 	sw	s5,172(sp)
+     420:	afb400a8 	sw	s4,168(sp)
+     424:	afb00098 	sw	s0,152(sp)
+     428:	00a09821 	move	s3,a1
+     42c:	00c06021 	move	t4,a2
+     430:	00e06821 	move	t5,a3
+     434:	8fb800c8 	lw	t8,200(sp)
+     438:	8faf00cc 	lw	t7,204(sp)
+     43c:	8fb200d0 	lw	s2,208(sp)
+     440:	8fb100d4 	lw	s1,212(sp)
+     444:	00000000 	nop
+     448:	10400145 	beqz	v0,960 <number+0x570>
+     44c:	01202021 	move	a0,t1
+     450:	25020020 	addiu	v0,t0,32
+     454:	81030000 	lb	v1,0(t0)
+     458:	81050001 	lb	a1,1(t0)
+     45c:	81060002 	lb	a2,2(t0)
+     460:	81070003 	lb	a3,3(t0)
+     464:	a0830000 	sb	v1,0(a0)
+     468:	a0850001 	sb	a1,1(a0)
+     46c:	a0860002 	sb	a2,2(a0)
+     470:	a0870003 	sb	a3,3(a0)
+     474:	81030004 	lb	v1,4(t0)
+     478:	81050005 	lb	a1,5(t0)
+     47c:	81060006 	lb	a2,6(t0)
+     480:	81070007 	lb	a3,7(t0)
+     484:	a0830004 	sb	v1,4(a0)
+     488:	a0850005 	sb	a1,5(a0)
+     48c:	a0860006 	sb	a2,6(a0)
+     490:	a0870007 	sb	a3,7(a0)
+     494:	81030008 	lb	v1,8(t0)
+     498:	81050009 	lb	a1,9(t0)
+     49c:	8106000a 	lb	a2,10(t0)
+     4a0:	8107000b 	lb	a3,11(t0)
+     4a4:	a0830008 	sb	v1,8(a0)
+     4a8:	a0850009 	sb	a1,9(a0)
+     4ac:	a086000a 	sb	a2,10(a0)
+     4b0:	a087000b 	sb	a3,11(a0)
+     4b4:	8103000c 	lb	v1,12(t0)
+     4b8:	8105000d 	lb	a1,13(t0)
+     4bc:	8106000e 	lb	a2,14(t0)
+     4c0:	8107000f 	lb	a3,15(t0)
+     4c4:	a083000c 	sb	v1,12(a0)
+     4c8:	a085000d 	sb	a1,13(a0)
+     4cc:	a086000e 	sb	a2,14(a0)
+     4d0:	a087000f 	sb	a3,15(a0)
+     4d4:	25080010 	addiu	t0,t0,16
+     4d8:	1502ffde 	bne	t0,v0,454 <number+0x64>
+     4dc:	24840010 	addiu	a0,a0,16
+    const char large_digits[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+     4e0:	3c030000 	lui	v1,0x0
+     4e4:	24630028 	addiu	v1,v1,40
+     4e8:	81070000 	lb	a3,0(t0)
+     4ec:	810a0001 	lb	t2,1(t0)
+     4f0:	810b0002 	lb	t3,2(t0)
+     4f4:	81050003 	lb	a1,3(t0)
+     4f8:	a0870000 	sb	a3,0(a0)
+     4fc:	a08a0001 	sb	t2,1(a0)
+     500:	a08b0002 	sb	t3,2(a0)
+     504:	a0850003 	sb	a1,3(a0)
+     508:	81070004 	lb	a3,4(t0)
+     50c:	00000000 	nop
+     510:	27a60070 	addiu	a2,sp,112
+     514:	30620003 	andi	v0,v1,0x3
+     518:	a0870004 	sb	a3,4(a0)
+     51c:	10400102 	beqz	v0,928 <number+0x538>
+     520:	00c02021 	move	a0,a2
+     524:	24620020 	addiu	v0,v1,32
+     528:	80670000 	lb	a3,0(v1)
+     52c:	80680001 	lb	t0,1(v1)
+     530:	806a0002 	lb	t2,2(v1)
+     534:	806b0003 	lb	t3,3(v1)
+     538:	a0870000 	sb	a3,0(a0)
+     53c:	a0880001 	sb	t0,1(a0)
+     540:	a08a0002 	sb	t2,2(a0)
+     544:	a08b0003 	sb	t3,3(a0)
+     548:	80670004 	lb	a3,4(v1)
+     54c:	80680005 	lb	t0,5(v1)
+     550:	806a0006 	lb	t2,6(v1)
+     554:	806b0007 	lb	t3,7(v1)
+     558:	a0870004 	sb	a3,4(a0)
+     55c:	a0880005 	sb	t0,5(a0)
+     560:	a08a0006 	sb	t2,6(a0)
+     564:	a08b0007 	sb	t3,7(a0)
+     568:	80670008 	lb	a3,8(v1)
+     56c:	80680009 	lb	t0,9(v1)
+     570:	806a000a 	lb	t2,10(v1)
+     574:	806b000b 	lb	t3,11(v1)
+     578:	a0870008 	sb	a3,8(a0)
+     57c:	a0880009 	sb	t0,9(a0)
+     580:	a08a000a 	sb	t2,10(a0)
+     584:	a08b000b 	sb	t3,11(a0)
+     588:	8067000c 	lb	a3,12(v1)
+     58c:	8068000d 	lb	t0,13(v1)
+     590:	806a000e 	lb	t2,14(v1)
+     594:	806b000f 	lb	t3,15(v1)
+     598:	a087000c 	sb	a3,12(a0)
+     59c:	a088000d 	sb	t0,13(a0)
+     5a0:	a08a000e 	sb	t2,14(a0)
+     5a4:	a08b000f 	sb	t3,15(a0)
+     5a8:	24630010 	addiu	v1,v1,16
+     5ac:	1462ffde 	bne	v1,v0,528 <number+0x138>
+     5b0:	24840010 	addiu	a0,a0,16
+     5b4:	806b0000 	lb	t3,0(v1)
+     5b8:	80650001 	lb	a1,1(v1)
+     5bc:	80670002 	lb	a3,2(v1)
+     5c0:	80680003 	lb	t0,3(v1)
+     5c4:	a08b0000 	sb	t3,0(a0)
+     5c8:	a0850001 	sb	a1,1(a0)
+     5cc:	a0870002 	sb	a3,2(a0)
+     5d0:	a0880003 	sb	t0,3(a0)
+     5d4:	806b0004 	lb	t3,4(v1)
+     5d8:	00000000 	nop
+    int i;
+
+    digits = (type & LARGE) ? large_digits : small_digits;
+     5dc:	32220040 	andi	v0,s1,0x40
+     5e0:	a08b0004 	sb	t3,4(a0)
+     5e4:	104000ce 	beqz	v0,920 <number+0x530>
+     5e8:	00c0a021 	move	s4,a2
+	if (type & LEFT)
+     5ec:	32220010 	andi	v0,s1,0x10
+     5f0:	10400002 	beqz	v0,5fc <number+0x20c>
+     5f4:	2402fffe 	li	v0,-2
+		type &= ~ZEROPAD;
+     5f8:	02228824 	and	s1,s1,v0
+	if (base < 2 || base > 36)
+     5fc:	2703fffe 	addiu	v1,t8,-2
+     600:	2c630023 	sltiu	v1,v1,35
+     604:	1060007f 	beqz	v1,804 <number+0x414>
+     608:	00001021 	move	v0,zero
+		return 0;
+	c = (type & ZEROPAD) ? '0' : ' ';
+     60c:	32220001 	andi	v0,s1,0x1
+     610:	104000c1 	beqz	v0,918 <number+0x528>
+     614:	24170030 	li	s7,48
+	sign = 0;
+	if (type & SIGN) {
+     618:	32220002 	andi	v0,s1,0x2
+     61c:	10400007 	beqz	v0,63c <number+0x24c>
+     620:	0000a821 	move	s5,zero
+		if (num < 0) {
+     624:	058000b6 	bltz	t4,900 <number+0x510>
+     628:	32220004 	andi	v0,s1,0x4
+			sign = '-';
+			num = -num;
+			size--;
+		} else if (type & PLUS) {
+     62c:	104000b0 	beqz	v0,8f0 <number+0x500>
+     630:	32220008 	andi	v0,s1,0x8
+			sign = '+';
+     634:	2415002b 	li	s5,43
+			size--;
+     638:	25efffff 	addiu	t7,t7,-1
+		} else if (type & SPACE) {
+			sign = ' ';
+			size--;
+		}
+	}
+	if (type & SPECIAL) {
+     63c:	32360020 	andi	s6,s1,0x20
+     640:	12c00005 	beqz	s6,658 <number+0x268>
+     644:	24020010 	li	v0,16
+		if (base == 16)
+     648:	130200a7 	beq	t8,v0,8e8 <number+0x4f8>
+     64c:	24020008 	li	v0,8
+			size -= 2;
+		else if (base == 8)
+     650:	130200a3 	beq	t8,v0,8e0 <number+0x4f0>
+     654:	00000000 	nop
+			size--;
+	}
+	i = 0;
+	if (num == 0)
+     658:	01ac1025 	or	v0,t5,t4
+     65c:	1040009c 	beqz	v0,8d0 <number+0x4e0>
+     660:	00008021 	move	s0,zero
+		tmp[i++]='0';
+	else while (num != 0)
+     664:	01ac1025 	or	v0,t5,t4
+     668:	1040002c 	beqz	v0,71c <number+0x32c>
+     66c:	0250102a 	slt	v0,s2,s0
+		tmp[i++] = digits[do_div(num,base)];
+     670:	000c1802 	srl	v1,t4,0x0
+     674:	00602021 	move	a0,v1
+     678:	03b0c821 	addu	t9,sp,s0
+     67c:	01a03821 	move	a3,t5
+     680:	00601021 	move	v0,v1
+     684:	10800004 	beqz	a0,698 <number+0x2a8>
+     688:	26100001 	addiu	s0,s0,1
+     68c:	0098001b 	divu	zero,a0,t8
+     690:	00001010 	mfhi	v0
+     694:	00002012 	mflo	a0
+     698:	00804821 	move	t1,a0
+     69c:	00403021 	move	a2,v0
+     6a0:	00e02821 	move	a1,a3
+     6a4:	00006021 	move	t4,zero
+     6a8:	00002021 	move	a0,zero
+     6ac:	10000006 	b	6c8 <number+0x2d8>
+     6b0:	24030021 	li	v1,33
+     6b4:	00060840 	sll	at,a2,0x1
+     6b8:	000627c2 	srl	a0,a2,0x1f
+     6bc:	002d3025 	or	a2,at,t5
+     6c0:	00052840 	sll	a1,a1,0x1
+     6c4:	000c6040 	sll	t4,t4,0x1
+     6c8:	14800002 	bnez	a0,6d4 <number+0x2e4>
+     6cc:	00d8682b 	sltu	t5,a2,t8
+     6d0:	15a00003 	bnez	t5,6e0 <number+0x2f0>
+     6d4:	2463ffff 	addiu	v1,v1,-1
+     6d8:	00d83023 	subu	a2,a2,t8
+     6dc:	258c0001 	addiu	t4,t4,1
+     6e0:	1460fff4 	bnez	v1,6b4 <number+0x2c4>
+     6e4:	00056fc2 	srl	t5,a1,0x1f
+     6e8:	01803821 	move	a3,t4
+     6ec:	00091000 	sll	v0,t1,0x0
+     6f0:	00e05821 	move	t3,a3
+     6f4:	00005021 	move	t2,zero
+     6f8:	00001821 	move	v1,zero
+     6fc:	02863021 	addu	a2,s4,a2
+     700:	004a6025 	or	t4,v0,t2
+     704:	006b6825 	or	t5,v1,t3
+     708:	90c40000 	lbu	a0,0(a2)
+     70c:	01ac1025 	or	v0,t5,t4
+     710:	1440ffd7 	bnez	v0,670 <number+0x280>
+     714:	a3240000 	sb	a0,0(t9)
+	if (i > precision)
+     718:	0250102a 	slt	v0,s2,s0
+     71c:	10400002 	beqz	v0,728 <number+0x338>
+     720:	32220011 	andi	v0,s1,0x11
+		precision = i;
+     724:	02009021 	move	s2,s0
+	size -= precision;
+	if (!(type&(ZEROPAD+LEFT))) {
+     728:	1040005c 	beqz	v0,89c <number+0x4ac>
+     72c:	01f27823 	subu	t7,t7,s2
+		while(size-->0) {
+			if (buf <= end)
+				*buf = ' ';
+			++buf;
+		}
+	}
+	if (sign) {
+     730:	12a00005 	beqz	s5,748 <number+0x358>
+     734:	026e102b 	sltu	v0,s3,t6
+		if (buf <= end)
+     738:	14400002 	bnez	v0,744 <number+0x354>
+     73c:	00000000 	nop
+			*buf = sign;
+     740:	a1d50000 	sb	s5,0(t6)
+		++buf;
+     744:	25ce0001 	addiu	t6,t6,1
+	}
+	if (type & SPECIAL) {
+     748:	12c00005 	beqz	s6,760 <number+0x370>
+     74c:	24020008 	li	v0,8
+		if (base==8) {
+     750:	1302004c 	beq	t8,v0,884 <number+0x494>
+     754:	24020010 	li	v0,16
+			if (buf <= end)
+				*buf = '0';
+			++buf;
+		} else if (base==16) {
+     758:	1302003f 	beq	t8,v0,858 <number+0x468>
+     75c:	026e102b 	sltu	v0,s3,t6
+			if (buf <= end)
+				*buf = '0';
+			++buf;
+			if (buf <= end)
+				*buf = digits[33];
+			++buf;
+		}
+	}
+	if (!(type & LEFT)) {
+     760:	32220010 	andi	v0,s1,0x10
+     764:	10400031 	beqz	v0,82c <number+0x43c>
+     768:	01e01021 	move	v0,t7
+		while (size-- > 0) {
+			if (buf <= end)
+				*buf = c;
+			++buf;
+		}
+	}
+	while (i < precision--) {
+     76c:	02401021 	move	v0,s2
+     770:	0202102a 	slt	v0,s0,v0
+     774:	1040000a 	beqz	v0,7a0 <number+0x3b0>
+     778:	2652ffff 	addiu	s2,s2,-1
+     77c:	24040030 	li	a0,48
+		if (buf <= end)
+     780:	02401021 	move	v0,s2
+     784:	026e182b 	sltu	v1,s3,t6
+     788:	0202102a 	slt	v0,s0,v0
+     78c:	14600002 	bnez	v1,798 <number+0x3a8>
+     790:	2652ffff 	addiu	s2,s2,-1
+			*buf = '0';
+     794:	a1c40000 	sb	a0,0(t6)
+		++buf;
+     798:	1440fff9 	bnez	v0,780 <number+0x390>
+     79c:	25ce0001 	addiu	t6,t6,1
+	}
+	while (i-- > 0) {
+     7a0:	02001021 	move	v0,s0
+     7a4:	1840000b 	blez	v0,7d4 <number+0x3e4>
+     7a8:	2610ffff 	addiu	s0,s0,-1
+		if (buf <= end)
+     7ac:	026e102b 	sltu	v0,s3,t6
+     7b0:	03b01821 	addu	v1,sp,s0
+     7b4:	02002021 	move	a0,s0
+     7b8:	14400004 	bnez	v0,7cc <number+0x3dc>
+     7bc:	2610ffff 	addiu	s0,s0,-1
+			*buf = tmp[i];
+     7c0:	90620000 	lbu	v0,0(v1)
+     7c4:	00000000 	nop
+     7c8:	a1c20000 	sb	v0,0(t6)
+		++buf;
+     7cc:	1c80fff7 	bgtz	a0,7ac <number+0x3bc>
+     7d0:	25ce0001 	addiu	t6,t6,1
+	}
+	while (size-- > 0) {
+     7d4:	01e01021 	move	v0,t7
+     7d8:	18400009 	blez	v0,800 <number+0x410>
+     7dc:	25efffff 	addiu	t7,t7,-1
+     7e0:	24040020 	li	a0,32
+		if (buf <= end)
+     7e4:	026e102b 	sltu	v0,s3,t6
+     7e8:	01e01821 	move	v1,t7
+     7ec:	14400002 	bnez	v0,7f8 <number+0x408>
+     7f0:	25efffff 	addiu	t7,t7,-1
+			*buf = ' ';
+     7f4:	a1c40000 	sb	a0,0(t6)
+		++buf;
+     7f8:	1c60fffa 	bgtz	v1,7e4 <number+0x3f4>
+     7fc:	25ce0001 	addiu	t6,t6,1
+	}
+	return buf;
+     800:	01c01021 	move	v0,t6
+}
+     804:	8fb700b4 	lw	s7,180(sp)
+     808:	8fb600b0 	lw	s6,176(sp)
+     80c:	8fb500ac 	lw	s5,172(sp)
+     810:	8fb400a8 	lw	s4,168(sp)
+     814:	8fb300a4 	lw	s3,164(sp)
+     818:	8fb200a0 	lw	s2,160(sp)
+     81c:	8fb1009c 	lw	s1,156(sp)
+     820:	8fb00098 	lw	s0,152(sp)
+     824:	03e00008 	jr	ra
+     828:	27bd00b8 	addiu	sp,sp,184
+     82c:	1840ffcf 	blez	v0,76c <number+0x37c>
+     830:	25efffff 	addiu	t7,t7,-1
+     834:	026e102b 	sltu	v0,s3,t6
+     838:	01e01821 	move	v1,t7
+     83c:	14400002 	bnez	v0,848 <number+0x458>
+     840:	25efffff 	addiu	t7,t7,-1
+     844:	a1d70000 	sb	s7,0(t6)
+     848:	1c60fffa 	bgtz	v1,834 <number+0x444>
+     84c:	25ce0001 	addiu	t6,t6,1
+     850:	080001dc 	j	770 <number+0x380>
+     854:	02401021 	move	v0,s2
+     858:	14400002 	bnez	v0,864 <number+0x474>
+     85c:	24020030 	li	v0,48
+     860:	a1c20000 	sb	v0,0(t6)
+     864:	25ce0001 	addiu	t6,t6,1
+     868:	026e102b 	sltu	v0,s3,t6
+     86c:	14400009 	bnez	v0,894 <number+0x4a4>
+     870:	00000000 	nop
+     874:	92820021 	lbu	v0,33(s4)
+     878:	00000000 	nop
+     87c:	08000225 	j	894 <number+0x4a4>
+     880:	a1c20000 	sb	v0,0(t6)
+     884:	026e102b 	sltu	v0,s3,t6
+     888:	14400002 	bnez	v0,894 <number+0x4a4>
+     88c:	24020030 	li	v0,48
+     890:	a1c20000 	sb	v0,0(t6)
+     894:	080001d8 	j	760 <number+0x370>
+     898:	25ce0001 	addiu	t6,t6,1
+     89c:	01e01021 	move	v0,t7
+     8a0:	1840ffa3 	blez	v0,730 <number+0x340>
+     8a4:	25efffff 	addiu	t7,t7,-1
+     8a8:	24040020 	li	a0,32
+     8ac:	026e102b 	sltu	v0,s3,t6
+     8b0:	01e01821 	move	v1,t7
+     8b4:	14400002 	bnez	v0,8c0 <number+0x4d0>
+     8b8:	25efffff 	addiu	t7,t7,-1
+     8bc:	a1c40000 	sb	a0,0(t6)
+     8c0:	1c60fffa 	bgtz	v1,8ac <number+0x4bc>
+     8c4:	25ce0001 	addiu	t6,t6,1
+     8c8:	080001cc 	j	730 <number+0x340>
+     8cc:	00000000 	nop
+     8d0:	24020030 	li	v0,48
+     8d4:	24100001 	li	s0,1
+     8d8:	080001c6 	j	718 <number+0x328>
+     8dc:	a3a20000 	sb	v0,0(sp)
+     8e0:	08000196 	j	658 <number+0x268>
+     8e4:	25efffff 	addiu	t7,t7,-1
+     8e8:	08000196 	j	658 <number+0x268>
+     8ec:	25effffe 	addiu	t7,t7,-2
+     8f0:	1040ff53 	beqz	v0,640 <number+0x250>
+     8f4:	32360020 	andi	s6,s1,0x20
+     8f8:	0800018e 	j	638 <number+0x248>
+     8fc:	24150020 	li	s5,32
+     900:	000d6823 	negu	t5,t5
+     904:	000c6023 	negu	t4,t4
+     908:	000d102b 	sltu	v0,zero,t5
+     90c:	01826023 	subu	t4,t4,v0
+     910:	0800018e 	j	638 <number+0x248>
+     914:	2415002d 	li	s5,45
+     918:	08000186 	j	618 <number+0x228>
+     91c:	24170020 	li	s7,32
+     920:	0800017b 	j	5ec <number+0x1fc>
+     924:	0120a021 	move	s4,t1
+     928:	24620020 	addiu	v0,v1,32
+     92c:	8c650000 	lw	a1,0(v1)
+     930:	8c670004 	lw	a3,4(v1)
+     934:	8c680008 	lw	t0,8(v1)
+     938:	8c6a000c 	lw	t2,12(v1)
+     93c:	ac850000 	sw	a1,0(a0)
+     940:	ac870004 	sw	a3,4(a0)
+     944:	ac880008 	sw	t0,8(a0)
+     948:	ac8a000c 	sw	t2,12(a0)
+     94c:	24630010 	addiu	v1,v1,16
+     950:	1462fff6 	bne	v1,v0,92c <number+0x53c>
+     954:	24840010 	addiu	a0,a0,16
+     958:	0800016d 	j	5b4 <number+0x1c4>
+     95c:	00000000 	nop
+     960:	25020020 	addiu	v0,t0,32
+     964:	8d0a0000 	lw	t2,0(t0)
+     968:	8d0b0004 	lw	t3,4(t0)
+     96c:	8d030008 	lw	v1,8(t0)
+     970:	8d05000c 	lw	a1,12(t0)
+     974:	ac8a0000 	sw	t2,0(a0)
+     978:	ac8b0004 	sw	t3,4(a0)
+     97c:	ac830008 	sw	v1,8(a0)
+     980:	ac85000c 	sw	a1,12(a0)
+     984:	25080010 	addiu	t0,t0,16
+     988:	1502fff6 	bne	t0,v0,964 <number+0x574>
+     98c:	24840010 	addiu	a0,a0,16
+     990:	08000138 	j	4e0 <number+0xf0>
+     994:	00000000 	nop
+
+00000998 <vsnprintf>:
+     998:	27bdffb8 	addiu	sp,sp,-72
+     99c:	afb7003c 	sw	s7,60(sp)
+     9a0:	afb60038 	sw	s6,56(sp)
+     9a4:	00a0b821 	move	s7,a1
+     9a8:	0080b021 	move	s6,a0
+
+/**
+* vsnprintf - Format a string and place it in a buffer
+* @buf: The buffer to place the result into
+* @size: The size of the buffer, including the trailing null space
+* @fmt: The format string to use
+* @args: Arguments for the format string
+*
+* Call this function if you are already dealing with a va_list.
+* You probably want snprintf instead.
+ */
+int vsnprintf(char *buf, size_t size, const char *fmt, va_list args)
+{
+	int len;
+	unsigned long long num;
+	int i, base;
+	char *str, *end, c;
+	const char *s;
+
+	int flags;		/* flags to number() */
+
+	int field_width;	/* width of output field */
+	int precision;		/* min. # of digits for integers; max
+				   number of chars for from string */
+	int qualifier;		/* 'h', 'l', or 'L' for integer fields */
+				/* 'z' support added 23/7/1999 S.H.    */
+				/* 'z' changed to 'Z' --davidm 1/25/99 */
+
+	str = buf;
+	end = buf + size - 1;
+     9ac:	02d71021 	addu	v0,s6,s7
+     9b0:	afb50034 	sw	s5,52(sp)
+
+	if (end < buf - 1) {
+     9b4:	26c3ffff 	addiu	v1,s6,-1
+     9b8:	2455ffff 	addiu	s5,v0,-1
+     9bc:	02a3182b 	sltu	v1,s5,v1
+     9c0:	afb20028 	sw	s2,40(sp)
+     9c4:	afb00020 	sw	s0,32(sp)
+     9c8:	afbf0040 	sw	ra,64(sp)
+     9cc:	afb40030 	sw	s4,48(sp)
+     9d0:	afb3002c 	sw	s3,44(sp)
+     9d4:	afb10024 	sw	s1,36(sp)
+     9d8:	afa60050 	sw	a2,80(sp)
+     9dc:	00e08021 	move	s0,a3
+     9e0:	10600004 	beqz	v1,9f4 <vsnprintf+0x5c>
+     9e4:	02c09021 	move	s2,s6
+		end = ((void *) -1);
+		size = end - buf + 1;
+     9e8:	00161027 	nor	v0,zero,s6
+     9ec:	24570001 	addiu	s7,v0,1
+     9f0:	2415ffff 	li	s5,-1
+	}
+
+	for (; *fmt ; ++fmt) {
+     9f4:	00c02021 	move	a0,a2
+     9f8:	00802821 	move	a1,a0
+     9fc:	80a20000 	lb	v0,0(a1)
+     a00:	00000000 	nop
+     a04:	10400014 	beqz	v0,a58 <vsnprintf+0xc0>
+     a08:	02b2102b 	sltu	v0,s5,s2
+		if (*fmt != '%') {
+     a0c:	80a30000 	lb	v1,0(a1)
+     a10:	24020025 	li	v0,37
+     a14:	90a50000 	lbu	a1,0(a1)
+     a18:	10620021 	beq	v1,v0,aa0 <vsnprintf+0x108>
+     a1c:	02b2102b 	sltu	v0,s5,s2
+			if (str <= end)
+     a20:	14400004 	bnez	v0,a34 <vsnprintf+0x9c>
+     a24:	00000000 	nop
+				*str = *fmt;
+     a28:	a2450000 	sb	a1,0(s2)
+     a2c:	8fa40050 	lw	a0,80(sp)
+     a30:	00000000 	nop
+			++str;
+     a34:	26520001 	addiu	s2,s2,1
+			continue;
+     a38:	24820001 	addiu	v0,a0,1
+     a3c:	00402821 	move	a1,v0
+     a40:	afa20050 	sw	v0,80(sp)
+     a44:	80a30000 	lb	v1,0(a1)
+     a48:	00000000 	nop
+     a4c:	1460fff0 	bnez	v1,a10 <vsnprintf+0x78>
+     a50:	00a02021 	move	a0,a1
+		}
+
+		/* process flags */
+		flags = 0;
+		repeat:
+			++fmt;		/* this also skips first '%' */
+			switch (*fmt) {
+				case '-': flags |= LEFT; goto repeat;
+				case '+': flags |= PLUS; goto repeat;
+				case ' ': flags |= SPACE; goto repeat;
+				case '#': flags |= SPECIAL; goto repeat;
+				case '0': flags |= ZEROPAD; goto repeat;
+			}
+
+		/* get field width */
+		field_width = -1;
+		if (isdigit(*fmt))
+			field_width = skip_atoi(&fmt);
+		else if (*fmt == '*') {
+			++fmt;
+			/* it's the next argument */
+			field_width = va_arg(args, int);
+			if (field_width < 0) {
+				field_width = -field_width;
+				flags |= LEFT;
+			}
+		}
+
+		/* get the precision */
+		precision = -1;
+		if (*fmt == '.') {
+			++fmt;	
+			if (isdigit(*fmt))
+				precision = skip_atoi(&fmt);
+			else if (*fmt == '*') {
+				++fmt;
+				/* it's the next argument */
+				precision = va_arg(args, int);
+			}
+			if (precision < 0)
+				precision = 0;
+		}
+
+		/* get the conversion qualifier */
+		qualifier = -1;
+		if (*fmt == 'h' || *fmt == 'l' || *fmt == 'L' || *fmt =='Z') {
+			qualifier = *fmt;
+			++fmt;
+			if (qualifier == 'l' && *fmt == 'l') {
+				qualifier = 'L';
+				++fmt;
+			}
+		}
+
+		/* default base */
+		base = 10;
+
+		switch (*fmt) {
+			case 'c':
+				if (!(flags & LEFT)) {
+					while (--field_width > 0) {
+						if (str <= end)
+							*str = ' ';
+						++str;
+					}
+				}
+				c = (unsigned char) va_arg(args, int);
+				if (str <= end)
+					*str = c;
+				++str;
+				while (--field_width > 0) {
+					if (str <= end)
+						*str = ' ';
+					++str;
+				}
+				continue;
+
+			case 's':
+				s = va_arg(args, char *);
+				if (!s)
+					s = "<NULL>";
+
+				len = strnlen(s, precision);
+
+				if (!(flags & LEFT)) {
+					while (len < field_width--) {
+						if (str <= end)
+							*str = ' ';
+						++str;
+					}
+				}
+				for (i = 0; i < len; ++i) {
+					if (str <= end)
+						*str = *s;
+					++str; ++s;
+				}
+				while (len < field_width--) {
+					if (str <= end)
+						*str = ' ';
+					++str;
+				}
+				continue;
+
+			case 'p':
+				if (field_width == -1) {
+					field_width = 2*sizeof(void *);
+					flags |= ZEROPAD;
+				}
+				str = number(str, end,
+						(unsigned long) va_arg(args, void *),
+						16, field_width, precision, flags);
+				continue;
+
+
+			case 'n':
+				/* FIXME:
+				* What does C99 say about the overflow case here? */
+				if (qualifier == 'l') {
+					long * ip = va_arg(args, long *);
+					*ip = (str - buf);
+				} else if (qualifier == 'Z') {
+					size_t * ip = va_arg(args, size_t *);
+					*ip = (str - buf);
+				} else {
+					int * ip = va_arg(args, int *);
+					*ip = (str - buf);
+				}
+				continue;
+
+			case '%':
+				if (str <= end)
+					*str = '%';
+				++str;
+				continue;
+
+				/* integer number formats - set up the flags and "break" */
+			case 'o':
+				base = 8;
+				break;
+
+			case 'X':
+				flags |= LARGE;
+			case 'x':
+				base = 16;
+				break;
+
+			case 'd':
+			case 'i':
+				flags |= SIGN;
+			case 'u':
+				break;
+
+			default:
+				if (str <= end)
+					*str = '%';
+				++str;
+				if (*fmt) {
+					if (str <= end)
+						*str = *fmt;
+					++str;
+				} else {
+					--fmt;
+				}
+				continue;
+		}
+		if (qualifier == 'L')
+			num = va_arg(args, long long);
+		else if (qualifier == 'l') {
+			num = va_arg(args, unsigned long);
+			if (flags & SIGN)
+				num = (signed long) num;
+		} else if (qualifier == 'Z') {
+			num = va_arg(args, size_t);
+		} else if (qualifier == 'h') {
+			num = (unsigned short) va_arg(args, int);
+			if (flags & SIGN)
+				num = (signed short) num;
+		} else {
+			num = va_arg(args, unsigned int);
+			if (flags & SIGN)
+				num = (signed int) num;
+		}
+		str = number(str, end, num, base,
+				field_width, precision, flags);
+	}
+	if (str <= end)
+     a54:	02b2102b 	sltu	v0,s5,s2
+     a58:	1440000d 	bnez	v0,a90 <vsnprintf+0xf8>
+     a5c:	02561023 	subu	v0,s2,s6
+		*str = '\0';
+     a60:	a2400000 	sb	zero,0(s2)
+	else if (size > 0)
+		/* don't write out a null byte if the buf size is zero */
+		*end = '\0';
+	/* the trailing null byte doesn't count towards the total
+	* ++str;
+	*/
+	return str-buf;
+     a64:	8fbf0040 	lw	ra,64(sp)
+     a68:	8fb7003c 	lw	s7,60(sp)
+     a6c:	8fb60038 	lw	s6,56(sp)
+     a70:	8fb50034 	lw	s5,52(sp)
+     a74:	8fb40030 	lw	s4,48(sp)
+     a78:	8fb3002c 	lw	s3,44(sp)
+     a7c:	8fb20028 	lw	s2,40(sp)
+     a80:	8fb10024 	lw	s1,36(sp)
+     a84:	8fb00020 	lw	s0,32(sp)
+     a88:	03e00008 	jr	ra
+     a8c:	27bd0048 	addiu	sp,sp,72
+     a90:	12e0fff4 	beqz	s7,a64 <vsnprintf+0xcc>
+     a94:	00000000 	nop
+     a98:	08000299 	j	a64 <vsnprintf+0xcc>
+     a9c:	a2a00000 	sb	zero,0(s5)
+     aa0:	0000a021 	move	s4,zero
+     aa4:	24820001 	addiu	v0,a0,1
+     aa8:	00402021 	move	a0,v0
+     aac:	afa20050 	sw	v0,80(sp)
+     ab0:	90830000 	lbu	v1,0(a0)
+     ab4:	00000000 	nop
+     ab8:	2463ffe0 	addiu	v1,v1,-32
+     abc:	306300ff 	andi	v1,v1,0xff
+     ac0:	2c620011 	sltiu	v0,v1,17
+     ac4:	10400010 	beqz	v0,b08 <vsnprintf+0x170>
+     ac8:	00802821 	move	a1,a0
+     acc:	00031080 	sll	v0,v1,0x2
+     ad0:	3c030000 	lui	v1,0x0
+     ad4:	00621821 	addu	v1,v1,v0
+     ad8:	8c630058 	lw	v1,88(v1)
+     adc:	00000000 	nop
+     ae0:	00600008 	jr	v1
+     ae4:	00000000 	nop
+     ae8:	080002a9 	j	aa4 <vsnprintf+0x10c>
+     aec:	36940010 	ori	s4,s4,0x10
+     af0:	080002a9 	j	aa4 <vsnprintf+0x10c>
+     af4:	36940008 	ori	s4,s4,0x8
+     af8:	080002a9 	j	aa4 <vsnprintf+0x10c>
+     afc:	36940020 	ori	s4,s4,0x20
+     b00:	080002a9 	j	aa4 <vsnprintf+0x10c>
+     b04:	36940004 	ori	s4,s4,0x4
+     b08:	90a30000 	lbu	v1,0(a1)
+     b0c:	00000000 	nop
+     b10:	3c020000 	lui	v0,0x0
+     b14:	00431021 	addu	v0,v0,v1
+     b18:	90420000 	lbu	v0,0(v0)
+     b1c:	00000000 	nop
+     b20:	30420004 	andi	v0,v0,0x4
+     b24:	10400130 	beqz	v0,fe8 <vsnprintf+0x650>
+     b28:	2413ffff 	li	s3,-1
+     b2c:	0c0000e0 	jal	380 <skip_atoi>
+     b30:	27a40050 	addiu	a0,sp,80
+     b34:	8fa40050 	lw	a0,80(sp)
+     b38:	00409821 	move	s3,v0
+     b3c:	80830000 	lb	v1,0(a0)
+     b40:	2402002e 	li	v0,46
+     b44:	10620109 	beq	v1,v0,f6c <vsnprintf+0x5d4>
+     b48:	2408ffff 	li	t0,-1
+     b4c:	80830000 	lb	v1,0(a0)
+     b50:	24020068 	li	v0,104
+     b54:	106200f7 	beq	v1,v0,f34 <vsnprintf+0x59c>
+     b58:	2405ffff 	li	a1,-1
+     b5c:	2402006c 	li	v0,108
+     b60:	106200f4 	beq	v1,v0,f34 <vsnprintf+0x59c>
+     b64:	2402004c 	li	v0,76
+     b68:	106200f2 	beq	v1,v0,f34 <vsnprintf+0x59c>
+     b6c:	2402005a 	li	v0,90
+     b70:	106200f0 	beq	v1,v0,f34 <vsnprintf+0x59c>
+     b74:	00000000 	nop
+     b78:	90820000 	lbu	v0,0(a0)
+     b7c:	00000000 	nop
+     b80:	2442ffdb 	addiu	v0,v0,-37
+     b84:	304200ff 	andi	v0,v0,0xff
+     b88:	2c430054 	sltiu	v1,v0,84
+     b8c:	106000d5 	beqz	v1,ee4 <vsnprintf+0x54c>
+     b90:	2409000a 	li	t1,10
+     b94:	00021080 	sll	v0,v0,0x2
+     b98:	3c030000 	lui	v1,0x0
+     b9c:	00621821 	addu	v1,v1,v0
+     ba0:	8c6300a0 	lw	v1,160(v1)
+     ba4:	00000000 	nop
+     ba8:	00600008 	jr	v1
+     bac:	00000000 	nop
+     bb0:	32820010 	andi	v0,s4,0x10
+     bb4:	10400018 	beqz	v0,c18 <vsnprintf+0x280>
+     bb8:	26030003 	addiu	v1,s0,3
+     bbc:	2402fffc 	li	v0,-4
+     bc0:	00628024 	and	s0,v1,v0
+     bc4:	02002021 	move	a0,s0
+     bc8:	02b2102b 	sltu	v0,s5,s2
+     bcc:	80830003 	lb	v1,3(a0)
+     bd0:	00000000 	nop
+     bd4:	14400002 	bnez	v0,be0 <vsnprintf+0x248>
+     bd8:	26100004 	addiu	s0,s0,4
+     bdc:	a2430000 	sb	v1,0(s2)
+     be0:	2673ffff 	addiu	s3,s3,-1
+     be4:	1a600009 	blez	s3,c0c <vsnprintf+0x274>
+     be8:	26520001 	addiu	s2,s2,1
+     bec:	24030020 	li	v1,32
+     bf0:	02b2102b 	sltu	v0,s5,s2
+     bf4:	14400002 	bnez	v0,c00 <vsnprintf+0x268>
+     bf8:	00000000 	nop
+     bfc:	a2430000 	sb	v1,0(s2)
+     c00:	2673ffff 	addiu	s3,s3,-1
+     c04:	1e60fffa 	bgtz	s3,bf0 <vsnprintf+0x258>
+     c08:	26520001 	addiu	s2,s2,1
+     c0c:	8fa40050 	lw	a0,80(sp)
+     c10:	0800028f 	j	a3c <vsnprintf+0xa4>
+     c14:	24820001 	addiu	v0,a0,1
+     c18:	2673ffff 	addiu	s3,s3,-1
+     c1c:	1a60ffe7 	blez	s3,bbc <vsnprintf+0x224>
+     c20:	00000000 	nop
+     c24:	24030020 	li	v1,32
+     c28:	02b2102b 	sltu	v0,s5,s2
+     c2c:	14400002 	bnez	v0,c38 <vsnprintf+0x2a0>
+     c30:	00000000 	nop
+     c34:	a2430000 	sb	v1,0(s2)
+     c38:	2673ffff 	addiu	s3,s3,-1
+     c3c:	1e60fffa 	bgtz	s3,c28 <vsnprintf+0x290>
+     c40:	26520001 	addiu	s2,s2,1
+     c44:	080002ef 	j	bbc <vsnprintf+0x224>
+     c48:	26030003 	addiu	v1,s0,3
+     c4c:	02b2102b 	sltu	v0,s5,s2
+     c50:	1440ff78 	bnez	v0,a34 <vsnprintf+0x9c>
+     c54:	24020025 	li	v0,37
+     c58:	0800028b 	j	a2c <vsnprintf+0x94>
+     c5c:	a2420000 	sb	v0,0(s2)
+     c60:	36940040 	ori	s4,s4,0x40
+     c64:	24090010 	li	t1,16
+     c68:	2402004c 	li	v0,76
+     c6c:	10a2002f 	beq	a1,v0,d2c <vsnprintf+0x394>
+     c70:	2402006c 	li	v0,108
+     c74:	10a20005 	beq	a1,v0,c8c <vsnprintf+0x2f4>
+     c78:	2402005a 	li	v0,90
+     c7c:	10a20023 	beq	a1,v0,d0c <vsnprintf+0x374>
+     c80:	24020068 	li	v0,104
+     c84:	10a20016 	beq	a1,v0,ce0 <vsnprintf+0x348>
+     c88:	2402fffc 	li	v0,-4
+     c8c:	2402fffc 	li	v0,-4
+     c90:	26030003 	addiu	v1,s0,3
+     c94:	00628024 	and	s0,v1,v0
+     c98:	02002021 	move	a0,s0
+     c9c:	32820002 	andi	v0,s4,0x2
+     ca0:	8c870000 	lw	a3,0(a0)
+     ca4:	00003021 	move	a2,zero
+     ca8:	10400003 	beqz	v0,cb8 <vsnprintf+0x320>
+     cac:	26100004 	addiu	s0,s0,4
+     cb0:	00e01021 	move	v0,a3
+     cb4:	000237c3 	sra	a2,v0,0x1f
+     cb8:	02402021 	move	a0,s2
+     cbc:	02a02821 	move	a1,s5
+     cc0:	afa90010 	sw	t1,16(sp)
+     cc4:	afb30014 	sw	s3,20(sp)
+     cc8:	afa80018 	sw	t0,24(sp)
+     ccc:	0c0000fc 	jal	3f0 <number>
+     cd0:	afb4001c 	sw	s4,28(sp)
+     cd4:	8fa40050 	lw	a0,80(sp)
+     cd8:	0800028e 	j	a38 <vsnprintf+0xa0>
+     cdc:	00409021 	move	s2,v0
+     ce0:	26030003 	addiu	v1,s0,3
+     ce4:	00628024 	and	s0,v1,v0
+     ce8:	02002021 	move	a0,s0
+     cec:	32820002 	andi	v0,s4,0x2
+     cf0:	94870002 	lhu	a3,2(a0)
+     cf4:	00003021 	move	a2,zero
+     cf8:	1040ffef 	beqz	v0,cb8 <vsnprintf+0x320>
+     cfc:	26100004 	addiu	s0,s0,4
+     d00:	00071400 	sll	v0,a3,0x10
+     d04:	0800032d 	j	cb4 <vsnprintf+0x31c>
+     d08:	00023c03 	sra	a3,v0,0x10
+     d0c:	26020003 	addiu	v0,s0,3
+     d10:	2403fffc 	li	v1,-4
+     d14:	00438024 	and	s0,v0,v1
+     d18:	02002021 	move	a0,s0
+     d1c:	8c870000 	lw	a3,0(a0)
+     d20:	00003021 	move	a2,zero
+     d24:	0800032e 	j	cb8 <vsnprintf+0x320>
+     d28:	26100004 	addiu	s0,s0,4
+     d2c:	26020007 	addiu	v0,s0,7
+     d30:	2403fff8 	li	v1,-8
+     d34:	00438024 	and	s0,v0,v1
+     d38:	02002021 	move	a0,s0
+     d3c:	8c860000 	lw	a2,0(a0)
+     d40:	8c870004 	lw	a3,4(a0)
+     d44:	0800032e 	j	cb8 <vsnprintf+0x320>
+     d48:	26100008 	addiu	s0,s0,8
+     d4c:	0800031a 	j	c68 <vsnprintf+0x2d0>
+     d50:	36940002 	ori	s4,s4,0x2
+     d54:	26040003 	addiu	a0,s0,3
+     d58:	2402fffc 	li	v0,-4
+     d5c:	00828024 	and	s0,a0,v0
+     d60:	02001821 	move	v1,s0
+     d64:	8c640000 	lw	a0,0(v1)
+     d68:	00000000 	nop
+     d6c:	02561023 	subu	v0,s2,s6
+     d70:	ac820000 	sw	v0,0(a0)
+     d74:	8fa40050 	lw	a0,80(sp)
+     d78:	00000000 	nop
+     d7c:	0800028e 	j	a38 <vsnprintf+0xa0>
+     d80:	26100004 	addiu	s0,s0,4
+     d84:	0800031a 	j	c68 <vsnprintf+0x2d0>
+     d88:	24090008 	li	t1,8
+     d8c:	2402ffff 	li	v0,-1
+     d90:	12620014 	beq	s3,v0,de4 <vsnprintf+0x44c>
+     d94:	00000000 	nop
+     d98:	26030003 	addiu	v1,s0,3
+     d9c:	2402fffc 	li	v0,-4
+     da0:	00628024 	and	s0,v1,v0
+     da4:	02002021 	move	a0,s0
+     da8:	8c870000 	lw	a3,0(a0)
+     dac:	24020010 	li	v0,16
+     db0:	02402021 	move	a0,s2
+     db4:	00003021 	move	a2,zero
+     db8:	02a02821 	move	a1,s5
+     dbc:	afa20010 	sw	v0,16(sp)
+     dc0:	afb30014 	sw	s3,20(sp)
+     dc4:	afa80018 	sw	t0,24(sp)
+     dc8:	0c0000fc 	jal	3f0 <number>
+     dcc:	afb4001c 	sw	s4,28(sp)
+     dd0:	8fa40050 	lw	a0,80(sp)
+     dd4:	00000000 	nop
+     dd8:	00409021 	move	s2,v0
+     ddc:	0800028e 	j	a38 <vsnprintf+0xa0>
+     de0:	26100004 	addiu	s0,s0,4
+     de4:	24130008 	li	s3,8
+     de8:	08000366 	j	d98 <vsnprintf+0x400>
+     dec:	36940001 	ori	s4,s4,0x1
+     df0:	26020003 	addiu	v0,s0,3
+     df4:	2403fffc 	li	v1,-4
+     df8:	00438024 	and	s0,v0,v1
+     dfc:	02002021 	move	a0,s0
+     e00:	8c910000 	lw	s1,0(a0)
+     e04:	00000000 	nop
+     e08:	12200032 	beqz	s1,ed4 <vsnprintf+0x53c>
+     e0c:	26100004 	addiu	s0,s0,4
+     e10:	02202021 	move	a0,s1
+     e14:	0c000000 	jal	0 <simple_strtoul>
+     e18:	01002821 	move	a1,t0
+     e1c:	00402021 	move	a0,v0
+     e20:	32820010 	andi	v0,s4,0x10
+     e24:	1040001d 	beqz	v0,e9c <vsnprintf+0x504>
+     e28:	02601021 	move	v0,s3
+     e2c:	1880000d 	blez	a0,e64 <vsnprintf+0x4cc>
+     e30:	02601021 	move	v0,s3
+     e34:	00801821 	move	v1,a0
+     e38:	02b2102b 	sltu	v0,s5,s2
+     e3c:	14400004 	bnez	v0,e50 <vsnprintf+0x4b8>
+     e40:	00000000 	nop
+     e44:	92220000 	lbu	v0,0(s1)
+     e48:	00000000 	nop
+     e4c:	a2420000 	sb	v0,0(s2)
+     e50:	2463ffff 	addiu	v1,v1,-1
+     e54:	26520001 	addiu	s2,s2,1
+     e58:	1460fff7 	bnez	v1,e38 <vsnprintf+0x4a0>
+     e5c:	26310001 	addiu	s1,s1,1
+     e60:	02601021 	move	v0,s3
+     e64:	0082102a 	slt	v0,a0,v0
+     e68:	1040ff68 	beqz	v0,c0c <vsnprintf+0x274>
+     e6c:	2673ffff 	addiu	s3,s3,-1
+     e70:	24030020 	li	v1,32
+     e74:	02b2102b 	sltu	v0,s5,s2
+     e78:	14400002 	bnez	v0,e84 <vsnprintf+0x4ec>
+     e7c:	02601021 	move	v0,s3
+     e80:	a2430000 	sb	v1,0(s2)
+     e84:	0082102a 	slt	v0,a0,v0
+     e88:	26520001 	addiu	s2,s2,1
+     e8c:	1440fff9 	bnez	v0,e74 <vsnprintf+0x4dc>
+     e90:	2673ffff 	addiu	s3,s3,-1
+     e94:	08000303 	j	c0c <vsnprintf+0x274>
+     e98:	00000000 	nop
+     e9c:	0082102a 	slt	v0,a0,v0
+     ea0:	1040ffe2 	beqz	v0,e2c <vsnprintf+0x494>
+     ea4:	2673ffff 	addiu	s3,s3,-1
+     ea8:	24030020 	li	v1,32
+     eac:	02b2102b 	sltu	v0,s5,s2
+     eb0:	14400002 	bnez	v0,ebc <vsnprintf+0x524>
+     eb4:	02601021 	move	v0,s3
+     eb8:	a2430000 	sb	v1,0(s2)
+     ebc:	0082102a 	slt	v0,a0,v0
+     ec0:	26520001 	addiu	s2,s2,1
+     ec4:	1440fff9 	bnez	v0,eac <vsnprintf+0x514>
+     ec8:	2673ffff 	addiu	s3,s3,-1
+     ecc:	0800038b 	j	e2c <vsnprintf+0x494>
+     ed0:	00000000 	nop
+     ed4:	3c110000 	lui	s1,0x0
+     ed8:	26310050 	addiu	s1,s1,80
+     edc:	08000385 	j	e14 <vsnprintf+0x47c>
+     ee0:	02202021 	move	a0,s1
+     ee4:	02b2102b 	sltu	v0,s5,s2
+     ee8:	14400004 	bnez	v0,efc <vsnprintf+0x564>
+     eec:	24020025 	li	v0,37
+     ef0:	a2420000 	sb	v0,0(s2)
+     ef4:	8fa40050 	lw	a0,80(sp)
+     ef8:	00000000 	nop
+     efc:	80820000 	lb	v0,0(a0)
+     f00:	00000000 	nop
+     f04:	90830000 	lbu	v1,0(a0)
+     f08:	10400006 	beqz	v0,f24 <vsnprintf+0x58c>
+     f0c:	26520001 	addiu	s2,s2,1
+     f10:	02b2102b 	sltu	v0,s5,s2
+     f14:	1440fec7 	bnez	v0,a34 <vsnprintf+0x9c>
+     f18:	00000000 	nop
+     f1c:	0800028b 	j	a2c <vsnprintf+0x94>
+     f20:	a2430000 	sb	v1,0(s2)
+     f24:	2482ffff 	addiu	v0,a0,-1
+     f28:	00402021 	move	a0,v0
+     f2c:	0800028e 	j	a38 <vsnprintf+0xa0>
+     f30:	afa20050 	sw	v0,80(sp)
+     f34:	80850000 	lb	a1,0(a0)
+     f38:	00000000 	nop
+     f3c:	2402006c 	li	v0,108
+     f40:	24840001 	addiu	a0,a0,1
+     f44:	14a2ff0c 	bne	a1,v0,b78 <vsnprintf+0x1e0>
+     f48:	afa40050 	sw	a0,80(sp)
+     f4c:	80820000 	lb	v0,0(a0)
+     f50:	00000000 	nop
+     f54:	1445ff08 	bne	v0,a1,b78 <vsnprintf+0x1e0>
+     f58:	24820001 	addiu	v0,a0,1
+     f5c:	00402021 	move	a0,v0
+     f60:	2405004c 	li	a1,76
+     f64:	080002de 	j	b78 <vsnprintf+0x1e0>
+     f68:	afa20050 	sw	v0,80(sp)
+     f6c:	24820001 	addiu	v0,a0,1
+     f70:	afa20050 	sw	v0,80(sp)
+     f74:	00402021 	move	a0,v0
+     f78:	90830000 	lbu	v1,0(a0)
+     f7c:	3c020000 	lui	v0,0x0
+     f80:	00431021 	addu	v0,v0,v1
+     f84:	90420000 	lbu	v0,0(v0)
+     f88:	00000000 	nop
+     f8c:	30420004 	andi	v0,v0,0x4
+     f90:	10400009 	beqz	v0,fb8 <vsnprintf+0x620>
+     f94:	00031600 	sll	v0,v1,0x18
+     f98:	0c0000e0 	jal	380 <skip_atoi>
+     f9c:	27a40050 	addiu	a0,sp,80
+     fa0:	8fa40050 	lw	a0,80(sp)
+     fa4:	00404021 	move	t0,v0
+     fa8:	0501fee8 	bgez	t0,b4c <vsnprintf+0x1b4>
+     fac:	00000000 	nop
+     fb0:	080002d3 	j	b4c <vsnprintf+0x1b4>
+     fb4:	00004021 	move	t0,zero
+     fb8:	00021603 	sra	v0,v0,0x18
+     fbc:	2403002a 	li	v1,42
+     fc0:	1443fff9 	bne	v0,v1,fa8 <vsnprintf+0x610>
+     fc4:	2402fffc 	li	v0,-4
+     fc8:	26030003 	addiu	v1,s0,3
+     fcc:	00628024 	and	s0,v1,v0
+     fd0:	24840001 	addiu	a0,a0,1
+     fd4:	02001021 	move	v0,s0
+     fd8:	afa40050 	sw	a0,80(sp)
+     fdc:	8c480000 	lw	t0,0(v0)
+     fe0:	080003ea 	j	fa8 <vsnprintf+0x610>
+     fe4:	26100004 	addiu	s0,s0,4
+     fe8:	00031600 	sll	v0,v1,0x18
+     fec:	00021603 	sra	v0,v0,0x18
+     ff0:	2403002a 	li	v1,42
+     ff4:	1443fed1 	bne	v0,v1,b3c <vsnprintf+0x1a4>
+     ff8:	26020003 	addiu	v0,s0,3
+     ffc:	2403fffc 	li	v1,-4
+    1000:	00438024 	and	s0,v0,v1
+    1004:	24a40001 	addiu	a0,a1,1
+    1008:	02001021 	move	v0,s0
+    100c:	afa40050 	sw	a0,80(sp)
+    1010:	8c530000 	lw	s3,0(v0)
+    1014:	00000000 	nop
+    1018:	0661fec8 	bgez	s3,b3c <vsnprintf+0x1a4>
+    101c:	26100004 	addiu	s0,s0,4
+    1020:	00139823 	negu	s3,s3
+    1024:	080002cf 	j	b3c <vsnprintf+0x1a4>
+    1028:	36940010 	ori	s4,s4,0x10
+    102c:	080002a9 	j	aa4 <vsnprintf+0x10c>
+    1030:	36940001 	ori	s4,s4,0x1
+
+00001034 <snprintf>:
+    1034:	afa60008 	sw	a2,8(sp)
+    1038:	afa7000c 	sw	a3,12(sp)
+    103c:	27bdffe8 	addiu	sp,sp,-24
+}
+
+/**
+ * snprintf - Format a string and place it in a buffer
+ * @buf: The buffer to place the result into
+ * @size: The size of the buffer, including the trailing null space
+ * @fmt: The format string to use
+ * @...: Arguments for the format string
+ */
+int snprintf(char * buf, size_t size, const char *fmt, ...)
+{
+    1040:	afbf0010 	sw	ra,16(sp)
+	va_list args;
+	int i;
+
+	va_start(args, fmt);
+	i=vsnprintf(buf,size,fmt,args);
+    1044:	0c000000 	jal	0 <simple_strtoul>
+    1048:	27a70024 	addiu	a3,sp,36
+    104c:	8fbf0010 	lw	ra,16(sp)
+    1050:	00000000 	nop
+    1054:	03e00008 	jr	ra
+    1058:	27bd0018 	addiu	sp,sp,24
+
+0000105c <vsprintf>:
+    105c:	27bdffe8 	addiu	sp,sp,-24
+	va_end(args);
+	return i;
+}
+
+/**
+ * vsprintf - Format a string and place it in a buffer
+ * @buf: The buffer to place the result into
+ * @fmt: The format string to use
+ * @args: Arguments for the format string
+ *
+ * Call this function if you are already dealing with a va_list.
+ * You probably want sprintf instead.
+ */
+int vsprintf(char *buf, const char *fmt, va_list args)
+{
+	return vsnprintf(buf, 0xFFFFFFFFUL, fmt, args);
+    1060:	00c03821 	move	a3,a2
+    1064:	00a03021 	move	a2,a1
+    1068:	afbf0010 	sw	ra,16(sp)
+    106c:	0c000000 	jal	0 <simple_strtoul>
+    1070:	2405ffff 	li	a1,-1
+    1074:	8fbf0010 	lw	ra,16(sp)
+    1078:	00000000 	nop
+    107c:	03e00008 	jr	ra
+    1080:	27bd0018 	addiu	sp,sp,24
+
+00001084 <sprintf>:
+    1084:	afa50004 	sw	a1,4(sp)
+    1088:	afa60008 	sw	a2,8(sp)
+    108c:	afa7000c 	sw	a3,12(sp)
+    1090:	27bdffe8 	addiu	sp,sp,-24
+}
+
+
+/**
+ * sprintf - Format a string and place it in a buffer
+ * @buf: The buffer to place the result into
+ * @fmt: The format string to use
+ * @...: Arguments for the format string
+ */
+int sprintf(char * buf, const char *fmt, ...)
+{
+    1094:	afbf0010 	sw	ra,16(sp)
+	va_list args;
+	int i;
+
+	va_start(args, fmt);
+	i=vsprintf(buf,fmt,args);
+    1098:	0c000000 	jal	0 <simple_strtoul>
+    109c:	27a60020 	addiu	a2,sp,32
+    10a0:	8fbf0010 	lw	ra,16(sp)
+    10a4:	00000000 	nop
+    10a8:	03e00008 	jr	ra
+    10ac:	27bd0018 	addiu	sp,sp,24
+
+000010b0 <vsscanf>:
+    10b0:	27bdffc8 	addiu	sp,sp,-56
+	va_end(args);
+	return i;
+}
+
+/**
+ * vsscanf - Unformat a buffer into a list of arguments
+ * @buf:	input buffer
+ * @fmt:	format of buffer
+ * @args:	arguments
+ */
+int vsscanf(const char * buf, const char * fmt, va_list args)
+{
+	const char *str = buf;
+	char *next;
+	int num = 0;
+	int qualifier;
+	int base;
+	int field_width = -1;
+	int is_sign = 0;
+
+	while(*fmt && *str) {
+    10b4:	00a03821 	move	a3,a1
+    10b8:	afb5002c 	sw	s5,44(sp)
+    10bc:	afb40028 	sw	s4,40(sp)
+    10c0:	afb30024 	sw	s3,36(sp)
+    10c4:	afb20020 	sw	s2,32(sp)
+    10c8:	afb1001c 	sw	s1,28(sp)
+    10cc:	afbf0030 	sw	ra,48(sp)
+    10d0:	afb00018 	sw	s0,24(sp)
+    10d4:	afa5003c 	sw	a1,60(sp)
+    10d8:	00e01821 	move	v1,a3
+    10dc:	80620000 	lb	v0,0(v1)
+    10e0:	00000000 	nop
+    10e4:	0080a821 	move	s5,a0
+    10e8:	00c09021 	move	s2,a2
+    10ec:	02a08821 	move	s1,s5
+    10f0:	0000a021 	move	s4,zero
+    10f4:	0800046e 	j	11b8 <vsscanf+0x108>
+    10f8:	2413ffff 	li	s3,-1
+		/* skip any white space in format */
+		/* white space in format matchs any amount of
+		 * white space, including none, in the input.
+		 */
+		if (isspace(*fmt)) {
+    10fc:	90830000 	lbu	v1,0(a0)
+    1100:	3c020000 	lui	v0,0x0
+    1104:	00431021 	addu	v0,v0,v1
+    1108:	90420000 	lbu	v0,0(v0)
+    110c:	00000000 	nop
+    1110:	30420020 	andi	v0,v0,0x20
+    1114:	10400017 	beqz	v0,1174 <vsscanf+0xc4>
+    1118:	00000000 	nop
+			while (isspace(*fmt))
+				++fmt;
+    111c:	24820001 	addiu	v0,a0,1
+    1120:	00403821 	move	a3,v0
+    1124:	afa2003c 	sw	v0,60(sp)
+    1128:	90e30000 	lbu	v1,0(a3)
+    112c:	3c020000 	lui	v0,0x0
+    1130:	00431021 	addu	v0,v0,v1
+    1134:	90420000 	lbu	v0,0(v0)
+    1138:	00000000 	nop
+    113c:	30420020 	andi	v0,v0,0x20
+    1140:	1440fff6 	bnez	v0,111c <vsscanf+0x6c>
+    1144:	00e02021 	move	a0,a3
+			while (isspace(*str))
+    1148:	08000455 	j	1154 <vsscanf+0xa4>
+    114c:	00000000 	nop
+				++str;
+    1150:	26310001 	addiu	s1,s1,1
+    1154:	92230000 	lbu	v1,0(s1)
+    1158:	3c020000 	lui	v0,0x0
+    115c:	00431021 	addu	v0,v0,v1
+    1160:	90420000 	lbu	v0,0(v0)
+    1164:	00000000 	nop
+    1168:	30420020 	andi	v0,v0,0x20
+    116c:	1440fff8 	bnez	v0,1150 <vsscanf+0xa0>
+    1170:	00000000 	nop
+		}
+
+		/* anything that is not a conversion must match exactly */
+		if (*fmt != '%' && *fmt) {
+    1174:	80e40000 	lb	a0,0(a3)
+    1178:	24020025 	li	v0,37
+    117c:	1082001e 	beq	a0,v0,11f8 <vsscanf+0x148>
+    1180:	24e20001 	addiu	v0,a3,1
+    1184:	10800013 	beqz	a0,11d4 <vsscanf+0x124>
+    1188:	02801021 	move	v0,s4
+			if (*fmt++ != *str++)
+    118c:	92220000 	lbu	v0,0(s1)
+    1190:	24e30001 	addiu	v1,a3,1
+    1194:	00021600 	sll	v0,v0,0x18
+    1198:	00021603 	sra	v0,v0,0x18
+    119c:	afa3003c 	sw	v1,60(sp)
+    11a0:	00603821 	move	a3,v1
+    11a4:	1482000a 	bne	a0,v0,11d0 <vsscanf+0x120>
+    11a8:	26310001 	addiu	s1,s1,1
+    11ac:	00e01821 	move	v1,a3
+    11b0:	80620000 	lb	v0,0(v1)
+    11b4:	00000000 	nop
+    11b8:	10400006 	beqz	v0,11d4 <vsscanf+0x124>
+    11bc:	02801021 	move	v0,s4
+    11c0:	82220000 	lb	v0,0(s1)
+    11c4:	00000000 	nop
+    11c8:	1440ffcc 	bnez	v0,10fc <vsscanf+0x4c>
+    11cc:	00602021 	move	a0,v1
+				break;
+			continue;
+		}
+
+		if (!*fmt)
+			break;
+		++fmt;
+		
+		/* skip this conversion.
+		 * advance both strings to next white space
+		 */
+		if (*fmt == '*') {
+			while (!isspace(*fmt) && *fmt)
+				fmt++;
+			while (!isspace(*str) && *str)
+				str++;
+			continue;
+		}
+
+		/* get field width */
+		if (isdigit(*fmt))
+			field_width = skip_atoi(&fmt);
+
+		/* get conversion qualifier */
+		qualifier = -1;
+		if (*fmt == 'h' || *fmt == 'l' || *fmt == 'L' || *fmt == 'Z') {
+			qualifier = *fmt;
+			fmt++;
+		}
+		base = 10;
+		is_sign = 0;
+
+		if (!*fmt || !*str)
+			break;
+
+		switch(*fmt++) {
+		case 'c':
+		{
+			char *s = (char *) va_arg(args,char*);
+			if (field_width == -1)
+				field_width = 1;
+			do {
+				*s++ = *str++;
+			} while(field_width-- > 0 && *str);
+			num++;
+		}
+		continue;
+		case 's':
+		{
+			char *s = (char *) va_arg(args, char *);
+			if(field_width == -1)
+				field_width = INT_MAX;
+			/* first, skip leading white space in buffer */
+			while (isspace(*str))
+				str++;
+
+			/* now copy until next white space */
+			while (*str && !isspace(*str) && field_width--) {
+				*s++ = *str++;
+			}
+			*s = '\0';
+			num++;
+		}
+		continue;
+		case 'n':
+			/* return number of characters read so far */
+		{
+			int *i = (int *)va_arg(args,int*);
+			*i = str - buf;
+		}
+		continue;
+		case 'o':
+			base = 8;
+			break;
+		case 'x':
+		case 'X':
+			base = 16;
+			break;
+		case 'd':
+		case 'i':
+			is_sign = 1;
+		case 'u':
+			break;
+		case '%':
+			/* looking for '%' in str */
+			if (*str++ != '%') 
+				return num;
+			continue;
+		default:
+			/* invalid format; stop here */
+			return num;
+		}
+
+		/* have some sort of integer conversion.
+		 * first, skip white space in buffer.
+		 */
+		while (isspace(*str))
+			str++;
+
+		if (!*str || !isdigit(*str))
+			break;
+
+		switch(qualifier) {
+		case 'h':
+			if (is_sign) {
+				short *s = (short *) va_arg(args,short *);
+				*s = (short) simple_strtol(str,&next,base);
+			} else {
+				unsigned short *s = (unsigned short *) va_arg(args, unsigned short *);
+				*s = (unsigned short) simple_strtoul(str, &next, base);
+			}
+			break;
+		case 'l':
+			if (is_sign) {
+				long *l = (long *) va_arg(args,long *);
+				*l = simple_strtol(str,&next,base);
+			} else {
+				unsigned long *l = (unsigned long*) va_arg(args,unsigned long*);
+				*l = simple_strtoul(str,&next,base);
+			}
+			break;
+		case 'L':
+			if (is_sign) {
+				long long *l = (long long*) va_arg(args,long long *);
+				*l = simple_strtoll(str,&next,base);
+			} else {
+				unsigned long long *l = (unsigned long long*) va_arg(args,unsigned long long*);
+				*l = simple_strtoull(str,&next,base);
+			}
+			break;
+		case 'Z':
+		{
+			size_t *s = (size_t*) va_arg(args,size_t*);
+			*s = (size_t) simple_strtoul(str,&next,base);
+		}
+		break;
+		default:
+			if (is_sign) {
+				int *i = (int *) va_arg(args, int*);
+				*i = (int) simple_strtol(str,&next,base);
+			} else {
+				unsigned int *i = (unsigned int*) va_arg(args, unsigned int*);
+				*i = (unsigned int) simple_strtoul(str,&next,base);
+			}
+			break;
+		}
+		num++;
+
+		if (!next)
+			break;
+		str = next;
+	}
+	return num;
+    11d0:	02801021 	move	v0,s4
+}
+    11d4:	8fbf0030 	lw	ra,48(sp)
+    11d8:	8fb5002c 	lw	s5,44(sp)
+    11dc:	8fb40028 	lw	s4,40(sp)
+    11e0:	8fb30024 	lw	s3,36(sp)
+    11e4:	8fb20020 	lw	s2,32(sp)
+    11e8:	8fb1001c 	lw	s1,28(sp)
+    11ec:	8fb00018 	lw	s0,24(sp)
+    11f0:	03e00008 	jr	ra
+    11f4:	27bd0038 	addiu	sp,sp,56
+    11f8:	00403821 	move	a3,v0
+    11fc:	afa2003c 	sw	v0,60(sp)
+    1200:	80e30000 	lb	v1,0(a3)
+    1204:	2402002a 	li	v0,42
+    1208:	00e02021 	move	a0,a3
+    120c:	10620129 	beq	v1,v0,16b4 <vsscanf+0x604>
+    1210:	00e02821 	move	a1,a3
+    1214:	90830000 	lbu	v1,0(a0)
+    1218:	3c020000 	lui	v0,0x0
+    121c:	00431021 	addu	v0,v0,v1
+    1220:	90420000 	lbu	v0,0(v0)
+    1224:	00000000 	nop
+    1228:	30420004 	andi	v0,v0,0x4
+    122c:	10400005 	beqz	v0,1244 <vsscanf+0x194>
+    1230:	00000000 	nop
+    1234:	0c0000e0 	jal	380 <skip_atoi>
+    1238:	27a4003c 	addiu	a0,sp,60
+    123c:	8fa7003c 	lw	a3,60(sp)
+    1240:	00409821 	move	s3,v0
+    1244:	80e30000 	lb	v1,0(a3)
+    1248:	24020068 	li	v0,104
+    124c:	10620113 	beq	v1,v0,169c <vsscanf+0x5ec>
+    1250:	2405ffff 	li	a1,-1
+    1254:	2402006c 	li	v0,108
+    1258:	10620110 	beq	v1,v0,169c <vsscanf+0x5ec>
+    125c:	2402004c 	li	v0,76
+    1260:	1062010e 	beq	v1,v0,169c <vsscanf+0x5ec>
+    1264:	2402005a 	li	v0,90
+    1268:	1062010d 	beq	v1,v0,16a0 <vsscanf+0x5f0>
+    126c:	24e20001 	addiu	v0,a3,1
+    1270:	80e20000 	lb	v0,0(a3)
+    1274:	00000000 	nop
+    1278:	2406000a 	li	a2,10
+    127c:	90e30000 	lbu	v1,0(a3)
+    1280:	1040ffd3 	beqz	v0,11d0 <vsscanf+0x120>
+    1284:	00004021 	move	t0,zero
+    1288:	82220000 	lb	v0,0(s1)
+    128c:	00000000 	nop
+    1290:	1040ffcf 	beqz	v0,11d0 <vsscanf+0x120>
+    1294:	2462ffdb 	addiu	v0,v1,-37
+    1298:	304400ff 	andi	a0,v0,0xff
+    129c:	24e30001 	addiu	v1,a3,1
+    12a0:	2c820054 	sltiu	v0,a0,84
+    12a4:	1040ffca 	beqz	v0,11d0 <vsscanf+0x120>
+    12a8:	afa3003c 	sw	v1,60(sp)
+    12ac:	00041080 	sll	v0,a0,0x2
+    12b0:	3c030000 	lui	v1,0x0
+    12b4:	00621821 	addu	v1,v1,v0
+    12b8:	8c6301f0 	lw	v1,496(v1)
+    12bc:	00000000 	nop
+    12c0:	00600008 	jr	v1
+    12c4:	00000000 	nop
+    12c8:	2402fffc 	li	v0,-4
+    12cc:	26430003 	addiu	v1,s2,3
+    12d0:	00629024 	and	s2,v1,v0
+    12d4:	02402021 	move	a0,s2
+    12d8:	2402ffff 	li	v0,-1
+    12dc:	8c840000 	lw	a0,0(a0)
+    12e0:	00000000 	nop
+    12e4:	1262000f 	beq	s3,v0,1324 <vsscanf+0x274>
+    12e8:	26520004 	addiu	s2,s2,4
+    12ec:	92230000 	lbu	v1,0(s1)
+    12f0:	00000000 	nop
+    12f4:	02601021 	move	v0,s3
+    12f8:	a0830000 	sb	v1,0(a0)
+    12fc:	26310001 	addiu	s1,s1,1
+    1300:	24840001 	addiu	a0,a0,1
+    1304:	184000c6 	blez	v0,1620 <vsscanf+0x570>
+    1308:	2673ffff 	addiu	s3,s3,-1
+    130c:	92220000 	lbu	v0,0(s1)
+    1310:	00000000 	nop
+    1314:	1440fff7 	bnez	v0,12f4 <vsscanf+0x244>
+    1318:	00401821 	move	v1,v0
+    131c:	08000588 	j	1620 <vsscanf+0x570>
+    1320:	00000000 	nop
+    1324:	080004bb 	j	12ec <vsscanf+0x23c>
+    1328:	24130001 	li	s3,1
+    132c:	92220000 	lbu	v0,0(s1)
+    1330:	24030025 	li	v1,37
+    1334:	00021600 	sll	v0,v0,0x18
+    1338:	00021603 	sra	v0,v0,0x18
+    133c:	1443ffa4 	bne	v0,v1,11d0 <vsscanf+0x120>
+    1340:	26310001 	addiu	s1,s1,1
+    1344:	8fa7003c 	lw	a3,60(sp)
+    1348:	0800046c 	j	11b0 <vsscanf+0x100>
+    134c:	00e01821 	move	v1,a3
+    1350:	080004d7 	j	135c <vsscanf+0x2ac>
+    1354:	24080001 	li	t0,1
+    1358:	26310001 	addiu	s1,s1,1
+    135c:	92230000 	lbu	v1,0(s1)
+    1360:	3c020000 	lui	v0,0x0
+    1364:	00431021 	addu	v0,v0,v1
+    1368:	90420000 	lbu	v0,0(v0)
+    136c:	00000000 	nop
+    1370:	30420020 	andi	v0,v0,0x20
+    1374:	1440fff8 	bnez	v0,1358 <vsscanf+0x2a8>
+    1378:	00000000 	nop
+    137c:	82220000 	lb	v0,0(s1)
+    1380:	00000000 	nop
+    1384:	1040ff93 	beqz	v0,11d4 <vsscanf+0x124>
+    1388:	02801021 	move	v0,s4
+    138c:	3c020000 	lui	v0,0x0
+    1390:	00431021 	addu	v0,v0,v1
+    1394:	90420000 	lbu	v0,0(v0)
+    1398:	00000000 	nop
+    139c:	30420004 	andi	v0,v0,0x4
+    13a0:	1040ff8b 	beqz	v0,11d0 <vsscanf+0x120>
+    13a4:	2402005a 	li	v0,90
+    13a8:	10a20065 	beq	a1,v0,1540 <vsscanf+0x490>
+    13ac:	26440003 	addiu	a0,s2,3
+    13b0:	28a2005b 	slti	v0,a1,91
+    13b4:	1040003b 	beqz	v0,14a4 <vsscanf+0x3f4>
+    13b8:	24020068 	li	v0,104
+    13bc:	2402004c 	li	v0,76
+    13c0:	10a2001f 	beq	a1,v0,1440 <vsscanf+0x390>
+    13c4:	00000000 	nop
+    13c8:	11000012 	beqz	t0,1414 <vsscanf+0x364>
+    13cc:	26440003 	addiu	a0,s2,3
+    13d0:	2402fffc 	li	v0,-4
+    13d4:	00829024 	and	s2,a0,v0
+    13d8:	02401821 	move	v1,s2
+    13dc:	8c700000 	lw	s0,0(v1)
+    13e0:	00000000 	nop
+    13e4:	02202021 	move	a0,s1
+    13e8:	0c000000 	jal	0 <simple_strtoul>
+    13ec:	27a50010 	addiu	a1,sp,16
+    13f0:	26520004 	addiu	s2,s2,4
+    13f4:	ae020000 	sw	v0,0(s0)
+    13f8:	8fa40010 	lw	a0,16(sp)
+    13fc:	00000000 	nop
+    1400:	1080ff73 	beqz	a0,11d0 <vsscanf+0x120>
+    1404:	26940001 	addiu	s4,s4,1
+    1408:	8fa7003c 	lw	a3,60(sp)
+    140c:	0800046b 	j	11ac <vsscanf+0xfc>
+    1410:	00808821 	move	s1,a0
+    1414:	2402fffc 	li	v0,-4
+    1418:	00829024 	and	s2,a0,v0
+    141c:	02401821 	move	v1,s2
+    1420:	8c700000 	lw	s0,0(v1)
+    1424:	00000000 	nop
+    1428:	02202021 	move	a0,s1
+    142c:	0c000000 	jal	0 <simple_strtoul>
+    1430:	27a50010 	addiu	a1,sp,16
+    1434:	ae020000 	sw	v0,0(s0)
+    1438:	080004fe 	j	13f8 <vsscanf+0x348>
+    143c:	26520004 	addiu	s2,s2,4
+    1440:	1100000b 	beqz	t0,1470 <vsscanf+0x3c0>
+    1444:	26440003 	addiu	a0,s2,3
+    1448:	2402fffc 	li	v0,-4
+    144c:	00829024 	and	s2,a0,v0
+    1450:	02401821 	move	v1,s2
+    1454:	8c700000 	lw	s0,0(v1)
+    1458:	00000000 	nop
+    145c:	02202021 	move	a0,s1
+    1460:	0c000000 	jal	0 <simple_strtoul>
+    1464:	27a50010 	addiu	a1,sp,16
+    1468:	08000525 	j	1494 <vsscanf+0x3e4>
+    146c:	26520004 	addiu	s2,s2,4
+    1470:	2402fffc 	li	v0,-4
+    1474:	00829024 	and	s2,a0,v0
+    1478:	02401821 	move	v1,s2
+    147c:	8c700000 	lw	s0,0(v1)
+    1480:	00000000 	nop
+    1484:	02202021 	move	a0,s1
+    1488:	0c000000 	jal	0 <simple_strtoul>
+    148c:	27a50010 	addiu	a1,sp,16
+    1490:	26520004 	addiu	s2,s2,4
+    1494:	ae020000 	sw	v0,0(s0)
+    1498:	ae030004 	sw	v1,4(s0)
+    149c:	080004fe 	j	13f8 <vsscanf+0x348>
+    14a0:	00000000 	nop
+    14a4:	10a2000f 	beq	a1,v0,14e4 <vsscanf+0x434>
+    14a8:	2402006c 	li	v0,108
+    14ac:	14a2ffc6 	bne	a1,v0,13c8 <vsscanf+0x318>
+    14b0:	00000000 	nop
+    14b4:	1500ffc6 	bnez	t0,13d0 <vsscanf+0x320>
+    14b8:	26440003 	addiu	a0,s2,3
+    14bc:	2402fffc 	li	v0,-4
+    14c0:	00829024 	and	s2,a0,v0
+    14c4:	02401821 	move	v1,s2
+    14c8:	8c700000 	lw	s0,0(v1)
+    14cc:	00000000 	nop
+    14d0:	02202021 	move	a0,s1
+    14d4:	0c000000 	jal	0 <simple_strtoul>
+    14d8:	27a50010 	addiu	a1,sp,16
+    14dc:	080004fd 	j	13f4 <vsscanf+0x344>
+    14e0:	26520004 	addiu	s2,s2,4
+    14e4:	1100000b 	beqz	t0,1514 <vsscanf+0x464>
+    14e8:	26440003 	addiu	a0,s2,3
+    14ec:	2402fffc 	li	v0,-4
+    14f0:	00829024 	and	s2,a0,v0
+    14f4:	02401821 	move	v1,s2
+    14f8:	8c700000 	lw	s0,0(v1)
+    14fc:	00000000 	nop
+    1500:	02202021 	move	a0,s1
+    1504:	0c000000 	jal	0 <simple_strtoul>
+    1508:	27a50010 	addiu	a1,sp,16
+    150c:	0800054e 	j	1538 <vsscanf+0x488>
+    1510:	26520004 	addiu	s2,s2,4
+    1514:	2402fffc 	li	v0,-4
+    1518:	00829024 	and	s2,a0,v0
+    151c:	02401821 	move	v1,s2
+    1520:	8c700000 	lw	s0,0(v1)
+    1524:	00000000 	nop
+    1528:	02202021 	move	a0,s1
+    152c:	0c000000 	jal	0 <simple_strtoul>
+    1530:	27a50010 	addiu	a1,sp,16
+    1534:	26520004 	addiu	s2,s2,4
+    1538:	080004fe 	j	13f8 <vsscanf+0x348>
+    153c:	a6020000 	sh	v0,0(s0)
+    1540:	2402fffc 	li	v0,-4
+    1544:	00829024 	and	s2,a0,v0
+    1548:	02401821 	move	v1,s2
+    154c:	8c700000 	lw	s0,0(v1)
+    1550:	00000000 	nop
+    1554:	02202021 	move	a0,s1
+    1558:	0c000000 	jal	0 <simple_strtoul>
+    155c:	27a50010 	addiu	a1,sp,16
+    1560:	080004fd 	j	13f4 <vsscanf+0x344>
+    1564:	26520004 	addiu	s2,s2,4
+    1568:	26440003 	addiu	a0,s2,3
+    156c:	2402fffc 	li	v0,-4
+    1570:	00829024 	and	s2,a0,v0
+    1574:	02401821 	move	v1,s2
+    1578:	8c640000 	lw	a0,0(v1)
+    157c:	00000000 	nop
+    1580:	02351023 	subu	v0,s1,s5
+    1584:	ac820000 	sw	v0,0(a0)
+    1588:	8fa7003c 	lw	a3,60(sp)
+    158c:	00000000 	nop
+    1590:	0800046b 	j	11ac <vsscanf+0xfc>
+    1594:	26520004 	addiu	s2,s2,4
+    1598:	080004d7 	j	135c <vsscanf+0x2ac>
+    159c:	24060008 	li	a2,8
+    15a0:	2402fffc 	li	v0,-4
+    15a4:	26430003 	addiu	v1,s2,3
+    15a8:	00629024 	and	s2,v1,v0
+    15ac:	02402021 	move	a0,s2
+    15b0:	2402ffff 	li	v0,-1
+    15b4:	8c840000 	lw	a0,0(a0)
+    15b8:	00000000 	nop
+    15bc:	12620032 	beq	s3,v0,1688 <vsscanf+0x5d8>
+    15c0:	26520004 	addiu	s2,s2,4
+    15c4:	08000574 	j	15d0 <vsscanf+0x520>
+    15c8:	00000000 	nop
+    15cc:	26310001 	addiu	s1,s1,1
+    15d0:	92230000 	lbu	v1,0(s1)
+    15d4:	3c020000 	lui	v0,0x0
+    15d8:	00431021 	addu	v0,v0,v1
+    15dc:	90420000 	lbu	v0,0(v0)
+    15e0:	00000000 	nop
+    15e4:	30420020 	andi	v0,v0,0x20
+    15e8:	1440fff8 	bnez	v0,15cc <vsscanf+0x51c>
+    15ec:	00000000 	nop
+    15f0:	82220000 	lb	v0,0(s1)
+    15f4:	92250000 	lbu	a1,0(s1)
+    15f8:	10400008 	beqz	v0,161c <vsscanf+0x56c>
+    15fc:	00000000 	nop
+    1600:	3c020000 	lui	v0,0x0
+    1604:	00431021 	addu	v0,v0,v1
+    1608:	90420000 	lbu	v0,0(v0)
+    160c:	00000000 	nop
+    1610:	30420020 	andi	v0,v0,0x20
+    1614:	10400006 	beqz	v0,1630 <vsscanf+0x580>
+    1618:	2402ffff 	li	v0,-1
+    161c:	a0800000 	sb	zero,0(a0)
+    1620:	8fa7003c 	lw	a3,60(sp)
+    1624:	00000000 	nop
+    1628:	0800046b 	j	11ac <vsscanf+0xfc>
+    162c:	26940001 	addiu	s4,s4,1
+    1630:	2673ffff 	addiu	s3,s3,-1
+    1634:	1262fff9 	beq	s3,v0,161c <vsscanf+0x56c>
+    1638:	2406ffff 	li	a2,-1
+    163c:	a0850000 	sb	a1,0(a0)
+    1640:	26310001 	addiu	s1,s1,1
+    1644:	82220000 	lb	v0,0(s1)
+    1648:	92250000 	lbu	a1,0(s1)
+    164c:	1040fff3 	beqz	v0,161c <vsscanf+0x56c>
+    1650:	24840001 	addiu	a0,a0,1
+    1654:	30a300ff 	andi	v1,a1,0xff
+    1658:	3c020000 	lui	v0,0x0
+    165c:	00431021 	addu	v0,v0,v1
+    1660:	90420000 	lbu	v0,0(v0)
+    1664:	00000000 	nop
+    1668:	30420020 	andi	v0,v0,0x20
+    166c:	1440ffeb 	bnez	v0,161c <vsscanf+0x56c>
+    1670:	00000000 	nop
+    1674:	2673ffff 	addiu	s3,s3,-1
+    1678:	1666fff0 	bne	s3,a2,163c <vsscanf+0x58c>
+    167c:	00000000 	nop
+    1680:	08000588 	j	1620 <vsscanf+0x570>
+    1684:	a0800000 	sb	zero,0(a0)
+    1688:	3c137fff 	lui	s3,0x7fff
+    168c:	08000574 	j	15d0 <vsscanf+0x520>
+    1690:	3673ffff 	ori	s3,s3,0xffff
+    1694:	080004d7 	j	135c <vsscanf+0x2ac>
+    1698:	24060010 	li	a2,16
+    169c:	24e20001 	addiu	v0,a3,1
+    16a0:	80e50000 	lb	a1,0(a3)
+    16a4:	00000000 	nop
+    16a8:	afa2003c 	sw	v0,60(sp)
+    16ac:	0800049c 	j	1270 <vsscanf+0x1c0>
+    16b0:	00403821 	move	a3,v0
+    16b4:	90e30000 	lbu	v1,0(a3)
+    16b8:	3c020000 	lui	v0,0x0
+    16bc:	00431021 	addu	v0,v0,v1
+    16c0:	90420000 	lbu	v0,0(v0)
+    16c4:	00000000 	nop
+    16c8:	30420020 	andi	v0,v0,0x20
+    16cc:	1040001a 	beqz	v0,1738 <vsscanf+0x688>
+    16d0:	00000000 	nop
+    16d4:	92230000 	lbu	v1,0(s1)
+    16d8:	3c040000 	lui	a0,0x0
+    16dc:	24840000 	addiu	a0,a0,0
+    16e0:	3c020000 	lui	v0,0x0
+    16e4:	00431021 	addu	v0,v0,v1
+    16e8:	90420000 	lbu	v0,0(v0)
+    16ec:	00000000 	nop
+    16f0:	30420020 	andi	v0,v0,0x20
+    16f4:	1440fead 	bnez	v0,11ac <vsscanf+0xfc>
+    16f8:	00000000 	nop
+    16fc:	1060feab 	beqz	v1,11ac <vsscanf+0xfc>
+    1700:	00802821 	move	a1,a0
+    1704:	26310001 	addiu	s1,s1,1
+    1708:	92240000 	lbu	a0,0(s1)
+    170c:	00000000 	nop
+    1710:	00851821 	addu	v1,a0,a1
+    1714:	90620000 	lbu	v0,0(v1)
+    1718:	00000000 	nop
+    171c:	30420020 	andi	v0,v0,0x20
+    1720:	1440fea3 	bnez	v0,11b0 <vsscanf+0x100>
+    1724:	00e01821 	move	v1,a3
+    1728:	1480fff6 	bnez	a0,1704 <vsscanf+0x654>
+    172c:	00000000 	nop
+    1730:	0800046c 	j	11b0 <vsscanf+0x100>
+    1734:	00000000 	nop
+    1738:	1060ffe6 	beqz	v1,16d4 <vsscanf+0x624>
+    173c:	24a20001 	addiu	v0,a1,1
+    1740:	00403821 	move	a3,v0
+    1744:	afa2003c 	sw	v0,60(sp)
+    1748:	90e30000 	lbu	v1,0(a3)
+    174c:	3c020000 	lui	v0,0x0
+    1750:	00431021 	addu	v0,v0,v1
+    1754:	90420000 	lbu	v0,0(v0)
+    1758:	00000000 	nop
+    175c:	30420020 	andi	v0,v0,0x20
+    1760:	1440ffdc 	bnez	v0,16d4 <vsscanf+0x624>
+    1764:	00e02821 	move	a1,a3
+    1768:	1460fff5 	bnez	v1,1740 <vsscanf+0x690>
+    176c:	24a20001 	addiu	v0,a1,1
+    1770:	080005b5 	j	16d4 <vsscanf+0x624>
+    1774:	00000000 	nop
+
+00001778 <sscanf>:
+    1778:	afa50004 	sw	a1,4(sp)
+    177c:	afa60008 	sw	a2,8(sp)
+    1780:	afa7000c 	sw	a3,12(sp)
+    1784:	27bdffe8 	addiu	sp,sp,-24
+
+/**
+ * sscanf - Unformat a buffer into a list of arguments
+ * @buf:	input buffer
+ * @fmt:	formatting of buffer
+ * @...:	resulting arguments
+ */
+int sscanf(const char * buf, const char * fmt, ...)
+{
+    1788:	afbf0010 	sw	ra,16(sp)
+	va_list args;
+	int i;
+
+	va_start(args,fmt);
+	i = vsscanf(buf,fmt,args);
+    178c:	0c000000 	jal	0 <simple_strtoul>
+    1790:	27a60020 	addiu	a2,sp,32
+    1794:	8fbf0010 	lw	ra,16(sp)
+    1798:	00000000 	nop
+    179c:	03e00008 	jr	ra
+    17a0:	27bd0018 	addiu	sp,sp,24
+	...

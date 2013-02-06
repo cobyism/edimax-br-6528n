@@ -1,0 +1,5 @@
+.depend
+.*.flags
+conmakehash
+consolemap_deftbl.c
+uni_hash.tbl

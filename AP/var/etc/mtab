@@ -1,0 +1,2 @@
+/dev/root / romfs rw 0 0
+none /proc proc rw 0 0

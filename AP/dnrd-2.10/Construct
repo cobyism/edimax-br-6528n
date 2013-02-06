@@ -1,0 +1,43 @@
+#
+# Construct file for DNRD
+#
+# Simply run "cons" in the same directory as this file, and everything
+# will be built under a directory called "build", and the final
+# executable will be installed in a directory called "final".
+#
+
+$host_os = `/bin/uname -s`;
+chop($host_os);
+if ($host_os eq 'Linux') {
+    $libs = '-lpthread';
+} elsif ($host_os eq 'SunOS') {
+    $libs = '-lpthread -lsocket -lposix4 -lresolv';
+} else {
+    die "Unknown platform: \"$host_os\"\n";
+}
+
+Link 'build' => 'src';
+
+$CONS = new cons(
+    CC       => 'gcc',
+    COPT     => '-O2 ',
+    CDEF     => '-D_REENTRANT',
+    CWARN    => '-Wall -Werror',
+    CDBG     => '-ggdb',
+    CFLAGS   => '%CWARN %COPT %CDEF %CDBG',
+    LIBS     => "$libs",
+    ENV      => { PATH => '/bin:/usr/bin:/u/lni/gcc/2.95.2/sparc-sun-solaris2.7/bin' },
+);
+
+$FINAL = '#final';
+
+Export qw(
+    CONS
+    FINAL
+);
+
+Default("final");
+
+Build qw(
+    build/Conscript
+);

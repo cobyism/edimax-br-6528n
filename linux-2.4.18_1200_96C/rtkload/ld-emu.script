@@ -1,0 +1,56 @@
+/* ld.script
+ * 
+ * This file is subject to the terms and conditions of the GNU
+ * General Public License.  See the file "COPYING" in the main
+ * directory of this archive for more details.
+ *
+ * Copyright (C) 2000, Jay Carlson
+ */
+
+OUTPUT_FORMAT("elf32-littlemips")
+OUTPUT_ARCH(mips)
+ENTRY(__start)
+
+/* Someday I'll figure out how this works */
+/* MEMORY { vtboot : ORIGIN = 0x9fc00000, LENGTH = 64k } */
+/* MEMORY { rom : ORIGIN = 0x9fc00000, LENGTH = 2M } */
+
+
+SECTIONS
+{
+        /* VT-OS boot rom lives here in real hardware */
+        . = 0x9fc00000 ;
+        vtboot : { vtboot* }
+
+        /* The loader itself */
+        . = 0x9fc10000 ;
+        .text : { *(.text) } 
+        .rodata : { *(.rodata) } 
+
+        . = ALIGN(4);
+        /* Compressed kernel ELF image */
+        input_data = . ;
+        source_memory_start = . ;
+        vmlinux : { vmlinux-stripped.gz* }
+        input_data_end = . ;
+
+        . = ALIGN(4);
+        /* Romdisk, if any.  An empty file is OK. */
+        romdisk_start = . ;
+        romdisk : { romdisk* } 
+        romdisk_end = . ;
+
+
+        /* . = 0x80700000 ; */
+        /* Oops, second 4M is in the second DRAM bank.  Put our BSS at the 7M mark. */
+        . = 0x82300000 ; /* emulator */
+        /* . = 0x82500000 ; */ /* real hardware */
+        .bss : { _bstart = . ; *(.bss) ; *(.sbss) ; *(COMMON) ; _bend = . ; }
+
+        /* /DISCARD/ : { *(.reginfo) ; *(.mdebug) ; *(.note) ; *(.comment) *(__ex_table) ; } */
+        /DISCARD/ : { *(.reginfo) ;  *(.note) ; *(.comment) *(__ex_table) ; }
+
+        /* .filler : */
+}
+        
+        

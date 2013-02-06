@@ -1,0 +1,459 @@
+Tue Jun 10 13:53:00 2003  Chris Wilson  <chris@netservers.co.uk>
+
+	* pptp_callmgr.c: fixed a bug with call manager socket naming,
+	introduced since 1.2.0, which caused confusing problems when
+	trying to open more than one tunnel from the same machine.
+
+Tue Jun 10 18:43:34 2003  James Cameron  <quozl@us.netrek.org>
+
+	* pptp-linux-1.3.0 released.
+
+Tue Jun  3 19:16:52 2003  James Cameron  <quozl@us.netrek.org>
+
+	* pptp.8, pptp.c: change SIGHUP to SIGUSR1 for dumping stats.
+
+Tue May 20 13:20:00 2003  Chris Wilson  <chris@netservers.co.uk>
+
+	* pptp.c: rewrote command-line usage information, to increase
+	clarity and usefulness, and to describe various command-line
+	options which have been added recently.
+
+Fri May 23 20:52:05 2003  Rein Klazes  <rklazes@xs4all.nl>
+
+	* pptp_ctrl.c: increase the verbosity of the log message at the
+	receipt of a Call Disconnect Notification.
+
+Mon May 12 16:56:14 2003  James Cameron  <quozl@us.netrek.org>
+
+	* Makefile: don't install the manpage with execute permission,
+	swap LDFLAGS and LIBS so that one can say 'make LDFLAGS=-s' to
+	create a stripped versions of the executables, introduce the
+	optimization flag as a make variable, so that one can say 'make
+	DEBUG= OPTIMIZE=-O2 LDFLAGS=-s'.  From: Peter Breitenlohner
+
+Tue Apr 29 19:13:33 2003  James Cameron  <quozl@us.netrek.org>
+
+	* Makefile (dist): remove CVS directory from distribution.
+	Reported by: Ola Lundqvist
+
+Tue Apr 15 10:28:00 2003  Chris Wilson   <chris@netservers.co.uk>
+
+	* pptp.c, pptp_gre.c, pptp_gre.h: Added GRE statistics counters
+	and RTT calculation, which can be dumped to the syslog by sending
+	a SIGHUP to the GRE-to-PPP gateway process.
+
+Mon Apr 14 11:57:00 2003  Chris Wilson   <chris@netservers.co.uk>
+
+	* pptp_gre.c: Fixed one case where an ACK could be immediately
+	followed by a data packet, they should be combined into a
+	single packet.
+
+Sat Mar 8 2003 15:19:12 2003 Rein Klazes <rklazes@xs4all.nl>
+
+        * pptp_gre.c, pqueue.c: Actually copy the packet into a new entry
+        in the packet queue, fixing "unknown protocol" error messages;
+        Change the program logic making it obvious that there is not a 
+        memory leak;
+        Restore the "buffering out-of-order packet" log messages, so we
+        have a chance to notice any more side effects.
+
+Mon Feb 17 09:18:30 2003  James Cameron  <quozl@us.netrek.org>
+
+	* pptp_callmgr.c, pptp.c, Makefile: compile call manager from
+	Makefile rather than include from pptp.c.  From: Jan Pieter
+	<jp@jp.dhs.org>
+
+Sat Feb 15 21:32:42 2003  James Cameron  <quozl@us.netrek.org>
+
+	* pptp_ctrl.c, pptp_msg.h: move code out of .h file and into .c
+	file.  From: Jan Pieter <jp@jp.dhs.org>
+
+Sat Feb 15 17:34:38 2003  James Cameron  <quozl@us.netrek.org>
+
+	* pptp.c: add include fixes for Apple MacOS X as contributed by an
+	anonymous donor.
+
+Sat Feb 15 14:59:20 2003  James Cameron  <quozl@us.netrek.org>
+
+	* pptp.c, pptp_callmgr.c, pptp_gre.c: add localbind option to
+	support multiple clients from separate alias IP addresses.  
+	From: Ed Marcotte <epm@cisco.com>
+
+Fri Feb 14 10:11:27 2003  James Cameron  <quozl@us.netrek.org>
+	
+	* pptp-linux-1.2.0 released.
+	
+Fri Feb 14 16:08:26 CET 2003 Rein Klazes <rklazes@xs4all.nl>
+	
+	* pptp_ctrl.c, pptp_msg.h: tweak the outgoing call reply messages
+	once more. Print the error text that comes with the result code. 
+
+	* pptp.c: close all unused file descriptors belonging to the pty.
+
+	* pptp_gre.c: Convert received acknowledgement numbers from network
+	to host order.
+
+Mon Jan 20 11:46    2003  Chris Wilson <chris@netservers.co.uk>
+
+	* pqueue.c, pqueue.h: changed "expires" field of pqueue entry to a
+	struct timeval for microsecond accuracy (in theory =)
+
+	* pptp_gre.c: use queue head expiry time as the upper bound on how
+	long we block waiting for data from the network or pppd
+
+	* pptp.c: allow setting of packet timeout with sub-second
+	accuracy, print error message to stderr and exit if timeout out of
+	range
+
+Mon Jan 13 10:28    2003  Chris Wilson <chris@netservers.co.uk>
+
+	* pqueue.c, pqueue.h: added freelist support for packet queue,
+	From: Kai Poitschke <kai@poitschke.de>.  Should help to
+	prevent memory fragmentation and perhaps improve performance a
+	little.
+	
+	* pqueue.c: wrap some log() statements with DEBUG_CMD, should
+	improve performance (thanks to Kai Poitschke)
+	
+	* pptpd.c: bugfix for --log-string option: make a copy of the
+	string with strdup, because optarg will be destroyed
+
+Wed Jan 15 14:16:27 2003  James Cameron  <quozl@us.netrek.org>
+
+	* AUTHORS, DEVELOPERS, NEWS, README, TODO, USING: add or move CVS
+	header to tail.
+	* DEVELOPERS: change IRC server name to new alias.
+	* AUTHORS: change a few addresses.
+	* INSTALL: rewrite.
+	* README, USING: review and adjust, minor changes.
+	* Makefile (install): add MANDIR and man page.
+
+Thu Jan  2 11:28:41 2003  James Cameron  <quozl@us.netrek.org>
+
+	* pptp_gre.c: fix response to dropped packets.  From: Rein Klazes.
+
+Thu Jan  2 09:11:33 2003  James Cameron  <quozl@us.netrek.org>
+
+	* pptp.8: the IP address should be before the option.  From: Rein
+	Klazes
+
+Mon Dec 30 15:57:48 2002  James Cameron  <quozl@us.netrek.org>
+
+	* Makefile (install): add install target.
+
+Mon Dec  9 08:52:56 2002  James Cameron  <quozl@us.netrek.org>
+
+	* pptp_callmgr.c, pptp.c: close stderr after becoming daemon,
+	otherwise ssh sessions, CGI scripts, or other programs that start
+	pptp don't exit properly; they are held up until the pptp
+	processes terminate and close stderr.
+
+Thu Nov 21 08:41:39 2002  James Cameron  <quozl@us.netrek.org>
+
+	* pptp_gre.c: log return value from the read of the GRE socket as
+	a signed number as well.
+
+Wed Nov 20 11:21:48 CET 2002 Rein Klazes <rklazes@xs4all.nl>
+
+	* pptp_gre.c: log return value from the read of the pty as a signed
+	number.
+
+	* pptp_ctrl.c: change the log message to clarify that error codes in a 
+	outgoing call reply come from the server, not the client.
+	
+Wed Nov 20 16:07:30 2002  James Cameron  <quozl@us.netrek.org>
+
+	* Makefile (dist): adjust distribution target to include new files
+	since prior use.
+
+Wed Nov 20 15:17:12 2002  James Cameron  <quozl@us.netrek.org>
+
+	* pptp_gre.c: hid many packet reordering log calls in an ifdef,
+	added a hint as to cause of EIO on read of the pty.
+
+Fri Oct 11 15:44 BST  2002 Chris Wilson <chris@netservers.co.uk>
+
+	* pptp.c util.c util.h: added "--logstring" option to help identify
+	  connections in syslog output where multiple connections are made
+	  from the same host.
+
+Wed Oct 02 10:31 BST  2002 Chris Wilson <chris@netservers.co.uk>
+
+	* pptp_gre.c pqueue.c: changed some "log" statements to "warn" to
+	  reflect the severity of the condition, allowing much better filtering
+	* util.c: changed _warn to log at WARNING, and _fatal at CRIT level
+	* pptp_gre.c: disabled logging of individual accepted packets
+	* pptp_gre.c: removed a potential NULL pointer dereference crash
+	* pptp_gre.c: fixed the select-timeout check for packets in the queue
+	* pqueue.h: increased window size to 300 following testing
+	* pptp.c: added command-line parameter "--timeout" to set the
+	  lost packet timeout
+
+Fri Aug 30 09:55:05 CEST 2002 Rein Klazes <rklazes@xs4all.nl>
+
+	pptp_gre.c: Try to send more ACK's piggy backed on data packets.
+	Previously if there were any outstanding ACK's to be sent, the 
+	program used a non-blocking select (timeout zero) to see if
+	any data packets are available. In most cases there will be none,
+	since the time passed since the last read is too short and an ACK
+	without data will be sent.
+	This change allows one outstanding ACK, for at most 0.5 second,
+	multiple outstanding ACK's are treated as before.
+	Tests show that this gives a big reduction in the number of
+	sent packets.
+
+Fri Aug 30 09:15:35 CEST 2002 Rein Klazes <rklazes@xs4all.nl>
+
+	* pptp_gre.c: Sequence numbers of sent gre packets should start
+	with 1.
+
+Mon Aug 26 10:56:42 CEST 2002 Rein Klazes <rklazes@xs4all.nl>
+
+	* pptp.c pptp_gre.c pptp_gre.h: added "--sync" option to work 
+	in combination with the pppd sync option. In synchronous mode
+	checksum calculations and (un-)escaping of control characters
+	become unnecessary. This results in big CPU usage reduction.
+	
+Mon Aug 26 08:53:45 CEST 2002 Rein Klazes <rklazes@xs4all.nl>
+
+	* pptp.c: fix bug in command line options parsing (misplaced break
+	in switch statement).
+	
+Wed Aug 21 10:57:01 2002  James Cameron  <quozl@us.netrek.org>
+
+	* pptp.c: add handler for SIGCHLD.
+	From: Peter Surda <shurdeek@panorama.sth.ac.at>
+
+Thu Aug 15 09:30:00 2002  Chris Wilson  <chris@netservers.co.uk>
+
+	* pqueue.h: increased window size following James' tests
+	* pptp_gre.c: check for errors while dequeueing packets
+
+Wed Aug 14 20:02:39 2002  James Cameron  <quozl@us.netrek.org>
+
+	* pptp.c, pptp_gre.c, pqueue.c: packet re-ordering bugfixes
+	following distributed testing:
+
+	- Moved daemon() call to run on GRE gateway process only, and not
+	if running as pppd pty
+	- Make select() timeout after 1 second if there is data in the
+	queue, to prevent the queue from having to wait forever
+	- Added log messages for accepting individual packets (noisy!)
+	and for timeouts on missing packets
+	- Fixed a bug with the packet queue (append to tail was broken)
+	- Removed unused code from pqueue.c
+	
+	From: chris@netservers.co.uk
+
+Wed Aug 14 11:14:05 2002  James Cameron  <quozl@us.netrek.org>
+
+	* pqueue.c, pqueue.h, pptp_gre.c: major changes to support packet
+	re-ordering.
+
+	Queueing
+
+	Packets are added to the queue by decaps_gre if their sequence
+	number is higher than expected, but within the window. The default
+	window is defined as 30 packets.
+
+	Packets which are below the window (older than the most recent
+	packet read) or above the window (too far ahead) are discarded, to
+	protect against denial-of-service attacks.
+
+	Dequeueing
+
+	The new function dequeue_gre retrieves packets from the head of
+	the queue which are:
+
+	1. Next in sequence (unwrapped or wrapped)
+
+	2. Older than five seconds (assuming that the intermediate packets
+	have been lost by the network).
+
+	The function will continue to read packets from the head of the
+	queue until it finds one which doesn't match these criteria, and
+	then stop.
+
+	Limitations
+	
+	There are some limitations with this patch:
+
+	- The receive window is hardcoded at 30 packets. I couldn't see
+	where to get the negotiated and/or current window size from.
+
+	- The timeout is hardcoded at 5 seconds. A packet which was
+	received and queued within the window, but which should have been
+	preceded by other packets which never appeared, will be accepted
+	anyway after this time (increasing the sequence number to its
+	own).
+
+	- There may be memory leaks or other bugs in the reordering code.
+	
+	* pqueue.c, pqueue.h, Makefile (PPTP_OBJS, PPTP_DEPS): add two new
+	files to the pptp executable. pqueue.c implements the packet queue
+	used by the reordering code, and pqueue.h describes its public
+	interface. The queue is implemented as a linked list. This is
+	required for reordering.
+	
+	* pptp.c: Add a new command-line option, --debug.  Prevents pptp
+	from going into the background.
+
+	Change to call the daemon(3) function to change the current
+	directory and close the standard file descriptors. This prevents a
+	shell from hanging open if pptp is started remotely.
+
+	* Makefile (CFLAGS): reduce the optimisation level (gcc's -O flag)
+	to zero (none), to make debugging easier.
+
+	* pptp.c (get_ip_address): avoid reporting h_errno value.
+
+	From: chris@netservers.co.uk
+
+Thu Jul 18 12:26:25 2002  James Cameron  <quozl@us.netrek.org>
+
+	* pptp_gre.h, pptp_gre.c, pptp.c: bind the GRE socket early, by
+	calling the a function pptp_gre_bind.  Also changed prototype of
+	pptp_gre_copy.  Fixes ICMP Unreachable bug:
+	<1026868263.2855.67.camel@jander> 16th July 2002.
+	From: chris@netservers.co.uk
+
+Thu May 30 18:28:02 2002  James Cameron  <quozl@us.netrek.org>
+
+	* pptp_ctrl.c (pptp_call_open): do translation to network byte
+	order after limit checking of phone number.
+	From: staelin@hpl.hp.com
+	
+2002-05-13 08:14:40  Muli Ben-Yehuda  <mulix@actcom.co.il>
+
+	* TODO: remove 'remove setjmp/longjmp' TODO item. 
+	* pptp.c: change comment re volatile qualifiers. 
+	* pptp_callmgr.c: remove unused function 'conn_callback' and
+	change comment re volatile qualifiers. 
+
+Thu Apr  4 09:34:10 2002  James Cameron  <quozl@us.netrek.org>
+
+	* pptp_ctrl.c: correct spelling error.
+	From: Mary.Deck@COMPAQ.com
+
+2002-03-30 13:13:52  mulix  <mulix@actcom.co.il>
+
+	* USING: change URL for bezeq adsl howto.  
+	* pptp.c: (get_ip_address): if the user runs 'pptp --quirks ...'
+	instead of 'pptp hostname', we'll get here and then give a verbose
+	error message. 
+
+Mon Mar 11 10:21:00 2002  mulix  <mulix@actcom.co.il>
+
+	* Makefile (all): make config.h before making $(PPTP_BIN). 
+	* Makefile (config.h): truncate the file if it exists before
+	inputing to it - '>' instead of '>>'
+
+Mon Mar 11 12:48:16 2002  James Cameron  <quozl@us.netrek.org>
+
+	* DEVELOPERS: add mailing lists.
+	* Makefile (CFLAGS): remove PPPD_BINARY and PPTP_LINUX_VERSION in
+	favour of a config.h file.
+	* Makefile (config.h): create config.h from Makefile variables
+	* Makefile (PPTP_DEPS): add config.h
+	* pptp.c: include config.h
+	* version.c: include config.h
+	* util.c (PROGRAM_NAME): no longer used by two programs, change
+	PROGRAM_NAME to default to pptp.
+	* Makefile (CFLAGS): remove -DPROGRAM_NAME
+
+Fri Mar  8 11:56:00 2002  mulix  <mulix@actcom.co.il>
+
+	* TODO: remove notes about compiler warnings, as all compiler
+	warnings are now gone.
+	* pptp.c (main): add volatile qualifier to some variables to
+	silence gcc warnings 'variable might be clobbered by longjmp or
+	vfork'. add note explaining why volatile and that it should be
+	removed when the longjmp is removed.
+	* pptp_callmgr.c (main): likewise. 
+	* inststr.c (inststr): break up "ptr += strlen(++ptr)" which is
+	undefined behaviour into two expressions. 
+	* pptp.c (main): initialize callmgr_sock to -1 since it might be
+	used uninitialized otherwise. 
+	* pptp_ctrl.c (pptp_dispatch_ctrl_packet): #ifdef 0 two unused
+	variables referring to the current packet, which should not be
+	simply erased, as we might want to use them in the future.
+	* util.c: add missing #include. 
+	
+Fri Mar  8 21:11:17 2002  James Cameron  <quozl@us.netrek.org>
+
+	* DEVELOPERS: new file.
+
+Fri Mar  8 10:12:28 2002  James Cameron  <quozl@us.netrek.org>
+
+	* NEWS: convert to newest first format to comply with GNU Coding
+	Standards, The NEWS File.
+
+Fri Mar  8 09:01:22 2002  James Cameron  <quozl@us.netrek.org>
+
+	* pptp_ctrl.c (pptp_make_packet): Cisco PIX is generating a
+	non-complaint header with the reserved0 field not zero, causing
+	the connection to stop after 60 seconds.
+	From: Rein Klazes <rklazes@xs4all.nl>
+
+Fri Mar  8 08:56:30 2002  James Cameron  <quozl@us.netrek.org>
+
+	* TODO: add compiler warnings note.
+	* NEWS: propogate summary of ChangeLog.
+	* AUTHORS: add names from mailing list contributions.
+	From: Rein Klazes <rklazes@xs4all.nl>
+	* Makefile: remove pptp_callmgr binary
+	* debian/copyright: adjust pointer to current release.
+	* debian/rules, Makefile: remove pptp_callmgr binary now that pptp
+	forks and calls it without exec.
+
+Sat Mar  2 04:04:37 2002  James Cameron  <quozl@us.netrek.org>
+
+	* README: adopt new mailing lists and point to project web site.
+	* USING: include psuedo-tty activation instructions.
+	* Makefile: increment version, avoid clobbering editor backup
+	files on clean.
+
+Fri Mar  1 12:13:03 2002  James Cameron  <quozl@us.netrek.org>
+
+	* pptp_gre.c: move #include <sys/types.h> higher up
+	* pptp_gre.c, pptp_ctrl.c: change unsigned to unsigned int
+	* pptp.c: what we need from pty.h is in libutil.h for FreeBSD and
+	util.h for NetBSD (ideally this should be in autoconf)
+	* pptp.c: synchronisation changes
+	* orckit_quirks.c: #include <sys/types.h>
+	From: rhialto@azenomei.knuffel.net
+
+Fri Nov 23 14:42:07 2001  James Cameron  <quozl@us.netrek.org>
+
+	* USING: reformat, add version header.
+
+Tue Nov 20 11:01:10 2001  mulix  <mulix@actcom.co.il>
+
+	* AUTHORS: add mulix.
+	* USING: add paragraph on quirks support.
+	* orckit_quirks.c: remove debugging call, rename functions and
+	variables consistently.
+	* pptp.c: (usage) remove debugging print.
+	* pptp_ctrl.c: when calling quirks hooks, check their return
+	values and warn if an error occurs.
+	* pptp_quirks.c: orckit_atur3_start_ctrl_conn was renamed
+	orckit_atur3_start_ctrl_conn_hook.
+	From: mulix@actcom.co.il
+
+Tue Nov 20 17:01:10 2001  James Cameron  <quozl@us.netrek.org>
+
+	* orckit_quirks.c, orckit_quirks.h: add quirks handling for orckit
+	adsl modems.
+	* pptp_quirks.c, pptp_quirks.h: add generic quirks handling.
+	* Makefile (PPTP_DEPS, PPTP_OBJS, CALLMGR_OBJS, CALLMGR_DEPS): add
+	quirks sources and objects.
+	* pptp_ctrl.c: add pptp_set_link, add code to adjust packets
+	depending on quirks.
+	* pptp.c (usage, long_options, main): add --quirks command line
+	option.
+	From: mulix@actcom.co.il
+
+Tue Nov 20 16:45:35 2001  James Cameron  <quozl@us.netrek.org>
+
+	* pptp_gre.c: enhance error message for bad FCS.
+

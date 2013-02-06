@@ -1,0 +1,544 @@
+﻿var zero_mac=new Array
+(
+"Devices with MAC 00:00:00:00:00:00 will not be saved.",
+"Geräte mit MAC 00:00:00:00:00:00 werden nicht gespeichert.",
+"Los dispositivos con MAC 00:00:00:00:00:00 no se guardarán.",
+"Les périphériques dont l'adresse MAC est 00:00:00:00:00:00 ne seront pas sauvgardés.",
+"I dispositivi con MAC 00:00:00:00:00:00 non verranno salvati.",
+"Apparaten met MAC 00:00:00:00:00:00 worden niet opgeslagen.",
+"Dispositivos com MAC 00:00:00:00:00:00 não serão guardados.",
+"Zařízení s adresou MAC 00:00:00:00:00:00 se neuloží.",
+"Urządzenia z MAC 00:00:00:00:00:00 nie zostaną zapisane",
+"Echipamentele cu adresa MAC 00:00:00:00:00:00 nu vor fi salvate",
+"Устройства с MAC 00:00:00:00:00:00 не могут быть сохранены",
+"Zariadenie s MAC adresou 00:00:00:00:00:00  nebude uložené.",
+"MAC 00:00:00:00:00:00的設備將不會被保存。",
+"MAC 00:00:00:00:00:00的设备将不会被保存。"
+);
+var empty_device_name=new Array
+(
+"Device Name can NOT be empty!",
+"Gerätename darf NICHT leer sein!",
+"¡El nombre del dispositivo NO puede estar vacío!",
+"Le nom du périphérique NE peut PAS rester vide !",
+"Il campo Nome dispositivo NON può essere vuoto!",
+"Apparaatnaam mag NIET leeg zijn!",
+"O nome do dispositivo NÃO pode estar em branco!",
+"Název zařízení NEMŮŽE být prázdný!",
+"Konieczne jest podanie nazwy urządzenia",
+"Campul cu Numele Echipamentului nu poate fi necompletat!",
+"Имя устройства не может быть пустым!",
+"Meno zariadenia NESMIE byť prázdne!",
+"設備名不能是空白！",
+"设备名不能是空白！"
+);
+var del=new Array
+(
+"DEL",
+"DEL",
+"BORR",
+"DEL",
+"CANC",
+"DEL (wissen)",
+"DEL",
+"SMAZAT",
+"Usuń",
+"",
+"Удалить",
+"Vymazať",
+"DEL",
+"DEL"
+);
+var device_name=new Array
+(
+"Device Name",
+"Gerätename",
+"Nombre del dispositivo",
+"Nom du périphérique",
+"Nome dispositivo",
+"Apparaatnaam",
+"Nome do dispositivo",
+"Název zařízení",
+"Nazwa urządzenia",
+"Nume Echipament",
+"Имя устройства",
+"Meno zariadenia NESMIE byť prázdne!",
+"設備名稱",
+"设备名称"
+);
+var device_ip=new Array
+(
+"Device IP",
+"Geräte IP",
+"IP del dispositivo",
+"IP Périphérique",
+"IP dispositivo",
+"Apparaat-IP",
+"IP do dispositivo",
+"IP adresa zařízení",
+"Adres IP urządzenia",
+"IP Echipament",
+"IP адрес устройства",
+"IP zariadenia",
+"設備的IP",
+"设备的IP"
+);
+var bandwidth_control=new Array
+(
+"Bandwidth Control",
+"Bandbreitensteuerung",
+"Control de banda ancha",
+"Contrôle de la bande passante",
+"Controllo larghezza di banda",
+"Bandbreedtecontrole",
+"Controlo da largura de banda",
+"Řízení šířky přenosového pásma",
+"Sterowanie szerokością pasma",
+"Controlul Lungimii de banda",
+"Контроль ширины полосы",
+"Kontrola prenosu",
+"頻寬管理",
+"带宽管理"
+);
+var port_forwarding=new Array
+(
+"Port Forwarding",
+"Portweiterleitung",
+"Reenvío de puerto",
+"Réacheminement de port",
+"Inoltro porte",
+"Port forwarding",
+"Encaminhamento de portas",
+"Přesměrování portu",
+"Przekierowanie portów",
+"Port Forwarding",
+"Перенаправление портов",
+"Presmerovanie portu",
+"Port Forwarding",
+"Port Forwarding"
+);
+var download=new Array
+(
+"Download",
+"Download",
+"Descarga",
+"Transfert descendant",
+"Download",
+"Downloaden",
+"Transferir",
+"Stahování",
+"Pobieranie",
+"Download",
+"Входящий",
+"Sťahovanie",
+"下載",
+"下载"
+);
+var upload=new Array
+(
+"Upload",
+"Upload",
+"Carga",
+"Transfert ascendant",
+"Upload",
+"Uploaden",
+"Enviar",
+"Odesílání",
+"Wysyłanie",
+"Upload",
+"Исходящий",
+"Odosielanie",
+"上載",
+"上载"
+);
+var advance=new Array
+(
+"Advance",
+"Erweitern",
+"Avance",
+"Avancé",
+"Avanzato",
+"Uitgebreid",
+"Avançar",
+"Posunutí",
+"Zaawansowane",
+"Avansat",
+"Дополнительно",
+"Pokročilé",
+"進階",
+"进阶"
+);
+var low=new Array
+(
+"Low",
+"Niedrig",
+"Bajo",
+"Bas",
+"Basso",
+"Laag",
+"Baixo",
+"Nízký",
+"Niskie",
+"Mic",
+"Низкий",
+"Nízky",
+"低",
+"低"
+);
+var mid=new Array
+(
+"Mid",
+"Mittel",
+"Intermedio",
+"Moyen",
+"Med",
+"Middel",
+"Meio",
+"Střední",
+"Pośrednie",
+"Mijlociu",
+"Средний",
+"Prostredný",
+"中低",
+"中低"
+);
+var medium=new Array
+(
+"Medium",
+"Medium",
+"Medio",
+"Médium",
+"Medio",
+"Medium",
+"Médio",
+"Průměrný",
+"Średnie",
+"Mediu",
+"Средний",
+"Stredný",
+"中高",
+"中高"
+);
+var high=new Array
+(
+"High",
+"Hoch",
+"Alto",
+"Elevé",
+"Alto",
+"Hoog",
+"Alto",
+"Vysoký",
+"Wysokie",
+"Mare",
+"Высокий",
+"Vysoký",
+"高",
+"高"
+);
+var view=new Array
+(
+"View",
+"Ansehen",
+"Ver",
+"Visualiser",
+"Visualizza",
+"Bekijken",
+"Ver",
+"Zobrazení",
+"Widok",
+"Vizualizare",
+"Вид",
+"Prehľad",
+"檢視",
+"检视"
+);
+var block1=new Array
+(
+"Block",
+"Blockieren",
+"Bloquear",
+"Bloquer",
+"Blocca",
+"Blokkeren",
+"Bloquear",
+"Blokování",
+"Blokowanie",
+"Blocare",
+"Блокировать",
+"Blokovať",
+"區塊",
+"区块"
+);
+var online_devices=new Array
+(
+"Online Devices",
+"Online-Geräte",
+"Dispositivos en línea",
+"Périphériques en ligne",
+"Dispositivi on-line",
+"Online toepassingen",
+"Dispositivos online",
+"Online zařízení",
+"Włączone urządzenia sieciowe ",
+"Echipament Online",
+"Включенные устройства",
+"Zariadenia On-line",
+"線上設備",
+"在线设备"
+);
+var offline_devices=new Array
+(
+"Offline Devices",
+"Offline-Geräte",
+"Dispositivos desconectados",
+"Périhpériques hors ligne",
+"Dispositivi off-line",
+"Offline toepassingen",
+"Dispositivos offline",
+"Offline zařízení",
+"Wyłączone urządzenia sieciowe",
+"Echipament Offline",
+"Выключенные устройства",
+"Zariadenia Offline",
+"離線設備",
+"脱机设备"
+);
+var customize=new Array
+(
+"Customize",
+"Anpassen",
+"Personalizar",
+"Personnaliser",
+"Personalizza",
+"Aanpassen",
+"Personalizar",
+"Přizpůsobení",
+"Dostosuj",
+"Personalizeaza",
+"Ручная настройка",
+"Prispôsobiť",
+"定制",
+"定制"
+);
+var overlapped_with=new Array
+(
+"Overlapped with",
+"Überlappt mit",
+"Superpuesto con",
+"Chevauché par",
+"Sovrapposto con",
+"Overlappend met",
+"Sobreposto com",
+"Překrývá se s",
+"Zachodzi z",
+"Suprapus cu",
+"Перекрывается с",
+"Presiahnutý s",
+"重疊",
+"重迭"
+);
+var pf_check=new Array
+(
+"Start Port must less than End Port.",
+"Start-Port muss kleiner als der End-Port sein.",
+"El puerto de inicio debe ser inferior al puerto de finalización",
+"Le port de démarrage doit être inférieur au port de fin.",
+"La porta iniziale deve essere minore della porta finale",
+"Beginpoort moet minder zijn dan eindpoort.",
+"A porta inicial deve ser menor do que a porta final.",
+"Počáteční port musí být nižší než koncový port.",
+"Port początkowy musi być niższy niż port końcowy",
+"Portul de Inceput trebuie sa fie mai mic decat cel de Sfarsit",
+"Начальный порт должен быть меньше конечного",
+"Začiatočný port musí byť menší ako konečný.",
+"起始埠必須小於結束埠。",
+"起始埠必须小于结束埠。"
+);
+var ezview=new Array
+(
+"EZ VIEW",
+"EZ VIEW",
+"VISTA EZ",
+"VUE EZ",
+"VISUALIZZAZIONE EZ",
+"EZ VIEW",
+"EZ VIEW",
+"EZ VIEW",
+"EZ VIEW",
+"EZ View",
+"EZ VIEW",
+"EZ VIEW",
+"EZ VIEW",
+"EZ VIEW"
+);
+var scanning=new Array
+(
+"The router is scanning for all UPNP Devices that are connected to the router, please wait……",
+"Suche nach NETBIOS und UPNP-Geräten läuft...",
+"Búsqueda de NETBIOS y dispositivos UPNP...",
+"Balayage des périphériques NETBIOS et UPNP ...",
+"Scansione dei dispositivi NETBIOS e UPNP...",
+"Doorzoekt NETBIOS en UPNP-toepassingen...",
+"A analisar os dispositivos NETBIOS e UPNP...",
+"Prohledávání NETBIOS a UPNP zařízení...",
+"Przeszukiwanie NetBIOSu oraz urządzeń UPNP",
+"Scanare NetBIOS si echipamente UPnP",
+"Идет сканирование NETBIOS и UPNP устройств…",
+"Vyhľadávanie NETBIOS a UPNP zariadení...",
+"系統將會掃描連接到路由器的UPnP設備，請等待…",
+"系统将会扫描连接到路由器的UPnP设备，请等待…"
+);
+var bandwidthdetect=new Array
+(
+"The router is detecting the MAX bandwidth of your ISP, please wait……",
+"The router is detecting the MAX bandwidth of your ISP, please wait……",
+"The router is detecting the MAX bandwidth of your ISP, please wait……",
+"The router is detecting the MAX bandwidth of your ISP, please wait……",
+"The router is detecting the MAX bandwidth of your ISP, please wait……",
+"The router is detecting the MAX bandwidth of your ISP, please wait……",
+"The router is detecting the MAX bandwidth of your ISP, please wait……",
+"The router is detecting the MAX bandwidth of your ISP, please wait……",
+"The router is detecting the MAX bandwidth of your ISP, please wait……",
+"The router is detecting the MAX bandwidth of your ISP, please wait……",
+"The router is detecting the MAX bandwidth of your ISP, please wait……",
+"The router is detecting the MAX bandwidth of your ISP, please wait……",
+"寬頻路由器正在檢測你的ISP可用的最大頻寬，請等待？",
+"宽带路由器正在检测你的ISP可用的最大带宽，请等待？"
+);
+var bandwidthshow=new Array
+(
+"Bandwidth Speed",
+"Bandwidth Speed",
+"Bandwidth Speed",
+"Bandwidth Speed",
+"Bandwidth Speed",
+"Bandwidth Speed",
+"Bandwidth Speed",
+"Bandwidth Speed",
+"Bandwidth Speed",
+"Bandwidth Speed",
+"Bandwidth Speed",
+"Bandwidth Speed",
+"頻寬速度",
+"带宽速度"
+);
+var bandwidthfail=new Array
+(
+"The bandwidth detection server is currently down. Please use the links on the right.",
+"The bandwidth detection server is currently down. Please use the links on the right.",
+"The bandwidth detection server is currently down. Please use the links on the right.",
+"The bandwidth detection server is currently down. Please use the links on the right.",
+"The bandwidth detection server is currently down. Please use the links on the right.",
+"The bandwidth detection server is currently down. Please use the links on the right.",
+"The bandwidth detection server is currently down. Please use the links on the right.",
+"The bandwidth detection server is currently down. Please use the links on the right.",
+"The bandwidth detection server is currently down. Please use the links on the right.",
+"The bandwidth detection server is currently down. Please use the links on the right.",
+"The bandwidth detection server is currently down. Please use the links on the right.",
+"The bandwidth detection server is currently down. Please use the links on the right.",
+"無法連結預設頻寬驗證伺服器,請使用右側提供網站進行手動驗證",
+"無法連結預設頻寬驗證伺服器,請使用右側提供網站進行手動驗證"
+);
+var done=new Array
+(
+"Done",
+"Done",
+"Done",
+"Done",
+"Done",
+"Done",
+"Done",
+"Done",
+"Done",
+"Done",
+"Done",
+"Done",
+"執行",
+"执行"
+);
+var NA=new Array
+(
+"Not available",
+"Not available",
+"Not available",
+"Not available",
+"Not available",
+"Not available",
+"Not available",
+"Not available",
+"Not available",
+"Not available",
+"Not available",
+"Not available",
+"不適用",
+"不适用"
+);
+var runningtime=new Array
+(
+"Running Time",
+"Running Time",
+"Running Time",
+"Running Time",
+"Running Time",
+"Running Time",
+"Running Time",
+"Running Time",
+"Running Time",
+"Timp de Activitate",
+"Running Time",
+"Running Time",
+"運作時間",
+"运作时间"
+);
+var day=new Array
+(
+"day",
+"day",
+"day",
+"day",
+"day",
+"dag(en)",
+"day",
+"day",
+"day",
+"day",
+"day",
+"day",
+"天",
+"天"
+);
+var config=new Array
+(
+"Config",
+"Config",
+"Config",
+"Config",
+"Config",
+"Config",
+"Config",
+"Config",
+"Config",
+"Config",
+"Config",
+"Config",
+"配置",
+"配置"
+);
+var bandwidth_control_window=new Array
+(
+"Click here to enable/disable Bandwidth Control",
+"Click here to enable/disable Bandwidth Control",
+"Click here to enable/disable Bandwidth Control",
+"Click here to enable/disable Bandwidth Control",
+"Click here to enable/disable Bandwidth Control",
+"Click here to enable/disable Bandwidth Control",
+"Click here to enable/disable Bandwidth Control",
+"Click here to enable/disable Bandwidth Control",
+"Click here to enable/disable Bandwidth Control",
+"Click here to enable/disable Bandwidth Control",
+"Click here to enable/disable Bandwidth Control",
+"Click here to enable/disable Bandwidth Control",
+"點擊這裡啟用 /禁用頻寬管理",
+"点击这里启用 /禁用带宽管理"
+);

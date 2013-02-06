@@ -1,0 +1,354 @@
+OUTPUT_ARCH(mips)
+ENTRY(kernel_entry)
+SECTIONS
+{
+  /* Read-only sections, merged into text segment: */
+  . = @@LOADADDR@@;
+  .init          : { *(.init)		} =0
+  .text      :
+  {
+    _ftext = . ;
+    *(.text)    
+		*(.text.*)
+		   		
+
+		/* g729 codec */
+		*(.Pre_Process2s)
+		*(.Cor_hs)
+		*(.D4i40_17_fasts)
+		*(.Corr_xy2s)
+		*(.imem8K)
+		*(.imem16K)
+		*(.imem32K)
+		*(.utility)	
+		*(.memset)
+		*(.preemphasiss)
+                *(.g729_utils)
+    *(.rodata)
+    *(.rodata.*)
+    *(.rodata1)
+    /* .gnu.warning sections are handled specially by elf32.em.  */
+    *(.gnu.warning)
+  } =0
+
+   	. = ALIGN(@@IRAMSIZE@@);
+	__imem_start = .;
+	__imem_section : { }
+
+	.IMEM_G729ENC	ADDR(__imem_section) : AT (ADDR(__imem_section)+0x4000) 
+							{
+								*(.Cor_h_Xs)						
+								*(.g729_crossconvs)	
+								*(.Chebps_1xs)							
+							}
+	__load_start_IMEM_G729ENC = LOADADDR (.IMEM_G729ENC);
+	__load_stop_IMEM_G729ENC = LOADADDR (.IMEM_G729ENC) + SIZEOF (.IMEM_G729ENC);
+	. = ALIGN(64);
+	.IMEM_G729DEC	ADDR(__imem_section) : AT (ADDR(__imem_section)+0x8000) 
+							{						
+								*(.agcs)
+								*(.preemphasiss)
+													
+							}
+	__load_start_IMEM_G729DEC = LOADADDR (.IMEM_G729DEC);
+	__load_stop_IMEM_G729DEC = LOADADDR (.IMEM_G729DEC) + SIZEOF (.IMEM_G729DEC);
+
+	. = ADDR(__imem_section) + MAX (SIZEOF (.IMEM_G729ENC), SIZEOF (.IMEM_G729DEC));
+	. = ALIGN(64);
+	__IMEM_G729_START = .;
+	.IMEM_G729	 : AT (ADDR(__imem_section)+0x9000)
+							{
+								*(.g729_crosscorrs)
+								*(.Pred_lt_3s)
+								*(.filters)	
+							}
+	__IMEM_G729_END = .;
+	__load_start_IMEM_G729 = LOADADDR (.IMEM_G729);
+	__load_stop_IMEM_G729 = LOADADDR (.IMEM_G729) + SIZEOF (.IMEM_G729);
+
+	.IMEM_G7231ENC ADDR(__imem_section) : AT (ADDR(__imem_section)+0x5000) 
+							{	
+								*(.crossconv2s)
+								*(.crossconvs)
+								*(.convols)
+								*(.EvalPolys)
+							}
+	__load_start_IMEM_G7231ENC = LOADADDR (.IMEM_G7231ENC);
+	__load_stop_IMEM_G7231ENC = LOADADDR (.IMEM_G7231ENC) + SIZEOF (.IMEM_G7231ENC);
+		
+	.IMEM_G7231DEC	 ADDR(__imem_section) : AT (ADDR(__imem_section)+0x6000) 
+							{								
+								*(.Comp_Ens)
+							}
+	__load_start_IMEM_G7231DEC = LOADADDR (.IMEM_G7231DEC);
+	__load_stop_IMEM_G7231DEC = LOADADDR (.IMEM_G7231DEC) + SIZEOF (.IMEM_G7231DEC);
+
+	. = ADDR(__imem_section) + MAX (SIZEOF (.IMEM_G7231ENC), SIZEOF (.IMEM_G7231DEC));
+	. = ALIGN(64);
+	__IMEM_G7231_START = .;
+	.IMEM_G7231	 : AT (ADDR(__imem_section)+0x7000)
+							{
+								*(.Get_Rezs)
+								*(.Sqrt_lbcs)
+								*(.Vec_Norms)
+								*(.crosscorrs)		
+							}
+	__IMEM_G7231_END = .;
+	__load_start_IMEM_G7231 = LOADADDR (.IMEM_G7231);
+	__load_stop_IMEM_G7231 = LOADADDR (.IMEM_G7231) + SIZEOF (.IMEM_G7231);
+	
+	
+
+	/*. = 0x80200000 + MAX (MAX (SIZEOF (.IMEM_G729ENC), SIZEOF (.IMEM_G729DEC)), SIZEOF (.IMEM_G7231ENC));*/
+
+	. = ADDR(__imem_section)+0x0D00;
+  .IMEM_COMMON ALIGN(8):
+  {
+	__imem_common_start = .;
+	*(.basic_ops)
+	*(.oper_32bs)
+	__imem_common_end = .;
+  }
+
+	. = ADDR(__imem_section)+0x0A000;
+
+
+   . = ALIGN(@@IRAMSIZE@@);
+   __iram = . ;
+   .iram	:
+   {
+		*(.iram-gen)		/* general usage (essential) */
+		*(.iram-fwd)		/* general packet forwarding used */
+		*(.iram-l2-fwd)		/* L2 packet forwarding */
+		*(.iram-l34-fwd)	/* L34 packet forwarding */
+		*(.iram-tx)		/* protocol stack TX */
+		*(.iram-extdev)		/* ROMEDRV extension device fwd */
+		*(.iram-airgo)		/* airgo pre-N driver */
+		*(.iram-rtkwlan)	/* realtek wlan driver */
+		*(.iram-crypto)		/* authetication / crypto-engine */
+		*(.iram-voip)		/* voip */
+		*(.iram)		/* other usage */
+		*(.iram.1)
+    }
+
+  
+   	. = ALIGN(@@DRAMSIZE@@);
+	__dmem_start = .;
+	/* rtk_voip start*/   
+	.DMEM_GSMFR	:  
+							{
+								*(.gsmfr_dummy_topstack)	
+								. = ALIGN(8192);
+								__gsmfr_dmem_start = .;
+								*(.gsmfr_dmem_stack1K)
+								. = ALIGN(8);
+								*(.gsmfr_dmem_bss)
+								__gsmfr_dmem_end = .;
+							}
+	. = ALIGN(8192);
+	.DMEM_G729	: 
+							{
+								*(.g729_dummy_topstack)
+    							. = ALIGN(8192);
+								__g729_dmem_start = .;	
+								*(.g729_dmem_stack1K)
+								. = ALIGN(8);				
+								*(.g729_dmem_bss.0)
+								*(.g729_dmem_bss.1)
+								__g729_dmem_end = .;
+							}
+	. = ALIGN(8192);
+	DMEM_G7231	: 
+							{
+								*(.g7231_dummy_topstack)	
+								. = ALIGN(8192);
+								__g7231_dmem_start = .;
+								*(.g7231_dmem_stack1K)
+								. = ALIGN(8);
+								*(.g7231_dmem_bss.0)
+								__g7231_dmem_end = .;
+							}
+	. = ALIGN(8192);
+	DMEM_G726	: 
+							{
+								*(.g726_dummy_topstack)
+								. = ALIGN(8192);
+								__g726_dmem_start = .;
+								*(.g726_dmem_stack1K)
+								*(.dmem_g726)
+								*(.dmem_g726enc)
+								*(.dmem_g726dec)
+								__g726_dmem_end = .;
+							}
+	. = ALIGN(8192);
+	DMEM_LEC	:
+							{
+								*(.lec_dummy_topstack)
+								. = ALIGN(8192);
+								__lec_dmem_start = .;
+								*(.lec_dmem_stack1K)
+								. = ALIGN(8);
+								*(.dmem_lec)
+								__lec_dmem_end = .;
+							}
+	. = ALIGN(8192);
+	DMEM_SYS	:
+							{
+								*(.sys_dummy_topstack)
+								. = ALIGN(8192);
+								__sys_dmem_start = .;
+								*(.sys_dmem_stack)
+								__sys_dmem_end = .;
+
+							}
+	/* rtk_voip end*/
+
+   . = ALIGN(@@DRAMSIZE@@);
+   __dram = . ;
+   __dram_start = . ;
+   .dram	:
+   {
+		. = . + @@DRAMSIZE@@;	/* skip DMEM usage for VoIP */
+   		*(.dram-gen)		/* general usage (essential) */
+   		*(.dram-fwd)		/* general packet forwarding used */
+   		*(.dram-l2-fwd)		/* L2 packet forwarding */
+   		*(.dram-l34-fwd)	/* L34 packet forwarding */
+   		*(.dram-extdev)		/* ROMEDRV extension device fwd */
+   		*(.dram-airgo)		/* airgo pre-N driver */
+   		*(.dram-rtkwlan)	/* realtek wlan driver */
+		*(.dram-crypto)		/* authetication / crypto-engine */
+   		*(.dram-voip)		/* voip */
+		*(.dram-tx)		/* protocol stack TX */
+		*(.dram)		/* other usage */
+		*(.dram.1)
+   }
+   . = ALIGN(@@DRAMSIZE@@);
+   __dram_end = . ;
+  .kstrtab : { *(.kstrtab) }
+
+  . = ALIGN(16);		/* Exception table */
+  __start___ex_table = .;
+  __ex_table : { *(__ex_table) }
+  __stop___ex_table = .;
+
+  __start___dbe_table = .;	/* Exception table for data bus errors */
+  __dbe_table : { *(__dbe_table) }
+  __stop___dbe_table = .;
+
+  __start___ksymtab = .;	/* Kernel symbol table */
+  __ksymtab : { *(__ksymtab) }
+  __stop___ksymtab = .;
+
+  _etext = .;
+
+  . = ALIGN(8192);
+  .data.init_task : { *(.data.init_task) }
+
+  /* Startup code */
+  . = ALIGN(4096);
+  __init_begin = .;
+  .text.init : { *(.text.init) }
+  .data.init : { *(.data.init) }
+  . = ALIGN(16);
+  __setup_start = .;
+  .setup.init : { *(.setup.init) }
+  __setup_end = .;
+  __initcall_start = .;
+  .initcall.init : { *(.initcall.init) }
+  __initcall_end = .;
+  . = ALIGN(4096);	/* Align double page for init_task_union */
+  __init_end = .;
+
+  . = ALIGN(32);
+  .data.cacheline_aligned : { *(.data.cacheline_aligned) }
+
+  .fini      : { *(.fini)    } =0
+  .reginfo : { *(.reginfo) }
+  /* Adjust the address for the data segment.  We want to adjust up to
+     the same address within the page on the next page up.  It would
+     be more correct to do this:
+       . = .;
+     The current expression does not correctly handle the case of a
+     text segment ending precisely at the end of a page; it causes the
+     data segment to skip a page.  The above expression does not have
+     this problem, but it will currently (2/95) cause BFD to allocate
+     a single segment, combining both text and data, for this case.
+     This will prevent the text segment from being shared among
+     multiple executions of the program; I think that is more
+     important than losing a page of the virtual address space (note
+     that no actual memory is lost; the page which is skipped can not
+     be referenced).  */
+  . = .;
+  .data    :
+  {
+    _fdata = . ;
+    *(.data)
+
+   /* Align the initial ramdisk image (INITRD) on page boundaries. */
+   . = ALIGN(4096);
+   __rd_start = .;
+   *(.initrd)
+   . = ALIGN(4096);
+   __rd_end = .;
+
+    CONSTRUCTORS
+  }
+  .data1   : { *(.data1) }
+  _gp = . + 0x8000;
+  .lit8 : { *(.lit8) }
+  .lit4 : { *(.lit4) }
+  .ctors         : { *(.ctors)   }
+  .dtors         : { *(.dtors)   }
+  .got           : { *(.got.plt) *(.got) }
+  .dynamic       : { *(.dynamic) }
+  /* We want the small data sections together, so single-instruction offsets
+     can access them all, and initialized data all before uninitialized, so
+     we can shorten the on-disk segment size.  */
+  .sdata     : { *(.sdata) }
+  . = ALIGN(4);
+  _edata  =  .;
+  PROVIDE (edata = .);
+
+  __bss_start = .;
+  _fbss = .;
+  .sbss      : { *(.sbss) *(.scommon) }
+  .bss       :
+  {
+   *(.dynbss)
+   *(.bss*)
+   *(COMMON)
+   .  = ALIGN(4);
+  _end = . ;
+  PROVIDE (end = .);
+  }
+
+  /* Sections to be discarded */
+  /DISCARD/ :
+  {
+        *(.text.exit)
+        *(.data.exit)
+        *(.exitcall.exit)
+  }
+
+  /* This is the MIPS specific mdebug section.  */
+  .mdebug : { *(.mdebug) }
+  /* These are needed for ELF backends which have not yet been
+     converted to the new style linker.  */
+  .stab 0 : { *(.stab) }
+  .stabstr 0 : { *(.stabstr) }
+  /* DWARF debug sections.
+     Symbols in the .debug DWARF section are relative to the beginning of the
+     section so we begin .debug at 0.  It's not clear yet what needs to happen
+     for the others.   */
+  .debug          0 : { *(.debug) }
+  .debug_srcinfo  0 : { *(.debug_srcinfo) }
+  .debug_aranges  0 : { *(.debug_aranges) }
+  .debug_pubnames 0 : { *(.debug_pubnames) }
+  .debug_sfnames  0 : { *(.debug_sfnames) }
+  .line           0 : { *(.line) }
+  /* These must appear regardless of  .  */
+  .gptab.sdata : { *(.gptab.data) *(.gptab.sdata) }
+  .gptab.sbss : { *(.gptab.bss) *(.gptab.sbss) }
+  .comment : { *(.comment) }
+  .note : { *(.note) }
+}

@@ -1,0 +1,50 @@
+-------------------------------------
+Wireless LAN Linux 2.4 driver for RTL8187
+------------------------------------
+Release date = 2006-06-23
+Operating system release = RedHat 9.2
+Kernel version = 2.4.20
+Release driver version = 24.1000.0623.2006
+Change history =	1. port rtl8187 linux driver to linux 2.4.20 kernel from linux 2.6		
+
+
+-------------------------------------
+Wireless LAN Linux 2.4 driver for RTL8187
+-------------------------------------
+Release date = 2006-07-10
+Operating system release = RedHat 9.2; RedHat 8.0
+Kernel version = 2.4.20; 2.4.18-14
+Release driver version = 24.1010.0710.2006
+Change history =	1. change rtl8187 driver to work on RedHat 8.0 (2.4.18-14)		
+
+
+-------------------------------------
+Wireless LAN Linux 2.4 driver for RTL8187
+-------------------------------------
+Release date = 2006-08-02
+Operating system release = RedHat 9.2; RedHat 8.0
+Kernel version = 2.4.20; 2.4.18-14
+Release driver version = 24.1020.0802.2006
+Change history =	1. fix the bug that can't compile and insert module on RedHat 8.0
+		2. fix the bug that cause system panic when up device on RedHat 8.0
+
+
+-------------------------------------
+Wireless LAN Linux 2.4 driver for RTL8187
+-------------------------------------
+Release date = 2006-11-09
+Operating system release = RedHat 9.2; Redhat 9.0; RedHat 8.0
+Kernel version = 2.4.20; 2.4.18-14
+Release driver version = 24.1021.1109.2006
+Change history =	1. add support for WPA2
+
+
+-------------------------------------
+Wireless LAN Linux 2.4 driver for RTL8187
+-------------------------------------
+Release date = 2007-03-08
+Operating system release = RedHat 9.2; Redhat 9.0; RedHat 8.0
+Kernel version = 2.4.20; 2.4.18-14
+Release driver version = 24.1022.0308.2007
+Change history =       1. fix the bugs about alignment on mips
+	

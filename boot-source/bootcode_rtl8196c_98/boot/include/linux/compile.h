@@ -1,0 +1,6 @@
+#define UTS_VERSION "#363 Mon Aug 13 22:14:34 CST 2001"
+#define LINUX_COMPILE_TIME "22:14:34"
+#define LINUX_COMPILE_BY "john"
+#define LINUX_COMPILE_HOST "larry.waveplus.com.tw"
+#define LINUX_COMPILE_DOMAIN "waveplus.com.tw"
+#define LINUX_COMPILER "gcc version egcs-2.90.29 980515 (egcs-1.0.3 release)"

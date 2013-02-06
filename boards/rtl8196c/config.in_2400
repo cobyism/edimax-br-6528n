@@ -1,0 +1,293 @@
+config RTL_819X
+	def_bool y
+
+config RTL_8196C
+	def_bool y
+
+#
+# Processor Config
+#
+config ARCH_32BIT
+  bool 
+  default y
+
+config ARCH_CPU_RLX4181
+  bool 
+  default y
+
+config ARCH_CPU_EB
+  bool 
+  default y
+
+config ARCH_CPU_EL
+  bool 
+  default n
+
+config ARCH_CPU_RADIAX
+  bool 
+  default n
+
+config ARCH_CPU_SLEEP
+  bool
+  default y
+
+config ARCH_CPU_ULS
+  bool 
+  default y
+
+config ARCH_CPU_LLSC
+  bool 
+  default n
+
+config ARCH_CPU_SYNC
+  bool
+  default n
+
+config ARCH_CACHE_WBC
+  bool 
+  default y
+
+config ARCH_CACHE_L2C
+  bool 
+  default n
+
+config ARCH_IRQ_CPU
+  bool 
+  default y
+
+config ARCH_IRQ_VEC
+  bool 
+  default y
+
+config ARCH_BUS_USB
+  bool 
+  default n
+
+config ARCH_BUS_PCI
+  bool 
+  default y
+
+config ARCH_BUS_PCI_MSI
+  bool
+  default n
+
+#
+# System Config
+#
+menu "System Configuration"
+choice
+	prompt "System Type"
+	default RTL_8196C_GW
+
+config RTL_8196C_GW
+        bool "RTL8196C Demo Board"
+        help
+          This enables support for Realtek RTL8196C demo board
+
+         
+endchoice
+
+config RTL8196C_REVISION_B
+	bool
+	default y if RTL_8196C_GW
+	default y if RTL_8196C_iNIC
+
+config RTL8196C_GREEN_ETHERNET
+	bool
+	default y if RTL_8196C_GW
+
+config FPGA_PLATFORM
+	bool
+
+config RTL_PCIE_SIMPLE_INIT
+	bool
+	default y if RTL8192SE
+	default y if RTL8192CD
+
+config RTL_WTDOG
+	bool "Enable watchdog timer support"
+
+config RTL_TIMER_ADJUSTMENT
+	bool "Enable timer adjustment support"
+	
+config RTL_WEBPAGES_IN_ROOTFS
+	bool "Webpages in rootfs support"
+ 
+config RTL819X_SPI_FLASH
+	bool "SPI flash support"
+
+config RTL_FLASH_MAPPING_ENABLE
+	bool "Enable Flash Mapping"
+
+config POCKET_ROUTER_SUPPORT
+	bool "Pocket router support"
+
+config POCKET_AP_SUPPORT
+	bool "Pocket AP support"
+
+config DOMAIN_NAME_QUERY_SUPPORT
+	bool "Domain name query support"
+
+config USB3G_SUPPORT
+	bool "USB3G support"
+	select HOTPLUG
+	#select UEVENT_HELPER_PATH
+	select FW_LOADER
+	select FIRMWARE_IN_KERNEL
+	#select EXTRA_FIRMWARE=""
+	select SCSI
+	select SCSI_DMA
+	select BLK_DEV_SD
+	select BLK_DEV_SR
+	select PPP
+	select PPP_MULTILINK
+	select PPP_FILTER
+	select PPP_DEFLATE
+	select PPP_BSDCOMP
+	select DEFAULTS_KERNEL_2_6
+	select USB_SUPPORT
+	select USB_ARCH_HAS_HCD
+	select USB_ARCH_HAS_OHCI
+	select USB_ARCH_HAS_EHCI
+	select USB
+	select USB_ANNOUNCE_NEW_DEVICES
+	select USB_DEVICEFS
+	select USB_DEVICE_CLASS
+	select USB_MON
+	select USB_EHCI_HCD
+	select USB_EHCI_ROOT_HUB_TT
+	select USB_EHCI_TT_NEWSCHED
+	select USB_OHCI_HCD
+	select USB_OHCI_LITTLE_ENDIAN
+	select USB_STORAGE
+	select USB_SERIAL
+	select USB_SERIAL_CONSOLE
+	select USB_SERIAL_GENERIC
+	select USB_SERIAL_OPTION
+	select CONFIGFS_FS
+	select ZLIB_DEFLATE
+	default n
+
+config HTTP_FILE_SERVER_SUPPORT
+	bool "Http File server support"
+
+comment "Support two spi flash"
+config RTL_TWO_SPI_FLASH_ENABLE
+        bool "two spi flash support"
+	default n
+config  RTL_SPI_FLASH1_SIZE
+        hex "Config 1st flash size"
+        depends on RTL_819X && RTL_TWO_SPI_FLASH_ENABLE
+        default "0x400000"
+        help
+          Normally should be 0x400000 or 0x800000.
+
+config  RTL_SPI_FLASH2_SIZE
+        hex "Config 2nd flash size"
+        depends on RTL_819X && RTL_TWO_SPI_FLASH_ENABLE
+        default "0x400000"
+        help
+          Normally should be 0x400000 or 0x800000.
+
+comment "Flash size 2M or 4M, default 2M"
+	depends on RTL_FLASH_MAPPING_ENABLE
+comment "USB3G is enable, please set to 0x400000"
+	depends on RTL_FLASH_MAPPING_ENABLE && USB3G_SUPPORT
+config RTL_FLASH_SIZE
+	hex "Size of Flash"
+	depends on RTL_819X && RTL_FLASH_MAPPING_ENABLE
+	default "0x200000"
+	help
+          Size of Flash, Normally should be 2M or 4M.
+
+comment "Hardware setting offset,should be 4K alignment"
+	depends on RTL_FLASH_MAPPING_ENABLE
+config RTL_HW_SETTING_OFFSET
+        hex "Hardware setting offset in flash."
+        depends on RTL_819X && RTL_FLASH_MAPPING_ENABLE
+        default "0x6000"
+        help
+	  Hardware Setting store in flash from the offset.
+	  it should be 4k alignment.
+
+comment "Default setting offset,should be 4K alignment."
+	depends on RTL_FLASH_MAPPING_ENABLE
+comment "size of default and current setting should be same."
+	depends on RTL_FLASH_MAPPING_ENABLE
+config RTL_DEFAULT_SETTING_OFFSET
+        hex "Default setting offset in flash."
+        depends on RTL_819X && RTL_FLASH_MAPPING_ENABLE
+        default "0x8000"
+        help
+	  Default Setting store in flash from the offset.
+	  normally the default setting shoud save before current settting.
+	  NOTE: make sure it's size is enough for default setting,
+		default size is 16K.
+
+comment "Current setting offset,should be 4K alignment."
+	depends on RTL_FLASH_MAPPING_ENABLE
+config RTL_CURRENT_SETTING_OFFSET
+        hex "Current setting offset in flash."
+        depends on RTL_819X  && RTL_FLASH_MAPPING_ENABLE
+        default "0xC000"
+        help
+	  Current Setting store in flash from the offset.
+	  normally the current setting saved after default setting.
+	  NOTE: make sure it's size is enough for current setting,
+		default size is 16K.
+
+comment "Webpage image offset,should be 4K alignment."
+	depends on RTL_FLASH_MAPPING_ENABLE
+comment "size of web page is normally about 100K."
+	depends on RTL_FLASH_MAPPING_ENABLE
+config RTL_WEB_PAGES_OFFSET
+	hex "webpages image offset in flash."
+	depends on RTL_819X && RTL_FLASH_MAPPING_ENABLE
+	default "0x10000"
+	help
+	  Webpages image store in flash from the offset.
+	  NOTE: default size is 128K.
+
+comment "Linux image offset,should be 4K alignment."
+	depends on RTL_FLASH_MAPPING_ENABLE
+comment "this offset MUST between 0x10000~0x40000."
+	depends on RTL_FLASH_MAPPING_ENABLE
+config RTL_LINUX_IMAGE_OFFSET
+        hex "linux image offset in flash."
+        depends on RTL_819X  && RTL_FLASH_MAPPING_ENABLE
+        default "0x30000"
+        help
+	  linux image store in flash from the offset.
+
+comment "Root image offset,should be 64K alignment."
+	depends on RTL_FLASH_MAPPING_ENABLE
+comment "USB3G is enable, please set to 0x130000."
+	depends on RTL_FLASH_MAPPING_ENABLE && USB3G_SUPPORT
+config RTL_ROOT_IMAGE_OFFSET
+        hex "root image offset in flash."
+        depends on RTL_819X  && RTL_FLASH_MAPPING_ENABLE
+        default "0xF0000"
+        help
+	  root image store in flash from the offset.
+
+# KERNE_STACK_SIZE = PAGE_SIZE<<KERNEL_STACK_SIZE_ORDER
+config KERNEL_STACK_SIZE_ORDER
+	int "Kenel Stack Size Order Configuration"
+	default "2"
+	help
+	  With Page Size 4K
+	  1 for 8K kenel stack size
+	  2 for 16K kernel stack size
+	  3 for 32K kernel stack size
+	  etc...
+
+config RTL_EAP_RELAY
+        bool
+
+config RTL_HOSTAPD_SUPPORT
+        bool
+
+endmenu
+
+# remove this line when make SDK
+#source "../target/Kconfig.ictest"

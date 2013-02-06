@@ -1,0 +1,106 @@
+  * Local DNS Master
+
+    dnrd works now also as a DNS master if not turned off with the
+    `--master=off' command line switch.  Normally it creates it's database
+    from the /etc/dnrd/master file.  This may contain the following directives:
+    
+    	domain <domain> [<dns> ...] [+auth]
+
+		sets the default domain for the following records to
+		<domain>.  If <domain> is followed by further names for
+		each <dns> a NS record is stored in the database.
+		If the optional +auth keyword is found will reply with
+		authoritative responses if a lookup under <domain>
+		because of missing data.
+
+
+    	<ipunmber> <name> [...]
+
+		creates A and PTR records for each <name>.  If <name>
+		does not contain a `.' the current default domain is
+		appended.  For names that have a `.' but should have
+		the default domain appended the last character must
+		be a `+'.
+
+
+	hosts <filename> [<domain>]
+
+		create records (type A and PTR) from the contents of
+		the file <filename> which has the same format as
+		/etc/hosts.  If <filename> is `-' the /etc/hosts is
+		read.
+
+      Domain Authority
+      dnrd will automatically take the domain authority for the
+      in-addr.arpa domains with at least one defined host.  That is
+      if you define
+
+		192.168.1.1	dns.quietsche-entchen.de
+
+      dnrd will pretend that it is authorative for PTR lookups in the
+      domain 1.168.192.in-addr.arpa (reverse lookups).  This keeps
+      clients with more than one name server in /etc/resolv.conf from
+      asking other servers if dnrd can't resolve the request.
+
+      Localhost
+      Furthermore dnrd adds always forward and reverse mapping for
+      the localhost with the IP number 127.0.0.1, so
+
+		nslookup - 127.0.0.1
+
+      will always work on the dnrd server machine.
+
+
+    If no /etc/dnrd/master is found or `--master=hosts' is given on the
+    command line only the /etc/hosts using the default domain from
+    /etc/resolv.conf as default domain.
+
+
+  The second required some changes to the source.  dnrd was originally
+  a proxy-only DNS relay.  So it required the presence of a `real' DNS
+  server.  This was tested during program startup when dnrd tried to
+  connect() it's UDP sockets to the given nameservers.  If none of the
+  servers was reachable dnrd terminated.
+
+  Now that it can make to run without the `real' DNS server acting as
+  local DNS master the connect()ed socketd have been turned into
+  unconnected ones.
+
+  As mentioned above it makes sense to start dnrd without DNS servers
+  it could ask.  Just start dnrd without servers:
+
+  	dnrd
+
+  That's all.
+
+  Some other minor fixes have been done.  Especially the startup sequence
+  has been redone.  Background forking is delayed and error messages go to
+  stderr now.
+
+
+  * Added SIGHUP handler
+
+    dnrd will reread it's master DNS definition if it receives a SIGHUP.
+
+
+  * Changed startup sequence
+
+    dnrd forks now immediatly before entering it's mainloop into background,
+    error messages that lead to immediate program termination (fatal errors)
+    are written to stderr.  This way it's visible on the console where dnrd
+    is started if it did start up or not.
+
+
+  * Change to unconnected sockets
+
+    dnrd does not longer try to connect to the given nameserver on start
+    up.  So it's possible to start it when e.g. the default gateway or
+    the remote DNS is down.  If dnrd gets an error response from the
+    network layer it will try immediatly the next given nameserver.  If
+    sending a query fails for all nameservers the client receives a `No
+    records available' error response.
+
+
+- --
+Wolfgang Zekoll <wzk@quietsche-entchen.de>
+

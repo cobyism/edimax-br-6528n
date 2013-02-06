@@ -1,0 +1,2567 @@
+﻿var natUPnP=new Array
+(
+"UPnP",
+"UPnP",
+"UPnP",
+"UPnP",
+"UPnP",
+"UPnP",
+"UPnP",
+"UPnP",
+"UPnP",
+"UPnP",
+"UPnP",
+"UPnP",
+"UPnP",
+"UPnP"
+);
+var high1=new Array
+(
+"High",
+"High",
+"High",
+"High",
+"High",
+"High",
+"High",
+"High",
+"High",
+"High",
+"High",
+"High",
+"高",
+"高"
+);
+var low1=new Array
+(
+"Low",
+"Low",
+"Low",
+"Low",
+"Low",
+"Low",
+"Low",
+"Low",
+"Low",
+"Low",
+"Low",
+"Low",
+"低",
+"低"
+);
+var qosInfo=new Array
+(
+"Quality of Service (QoS) refers to the capability of a network to provide better service to selected network traffic. The primary goal of QoS is providing priority to specific traffics, and minimizes jitter and latency (which will affect some real-time and interactive applications). It’s also important to make sure every application gets adequate bandwidth.",
+"Quality of Service (QoS) bezieht sich auf die Fähigkeit eines Netzwerks, besseren Service für ausgewählten Netzwerktraffic bereitzustellen. Das primäre Ziel von QoS besteht darin, Prioritäten festzulegen, einschließlich Zuweisung der Bandbreite, gesteuerte Jitter und Latenz (erforderlich bei einigen Echtzeitanwendungen und interaktivem Traffic), und verbesserte Verlusteigenschaften. Außerdem muss sichergestellt werden, dass die bereitgestellten Prioritäten für einen oder mehrere Abläufe keine anderen Abläufe behindern.",
+"La calidad de servicio (QoS) se refiere a la capacidad de una red de suministrar un mejor servicio al tráfico de red seleccionado. El objetivo primario de la QoS radica en suministrar la prioridad, incluyendo la banda ancha dedicada, las alteraciones y la latencia (exigida por el tráfico interactivo y en tiempo real) y mejorar las características de pérdida. Del mismo modo, es importante garantizar que el suministro de la prioridad para uno o varios flujos no conlleva el fracaso de otros flujos.",
+"QoS (Quality of Service - Qualité de Service) fait référence à la capacité d'un réseau à fournir de meilleurs services au trafic réseau sélectionné. La but premier du QoS est de fournir une priorité incluant une largeur de bande dédiée, une fluctuation et des attentes contrôlées (nécessaires à certains trafic interactifs en temps réel), et des caractéristiques perfectionnées en matière de pertes. L'important est également d'assurer que la mise en priorité d'un ou plusieurs flux ne fera pas échouer les autres flux.",
+"Quality of Service (QoS) si riferisce alla capacità di una rete di fornire un servizio migliore per determinati traffici di rete. L'obiettivo primario del QoS consiste nel fornire priorità inclusa larghezza di banda dedicata, jitter e latenza controllati (richiesti da alcuni tipi di traffico interattivo e in tempo reale), e caratteristiche di perdita ottimizzate. Inoltre, è importante assicurarsi che l'assegnazione di priorità a uno o più flussi non interrompa gli altri flussi.",
+"Quality of Service (QoS) verwijst naar de capaciteit die een netwerk heeft om betere service te verlenen aan het gekozen netwerkverkeer. Het eerste doel van QoS is voorrang te geven aan zaken als toegewezen bandbreedte, vermindering van jitter, en latentie (soms vereist bij real-time en interactief verkeer), en verbeterde verlieseigenschappen. Het is ook van belang dat het voorrang geven aan een of meerdere stromen geen fouten veroorzaakt in andere stromen.",
+"Qualidade de serviço (QoS) diz respeito à capacidade de uma rede fornecer um melhor serviço a um determinado tráfego de rede. O principal objectivo do QoS é fornecer prioridade, incluindo largura de banda dedicada, instabilidade de sinal e latência controladas (necessárias por algum tráfego de rede em tempo real e interactivo) e características de perda melhoradas. É também importante certificar-se de que o fornecimento de prioridade para um ou mais fluxos não prejudica os outros fluxos.",
+"Kvalita služby (QoS) odpovídá schopnosti sítě poskytovat lepší služby pro vybraný síťový provoz. Primárním cílem QoS je poskytovat prioritu včetně vymezené šířky pásma, kontrolu rozptylu zpoždění a zpoždění (požadováno určitým provozem v reálném čase a interaktivním provozem) a zlepšuje ztrátové charakteristiky. Důležité je také, že poskytování priority pro jeden nebo více souborů nezpůsobuje selhání jiného provozu.",
+"Jakość usługi (QoS) oznacza określenie parametrów dla wybranego ruchu sieciowego. Głównym celem QoS jest zapewnienie przydzielania dostępnego pasma, sterowanie zmianami oraz opóźnieniami (wymagane przez rzeczywisty i interaktywny ruch) oraz zmniejszenie strat. Ponadto istotne jest zapewnienie, aby priorytet var jednych funkcji nie wywoływał nieprawidłowości w  przypadku innych.",
+"Quality of Service (QoS) se refera la capacitatea unei retele de a oferi servicii mai bune pentru un anumit tip de trafic. Telul primar al functiei QoS este acela de a oferi prioritate (incluzand banda garantata, etc) si pierderi mult mai mici. Deasemenea este important sa va asigurati ca proritatea acordata anumitor fluxuri nu va incurca restul traficului.",
+"Quality of Service (QoS) означает возможность обеспечить лучшие условия выбранному типу сетевого трафика. Главная цель QoS - обеспечить приоритет, включая выделенную ширину полосы, контролируюмую задержку (требуется для интерактивного трафика и трафика в реальном времени), улучшенные параметры потерь. Также важна гарантия того, что при обеспечении приритетности для одного или нескольких потоков не будут потеряны другие потоки информации.",
+"Quality of Service (QoS) je schopnosť siete poskytovať lepšie služby pre určité druhy sieťovej prevádzky. Hlavným cieľom QoS je poskytnúť prioritu vrátane určenej prenosovej rýchlosti, kontrola rušenia a odozvy (požadované pre niektoré druhy neprerušovanej a interaktívnej premávky) a zlepšuje charakteristiky strát. Dôležité je to, že poskytujú prioritu pre jednu alebo viacej tokov bez toho, že by došlo k prerušeniu ostatných dátových tokov.",
+"Quality of Service (QoS) refers to the capability of a network to provide better service to selected network trA-Ffic. The primary goal of QoS is to provide priority including dedicated bandwidth, controlled jitter and latency (required by some real-time and interactive trA-Ffic), and improved loss characteristics. Also important is making sure that providing priority for one or more flows does not make other flows fail.",
+"Quality of Service (QoS) refers to the capability of a network to provide better service to selected network trA-Ffic. The primary goal of QoS is to provide priority including dedicated bandwidth, controlled jitter and latency (required by some real-time and interactive trA-Ffic), and improved loss characteristics. Also important is making sure that providing priority for one or more flows does not make other flows fail."
+);
+var qosInfoshort=new Array
+(
+"Quality of Service (QoS) refers to the capability of a network to provide better service to selected netwo",
+"Quality of Service (QoS) bezieht sich auf die Fähigkeit eines Netzwerks, besseren Service für ausgewählten ",
+"La calidad de servicio (QoS) se refiere a la capacidad de una red de suministrar un mejor servicio al tráfi",
+"QoS (Quality of Service - Qualité de Service) fait référence à la capacité d'un réseau à fournir de meilleu",
+"Quality of Service (QoS) si riferisce alla capacità di una rete di fornire un servizio migliore per determi",
+"Quality of Service (QoS) verwijst naar de capaciteit die een netwerk heeft om betere service te verlenen aa",
+"Qualidade de serviço (QoS) diz respeito à capacidade de uma rede fornecer um melhor serviço a um determinad",
+"Kvalita služby (QoS) odpovídá schopnosti sítě poskytovat lepší služby pro vybraný síťový provoz. Primárním ",
+"Jakość usługi (QoS) oznacza określenie parametrów dla wybranego ruchu sieciowego. Głównym celem QoS jest za",
+"Quality of Service (QoS) se refera la capacitatea unei retele de a oferi servicii mai bune pentru un anumit",
+"Quality of Service (QoS) означает возможность обеспечить лучшие условия выбранному типу сетевого трафика. Г",
+"Quality of Service (QoS) je schopnosť siete poskytovať lepšie služby pre určité druhy sieťovej prevádzky. H",
+"",
+""
+);
+var natSr=new Array
+(
+"Static Routing",
+"Statisches Routing",
+"Enrutamiento estático",
+"Routage statique",
+"Routing statico",
+"Statische routing",
+"Encaminhamento estático",
+"Statické směrování",
+"Routing statyczny",
+"Routare Statica",
+"Статическая маршрутизация",
+"Statické presmerovanie",
+"靜態路由",
+"静态路由"
+);
+var natSappInfo=new Array
+(
+"Some applications require multiple connections, such as Internet gaming, video conferencing, Internet telephony and others. These applications cannot work when Network Address Translation (NAT) is enabled. If you need to run applications that require multiple connections, specify the port normally associated with an application in the \"Trigger Port\" field,select the protocol type as TCP or UDP, then enter the public ports associated with the trigger port to open them for inbound traffic.<br>    Note:The range of the Trigger Port is 1 to 65535.",
+"Einige Anwendungen erfordern mehrere Verbindungen, beispielsweise Internetspiele, Videokonferenzen, Internettelefonie und weitere. Diese Anwendungen können nicht ausgeführt werden, wenn Network Address Translation (NAT) aktiviert ist. Wenn Sie Anwendungen ausführen müssen, die mehrere Verbindungen erfordern, legen Sie den Port, der normalerweise mit der Anwendung verbunden ist, im Feld \"Trigger-Port\" fest und wählen Sie den Protokolltyp TCP oder UDP. Geben Sie anschließend die öffentlichen Ports ein, die mit dem Trigger-Port verbunden sind, um diese für eingehenden Traffic zu öffnen.<br> Hinweis: Der Bereich des Trigger-Ports ist 1 bis 65535.",
+"Algunas aplicaciones exigen múltiples conexiones, como los juegos por Internet, la vídeoconferencia, la telefonía por Internet y otros. Estas aplicaciones no podrán funcionar cuando la conversión de dirección de red (NAT) esté activada. EnrSi necesita lanzar aplicaciones que exijan múltiples conexiones, indique el puerto normalmente asociado a la aplicación en el campo de \"Puerto de activación\", seleccione el tipo de protocolo como TCP o UDP, y a continuación, indique los puertos públicos asociados al puerto de activación para abrirlos desde el tráfico interior.<brb>Nota:/bLa serie del puerto de activación es de 1 a 65535.",
+"Certaines applications nécessitent plusieurs connexions, comme les jeux sur Internet, les vidéo-conférences, la téléphonie par Internet, etc... Ces applications ne peuvent pas fonctionner lorsque le NAT est activé. Si vous devez lancer des applications qui nécessitent plusieurs connexions, spécifiez le port manuellement associé à l'application dans le champ \"Port de déclenchement\" , sélectionnez le type de protocole TCP ou UDP, puis saisissez les ports publiques associés au port de déclenchement pour les ouvrir au trafic entrant.<br>     Note:L'intervalle du port de déclenchement va de 1 à 65535.",
+"Alcune applicazioni richiedono connessioni multiple, come Internet gaming, videoconferenza, telefonia Internet e altri servizi simili. Queste applicazioni non possono funzionare quando è attivata la funzione di traduzione dell'indirizzo di rete (NAT). Se si vogliono eseguire applicazioni che richiedono connessioni multiple, specificare la porta normalmente associata con un'applicazione nel campo \"Trigger Port\", selezionare il tipo di protocollo TCP o UDP, quindi inserire le porte pubbliche associate con la trigger port per aprirle al traffico in entrata.<brb>Nota:/bl'intervallo della Trigger Port va da 1 a 65535.",
+"Voor sommige toepassingen zijn meerdere aansluitingen nodig, zoals voor internet gaming, vergaderen met beeld, internettelefoon en dergelijke. Deze toepassingen werken niet als Network Address Translation (NAT) is ingeschakeld. Als u gebruik wilt maken van toepassingen die meervoudige aansluitingen nodig hebben, geef dan de poort aan die normaal is verbonden met een toepassing in \"Trigger Port\", kies als protocol TCP of UDP, voer dan de publieke poorten in die samenwerken met de triggerpoort om ze te openen voor binnenkomend verkeer.<br>Let op: het bereik van de triggerpoort ligt tussen 0 en 65535.",
+"Algumas aplicações requerem várias ligações, tais como jogos da Internet, conferências de vídeo, telefone da Internet e outras. Estas aplicações não funcionam se a opção Tradução de Endereços de Rede (NAT) estiver activada. Se necessitar de executar aplicações que exijam várias ligações, especifique a porta normalmente associada a uma aplicação no campo \"Trigger Port\" (Porta de accionamentovar ), seleccione um tipo de protocolo como TCP ou UDP e depois introduza as portas públicas associadas à porta de accionamento para abri-las ao tráfego de entrada.<br> Nota:O intervalo da Porta de accionamento varia entre 1 e 65535.",
+"Některé aplikace vyžadují vícenásobné připojení, například internetové hry, videokonference, internetová telefonie a další. Tyto aplikace nemohou pracovat při aktivním překládání síťových adres (NAT). Potřebujete-li spouštět aplikace vyžadující vícenásobné připojení, určete port normálně přiřazený k aplikaci v položce \„Spouštěcí port\", vyberte typ protokolu TCP nebo UDP a pak zadejte veřejné porty přiřazené ke spouštěcímu portu pro příchozí provoz.<br><b>Poznámka:</b>Rozsah pro nastavení spouštěcího portu je 1 až 65535.",
+"Niektóre aplikacje wymagają wspólnego połączenia jak np. gry sieciowe, konferencje wideo, telefonia internetowa lub inne. Aplikacje te nie mogą pracować przy włączonym NAT (tłumaczenie adresów sieci). W przypadku używania aplikacji wymagających wspólnego połączenia, określ port wyznaczony w polu “Port wyzwalacza”, wybierz rodzaj protokołu jako TCP lub UDP, a następnie wpisz porty publiczne związane z “Portem wyzwalacza” w celu ich otwarcia. Uwaga: zakres tych portów wynosi 1 do 65535.  ",
+"Unele aplicatii necesita mai multe conexiuni (jocurile online, conferinte video, telefonie internet si altele). Aceste aplicatii nu pot functiona cand este activata functia de NAT. Daca doriti sa rulati acest tip de aplicatii, introduceti portul asociat acestor aplicatii in campul \"Port Trigger\" , alegeti tipul protocolului TCP sau UDP, apoi introduceti porturile publice ascocitate cu porturile trigger pentru a le deschide pentru trafic nerestrictionat. <br>Nota: Raza pentru portul trigger este 0 - 65535.",
+"Для некоторых приложений требуются множественные подключения, например, для интернет игр, видео конференций, интернет телефонии и др. Эти приложения не могут работать при включенном NAT. Если вам нужно запустить приложение, требующее множественного подключения, введите порт обычно ассоциированный с этим приложением в поле \"Переключаемый порт\", выберите тип протокола TCP или UDP, затем введите порты связанные с переключаемым портом, чтобы открыть их для внешнего трафика. Заметьте, диапазон переключаемых портов лежит в пределах 1-65535.",
+"Niektoré aplikácie potrebujú viacnásobné pripojenie, ako napríklad internetové hranie, video konferencie, internetovú telefóniu a ostatné. Tieto aplikácia nemôžu pracovať, keď je zapnutá funkcia NAT (Network Address Translation).  Ak je potrebujete pustiť aplikácie, ktoré požadujú viacnásobné pripojenia, špecifikujte port normálne priradený aplikácií do políčka \"Trigger Port\" , vyberte typ protokolu TCP alebo UDP, potom zadajte verejné porty asociované s trigger portom pre otvorenie pre prichádzajúcu premávku. <br> Poznámka: Rozsah Trigger portu je od 1 do 65535.",
+"Some applications require multiple connections, such as Internet gaming, video conferencing, Internet telephony and others. These applications cannot work when Network Address Translation (NAT) is enabled. If you need to run applications that require multiple connections, specify the port normally associated with an application in the \"Trigger Port\" field,select the protocol type as TCP or UDP, then enter the public ports associated with the trigger port to open them for inbound trA-Ffic.<br>    Note:The range of the Trigger Port is 1 to 65535.",
+"Some applications require multiple connections, such as Internet gaming, video conferencing, Internet telephony and others. These applications cannot work when Network Address Translation (NAT) is enabled. If you need to run applications that require multiple connections, specify the port normally associated with an application in the \"Trigger Port\" field,select the protocol type as TCP or UDP, then enter the public ports associated with the trigger port to open them for inbound trA-Ffic.<br>    Note:The range of the Trigger Port is 1 to 65535."
+);
+var natSappInfoshort=new Array
+(
+"Some applications require multiple connections, such as Internet gaming, video conferencing, Internet telep",
+"Einige Anwendungen erfordern mehrere Verbindungen, beispielsweise Internetspiele, Videokonferenzen, Interne",
+"Algunas aplicaciones exigen múltiples conexiones, como los juegos por Internet, la vídeoconferencia, la tel",
+"Certaines applications nécessitent plusieurs connexions, comme les jeux sur Internet, les vidéo-conférences",
+"Alcune applicazioni richiedono connessioni multiple, come Internet gaming, videoconferenza, telefonia Inter",
+"Voor sommige toepassingen zijn meerdere aansluitingen nodig, zoals voor internet gaming, vergaderen met bee",
+"Algumas aplicações requerem várias ligações, tais como jogos da Internet, conferências de vídeo, telefone da",
+"Některé aplikace vyžadují vícenásobné připojení, například internetové hry, videokonference, internetová tel",
+"Niektóre aplikacje wymagają wspólnego połączenia jak np. gry sieciowe, konferencje wideo, telefonia internet",
+"Unele aplicatii necesita mai multe conexiuni (jocurile online, conferinte video, telefonie internet si altel",
+"Для некоторых приложений требуются множественные подключения, например, для интернет игр, видео конференций,",
+"Niektoré aplikácie potrebujú viacnásobné pripojenie, ako napríklad internetové hranie, video konferencie, in",
+"",
+""
+);
+var qosTable=new Array
+(
+"Current QoS Table",
+"Aktuelle QoS Tabelle",
+"Actual tabla QoS",
+"Table QoS actuel",
+"Tabella QoS corrente",
+"Huidige QoS",
+"Tabela de QoS actual",
+"Aktuální tabulka QoS",
+"Obecna tabela QoS",
+"Tabela Curenta QoS ",
+"Текущая таблица QoS",
+"Aktuálna tabuľka QoS",
+"現行的QoS列表",
+"现行的QoS列表"
+);
+var ezqosTable=new Array
+(
+"Current iQoS Table",
+"Aktuelle iQoS Tabelle",
+"Actual tabla iQoS",
+"Table iQoS actuel",
+"Tabella iQoS corrente",
+"Huidige iQoS",
+"Tabela de iQoS actual",
+"Aktuální tabulka iQoS",
+"Obecna tabela iQoS",
+"Tabela Curenta iQoS ",
+"Текущая таблица iQoS",
+"Aktuálna tabuľka iQoS",
+"現行的iQoS列表",
+"现行的iQoS列表"
+);
+var natPortPub=new Array
+(
+"Public Port",
+"Öffentlicher Port",
+"Puerto público",
+"Port publique",
+"Porta pubblica",
+"Publieke poort",
+"Porta pública",
+"Veřejný port",
+"Port publiczny",
+"Port Public",
+"Публичный порт",
+"Verejný port",
+"公用埠",
+"公用埠"
+);
+var natTcpPort=new Array
+(
+"TCP Port to Open",
+"TCP-Port auf offen",
+"Puerto TCP a abrir",
+"Port TCP à ouvrir",
+"Porta TCP da aprire",
+"TCP-poort openen",
+"Porta TCP a abrir",
+"TCP port pro otevření",
+"Otwórz port TCP",
+"Port TCP pentru deschidere",
+"Открыть TCP порт",
+"TCP port pre otvorenie",
+"TCP埠打開",
+"TCP埠打开"
+);
+var natUdpPort=new Array
+(
+"UDP Port to Open",
+"UDP-Port auf offen",
+"Puerto UDP a abrir",
+"Port UDP à ouvrir",
+"Porta UDP da aprire",
+"UDP-poort openen",
+"Porta UDP a abrir",
+"UDP port pro otevření",
+"Otwórz port UDP",
+"Port UDP pentru deschidere",
+"Открыть UDP порт",
+"UDP port pre otvorenie",
+"UDP埠打開",
+"UDP埠打开"
+);
+var save=new Array
+(
+"Save",
+"Speichern",
+"Guardar",
+"Sauvegarder",
+"Salva",
+"Opslaan",
+"Guardar",
+"Uložit",
+"Zapisz",
+"Salveaza",
+"Сохранить",
+"Uložiť",
+"儲存",
+"储存"
+);
+var natTrigType=new Array
+(
+"Trigger Type",
+"Trigger-Typ",
+"Tipo de activación",
+"Type de déclenchement",
+"Tipo di trigger",
+"Triggersoort",
+"Tipo de accionamento",
+"Typ spouštění",
+"Rodzaj wyzwalacza",
+"Tip Trigger",
+"Тип переключения",
+"Typ spúšte",
+"Trigger類型",
+"Trigger类型"
+);
+var qosUpload=new Array
+(
+"Upload Bandwidth",
+"Upload-Bandbreite",
+"Cargar banda ancha",
+"Bande passante ascendante",
+"Larghezza di banda in upload",
+"Bandbreedte voor uploaden",
+"Largura de banda de envio",
+"Přenosové pásmo pro odesílání",
+"Szerokość pasma wychodzącego",
+"Latime Banda pentru Upload",
+"Ширина полосы исходящего трафика",
+"Prenosová rýchlosť odosielaných dát",
+"上傳頻寬",
+"上传带宽"
+);
+var wanqosAlertTestCha=new Array
+(
+"You are changing the settings, please press apply to save your settings!!",
+"Sie sind dabei, die Einstellungen ändern. Bitte klicken Sie auf Übernehmen, um Ihre Einstellungen zu speichern!",
+"Está cambiando los parámetros, por favor, pulse en aplicar para guardar sus parámetros.",
+"Vous avez modifié les paramètres, appuyez sur appliquer pour sauvegarder vos changements !!",
+"Si stanno modificando le impostazioni, premere applica per salvare le impostazioni!!",
+"U gaat de instellingen veranderen, druk op apply (toepassen) om de instellingen te bewaren!!",
+"Está a alterar as definições, prima Apply (Aplicar) para guardar as suas definições!!",
+"Změnili jste nastavení, nové nastavení použijte pro uložení!!",
+"Dokonujesz zmiany ustawień. Wciśnij przycisk ZASTOSUJ, aby zapisać ustawienia!!",
+"Ati efectuat schimbari, apasati Aplica pentru a le salva!",
+"Вы изменили настройки, пожалуйста, нажмите \"Применить\" для сохранения настроек",
+"Meníte nastavenia, prosím stlačte POUŽIŤ pre uloženie vašich nastavení!!",
+"你正在改變設定，請按\"應用\"儲存設定！",
+"你正在改变设定，请按\"应用\"储存设定！"
+);
+var natPortInfo=new Array
+(
+"Entries in this table allow you to automatically redirect common network services to a specific machine behind the NAT firewall.  These settings are only necessary if you wish to host some sort of server like a web server or mail server on the private local network behind your Gateway\'s NAT firewall.",
+"Die Einträge in dieser Tabelle ermöglichen Ihnen die automatische Umleitung von gebräuchlichen Netzwerkdiensten auf eine bestimmte Maschine hinter der NAT-Firewall.  Diese Einstellungen sind nur erforderlich, wenn Sie eine Art Server (beispielsweise einen Webserver oder einen Mailserver) im privaten lokalen Netzwerk hinter der NAT-Firewall des Gateways hosten möchten.",
+"Las entradas en este cuadro le permiten redirigir automáticamente los servicios comunes de red hacia una máquina específica tras el cortafuegos NAT.  Estos parámetros tan sólo son necesarios si desea albergar algún tipo de servidor como un servidor Web o un servidor de correo en la red local privada que se oculta tras su cortafuegos NAT de la puerta de acceso.",
+"Les entrées de ce tableau vous permettent de rediriger automatiquement les services réseaux communs vers une machine spécifique derrière le pare-feu NAT.  Ces paramètres ne sont nécessaires que si vous souhaitez accueillir un type de serveur comme un serveur Web ou un serveur de messagerie sur le réseau local derrière le pare-feu NAT de votre passerelle.",
+"Le immissioni di questa tabella consentiranno di ridirezionare automaticamente i servizi di rete più comuni ad una specifica macchina protetta dal firewall NAT.  Queste impostazioni sono necessarie solo se si desidera ospitare un server di tipo web server o mail server sulla rete privata locale protetta dal firewall NAT del gateway.",
+"Met de in deze tabel ingevoerde gegevens kunt u automatisch algemene netwerkdiensten doorsturen naar een specifiek apparaat achter de NAT-firewall.  Deze instellingen zijn alleen nodig als u een server wilt hosten, zoals een webserver of een mailserver, op het private lokale netwerk achter de NAT-firewall van uw gateway.",
+"As entradas indicadas nesta tabela permitem redireccionar automaticamente os serviços de rede comuns para uma máquina específica na firewall NAT.  Estas definições são apenas necessárias se quiser alojar algum tipo de servidor, como um servidor Web ou um servidor de correio na rede local privada na firewall NAT do gateway.",
+"Údaje v této tabulce umožňují automaticky přesměrování běžných síťových služeb na určité počítače za bránou NAT firewall.  Provedení těchto nastavení je nutné pouze v případě, že chcete používat hostování určitých typů serverů, například webový nebo poštovní server, na soukromé síti za bránou NAT firewall.",
+"Wpisy w tej tabeli pozwalaja na automatyczne przekierowanie usług sieciowych do danego komputera znajdującego się za firewallem i NAT.  Ustawienia te są potrzebne tylko wtedy, gdy chcesz korzystać z serwera www lub poczty w prywatnej sieci poza firewallem i NAT.  ",
+"Inregistrarile din aceasta pagina va permit redirectionarea automata a unor servicii catre un anumit calculator din spatele firewallului NAT. Aceste setari sunt necesare in cazul in care doriti sa gazduiti un server de mail sau web in reteaua din spatele routerului.",
+"Содержимое этой таблицы позволяют вам автоматически перенаправить обычные сетевые сервисы на определенное устройство за NAT брандмауэром. Эти настройки нужны только если вы хотите иметь некоторые типы серверов, такие, как веб сервер или mail сервер, в вашей локальной сети за NAT брандмауэром.",
+"Hodnoty v tejto tabuľke dovoľujú automaticky presmerovať bežné sieťové služby do špecifického zariadenia za NAT firewall. Tieto nastavenia sú potrebné len v prípade, ak si prajete hosťovať niektorý druh serverov ako napríklad ako webový server alebo poštový server na privátnej lokálnej sieti za vašou bránou NAT firewall.",
+"Entries in this table allow you to automatically redirect common network services to a specific machine behind the NAT firewall.  These settings are only necessary if you wish to host some sort of server like a web server or mail var server on the private local network behind your Gateway\'s NAT firewall.",
+"Entries in this table allow you to automatically redirect common network services to a specific machine behind the NAT firewall.  These settings are only necessary if you wish to host some sort of server like a web server or mail server on the private local network behind your Gateway\'s NAT firewall."
+);
+var natPortInfoshort=new Array
+(
+"Entries in this table allow you to automatically redirect common network services to a specific machine beh",
+"Die Einträge in dieser Tabelle ermöglichen Ihnen die automatische Umleitung von gebräuchlichen Netzwerkdien",
+"Las entradas en este cuadro le permiten redirigir automáticamente los servicios comunes de red hacia una má",
+"Les entrées de ce tableau vous permettent de rediriger automatiquement les services réseaux communs vers un",
+"Le immissioni di questa tabella consentiranno di ridirezionare automaticamente i servizi di rete più comuni",
+"Met de in deze tabel ingevoerde gegevens kunt u automatisch algemene netwerkdiensten doorsturen naar een sp",
+"As entradas indicadas nesta tabela permitem redireccionar automaticamente os serviços de rede comuns para u",
+"Údaje v této tabulce umožňují automaticky přesměrování běžných síťových služeb na určité počítače za bránou",
+"Wpisy w tej tabeli pozwalaja na automatyczne przekierowanie usług sieciowych do danego komputera znajdujące",
+"Inregistrarile din aceasta pagina va permit redirectionarea automata a unor servicii catre un anumit calcul",
+"Содержимое этой таблицы позволяют вам автоматически перенаправить обычные сетевые сервисы на определенное у",
+"Hodnoty v tejto tabuľke dovoľujú automaticky presmerovať bežné sieťové služby do špecifického zariadenia za",
+"",
+""
+);
+var wanqosAlertTestNew=new Array
+(
+"new page!",
+"neue Seite!",
+"¡nueva página!",
+"nouvelle page !",
+"nuova pagina!",
+"nieuwe pagina!",
+"nova página!",
+"nová stránka!",
+"Nowa strona ",
+"Pagina noua!",
+"новая страница!",
+"nová stránka!",
+"新的一頁！",
+"新的一页！"
+);
+var wanqosaddMacAddr=new Array
+(
+"MAC Address ",
+"MAC-Adresse ",
+"Dirección MAC ",
+"Adresse MAC ",
+"Indirizzo MAC ",
+"MAC-adres ",
+"Endereço MAC ",
+"MAC adresa ",
+"Adres MAC",
+"Adresa MAC",
+"MAC адрес",
+"Adress MAC",
+"MAC位址",
+"MAC地址"
+);
+var natALGComArrayQuake3=new Array
+(
+"Support for Quake III Arena connection tracking and nat.",
+"Support für Quake III Arena Verbindungstracking und Nat.",
+"Acepta el seguimiento y nat de la conexión Quake III Arena.",
+"Prise en charge pour le suivi de connexion Quake III Arena et NAT.",
+"Supporto per tracciatura e nat di connessione per Quake III Arena.",
+"Ondersteunt bijhouden van de aansluitstatus van Quake III Arena en NAT.",
+"Suporte para o registo e rede da ligação Quake III Arena.",
+"Podpora pro připojení Quake III Arena a nat.",
+"Obsługuje połączenia dla Quake III Arena",
+"Suport pentru conexiune Quake III Arena tracking si NAT",
+"Поддерживает контроль за подключением Quake III Arena и NAT",
+"Podporuje vyhľadávanie spojenia a NAT pre Quake III Arena.",
+"Support for Quake III Arena connection tracking and nat.",
+"Support for Quake III Arena connection tracking and nat."
+);
+var natALGComArrayAmanda=new Array
+(
+"Support for Amanda backup tool protocol.",
+"Support für Amanda Sicherungstool-Protokoll.",
+"Acepta el protocolo de la herramienta de copia de seguridad de Amanda.",
+"Prise en charge pour le protocole de l'outil de sauvegarde Amanda.",
+"Supporto per protocollo dello strumento di backup Amanda.",
+"Ondersteunt Amanda backup.",
+"Suporte para o protocolo da ferramenta de cópia de segurança Amanda.",
+"Podpora pro protokol zálohovacího nástroje Amanda.",
+"Obsługuje protokół narzędzi Amanda",
+"Suport pentru protocolul uneltei de backup Amanda.",
+"Поддерживает протокол Amanda backup tool.",
+"Podporuje zálohovací nástroj protokolu Amanda.",
+"Support for Amanda backup tool protocol.",
+"Support for Amanda backup tool protocol."
+);
+var natALGComArrayTFTP=new Array
+(
+"Support for TFTP.",
+"Support für TFTP.",
+"Acepta la TFTP.",
+"Prise en charge TFTP.",
+"Supporto per TFTP.",
+"Ondersteunt TFTP.",
+"Suporte para TFTP.",
+"Podpora pro TFTP.",
+"Obsługuje protokół TFTP",
+"Suport pentru TFTP.",
+"Поддерживает TFTP",
+"Podporuje TFTP.",
+"Support for TFTP.",
+"Support for TFTP."
+);
+var natALGComArraySIP=new Array
+(
+"Support for SIP.",
+"Support für SIP.",
+"Acepta la SIP.",
+"Prise en charge SIP.",
+"Supporto per SIP.",
+"Ondersteunt SIP.",
+"Suporte para SIP.",
+"Podpora pro SIP.",
+"Obsługuje protokół SIP",
+"Suport pentru SIP.",
+"Поддерживает SIP",
+"Podporuje SIP.",
+"Support for SIP.",
+"Support for SIP."
+);
+var qosSelect=new Array
+(
+"Select",
+"Auswählen",
+"Seleccionar",
+"Selectionner",
+"Seleziona",
+"Selecteer",
+"Seleccionar",
+"Výběr",
+"Wybierz",
+"Selectati",
+"Выбрать",
+"Vybrať",
+"選擇",
+"选择"
+);
+var moveUp=new Array
+(
+"Move Up",
+"Nach oben bewegen",
+"Subir",
+"Déplacer vers le haut",
+"Sposta in alto",
+"Omhoog",
+"Mover para cima",
+"Posunout nahoru",
+"Przesuń do góry",
+"Sus",
+"Вверх",
+"Posunúť hore",
+"向上移動",
+"向上移动"
+);
+var qosBandwidth=new Array
+(
+"Bandwidth",
+"Bandbreite",
+"Banda ancha",
+"Bande passante",
+"Larghezza di banda",
+" Bandbreedte",
+"Largura de banda",
+"Přenosové pásmo",
+"Szerokość pasma",
+"Latime de Banda",
+"Ширина полосы",
+"Prenosová rýchlosť",
+"頻寬",
+"带宽"
+);
+var natSrHop=new Array
+(
+"Hop Count",
+"Hop Count",
+"Cómputo superior",
+"Compte Hop",
+"Hop Count",
+"Hop count (Stappen tellen)",
+"Conjunto de saltos",
+"Hop Count",
+"Liczba skoków",
+"Contori Hopuri",
+"Счетчик прыжков",
+"Počítadlo skokov",
+"Hop Count",
+"Hop Count"
+);
+var natSetInfo=new Array
+(
+"Network Address Translation (NAT) allows multiple users at your local site to access the Internet through a single Public IP Address or multiple Public IP Addresses. NAT provides Firewall protection from hacker attacks and has the flexibility to allow you to map Private IP Addresses to Public IP Addresses for key services such as the Web or FTP.",
+"Network Address Translation (NAT) ermöglicht mehreren Benutzern an Ihrem lokalen Standort den Zugriff auf das Internet, entweder über eine einzige öffentliche IP-Adresse oder über mehrere öffentliche IP-Adressen. NAT bietet Firewall-Schutz vor Hackerattacken und besitzt die Flexibilität, damit Sie private IP-Adressen auf öffentliche IP-Adressen für wichtige Dienste wie z. B. Web oder FTP zuordnen können.",
+"La conversión de dirección de red (NAT) permite que varios usuarios de su centro local accedan a Internet mediante una única dirección IP pública o varias direcciones IP públicas. NAT ofrece una protección Firewall contra los ataques de los intrusos y tiene la flexibilidad de permitirle localizar las direcciones IP privadas para los servicios principales como la Web o el FTP.",
+"Le dispositif NAT - Network Address Translation (Traduction d’Adresse Réseau) permet à plusieurs utilisateurs de votre site d'accéder à Internet grâce à une ou plusieurs adresses IP publiques. NAT offre un pare-feu de protection contre les attaques de hackers ainsi que la flexibilité vous permettant de mapper des adresses IP privées vers des adresses IP publiques pour les services clé tels que le Web ou le FTP.",
+"La traduzione dell'indirizzo di rete (NAT) consente a più utenti della postazione locale di accedere ad Internet tramite un unico indirizzo IP pubblico o multipli indirizzi IP pubblici. NAT garantisce la protezione tramite firewall dagli attacchi hacker e dispone della flessibilità necessaria a consentire la mappatura degli indirizzi IP privati per servizi chiave come Web o FTP.",
+"Met Network Address Translation (NAT) kunnen meerdere gebruikers vanaf uw lokale site contact maken met internet via een enkel publiek IP-adres of meerdere publieke IP-adressen. NAT biedt via een firewall beveiliging tegen aanvallen door hackers en heeft een flexibiliteit waarmee u lokale IP-adressen door kunt sturen naar publieke IP-adressen voor belangrijke toepassingen als internet en FTP.",
+"A Tradução de endereços de rede (NAT) permite que vários utilizadores no seu site local acedam à Internet através de um único endereço IP público ou vários endereços IP públicos. A NAT fornece protecção por firewall contra ataques de piratas informáticos e permite mapear endereços IP privados a endereços IP públicos para serviços chave, tais como a Web ou FTP.",
+"Překládaní síťových adres (NAT) umožňuje více uživatelům ve vaší místní síti přistupovat do Internetu prostřednictvím jedné veřejné IP adresy nebo více veřejných IP adres. NAT poskytuje ochranu bránou Firewall před hackerskými útoky a má schopnost pružného umožnění mapování soukromých IP adres na veřejné IP adresy pro klíčové služby, například Web nebo FTP.",
+"Tłumaczenie adresów sieci (NAT) pozwala wielu użytkownikom lokalnej sieci na dostęp do internetu za pomocą pojedynczego adresu IP lub publicznych adresów IP. NAT zapewnia ochronę firewalla przed atakami hakerów oraz elastyczność pozwalającą na kierowanie prywatnych adresów IP do publicznych adresów IP dla usług kluczowych takich jak Web lub FTP.   ",
+"Network Address Translation (NAT) permite utilizatorilor din reteua locala sa acceseze internetul prin una sau mai multe adrese IP publice. NAT ofera protectie Firewall impotriva atacurilor de hacker si va ajuta sa asociati adreselor IP private adrese IP publice, pentru servicii importante, cum ar fi Web si FTP.",
+"Network Address Translation (NAT) позволяет многочисленным пользователям локальной сети иметь доступ в Интернет через один или несколько публичных IP адресов. NAT обеспечивает защитный брандмауэр от хакерских атак и имеет возможности, позволяющие сопоставить частные IP адреса публичным IP адресам для ключевых сервисов, таких, как веб или FTP.",
+"Network var Address Translation (NAT) dovoľuje viacerým užívateľom vo vašej lokálne sieti prístup k internetu pomocou jednej verejnej IP adresy alebo viacerých verejných IP adries. NAT poskytuje ochranu firewall pred útokmi hackerov a dovoľuje vám flexibilne mapovať privátne IP adresy na verejné IP adresy pre kľúčové služby ako Web alebo FTP.",
+"網路位址轉換(NAT)允許多個用戶在你的區域站台使用單一的公用IP位址連線上網。NAT的防火牆可提供駭客攻擊保護，並讓你的專用 IP位址映射到公用IP位址來為你服務，如Web或FTP。",
+"网络地址转换(NAT)允许多个用户在你的区域站台使用单一的公用IP地址联机上网。NAT的防火墙可提供黑客攻击保护，并让你的专用 IP地址映像到公用IP地址来为你服务，如Web或FTP。"
+);
+var natALGComArrayH323=new Array
+(
+"Support for H323/netmeeting.",
+"Support für H323/Netmeeting.",
+"Acepta las reuniones de red H323.",
+"Prise en charge pour H323/netmeeting.",
+"Supporto per H323/netmeeting.",
+"Ondersteunt H323/netmeeting.",
+"Suporte para H323/netmeeting.",
+"Podpora pro H323/netmeeting.",
+"Obsługa H323/Netmeeting",
+"Suport pentru H323 / netmeeting.",
+"Поддерживает H323/netmeeting",
+"Podporuje H323/netmeeting.",
+"Support for H323/netmeeting.",
+"Support for H323/netmeeting."
+);
+var name=new Array
+(
+"Name",
+"Name",
+"Nombre",
+"Nom",
+"Nome",
+"Naam",
+"Nome",
+"Název",
+"Nazwa",
+"Nume",
+"Имя",
+"Meno",
+"名稱",
+"名称"
+);
+var enNatVrServer=new Array
+(
+"Enable Virtual Server",
+"Virtual Server aktivieren",
+"Actiservidor virtual",
+"Activer serveur virtuel",
+"Abilita server virtuale",
+"Schakel virtuele server in",
+"Actio Servidor Virtual",
+"Povolit virtuální server",
+"Włącz serwer wirtualny",
+"Activare Virtual Server",
+"Включить виртуальный сервер",
+"Zapnúť virtuálny server",
+"啟用虛擬伺服器",
+"启用虚拟服务器"
+);
+var wanqosaddAlertMac=new Array
+(
+"Invalid MAC address. It should be in hex number (0-9 or a-f).",
+"Ungültige MAC-Adresse. Es sollte eine Hexadezimalzahl sein (0-9 oder a-f).",
+"Dirección MAC inválida. Deberá ser un número hexagonal (0-9 o a-f).",
+"Adresse MAC incorrecte. Il doit s'agir d'un chiffre hexadécimal (0-9 ou a-f).",
+"Indirizzo MAC non valido. Deve essere composto da numeri esadecimali (0-9 o a-f).",
+"Ongeldig MAC-adres. Het moet hexadecimaal zijn (0-9 of a-f).",
+"Endereço MAC inválido. Deve ser um número hexadecimal (0 a 9 ou a-f).",
+"Neplatná adresa MAC. Zadejte šestnáctkové číslo (0-9 nebo a-f).",
+"Nieprawidłowy adres MAC. Wartość powinna być numerem szesnastkowym (0-9 lub a-f).",
+"Adresa MAC invalida. Trebuie sa fie in caractere hexazecimale (0-9 sau a-f).",
+"Неправильный MAC адрес. Должен быть HEX числом (0-9 или A-F).",
+"Nesprávna adresa MAC. Musí byť hexadecimálne číslo (0-9 alebo a-f).",
+"無效的MAC位址。它應該是十六進位碼（0-9或A-F）。",
+"无效的MAC地址。它应该是十六进制码（0-9或A-F）。"
+);
+var natAlg=new Array
+(
+"Application Layer Gateway",
+"Anwendungsschicht Gateway (ALG)",
+"Puerta de acceso de la capa de aplicación",
+"Application Layer Gateway",
+"Application Layer Gateway",
+"Application Layer Gateway",
+"Gateway da camada de aplicação",
+"Brána aplikační vrstvy",
+"Bramka poziomu aplikacji",
+"Gateway Application Layer",
+"Шлюз уровня приложений",
+"Aplikačná vrstva brány",
+"Application Layer閘道器",
+"Application Layer网关"
+);
+var deleteAll=new Array
+(
+"Delete All",
+"Alle löschen",
+"Borrar todos",
+"Tout supprimer",
+"Elimina tutto",
+"Alles wissen",
+"Apagar tudo",
+"Vymazat vše",
+"Skasuj wszystkie ",
+"Sterge Tot",
+"Удалить все",
+"Vymazať všetky",
+"全部刪除",
+"全部删除"
+);
+var natAlgInfo=new Array
+(
+"This is a list of applications that need router's special support to make them work under the NAT. You can select applications that you’ll be using.",
+"Nachfolgend sind Anwendungen aufgeführt, die den speziellen Support des Routers benötigen, um unter NAT funktionieren zu können. Sie können Anwendungen auswählen, die Sie verwenden.",
+"A continuación, existen una serie de aplicaciones que necesitan el apoyo especial del enrutador para hacerlas funcionar bajo el NAT. Podrá seleccionar las aplicaciones que esté utilizando.",
+"Ci dessous se trouvent des applications qui nécessitent une prise en charge spéciale du routeur pour pouvoir fonctionner avec le dispositif NAT. Vous pouvez sélectionner les applications que vous utilisez.",
+"Di seguito sono elencate le applicazioni che necessitano di uno speciale supporto router per poter operare sotto NAT. È possibile selezionare le applicazioni utilizzate.",
+"Hieronder vindt u applicaties waarbij speciale ondersteuning van de router nodig is om ze onder de NAT te laten werken. U kunt de applicaties die u gebruikt selecteren.",
+"Seguem-se aplicações que necessitam do suporte especial do router para que funcionem na NAT. Pode seleccionar as aplicações que está a utilizar.",
+"Dále jsou uvedeny aplikace, které potřebují speciální podporu směrovače, aby mohly pracovat za NAT. Můžete vybrat aplikace, které používáte.",
+"Poniżej przedstawiono zastosowania wymagające specjalnej obsługi routera w celu działania w NAT. Wybierz używane aplikacje.  ",
+"Mai jos sunt aplicatii care necesita suport special din partea routerului pentru a founctiona in spatele unui NAT. Selectati aplicatiile care le folositi.",
+"Здесь приведены приложения нуждающиеся в специальной поддержке маршрутизатором, чтобы сделать их работоспособными под NAT брандмауэром. Вы можете выбрать используемые приложения.",
+"Dole uvedené sú aplikácie, ktoré potrebujú špeciálnu podporu routeru aby mohli pracovať pod NAT. Môžete vybrať aplikácie, ktoré používate.",
+"Below are applications that need router\'s special support to make them work under the NAT. You can select applications that you are using.",
+"Below are applications that need router\'s special support to make them work under the NAT. You can select applications that you are using."
+);
+var natAlgInfoshort=new Array
+(
+"This is a list of applications that need router's special support to make them work under the NAT. You can",
+"Nachfolgend sind Anwendungen aufgeführt, die den speziellen Support des Routers benötigen, um unter NAT fu",
+"A continuación, existen una serie de aplicaciones que necesitan el apoyo especial del enrutador para hacer",
+"Ci dessous se trouvent des applications qui nécessitent une prise en charge spéciale du routeur pour pouvo",
+"Di seguito sono elencate le applicazioni che necessitano di uno speciale supporto router per poter operare",
+"Hieronder vindt u applicaties waarbij speciale ondersteuning van de router nodig is om ze onder de NAT te ",
+"Seguem-se aplicações que necessitam do suporte especial do router para que funcionem na NAT. Pode seleccio",
+"Dále jsou uvedeny aplikace, které potřebují speciální podporu směrovače, aby mohly pracovat za NAT. Můžete",
+"Poniżej przedstawiono zastosowania wymagające specjalnej obsługi routera w celu działania w NAT. Wybierz u",
+"Mai jos sunt aplicatii care necesita suport special din partea routerului pentru a founctiona in spatele u",
+"Здесь приведены приложения нуждающиеся в специальной поддержке маршрутизатором, чтобы сделать их работоспо",
+"Dole uvedené sú aplikácie, ktoré potrebujú špeciálnu podporu routeru aby mohli pracovať pod NAT. Môžete vy",
+"",
+""
+);
+var natSrSM=new Array
+(
+"Subnet Mask",
+"Subnetzmaske",
+"Máscara de subred",
+"Masque de sous réseau",
+"Maschera sottorete",
+"Subnetmasker",
+"Máscara de subrede",
+"Maska podsítě",
+"Maska podsieci",
+"Masca Subretea",
+"Маска подсети",
+"Maska podsiete",
+"子網路遮罩",
+"子网掩码"
+);
+var natpfwStrPort=new Array
+(
+"port number",
+"Portnummer",
+"Número de puerto",
+"Numéro de port",
+"Numero di porta",
+"Poortnummer",
+"número da porta",
+"Číslo portu",
+"Numer portu",
+"Numar port",
+"номер порта",
+"Číslo portu",
+"埠號",
+"埠号"
+);
+var ipAddress=new Array
+(
+"IP address ",
+"IP-Adresse ",
+"Dirección IP ",
+"Adresse IP ",
+"Indirizzo IP ",
+"IP-adres ",
+"Endereço IP ",
+"IP adresa ",
+"Adres IP",
+"Adresa IP",
+"IP адрес",
+"Adresa IP",
+"IP 位址",
+"IP 地址"
+);
+var natsappAlertNoSet=new Array
+(
+"You should set a trigger-port range for adding in an entry.",
+"Sie sollten einen Trigger-Portbereich für das Hinzufügen eines Eintrags einstellen.",
+"Deberá fijar una serie de puerto de activación para añadir una entrada.",
+"Vous devez paramétrer l'intervalle du port de déclenchement pour ajouter une entrée.",
+"Impostare un intervallo per il trigger-port da aggiungere a una voce.",
+"U moet een bereik instellen voor de triggerpoort om hem in te kunnen voeren.",
+"Deve definir um intervalo na porta de accionamento para adicionar uma entrada.",
+"Měli byste nastavit rozsah spouštěcího portu pro přidání položky",
+"Ustaw port wyzwalacza w celu dodania wpisu.",
+"Trebuie sa introduceti o raza de porturi trigger.",
+"Вы должны установить диапазон переключаемых портов для добавления компонента",
+"Musíte zadať rozsah trigger portu.",
+"你應該設定一個Trigger埠範圍中添加一個條目。",
+"你应该设置一个Trigger埠范围中添加一个条目。"
+);
+var edit=new Array
+(
+"Edit",
+"Bearbeiten",
+"Editar",
+"Editer",
+"Modifica",
+"Bewerken",
+"Editar",
+"Úprava",
+"Edytuj",
+"Editare",
+"Редактировать",
+"Zmeniť",
+"編輯",
+"编辑"
+);
+var natsappAlertInvSet=new Array
+(
+"You should set a incoming-port range for adding in an entry.",
+"Sie sollten einen Eingangs-Portbereich für das Hinzufügen eines Eintrags einstellen.",
+"Deberá fijar una serie de puerto de entrada para añadir una entrada.",
+"Vous devez paramétrer l'intervalle du port entrant pour ajouter une entrée.",
+"Impostare un trigger-port in entrata da aggiungere a una voce.",
+"U moet een bereik instellen voor de inkomende poort om hem in te kunnen voeren.",
+"Deve definir um intervalo na porta de entrada para adicionar numa entrada.",
+"Měli byste nastavit rozsah příchozích portů pro přidání položky",
+"Ustaw zakres portu odbierającego w celu dodania wpisu.",
+"Trebuie sa introduceti o raza de porturi pentru intrare.",
+"Вы должны установить диапазон входящих портов для добавления компонента",
+"Musíte zadať rozsah vstupného portu.",
+"You should set a incoming-port range for adding in an entry.",
+"You should set a incoming-port range for adding in an entry."
+);
+var natsappAlertInvOrder=new Array
+(
+"Invalid trigger-port range! 1st port value should be less than 2nd value.",
+"Ungültiger Trigger-Portbereich! 1. Portwert sollte kleiner als der 2. Wert sein.",
+"¡Serie de puerto de activación inválida! El valor del 1º puerto debe ser inferior al segundo valor.",
+"Intervalle port de déclenchement incorrect ! La valeur du 1er port doit être inférieure à la 2ème valeur.",
+"Intervallo trigger-port non valido! Il valore della 1a porta deve essere minore del valore della 2a porta.",
+"Ongeldig bereik triggerpoort! Eerste poortwaarde moet lager zijn dan tweede waarde.",
+"Intervalo da porta de accionamento inválido! O 1º valor da porta deve ser inferior ao 2º valor.",
+"Neplatný rozsah spouštěcích portů! Hodnota portu na první pozici by měla být nižší než na druhé pozici.",
+"Nieprawidłowy zakres portów wyzwalacza. Pierwsza wartość portu powinna być mniejsza od wartości drugiej. ",
+"Raza porturi trigger invalida! Primul port trebuie sa fie mai mic decat cel de-al doilea.",
+"Неправильный диапазон переключаемых портов. Значение 1го порта должно быть меньше значения 2го порта.",
+"Nesprávny rozsah trigger portu! 1. hodnota portu musí byť menšia ako 2. hodnota portu.",
+"無效的Trigger埠範圍！第1埠的值應小於 2。",
+"无效的Trigger埠范围！第1埠的值应小于 2。"
+);
+var face=new Array
+(
+"Interface",
+"Schnittstelle",
+"Interfaz",
+"Interface",
+"Interfaccia",
+"Interface",
+"Interface",
+"Rozhraní",
+"Interfejs",
+"Interfata",
+"Интерфейс",
+"Rozhranie",
+"介面",
+"界面"
+);
+var natSrGateway=new Array
+(
+"Default Gateway",
+"Standardgateway",
+"Puerta predefinida",
+"Passerelle par défaut",
+"Gateway predefinito",
+"Standaard gateway",
+"Gateway predefinido",
+"Výchozí brána",
+"Bramka domyślna ",
+"Gateway Implicit",
+"Шлюз по умолчанию",
+"Prednastavená brána",
+"預設閘道器",
+"默认网关"
+);
+var protocal=new Array
+(
+"Protocol",
+"Protokoll",
+"Protocolo",
+"Protocole",
+"Protocollo",
+"Protocol",
+"Protocolo",
+"Protokol",
+"Protokół",
+"Protocol",
+"Протокол",
+"Protokol",
+"協定",
+"协定"
+);
+var qosAddInfo=new Array
+(
+"This page allows users to add/modify the QoS rule\'s settings.",
+"Diese Seite ermöglicht den Benutzern das Hinzufügen/Ändern von QoS Regeleinstellungen.",
+"Esta página permite que los usuarios puedan añadir o cambiar los parámetros de la norma QoS.",
+"Cette page permet aux utilisateurs d'ajouter/modifier les paramètres de règles QoS.",
+"Questa pagina consente agli utenti di aggiungere/modificare le impostazioni della regola QoS.",
+"Met deze pagina kunt u instellingen voor de QoS toevoegen/wijzigen.",
+"Esta página permite aos utilizadores adicionar/modificar as definições da regra QoS.",
+"Tato stránka umožňuje uživatelům přidat/upravit nastavení pravidel QoS.",
+"Na stronie tej możliwe jest wprowadzenie przez użytkownika modyfikacji lub dodanie ustawień dla zasad QoS.",
+"Aceasta pagina permite utilizatorului sa adauge/mofice reguli de QoS.",
+"Эта страница позволяет пользователям добавить/изменить правила QoS",
+"Táto stránka dovoľuje užívateľom pridávať/modifikovať pravidlá/nastavenia QoS.",
+"此頁面允許用戶新增/修改QoS的規則。",
+"此页面允许用户新增/修改QoS的规则。"
+);
+var wanqosaddEndIpDest=new Array
+(
+"destination end IP address ",
+"Ziel End-IP-Adresse ",
+"Dirección IP final de destino ",
+"Adresse IP de fin destination. ",
+"destinazione indirizzo IP finale ",
+"bestemming eind IP-adres ",
+"endereço IP final de destino ",
+"koncová IP adresa cílového místa ",
+"Docelowy adres IP",
+"Adresa IP finala de destinatie",
+"IP адрес назначения",
+"Koniec cieľových IP adries",
+"目的端的IP位址",
+"目的端的IP地址"
+);
+var moveDown=new Array
+(
+"Move Down",
+"Nach unten bewegen",
+"Mover hacia abajo",
+"Déplacer vers le bas",
+"Sposta in basso",
+"Omlaag",
+"Mover para baixo",
+"Posunout dolů",
+"Przesuń w dół",
+"Jos",
+"Вниз",
+"Posunúť dole",
+"向下移動",
+"向下移动"
+);
+var natpfwStrIp=new Array
+(
+"IP address ",
+"IP-Adresse ",
+"Dirección IP ",
+"Adresse IP ",
+"Indirizzo IP ",
+"IP-adres ",
+"Endereço IP ",
+"IP adresa ",
+"Adres IP",
+"Adresa IP",
+"IP адрес",
+"IP adresa",
+"IP 位址",
+"IP 地址"
+);
+var natALGComArrayStarcraft=new Array
+(
+"Support for Starcraft/Battle.net game protocol.",
+"Support für Starcraft/Battle.net Spielprotokoll.",
+"Acepta el protocolo de juegos Starcraft/Battle.",
+"Prise en charge pour le protocole de jeu Starcraft/Battle.net.",
+"Supporto per protocollo di gioco Starcraft/Battle.net.",
+"Ondersteunt het Starcraft/Battle.net gameprotocol.",
+"Suporte para o protocolo do jogo Starcraft/Battle.net.",
+"Podpora pro herní protokol Starcraft/Battle.net.",
+"Obsługuje gry Starcraft/Battle.net",
+"Suport pentru Starcraft/ protocolul de joc Battle.net",
+"Поддерживает протокол игры Starcraft/Battle.net.",
+"Podporuje sieťový herný protokol Starcraft/battle.net.",
+"Support for StarcrA-Ft/Battle.net game protocol.",
+"Support for StarcrA-Ft/Battle.net game protocol."
+);
+var natUPnPInfo=new Array
+(
+"UPnP is designed to support network zero-configuration, and automatic discovery for a breadth of device categories from a wide range of vendors.With UPnP, a device can dynamically join a network, obtain an IP address, convey its capabilities, and learn about the presence and capabilities of other devices automatically; truly enabling zero configuration networks. Devices can subsequently communicate with each other directly; thereby further enabling peer to peer networking.",
+"UPnP ist mehr als nur eine einfache Erweiterung des Plug and Play-Peripheriemodells. Wurde entwickelt, um eine Nullkonfiguration, \"unsichtbaren\" Netzwerkbetrieb und automatische Erkennung einer Vielzahl von Gerätekategorien vieler verschiedener Hersteller zu unterstützen.<br> Mit UPnP kann sich ein Gerät dynamisch mit einem Netzwerk verbinden, eine IP-Adresse erhalten, seine Fähigkeiten übermitteln und automatisch anhand der Präsenz und Fähigkeiten anderer Geräte lernen; dadurch werden Netzwerke mit Nullkonfiguration wahrhaft möglich. Die Geräte können nacheinander direkt miteinander kommunizieren; dadurch wird der Peer-to-Peer-Netzwerkbetrieb weiter aktiviert.",
+"UPnP es más que una simple extensión del modelo periférico de Plug and Play. Está diseñado para aceptar la configuración cero, la conexión en red\"invisible\" y el descubrimiento automático para una amplia variedad de categorías de dispositivos procedentes de muchos vendedores distintos.<br> Con UPnP, un dispositivo puede unir dinámicamente una red, obtener una dirección IP, abarcar sus capacidades y aprender sobre la presencia y las capacidades de otros dispositivos automáticamente; activación real de las redes de configuración cero. Los dispositivo pueden por lo tanto comunicarse entre sí directamente; por lo tanto, podrán actiademás la conexión de red entre pares.",
+"Le service UPnP est plus qu'une simple extension de la norme périphérique Plug and Play. Il est conçu pour prendre en charge la configuration zéro, le travail en réseau \"invisible\" et la découverte automatique de nombreuses catégories de périphériques d'un nombre de vendeurs importants.<br> Avec le service UPnP, un périphérique peut rejoindre le réseau de façon dynamique, obtenir une adresse IP, transmettre ses capacités et apprendre la présence ou les capacités des autres périphériques automatiquement, en activant réellement les réseaux zéro configuration. Les périphériques peuvent communiquer entre eux directement, activant ainsi le travail en réseau peer to peer.",
+"UPnP è più di una semplice estensione del modello periferico Plug and Play. È stato progettato per supportare configurazione zero, networking \"invisibile\", e rilevamento automatico per una vasta gamma di categorie di dispositivi prodotti da svariati venditori.<br> Con UPnP, un dispositivo può unirsi dinamicamente a una rete, ottenere un indirizzo IP, convogliarne le capacità e apprendere riguardo alla presenza e alle capacità di altri dispositivi, il tutto automaticamente; in questo modo si rende possibile la creazione di reti che non necessitano di configurazione. I dispositivi possono comunicare sequenzialmente l'uno con l'altro in modo diretto; è inoltre possibile abilitare il networking peer to peer.",
+"UPnP is meer dan alleen een simpele uitbreiding van het perifere 'Plug and Play'-model. Het is ontworpen voor het ondersteunen van nulconfiguratie, \"onzichtbare\" netwerken en het automatisch detecteren van diverse soorten apparaten van een groot aantal aanbieders.<br> Met UPnP kan een apparaat zich dynamisch in een netwerk inpassen, een IP-adres krijgen, zijn mogelijkheden duidelijk maken en informatie vinden over de aanwezigheid en de mogelijkheden van andere apparaten - allemaal automatisch; zodat netwerken met een nulconfiguratie werkelijk mogelijk worden. Apparaten kunnen vervolgens rechtstreeks met elkaar communiceren; hiermee wordt peer-to-peer netwerken nog beter mogelijk.",
+"UPnP é mais do que uma simples extensão do modelo periférico Plug and Play. Foi concebido para suportar configuração zero, ligação em rede \"invisível\" e identivar ficação automática para uma grande variedade de categorias de dispositivo de diversos fornecedores.<br> Com o UPnP, um dispositivo pode aderir de maneira dinâmica a uma rede, obter um endereço IP, transmitir as respectivas capacidades e tomar conhecimento da presença e capacidades de outros dispositivos - tudo isto automaticamente; proporcionando de facto redes de configuração zero. Por conseguinte, os dispositivos podem comunicar directamente entre si; permitindo assim ligação em rede ponto a ponto.",
+"UPnP je více než pouze jednoduchým rozšířením modelu příslušenství Plug and Play. Je vytvořen pro podporu nulové konfigurace, \„neviditelného\" síťování a automatické vyhledávání široké kategorie zařízení od velkého množství výrobců.<br> Pomocí UPnP se může zařízení dynamicky připojovat do sítě, získávat IP adresu, přenášet své schopnosti a dozvědět se o přítomnosti a schopnostech ostatních zařízení - vše automaticky; skutečně umožňuje vytváření sítí s nulovou konfigurací. Zařízení následně mohou navzájem komunikovat přímo, čímž dále vytváření sítě od bodu k bodu.",
+"UPnP to więcej niż tylko rozszerzenie modelu plug-and-play. Został on zaprojektowany do obsługi sieci “niewidocznej” bez konfiguracji oraz automatycznego wykrywania szerokości pasma urządzeń pochodzących od szerokiej gamy dostawców.<br> UPnP to funkcja pozwalająca na dynamiczne podłączenie do sieci, uzyskanie adresu IP, automatyczne rozpoznawanie funkcji innych urządzeń i ich wykrywanie niewymagające żadnej konfiguracji. Komunikacja między urządzeniami odbywa się bezpośrednio, umożliwiając tym samym połączenia typu peer-to peer.",
+"UPnP este mai mult decat o simpla extensie a modelului Plug and Play. Este proiectat pentru a suporta configuratie zero, \"invisible\" networking, si descoperirea automata a unei anumite categorii de echipamente de la o gama larga de producatori.<br> Prin UPnP, un echipament se poate conecta dinamic la o retea, sa obtina un IP, sa-si transmita capabilitatile, si sa detecteze automat alte echipamente si capabilitatile lor. Echipamentele pot comunica direct intre ele; activand transferul peer to peer.",
+"UPnP функция - это больше, чем простое расширение Plug and Play модели для переферии. Она создана для поддержки нулевой конфигурации, \"невидимой\" сети, автоматического определения широкого спектра устройств от основных производителей. С использованием UPnP, устройство может динамически подключиться к сети, получить IP адрес, подключить  к сети свои возможности, и знать о подключении и возможностях других устройств - все автоматически; при правильном включении нулевой конфигурации сети. Устройства могут последовательно подключаться друг к другу напрямую; таким образом, делая работу сети по типу Peer  to Peer (PtP).",
+"UPnP je viacej než len jednoduché rozšírenie Plug and Play periférnych modelov. Je navrhnutá aby podporovala nulovú konfiguráciu, \"invisible\" siete a automatickú detekciu rôznych kategórií zariadení od širokej palety výrobcov. <br> S UPnP, zariadenia sa môže dynamicky pripojiť k sieti, získať IP adresu, sprostredkovať jej schopnosti, zistiť prítomnosť a schopnosti ostatných zariadení - všetko automaticky, skutočná nulová konfigurácia sieti. Zariadenia môžu následne komunikovať priamo medzi sebou, preto ďalej umocňujú peer-to-peer siete.",
+"UPnP is more than just a simple extension of the Plug and Play peripheral model. It is designed to support zero-configuration, \"invisible\" networking, and automatic discovery for a breadth of device categories from a wide range of vendors.<br> With UPnP, a device can dynamically join a network, obtain an IP address, convey its capabilities, and learn about the presence and capabilities of other devices-all automatically; truly enabling zero configuration networks. Devices can subsequently communicate with each other directly; thereby further enabling peer to peer networking.",
+"UPnP is more than just a simple extension of the Plug and Play peripheral model. It is designed to support zero-configuration, \"invisible\" networking, and automatic discovery for a breadth of device categories from a wide var range of vendors.<br> With UPnP, a device can dynamically join a network, obtain an IP address, convey its capabilities, and learn about the presence and capabilities of other devices-all automatically; truly enabling zero configuration networks. Devices can subsequently communicate with each other directly; thereby further enabling peer to peer networking."
+);
+var natUPnPInfoshort=new Array
+(
+"UPnP is designed to support network zero-configuration, and automatic discovery for a breadth of device cat",
+"UPnP ist mehr als nur eine einfache Erweiterung des Plug and Play-Peripheriemodells. Wurde entwickelt, um e",
+"UPnP es más que una simple extensión del modelo periférico de Plug and Play. Está diseñado para aceptar la ",
+"Le service UPnP est plus qu'une simple extension de la norme périphérique Plug and Play. Il est conçu pour ",
+"UPnP è più di una semplice estensione del modello periferico Plug and Play. È stato progettato per supporta",
+"UPnP is meer dan alleen een simpele uitbreiding van het perifere 'Plug and Play'-model. Het is ontworpen vo",
+"UPnP é mais do que uma simples extensão do modelo periférico Plug and Play. Foi concebido para suportar",
+"UPnP je více než pouze jednoduchým rozšířením modelu příslušenství Plug and Play. Je vytvořen pro podporu n",
+"UPnP to więcej niż tylko rozszerzenie modelu plug-and-play. Został on zaprojektowany do obsługi sieci “niew",
+"UPnP este mai mult decat o simpla extensie a modelului Plug and Play. Este proiectat pentru a suporta confi",
+"UPnP функция - это больше, чем простое расширение Plug and Play модели для переферии. Она создана для подде",
+"UPnP je viacej než len jednoduché rozšírenie Plug and Play periférnych modelov. Je navrhnutá aby podporoval",
+"",
+""
+);
+var natVrTable=new Array
+(
+"Current Virtual Server Table",
+"Gegenwärtige Virtual Server-Tabelle",
+"Tabla del servidor virtual actual",
+"Table serveur virtuel actuel",
+"Tabella server virtuale corrente",
+"Tabel huidige virtuele server",
+"Tabela de servidores virtuais actuais",
+"Tabulka aktuálních virtuálních serverů",
+"Aktualna tabela serwera wirtualnego",
+"Tabela Curenta Virtual Server",
+"Текущая таблица виртуального сервера",
+"Tabuľka aktuálnych virtuálnych serverov",
+"當前虛擬伺服器列表",
+"当前虚拟服务器列表"
+);
+var disable=new Array
+(
+"Disable",
+"Deaktivieren",
+"Desactivar",
+"Désactiver",
+"Disattiva",
+"Uitschakelen",
+"Desactivar",
+"Zakázat",
+"Wyłącz",
+"Dezactivare",
+"Выключить",
+"Vypnúť",
+"停用",
+"停用"
+);
+var qosLocalIP=new Array
+(
+"Local IP Address ",
+"Lokale IP-Adresse ",
+"Dirección IP local ",
+"Adresse IP locale ",
+"Indirizzo IP locale ",
+"Lokaal IP-adres ",
+"Endereço IP local ",
+"Místní IP adresa ",
+"Adres lokalnego IP",
+"Adresa IP Locala",
+"Локальный IP адрес",
+"Lokálna IP adresa",
+"本地IP位址",
+"本地IP地址"
+);
+var qosTraffic=new Array
+(
+"Traffic Type",
+"Traffic-Typ",
+"Tipo de tráfico",
+"Type de traffic",
+"Tipo di traffico",
+"Soort verkeer",
+"Tipo de tráfego",
+"Typ provozu",
+"Rodzaj ruchu",
+"Tip Trafic",
+"Тип тафика",
+"Typ premávky",
+"TrA-Ffic 類型",
+"TrA-Ffic 类型"
+);
+var enable=new Array
+(
+"Enable",
+"Aktivieren",
+"Activar",
+"Activer",
+"Attiva",
+"Inschakelen",
+"Activar",
+"Povolit",
+"Włącz",
+"Activare",
+"Включить",
+"Zapnúť",
+"啟用",
+"启用"
+);
+var qosName=new Array
+(
+"Rule Name",
+"Regelname",
+"Nombre de la regla",
+"Nom de la règle",
+"Nome regola",
+"Regelnaam",
+"Nome da regra",
+"Název pravidla",
+"Nazwa reguły",
+"Nume Regula",
+"Имя правила",
+"Názov pravidla",
+"規則名稱",
+"规则名称"
+);
+var qosDnload=new Array
+(
+"Download Bandwidth",
+"Download-Bandbreite",
+"Descargar banda ancha",
+"Bande passante descendante",
+"Larghezza di banda in fase di download",
+"Download bandbreedte",
+"Largura de banda de transferência",
+"Přenosové pásmo pro stahování",
+"Szerokość pasma pobierania ",
+"Latime Banda Download",
+"Ширина полосы входящего трафика",
+"Prenosová rýchlosť sťahovania dát",
+"下載頻寬",
+"下载带宽"
+);
+var enNatTrigPort=new Array
+(
+"Enable Special Applications",
+"Spezielle Anwendungen aktivieren",
+"ActiAplicaciones especiales",
+"Activer Applications spéciales",
+"Abilita Applicazioni speciali",
+"Schakel Bijzondere toepassingen in",
+"Actio Aplicações especiais",
+"Povolit Speciální aplikace",
+"Włącz Aplikacje specjalne",
+"Activare Aplicatii Speciale",
+"Включить Специальные приложения",
+"Zapnúť Špeciálne aplikácie",
+"啟用特殊應用",
+"启用特殊应用"
+);
+var enNatTrigIp=new Array
+(
+"IP Address",
+"IP-Adresse",
+"Dirección IP",
+"Adresse IP",
+"Indirizzo IP",
+"IP-adres",
+"Endereço IP",
+"IP adresa",
+"Adres IP",
+"Adresa IP",
+"IP адрес",
+"IP adresa",
+"IP 位址",
+"IP 地址"
+);
+var wanqosaddWanPort=new Array
+(
+"WAN Port ",
+"WAN-Port ",
+"Puerto WAN ",
+"Port réseau étendu ",
+"Porta WAN ",
+"WAN-poort ",
+"Porta WAN ",
+"Port WAN ",
+"Port WAN",
+"Port WAN",
+"WAN порт",
+"WAN port",
+"廣域網路埠",
+"广域网埠"
+);
+var qosPrior=new Array
+(
+"Priority",
+"Priorität",
+"Prioridad",
+"Priorité",
+"Priorità",
+"Voorrang",
+"Prioridade",
+"Priorita",
+"Priorytet ",
+"Prioritate",
+"Приоритет",
+"Priorita",
+"優先權限",
+"优先权限"
+);
+var natPort=new Array
+(
+"Port Forwarding",
+"Portweiterleitung",
+"Reenvío de puerto",
+"Réacheminement de port",
+"Inoltro porte",
+"Port Forwarding",
+"Encaminhamento de portas",
+"Přesměrování portu",
+"Przekierowanie portów",
+"Port Forwarding",
+"Перенаправляемые порты",
+"Presmerovanie portu",
+"Port Forwarding",
+"Port Forwarding"
+);
+var natVrServer=new Array
+(
+"Virtual Server",
+"Virtual Server",
+"Servidor virtual",
+"Serveur virtuel",
+"Server virtuale",
+"Virtuele server",
+"Servidor Virtual",
+"Virtuální server",
+"Serwer wirtualny",
+"Virtual Server",
+"Виртуальный сервер",
+"Virtuálny server",
+"虛擬伺服器",
+"虚拟服务器"
+);
+var natALGComArrayIRC=new Array
+(
+"Allows DCC to work though NAT and connection tracking.",
+"Ermöglicht, dass DCC durch NAT und Verbindungstracking funktioniert.",
+"Permite que DCC pueda funcionar a través de NAT y la trazabilidad de la conexión.",
+"Permet au système DCC de fonctionner avec le dispositif NAT et de suivre la connexion.",
+"Consente al DCC di operare tramite NAT e tracciatura della connessione.",
+"Laat DCC werken met NAT en opzoeken van verbindingen",
+"Permitir que DCC funcione através da NAT e do registo de ligação.",
+"Umožňuje DCC pracovat přes NAT a provádět sledování připojení.",
+"Pozwala DCC na działanie poprzez NAT oraz śledzenie połączenia ",
+"Permite DCC-ului sa functioneze prin NAT si urmarirea conexiunii.",
+"Позволяет DCC работать через NAT и контроль связи",
+"Dovoľuje DCC pracovať cez NAT a vyhľadanie spojenia.",
+"Allows DCC to work though NAT and connection tracking.",
+"Allows DCC to work though NAT and connection tracking."
+);
+var wanqosAlertChkNum=new Array
+(
+"You can only select one entry!",
+"Sie können nur einen Eintrag auswählen!",
+"¡Sólo podrá seleccionar una entrada!",
+"Vous ne pouvez sélectionner qu'une seule entrée !",
+"È possibile selezionare una sola voce!",
+"U kunt maar één invoer selecteren!",
+"Só pode seleccionar uma entrada!",
+"Můžete vybrat pouze jednu položku!",
+"Możesz wybrać tylko jeden wpis",
+"Puteti selecta doar o intrare!",
+"Вы можети выбрать только один компонент!",
+"Môžete vybrať len jedno zadanie!",
+"You can only select one entry!",
+"You can only select one entry!"
+);
+var qos=new Array
+(
+"QoS",
+"QoS",
+"QoS",
+"QoS",
+"QoS",
+"QoS",
+"QoS",
+"QoS",
+"QoS",
+"QoS",
+"QoS",
+"QoS",
+"QoS",
+"QoS"
+);
+var natALGComArrayFTP=new Array
+(
+"Support for FTP.",
+"Support für FTP.",
+"Acepta el FTP.",
+"Prise en charge FTP.",
+"Supporto per FTP.",
+"Ondersteunt FTP.",
+"Suporte para FTP.",
+"Podpora pro FTP.",
+"Obsługuje FTP",
+"Suport pentru FTP.",
+"Поддерживает FTP",
+"Podporuje FTP.",
+"Support for FTP.",
+"Support for FTP."
+);
+var natSrInfo=new Array
+(
+"You can enable Static Routing to turn off NAT function of this router and let this router to forward network traffics by your own routing policy.",
+"Sie können das Statische Routing aktivieren, um die NAT-Funktion dieses Routers auszuschalten, damit dieser Router die Pakete anhand Ihrer Routing-Richtlinien weiterleitet.",
+"Podrá actila enrutación estática para desactila función NAT de este enrutador y dejar que este enrutador reenvíe los paquetes mediante su política de enrutación.",
+"Vous pouvez activer le routage statique pour désactiver la fonction NAT de ce routeur et le laisser réacheminer les paquets en fonction de votre politique de routage.",
+"È possibile attivare la funzione Routing statico per disattivare la funzione NAT di questo router e consentire al router di inoltrare pacchetti secondo la politica di inoltro definita dall'utente.",
+"U kunt statische routing inschakelen door de NAT-functie van deze router uit te schakelen en de router dan volgens uw eigen voorwaarden pakketten laten doorsturen.",
+"Pode actiEncaminhamento estático para desligar a função NAT deste router e permitir que este router encaminhe pacotes através da sua política de encaminhamento.",
+"Můžete povolit statické směrování pro vypnutí funkce NAT tohoto směrovače a nechat jej přesměrovávat pakety podle pravidel směrování.",
+"Możesz włączyć statyczne działanie, aby wyłączyć funkcję NAT routera i pozwolić routerowi na wysyłanie pakietów zgodnie z ustalonym porządkiem.",
+"Puteti activa Routarea Statica pentru a dezactiva NAT-ul si a permite routerului sa trimita pachetele dupa regulile create.",
+"Вы можете включить Статическую Маршрутизацию, работающую совместно с NAT функцией этого маршрутизатора, для доступа к серверам провайдера через NAT.",
+"Môžete zapnúť Statické presmerovanie pre vypnutie funkcie NAT tohto routeru a dovolí tomuto routeru presmerovať pakety pomocou vašich smerovacích politík.",
+"You can enable Static Routing to turn off NAT function of this router and let this router forward packets by your routing policy.",
+"You can enable Static Routing to turn off NAT function of this router and let this router forward packets by your routing policy."
+);
+var natSrInfoshort=new Array
+(
+"You can enable Static Routing to turn off NAT function of this router and let this router to forward netw.",
+"Sie können das Statische Routing aktivieren, um die NAT-Funktion dieses Routers auszuschalten, damit dies",
+"Podrá actila enrutación estática para desactila función NAT de este enrutador y dejar que este enrutador ",
+"Vous pouvez activer le routage statique pour désactiver la fonction NAT de ce routeur et le laisser réach",
+"È possibile attivare la funzione Routing statico per disattivare la funzione NAT di questo router e conse",
+"U kunt statische routing inschakelen door de NAT-functie van deze router uit te schakelen en de router da",
+"Pode actiEncaminhamento estático para desligar a função NAT deste router e permitir que este router encam",
+"Můžete povolit statické směrování pro vypnutí funkce NAT tohoto směrovače a nechat jej přesměrovávat pake",
+"Możesz włączyć statyczne działanie, aby wyłączyć funkcję NAT routera i pozwolić routerowi na wysyłanie pa",
+"Puteti activa Routarea Statica pentru a dezactiva NAT-ul si a permite routerului sa trimita pachetele dup",
+"Вы можете включить Статическую Маршрутизацию, работающую совместно с NAT функцией этого маршрутизатора, д",
+"Môžete zapnúť Statické presmerovanie pre vypnutie funkcie NAT tohto routeru a dovolí tomuto routeru presm",
+"",
+""
+);
+var feature=new Array
+(
+"Feature",
+"Merkmale",
+"Características",
+"Caractéristiques",
+"Funzione",
+"Eigenschappen",
+"Função",
+"Funkce",
+"Funkcja",
+"Caracteristica",
+"Свойства",
+"Funkcie",
+"Feature",
+"Feature"
+);
+var natALGComArrayEgg=new Array
+(
+"Support for eggdrop bot networks.",
+"Support für Eggdrop Bot-Netzwerke.",
+"Acepta las redes de bloqueo de intrusos.",
+"Prise en charge réseaux robot eggdrop.",
+"Supporto per reti eggdrop bot.",
+"Ondersteunt eggdrop-bot netwerken.",
+"Suporta para redes eggdrop bot.",
+"Podpora pro síťové eggdrop boty.",
+"Obsługuje monitorowanie sieci.",
+"Suport pentru retele bot eggdrop",
+"Поддерживает сети eggdrop bot",
+"Podporuje siete eggdrop bot.",
+"Support for eggdrop bot networks.",
+"Support for eggdrop bot networks."
+);
+var wanqosaddEndIp=new Array
+(
+"source end IP address ",
+"Quelle End-IP-Adresse ",
+"Dirección IP final de origen ",
+"Adresse IP source de fin. ",
+"Indirizzo IP finale sorgente ",
+"bron eind IP-adres ",
+"endereço IP final de origem ",
+"koncová IP adresa zdroje ",
+"Źródłowy adres IP",
+"IP de final al sursei ",
+"IP адрес источника",
+"Koniec zdrojových IP adries",
+"來源端的IP位址",
+"来源端的IP地址"
+);
+var natTrigTable=new Array
+(
+"Current Trigger-Port Table",
+"Gegenwärtige Trigger-Port Tabelle",
+"Tabla actual de puerto de activación",
+"Table port de déclenchement actuel",
+"Tabella trigger-port corrente",
+"Tabel huidige triggerpoort",
+"Tabela de portas de accionamento actuais",
+"Tabulka aktuálních spouštěcích portů",
+"Tabela obecnego portu wyzwalacza:",
+"Tabela Curenta Porturi Trigger",
+"Текущая таблица переключения портов",
+"Tabuľka aktuálnych Trigger portov",
+"現行的Trigger埠列表",
+"现行的Trigger埠列表"
+);
+var natPubType=new Array
+(
+"Public Type",
+"Öffentlicher Typ",
+"Tipo público",
+"Type Publique",
+"Tipo pubblico",
+"Public Type",
+"Tipo público",
+"Veřejný typ",
+"Rodzaj publiczny ",
+"Tip Public",
+"Публичный тип",
+"Verejný typ",
+"公用類型",
+"公用类型"
+);
+var natPortTable=new Array
+(
+"Current Port Forwarding Table",
+"Gegenwärtige Portweiterleitung Tabelle",
+"Tabla actual de reenvío de puerto",
+"Table de ports de réacheminement actuel",
+"Tabella inoltro porte corrente",
+"Tabel huidige port-forwarding",
+"Tabela de encaminhamentos de porta actuais",
+"Tabulka aktuálního přesměrování portů",
+"Tabela obecnego przekierowania portów",
+"Tabela curenta Port Forwarding",
+"Текущая таблица перенаправления портов",
+"Tabuľka aktuálneho presmerovania portov",
+"當前Port Forwarding列表",
+"当前Port Forwarding列表"
+);
+var qosRemotePort=new Array
+(
+"Remote Port Range",
+"Remote Port-Bereich",
+"Serie de puerto a distancia",
+"Intervalle Port Déporté",
+"Intervallo porta remota",
+"Bereik van remote port",
+"Intervalo da porta remota",
+"Rozsah vzdáleného portu",
+"Zakres portu zdalnego ",
+"Raza Porturi Remote",
+"Диапазон удаленных портов",
+"Rozsah vzdialených portov",
+"遠程埠範圍",
+"远程埠范围"
+);
+var wanqosaddAlertPort=new Array
+(
+"Invalid port value. It should be in decimal number (0-9).",
+"Ungültiger Portwert. Es sollte eine Dezimalzahl sein (0-9).",
+"Valor de puerto inválido. Deberá ser un número decimal (entre 0-9).",
+"Valeur de port incorrecte. Il doit s'agir d'un nombre décimal (0-9).",
+"Valore porta non valido. Deve essere un numero decimale (0-9).",
+"Ongeldige poortwaarde. Het moet een decimaal teken zijn (0-9).",
+"Valor da porta inválido. Deve ser um número decimal (0 a 9).",
+"Neplatná hodnota portu. Zadejte desítkové číslo z intervalu (0-9).",
+"Niewłaściwa wartość portów. Wartość powinna być liczbą dziesiętną (0-9).",
+"Valoare port invalida. Trebuie sa fie caractere zecimale (0-9).",
+"Неверно значение порта. Должно быть десятичным числом (0-9).",
+"Nespráva hodnota portu. Musí byť desiatkové číslo (0-9).",
+"無效的埠值。它應該是十進位碼（0-9）。",
+"无效的埠值。它应该是十进制码（0-9）。"
+);
+var natSrIP=new Array
+(
+"Destination LAN IP",
+"Ziel-LAN-IP",
+"IP LAN de destino",
+"IP LAN de destination",
+"IP LAN di destinazione",
+"Destination LAN IP",
+"IP LAN de destino",
+"Cílová IP adresa LAN",
+"Docelowy adres IP LAN",
+"IP LAN destinatar",
+"IP адрес LAN назначения",
+"Cieľová IP LAN",
+"最終的局域網路 IP位址",
+"最终的局域网络 IP地址"
+);
+var natVrInfo=new Array
+(
+"You can use virtual server function to allow users from Internet to access certain network services like Web or FTP which is hosted on a computer in your LAN. Incoming access requests will be redirected to corresponding computers in your LAN according to TCP/UDP port number.",
+"Sie können den Breitbandrouter als Virtual Server konfigurieren, so dass Remote-Benutzer, die an Ihrem lokalen Standort über öffentliche IP-Adressen auf Dienste wie das Web oder FTP zugreifen, automatisch auf lokale Server umgeleitet werden können, die mit privaten IP-Adressen konfiguriert sind. Anders gesagt leitet der Breitbandrouter abhängig von der angeforderten Service (TCP/UDP) Portnummer die externe Serviceanfrage an den jeweiligen internen Server um (befindet sich einer der privaten IP-Adressen Ihres LANs). ",
+"Puede configurar el enrutador de banda ancha como un servidor virtual para que los usuarios remotos que accedan a los servicios como la Web o el FTP de su portal local mediante la dirección IP pública puedan ser dirigidos automáticamente hacia los servidores locales configurados con direcciones IP privadas. En otras palabras, en función del número de puerto del servicio solicitado (TCP/UDP), el enrutador de banda ancha dirige la solicitud de servicio externo hacia el servidor interno adecuado (ubicado en una de sus direcciones IP privadas de su LAN). ",
+"Vous pouvez configurer le routeur en tant que serveur virtuel de façon que les utilisateurs distants accédant à des services tels que le Web sur votre site local via des adresses IP publiques puissent être automatiquement redirigés vers les serveurs locaux configurés avec des adresses IP privées. En d'autres termes, en fonction du numéro de port du service demandé (TCP/UDP), le routeur redirige la demande de service externe vers le serveur interne approprié (situé sur l'adresse IP privée de votre réseau LAN). ",
+"È possibile configurare il router a banda larga come server virtuale, in modo che gli utenti remoti che accedono ai servizi quali Web o FTP sul sito locale tramite indirizzi IP pubblici possano essere automaticamente ridirezionati ai server locali configurati tramite gli indirizzi IP privati. In altre parole, a seconda del numero di porta del servizio richiesto (TCP/UDP), il router a banda larga ridireziona la richiesta di servizio esterna al server interno appropriato (collocato su uno degli indirizzi IP privati della LAN). ",
+"U kunt de breedbandrouter als virtuele server instellen, zodat externe gebruikers die via publieke IP-adressen gebruik maken van diensten als internet of FTP op uw lokale site, automatisch doorgestuurd worden naar lokale servers die zijn geconfigureerd met lokale IP-adressen. In andere woorden, afhankelijk van het gevraagde servicepoortnummer (TCP/UDP), stuurt de breedbandrouter het externe verzoek door naar de betreffende interne server (die zich bevindt op een van uw LAN- of lokale IP-adressen). ",
+"Pode configurar o router de largura de banda como Servidor Virtual para que os utilizadores remotos que acedam a serviços como a Web ou FTP no seu site local através de endereços IP públicos possam ser redireccionados automaticamente a servidores locais configurados com endereços IP privados. Ou seja, consoante o número da porta (TCP/UDP) do serviço solicitado, o router de banda larga redirecciona o pedido do serviço externo para o servidor interno adequado (localizado num dos seus endereços IP privados da sua rede local). ",
+"Širokopásmový směrovač můžete nakonfigurovat jako virtuální server, takže vzdálení uživatelé přistupující například ke službám Web nebo FTP ve vaší místní síti prostřednictvím veřejné IP adresy budou automaticky přesměrování na místní servery se soukromou IP adresou. Jinak řečeno, v závislosti na čísle portu požadované služby (TCP/UDP), širokopásmový směrovač přesměrovává externí požadavky na služby na odpovídající vnitřní server (umístěný na některé soukromé IP adrese v LAN). ",
+"Router szerokopasmowy można skonfigurować jako serwer wirtualny tak, aby użytkownicy zdalni mający dostęp do usług sieciowych czy FTP po stronie lokalnej var lub publicznego adresu IP, mogli być automatycznie przekierowani do serwerów lokalnych skonfigurowanych z prywatnymi adresami IP. Innymi słowy zależnie od usług (TCP/UDP) numeru portu, router szerokopasmowy przekierowuje żądania zewnętrznych usług na odpowiedni serwer wewnętrzny (umieszczony na jednym z prywatnych adresów LAN).",
+"Puteti configura routerul ca un Virtual Server pentru ca utilizatorii care acceseaza servere web sau FTP din reteaua interna sa fie automat redirectionati catre serverele cu IP privat. Cu alte cuvinte, in functie de numarul portului cerut, veti fi redirectionat catre un anume server din retea.",
+"Вы можете настроить широкополосный маршрутизатор как виртуальный сервер, так, что удаленные пользователи могут использовать такие сервиса как веб или FTP на вашей локальной сети, через публичный IP адрес они могут атоматически перенаправляться на локальные серверы с частными IP адресами. Другими словами, в зависимости от номера порта сервиса (TCP/UDP) маршрутизатор перенаправит запрос внешнего сервиса на соответствующий внутренний сервер (локализованный на одном из ваших частных IP адресов).",
+"Môžete konfigurovať širokopásmový router ako virtuálny server a vzdialený užívatelia môžu pristupovať k službám ako WEB alebo FTP na vašej lokálnej sieti pomocou Verejnej IP adresy a môžu byť automaticky presmerovaný na lokálne servery konfigurované s privátnou IP adresy. Inými slovami, závisle na požadovanej službe (TCP/UDP) čísla portu, Širokopásmový router presmeruje externé služby požadované pre príslušný interný server (lokalizované na jednej z vašich LAN privátnych IP Adries).",
+"",
+""
+);
+var natVrInfoshort=new Array
+(
+"You can use virtual server function to allow users from Internet to access certain network services like ",
+"Sie können den Breitbandrouter als Virtual Server konfigurieren, so dass Remote-Benutzer, die an Ihrem lo",
+"Puede configurar el enrutador de banda ancha como un servidor virtual para que los usuarios remotos que a",
+"Vous pouvez configurer le routeur en tant que serveur virtuel de façon que les utilisateurs distants accé",
+"È possibile configurare il router a banda larga come server virtuale, in modo che gli utenti remoti che a",
+"U kunt de breedbandrouter als virtuele server instellen, zodat externe gebruikers die via publieke IP-adr",
+"Pode configurar o router de largura de banda como Servidor Virtual para que os utilizadores remotos que ac",
+"Širokopásmový směrovač můžete nakonfigurovat jako virtuální server, takže vzdálení uživatelé přistupující ",
+"Router szerokopasmowy można skonfigurować jako serwer wirtualny tak, aby użytkownicy zdalni mający dostęp ",
+"Puteti configura routerul ca un Virtual Server pentru ca utilizatorii care acceseaza servere web sau FTP d",
+"Вы можете настроить широкополосный маршрутизатор как виртуальный сервер, так, что удаленные пользователи м",
+"Môžete konfigurovať širokopásmový router ako virtuálny server a vzdialený užívatelia môžu pristupovať k sl",
+"",
+""
+);
+var wanqosaddStartIpDest=new Array
+(
+"destination start IP address ",
+"Ziel Start-IP-Adresse ",
+"Dirección IP inicial de destino ",
+"Adresse IP de début destination. ",
+"destinazione indirizzo IP iniziale ",
+"bestemming start IP-adres ",
+"endereço IP inicial de destino ",
+"počáteční IP adresa cílového místa ",
+"Początkowy adres IP przeznaczenia",
+"Adresa IP de Start a destinatarului",
+"Стартовый IP адрес назначения",
+"Začiatok cieľovej IP adresy",
+"啟始 IP位址的目的",
+"启始 IP地址的目的"
+);
+var natALGComArrayTalk=new Array
+(
+"Allows netfilter to track talk connections.",
+"Bietet Netfilter, um Gesprächsverbindungen zu verfolgen.",
+"Permite un filtrado neto para realizar el seguimiento de todas las conexiones de conversaciones.",
+"Permet à netfilter de traquer les connexions de discussions.",
+"Consente al filtro di rete di tracciare le connessioni voce.",
+"Laat netfilter spraakverbindingen vinden.",
+"Permite que o netfilter registe as ligações de conversação.",
+"Umožňuje síťovému filtru sledovat hlasové připojení",
+"Pozwala filtrowi sieci na śledzenie połączeń rozmów  ",
+"Permite netfilter pentru a urmari conexiunile de vorbit",
+"Позволяет сетевому фильтру отслеживать переговорные соединения.",
+"Dovoľuje netfilter stopovať pripojenia hovorov.",
+"允許網路過濾器跟踪談話的連接。",
+"允许网络过滤器跟踪谈话的连接。"
+);
+var natPortRange=new Array
+(
+"Port Range",
+"Portbereich",
+"Serie de puerto",
+"Intervalle de port",
+"Intervallo porte",
+"Poortbereik",
+"Intervalo da porta",
+"Rozsah portů",
+"Zakres portu",
+"Raza Porturi",
+"Диапазон портов",
+"Rozsah portov",
+"埠範圍",
+"埠范围"
+);
+var wanqosaddStartIp=new Array
+(
+"source start IP address ",
+"Quelle Start-IP-Adresse ",
+"Dirección IP inicial de fuente ",
+"Adresse IP source de début. ",
+"indirizzo IP iniziale sorgente ",
+"bron start IP-adres ",
+"endereço IP inicial de origem ",
+"počáteční IP adresa zdroje ",
+"Początkowy adres IP źródła",
+"Adresa IP de start a sursei ",
+"Стартовый IP адрес источника",
+"Začiatok zdrojovej IP adresy",
+"啟始IP位址的來源",
+"启始IP地址的来源"
+);
+var qosEnable=new Array
+(
+"Enable QoS",
+"QoS aktivieren",
+"ActiQoS",
+"Activer QoS",
+"Abilita QoS",
+"QoS toestaan",
+"ActiQoS",
+"Povolit QoS",
+"Włącz QoS",
+"Activare QoS",
+"Включить QoS",
+"Zapnúť QoS",
+"啟用QoS",
+"启用QoS"
+);
+var qosMode=new Array
+(
+"QoS Mode",
+"QoS Mode",
+"QoS Mode",
+"QoS Mode",
+"QoS Mode",
+"QoS Mode",
+"QoS Mode",
+"QoS Mode",
+"QoS Mode",
+"QoS Mode",
+"QoS Mode",
+"QoS Mode",
+"QoS 模式",
+"QoS 模式"
+);
+var ezqos=new Array
+(
+"iQoS",
+"iQoS",
+"iQoS",
+"iQoS",
+"iQoS",
+"iQoS",
+"iQoS",
+"iQoS",
+"iQoS",
+"iQoS",
+"iQoS",
+"iQoS",
+"iQoS",
+"iQoS"
+);
+var ezqosEnable=new Array
+(
+"Enable iQoS",
+"iQoS aktivieren",
+"ActiiQoS",
+"Activer iQoS",
+"Abilita iQoS",
+"iQoS toestaan",
+"ActiiQoS",
+"Povolit iQoS",
+"Włącz iQoS",
+"Activare iQoS",
+"Включить iQoS",
+"Zapnúť iQoS",
+"啟用iQoS",
+"启用iQoS"
+);
+var BandDetect=new Array
+(
+"Bandwidth Detect",
+"Bandwidth Detect",
+"Bandwidth Detect",
+"Bandwidth Detect",
+"Bandwidth Detect",
+"Bandwidth Detect",
+"Bandwidth Detect",
+"Bandwidth Detect",
+"Bandwidth Detect",
+"Bandwidth Detect",
+"Bandwidth Detect",
+"Bandwidth Detect",
+"頻寬偵測",
+"带宽侦测"
+);
+var MaxConnectionCount=new Array
+(
+"Max Connection Count",
+"Max Connection Count",
+"Max Connection Count",
+"Max Connection Count",
+"Max Connection Count",
+"Max Connection Count",
+"Max Connection Count",
+"Max Connection Count",
+"Max Connection Count",
+"Max Connection Count",
+"Max Connection Count",
+"Max Connection Count",
+"最大連線數量",
+"最大联机数量"
+);
+var MaxConnectionCountErr=new Array
+(
+"Max connection should be a decimal number between 100-3076",
+"Max connection should be a decimal number between 100-3076",
+"Max connection should be a decimal number between 100-3076",
+"Max connection should be a decimal number between 100-3076",
+"Max connection should be a decimal number between 100-3076",
+"Max connection should be a decimal number between 100-3076",
+"Max connection should be a decimal number between 100-3076",
+"Max connection should be a decimal number between 100-3076",
+"Max connection should be a decimal number between 100-3076",
+"Max connection should be a decimal number between 100-3076",
+"Max connection should be a decimal number between 100-3076",
+"Max connection should be a decimal number between 100-3076",
+"最大連線數必須介於100-3076之間",
+"最大联机数必须介于100-3076之间"
+);
+var PriorityErr=new Array
+(
+"Priority should be different.",
+"Priority should be different.",
+"Priority should be different.",
+"Priority should be different.",
+"Priority should be different.",
+"Priority should be different.",
+"Priority should be different.",
+"Priority should be different.",
+"Priority should be different.",
+"Priority should be different.",
+"Priority should be different.",
+"Priority should be different.",
+"優先權限必須是不相同的。",
+"优先权限必须是不相同的。"
+);
+var GAME=new Array
+(
+"GAME",
+"GAME",
+"GAME",
+"GAME",
+"GAME",
+"GAME",
+"GAME",
+"GAME",
+"GAME",
+"GAME",
+"GAME",
+"GAME",
+"遊戲",
+"游戏"
+);
+var FTP=new Array
+(
+"FTP",
+"FTP",
+"FTP",
+"FTP",
+"FTP",
+"FTP",
+"FTP",
+"FTP",
+"FTP",
+"FTP",
+"FTP",
+"FTP",
+"FTP",
+"FTP"
+);
+var MEDIA=new Array
+(
+"MEDIA",
+"MEDIA",
+"MEDIA",
+"MEDIA",
+"MEDIA",
+"MEDIA",
+"MEDIA",
+"MEDIA",
+"MEDIA",
+"MEDIA",
+"MEDIA",
+"MEDIA",
+"影音媒體",
+"影音媒体"
+);
+var APP=new Array
+(
+"Application",
+"Application",
+"Application",
+"Application",
+"Application",
+"Application",
+"Application",
+"Application",
+"Application",
+"Application",
+"Application",
+"Application",
+"應用程式",
+"应用程序"
+);
+var P2P=new Array
+(
+"P2P",
+"P2P",
+"P2P",
+"P2P",
+"P2P",
+"P2P",
+"P2P",
+"P2P",
+"P2P",
+"P2P",
+"P2P",
+"P2P",
+"P2P",
+"P2P"
+);
+var type=new Array
+(
+"Type",
+"Typ",
+"Tipo",
+"Type",
+"Tipo",
+"Type",
+"Tipo",
+"Typ",
+"Rodzaj",
+"Tip",
+"Тип",
+"Typ",
+"類型",
+"类型"
+);
+var qosRemoteIP=new Array
+(
+"Remote IP Address ",
+"Remote IP-Adresse ",
+"Dirección IP remota ",
+"Adresse IP déportée ",
+"Indirizzo IP remoto ",
+"Extern IP-adres ",
+"Endereço IP remoto ",
+"Vzdálená IP adresa ",
+"Adres IP zdalny",
+"Adresa IP Remote",
+"Удаленный IP адрес",
+"Vzdialená IP adresa",
+"遠程 IP位址",
+"远程 IP地址"
+);
+var natsappAlertInvRange=new Array
+(
+"Invalid trigger-port number! You should set a value between 1-65535.",
+"Ungültige Trigger-Portnummer! Sie sollten einen Wert zwischen 1-65535 einstellen.",
+"¡Número de puerto de activación inválido! Deberá fijar un valor entre 1-65535.",
+"Numéro de port de déclenchement incorrect ! Vous devez définir une valeur comprise entre 1 et 65535.",
+"Numero trigger-port non valido! Impostare un valore compreso tra 1 e 65535.",
+"Ongeldig nummer triggerpoort! U moet een waarde instellen tussen 1 en 65535.",
+"Número da porta de accionamento inválido! Deve definir um valor entre 1 e 65535.",
+"Neplatné číslo spouštěcího portu! Nastavte hodnotu v rozsahu 1-65535.",
+"Niewłaściwy numer portu wyzwalacza! Wartość powinna znajdować się w zakresie 1-65535.",
+"Numar port trigger invalid! Introduceti o valoare cuprinsa intre 1-65535.",
+"Неправильный номер переключаемого порта. Вы должны установить значение между 1-65535.",
+"Nesprávne číslo trigger portu! Musíte nastaviť hodnotu medzi 1 - 65535.",
+"無效的Trigger埠的數量！你應該設定一個值之間 1-65535",
+"无效的Trigger埠的数量！你应该设定一个值之间 1-65535"
+);
+var natTrigPort=new Array
+(
+"Trigger Port",
+"Trigger-Port",
+"Puerto de activación",
+"Port de déclenchement",
+"Trigger port",
+"Triggerpoort",
+"Porta de accionamento",
+"Spouštěcí port",
+"Port wyzwalacza",
+"Port Trigger",
+"Переключаемый порт",
+"Trigger port",
+"Trigger埠",
+"Trigger埠"
+);
+var add=new Array
+(
+"Add",
+"Hinzufügen",
+"Añadir",
+"Ajouter",
+"Aggiungi",
+"Voeg toe",
+"Adicionar",
+"Přidat",
+"Dodaj",
+"Adaugare",
+"Добавить",
+"Pridať",
+"新增",
+"新增"
+);
+var wanqosAlertRepWeb=new Array
+(
+"Cannot add new entry because table is full!",
+"Neuer Eintrag kann nicht hinzugefügt werden, weil die Tabelle voll ist!",
+"No se puede añadir una nueva entrada porque el cuadro está lleno",
+"impossible d'ajouter une nouvelle entrée, la table est pleine !",
+"Impossibile aggiungere una nuova voce poiché la tabella è piena!",
+"Kan geen nieuw element toevoegen omdat de tabel vol is!",
+"Não é possível adicionar uma nova entrada porque a tabela está cheia!",
+"Nelze přidat novou položku, protože je tabulka plná!",
+"Tabela jest pełna - brak możliwości dodania wpisu!",
+"Tabela plina! Nu se poate adauga inregistrarea!",
+"Невозможно добавить новый компонент из-за заполненности таблицы!",
+"Nie je možné pridať novú hodnotu pretože tabuľka je plná!",
+"無法添加新項，因為列表已滿！",
+"无法添加新项，因为列表已满！"
+);
+var gateway=new Array
+(
+"Gateway",
+"Gateway",
+"Puerta de acceso",
+"Passerelle",
+"Gateway",
+"Gateway",
+"Gateway",
+"Brána",
+"Bramka",
+"Gateway",
+"Шлюз",
+"Brána",
+"閘道器",
+"网关"
+);
+var enNatPort=new Array
+(
+"Enable Port Forwarding",
+"Portweiterleitung aktivieren",
+"Actiel reenvío de puerto",
+"Activer le réacheminement de port",
+"Abilita inoltro porte",
+"Port-forwarding inschakelen",
+"Actiencaminhamento de portas",
+"Povolit přesměrování portů",
+"Włącz przekierowanie portów",
+"Activare Port Forwarding",
+"Включить перенапрвление портов",
+"Zapnúť presmerovanie portov",
+"啟用Port Forwarding",
+"启用Port Forwarding"
+);
+var natPortPri=new Array
+(
+"Private Port",
+"Privater Port",
+"Puerto privado",
+"Port privé",
+"Porta privata",
+"Lokale poort",
+"Porta privada",
+"Soukromý port",
+"Prywatny port",
+"Port Privat",
+"Частный порт",
+"Privátny port",
+"私人埠",
+"私人埠"
+);
+var natSrTable=new Array
+(
+"Current Static Routing Table",
+"Aktuelle statische Routing-Tabelle",
+"Cuadro de enrutación estática actual",
+"Table de routage statique en cours",
+"Tabella routing statico corrente",
+"Tabel van huidige statische routing",
+"Tabela de encaminhamento estático actual",
+"Tabulka aktuální statického směrování",
+"Tabela obecnego statycznego routingu",
+"Tabela Curenta Routare Statica",
+"Текущая таблица статической маршрутизации",
+"Tabuľka aktuálnych statického presmerovania",
+"現行的靜態路由列表",
+"现行的静态路由列表"
+);
+var natALGComArrayMMS=new Array
+(
+"Support for Microsoft Streaming Media Services protocol.",
+"Support für das Microsoft Streaming Media Services-Protokoll.",
+"Acepta el protocolo de servicios multimedia de Microsoft Streaming.",
+"Prise en charge protocole de streaming MMS (Microsoft Media Services).",
+"Supporto per protocollo Microsoft Streaming Media Services.",
+"Ondersteunt Microsoft Streaming Media Services.",
+"Suporte para o protocolo Serviços de Transmissão de Multimédia da Microsoft.",
+"Podpora protokolu Microsoft Streaming Media Services.",
+"Obsługuje protokół usług sieciowych Microsoft",
+"Suport pentru protocolul Microsoft Streaming Media Services.",
+"Поддерживает протокол Microsoft Streaming Media Services",
+"Podporuje protokol Microsoft Straming Media Services.",
+"Support for Microsoft Streaming Media Services protocol.",
+"Support for Microsoft Streaming Media Services protocol."
+);
+var wanqosaddAlertAdd=new Array
+(
+"The entry can\'t empty!",
+"Der Eintrag darf nicht leer sein!",
+"La entrada no puede estar vacía",
+"L'entrée ne peut pas être vide !",
+"Il campo non può essere vuoto!",
+"Het veld mag niet leeg zijn!",
+"A entrada não pode estar em branco!",
+"Tato položka nemůže být prázdná!",
+"Pole nie może być puste",
+"Inregistrarea nu poate fi goala!",
+"Компонент не может быть пустым",
+"Hodnota nemôže byť prázdna!",
+"該項內容不能是空白！",
+"该项内容不能是空白！"
+);
+var enNatSr=new Array
+(
+"Enable Static Routing",
+"Statisches Routing aktivieren",
+"Actienrutación estática",
+"Activer routage statique",
+"Abilita routing statico",
+"Statische routing inschakelen",
+"Actiencaminhamento estático",
+"Povolit statické směrování",
+"Włącz routing statyczny",
+"Activare Routare Statica",
+"Включить статическую маршрутизацию",
+"Zapnúť statické presmerovanie",
+"啟用靜態路由",
+"启用静态路由"
+);
+var reset=new Array
+(
+"Reset",
+"Reset",
+"Reinicio",
+"Réinitialisation",
+"Reset",
+"Reset",
+"Repor",
+"Reset",
+"Resetuj ",
+"Resetare",
+"Переустановить",
+"Reset",
+"重置",
+"重置"
+);
+var select=new Array
+(
+"Select",
+"Auswählen",
+"Seleccionar",
+"Selectionner",
+"Seleziona",
+"Selecteer",
+"Seleccionar",
+"Výběr",
+"Wybierz",
+"Selectare",
+"Выбрать",
+"Vybrať",
+"選擇",
+"选择"
+);
+var natSet=new Array
+(
+"NAT Settings",
+"NAT-Einstellungen",
+"Configuración NAT",
+"Paramètres NAT",
+"Impostazioni NAT",
+"NAT-instellingen",
+"Definições NAT",
+"Nastavení NAT",
+"Ustawienia NAT",
+"Setari NAT",
+"Настройки NAT",
+"Nastavenia NAT",
+"NAT設定",
+"NAT设定"
+);
+var natUpnpFeature=new Array
+(
+"UPnP Feature",
+"UPnP-Funktion",
+"Función UPnP",
+"Caractéristique UPnP",
+"Funzione UPnP",
+"UPnP-functie",
+"Funcionalidade UPnP",
+"Funkce UPnP",
+"Funkcja UPnP",
+"Caracteristici UPnP",
+"Свойства UPnP",
+"Funkcia UPnP",
+"UPnP功能",
+"UPnP功能"
+);
+var deleteSelected=new Array
+(
+"Delete Selected",
+"Gewählte löschen",
+"Borrar selección",
+"Supprimer la sélection",
+"Elimina selezionato",
+"Wis selectie",
+"Apagar opções seleccionadas",
+"Vymazat vybrané",
+"Skasuj wybrane dane",
+"Sterge Selectia",
+"Удалить выбранное",
+"Vymazať vybrané",
+"刪除所選",
+"删除所选"
+);
+var natALGComArrayMSN=new Array
+(
+"Support for MSN file tranfer.",
+"Support für MSN-Dateiübertragung.",
+"Acepta la transmisión de archivos MSN.",
+"Prise en charge transfert de fichier MSN.",
+"Supporto per trasferimento file MSN.",
+"Ondersteunt MSN-bestandsuitwisseling",
+"Suporte para a transferência de ficheiros do MSN.",
+"Podpora pro přenos souborů MSN.",
+"Obsługuje transfer plików MSN",
+"Suport pentru transfer fisiere pe MSN.",
+"Поддерживает MSN передачу данных",
+"Podporuje prenos súborov MSN.",
+"Support for MSN file tranfer.",
+"Support for MSN file tranfer."
+);
+var natALGComArrayIPsec=new Array
+(
+"Support for IPsec pass-through",
+"Support für IPsec Passthrough",
+"Acepta el medio de transmisión IPsec",
+"Prise en charge IPsec passthrough",
+"Supporto per attraversamento IPsec",
+"Ondersteunt IPsec-passthrough",
+"Suporte para passthrough IPsec",
+"Podpora pro průchod IPsec",
+"Obsługuje przesyłanie IPsec",
+"Suport pentru IPsec passthrough",
+"Поддерживает Ipsec пересылку",
+"Podporuje Ipsec passtrhrough",
+"Support for IPsec pass-through",
+"Support for IPsec pass-through"
+);
+var natED=new Array
+(
+"Enable or disable NAT module function :&nbsp;&nbsp;",
+"NAT-Modulfunktion aktivieren oder deaktivieren :&nbsp;&nbsp;",
+"Activa o desactiva la función de módulo NAT :&nbsp;&nbsp;",
+"Activer ou désactiver la fonction module NAT :&nbsp;&nbsp;",
+"Attiva o disattiva la funzione del modulo NAT :&nbsp;&nbsp;",
+"Schakel NAT-module in en uit :&nbsp;&nbsp;",
+"Actiou desactia função do módulo NAT:&nbsp;&nbsp;",
+"Povolit nebo zakázat funkci modulu NAT:&nbsp;&nbsp;",
+"Włącz lub wyłacz moduł NAT:",
+"Activare sau Dezactivare functie NAT :&nbsp;&nbsp;",
+"Включает или выключает функцию NAT модуля",
+"Zapnúť alebo vypnúť funkciu modulu NAT  :&nbsp;&nbsp;",
+"啟用或禁用NAT模組功能：",
+"启用或禁用NAT模块功能："
+);
+var fastNatED=new Array
+(
+"Enable or disable Fast NAT module function :&nbsp;&nbsp;",
+"Schnelle NAT-Modulfunktion aktivieren oder deaktivieren :&nbsp;&nbsp;",
+"Activa o desactiva la función de módulo rápido NAT :&nbsp;&nbsp;",
+"Activer ou désactiver la fonction module Fast NAT :&nbsp;&nbsp;",
+"Attiva o disattiva la funzione del modulo Fast NAT :&nbsp;&nbsp;",
+"Schakel snelle NAT-module in en uit :&nbsp;&nbsp;",
+"Actiou desactia função do módulo Fast NAT:&nbsp;&nbsp;",
+"Povolit nebo zakázat funkci modulu Fast NAT:&nbsp;&nbsp;",
+"Włącz lub wyłacz moduł NAT:",
+"Activare sau Dezactivare functie Fast NAT :&nbsp;&nbsp;",
+"Включает или выключает функцию Fast NAT модуля",
+"Zapnúť alebo vypnúť funkciu rýchleho modulu NAT  :&nbsp;&nbsp;",
+"啟用或禁用Fast NAT模組功能：",
+"启用或禁用Fast NAT模块功能："
+);
+var comment=new Array
+(
+"Comment",
+"Kommentar",
+"Comentario",
+"Commentaire",
+"Commento",
+"Opmerking",
+"Comentário",
+"Komentář",
+"Uwagi",
+"Comentariu",
+"Комментарий",
+"Komentár",
+"回應",
+"回应"
+);
+var natPortPriIP=new Array
+(
+"Private IP",
+"Private IP",
+"IP privada",
+"IP privée",
+"IP privato",
+"Lokaal IP",
+"IP privado",
+"Soukromá IP adresa",
+"IP prywatny ",
+"IP Privat",
+"Частный IP",
+"Privátna IP",
+"私用 IP",
+"私用 IP"
+);
+var natPopApp=new Array
+(
+"Popular Applications ",
+"Beliebte Anwendungen ",
+"Aplicaciones populares ",
+"Applications populaires ",
+"Applicazioni popolari ",
+"Populaire toepassingen ",
+"Aplicações populares ",
+"Populární aplikace ",
+"Popularne aplikacje:",
+"Aplicatii Populare",
+"Популярные приложения",
+"Populárne aplikácie",
+"Popular Applications ",
+"Popular Applications"
+);
+var qosLocalPort=new Array
+(
+"Local Port Range",
+"Lokaler Port-Bereich",
+"Serie de puerto local",
+"Intervalle du Port Local",
+"Intervallo porte locali",
+"Bereik lokale poort",
+"Intervalo da porta local",
+"Rozsah místních portů",
+"Zakres portu lokalnego",
+"Raza Porturi Locala",
+"Диапазон локальных портов",
+"Rozsah lokálnych portov",
+"本地埠範圍",
+"本地埠范围"
+);
+var natSapp=new Array
+(
+"Special Applications",
+"Spezielle Anwendungen",
+"Aplicaciones especiales",
+"Applications spéciales",
+"Applicazioni speciali",
+"Bijzondere toepassingen",
+"Aplicações especiais",
+"Speciální aplikace",
+"Aplikacje specjalne ",
+"Aplicatii Speciale",
+"Специальные приложения",
+"Špeciálne aplikácie",
+"特殊應用",
+"特殊应用"
+);
+var natsappAlertInvForm=new Array
+(
+"Invalid trigger-port number! It should be the decimal number (0-9).",
+"Ungültige Trigger-Portnummer! Es sollte eine Dezimalzahl sein (0-9).",
+"¡Número de puerto de activación inválido! Deberá ser un número decimal (entre 0-9).",
+"Numéro de port de déclenchement incorrect ! Il doit s'agir d'un nombre décimal (0-9).",
+"Numero trigger-port non valido! Deve essere un numero decimale (0-9).",
+"Ongeldig nummer triggerpoort! Het moet een decimaal teken zijn (0-9).",
+"Número da porta de accionamento inválido! Deve ser um número decimal (0 a 9).",
+"Neplatné číslo spouštěcího portu! Zadejte desítkové číslo z intervalu (0-9).",
+"Niewłaściwy numer portu wyzwalacza! Wartość powinna być liczbą dziesiętną (0-9). ",
+"Numar port trigger invalid! Introduceti un numar zecimal (0-9).",
+"Неправильный номер переключаемого порта. Должен быть десятичным числом.",
+"Nesprávne číslo trigger portu! Musí byť desiatkové číslo (0-9).",
+"Trigger埠的數值是無效的！它應該是十進位碼（0-9）。",
+"Trigger埠的数值是无效的！它应该是十进制码（0-9）。"
+);
+var guaranteeolitec=new Array
+(
+"guarantee",
+"Garantie",
+"garantía",
+"Garantie",
+"garantito",
+"garantie",
+"garantia",
+"zaručeno",
+"gwarancja ",
+"Garantat",
+"Гарантированная",
+"garancia",
+"保證",
+"保证"
+);
+var noneolitec=new Array
+(
+"None",
+"Keine",
+"Ninguno",
+"Aucun",
+"Nessuno",
+"Geen",
+"Nenhum",
+"Žádné",
+"Brak ",
+"Nimic",
+"Неопределен",
+"Žiadne",
+"無",
+"无"
+);
+var botholitec=new Array
+(
+"Both",
+"Beide",
+"Ambos",
+"Les deux",
+"Entrambi",
+"Beide",
+"Ambos",
+"Obojí",
+"Obydwa",
+"Ambele",
+"Оба",
+"Oboje",
+"兩者",
+"两者"
+);
+var selectoneolitec=new Array
+(
+"-- select one --",
+"-- eins auswählen --",
+"-- seleccione una --",
+"--sélectionnez-en un --",
+"-- selezionare uno--",
+"-- maak selectie --",
+"-- seleccionar uma opção --",
+"-- vybrat jeden --",
+"wybierz jedną opcję ",
+"-- selectati --",
+"выберите один ",
+"-- vybrať jeden --",
+"- 請選擇 -",
+"- 请选择 -"
+);
+var apply1=new Array
+(
+"Apply",
+"Übernehmen",
+"Aplicar",
+"Appliquer",
+"Applica",
+"Toepassen",
+"Aplicar",
+"Použít",
+"Zastosuj",
+"Aplica",
+"Применить",
+"Použiť",
+"套用",
+"套用"
+);
+var cancel1=new Array
+(
+"Cancel",
+"Abbrechen",
+"Cancelar",
+"Annuler",
+"Annulla",
+"Annuleren",
+"Cancelar",
+"Zrušit",
+"Skasuj",
+"Anulare",
+"Выйти",
+"Zrušiť",
+"取消",
+"取消"
+);
+var qosdoband=new Array
+(
+"Total Download Bandwidth",
+"Gesamte Download-Bandbreite",
+"Banda ancha de descarga total",
+"Bande passante totale de transfert descendant",
+"Larghezza di banda totale in download",
+"Totale bandbreedte voor downloaden",
+"Largura de banda total de transferência",
+"Celková šířka pásma stahování",
+"Szerokość pasma pobierania ",
+"Banda Totala pentru Download",
+"Общая ширина полосы входящего трафика",
+"Celková prenosová rýchlosť sťahovania dát",
+"全部下載頻寬",
+"全部下载带宽"
+);
+var qosupband=new Array
+(
+"Total Upload Bandwidth",
+"Gesamte Upload-Bandbreite",
+"Banda ancha total de carga",
+"Bande passante totale de transfert ascendant",
+"Larghezza di banda totale in upload",
+"Totale bandbreedte voor uploaden",
+"Largura de banda total de envio",
+"Celková šířka pásma odesílání",
+"Szerokość pasma wysyłania",
+"Banda Totala pentru Upload",
+"Общая ширина полосы исходящего трафика",
+"Celková prenosová rýchlosť odosielania dát",
+"全部上傳頻寬",
+"全部上传带宽"
+);
+var computerName=new Array
+(
+"Computer name",
+"Computername",
+"Nombre del ordenador",
+"Nom de l'ordinateur",
+"Nome computer",
+"Computernaam",
+"Nome do computador",
+"Jméno počítače",
+"Nazwa komputera",
+"Nume Calculator",
+"Имя компьютера",
+"Meno počítača",
+"電腦名稱",
+"计算机名称"
+);
+var applicationName=new Array
+(
+"Application name",
+"Anwendungsname",
+"Nombre de la aplicación",
+"Nom de l'application",
+"Nome applicazione",
+"Applicatienaam",
+"Nome da aplicação",
+"Jméno aplikace",
+"Nazwa aplikacji",
+"Nume Aplicatie",
+"Имя приложения",
+"Meno aplikácie",
+"應用程式名稱",
+"应用程序名称"
+);
+var igmpED=new Array
+(
+"Enable or disable IGMP function :&nbsp;&nbsp;",
+"IGMP- Funktion aktivieren oder deaktivieren :&nbsp;&nbsp;",
+"Activa o desactiva la función de IGMP :&nbsp;&nbsp;",
+"Activer ou désactiver la fonction IGMP :&nbsp;&nbsp;",
+"Attiva o disattiva la funzione IGMP :&nbsp;&nbsp;",
+"Schakel IGMP-functie in en uit :&nbsp;&nbsp;",
+"Actiou desactia função IGMP:&nbsp;&nbsp;",
+"Povolit nebo zakázat funkci modulu IGMP:&nbsp;&nbsp;",
+"Włącz lub wyłącz funkcję IGMP",
+"Activare sau Dezactivare functie IGMP :&nbsp;&nbsp;",
+"Включить или выключить IGMP функцию.",
+"Zapnúť a vypnúť funkciu IGMP :&nbsp;&nbsp;",
+"啟用或禁用 IGMP功能：",
+"启用或禁用 IGMP功能："
+);
+var igmpSetInfo=new Array
+(
+"The Internet Group Management Protocol (IGMP) is a communications protocol used to manage the membership of Internet Protocol multicast groups. IGMP is used by IP hosts and adjacent multicast routers to establish multicast group memberships. It is an integral part of the IP multicast specification, like ICMP for unicast connections. IGMP can be used for online video and gaming, and allows more efficient use of resources when supporting these uses.",
+"Das Internet Group Management Protocol (IGMP) ist ein Kommunikationsprotokoll, das zur Verwaltung der Mitgliedschaft von Internetprotokoll Multicast-Gruppen verwendet wird. IGMP wird von IP-Hosts und und benachbarten Multicast-Routern verwendet, um Multicast-Gruppenmitgliedschaften herzustellen. Es ist ein integraler Bestandteil der IP Multicast-Spezifikation, wie ICMP für Unicast-Verbindungen. IGMP kann für Onlinevideo und Gaming verwendet werden und ermöglicht eine effizientere Nutzung der Ressourcen, wenn diese Funktion unterstützt wird.",
+"El protocolo de gestión de grupo de Internet (IGMP) es un protocolo de comunicaciones utilizado para gestionar la membresía de los grupos multi-categorías del protocolo de Internet. IGMP se utiliza por los centros IP y los enrutadores multi-categorías adyacentes para establecer membresías de grupos multi-categorías. Es una parte integrante de la especificación IP multi-categorías, como ICMP para las conexiones de una sola categoría. IGMP puede utilizarse para los juegos y los vídeos en línea, y permite realizar un uso más eficaz de los recursos al aceptar dichos usos.",
+"Le protocole IGMP (Internet Group Management Protocol - Protocole de Gestion de Groupe Internet) est un protocole de communication utilisé pour gérer les affiliations à des groupes multicast d'Internet. Le protocole IGMP est utilisé par les IP hôtes et les routeurs multicast adjacents pour établir des affiliations à des groupes multicast. Il s'agit d'une partie intégrale de la spécification IP multicast, comme le protocole ICMP pour les connexions unicast (à destination unique). Le protocole IGMP peut être utilisé pour les jeux ou les vidéo en ligne, il permet une utilisation plus efficace des ressources lorsqu'il prend en charge ces utilisations.",
+"L'Internet Group Management Protocol (IGMP) è un protocollo di comunicazione utilizzato per gestire l'appartenenza a gruppi multicast di Internet Protocol. L'IGMP viene usato dagli host IP e dai router multicast adiacenti per stabilire appartenenze ai gruppi multicast. Esso è parte integrante della specificazione multicast dell'IP, come ICMP per le connessioni unicast. L'IGMP può essere usato per trasmettere video e giocare on-line, e consente un uso più efficiente delle risorse a supporto di questi utilizzi.",
+"Internet Group Management Protocol (IGMP) is een communicatieprotocal dat gebruikt wordt om het lidmaatschap van Internet Protocol multicastgroepen te beheren. IGMP wordt door IP-hosts en aanverwante multicastrouters gebruikt om lidmaatschappen van multicastgroepen op te zetten. Het vormt een integraal onderdeel van de IP multicastspecificatie, zoals ICMP voor unicastverbindingen. IGMP kan gebruikt worden voor online video en gaming, en maakt een efficiënter gebruik van deze middelen mogelijk.",
+"O Protocolo de gestão de grupo de Internet (IGMP) é um protocolo de comunicações utilizado para gerir o registo de grupos multicast do protocolo da Internet. IGMP é utilizado por anfitriões IP e routers multicast adjacentes para estabelecer registos de grupos multicast. É uma parte integral da especificação multicast IP, tal como ICMP para ligações unicast. O IGMP pode ser utilizado para vídeo e jogos online e permite uma utilização mais eficiente dos recursos quando suporta estas utilizações.",
+"Internet Group Management Protocol (IGMP) je komunikační protokol používaný pro správu členství v multicast skupinách Internet Protocol. IGMP je používán hostiteli IP adres a přilehlými multicast směrovači pro vytvoření členství v multicast skupině. Je nedílnou součástí specifikace IP multicast, například ICMP pro unicast pvar řipojení. IGMP je možné používat pro online video a hry a umožňuje mnohem efektivnější použití zdrojů, když je podporováno jejich použití.",
+"Protokół zarządzania grupami w sieciach (IGMP) jest stosowany przez właścicieli IP oraz inne routery do formowania grup. Jest to integralna część specyfikacji grupowej IP. IGMP może być wykorzystywane do gier online i pozwala na bardziej efektywne wykorzystanie zasobów podczas obsługi danych usług.",
+"IGMP (Internet Group Management Protocol) este un protocol de comunicare folosit pentru administrarea membrilor grupurilor multicast. IGMP este folosit de gazde IP si routere multicast adiacente pentru a stabili membrii grupurilor multicast. Este o parte integrata a specificatiilor IP multicast, cum este ICMP pentru conexiunile unicast. IGMP poate fi folosit pentru video si jocuri online si permite utilizarea mai eficienta a resurselor.",
+"Internet Group Management Protocol (IGMP) является коммуникационным протоколом, который используется для управления членством в мультивещательных  группах. IGMP используется IP хостами и смежными мультивещательными маршрутизаторами для установки членства в мультивещательных группах. Это интегральная часть мультивещательной IP спецификации, также как ICMP для однонапрвленных свезей. IGMP может использоваться для онлайн видео и игр, и позволяет более эффективно использовать ресурсы при поддержке этих пользователей",
+"The Internet Group Management Protokol (IGMP) je komunikačný protokol používaný pre správu členských skupín internetových protokolov. IGMP používa IP hostov a priľahlých routerov pre vytvorenia členských skupín. Je integrálnou súčasťou IP multicast špecifikácie, ako ICMP unicast pripojenia. IGMP môže byť použité pre online video a hranie a dovoľuje viac efektívne využitie zdrojov, pri podpore týchto použití.",
+"The Internet Group Management Protocol (IGMP) is a communications protocol used to manage the membership of Internet Protocol multicast groups. IGMP is used by IP hosts and adjacent multicast routers to establish multicast group memberships. It is an integral part of the IP multicast specification, like ICMP for unicast connections. IGMP can be used for online video and gaming, and allows more efficient use of resources when supporting these uses.",
+"The Internet Group Management Protocol (IGMP) is a communications protocol used to manage the membership of Internet Protocol multicast groups. IGMP is used by IP hosts and adjacent multicast routers to establish multicast group memberships. It is an integral part of the IP multicast specification, like ICMP for unicast connections. IGMP can be used for online video and gaming, and allows more efficient use of resources when supporting these uses."
+);
+var igmpSet=new Array
+(
+"IGMP Settings",
+"IGMP-Einstellungen",
+"Configuración IGMP",
+"Paramètres IGMP",
+"Impostazioni IGMP",
+"IGMP-instellingen",
+"Definições do IGMP",
+"Nastavení IGMP",
+"Ustawienia IGMP",
+"Setari IGMP",
+"Настройки IGMP",
+"IGMP Nastavenia",
+"IGMP設定",
+"IGMP设定"
+);
+var disable_pf=new Array
+(
+"If port forwarding is disabled, the EZVIEW port forwarding function will also be ineffective either. Are you sure to disable port forwarding function?",
+"If port forwarding is disabled, the EZVIEW port forwarding function will also be ineffective either. Are you sure to disable port forwarding function?",
+"If port forwarding is disabled, the EZVIEW port forwarding function will also be ineffective either. Are you sure to disable port forwarding function?",
+"If port forwarding is disabled, the EZVIEW port forwarding function will also be ineffective either. Are you sure to disable port forwarding function?",
+"If port forwarding is disabled, the EZVIEW port forwarding function will also be ineffective either. Are you sure to disable port forwarding function?",
+"If port forwarding is disabled, the EZVIEW port forwarding function will also be ineffective either. Are you sure to disable port forwarding function?",
+"If port forwarding is disabled, the EZVIEW port forwarding function will also be ineffective either. Are you sure to disable port forwarding function?",
+"If port forwarding is disabled, the EZVIEW port forwarding function will also be ineffective either. Are you sure to disable port forwarding function?",
+"If port forwarding is disabled, the EZVIEW port forwarding function will also be ineffective either. Are you sure to disable port forwarding function?",
+"If port forwarding is disabled, the EZVIEW port forwarding function will also be ineffective either. Are you sure to disable port forwarding function?",
+"If port forwarding is disabled, the EZVIEW port forwarding function will also be ineffective either. Are you sure to disable port forwarding function?",
+"If port forwarding is disabled, the EZVIEW port forwarding function will also be ineffective either. Are you sure to disable port forwarding function?",
+"If port forwarding is disabled, the EZVIEW port forwarding function will also be ineffective either. Are you sure to disable port forwarding function?",
+"If port forwarding is disabled, the EZVIEW port forwarding function will also be ineffective either. Are you sure to disable port forwarding function?"
+);
+var iacbe=new Array
+(
+"IP address cannot be empty!",
+"IP address cannot be empty!",
+"IP address cannot be empty!",
+"IP address cannot be empty!",
+"IP address cannot be empty!",
+"IP address cannot be empty!",
+"IP address cannot be empty!",
+"IP address cannot be empty!",
+"IP address cannot be empty!",
+"IP address cannot be empty!",
+"IP address cannot be empty!",
+"IP address cannot be empty!",
+"IP位址不可為空的!",
+"IP位址不可为空的!"
+);
+var isbtdn=new Array
+(
+"Invalid IP address value. It should be the decimal number (0-9).",
+"Invalid IP address value. It should be the decimal number (0-9).",
+"Invalid IP address value. It should be the decimal number (0-9).", 
+"Invalid IP address value. It should be the decimal number (0-9).",
+"Invalid IP address value. It should be the decimal number (0-9).",
+"Invalid IP address value. It should be the decimal number (0-9).",
+"Invalid IP address value. It should be the decimal number (0-9).",
+"Invalid IP address value. It should be the decimal number (0-9).",
+"Invalid IP address value. It should be the decimal number (0-9).",
+"Invalid IP address value. It should be the decimal number (0-9).", 
+"Invalid IP address value. It should be the decimal number (0-9).",
+"Invalid IP address value. It should be the decimal number (0-9).", 
+"無效的IP位址值。應該是十進位數（0-9）。", 
+"无效的IP位址值。应该是十进位数（0-9）。"
+);
+var iarisd=new Array
+(
+"Invalid IP address range in 1st digit.",
+"Invalid IP address range in 1st digit.",
+"Invalid IP address range in 1st digit.", 
+"Invalid IP address range in 1st digit.",
+"Invalid IP address range in 1st digit.",
+"Invalid IP address range in 1st digit.",
+"Invalid IP address range in 1st digit.",
+"Invalid IP address range in 1st digit.",
+"Invalid IP address range in 1st digit.",
+"Invalid IP address range in 1st digit.", 
+"Invalid IP address range in 1st digit.",
+"Invalid IP address range in 1st digit.", 
+"第一個數字為無效的IP位址範圍。", 
+"第一个数字为无效的IP位址范围。"
+);
+var iarind=new Array
+(
+"Invalid IP address range in 2st digit.",
+"Invalid IP address range in 2st digit.",
+"Invalid IP address range in 2st digit.",
+"Invalid IP address range in 2st digit.",
+"Invalid IP address range in 2st digit.",
+"Invalid IP address range in 2st digit.",
+"Invalid IP address range in 2st digit.",
+"Invalid IP address range in 2st digit.",
+"Invalid IP address range in 2st digit.",
+"Invalid IP address range in 2st digit.",
+"Invalid IP address range in 2st digit.",
+"Invalid IP address range in 2st digit.",
+"第二個數字為無效的IP位址範圍。",
+"第二个数字为无效的IP位址范围。"
+);
+var iarird=new Array
+(
+"Invalid IP address range in 3st digit.",
+"Invalid IP address range in 3st digit.",
+"Invalid IP address range in 3st digit.",
+"Invalid IP address range in 3st digit.",
+"Invalid IP address range in 3st digit.",
+"Invalid IP address range in 3st digit.",
+"Invalid IP address range in 3st digit.",
+"Invalid IP address range in 3st digit.",
+"Invalid IP address range in 3st digit.",
+"Invalid IP address range in 3st digit.",
+"Invalid IP address range in 3st digit.",
+"Invalid IP address range in 3st digit.",
+"第三個數字為無效的IP位址範圍。",
+"第三个数字为无效的IP位址范围。"
+);
+var iaritd=new Array
+(
+"Invalid IP address range in 4st digit.",
+"Invalid IP address range in 4st digit.",
+"Invalid IP address range in 4st digit.",
+"Invalid IP address range in 4st digit.",
+"Invalid IP address range in 4st digit.",
+"Invalid IP address range in 4st digit.",
+"Invalid IP address range in 4st digit.",
+"Invalid IP address range in 4st digit.",
+"Invalid IP address range in 4st digit.",
+"Invalid IP address range in 4st digit.",
+"Invalid IP address range in 4st digit.",
+"Invalid IP address range in 4st digit.",
+"第四個數字為無效的IP位址範圍。",
+"第四个数字为无效的IP位址范围。"
+);
+var natALGComArrayPPTP=new Array
+(
+"Support for PPTP.",
+"Support für PPTP.",
+"Acepta la PPTP.",
+"Prise en charge PPTP.",
+"Supporto per PPTP.",
+"Ondersteunt PPTP.",
+"Suporte para PPTP.",
+"Podpora pro PPTP.",
+"Obsługuje protokół PPTP",
+"Suport pentru PPTP.",
+"Поддерживает PPTP",
+"Podporuje PPTP.",
+"Support for PPTP.",
+"Support for PPTP."
+);

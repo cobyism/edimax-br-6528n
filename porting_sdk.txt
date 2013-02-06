@@ -1,0 +1,42 @@
+
+copy to new kernel:
+linux-2.4.18/drivers/char/rtl_gpio.c
+linux-2.4.18/include/linux/netfilter_ipv4/ipt_webstr.h
+linux-2.4.18/net/ipv4/netfilter/ipt_webstr.c
+linux-2.4.18/DoLinux.sh
+linux-2.4.18/DoModule.sh
+
+compare to new kernel:
+
+linux-2.4.18/.config
+linux-2.4.18/drivers/mtd/devices/doc2001.c
+linux-2.4.18/drivers/mtd/maps/rtl8196_flash.c
+linux-2.4.18/drivers/net/pppoe.c
+linux-2.4.18/init/main.c
+linux-2.4.18/net/ipv4/netfilter/Config.in
+linux-2.4.18/net/ipv4/netfilter/Makefile
+linux-2.4.18/rtkload/Makefile
+linux-2.4.18/Makefile
+linux-2.4.18/Rules.make
+
+linux-2.4.18/include/linux/if_bridge.h
+linux-2.4.18/net/bridge/br.c
+linux-2.4.18/net/bridge/br_device.c
+linux-2.4.18/net/bridge/br_forward.c
+linux-2.4.18/net/bridge/br_if.c
+linux-2.4.18/net/bridge/br_input.c
+linux-2.4.18/net/bridge/br_private.h
+linux-2.4.18/net/core/dev.c
+linux-2.4.18/net/ipv4/netfilter/Config.in
+linux-2.4.18/net/ipv4/netfilter/Makefile
+
+linux-2.4.18/drivers/net/rtl865x/eth865x.c
+
+cp platform related package to AP/RTL8196_xxxx
+modify:
+AP/RTL8196C_xxxx/wsc/src/wscd.conf
+AP/RTL8196C_xxxx/rc/reload.c
+AP/mkimg/RTL8196C_xxxx-tools/libstrip
+
+
+

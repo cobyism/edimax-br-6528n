@@ -1,0 +1,358 @@
+;
+; Hardware setting
+; ---------------------------------------------------------------------------
+HW_NIC0_ADDR=00e04c8196c1	; Ethernet LAN address
+HW_NIC1_ADDR=00e04c8196c9	; WAN mac address
+HW_BOARD_ID=1			; 1T2R=0,2T2R=1
+; WLAN0 interface. Note: "WLAN0" means PCI0 wlan controller
+HW_WLAN_ADDR=00e04c8196c1	; wlan0 MAC address
+HW_WLAN_ADDR1=00e04c8196c2
+HW_WLAN_ADDR2=00e04c8196c3
+HW_WLAN_ADDR3=00e04c8196c4
+HW_WLAN_ADDR4=00e04c8196c5
+HW_WLAN_ADDR5=00e04c8196c6
+HW_WLAN_ADDR6=00e04c8196c7
+HW_WLAN_ADDR7=00e04c8196c8
+HW_REG_DOMAIN=1		; FCC=1, IC=2, ETSI=3, SPAIN=4, FRANCE=5, MKK=6, ISRAEL=7
+HW_RF_TYPE=10			; 10-RTL8190(11 b/g/n)
+
+HW_TX_POWER_CCK_A=0 0 0 0 0 0 0 0 0 0 0 0 0 0 ;
+HW_TX_POWER_CCK_B=0 0 0 0 0 0 0 0 0 0 0 0 0 0 ;
+HW_TX_POWER_HT40_1S_A=0 0 0 0 0 0 0 0 0 0 0 0 0 0 ;
+HW_TX_POWER_HT40_1S_B=0 0 0 0 0 0 0 0 0 0 0 0 0 0 ;
+HW_TX_POWER_DIFF_HT40_2S=0 0 0 0 0 0 0 0 0 0 0 0 0 0 ;
+HW_TX_POWER_DIFF_HT20=0 0 0 0 0 0 0 0 0 0 0 0 0 0 ;
+HW_TX_POWER_DIFF_OFDM=0 0 0 0 0 0 0 0 0 0 0 0 0 0 ;
+
+						
+HW_LED_TYPE=3	; Except 0/1 is hardware wired, others are controlled by software
+			; 	WLAN-LED0		WLAN-LED1
+			; =============================================================
+			;  0	tx			rx
+			;  1	enabled/tx/rx		N/A
+			;  2	link			tx/rx (data, management packet)
+			;  3	link/tx/rx		N/A (data packet)
+			;  4	link			tx-data/rx-data (data packet)
+			;  5	link/tx-data/rx-data	N/A (data packet)
+			;  6	enable			tx/rx (data packet)
+			;  7	enable/tx-data/rx-data  N/A (data packet)
+
+HW_11N_XCAP=0			; RF 40MHz crystal auto-calibration parameter, the value from 0~64
+HW_11N_TSSI1=0;
+HW_11N_TSSI2=0;
+HW_11N_THER=0;
+HW_11N_TRSWITCH=0;
+HW_11N_RESERVED2=0;
+HW_11N_RESERVED3=0;
+HW_11N_RESERVED4=0;
+HW_11N_RESERVED5=0;
+HW_11N_RESERVED6=0;
+HW_11N_RESERVED7=0;
+HW_11N_RESERVED8=0;
+HW_11N_RESERVED9=0;
+HW_11N_RESERVED10=0;
+HW_WSC_PIN=	; WPS PIN number.
+							; Set null will cause system generate it auto
+
+; Firmware factory-default setting
+; ---------------------------------------------------------------------------
+; system interface
+DEF_TIME_ZONE_SEL=22						; TimeZone Select, 22-Greenwich Mean Time
+DEF_TIMESERVER_ADDR=192.43.244.18				; Time Server Address
+DEF_DAYLIGHT_ENABLE=0						; Daylight Enable,0-Disable, 1-Enable
+DEF_START_MONTH=1						; Daylight Start Month, 1-January
+DEF_START_DAY=1							; Daylight Start Day, 1-first day
+DEF_END_MONTH=1							; Daylight End Month, 1-January
+DEF_END_DAY=1							; Daylight End Day, 1-first day
+
+DEF_REMANG_ENABLE=0						; Remote Management Enable, 0-Disable, 1-Enable
+DEF_REMANHOST_ADDR=0.0.0.0					; Remote Management Host Address
+DEF_REMAN_PORT=8080						; Remote Management Port Number
+
+DEF_SUPER_NAME=super						; supervisor user name
+DEF_SUPER_PASSWORD=APR@xuniL					; supervisor user password
+DEF_USER_NAME=admin						; user name
+DEF_USER_PASSWORD=1234						; user password 
+
+; wan interface
+DEF_WAN_MODE=0							; MODE, 0 - dhcp, 1 - static, 2 -  PPPoE, 3 - PPTP
+								;       4 - Telstria Big Pond, 5 bridge, 6 - L2TP
+DEF_DYNIP_HOSTNAME=						; WAN Dynamic IP Host Name
+DEF_WAN_MAC_ADDR=000000000000					; Dynamic IP clone mac
+
+DEF_WAN_IP_ADDR=172.1.1.1					; Static ip address
+DEF_WAN_SUBNET_MASK=255.255.0.0					; subnet mask of
+DEF_WAN_DEFAULT_GATEWAY=172.1.1.254				; default gateway
+
+DEF_PPP_USER_NAME=						; PPPoE login user name
+DEF_PPP_PASSWORD=						; PPPoE login user passwowrd
+DEF_PPP_SERVNAME=						; PPPoE Service Name
+DEF_PPP_MTU=1392						; PPPoE MTU (512<=MTU Value<=1492)
+DEF_PPP_CONNECT_TYPE=0						; PPPoE connect type,0-continuous,1-connet on demand,2-
+								; manual
+DEF_PPP_IDLE_TIME=600						; idle time of PPPoE
+
+DEF_PPP_USER_NAME1=						; PPPoE login user name
+DEF_PPP_PASSWORD1=						; PPPoE login user passwowrd
+DEF_PPP_SERVNAME1=						; PPPoE Service Name
+DEF_PPP_MTU1=1392						; PPPoE MTU (512<=MTU Value<=1492)
+DEF_PPP_CONNECT_TYPE1=0						; PPPoE connect type,0-continuous,1-connet on demand,2-
+								; manual
+DEF_PPP_IDLE_TIME1=600						; idle time of PPPoE
+
+DEF_PPTP_IPMODE=0						; PPTP IP obtain way, 0-automatically, 1-manual type
+DEF_PPTP_IP_ADDR=0.0.0.0					; PPTP IP Address
+DEF_PPTP_IP_MASK_ADDR=0.0.0.0					; PPTP IP mask Address
+DEF_PPTP_DEF_GATEWAY=0.0.0.0					; PPTP default Gateway
+DEF_PPTP_USER_NAME=						; PPTP user ID
+DEF_PPTP_PASSWORD=						; PPTP user password
+DEF_PPTP_GATEWAY=0.0.0.0					; PPTP Gateway
+DEF_PPTP_CONNT_ID=						; PPTP Connection ID
+DEF_PPTP_BEZEQ_ENABLED=0					; PPTP BEZEQ-ISRAEL Enable for israel
+DEF_PPTP_CONNECT_TYPE=0						; PPTP connect type,0-continuous,1-connet on demand,2-
+								; manual
+DEF_PPTP_IDLE_TIME=600						; idle time of PPTP
+DEF_PPTP_MTU=1392						; PPTP MTU (512<=MTU Value<=1392)
+
+DEF_L2TP_IPMODE=0						; L2TP IP obtain way, 0-automatically, 1-manual type
+DEF_L2TP_IP_ADDR=0.0.0.0					; L2TP IP Address
+DEF_L2TP_MASK_ADDR=0.0.0.0					; L2TP IP mask Address
+DEF_L2TP_DEFGATEWAY=0.0.0.0					; L2TP default Gateway
+DEF_L2TP_USER_NAME=						; L2TP user ID
+DEF_L2TP_PASSWORD=						; L2TP user password
+DEF_L2TP_GATEWAY=						; L2TP Gateway
+DEF_L2TP_CONNECT_TYPE=0						; L2TP connect type,0-continuous,1-connet on demand,2-
+								; manual
+DEF_L2TP_IDLE_TIME=600						; idle time of L2TP
+DEF_L2TP_MTU=1392						; L2TP MTU (512<=MTU Value<=1392)
+
+DEF_TELBP_USER_NAME=						; Telstra Big Pond user ID
+DEF_TELBP_PASSWORD=						; Telstra Big Pond user password
+DEF_TELBP_STATE=0						; Telstra Big Pond status (no use)
+DEF_TELBP_ENABLED=0						; Telstra Big Pond IP obtain way,0-auto ,1-manual type
+DEF_TELBP_IP_ADDR=0.0.0.0					; Telstra Big Pond Login Server IP Address
+
+DEF_UPNP_ENABLE=0						; UPnP flag, 0 - disabled, 1 - enabled
+
+DEF_DNS_MODE=0							; DNS mode, 0 - auto, 1 - manual
+DEF_DNS1=0.0.0.0						; primary DNS value, refer when DNS is set to auto
+DEF_DNS2=0.0.0.0						; secondary DNS value
+DEF_DNS3=0.0.0.0						; third NDS value, (no use)
+
+DEF_DDNS_ENABLED=0						; Dynamic DNS Enable, 0-disabled, 1-enabled
+DEF_DDNS_PVID_SEL=dyndns					; DDNS Provider select
+DEF_DDNS_NAME=							; DDNS Domain Name 
+DEF_DDNS_ACCOUNT=						; DDNS Account or E-Mail
+DEF_DDNS_PASS=							; DDNS Password or Key
+
+DEF_DHIS_HOSTID=0						; DHIS of DDNS host ID
+DEF_DHIS_ISADDR=0.0.0.0						; DHIS of DDNS IS Address
+DEF_DHIS_SELECT=0						; DHIS of DDNS Authentication Type, 0-password, 1-QRC
+DEF_DHIS_PASSWORD=						; DHIS of DDNS host password
+DEF_DHIS_AUTH_P1=						; DHIS of DDNS authentication P
+DEF_DHIS_AUTH_P2=						; DHIS of DDNS authentication P
+DEF_DHIS_AUTH_Q1=						; DHIS of DDNS authentication Q
+DEF_DHIS_AUTH_Q2=						; DHIS of DDNS authentication Q
+
+
+; LAN interface
+DEF_ELAN_MAC_ADDR=000000000000					; Ethernet MAC clone address
+DEF_CLIENT_IP_DISABLED=0					; lan IP obtain way, 0 -enabled, 1 -disabled
+DEF_IP_ADDR=192.168.2.1						; ip address
+DEF_SUBNET_MASK=255.255.255.0					; subnet mask
+DEF_STP_ENABLED=0						; spanning tree protocol flag, 0 -disabled, 1 -enabled
+DEF_DHCP=2							; DHCP mode, 0-fixed ip, 1-dhcp client, 2-dhcp server
+DEF_LAN_LEASE_TIME=315360000					; lease time select 7FFFFFFF(hex)
+DEF_DHCP_CLIENT_START=192.168.2.100				; DHCP client range - start address
+DEF_DHCP_CLIENT_END=192.168.2.200				; DHCP client range - end address
+DEF_DEFAULT_GATEWAY=0.0.0.0					; default route
+DEF_DHCPGATEWAYIP_ADDR=0.0.0.0					; DHCP default gateway
+DEF_DHCPNAMESERVER_ADDR=0.0.0.0					; DHCP domain name server
+DEF_DOMAIN_NAME=						; DHCP domain name
+
+
+; Network Address Translation
+DEF_NAT_ENABLE=1						; NAT flag, 0 - disabled, 1 - enabled
+DEF_FAST_NAT_ENABLE=0					; Fast NAT flag, 0 - disabled, 1 - enabled
+DEF_PORTFW_ENABLED=0						; port-forwarding flag, 0 - disabled, 1 - enabled
+DEF_PORTFW_TBL_NUM=0						; existing port-fowarding table entry number
+
+DEF_VSER_ENABLED=0						; virtual-server flag, 0 - disabled, 1 - enabled
+DEF_VSER_TBL_NUM=0						; existing virtual-server table entry number
+
+DEF_TRIGGERPORT_ENABLED=0					; trigger-port flag, 0 - disabled, 1 - enabled
+DEF_TRIGGERPORT_TBL_NUM=0					; existing trigger-port table entry number
+
+DEF_SROUT_ENABLED=0						; static routing flag, 0 - disabled, 1 - enabled
+DEF_SROUT_TBL_NUM=0						; existing static routing table entry number
+
+DEF_APP_LAYER_GATEWAY=63				; Application Layer Gateway select FFFFF1FF(hex)
+
+DEF_ALG_FTP_PORTS=21				; FTP ALG Default Port (21).
+
+; Firewall
+DEF_FIREWALL_ENABLE=1						; firewall flag, 0 - disabled, 1 - enabled
+
+DEF_MACDENY_ENABLED=1						; mac of access control deny, 0-allow, 1-deny
+DEF_MACFILTER_ENABLED=0						; mac of access control flag, 0-disabled, 1-enabled
+DEF_MACFILTER_TBL_NUM=0						; existing mac of access control table entry number
+
+DEF_IPDENY_ENABLED=1						; ip of access control deny, 0-allow, 1-deny
+DEF_ACPC_ENABLED=0						; ip of access control flag, 0-disabled, 1-enabled
+DEF_ACPC_TBL_NUM=0						; existing ip of access control table entry number
+
+DEF_URLB_ENABLED=0						; URL blacking flag, 0-disabled, 1-enabled
+DEF_URLB_TBL_NUM=0						; exist URL blacking table entry number
+
+DEF_POD_ENABLED=0						; DoS, Ping of Death flag, 0-disabled, 1-enabled
+DEF_PING_ENABLED=0						; DoS, Discard Ping From WAN, 0-disabled, 1-enabled
+DEF_SCAN_ENABLED=0						; DoS, Port Scan, 0-disabled, 1-enabled
+DEF_SYN_ENABLED=0						; DoS, Sync Flood, 0-disabled, 1-enabled
+DEF_POD_PACK=5							; DoS, packet of Ping of Death
+DEF_POD_BUR=5							; DoS, burst of Ping of Death
+DEF_POD_TIME=0							; DoS, time of Ping of Death
+DEF_SYN_PACK=30							; DoS, packet of Sync Flood
+DEF_SYN_BUR=30 						; DoS, burst of Sync Flood
+DEF_SYN_TIME=0							; DoS, time of Sync Flood
+DEF_SCAN_NUM=4294967295						; DoS, item of Port Scan FFFFFFFF(hex)
+
+DEF_DMZ_ENABLED=0						; DMZ flag, 0-disabled, 1-enabled
+DEF_DMZ_TBL_NUM=0						; existing DMZ table entry number 
+DEF_DMZ_HOST=0.0.0.0						; DMZ ip address
+
+DEF_IPFILTER_ENABLED=0						; ip-filtering flag, 0-disabled, 1-enabled (no use)
+DEF_IPFILTER_TBL_NUM=0						; existing ip-filtering table entry number	(no use)
+
+DEF_PORTFILTER_ENABLED=0					; port-filtering flag, 0-disabled, 1-enabled (no use)
+DEF_PORTFILTER_TBL_NUM=0					; existing port-filtering table entry number (no use)
+
+
+; WLAN interface
+
+DEF_WIFI_TEST=0 ;wifi test 0 disable 1 enable
+DEF_WLAN_WMM=0 ;wmm qos 0 disable 1 enable
+DEF_WLAN_N_CHAN_WIDTH=0 ;11n channel width
+DEF_WPS_CONFIG_MODE=7		;Wps Mode	
+DEF_WPS_CONFIG_TYPE=0		;Wps Config Type
+DEF_WPS_ENABLE=1						;Wps Enable
+
+DEF_BAND=5							;bit mask of band selection, 1-11b, 2-11g, 4-11a
+DEF_ABAND_MODE=2   ; only A/N Mix Mode
+DEF_WLAN_DISABLED=0						; wlan interface flag, 0-wlan enabled, 1-wlan disabled
+DEF_AP_MODE=0							; AP mode, 0-AP ,1-STA infrastructure, 2-STA ad hoc, 3-
+								; AP bridge PTP, 4-AP bridge PTMP, 5-AP bridge WPA
+DEF_WLAN_MODE=0							; wlan mode, 0-access point, 1-station
+DEF_NETWORK_TYPE=0						; wlan station mode, 0-infrastructure, 1-ad hoc
+DEF_ALIAS_NAME=Wireless Router					; device alias name
+DEF_SSID=Edimax						; SSID
+DEF_CHANNEL=11							; channel number
+DEF_ABAND_CHANNEL=36    ; a_band channel
+DEF_WL_LINKMAC1=000000000000					; wlan mac address1 to link
+DEF_WL_LINKMAC2=000000000000					; wlan mac address2 to link
+DEF_WL_LINKMAC3=000000000000					; wlan mac address3 to link
+DEF_WL_LINKMAC4=000000000000					; wlan mac address4 to link
+DEF_WL_LINKMAC5=000000000000					; wlan mac address5 to link
+DEF_WL_LINKMAC6=000000000000					; wlan mac address6 to link
+DEF_AUTH_TYPE=2							; athentication type, 0 - open system, 1 - shared key, 
+								; 2 - auto (both)
+DEF_FRAG_THRESHOLD=2346					; fragment threshold, 256-2346
+DEF_RTS_THRESHOLD=2347					; RTS threshold, 0 - 2347
+DEF_BEACON_INTERVAL=100					; beacon interval (20-1024)
+DEF_RATE_ADAPTIVE_ENABLED=1				; tx rate adaptive enable, 1-enabled, 0-disabled
+DEF_BASIC_RATES=3						; basic rate, bit0-1M, bit1-2M, bit2-5.5M, bit3-11M
+DEF_SUPPORTED_RATES=15					; supported rate, bit0-1M, bit1-2M, bit2-5.5M, bit3-11M
+DEF_FIX_RATE=0							; supported rate, 0:auto 1:1M 2:2M 3:5.5M ,,, for Ralink
+DEF_PREAMBLE_TYPE=0						; preamble type, 0 - long preamble, 1 - short preamble
+DEF_HIDDEN_SSID=0						; hidden ssid, 0 - disabled, 1 - enabled
+DEF_IAPP_DISABLED=0						; IAPP type, 0-enabled, 1-disabled
+DEF_PROTECTION_DISABLED=1				; 802.11g Protection, 0-enabled, 1-disabled
+
+DEF_SECURITY_MODE=0						; security type, 0-disabled, 1-wep, 2-wep static key, 3
+										; -wep dynamic key, 4-pre share key, 5-RADIUS
+DEF_WLAN_ENCRYPT=0						; encryption type, 0-none, 1-wep, 2-wpa
+
+DEF_WEP=0								; WEP flag, 0-WEP disabled, 1-WEP-64bits, 2-WEP-128bits
+DEF_WEP64_KEY1=0000000000				; WEP-64bits key1~key4
+DEF_WEP64_KEY2=0000000000
+DEF_WEP64_KEY3=0000000000
+DEF_WEP64_KEY4=0000000000
+DEF_WEP128_KEY1=00000000000000000000000000			; WEP-128bits key1~key4
+DEF_WEP128_KEY2=00000000000000000000000000
+DEF_WEP128_KEY3=00000000000000000000000000
+DEF_WEP128_KEY4=00000000000000000000000000
+DEF_WEP152_KEY1=00000000000000000000000000000000		; WEP-152bits key1~key4
+DEF_WEP152_KEY2=00000000000000000000000000000000
+DEF_WEP152_KEY3=00000000000000000000000000000000
+DEF_WEP152_KEY4=00000000000000000000000000000000
+DEF_WEP_DEFAULT_KEY=0						; default tx key id (0-3)
+DEF_WEP_KEY_TYPE=1						; key type, 0 - ASCII, 1 - hex
+
+DEF_WLAN_NOFORWARD=0         ; enable or disable NoForwarding
+DEF_WLAN_MACAC_NUM=0						; existing table entry number for mac access control
+DEF_WLAN_MACAC_ENABLED=0					; wlan mac access control flag, 0-disabled, 1-enabled
+
+DEF_WLAN_TRAN_RATE=auto						; wlan transmit rate
+DEF_WLAN_RATE_MODE=0						; wlan basic rates mode, 0-mixed, 1-g only
+DEF_WLAN_CTS=2								; wlan CTS protection, 0-auto, 1-always, 2-none
+DEF_WLAN_BURST=0						; wlan transmit burst mode, 0-disable, 1-enabled
+
+DEF_WLAN_ENABLE_SUPP_NONWPA=0					; support nonWPA client (no use)
+DEF_WLAN_SUPP_NONWPA=0						; (no use)
+DEF_WLAN_WPA_AUTH=2						; WPA authentication type, 1-RADIUS, 2-pre shared key
+DEF_WLAN_WPA_CIPHER_SUITE=1					; WPA Cipher suite, 1 - TKIP, 2 - AES
+DEF_WLAN_PSK_FORMAT=0						; Pre-shared Key Format, 0-passphrase, 1-Hex
+DEF_WLAN_WPA_PSK=						; Pre-shared Key content
+DEF_WLAN_WPA_GROUP_REKEY_TIME=86400				; rekey time
+DEF_MAC_AUTH_ENABLED=0						; (no use)
+
+DEF_WLAN_ENABLE_1X=0						; 802.1x Authentication enalbe, 0-disabled, 1-enabled
+DEF_RS_IP=0.0.0.0						; RADIUS server IP Address
+DEF_RS_PORT=1812						; RADIUS server port number
+DEF_RS_PASSWORD=						; RADIUS server password
+DEF_RS_MAXRETRY=3						; RADIUS server max. retry
+DEF_RS_INTERVAL_TIME=5						; RADIUS server timeout
+
+DEF_ACCOUNT_RS_ENABLED=0					; Accounting server enable, 0-disabled, 1-enabled
+DEF_ACCOUNT_RS_IP=0.0.0.0					; Accounting server IP Address
+DEF_ACCOUNT_RS_PORT=1813					; Accounting server port number
+DEF_ACCOUNT_RS_PASSWORD=					; Accounting server password
+DEF_ACCOUNT_RS_UPDATE_ENABLED=0					; dynamic update enable, 0-disabled, 1-enabled
+DEF_ACCOUNT_RS_UPDATE_DELAY=60					; Accounting server update delay time in sec
+DEF_ACCOUNT_RS_MAXRETRY=3					; Accounting server Max. retry
+DEF_ACCOUNT_RS_INTERVAL_TIME=5					; Accounting server timeout 
+DEF_DOT1X_MODE=0						; select RADIUS type, 1-internal, 0-external
+
+DEF_INACTIVITY_TIME=30000					; wlan client inactivity time (in 10ms) (no use)
+DEF_DTIM_PERIOD=3						; DTIM period
+DEF_WLAN_MAC_ADDR=000000000000					; clone mac address (no use)
+
+DEF_PS_ENABLE=1
+DEF_PS_IPPENABLE=1
+DEF_PS_LPRENABLE=1
+DEF_PS_NAME=
+DEF_PS_PORT1NAME=lpt1
+DEP_PS_PORT2NAME=lpt2
+
+; Universal repeater
+REPEATER_ENABLED=0		; enable/disable universal repeater for wlan
+REPEATER_SSID=			; ssid of wlan extended interface
+
+OP_MODE=0			; operation mode, 0 - gateway mode (LAN:br0(eth2.1+wlan0), WAN:eth2.2)
+				; 		  1 - WISP(wireless ISP) mode (LAN:br0(eth2.1+eth2.2), WAN:wlan0)
+
+DEF_WLAN_WDS_WPA_AUTH=2						; WPA authentication type, 1-RADIUS, 2-pre shared key
+DEF_WLAN_WDS_WPA_CIPHER_SUITE=1					; WPA Cipher suite, 1 - TKIP, 2 - AES
+DEF_WLAN_WDS_WPA2_CIPHER_SUITE=0					; WPA Cipher suite, 1 - TKIP, 2 - AES
+DEF_WLAN_WDS_PSK_FORMAT=0						; Pre-shared Key Format, 0-passphrase, 1-Hex
+DEF_WLAN_WDS_WPA_PSK=						; Pre-shared Key content
+DEF_WLAN_WDS_ENCRYPT=0						; 
+DEF_TTL_VALUE=254             ; Deafult ser defined ttl value.
+
+DEF_SSID_1=
+DEF_SSID_MIRROR_1=
+DEF_DHCP_MTU=1492
+
+DEF_IGMP_PROXY_ENABLED=1      ; Default igmp is disable
+DEF_WATCH_DOG_INTERVAL=5
+DEF_STADRV_WPA_CIPHER=1			; wps2(aes) only
+DEF_IPV6_BRIDGE=1

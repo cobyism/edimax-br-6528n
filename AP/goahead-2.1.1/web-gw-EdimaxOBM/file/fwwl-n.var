@@ -1,0 +1,3740 @@
+﻿var wlencryptStrChara=new Array
+(
+" characters.",
+" Zeichen.",
+" caracteres.",
+" caractères.",
+" caratteri.",
+" tekens.",
+" caracteres.",
+" znaků.",
+"znaki",
+"caractere.",
+"Символы",
+"znaky.",
+"字元",
+"字符"
+);
+var wlencryptStrCharaolitec=new Array
+(
+" characters",
+" Zeichen",
+" caracteres",
+" caractères",
+" caratteri",
+" tekens",
+" caracteres",
+" znaků",
+"znaki",
+"caractere",
+"Символы",
+"znaky",
+"字元",
+"字符"
+);
+var wlCtrlEn802=new Array
+(
+"Enable 802.1x Authentication",
+"802.1x Authentifizierung aktivieren",
+"Actiautentificación 802.1x",
+"Activer authentification 802.1x",
+"Abilita autenticazione 802.1x",
+"Pas 802.1x authenticatie toe",
+"ActiAutenticação 802.1x",
+"Povolit autorizaci 802.1x",
+"Włącz uwierzytelnianie 802.1x",
+"Activare Autentificare 802.1x",
+"Включить аутентификацию 802.1x",
+"Zapnite autentifikáciu 802.1x",
+"啟用 802.1x身份驗證",
+"启用 802.1x身份验证"
+);
+var enableDMZ=new Array
+(
+"Enable DMZ",
+"DMZ aktivieren",
+"ActiDMZ",
+"Activer DMZ",
+"Abilita DMZ",
+"Sta DMZ toe",
+"ActiDMZ",
+"Povolit DMZ",
+"Włącz DMZ",
+"Activare DMZ",
+"Включить DMZ",
+"Zapnúť DMZ",
+"啟用 DMZ",
+"启用 DMZ"
+);
+var wlSettings=new Array
+(
+"Wireless Settings",
+"Wireless Settings (Drahtlos-Einstellungen)",
+"Parámetros inalámbricos",
+"Paramètres sans Fil",
+"Impostazioni wireless",
+"Draadloze instellingen",
+"Definições sem fios",
+"Nastavení bezdrátové sítě",
+"Ustawienia sieci bezprzewodowej",
+"Setari Wireless",
+"Настройка беспроводной связи",
+"Bezdrôtové nastavenie",
+"無線網路設定",
+"无线网络设定"
+);
+var wlRootApSsid=new Array
+(
+"Root AP SSID",
+"Root AP SSID",
+"Raíz AP SSID",
+"Racine PA SSID",
+"SSID AP principale",
+"Root AP SSID",
+"SSID PA raiz",
+"SSID hlavního AP",
+"Nazwa główna AP SSID",
+"SSID-ul AP-ului Root",
+"SSID корневой AP",
+"Koreňové SSID AP",
+"根AP的SSID",
+"根AP的SSID"
+);
+var wlBroadcastEssid=new Array
+(
+"Broadcast Essid",
+"Essid übermitteln",
+"Emisión Essid",
+"Diffusion Essid",
+"Trasmetti Essid",
+"Verzenden ESSID",
+"Transmitir Essid",
+"Identifikace v síti",
+"Wysyłaj nazwę sieci",
+"Emite SSID",
+"Широковещательный Essid",
+"Vysielané ESSID",
+"廣播ESSID",
+"广播ESSID"
+);
+var wlAdOp=new Array
+(
+"Operating Rates Mode",
+"Arbeitsgeschwindigkeit-Modus",
+"Activando el modo de velocidades",
+"Mode de débits de fonctionnement",
+"Modalità velocità operative",
+"Modus gebruikssnelheden",
+"Modo de intervalos de funcionamento",
+"Režim intenzity chodu",
+"Prędkości trybu operacyjnego",
+"Moduri Rate de Functionare",
+"Режимы скорости связи",
+"Operačné sadzby módu",
+"操作速率模式",
+"操作速率模式"
+);
+var usrDefineService=new Array
+(
+"User Define Service",
+"Benutzerdefinierter Service",
+"Servicio de definición del usuario",
+"Service défini par l'utilisateur",
+"Servizio definito dall'utente",
+"Gebruiker definiëren",
+"Serviço definido pelo utilizador",
+"Uživatelsky určená služba",
+"Usługi określone przez użytkownika",
+"Serviciu Definit de Utilizator",
+"Сервисы пользователя",
+"Užívateľsky definovaná služba",
+"使用者定義服務",
+"用户定义服务"
+);
+var wlSecureSet=new Array
+(
+"Security Settings",
+"Sicherheitseinstellungen",
+"Parámetros de seguridad",
+"Paramètres de sécurité",
+"Impostazioni di sicurezza",
+"Veiligheidsinstellingen",
+"Definições de segurança",
+"Bezpečnostní nastavení",
+"Ustawienia bezpieczeństwa ",
+"Setari de Securitate",
+"Настройки безопасности",
+"Bezpečnostné nastavenia",
+"安全設定",
+"安全设定"
+);
+var wlCtrlTableInfo=new Array
+(
+"It allows to entry 20 sets address only.",
+"Es ermöglicht die Eingabe von nur 20 Adressen.",
+"Permite introducir hasta 20 direcciones exclusivamente",
+"Il n'est permis d'entrer que 20 adresses.",
+"Consente l'inserimento di indirizzi non oltre i 20 caratteri.",
+"U mag maar 20 adressen invoeren.",
+"Permite introduzir apenas 20 conjuntos de endereços.",
+"Umožňuje zadání pouze 20 sad adres.",
+"możliwe wprowadzenie tylko 20 adresów",
+"Permite introducerea a 20 de seturi de adrese",
+"Можно ввести не более 20 адресов",
+"Dovoľuje vložiť len 20 sád.",
+"只允許使用20組位址。",
+"只允许使用20组位址。"
+);
+var wladvanceStrRts=new Array
+(
+"RTS Threshold",
+"RTS Schwellenwert",
+"Umbral RTS",
+"Seuil RTS",
+"Soglia RTS",
+"RTS-drempel",
+"Limite de RTS",
+"Práh použití RTS protokolu",
+"Granica RTS ",
+"RTS Threshold",
+"Порог RTS",
+"Hraničná RTS",
+"RTS Threshold",
+"RTS Threshold"
+);
+var always=new Array
+(
+"Always",
+"Immer",
+"Siempre",
+"Toujours",
+"Sempre",
+"Altijd",
+"Sempre",
+"Vždy",
+"Zawsze",
+"Intotdeauna",
+"Всегда",
+"Vždy",
+"永遠",
+"永远"
+);
+var addPc=new Array
+(
+"Add PC",
+"PC hinzufügen",
+"Añadir PC",
+"Ajouter PC",
+"Aggiungi PC",
+"Voeg pc toe",
+"Adicionar PC",
+"Přidat PC",
+"Dodaj PC",
+"Adauga PC",
+"Добавить PC",
+"Pridať PC",
+"新增個人電腦",
+"新增个人计算机"
+);
+var fwMacEn=new Array
+(
+"Enable MAC Filtering",
+"MAC-Filterung aktivieren",
+"Actifiltrado MAC",
+"Activer filtrage MAC",
+"Abilita filtraggio MAC",
+"Pas MAC-filtering toe",
+"Permitir filtragem de MAC",
+"Povolit filtrování MAC",
+"Włącz filtrowanie MAC",
+"Activare Filtru MAC",
+"Включить MAC фильтрацию",
+"Zapnúť filtrovanie MAC",
+"啟用 MAC Filtering",
+"启用 MAC Filtering"
+);
+var fwMacTable=new Array
+(
+"MAC Filtering Table",
+"MAC-Filtertabelle",
+"Tabla de filtrado MAC",
+"Table de filtrage MAC",
+"Tabella filtraggio MAC",
+"Tabel MAC-filtering",
+"Tabela de filtragem de MAC",
+"Tabulka filtrovaných adres MAC",
+"Tabela filtrowania MAC",
+"Tabel Filtru MAC",
+"Таблица MAC фильтрации",
+"Tabuľka filtrovania MAC",
+"MAC過濾表",
+"MAC过滤表"
+);
+var name=new Array
+(
+"Name",
+"Name",
+"Nombre",
+"Nom",
+"Nome",
+"Naam",
+"Nome",
+"Název",
+"Nazwa",
+"Nume",
+"Имя",
+"Meno",
+"名稱",
+"名称"
+);
+var serviceName=new Array
+(
+"Service Name ",
+"Servicename ",
+"Nombre del servicio ",
+"Nom du service ",
+"Nome servizio ",
+"Servicenaam ",
+"Nome do serviço ",
+"Název služby ",
+"Nazwa usługi",
+"Nume Serviciu",
+"Имя сервиса",
+"Nemo služby",
+"服務名稱",
+"服务名称"
+);
+var deny=new Array
+(
+"Deny",
+"Ablehnen",
+"Denegar",
+"Refuser",
+"Nega",
+"Weigeren",
+"Recusar",
+"Zakázat",
+"Odmów",
+"Respinge",
+"Запретить",
+"Odmietnuť",
+"拒絕",
+"拒绝"
+);
+var fwadvInvPacket=new Array
+(
+"Invalid value of packet of Ping of Death. Input value should be between 0-255 in decimal.",
+"Ungültiger Wert des Pakets beim Ping of Death. Der Eingabewert sollte zwischen 0-255 in Dezimalzahlen liegen.",
+"Valor inválido del paquete Ping of Death. El valor de entrada debe estar comprendido entre 0-255 decimales",
+"Valeur incorrecte pour le paquet Ping de la Mort. La valeur d'entrée doit être comprise entre 0 et 255 en décimal.",
+"Valore non valido del pacchetto del Ping of Death. Il valore dell'inserimento deve essere un numero decimale compreso tra 0 e 255.",
+"Ongeldige waarde van pakket voor Ping of Death. Invoer moet liggen tussen 0 en 255, in decimale tekens.",
+"Valor inválido do pacote de Ping of Death. O valor de entrada deve ser entre 0 e 255 em valores decimais.",
+"Neplatná hodnota paketu Ping of Death. Zadejte desítkové číslo z intervalu 0-255.",
+"Niewłaściwa wartość pakietu Ping of Death. Wprowadzona wartość powinna być liczbą dziesiętną od 0-255",
+"Valoare invalida pentru pachetul Ping of Death. Valoarea trebuie sa fie un numar zecimal intre 0 -255",
+"Неверно значение пакета Ping of Death. Вводимое десятичное число должно быть между 0-255 ",
+"Nesprávna hodnota paketu Ping of Death. Vložená hodnota musí byť desiatkové číslo 0-255.",
+"Ping of Death的封包值是無效的。它應該介於0-255。",
+"Ping of Death的封包值是无效的。它应该介于0-255。"
+);
+var fwSetInfo=new Array
+(
+"The Broadband router provides extensive firewall protection by restricting connection parameters, thus limiting the risk of hacker attack, and defending against a wide array of common attacks. However, for applications that require unrestricted access to the Internet, you can configure a specific client/server as a Demilitarized Zone (DMZ).",
+"Der Breitbandrouter verfügt über einen umfangreichen Firewallschutz, bei dem Verbindungsparameter eingeschränkt werden. Somit wird das Risiko von Hacker-Angriffen verringert und eine große Anzahl typischer Angriffe abgewehrt. Dennoch können Sie für Anwendungen, die uneingeschränkten Zugriff auf das Internet benötigen, einen speziellen Client/Server als Demilitarized Zone (DMZ) konfigurieren.",
+"El enrutador de banda ancha ofrece una protección cortafuegos extendida limitando los parámetros de conexión, y así, limitando el riesgo de un ataque de intrusos, y defendiendo contra una amplia variedad de ataques comunes. Sin embargo, para las aplicaciones que requieren un acceso ilimitado a Internet, podrá configurar un cliente/servidor específico como Zona desprotegida (DMZ).",
+"Le routeur large bande fournit une protection pare-feu étendue en restreignant les paramètres de connexion, limitant ainsi le risque d'attaque de hackers tout en se défendant contre les attaques les plus communes. Cependant, pour les applications qui nécessitent un accès Internet sans restriction, vous pouvez configurer un client/serveur spécifique en tant que zone démilitarisée (DMZ).",
+"Il router a banda larga garantisce una protezione estesa per mezzo del firewall limitando i parametri di connessione, e di conseguenza il rischio di attacchi da parte di hacker e la difesa da tutta una serie di altri attacchi comuni. Tuttavia, per applicazioni che richiedono l'accesso non limitato a Internet, è possibile configurare un client/server specifico come Zona demilitarizzata (DMZ).",
+"De breedbandrouter biedt een uitgebreide firewall-bescherming door het beperken van de parameters voor de aansluiting, wat het risico van aanvallen door hackers beperkt, en beschermt tegen een breed spectrum aan veel voorkomende aanvallen. Maar voor toepassingen waarbij onbeperkte toegang tot internet nodig is, kunt u een specifieke client/server als gedemilitariseerde zone (DMZ) aanwijzen.",
+"O router de banda larga fornece uma protecção de firewall abrangente restringindo os parâmetros de ligação, limitando assim o risco de ataques de piratas informáticos e servindo de defesa contra uma grande variedade de ataques comuns. Contudo, para as aplicações que requerem acesso sem restrições à Internet, pode configurar um cliente/servidor específico como Zona Desmilitarizada (DMZ).",
+"Širokopásmový směrovač nabízí rozsáhlou ochranu bránou firewall omezením parametrů připojení, čímž omezuje riziko útoku hackerů a brání proti velkému množství běžných útoků. Pro využití vyžadující neomezený přístup k Internetu můžete samozřejmě nastavit pro některé klienty/server Demilitarizovanou zónu (DMZ).",
+"Router szerokopasmowy zapewnia ochronę firewallem poprzez ograniczenie parametrów połączenia zmniejszając tym samym zagrożenie atakami hakerów oraz zapewniając ochronę przed innymi atakami. Jednakże dla aplikacji wymagających nieograniczonego dostępu do intenetu mozliwe jest skonfigurowanie specjalnego serwera/klienta jako strefy zdemilitaryzowanej DMZ.",
+"Routerul Broadband ofera o protectie suplimentara prin firewall prin restrictionarea parametrilor de conectare, limitand astel riscurile atacurilor hackerilor si protejand impotriva unei mari parti de atacuri cunoscute. Pentru aplicatiile care necesita acces nerestrictionat la internet puteti introduce un anumit client/server in zona demilitarizata. (DMZ) ",
+"Широкополосный маршрутизатор обеспечивает расширенную защиту, запрещая некоторые параметры связи, и, таким образом, ограничивая риск хакерских атак. При этом, для приложений нуждающихся в открытом доступе к Интернету вы можете настроить специальный клиент/сервер, такой, как демилитаризованная зона (DMZ).",
+"Širokopásmový router poskytuje rozsiahly ochranvar u firewall obmedzením pripojenia parametrov, takto limituje riziko neoprávneného útoku a obranu proti širokej škále bežných útokov. Avšak, pre aplikácie ktoré potrebujú neobmedzený prístup k internetu, môžete konfigurovať špecifický server/klient ako Demilitarizovanú zónu (DMZ).",
+"寬頻路由器提供了可限制連接參數的基本防火牆保護，從而降低了駭客攻擊的風險。若有應用程式需要無限制上網，你可以將特定的伺服器配置在防火牆之外的DMZ(非軍事區)。",
+"宽带路由器提供了可限制连接参数的基本防火墙保护，从而降低了黑客攻击的风险。若有应用程序需要无限制上网，你可以将特定的服务器配置在防火墙之外的DMZ(非军事区)。"
+);
+var fwSwitch=new Array
+(
+"Enable or disable Firewall module function ",
+"Firewall Modulfunktion aktivieren oder deaktivieren ",
+"Actio desactila función del módulo de cortafuegos ",
+"Activer ou désactiver la fonction module pare-feu ",
+"Attiva o disattiva la funzione del modulo Firewall ",
+"Inschakelen of uitschakelen van de firewallfunctie ",
+"Actiou desactia função do módulo da firewall ",
+"Povolení nebo zakázání funkce brány firewall. ",
+"Włącz lub wyłącz moduł Firewalla",
+"Activare sau Dezactivare functia de Firewall",
+"Включить или выключить функцию брандмауэра",
+"Zapnúť alebo vypnúť funkcie modulu Firewall",
+"啟用或停用防火牆模組功能",
+"启用或停用防火墙模块功能"
+);
+var pubIpAddress=new Array
+(
+"Public IP address ",
+"Öffentliche IP-Adresse ",
+"Dirección IP pública ",
+"Adresse IP publique ",
+"Indirizzo IP pubblico ",
+"Publiek IP-adres ",
+"Endereço IP público ",
+"Veřejná adresa IP ",
+"Publiczny adres IP",
+"Adresa IP publica",
+"Публичный IP адрес",
+"Verejná IP adresa",
+"公用IP位址",
+"公用IP位址"
+);
+var wlCtsProtect =new Array
+(
+"CTS Protect",
+"CTS schützen",
+"Protección CTS",
+"Protection CTS",
+"Protezione CTS",
+"CTS-bescherming",
+"Proteger CTS",
+"Ochrana CTS",
+"Zabezpiecz CTS",
+"Protectie CTS",
+"Защита CTS",
+"CTS ochrana",
+"CTS保護",
+"CTS保护"
+);
+var fwDmzTable=new Array
+(
+"Current DMZ Table",
+"Aktuelle DMZ-Tabelle",
+"Cuadro actual DMZ",
+"Table DMZ actuelle",
+"Tabella DMZ corrente",
+"Tabel huidige DMZ",
+"Tabela DMZ actual",
+"Aktuální tabulka DMZ",
+"Obecna tabela DMZ",
+"Tabel curent DMZ",
+"Текущая таблица DMZ",
+"Terajšia DMZ tabuľka",
+"現有的DMZ列表",
+"现有的DMZ列表"
+);
+var clientPcDescription=new Array
+(
+"Client PC Description",
+"Client PC-Beschreibung",
+"Descripción del PC cliente",
+"Descriptif PC Client",
+"Descrizione PC client",
+"Beschrijving client-pc",
+"Descrição do PC cliente",
+"Popis klientských počítačů",
+"Opis klienta PC",
+"Descriere PC",
+"Описание клиентского PC",
+"Charakteristika PC klienta",
+"終端電腦的描述",
+"终端计算机的描述"
+);
+var wladvanceStrInterval=new Array
+(
+"Beacon Interval",
+"Signalintervall",
+"Intervalo Beacon",
+"Intervalle balise",
+"Intervallo beacon",
+"Bakeninterval",
+"Intervalo de sinalização",
+"Interval vysílání hlášení o existenci stanice",
+"Przerwanie sygnału nawigacyjnego",
+"Interval Semnale",
+"Интервал Beacon",
+"Interval majáku",
+"Beacon Interval",
+"Beacon Interval"
+);
+var wlbasicStrMacAddr5=new Array
+(
+"MAC address 5",
+"MAC-Adresse 5",
+"Dirección MAC5",
+"Adresse MAC 5",
+"Indirizzo MAC 5",
+"MAC-adres",
+"Endereço MAC 5",
+"MAC adresa 5",
+"5 adresów MAC",
+"Adresa MAC 5",
+"MAC адрес 5",
+"MAC adresa 5",
+"MAC位址5",
+"MAC位址5"
+);
+var threshold=new Array
+(
+"Threshold",
+"Schwellenwert",
+"Umbral",
+"Seuil",
+"Soglia",
+"Drempel",
+"Limite",
+"Práh",
+"Granica ",
+"Threshold",
+"Порог",
+"Hraničná",
+"Threshold",
+"Threshold"
+);
+var wlRtsThreshold=new Array
+(
+"RTS Threshold",
+"RTS Schwellenwert",
+"Umbral RTS",
+"Seuil RTS",
+"Soglia RTS",
+"RTS-drempel",
+"Limite de RTS",
+"Práh použití RTS protokolu",
+"Granica RTS ",
+"RTS Threshold",
+"Порог RTS",
+"Hraničná RTS",
+"RTS Threshold",
+"RTS Threshold"
+);
+var wlCtrlSerPort=new Array
+(
+"RADIUS Server Port",
+"RADIUS Server Port",
+"Puerto del servidor RADIUS",
+"Port serveur RADIUS",
+"Porta server RADIUS",
+"RADIUS-serverpoort",
+"Porta do Servidor RADIUS",
+"Port RADIUS serveru",
+"Port serwera RADIUS",
+"Port Server Radius",
+"Порт RADIUS сервера",
+"RADIUS Server port",
+"RADIUS伺服器埠",
+"RADIUS服务器埠"
+);
+var wlMacAddress=new Array
+(
+"MAC address ",
+"MAC-Adresse ",
+"Dirección MAC ",
+"Adresse MAC ",
+"Indirizzo MAC ",
+"MAC-adres ",
+"Endereço MAC ",
+"MAC adresa ",
+"Adres MAC",
+"Adresa MAC",
+"MAC адрес",
+"MAC adresa",
+"MAC位址",
+"MAC位址"
+);
+var wlCtrlSerIP=new Array
+(
+"RADIUS Server IP address ",
+"RADIUS Server IP-Adresse ",
+"Dirección IP incorrecta de RADIUS ",
+"Adresse IP serveur RADIUS ",
+"Indirizzo IP del server RADIUS ",
+"IP-adres RADIUS-server ",
+"Endereço IP do servidor RADIUS ",
+"IP adresa RADIUS serveru ",
+"Adres IP serwera RADIUS",
+"Adresa IP a Serverului Radius",
+"IP адрес RADIUS сервера",
+"IP adresa RADIUS Servera",
+"RADIUS伺服器的IP位址",
+"RADIUS服务器的IP位址"
+);
+var fwaddpcStrInvIpStart=new Array
+(
+"Invalid Start IP address.",
+"Ungültige Start-IP-Adresse.",
+"Dirección IP incorrecta de inicio",
+"Adresse IP de départ incorrecte",
+"Indirizzo IP iniziale non valido",
+"Ongeldig start IP-adres",
+"Endereço IP inicial inválido.",
+"Neplatná počáteční IP adresa",
+"Nieprawidłowy początkowy adres IP",
+"Adresa IP de start invalida",
+"Неверен начальный IP адрес",
+"Nesprávna začiatočná IP adresa.",
+"無效的起始IP位址。",
+"无效的起始IP位址。"
+);
+var fwClientMac=new Array
+(
+"Client PC MAC address ",
+"Client PC MAC-Adresse ",
+"Dirección MAC del PC cliente ",
+"Adresse MAC PC client ",
+"Indirizzo MAC PC client ",
+"MAC-adres client-pc ",
+"Endereço MAC do PC cliente ",
+"MAC adresa klientského počítače ",
+"Adres klienta PC MAC",
+"Adresa MAC a PC-ului client",
+"MAC адрес клиентского PC",
+"Klientská PC MAC  adresa",
+"終端電腦的MAC位址",
+"终端计算机的MAC位址"
+);
+var enable=new Array
+(
+"Enable",
+"Aktivieren",
+"Activar",
+"Activer",
+"Attiva",
+"Inschakelen",
+"Activar",
+"Povolit",
+"Włącz",
+"Activare",
+"Включить",
+"Zapnúť",
+"啟用",
+"启用"
+);
+var detailDescription=new Array
+(
+"Detail Description",
+"Detailbeschreibung",
+"Desripción detallada",
+"Descriptif détaillé",
+"Descrizione dettagliata",
+"Gedetailleerde beschrijving",
+"Descrição do detalhe",
+"Podrobný popis",
+"Charakterystyka szczegółowa",
+"Descriere detaliata",
+"Детальное описание",
+"Detailná charakteristika",
+"詳細說明",
+"详细说明"
+);
+var encryption=new Array
+(
+"Encryption",
+"Verschlüsselung",
+"Codificación",
+"Encodage",
+"Codifica",
+"Encryptie",
+"Encriptação",
+"Šifrování",
+"Zabezpieczenie",
+"Encriptie",
+"Кодировка",
+"Šifrovanie",
+"加密",
+"加密"
+);
+var wlPreambleType=new Array
+(
+"Preamble Type",
+"Präambeltyp",
+"Tipo de preámbulo",
+"Type de Préambule",
+"Tipo di preambolo",
+"Aanloop",
+"Tipo de preâmbulo",
+"Typ preambule",
+"Rodzaj preambuły",
+"Tip Preamble",
+"Тип преамбулы",
+"Uvodní formula typu",
+"Preamble類型",
+"Preamble类型"
+);
+var fwCtrl=new Array
+(
+"Access Control",
+"Zugangssteuerung",
+"Control del acceso",
+"Contrôle d'accès",
+"Controllo degli accessi",
+"Toegangscontrole",
+"Controlo de acesso",
+"Řízení přístupu",
+"Sterowanie dostępem",
+"Control Acces",
+"Контроль доступа",
+"Vzdialený prístup",
+"存取控制",
+"访问控制"
+);
+var wlInfo=new Array
+(
+"The gateway can be quickly configured as a wireless access point for roaming clients by setting the access identifier and channel number. It also supports data encryption and client filtering.<br><br><br><br>Enable or disable Wireless module function",
+"Der Gateway kann schnell als ein WLAN-Access Point für das Roaming von Clients konfiguriert werden, indem Zugangsidentifikator und Kanalnummer eingestellt werden. Er unterstützt auch die Datenverschlüsselung und Clientfilterung.<br><br><br><br>Drahtlosmodul-Funktion aktivieren oder deaktivieren",
+"La puerta de acceso puede configurarse rápidamente como un punto de acceso inalámbrico para los clientes a distancia, configurando el identificador de acceso y el número de canal. Del mismo modo, acepta la codificación de datos y el filtrado de clientes.<br><br><br><br>Actio desactila función del módulo inalámbrico",
+"La passerelle peut être rapidement configurée en tant que point d'accès sans fil pour les clients itinérants en paramétrant l'identifiant d'accès et le numéro de canal. L'encodage des données et le filtrage client sont aussi possibles.<br><br><br><br>Activer ou désactiver la fonction module Sans fil",
+"Il gateway può essere configurato rapidamente come punto di accesso wireless per i client operanti in roaming impostando l'identificatore di accessi e il numero del canale. Esso supporta inoltre la codifica dei dati e il filtraggio del client.<br><br><br><br>Attivare o disattivare la funzione del modulo Wireless",
+"De gateway kan snel geconfigureerd worden als draadloos accesspoint voor clients die van roaming gebruik maken, door de toegangsidentificatie en het kanaalnummer in te stellen. Het ondersteunt ook data-encryptie en filteren van clients.<br><br><br><br>Functie 'Draadloze module' inschakelen of uitschakelen",
+"O gateway pode ser configurado rapidamente como ponto de acesso sem fios para clientes itinerantes ao definir o identificador de acesso e o número de canal. Suporta também encriptação de dados e filtragem de clientes.<br><br><br><br>Active ou desactive a função do módulo sem fios",
+"Bránu je možné rychle nakonfigurovat jako bezdrátový přístupový bod pro procházející klienty nastavením identifikátoru přístupu a čísla kanálu. Podporuje také šifrování dat a filtrování klientů.<br><br><br><br>Povolit nebo zakázat funkci bezdrátového modulu",
+"Możliwość szybkiego skonfigurowania bezprzewodowego punktu dostępu dla klientów mobilnych poprzez ustawienie identyfikacji dostępu oraz numeru kanału. Zapewnia to także zabezpieczenie danych oraz filtrowanie użytkowników <br><br><br><br>Włącz lub wyłącz funkcje modułu bezprzewodowego.",
+"Gateway-ul poate fi configurat si ca un access point wireless prin setarea identificatorului si a canalului de transmisie. Suporta deasemenea encriptie a datelor si filtru de clienti. <br><br><br><br> Activare sau Dezactivate functie wireless",
+"Шлюз может быть быстро настроен как беспроводная точка доступа для мобильного клиента с помощью установки идентификатора доступа и номера канала. Он также поддерживает кодировку данных и фильтрацию клиентов. Включить или выключить беспроводную связь",
+"Brána môže byť rýchlo nakonfigurovaná ako bezdrôtový prístupový bod pre okolné klienty nastavenín prístupového identifikátoru ale čísla kanálu. Taktiež podporuje šifrovanie dát a filtrovanie klientov. <br><br><br><br>Zapnúť alebo vypnúť funkciu bezdrôtového modulu.",
+"該閘道能夠快速配置終端設備與無線接入點之間的存取訊號與頻道，同時也支援封包加密和終端過濾。<BR> <BR>在<BR> <BR>在啟用或禁用無線模組功能",
+"该网关能够快速配置终端设备与无线接入点之间的存取信息与频道，同时也支持封包加密和终端过滤。<BR> <BR>在<BR> <BR>在启用或禁用无线模块功能"
+);
+var wlSiteSurvey=new Array
+(
+"Site Survey",
+"Standortaufnahme",
+"Sondeo del centro",
+"Etude du site",
+"Indagine sito",
+"Draadloze omgeving",
+"Inquérito do local",
+"Zjišťování stanic",
+"Wyszukiwanie sieci",
+"Retele Disponibile",
+"Обзор узлов связи",
+"Mapovanie stránky",
+"站台搜尋",
+"站台搜寻"
+);
+var wlWlanMac=new Array
+(
+"WLAN MAC",
+"WLAN MAC",
+"WLAN MAC",
+"MAC WLAN",
+"WLAN MAC",
+"WLAN MAC",
+"MAC WLAN",
+"WLAN MAC",
+"WLAN MAC",
+"MAC WLAN",
+"WLAN MAC",
+"WLAN MAC",
+"無線區域網路的 MAC位址",
+"无线局域网络的 MAC位址"
+);
+var fwControlAlertInv=new Array
+(
+"Invalid MAC address. It should be in hex number (0-9 or a-f).",
+"Ungültige MAC-Adresse. Es sollte eine Hexadezimalzahl sein (0-9 oder a-f).",
+"Dirección MAC inválida. Deberá ser un número hexagonal (0-9 o a-f).",
+"Adresse MAC incorrecte. Il doit s'agir d'un chiffre hexadécimal (0-9 ou a-f).",
+"Indirizzo MAC non valido. Deve essere composto da numeri esadecimali (0-9 o a-f).",
+"Ongeldig MAC-adres. Het moet hexadecimaal zijn (0-9 of a-f).",
+"Endereço MAC inválido. Deve ser um número hexadecimal (0 a 9 ou a-f).",
+"Neplatná adresa MAC. Zadejte šestnáctkové číslo (0-9 nebo a-f).",
+"Niewłaściwy adres MAC. Wartość powinna być liczbą w systemie szesnastkowym (0-9 lub a-f).",
+"Adresa MAC invalida. Trebuie sa fie in caractere hexazecimale (0-9 say a-f)",
+"Неверный MAC адрес. Он должен быть HEX числом (0-9 or A-F)",
+"Nesprávna MAC adresa. Musi to byť hexadecimálne číslo (0-9 alebo a-f).",
+"無效的MAC位址。它應該是十六進位碼（0-9或A-F）。",
+"无效的MAC位址。它应该是十六进制码（0-9或A-F）。"
+);
+var fwControlAlertMac=new Array
+(
+"Please enter the MAC when you enable the MAC Filtering function.",
+"Bitte geben Sie die MAC-Adresse ein, wenn Sie die MAC-Filterungsfunktion aktivieren.",
+"Por favor, indique la dirección MAC cuando active la función de filtrado de MAC.",
+"Veuillez saisir l'adresse MAC lorsque vous activez la fonction de filtrage MAC.",
+"Inserire il MAC al momento dell'attivazione della funzione di filtraggio MAC.",
+"Voer de MAC in als u de MAC-filterfunctie inschakelt.",
+"Introduza o MAC quando actia função de filtragem MAC.",
+"Povolíte-li funkci filtrování adres MAC, zadejte adresu MAC.",
+"Wprowadź adres MAC podczas włączania funkcji filtrowania MAC.",
+"Introduceti adresa MAC cand activati functia de Filtru MAC",
+"Пожалуйста, введите MAC после включения функции MAC фильтрации",
+"Prosím vložte MAC adresu, keď zapnete funkciu filtrovania MAC adries.",
+"請輸入MAC Filter功能所允許的MAC位址。",
+"请输入MAC Filter功能所允许的MAC位址。"
+);
+var fwAccAddInfo=new Array
+(
+"This page allows users to define service limitation of client PC, including IP address and service type.",
+"Diese Seite ermöglicht den Benutzern die Dezimierung von Servicebeschränkungen für den Client-PC, einschließlich IP-Adresse und Servicetyp.",
+"Esta página permite a los usuarios definir los límites de servicio del PC cliente, incluyendo la dirección IP y el tipo de servicio.",
+"Cette page permet aux utilisateurs de définir la limite des services PC Client dont l'adresse IP et le type de service.",
+"Questa pagina consente agli utenti di definire la limitazione di servizio del PC client, incluso l'indirizzo IP e il tipo di servizio.",
+"Met deze pagina kunt u de beperking van diensten voor de client-pc in te stellen, inclusief het IP-adres en de soort dienst.",
+"Esta página permite aos utilizadores definir a limitação de serviço do PC cliente, incluindo o endereço IP e o tipo de serviço.",
+"Tato stránka umožňuje uživatelům definovat omezení služeb pro klientské počítače, včetně adresy IP a typu služby.",
+"Strona ta pozwala użytkownikowi określić granicę obsługi klienta PC, w tym adresu IP oraz rodzaju usługi.",
+"Aceasta pagina permite utilizatorului sa limiteze serviciile pentru un PC client, incluzand adresa IP si tipul serviciului.",
+"Эта страница позволяет пользователям наложить ограничения на клиентские PC, включая IP адрес и тип сервиса.",
+"Táto stránka dovoľuje užívateľom definovanie obmedzení služieb klientských PC, vrátanie IP adries a typ služieb.",
+"此頁面允許使用者設定IP位址和服務類型等方式來限制電腦的存取服務。",
+"此页面允许用户设定IP位址和服务类型等方式来限制计算机的存取服务。"
+);
+var protocol=new Array
+(
+"Protocol",
+"Protokoll",
+"Protocolo",
+"Protocole",
+"Protocollo",
+"Protocol",
+"Protocolo",
+"Protokol",
+"Protokół",
+"Protocol",
+"Протокол",
+"Protokol",
+"協定",
+"协定"
+);
+var fwadvInvPacketSync=new Array
+(
+"Invalid value of packet of Sync Flood. Input value should be between 0-255 in decimal.",
+"Ungültiger Wert des Pakets für Sync Flood. Der Eingabewert sollte zwischen 0-255 in Dezimalzahlen liegen.",
+"Valor inválido del paquete de fluido sincronizado. El valor de entrada debe estar comprendido entre 0-255 decimales",
+"Valeur du paquet Sync Flood incorrecte. La valeur entrée doit être comprise entre 0 et 255 en décimal.",
+"Valore del pacchetto Sync Flood non valido. Il valore dell'inserimento deve essere un numero decimale compreso tra 0 e 255.",
+"Ongeldige waarden van het sync-flood pakket. Invoer moet liggen tussen 0 en 255, in decimale tekens.",
+"Valor inválido do pacote Sync Flood. O valor de entrada deve ser entre 0 e 255 em valores decimais.",
+"Výchozí hodnota paketu Sync Flood. Zadejte desítkové číslo z intervalu 0-255.",
+"Niewłaściwa wartość pakietu odmowy dostępu - Sync Flood. Wprowadzona wartość powinna być liczbą dziesiętną od 0-255.   ",
+"Valoare invalida pentru pachetul Sync Flood. Valoarea trebuie sa fie un numar zecimal intre 0 -255",
+"Неверно значение пакета Sync Flood. Вводимое десятичное число должно быть между 0-255 ",
+"Nesprávna hodnota paketu Sync Flood. Vložená hodnota musí byť desiatkové číslo v tvare 0-255.",
+"Sync Flood攻擊封包的數值是無效的。它應該介於0-255。",
+"Sync Flood攻击封包的数值是无效的。它应该介于0-255。"
+);
+var wlencryptAlertInvVal=new Array
+(
+"Invalid key value. It should be in hex number (0-9 or a-f).",
+"Ungültiger Schlüsselwert. Es sollte eine Hexadezimalzahl sein (0-9 oder a-f).",
+"Valor inválido de la clave. Deberá ser un número hexagonal (0-9 o a-f).",
+"Valeur de clé incorrecte. Il doit s'agir d'un chiffre hexadécimal (0-9 ou a-f).",
+"Valore chiave non valido. Deve essere composto da numeri esadecimali (0-9 o a-f).",
+"Ongeldig beveiligingswachtwoord. Moet hexadecimaal zijn (0-9 of a-f).",
+"Valor de chave inválido. Deve ser um número hexadecimal (0 a 9 ou a-f).",
+"Neplatná hodnota klíče. Zadejte šestnáctkové číslo (0-9 nebo a-f).",
+"Niewłaściwa wartość klucza. Wartość powinna być liczbą w systemie szesnaskowym (0-9 lub a-f). ",
+"Valoarea key-ului este invalida. Trebuie sa fie in caractere hexazecimale (0-9 say a-f)",
+"Нверно значение ключа. Оно должно быть HEX числом (0-9 or A-F)",
+"Nesprávna hodnota kľúča. Musí to byť hexadecimálne číslo (0-9 alebo a-f).",
+"無效的金鑰。它應該是十六進位碼（0-9或A-F）。",
+"无效的密钥。它应该是十六进制码（0-9或A-F）。"
+);
+var wlCtrlSer=new Array
+(
+"Use internal MD5 RADIUS Server",
+"Verwenden Sie den internen MD5 RADIUS Server",
+"Uso del servidor interno MD5 RADIUS",
+"Utiliser le serveur RADIUS MD5 interne",
+"Usare il server RADIUS MD5 interno",
+"Gebruik interne MD5 RADIUS-server",
+"Utilizar o Servidor MD5 RADIUS interno",
+"Použít vnitřní MD5 RADIUS Server",
+"Użyj wewnętrznego serwera RADIUS MD5.",
+"Folosire Server Radius intern MD5",
+"Используйте внутренний RADIUS сервер",
+"Použitie vnútorný MD5 RADIUS Server",
+"Use internal MD5 RADIUS Server",
+"Use internal MD5 RADIUS Server"
+);
+var fwDosSync=new Array
+(
+"Sync Flood ",
+"Sync Flood ",
+"Sincronizar flujo ",
+"Sync Flood ",
+"Sync Flood ",
+"Sync Flood ",
+"Sync Flood ",
+"Sync Flood (Zahlcení klamnými spojeními) ",
+"Sync Flood",
+"Sync Flood",
+"Sync Flood ",
+"Sync flood",
+"Sync Flood",
+"Sync Flood"
+);
+var wlencryptAlertInvPreVal=new Array
+(
+"Invalid pre-shared key value. It should be in hex number (0-9 or a-f).",
+"Ungültiger Pre-Shared Schlüssel. Es sollte eine Hexadezimalzahl sein (0-9 oder a-f).",
+"Valor inválido de la clave pre-compartida. Deberá ser un número hexagonal (0-9 o a-f).",
+"Valeur de la clé pré-partagée incorrecte. Il doit s'agir d'un chiffre hexadécimal (0-9 ou a-f).",
+"Valore della Pre-Shared Key non valido. Deve essere composto da numeri esadecimali (0-9 o a-f).",
+"Ongeldig identiek beveiligingswachtwoord. Het moet hexadecimaal zijn (0-9 of a-f).",
+"Valor da chave pré-partilhada inválido. Deve ser um número hexadecimal (0 a 9 ou a-f).",
+"Neplatná hodnota přednastaveného klíče. Zadejte šestnáctkové číslo (0-9 nebo a-f).",
+"Niewłaściwa wartość pre-shared key. Wartość powinna być liczbą w systemie szesnastkowym (0-9 lub a-f).",
+"Valoare Pre-Shared Key invalida. Trebuie sa fie in caractere hexazecimale (0-9 say a-f)",
+"Неверно значение ключа доступа. Оно должно быть HEX числом (0-9 or A-F) ",
+"Nesprávna hodnota pre-shared kľúča. Musí to byť hexadecimálne číslo (0-9 alebo a-f).",
+"公用金鑰的值是無效的。它應該是十六進位碼（0-9或A-F）。",
+"公用密钥的值是无效的。它应该是十六进制码（0-9或A-F）。"
+);
+var fwDmz=new Array
+(
+"DMZ(Demilitarized Zone)",
+"DMZ (Demilitarized Zone)",
+"DMZ (zona desprotegida)",
+"DMZ (Zone démilitarisée)",
+"DMZ (Zona demilitarizzata)",
+"DMZ (Gedemilitariseerde Zone)",
+"DMZ (Zona Desmilitarizada)",
+"DMZ (Demilitarizovaná zóna)",
+"Strefa zdemilitaryzowana DMZ",
+"DMZ (Zona Demilitarizata)",
+"DMZ (демилитаризованная зона)",
+"MDZ (Demilitarizovaná zóna)",
+"DMZ（非軍事區）",
+"DMZ（非军事区）"
+);
+var fwCS=new Array
+(
+"Client Service",
+"Client Service",
+"Servicio de cliente",
+"Service Client",
+"Servizio Client",
+"Clientdiensten",
+"Serviço do cliente",
+"Služba klienta",
+"Obsługiwany klient ",
+"Serviciu Client",
+"Клиентский сервис",
+"Klientska služba",
+"終端服務",
+"终端服务"
+);
+var keyTx=new Array
+(
+"Default Tx Key",
+"Standard Tx Schlüssel",
+"Tecla predefinida Tx",
+"Clé Tx par défaut",
+"Chiave Tx predefinita",
+"Standaard Tx-sleutel",
+"Chave Tr predefinida",
+"Výchozí klíč Tx",
+"Domyślny klucz Txc",
+"Cheie Tx Initiala",
+"Ключ Tx по умолчанию",
+"Prednastavený kľúč Tx",
+"預設傳送金鑰",
+"预设传送密钥"
+);
+var address=new Array
+(
+"Address ",
+"Adresse ",
+"Dirección ",
+"Adresse ",
+"Indirizzo ",
+"Adres ",
+"Endereço ",
+"Adresa ",
+"Adres",
+"Adresa",
+"Адрес",
+"Adresa",
+"位址",
+"位址"
+);
+var keyEncry=new Array
+(
+"Encryption Key",
+"Verschlüsselung",
+"Tecla de codificación",
+"Clé d'encodage",
+"Chiave di codifica",
+"Encryptiesleutel",
+"Chave de encriptação",
+"Šifrovací klíč",
+"Klucz szyfrowania ",
+"Cheie de Criptare",
+"Ключ кодировки",
+"Šifrovací kľúč",
+"加密金鑰",
+"加密密钥"
+);
+var clientPcService=new Array
+(
+"Client PC Service",
+"Client-PC Service",
+"Servicio de PC de cliente",
+"Service PC Client",
+"Servizio PC client",
+"Diensten client-pc",
+"Serviço do PC cliente",
+"Služba PC klienta",
+"Obsługa klienta PC",
+"Serviciu PC Client",
+"Сервис клиентского PC",
+"Služby klienstkého PC",
+"終端電腦服務",
+"终端计算机服务"
+);
+var wlAssClients=new Array
+(
+"Associated Clients",
+"Verbundene Clients",
+"Clientes asociados",
+"Clients associés",
+"Client associati",
+"Verbonden clients",
+"Clientes associados",
+"Přidružení klienti",
+"Połączeni klienci",
+"Clienti Asociati",
+"Ассоциированные клиенты",
+"Pridružené klienty",
+"有關聯的終端設備",
+"有关联的终端设备"
+);
+var fwDosDeath=new Array
+(
+"Ping of Death ",
+"Ping of Death ",
+"Ping of Death ",
+"Ping de la Mort ",
+"Ping of Death ",
+"Ping of Death ",
+"Ping of Death ",
+"Ping of Death (Zahlcení pakety ping) ",
+"Ping of Death",
+"Ping of Death",
+"Ping of Death ",
+"Ping of Death ",
+"Ping of Death",
+"Ping of Death"
+);
+var enfwUrl=new Array
+(
+"Enable URL Blocking",
+"URL-Blockierung aktivieren",
+"Actiel bloqueo de la URL",
+"Activer le blocage URL",
+"Abilita blocco URL",
+"Schakel URL-blokkeren in",
+"Actibloqueio de URL",
+"Povolit blokování URL",
+"Włącz blokowanie URL",
+"Activare Blocare URL",
+"Включить URL блокировку",
+"Zapnutie blokovanie URL",
+"啟用 URL阻斷功能",
+"启用 URL阻断功能"
+);
+var wlencryptStrSrvAddr=new Array
+(
+"RADIUS Server address ",
+"RADIUS Server Adresse ",
+"Dirección del servidor RADIUS ",
+"Adresse serveur RADIUS ",
+"Indirizzo server RADIUS ",
+"RADIUS-serveradres ",
+"Endereço do servidor RADIUS ",
+"Adresa RADIUS serveru ",
+"Adres serwera RADIUS",
+"Adresa Server Radius",
+"Адрес RADIUS сервера",
+"Adresa RADIUS Serveru",
+"RADIUS伺服器位址",
+"RADIUS服务器位址"
+);
+var staticsIp=new Array
+(
+"Static IP",
+"Statische IP",
+"IP estática",
+"IP fixe",
+"IP statico",
+"Statisch IP",
+"IP estático",
+"Statická IP",
+"Statyczny IP",
+"IP Static",
+"Статический IP",
+"Statická IP",
+"靜態 IP",
+"静态 IP"
+);
+var fwSet=new Array
+(
+"Security Settings (Firewall)",
+"Sicherheitseinstellungen (Firewall)",
+"Configuración de la seguridad (cortafuegos)",
+"Paramètres de sécurité (Pare-feu)",
+"Impostazioni di sicurezza (Firewall)",
+"Veiligheidsinstellingen (Firewall)",
+"Definições de segurança (Firewall)",
+"Nastavení zabezpečení (brána Firewall)",
+"Ustawienia bezpieczeństwa (firewall)",
+"Setari Securitate (Firewall)",
+"Настройка безопасности (брандмауэр)",
+"Bezpečnostné nastavenie (Firewall)",
+"安全設定（防火牆）",
+"安全设定（防火墙）"
+);
+var type=new Array
+(
+"Type",
+"Typ",
+"Tipo",
+"Type",
+"Tipo",
+"Type",
+"Tipo",
+"Typ",
+"Rodzaj",
+"Tip",
+"Тип",
+"Typ",
+"類型",
+"类型"
+);
+var transmit=new Array
+(
+"Transmit",
+"Übermitteln",
+"Transmitir",
+"Transmettre",
+"Trasmissione",
+"Verzenden",
+"Transmitir",
+"Vysílání",
+"Wysyłanie",
+"Transmitere",
+"Передать",
+"Vysielať",
+"傳送",
+"传送"
+);
+var fwAccAdd=new Array
+(
+"Access Control Add PC",
+"Zugangssteuerung PC hinzufügen",
+"Añadir PC para el control de acceso",
+"Contrôle d'accès ajout PC",
+"Controllo degli accessi aggiungi PC",
+"Toegangscontrole, voeg pc toe",
+"Controlo de acesso - Adicionar PC",
+"Přidat řízení přístupu PC",
+"Dodaj sterowanie dostępem PC",
+"Control Acces Adauga PC",
+"Добавить PC в список контроля доступа",
+"Kontrola prístupa priradeného PC",
+"可存取控制的電腦",
+"可访问控制的计算机"
+);
+var add=new Array
+(
+"Add",
+"Hinzufügen",
+"Añadir",
+"Ajouter",
+"Aggiungi",
+"Voeg toe",
+"Adicionar",
+"Přidat",
+"Dodaj",
+"Adauga",
+"Добавить",
+"Pridať PC",
+"新增",
+"新增"
+);
+var fwurlbAlertInv=new Array
+(
+"Invalid URL Blocking",
+"Ungültige URL-Blockierung",
+"Bloqueo de URL inválida",
+"Blocage URL incorrect",
+"Blocco URL non valido",
+"Ongeldige URL-blokkering",
+"Bloqueio de URL inválido",
+"Neplatné blokování URL",
+"Nieważne blokowanie URL",
+"Blocare URL invalida",
+"Неверна URL блокировка",
+"Nesprávne URL blokovanie",
+"無效的URL阻斷",
+"无效的URL阻断"
+);
+var wlTransmitRate=new Array
+(
+"Transmit Rate",
+"Übertragungsgeschwindigkeit",
+"Velocidad de transmisión",
+"Débit de transmission",
+"Velocità di trasmissione",
+"Verzendsnelheid",
+"Velocidade de transmissão",
+"Přenosová rychlost",
+"Prędkość wysyłania",
+"Rata Transmisie",
+"Скорость передачи",
+"Vysielacia rýchlosť",
+"傳送速率",
+"传输速度"
+);
+var fwUrlKey=new Array
+(
+"URL/Keyword",
+"URL/Schlüsselwort",
+"URL/palabra clave",
+"URL/mot-clé",
+"URL/Parola chiave",
+"URL/Trefwoord",
+"URL/palavra-chave",
+"URL/klíčové slovo",
+"Hasło/URL",
+"URL/cuvant cheie",
+"URL/ключевое слово",
+"URL/Kľúčové slovo",
+"網址 / 關鍵字",
+"网址 / 关键词"
+);
+var dynamicIp=new Array
+(
+"Dynamic IP",
+"Dynamische IP",
+"IP dinámica",
+"IP dynamique",
+"IP dinamico",
+"Dynamisch IP",
+"IP dinâmico",
+"Dynamická IP",
+"Dynamiczny IP ",
+"IP Dinamic",
+"Динамический IP",
+"Dynamická IP",
+"動態 IP",
+"动态 IP"
+);
+var wlEssid=new Array
+(
+"ESSID",
+"ESSID",
+"ESSID",
+"ESSID",
+"ESSID",
+"ESSID",
+"ESSID",
+"ESSID",
+"Nazwa sieci",
+"ESSID",
+"ESSID",
+"ESSID",
+"ESSID",
+"ESSID"
+);
+var select=new Array
+(
+"Select",
+"Auswählen",
+"Seleccionar",
+"Selectionner",
+"Seleziona",
+"Selecteer",
+"Seleccionar",
+"Výběr",
+"Wybierz",
+"Selecteaza",
+"Выбрать",
+"Vybrať",
+"選擇",
+"选择"
+);
+var clientPcIpAddress=new Array
+(
+"Client PC IP address ",
+"Client-PC IP-Adresse ",
+"Dirección IP del PC cliente ",
+"Adresse IP PC client ",
+"Indirizzo IP PC client ",
+"IP-adres client-pc ",
+"Endereço IP do PC cliente ",
+"IP adresa klientského počítače ",
+"Adres IP klienta PC ",
+"Adresa IP a PC-ului Client",
+"IP адрес клиентского PC",
+"Klientska IP adresa PC",
+"終端電腦的IP位址",
+"终端计算机的IP位址"
+);
+var wlSetSecure=new Array
+(
+"Set Security",
+"Sicherheit einstellen",
+"Configurar seguridad",
+"Définir sécurité",
+"Imposta sicurezza",
+"Stel beveiliging in",
+"Definir segurança",
+"Nastavit zabezpečení",
+"Ustaw zabezpieczenia ",
+"Seteaza Securitate",
+"Настройка безопасности",
+"Nastavenie bezpečnosti",
+"設置安全",
+"设置安全"
+);
+var deleteSelected=new Array
+(
+"Delete Selected",
+"Gewählte löschen",
+"Borrar selección",
+"Supprimer la sélection",
+"Elimina selezionato",
+"Wis selectie",
+"Apagar opções seleccionadas",
+"Vymazat vybrané",
+"Skasuj wybrane",
+"Sterge Selectia",
+"Удалить выделенное",
+"Vymazať označené",
+"刪除所選",
+"删除所选"
+);
+var wlWMM=new Array
+(
+"WMM",
+"WMM",
+"WMM",
+"WMM",
+"WMM",
+"WMM",
+"WMM",
+"WMM",
+"WMM",
+"WMM",
+"WMM",
+"WMM",
+"WMM",
+"WMM"
+);
+var clientIpAddress=new Array
+(
+"Client IP address ",
+"Client-PC Adresse ",
+"Dirección IP del cliente ",
+"Adresse PC client ",
+"Indirizzo IP client ",
+"IP-adres client ",
+"Endereço IP cliente ",
+"IP adresa klienta ",
+"Adres IP klienta ",
+"Adresa IP a Clientului",
+"Клиентский IP адрес",
+"IP adresa klienta",
+"終端IP位址",
+"终端IP位址"
+);
+var fwUrlInfo=new Array
+(
+"You can block access to certain web sites from a particular PC by entering either a full URL address or just a keyword of the web site",
+"Sie können den Zugriff auf bestimmte Webseiten von einem bestimmten PC zu blockieren, indem Sie eine vollständige URL-Adresse oder nur ein Schlüsselwort der Webseite eingeben.",
+"Podrá bloquear el acceso a determinadas páginas Web desde un PC concreto, introduciendo la dirección URL al completo o tan sólo una palabra clave del portal Web.",
+"Vous pouvez bloquer l'accès à certains sites Web à partir d'un PC en particulier en saisissant soit une adresse URL complète soit un mot-clé du site Web en question.",
+"E' possibile bloccare l'accesso a determinati siti Web da un particolare PC inserendo un indirizzo URL completo o una parola chiave contenuta nel sito Web.",
+"U kunt de toegang naar bepaalde websites vanaf een pc blokkeren door het invoeren van de volledige URL of alleen een trefwoord van de website.",
+"Pode bloquear o acesso a determinados Web sites a partir de um determinado PC introduzindo um endereço URL completo ou apenas uma palavra-chave do Web site.",
+"Můžete zablokovat přístup na určité internetové stránky z konkrétního počítače zadáním plné URL adresy nebo pouze klíčového slova pro stránku.",
+"Możliwe jest zablokowanie dostępu do niektórych stron z danego PC poprzez wprowadzenie pełnego adresu URL lub słowa kluczowego danej strony. ",
+"Puteti bloca accesul la anumite site-uri prin introducerea adresei complete sau a unui cuvant cheie din numele acestuia.",
+"Вы можете заблокировать доступ к определенным веб сайтам с некоторых PC введением как полного URL адреса, так и ключевых слов веб сайта.",
+"Môžete blokovať prístup k určitým webovým stránkam z určitých PC vložených alebo plných URL adries alebo len kľúčových webových stránok.",
+"",
+""
+);
+var fwUrlInfoshort=new Array
+(
+"You can block access to certain web sites from a particular PC by entering either a full URL address or jus",
+"Sie können den Zugriff auf bestimmte Webseiten von einem bestimmten PC zu blockieren, indem Sie eine vollst",
+"Podrá bloquear el acceso a determinadas páginas Web desde un PC concreto, introduciendo la dirección URL al",
+"Vous pouvez bloquer l'accès à certains sites Web à partir d'un PC en particulier en saisissant soit une adr",
+"E' possibile bloccare l'accesso a determinati siti Web da un particolare PC inserendo un indirizzo URL comp",
+"U kunt de toegang naar bepaalde websites vanaf een pc blokkeren door het invoeren van de volledige URL of a",
+"Pode bloquear o acesso a determinados Web sites a partir de um determinado PC introduzindo um endereço URL ",
+"Můžete zablokovat přístup na určité internetové stránky z konkrétního počítače zadáním plné URL adresy nebo",
+"Możliwe jest zablokowanie dostępu do niektórych stron z danego PC poprzez wprowadzenie pełnego adresu URL l",
+"Puteti bloca accesul la anumite site-uri prin introducerea adresei complete sau a unui cuvant cheie din num",
+"Вы можете заблокировать доступ к определенным веб сайтам с некоторых PC введением как полного URL адреса, т",
+"Môžete blokovať prístup k určitým webovým stránkam z určitých PC vložených alebo plných URL adries alebo le",
+"",
+""
+);
+var client=new Array
+(
+"Client",
+"Client",
+"Cliente",
+"Client",
+"Client",
+"Client",
+"Cliente",
+"Klient",
+"Klient",
+"Client",
+"Клиент",
+"Klient",
+"終端",
+"终端"
+);
+var fwDosInfo=new Array
+(
+"The Broadband router\'s firewall can block common hacker attacks, including DoS, Port Scan, and discard Ping from WAN.",
+"Die Firewall des Breitbandrouters kann gewöhnliche Hacker-Angriffe blockieren, einschließlich DoS, Ping vom WAN ablehnen und Portscan.",
+"El cortafuegos o enrutador de banda ancha puede bloquear ataques piratas comunes, incluyendo DoS, descartar Ping de WAN y la búsqueda de puertos.",
+"Le pare-feu du routeur à large bande peut bloquer les attaques d'hackers, incluant le DoS, Ignorer le Ping du WAN et Balayage de ports.",
+"Il firewall del router a banda larga può bloccare gli attacchi hacker più comuni, inclusi DoS, ignora ping WAN e scansione delle porte.",
+"De firewall van de breedbandrouter kan veelvoorkomende hackeraanvallen blokkeren, inclusief DoS, ping vanaf WAN negeren en poortscan.",
+"A firewall do router de banda larga pode bloquear ataques comuns de piratas informáticos, incluindo DoS, Rejeitar Ping a partir de WAN e Análise de portas.",
+"Brána firewall širokopásmového směrovače dokáže blokovat běžné útoky hackerů, včetně DoS, odložených pingů z WAN a skenování portů",
+"Firewall może posłużyc do zablokowania ataków hakerów, w tym DoS, odrzucić Ping z WAN oraz skanowanie portu.",
+"Firewall-ul routerului poate bloca atacurile obisnuite ale hackerilor, incluzand DoS, Discard Ping from WAN si Port Scan",
+"Брадмауэр маршрутизатора может блокировать распространенные хакерские атаки, включая DoS, Discard Ping from WAN и Port Scan",
+"Firewall širokopásmového routeru môže blokovať bežné útoky hackerov, vrátane DoS, vyradenie Ping z WAN alebo skenovanie portu.",
+"",
+""
+);
+var fwDosInfoshort=new Array
+(
+"The Broadband router\'s firewall can block common hacker attacks, including DoS, Port Scan, and discard Pi",
+"Die Firewall des Breitbandrouters kann gewöhnliche Hacker-Angriffe blockieren, einschließlich DoS, Ping vo",
+"El cortafuegos o enrutador de banda ancha puede bloquear ataques piratas comunes, incluyendo DoS, descarta",
+"Le pare-feu du routeur à large bande peut bloquer les attaques d'hackers, incluant le DoS, Ignorer le Ping",
+"Il firewall del router a banda larga può bloccare gli attacchi hacker più comuni, inclusi DoS, ignora ping",
+"De firewall van de breedbandrouter kan veelvoorkomende hackeraanvallen blokkeren, inclusief DoS, ping vana",
+"A firewall do router de banda larga pode bloquear ataques comuns de piratas informáticos, incluindo DoS, R",
+"Brána firewall širokopásmového směrovače dokáže blokovat běžné útoky hackerů, včetně DoS, odložených pingů",
+"Firewall może posłużyc do zablokowania ataków hakerów, w tym DoS, odrzucić Ping z WAN oraz skanowanie portu.",
+"Firewall-ul routerului poate bloca atacurile obisnuite ale hackerilor, incluzand DoS, Discard Ping from WA",
+"Брадмауэр маршрутизатора может блокировать распространенные хакерские атаки, включая DoS, Discard Ping fro",
+"Firewall širokopásmového routeru môže blokovať bežné útoky hackerov, vrátane DoS, vyradenie Ping z WAN ale",
+"",
+""
+);
+var allow=new Array
+(
+"Allow",
+"Zulassen",
+"Permitir",
+"Autoriser",
+"Consenti",
+"Toestaan",
+"Permitir",
+"Povolit",
+"Zezwól",
+"Permite",
+"Разрешить",
+"Dovoliť",
+"允許",
+"允许"
+);
+var news=new Array
+(
+"New",
+"Neu",
+"Nuevo",
+"Nouveau",
+"Nuovo",
+"Nieuw",
+"Novo",
+"Nový",
+"Nowy",
+"Nou",
+"Новый",
+"Nový",
+"新增",
+"新增"
+);
+var fwadvPer=new Array
+(
+"Per",
+"Per",
+"Por",
+"Par",
+"Per",
+"Per",
+"Por",
+"Podle",
+"na",
+"Per",
+"в",
+"Rozdelené na",
+"每",
+"每"
+);
+var wlMixedMode=new Array
+(
+"Mixed Mode",
+"Gemischter Modus",
+"Modo mixto",
+"Mode mixte",
+"Modalità mista",
+"Gemengde modus",
+"Modo misto",
+"Kombinovaný režim",
+"Tryb mieszany",
+"Mod Mixt",
+"Смешанная мода",
+"Zmiešaný mód",
+"混合模式",
+"混合模式"
+);
+var fwDosPing=new Array
+(
+"Discard Ping From WAN ",
+"Ping vom WAN ablehnen ",
+"Descartar Ping de WAN ",
+"Ingorer le Ping du WAN ",
+"Ignora ping WAN ",
+"Ping vanaf WAN negeren ",
+"Rejeitar Ping a partir WAN ",
+"Odložený ping z WAN ",
+"Odrzuć Ping z WAN",
+"Discard Ping from WAN",
+"Discard Ping From WAN ",
+"Vyradenie Ping z WAN",
+"Discard Ping From WAN",
+"Discard Ping From WAN"
+);
+var wlCtrlInfo=new Array
+(
+"To improve security, this access point features MAC address filtering function that only allows listed MAC addresses to connect to this access point.",
+"Aus Sicherheitsgründen verfügt der Access Point über eine MAC-Adressen-Filterung, so dass sich nur autorisierte MAC-Adressen mit dem Access Point verbinden können.",
+"Por motivos de seguridad, el punto de acceso cuenta con un filtrado de dirección MAC que tan sólo permite a las direcciones MAC autorizadas que se asocien con el punto de acceso.",
+"Pour des raisons de sécurité, le points d'accès ne présente le filtrage d'adresse MAC que pour les adresses MAC autorisées associées au point d'accès.",
+"Per motivi di sicurezza, il Punto di accesso comprende una funzione di filtraggio degli indirizzi MAC che consente l'associazione al punto di accesso esclusivamente per gli indirizzi MAC autorizzati.",
+"Om veiligheidsredenen biedt het accesspoint filtering van MAC-adressen, die alleen geautoriseerde MAC-adressen toelaat tot het accesspoint.",
+"Por motivos de segurança, o Ponto de acesso inclui Filtragem de endereços MAC que permite apenas endereços MAC autorizados associados ao Ponto de acesso.",
+"Z bezpečnostních důvodů je přístupový bod vybaven filtrováním MAC adres, který umožňuje přiřadit k přístupovému bodu pouze autorizované adresy MAC.",
+"Dla poprawy bezpieczeństwa, punkt dostępu umożliwia autoryzację adresów MAC upoważnionych do połączenia z punktem dostępowym",
+"Din motive de securitate, acces pointul are functia de Filtru MAC, care permite asocierea cu acces pointul doar a unor adrese MAC autorizate.",
+"В целях безопасности, функция фильтрации MAC адреса в точке доступа позволяет авторизоваться только устройствам с ассоциированными MAC адресами",
+"Pre bezpečnostné dôvody, prístupový bod uvádza filtrované MAC adresy, ktoré autorizované MAC adresy priradené k prístupovému bodu.",
+"",
+""
+);
+var wlCtrlInfoshort=new Array
+(
+"To improve security, this access point features MAC address filtering function that only allows listed MA",
+"Aus Sicherheitsgründen verfügt der Access Point über eine MAC-Adressen-Filterung, so dass sich nur autori",
+"Por motivos de seguridad, el punto de acceso cuenta con un filtrado de dirección MAC que tan sólo permite",
+"Pour des raisons de sécurité, le points d'accès ne présente le filtrage d'adresse MAC que pour les adress",
+"Per motivi di sicurezza, il Punto di accesso comprende una funzione di filtraggio degli indirizzi MAC che",
+"Om veiligheidsredenen biedt het accesspoint filtering van MAC-adressen, die alleen geautoriseerde MAC-adr",
+"Por motivos de segurança, o Ponto de acesso inclui Filtragem de endereços MAC que permite apenas endereço",
+"Z bezpečnostních důvodů je přístupový bod vybaven filtrováním MAC adres, který umožňuje přiřadit k přístu",
+"Dla poprawy bezpieczeństwa, punkt dostępu umożliwia autoryzację adresów MAC upoważnionych do połączenia z",
+"Din motive de securitate, acces pointul are functia de Filtru MAC, care permite asocierea cu acces pointu",
+"В целях безопасности, функция фильтрации MAC адреса в точке доступа позволяет авторизоваться только устро",
+"Pre bezpečnostné dôvody, prístupový bod uvádza filtrované MAC adresy, ktoré autorizované MAC adresy prira",
+"",
+""
+);
+var mode=new Array
+(
+"Mode",
+"Modus",
+"Modo",
+"Mode",
+"Modalità",
+"Stand",
+"Modo",
+"Režim",
+"Tryb ",
+"Mod",
+"Мода",
+"Mód",
+"模式",
+"模式"
+);
+var fwDos=new Array
+(
+"Denial of Service",
+"Denial of Service",
+"Denegación del servicio",
+"Refus de service",
+"Denial of Service",
+"Denial of Service (verstikkingsaanval)",
+"Denial of Service",
+"Denial of Service (Odmítnutí služby)",
+"Odmowa usługi",
+"Denial of Service",
+"Отказ в обслуживании",
+"Zamietnutie služby",
+"Denial of Service (DoS)",
+"Denial of Service (DoS)"
+);
+var wlCtrlWAP=new Array
+(
+"WPA Unicast Cipher Suite",
+"WPA Unicast Cipher Suite",
+"Continuación del WPA Unicast Cipher",
+"WPA Unicast Cipher Suite",
+"Cipher suite Unicast WPA",
+"WPA Unicast Cipher Suite",
+"WPA Unicast Cipher Suite",
+"WPA Unicast Cipher Suite (Typ šifry/zabezpečení)",
+"Pakiet szyfrowania emisji WPA ",
+"WPA Unicast Cipher Suite",
+"WPA одноканальный цифровой комплект",
+"WPA Unicast súbor šifier",
+"WPA Unicast Cipher Suite",
+"WPA Unicast Cipher Suite"
+);
+var portRange=new Array
+(
+"Port Range",
+"Portbereich",
+"Serie de puerto",
+"Intervalle de port",
+"Intervallo porte",
+"Poortbereik",
+"Intervalo de portas",
+"Rozsah portů",
+"Zakres portu ",
+"Raza de Porturi",
+"Дапазон портов",
+"Rozsah portu",
+"埠範圍",
+"埠范围"
+);
+var autos=new Array
+(
+"Auto",
+"Auto",
+"Auto",
+"Auto",
+"Auto",
+"Auto",
+"Automático",
+"Automaticky",
+"Automatyczny",
+"Auto",
+"Авто",
+"Auto",
+"自動",
+"自动"
+);
+var description=new Array
+(
+"Description",
+"Beschreibung",
+"Descripción",
+"Descriptif",
+"Descrizione",
+"Omschrijving",
+"Descrição",
+"Popis",
+"Charakterystyka",
+"Descriere",
+"Описание",
+"Charakteristika",
+"說明",
+"说明"
+);
+var wlDtimPeriod=new Array
+(
+"DTIM Period",
+"DTIM Zeitraum",
+"Periodo DTIM",
+"Période DTIM",
+"Periodo DTIM",
+"DTIM-periode",
+"Período DTIM",
+"Perioda DTIM",
+"Okres DTIM",
+"Perioada DTIM",
+"DTIM интервал",
+"DTIM obdobie",
+"DTIM 週期",
+"DTIM 周期"
+);
+var fwDosScan=new Array
+(
+"Port Scan ",
+"Portscan ",
+"Búsqueda de puerto ",
+"Balayage de ports ",
+"Scansione porte ",
+"Poortscan ",
+"Análise de portas ",
+"Prohledávání portů ",
+"Skanowanie portu",
+"Port Scan",
+"Сканирование портов",
+"Skenovanie portu",
+"埠掃描",
+"端口扫描"
+);
+var wlAdvSettings=new Array
+(
+"Advanced Settings",
+"Erweiterte Einstellungen",
+"Configuración avanzada",
+"Paramètres Avancés",
+"Impostazioni avanzate",
+"Geavanceerde instellingen",
+"Definições avançadas",
+"Pokročilá nastavení",
+"Ustawienia zaawansowane ",
+"Setari Avansate",
+"Дополнительные установки",
+"Pokročilé nastavenia",
+"進階設定",
+"进阶设定"
+);
+var wlbasicAlertEmpty=new Array
+(
+"ESSID cannot be empty!",
+"ESSID darf nicht leer sein!",
+"¡el ESSID no puede estar vacío!",
+"Le champ ESSID ne peut pas être vide !",
+"Il campo ESSID non può essere vuoto!",
+"ESSID mag niet leeg zijn!",
+"ESSID não pode estar em branco!",
+"ESSID nemůže být prázdné!",
+"Koniecznie podaj nazwę sieci",
+"Campul ESSID nu poate ramane necompletat.",
+"ESSID не может быть пустым",
+"ESSID nesmie byť prázdne!",
+"ESSID不能是空白！",
+"ESSID不能是空白！"
+);
+var deleteAll=new Array
+(
+"Delete All",
+"Alle löschen",
+"Borrar todos",
+"Tout supprimer",
+"Elimina tutto",
+"Alles wissen",
+"Apagar tudo",
+"Vymazat vše",
+"Skasuj wszystkie",
+"Sterge Toate",
+"Удалить все",
+"Vymazať všetko",
+"全部刪除",
+"全部删除"
+);
+var fwurlbAlertCannot=new Array
+(
+"Cannot add new entry because table is full!",
+"Neuer Eintrag kann nicht hinzugefügt werden, weil die Tabelle voll ist!",
+"No se puede añadir una nueva entrada porque el cuadro está lleno",
+"impossible d'ajouter une nouvelle entrée, la table est pleine !",
+"Impossibile aggiungere la nuova voce poiché la tabella è piena!",
+"Kan geen nieuw element toevoegen omdat de tabel vol is!",
+"Não é possível adicionar uma nova entrada porque a tabela está cheia!",
+"Nelze přidat novou položku, protože je tabulka plná!",
+"Niemożliwe dodanie nowego wpisu z powodu zapełnionej tabeli ",
+"Nu se poate face inregistrare noua, deoarece tabelul este plin!",
+"Нельзя ввести новые данные из-за ",
+"Nie je možné pridať dalšie hodnoty, pretože tabuľka je plná!",
+"表格已滿，無法添加新項！",
+"表格已满，无法添加新项！"
+);
+var wlbasicStrMacAddr4=new Array
+(
+"MAC address 4",
+"MAC-Adresse 4",
+"Dirección MAC 4",
+"Adresse MAC 4",
+"Indirizzo MAC 4",
+"MAC-adres",
+"Endereço MAC 4",
+"MAC adresa 4",
+"Adres 4 MAC",
+"Adresa MAC 4",
+"MAC адрес 4",
+"MAC Adresa 4",
+"MAC位址4",
+"MAC位址4"
+);
+var none=new Array
+(
+"None",
+"Keine",
+"Ninguno",
+"Aucun",
+"Nessuno",
+"Geen",
+"Nenhum",
+"Žádné",
+"Brak",
+"Nimic",
+"Отключена",
+"Žiadny",
+"無",
+"无"
+);
+var wlCtrlSerPass=new Array
+(
+"RADIUS Server Password",
+"RADIUS Server Kennwort",
+"Contraseña del servidor RADIUS",
+"Mot de passe serveur RADIUS",
+"Password server RADIUS",
+"Wachtwoord van RADIUS-server",
+"Palavra-passe do Servidor RADIUS",
+"Heslo RADIUS serveru",
+"Hasło serwera RADIUS",
+"Parola Server Radius",
+"Пароль RADIUS сервера",
+"Heslo RADIUS Serveru",
+"RADIUS伺服器密碼",
+"RADIUS服务器密码"
+);
+var wlChannelNum=new Array
+(
+"Channel Number",
+"Kanalnummer",
+"Número de canal",
+"Numéro de canal",
+"Numero canale",
+"Kanaalnummer",
+"Número do canal",
+"Číslo kanálu",
+"Numer kanału",
+"Numar Canal",
+"Номер канала",
+"Číslo kanálu",
+"頻道編號",
+"频道编号"
+);
+var wlPreambleShort=new Array
+(
+"Short Preamble",
+"Kurze Präambel",
+"Corto preámbulo",
+"Préambule court",
+"Preambolo breve",
+"Korte voorloop",
+"Preâmbulo reduzido",
+"Krátká preambule",
+"Krótka preambuła",
+"Preamble Scurt",
+"Короткая преамбула",
+"Krátka úvodna formula",
+"Short Preamble",
+"Short Preamble"
+);
+var protect=new Array
+(
+"Protection",
+"Schutz",
+"Protección",
+"Protection",
+"Protezione",
+"Beveiliging",
+"Protecção",
+"Ochrana",
+"Zabezpieczenie",
+"Protectie",
+"Защита",
+"Ochrana",
+"保護",
+"保护"
+);
+var wladvanceStrFrag=new Array
+(
+"Fragment Threshold",
+"Fragment Schwellenwert",
+"Umbral de fragmento",
+"Seuile fragment",
+"Soglia frammento",
+"Fragment Threshold (fragmentatiedrempel)",
+"Limite do fragmento",
+"Práh fragmentace",
+"Granica fragmentowania ",
+"Fragment Threshold",
+"Порог значения",
+"Hraničné fragmenty",
+"Fragment Threshold",
+"Fragment Threshold"
+);
+var face=new Array
+(
+"Interface",
+"Schnittstelle",
+"Interfaz",
+"Interface",
+"Interfaccia",
+"Interface",
+"Interface",
+"Rozhraní",
+"interfejs",
+"Interfata",
+"Интерфейс",
+"Rozhranie",
+"介面",
+"界面"
+);
+var fwadvInvBurstSync=new Array
+(
+"Invalid value of Burst of Sync Flood. Input value should be between 0-255 in decimal.",
+"Ungültiger Wert des Burst für Sync Flood. Der Eingabewert sollte zwischen 0-255 in Dezimalzahlen liegen.",
+"Valor inválido del Burst de fluido sincronizado. El valor de entrada debe estar comprendido entre 0-255 decimales",
+"Valeur du paquet Burst of Sync Flood incorrecte. La valeur entrée doit être comprise entre 0 et 255 en décimal.",
+"Valore non consentito per l'avvio del Sync flood. Il valore dell'inserimento deve essere un numero decimale compreso tra 0 e 255.",
+"Ongeldige waarden van de sync flood burst. Invoer moet liggen tussen 0 en 255, in decimale tekens.",
+"Valor inválido de Rajada de Sync Flood. O valor de entrada deve ser entre 0 e 255 em valores decimais.",
+"Neplatná hodnota paketu Sync Flood. Zadejte desítkové číslo z intervalu 0-255.",
+"Nieważna wartość odmowy usługi - Burst of Sync Flood. Wprowadzona wartość winna być w przedziale 0-255. ",
+"Valoare invalida a Burst Sync Flood. Trebuie sa fie un numar zecimal cuprins intre 0 si 255",
+"Неверное значение Burst of Sync Flood. Вводимое десятичное число должно быть между 0-255",
+"Invalidná hodnota Burst of Sync Flood. Vložte hodnotu medzi 0-255 v desiatkovom čísle.",
+"Sync Flood的Burst值是無效的。輸入值介於0-255之間。",
+"Sync Flood的Burst值是无效的。输入值介于0-255之间。"
+);
+var wlAutoMacClone=new Array
+(
+"Auto MAC Clone",
+"Auto MAC klonen",
+"Auto copia de MAC",
+"Clone MAC Auto",
+"Clonazione MAC automatica",
+"Auto MAC-clone",
+"Clonagem automática de MAC",
+"Automatické klonování MAC",
+"Automatyczne kopiowanie MAC",
+"Clonare MAC automata",
+"Автоматическое клонирование MAC адреса",
+"Automatické klonovanie MAC",
+"自動MAC複雜",
+"自动MAC复杂"
+);
+var wlCtrlAccEn=new Array
+(
+"Enable Wireless Access Control",
+"WLAN-Zugangssteuerung aktivieren",
+"Actiel control de acceso inalámbrico",
+"Activer le contrôle du point d'accès sans fil",
+"Abilita controllo degli accessi wireless",
+"Schakel draadloze toegangscontrole in",
+"Actio controlo de acesso sem fios",
+"Povolit řízení přístupu k bezdrátové síti",
+"Włącz sterowanie dostępem do sieci bezprzewodowej",
+"Activare Control Acces Wireless",
+"Включить беспроводной контроль доступа",
+"Zapnite bezdrôtovú kontrolu prístupu",
+"啟用無線存取控制",
+"启用无线访问控制"
+);
+var wlCtrlTable=new Array
+(
+"MAC Address Filtering Table",
+"MAC-Adressen Filterungstabelle",
+"Cuadro de filtrado de dirección MAC",
+"Table de filtrage adresse MAC",
+"Tabella filtraggio indirizzo MAC",
+"Tabel filtering MAC-adres",
+"Tabela de filtragem de endereços MAC",
+"Tabulka filtrovaných adres MAC",
+"Tabela filtrowania adresów MAC ",
+"Tabela Filtru Adresa MAC",
+"Таблица фильтрации MAC адресов",
+"Tabuľka filtrovaných MAC Adries",
+"MAC位址過濾表",
+"MAC位址过滤表"
+);
+var wlAdTxp=new Array
+(
+"Tx Power",
+"Tx Power",
+"Tx Potencia",
+"Puissance Tx",
+"Alimentazione Tx",
+"Zendkracht",
+"Potência Tr",
+"Vysílací výkon",
+"Moc sygnału Tx",
+"Putere Tx",
+"Tx мощность",
+"Tx napájanie",
+"Tx Power",
+"Tx Power"
+);
+var fwaddpcAlertInvPort=new Array
+(
+"Invalid port number! It should be the decimal number (0-9).",
+"Ungültige Portnummer! Es sollte eine Dezimalzahl sein (0-9).",
+"¡Número de puerto inválido! Deberá ser un número decimal (entre 0-9).",
+"Numéro de port incorrect ! Il doit s'agir d'un nombre décimal (0-9).",
+"Numero porta non valido! Deve essere un numero decimale (0-9).",
+"Ongeldig poortnummer! Het moet een decimaal teken zijn (0-9).",
+"Número de porta inválido! Deve ser um número decimal (0 a 9).",
+"Neplatné číslo portu! Zadejte desítkové číslo z intervalu (0-9).",
+"Niewłaściwy numer portu. Wartość powinna być liczbą dziesiętną (0-9).",
+"Numar Port invalid. Trebuie sa fie un numar zecimal (0-9)",
+"Неверен номер порта! Должен быть десятичным числом (0-9).",
+"Nesprávne číslo portu! Musí to byť desiatkové číslo (0-9).",
+"無效的埠號！它應該是十進位碼（0-9）。",
+"无效的埠号！它应该是十进制码（0-9）。"
+);
+var wladvanceStrDtim=new Array
+(
+"DTIM Period",
+"DTIM Zeitraum",
+"Periodo DTIM",
+"Période DTIM",
+"Periodo DTIM",
+"DTIM-periode",
+"Período DTIM",
+"Perioda DTIM",
+"Okres DTIM",
+"Perioada DTIM",
+"DTIM интервал",
+"DTIM obdobie",
+"DTIM週期",
+"DTIM周期"
+);
+var disable=new Array
+(
+"Disable",
+"Deaktivieren",
+"Desactivar",
+"Désactiver",
+"Disattiva",
+"Uitgeschakeld",
+"Desactivar",
+"Zakázat",
+"Wyłącz ",
+"Nici una",
+"Выключить",
+"Vypnúť",
+"停用",
+"停用"
+);
+var set=new Array
+(
+"Set",
+"Einstellen",
+"Configurar",
+"Définir",
+"Imposta",
+"Instellen",
+"Definir",
+"Nastavit",
+"Ustaw",
+"Seteaza",
+"Установить",
+"Nastaviť",
+"集",
+"集"
+);
+var fwClientIP=new Array
+(
+"Client PC IP address ",
+"Client-PC IP-Adresse ",
+"Dirección IP del PC cliente ",
+"Adresse IP PC client ",
+"Indirizzo IP PC client ",
+"IP-adres client-pc ",
+"Endereço IP do PC cliente ",
+"IP adresa klientského počítače ",
+"Adres IP klienta PC ",
+"Adresa IP a PC-ului Client",
+"IP адрес клиентского PC",
+"IP Adresa klientského PC",
+"終端電腦的IP位址",
+"终端计算机的IP位址"
+);
+var wlAdIntvl=new Array
+(
+"Beacon Interval",
+"Signalintervall",
+"Intervalo Beacon",
+"Intervalle balise",
+"Intervallo beacon",
+"Bakeninterval",
+"Intervalo de sinalização",
+"Interval vysílání hlášení o existenci stanice",
+"Przerwa sygnału nawigacyjnego.",
+"Interval beacon",
+"Beacon интервал",
+"Interval majáku",
+"Beacon Interval",
+"Beacon Interval"
+);
+var wlbasicStrMacAddr=new Array
+(
+"wireless MAC address ",
+"WLAN MAC-Adresse ",
+"dirección MAC inalámbrica ",
+"Adresse MAC sans fil ",
+"Indirizzo MAC wireless ",
+"draadloos MAC-adres ",
+"endereço MAC sem fios ",
+"MAC adresa bezdrátového zařízení ",
+"Adres MAC sieci bezprzewodowej",
+"Adresa MAC wireless",
+"MAC адрес беспроводной связи",
+"Bezdrôtová MAC adresa",
+"無線 MAC位址",
+"无线 MAC位址"
+);
+var fwIPEn=new Array
+(
+"Enable IP Filtering Table (up to 20 computers)",
+"IP-Filterungstabelle aktivieren (bis zu 20 Computer)",
+"Actiel cuadro de filtrado de IP (hasta en 20 ordenadores)",
+"Activer table de filtrage IP (jusqu'à 20 ordinateurs)",
+"Abilita tabella di filtraggio IP (fino a 20 computer)",
+"Schakel IP-filtertabel in (max. 20 computers)",
+"Actitabela de filtragem IP (máximo de 20 computadores)",
+"Povolit tabulku filtrování IP adres (až do 20 počítačů)",
+"Włącz tabelę filtrowanych IP (do 20 komputerów)",
+"Activare Tabela Filtru IP (pana la 20 de PC-uri)",
+"Включить таблицу IP фильтрации (до 20 компьютеров)",
+"Zapnutie tabuľky filtrovania IP (až pre 20 počítačov)",
+"啟用 IP過濾表（最多20台電腦）",
+"启用 IP过滤表（最多20台计算机）"
+);
+var fwadvInvValue=new Array
+(
+"Invalid value. It should be in decimal number (0-9).",
+"Ungültiger Wert. Es sollte eine Dezimalzahl sein (0-9).",
+"Valor inválido. Deberá ser un número decimal (entre 0-9).",
+"Valeur incorrecte. Il doit s'agir d'un nombre décimal (0-9).",
+"Valore non consentito. Deve essere un numero decimale (0-9).",
+"Ongeldige waarde. Het moet een decimaal teken zijn (0-9).",
+"Valor inválido. Deve ser um número decimal (0 a 9).",
+"Neplatný klíč. Zadejte desítkové číslo z intervalu (0-9).",
+"Niewłaściwa wartość. Powinna być liczbą dziesiętną (0-9).",
+"Valoare invalida. Trebuie sa fie un numar zecimal (0-9)",
+"Неверное значение. Должно быть десятичным числом (0-9).",
+"Nesprávna hodnota. Musí to byť desiatkové číslo (0-9).",
+"無效的值。它應該是十進位碼（0-9）。",
+"无效的值。它应该是十进制码（0-9）。"
+);
+var keyLen=new Array
+(
+"Key Length",
+"Schlüssellänge",
+"Largo de la clave",
+"Longueur de la clé",
+"Lunghezza della chiave",
+"Sleutellengte",
+"Comprimento da chave",
+"Délka klíče",
+"Długość klucza",
+"Lungime cheie",
+"Длина ключа",
+"Dĺžka kľúča",
+"金鑰長度",
+"密钥长度"
+);
+var detail=new Array
+(
+"Detail",
+"Detail",
+"Detalle",
+"Détail",
+"Dettaglio",
+"Detail",
+"Detalhe",
+"Detail",
+"Szczegółowe dane",
+"Detalii",
+"Детальный",
+"Detail",
+"細節",
+"细节"
+);
+var wireless=new Array
+(
+"Wireless",
+"Drahtlos",
+"Inalámbrico",
+"Sans fil",
+"Wireless",
+"Draadloos",
+"Sem fios",
+"Bezdrátová síť",
+"Sieć bezprzewodowa",
+"Wireless",
+"Беспроводная связь",
+"Bezdrôtový",
+"無線",
+"无线"
+);
+var wlbasicStrMacAddr3=new Array
+(
+"MAC address 3",
+"MAC-Adresse 3",
+"Dirección MAC 3",
+"Adresse MAC 3",
+"Indirizzo MAC 3",
+"MAC-adres",
+"Endereço MAC 3",
+"MAC adresa 3",
+"Adres 3 MAC",
+"Adresa MAC 3",
+"MAC адрес 3",
+"MAC Adresa 3",
+"MAC位址3",
+"MAC位址3"
+);
+var wlFragThreshold=new Array
+(
+"Fragment Threshold",
+"Fragment Schwellenwert",
+"Umbral de fragmento",
+"Seuil fragment",
+"Soglia frammento",
+"Fragment Threshold (fragmentatiedrempel)",
+"Limite do fragmento",
+"Práh fragmentace",
+"Granica fragmentowania ",
+"Fragment Threshold",
+"Порог значения",
+"Hraničné fragmenty",
+"Fragment Threshold",
+"Fragment Threshold"
+);
+var wlPreambleLong=new Array
+(
+"Long Preamble",
+"Lange Präambel",
+"Preámbulo largo",
+"Préambule long",
+"Preambolo lungo",
+"Lange voorloop",
+"Preâmbulo comprido",
+"Dlouhá preambule",
+"Długa preambuła",
+"Preamble Lung",
+"Длинная преамбула",
+"Dlhá uvodná formula",
+"Long Preamble",
+"Long Preamble"
+);
+var site=new Array
+(
+"Site",
+"Standort",
+"Centro",
+"Site",
+"Sito",
+"Website",
+"Local",
+"Stanice",
+"Witryna",
+"Site",
+"Узел связи, сайт",
+"Stránka",
+"網站",
+"站点"
+);
+var fwaddpcAlertIpEmpty=new Array
+(
+"Start IP address cannot be empty! It should be filled with 4 digit numbers as xxx.xxx.xxx.xxx.",
+"Start-IP-Adresse darf nicht leer sein! Diese sollte mit 4-stelligen Zahlen gefüllt werden, beispielsweise xxx.xxx.xxx.xxx.",
+"¡La dirección IP de inicio no puede estar vacía! Deberá cumplimentarse con 4 números digitales como xxx.xxx.xxx.xxx.",
+"L'adresse IP de départ ne peut pas être vide ! Elle doit contenir des nombres à 4 chiffres tels que xxx.xxx.xxx.xxx.",
+"Il campo Indirizzo IP iniziale non può essere vuoto! Deve contenere 4 numeri suddivisi come segue: xxx.xxx.xxx.xxx.",
+"Start IP-adres mag niet leeg zijn! Het moet gevuld zijn met 4 cijferreeksen zoals xxx.xxx.xxx.xxx.",
+"O endereço IP inicial não pode estar em branco! Deve ser preenchido com 4 números de dígitos, tal como xxx.xxx.xxx.xxx.",
+"Počáteční IP adresa nemůže být prázdná! Zadejte čtyři čísla ve formátu xxx.xxx.xxx.xxx.",
+"Pole początkowego adresu IP nie może być puste. Wartość powinna być liczbą 4 cyfrową jak xxx.xxx.xxx.xxx.",
+"Adresa IP de inceput nu poate ramane necompletata",
+"Начальный IP адрес не может быть пустым. Он должен быть заполнен 4я десятичными числами xxx.xxx.xxx.xxx",
+"Začiatočná IP adresa nesmie byť prádzna! Musí to vyplnená 4 číslami v tvare xxx.xxx.xxx.xxx.",
+"起始IP位址不能是空白！它應該是由4組(0-255)的數位組成：xxx.xxx.xxx.xxx",
+"起始IP位址不能是空白！它应该是由4组(0-255)的数字组成：xxx.xxx.xxx.xxx"
+);
+var keyPre=new Array
+(
+"Pre-shared Key",
+"Pre-shared Schlüssel",
+"Clave pre-compartida",
+"Clé pré-partagée",
+"Pre-shared Key",
+"Identiek beveiligingswachtwoord",
+"Chave pré-partilhada",
+"Přednastavený klíč",
+"Przydzielony klucz",
+"Pre-Shared Key",
+"Ключ доступа",
+"Pre-shared kľúč",
+"公用金鑰",
+"公用密钥"
+);
+var wlTurboMode=new Array
+(
+"Turbo Mode",
+"Turbo-Modus",
+"Modo Turbo",
+"Mode Turbo",
+"Modalità Turbo",
+"Turbostand",
+"Modo Turbo",
+"Režim Turbo",
+"Tryb turbo",
+"Mod Turbo",
+"Турбо мода",
+"Turbo mód",
+"Turbo模式",
+"Turbo模式"
+);
+var wlAdInfo=new Array
+(
+"These settings are only suitable for experienced users who have required knowledge about wireless LAN. These settings should not be changed unless you know what will be affected.",
+"Diese Einstellungen sind nur für technisch fortgeschrittene Benutzer, die ausreichend Kenntnisse über WLANs verfügen. Diese Einstellungen sollten nicht geändert werden, außer Sie wissen genau, welche Auswirkungen die Änderungen bei Ihrem Breitbandrouter bewirken.",
+"Estos parámetros tan sólo se utilizan para los usuarios más avanzados que tienen suficiente conocimiento sobre los LAN inalámbricos. Estos parámetros no pueden cambiarse a menos que conozca los efectos que tendrán los cambios en su enrutador de banda ancha.",
+"Ces paramètres sont réservés aux utilisateurs techniquement très compétents qui possèdent des connaissances suffisantes en matière de LAN sans fil. Ces paramètres ne doivent pas être modifiés si vous ne savez pas précisément quels impacts ces changements auront sur votre routeur à large bande.",
+"Queste impostazioni sono intese esclusivamente per utenti più avanzati con competenze tecniche sufficienti in materia di reti wireless LAN. Queste impostazioni non devono essere modificate a meno di essere consapevoli degli effetti delle modifiche sul router a banda larga.",
+"Deze instellingen zijn bestemd voor gebruikers met technische ervaring die genoeg kennis hebben van draadloze LAN. U moet deze instellingen niet veranderen tenzij u weet welke effecten de veranderingen hebben op de breedbandrouter.",
+"Estas definições são apenas para utilizadores tecnicamente mais avançados que tenham conhecimentos suficientes sobre redes locais sem fios. Estas definições só devem ser alteradas se souber que efeito terá no router de banda larga.",
+"Tato nastavení jsou určena pouze pro technicky pokročilejší uživatele, kteří mají dostatečné znalosti o bezdrátových LAN. Neměňte tato nastavení, pokud nevíte, jak ovlivní provedené změny širokopásmový směrovač.",
+"Ustawienia wyłącznie dla zaawansowanych użytkowników, którzy posiadają wiedzę na temat bezprzewodowej sieci LAN. Ustawień nie należy zmieniać bez posiadania wiedzy o wpływie na router.",
+"Aceste setari sunt pentru utilizatori avansati, care au suficiente cunostinte despre retelele wireless. Aceste setari nu trebuie modificate decat daca stiti ce efect vor avea asupra routerului.",
+"Эти настройки - для технически подготовленных пользователей, имеющих достаточные знания о беспроводных LAN. Эти настройки не рекомендуется изменять если вы не знаете какое воздействие изменения окажут на маршрутизатор.",
+"Tieto nastavenie sú len pre viac technický zdatných úživateľov, ktoré majú dostatočné znalosti o bezdrôtových LAN. Tieto nastavenie nesmú byť zmenené pokiaľ neviete aký budú mať účinok na váš širokopásmový router.",
+"",
+""
+);
+var wlAdInfoshort=new Array
+(
+"These settings are only suitable for experienced users who have required knowledge about wireless LAN. Thes",
+"Diese Einstellungen sind nur für technisch fortgeschrittene Benutzer, die ausreichend Kenntnisse über WLANs",
+"Estos parámetros tan sólo se utilizan para los usuarios más avanzados que tienen suficiente conocimiento so",
+"Ces paramètres sont réservés aux utilisateurs techniquement très compétents qui possèdent des connaissances",
+"Queste impostazioni sono intese esclusivamente per utenti più avanzati con competenze tecniche sufficienti ",
+"Deze instellingen zijn bestemd voor gebruikers met technische ervaring die genoeg kennis hebben van draadlo",
+"Estas definições são apenas para utilizadores tecnicamente mais avançados que tenham conhecimentos suficien",
+"Tato nastavení jsou určena pouze pro technicky pokročilejší uživatele, kteří mají dostatečné znalosti o bez",
+"Ustawienia wyłącznie dla zaawansowanych użytkowników, którzy posiadają wiedzę na temat bezprzewodowej sieci",
+"Aceste setari sunt pentru utilizatori avansati, care au suficiente cunostinte despre retelele wireless. Ace",
+"Эти настройки - для технически подготовленных пользователей, имеющих достаточные знания о беспроводных LAN.",
+"Tieto nastavenie sú len pre viac technický zdatných úživateľov, ktoré majú dostatočné znalosti o bezdrôtový",
+"",
+""
+);
+var wlencryptAlertBlank=new Array
+(
+"The encryption key you selected as the \'Tx Default Key\' cannot be blank.",
+"Die von Ihnen ausgewählte Verschlüsselung für den \'Tx Standardschlüssel\' darf nicht leer sein.",
+"La clave de codificación que ha seleccionado como \clave predefinida tx\ no puede permanecer en blanco.",
+"La clé d'encodage sélectionnée en tant que \'clé par défaut Tx\' ne peut pas rester vide.",
+"Il campo della chiave di codifica selezionata come chiave Tx predefinita non può essere vuoto.",
+"De encryptiesleutel die u als 'Tx standaardsleutel' hebt gekozen mag niet leeg zijn.",
+"A chave de encriptação que seleccionou como \'Tx Default Key\' (Chave predefinida Tr) não pode estar em branco.",
+"Šifrovací klíč vybraný jako \'výchozí klíč Tx\' nemůže být prázdný.",
+"Konieczne wprowadzenie danych dla wybranego kluczu szyfrowania \'Tx klucz domyślny\' ",
+"Cheie de Criptare selectata ca \'Tx Default Key\' nu poate fi necompletata.",
+"Ключ кодировки выбраныый вами \'Tx Default Key\' не может быть пустым",
+"Šifrovací kľúč, ktorý ste vybrali ako \"Tx prednastavený kľúč\" nesmie byť prázdny.",
+"你選擇的加密金鑰為 \'預設傳送金鑰 \'不能是空白。",
+"你选择的加密密钥为 \'预设传送密钥 \'不能是空白。"
+);
+var wlencryptAlertKeyX64=new Array
+(
+"Pre-shared key value should be less than 64 characters.",
+"Der Wert des Pre-Shared Schlüssels sollte weniger als 64 Zeichen besitzen.",
+"El valor de la clave pre-compartida deberá ser inferior a 64 caracteres.",
+"La valeur de la clé pré-partagée doit contenir moins de 64 caractères.",
+"Il valore della Pre-Shared Key dovrebbe essere composto da meno di 64 caratteri.",
+"Identiek beveiligingswachtwoord moet uit minder dan 64 tekens bestaan.",
+"O valor da chave pré-partilhada deve ter menos de 64 caracteres.",
+"Hodnota přednastaveného klíče by měla být menší než 64 znaků.",
+"Wartość przydzielonego klucza powinna wynosić mniej niż 64 znaki",
+"Lungimea Pre-Shared Key trebuie sa fie mai mica de 64 de caractere",
+"Ключ доступа должен быть короче 64 символов",
+"Pre-shared kľúč musí byť menší ako 64 znakov.",
+"公用金鑰值應小於 64個字元。",
+"公用密钥值应小于 64个字符。"
+);
+var wlencryptAlertKey8=new Array
+(
+"Pre-Shared Key value should be set at least 8 characters.",
+"Der Wert des Pre-Shared Schlüssels sollte mindestens 8 Zeichen besitzen.",
+"El valor de la clave pre-compartida deberá ser de al menos 8 caracteres.",
+"La valeur de la clé pré-partagée doit contenir au moins 8 caractères.",
+"Il valore della Pre-Shared Key dovrebbe essere composto da almeno 8 caratteri.",
+"Identiek beveiligingswachtwoord moet uit minstens 8 tekens bestaan.",
+"O valor da chave pré-partilhada deve ter pelo menos 8 caracteres.",
+"Hodnota přednastaveného klíče by měla být nejméně 8 znaků.",
+"Wartość przydzielonego klucza winna składać się przynajmniej z 8 znaków",
+"Lungimea Pre-Shared Key trebuie sa fie mai minim 8 caractere.",
+"Ключ доступа должен быть не короче 8 символов",
+"Pre-shared kľúč musí byť najmenej  8 znakov.",
+"公用金鑰值應設定至少8個字元。",
+"公用密钥值应设定至少8个字符。"
+);
+var keyFrm=new Array
+(
+"Key Format",
+"Schlüsselformat:",
+"Formato de la clave",
+"Format de la clé",
+"Formato chiave",
+"Sleutelformaat:",
+"Formato de chave",
+"Formát klíče",
+"Format klucza",
+"Format Cheie",
+"Формат ключа",
+"Formáť kľúča",
+"金鑰格式",
+"密钥格式"
+);
+var wlScrInfo=new Array
+(
+"This page allows you to setup wireless security. You can protect your wireless network by using WEP / WPA encryption to prevent any unauthorized access to your wireless network.",
+"Diese Seite ermöglicht Ihnen die Konfiguration der WLAN-Sicherheit. Das Aktivieren von WEP oder WPA mithilfe von Verschlüsselungs-Schlüsseln kann unberechtigte Zugriffe auf Ihr Drahtlosnetzwerk verhindern.",
+"Esta página le permite configurar la seguridad inalámbrica. Si enciende el WEP o el WPA utilizando las teclas de codificación podría evitar cualquier acceso no autorizado a su red inalámbrica.",
+"Cette page vous permet de configurer les paramètres de sécurité sans fil. L'activation du dispositif WEP ou WPA en utilisant des clés d'encodage peut empêcher l'accès à votre réseau sans fil à toute personne non autorisée.",
+"Questa pagina consente di impostare la sicurezza della rete wireless. Attivare la codifica WEP o WPA usando le chiavi di codifica per impedire l'accesso non autorizzato alla rete wireless.",
+"Op deze pagina kunt u de draadloze beveiliging instellen. Het inschakelen van WEP of WPA met het gebruik van encryptiesleutels kan ongeoorloofde toegang tot uw draadloze netwerk voorkomen.",
+"Esta página permite configurar a segurança sem fios. ActiWEP ou WPA utilizando chaves de encriptação pode evitar qualquer acesso não autorizado à sua rede sem fios.",
+"Na této stránce můžete nastavit zabezpečení bezdrátové sítě. Zapnutí WEP nebo WPA s použitím šifrovacího klíče může zabránit neautorizovanému přístupu do vaší bezdrátové sítě.",
+"Na stronie tej możliwe jest ustawienie zabezpieczeń sieci bezprzewodowej. Włącz WEP lub WPA za pomoca klucza szyfrowania w celu zabezpieczenia przed dostępem osób nieupoważnionych.",
+"Aceasta pagina va permite sa setati securitatea wireless. Activati WEP sau WPA si folositi chei de criptare pentu a limita accesul la reteaua dumneavoastra wireless.",
+"Эта страница позволяет установить кодировку на беспроводную связь. Включение WEP или WPA и использование ключей кодировки предотвратит неавторизованный доступ к вашей беспроводной сети.",
+"Táto stránka dovoľuje nastavenie bezdrôtovej bezpečnosti. Zapnite WEP alebo WPA použitím šifrovacích kľúčov, ktoré môžu zabrániť neautorizovaný prístup do vašej bezdrôtovej siete.",
+"",
+""
+);
+var wlScrInfoshort=new Array
+(
+"This page allows you to setup wireless security. You can protect your wireless network by using WEP / WPA  ",
+"Diese Seite ermöglicht Ihnen die Konfiguration der WLAN-Sicherheit. Das Aktivieren von WEP oder WPA mithilf",
+"Esta página le permite configurar la seguridad inalámbrica. Si enciende el WEP o el WPA utilizando las tecl",
+"Cette page vous permet de configurer les paramètres de sécurité sans fil. L'activation du dispositif WEP ou",
+"Questa pagina consente di impostare la sicurezza della rete wireless. Attivare la codifica WEP o WPA usando",
+"Op deze pagina kunt u de draadloze beveiliging instellen. Het inschakelen van WEP of WPA met het gebruik va",
+"Esta página permite configurar a segurança sem fios. ActiWEP ou WPA utilizando chaves de encriptação pode e",
+"Na této stránce můžete nastavit zabezpečení bezdrátové sítě. Zapnutí WEP nebo WPA s použitím šifrovacího kl",
+"Na stronie tej możliwe jest ustawienie zabezpieczeń sieci bezprzewodowej. Włącz WEP lub WPA za pomoca klucz",
+"Aceasta pagina va permite sa setati securitatea wireless. Activati WEP sau WPA si folositi chei de criptare",
+"Эта страница позволяет установить кодировку на беспроводную связь. Включение WEP или WPA и использование кл",
+"Táto stránka dovoľuje nastavenie bezdrôtovej bezpečnosti. Zapnite WEP alebo WPA použitím šifrovacích kľúčov",
+"",
+""
+);
+var passphrase=new Array
+(
+"Passphrase",
+"Kennwortfolge",
+"Contraseña",
+"Phrase de securité",
+"Passphrase",
+"Netwerksleutel",
+"Frase de acesso",
+"Heslo",
+"Hasło",
+"PassPhrase",
+"Парольная фраза",
+"Vstupná fráza",
+"密碼",
+"密码"
+);
+var fwDosFeature=new Array
+(
+"Denial of Service Feature",
+"Denial of Service-Funktion",
+"Rechazo de la función de servicio",
+"Refus de caractéristique de service",
+"Funzione Denial of Service",
+"Denial of Service (verstikkingsaanval)",
+"Função de Denial of Service",
+"Funkce Denial of Service (Odmítnutí služby)",
+"Odmowa usługi",
+"Caracteristici Denial of Service",
+"Свойства защиты от DoS",
+"Odmietnutie funkcií služieb",
+"拒絕服務特色",
+"拒绝服务特色"
+);
+var fwControlAlertNot=new Array
+(
+"Input MAC address is not complete. It should be 12 digits in hex.",
+"Eingabe der MAC-Adresse ist nicht abgeschlossen. Es sollten 12 Stellen in hexadezimal sein.",
+"La dirección MAC indicada no está completa. Deberá tener 12 dígitos en hexagonal.",
+"L'adresse MAC n'est pas complète. Elle doit contenir douze chiffres héxadécimaux.",
+"L'indirizzo MAC inserito non è completo. Deve essere composto da 12 cifre esadecimali.",
+"Input voor MAC-adres is niet compleet. Het moet uit 12 hexadecimale tekens bestaan.",
+"O endereço MAC de entrada não está completo. Deve ter 12 dígitos em números hexadecimais.",
+"Zadání adresy MAC není kompletní. Zadejte 12 šestnáctkových číslic.",
+"Wprowadony adres MAC jest niepełny. Wartość winna składać się z 12 cyfr w systemie szesnastkowym.",
+"Adresa MAC incompleta. Trebuie sa fie 12 caractere hexazecimale.",
+"Введенный MAC адрес не полон. Должен состоять из 12 HEX символов",
+"Vložená MAC adresa nie je kompletná. Musí to byť 12 miestne číslo v hexadecimálnom tvare.",
+"輸入 MAC位址是不完整的。它應該是12位16進制。",
+"输入 MAC位址是不完整的。它应该是12位16进制。"
+);
+var keyFrmPre=new Array
+(
+"Pre-shared Key Format",
+"Pre-shared Schlüsselformat",
+"Formato de la clave pre-compartida",
+"Format de la clé pré-partagée",
+"Formato della Pre-shared Key",
+"Identiek beveiligingswachtwoord",
+"Formato da chave pré-partilhada",
+"Formát přednastaveného sdíleného klíče",
+"Format przydzielony klucza",
+"Format Pre Shared Key",
+"Формат ключа доступа",
+"Formát pre-shared kľúča",
+"公用金鑰格式",
+"公用密钥格式"
+);
+var wlbasicStrMacAddr1=new Array
+(
+"MAC address 1",
+"MAC-Adresse 1",
+"Dirección MAC 1",
+"Adresse MAC 1",
+"Indirizzo MAC 1",
+"MAC-adres 1",
+"Endereço MAC 1",
+"MAC adresa 1",
+"Adres 1 MAC.",
+"Adresa MAC 1",
+"MAC адрес 1",
+"MAC Adresa 1",
+"MAC位址1",
+"MAC位址1"
+);
+var wlencryptAlertKey64=new Array
+(
+"Pre-shared key value should be 64 characters.",
+"Der Wert des Pre-Shared Schlüssels sollte 64 Zeichen besitzen.",
+"El valor de la clave pre-compartida deberá ser de 64 caracteres.",
+"La valeur de la clé pré-partagée doit contenir 64 caractères.",
+"Il valore della Pre-Shared Key dovrebbe essere composto da 64 caratteri.",
+"Identiek beveiligingswachtwoord moet uit 64 tekens bestaan.",
+"O valor da chave pré-partilhada deve ter 64 caracteres.",
+"Hodnota přednastaveného klíče by měla mít 64 znaků.",
+"Wartość przydzielonego klucza winna składać się z 64 znaków",
+"Lungimea Pre-Shared Key trebuie sa fie 64 caractere",
+"Ключ доступа должен состоять из 64 символов.",
+"Hodnota pre-shared kľúča musí mať 64 znakov. ",
+"公用金鑰的值應為 64個字元。",
+"公用密钥的值应为 64个字符。"
+);
+var fwadvPacket=new Array
+(
+"Packet(S)",
+"Paket(e)",
+"Paquete(S)",
+"Paquet(S)",
+"Pacchetto(I)",
+"Pakket(ten)",
+"Pacote(S)",
+"Paket (S)",
+"Pakiet ",
+"Pachet(e)",
+"Пакетов",
+"Paket (Pakety",
+"Packet(S)",
+"Packet(S)"
+);
+var fwadvBurst=new Array
+(
+"Burst",
+"Burst",
+"Quemar",
+"Salve",
+"Avvio",
+"Burst",
+"Rajada",
+"Burst (Dávka)",
+"Impuls",
+"Burst",
+"Разбивать на пакеты",
+"Zrýchlenie",
+"Burst",
+"Burst"
+);
+var fwCtrlInfo=new Array
+(
+"Access Control allows user to define allowed or disallowed traffic type for your LAN. You can control accessible service type for each computer in your LAN. <br> If MAC Filtering and IP Filtering function are enabled at the same time, MAC Filtering rules will be checked first.",
+"Die Zugangssteuerung ermöglicht den Benutzern das Definieren des zulässigen bzw. nicht zulässigen Traffictyps in Ihrem LAN. Sie können steuern, welcher PC-Client welche Dienste nutzt, und wie diese Zugang zu den Diensten erhalten. <br>Wenn sowohl MAC-Filterung als auch IP-Filterung gleichzeitig aktiviert sind, wird die MAC-Filterungstabelle zuerst geprüft und anschließend die IP-Filterungstabelle.",
+"El control del acceso permite que los usuarios puedan definir el tipo de tráfico permitido o no permitido en su LAN. Podrá controlar qué cliente de PC utiliza qué servicios y cuáles son los servicios a los cuales puede acceder. <br>Si tanto el filtrado de MAC como el filtrado de IP se activan simultáneamente, el cuadro de filtrado de MAC se comprobará primero y a continuación, el cuadro de filtrado IP.",
+"Le contrôle d'accès permet aux utilisateurs de définir le type de traffic autorisé ou non sur votre LAN. Vous pouvez contrôler quel client PC utilise quel service en leur autorisant l'accès aux services.  <br> Si le filtrage MAC et le filtrage IP sont activés ensembles, c'est la table de filtrage MAC qui est vérifiée avant la table de filtrage IP.",
+"Il controllo degli accessi consente agli utenti di definire il tipo di traffico consentito o meno sulla LAN. E' possibile controllare quale client PC utilizza determinati servizi e i servizi ai quali può avere accesso. <br>Se entrambe le funzioni di filtraggio MAC e IP sono attivate simultaneamente, la tabella di filtraggio MAC verrà controllata per prima, quindi verrà controllata la tabella di filtraggio IP.",
+"Met toegangscontrole kunt u het soort verkeer definiëren dat wel of niet is toegestaan op uw LAN. U kunt controleren welke client-pc welke diensten gebruikt uit die waartoe hij toegang heeft. <br>Als zowel MAC-filtering als IP-filtering tegelijkertijd is ingeschakeld, zal eerst de MAC-filtertabel worden gebruikt en daarna de IP-filtertabel.",
+"Controlo de acesso permite aos utilizadores definir o tipo de tráfego permitido ou não permitido na sua rede local. Pode controlar que PC cliente utilizam que serviços nos quais podem ter acesso a estes serviços.  <br>Se tanto a filtragem de MAC como a filtragem de IP estiverem activadas em simultâneo, a tabela de filtragem de MAC será verificada primeiro e depois a tabela de filtragem de IP.",
+"Řízení přístupu umožňuje uživatelům definovat typ provozu povolený nebo nedovolený ve vaší LAN. Můžete nastavovat jaké služby používá jednotlivý klientský počítač, který má k těmto službám přístup.  <br>Při současné použití filtrování MAC a IP bude probíhat nejprve kontrola údajů v tabulce filtrovaných adres MAC a potom v tabulce filtrování adres IP.",
+"Sterowanie dostępem pozwala użytkownikom na określenie dozwolonego lub niedozwolonego rodzaju ruchu w sieci LAN. Możliwe jest kontrolowanie PC, którego używa klient oraz z jakich usług korzysta.  <br>Jeśli zarówno filtrowanie MAC oraz IP zostały równocześnie włączone, tabela filtrowania MAC będzie sprawdzana jako pierwsza, a następnie Tabela filtrowania IP.  ",
+"Acces Control permite utilizatorului sa defineasca traficul care este permis sau nu in retea. Puteti controla accesul fiecarui calculator la anumite servicii. <br> Daca filtrele de MAC si IP sunt activate simultan, tabela de MAC-uri va fi verificata prima data si apoi cea de IP-uri.",
+"Контроль доступа позволяет пользователям определять типы трафика разрешенного или запрещенного в вашей локальной сети. Вы  можете контролировать к каким сервисам имеет доступ клиентский компьютер. Если MAC и IP фильтрации включены одновременно, таблица фильтрации MAC адресов проверяется первой, а затем проверяется таблица IP фильтрации.",
+"Kontrola prístupu dovolí užívateľom definovanie typu povolenej prevádzky vo vašej LAN. Môžete kontrolovať PC klientov a služby, ku ktorým môžu var mať prístupov. <br> Pokiaľ sú spoločne pustené filtrovanie IP a MAC adries, najskôr bude skontrolovaná tabuľka MAC adries a potom tabuľka IP adries.",
+"",
+""
+);
+var fwCtrlInfoshort=new Array
+(
+"Access Control allows user to define allowed or disallowed traffic type for your LAN. You can control acce",
+"Die Zugangssteuerung ermöglicht den Benutzern das Definieren des zulässigen bzw. nicht zulässigen Traffict",
+"El control del acceso permite que los usuarios puedan definir el tipo de tráfico permitido o no permitido ",
+"Le contrôle d'accès permet aux utilisateurs de définir le type de traffic autorisé ou non sur votre LAN. V",
+"Il controllo degli accessi consente agli utenti di definire il tipo di traffico consentito o meno sulla LA",
+"Met toegangscontrole kunt u het soort verkeer definiëren dat wel of niet is toegestaan op uw LAN. U kunt c",
+"Controlo de acesso permite aos utilizadores definir o tipo de tráfego permitido ou não permitido na sua re",
+"Řízení přístupu umožňuje uživatelům definovat typ provozu povolený nebo nedovolený ve vaší LAN. Můžete nas",
+"Sterowanie dostępem pozwala użytkownikom na określenie dozwolonego lub niedozwolonego rodzaju ruchu w siec",
+"Acces Control permite utilizatorului sa defineasca traficul care este permis sau nu in retea. Puteti contr",
+"Контроль доступа позволяет пользователям определять типы трафика разрешенного или запрещенного в вашей лок",
+"Kontrola prístupu dovolí užívateľom definovanie typu povolenej prevádzky vo vašej LAN. Môžete kontrolo",
+"",
+""
+);
+var advance=new Array
+(
+"Advanced",
+"Erweitert",
+"Avanzada",
+"Avancé",
+"Avanzato",
+"Geavanceerd",
+"Avançadas",
+"Pokročilé",
+"Zaawansowane",
+"Avansat",
+"Дополнительные ",
+"Pokročilé",
+"進階",
+"进阶"
+);
+var wlbasicStrMacAddr2=new Array
+(
+"MAC address 2",
+"MAC-Adresse 2",
+"Dirección MAC 2",
+"Adresse MAC 2",
+"Indirizzo MAC 2",
+"MAC-adres",
+"Endereço MAC 2",
+"MAC adresa 2",
+"Adres 2 MAC",
+"Adresa MAC 2",
+"MAC адрес 2",
+"MAC Adresy 2",
+"MAC位址2",
+"MAC位址2"
+);
+var band=new Array
+(
+"Band",
+"Band",
+"Banda",
+"Bande",
+"Banda",
+"Band",
+"Banda",
+"Pásmo",
+"Pasmo",
+"Banda",
+"Полоса",
+"Pásmo",
+"波段",
+"波段"
+);
+var wlAdBurst=new Array
+(
+"Transmit Burst Mode",
+"Burst-Modus übertragen",
+"Transmitir modo de quemado",
+"Trasmettre Mode Salve",
+"Modalità avvio trasmissione",
+"Transmit burst stand",
+"Transmitir modo de rajada",
+"Vysílání v dávkovém režimu",
+"Tryb wysyłania impulsu",
+"Transmitere Mod Burst",
+"Передача Burst Mode",
+"Vysielanie zrýchleného módu",
+"Transmit Burst模式",
+"Transmit Burst模式"
+);
+var fwadvInvBurst=new Array
+(
+"Invalid value of Burst of Pin of Death. Input value should be between 0-255 in decimal.",
+"Ungültiger Wert des Burst beim Pin of Death. Der Eingabewert sollte zwischen 0-255 in Dezimalzahlen liegen.",
+"Valor inválido del Burst of Pin of Death. El valor de entrada debe estar comprendido entre 0-255 decimales",
+"Valeur incorrecte pour le paquet Salve Ping de la Mort. La valeur entrée doit être comprise entre 0 et 255 en décimal.",
+"Valore non consentito per l'invio del Ping of Death. Il valore dell'inserimento deve essere un numero intero compreso tra 0 e 255.",
+"Ongeldige waarde van burst voor Ping of Death. Invoer moet liggen tussen 0-255, in decimale tekens.",
+"Valor inválido da rajada de Ping of Death. O valor de entrada deve ser entre 0 e 255 em valores decimais.",
+"Neplatná hodnota dávky Ping of Death. Zadejte desítkové číslo z intervalu 0-255.",
+"Niewłaściwa wartość Impuslu Pin of Death. Wprowadzona wartośc powinna wynosić od 0 do 255. ",
+"Valoare invalida a Burst Ping of Death. Valoarea introdusa trebuie sa fie un numar zecimal cuprins intre 0 si 255.",
+"Неправильное значение Burst of Ping of Death. Вводимое десятичное число должно быть между 0-255",
+"Nesprávna hodnota zrýchleného Ping of Death. Vložená hodnota musí byť celé číslo v tvare 0-255.",
+"Pin of Death的Burst值是無效的。它應該介於0-255之間。",
+"Pin of Death的Burst值是无效的。它应该介于0-255之间。"
+);
+var wlencryptStrInvKey=new Array
+(
+"Invalid length of Key ",
+"Ungültige Schlüssellänge ",
+"Largo de la clave inválido ",
+"Longueur de clé incorrecte. ",
+"Lunghezza della chiave non valida ",
+"Ongeldige sleutellengte ",
+"Comprimento de chave inválido ",
+"Neplatná délka klíče ",
+"Niewłaściwa długość klucza",
+"Lungime invalida a codului.",
+"Неправильная длина ключа",
+"Nesprávna dĺžka kľúča",
+"無效的金鑰長度",
+"无效的密钥长度"
+);
+var survey=new Array
+(
+"Survey",
+"Suche",
+"Encuesta",
+"Etude",
+"Indagine",
+"Overzicht",
+"Inquérito",
+"Zjišťování",
+"Przeszukiwanie",
+"Verificare",
+"Обзор",
+"Mapovanie",
+"搜尋",
+"搜寻"
+);
+var reset=new Array
+(
+"Reset",
+"Reset",
+"Reinicio",
+"Réinitialisation",
+"Reset",
+"Reset",
+"Repor",
+"Reset",
+"Kasuj",
+"Reset",
+"Переустановка",
+"Reset",
+"重置",
+"重置"
+);
+var fwDmzInfo=new Array
+(
+"If one of the client PC in your LAN can’t work properly behind NAT firewall, you can setup Virtual DMZ Host to allow unrestricted two-way Internet access for it.",
+"Wenn Sie einen lokalen Client-PC haben, der hinter der NAT-Firewall eine Internet-Anwendung nicht ordnungsgemäß ausführen kann, können Sie dem Client einen uneingeschränkten Zweiwege-Internetzugriff einräumen, indem Sie einen Virtual DMZ Host definieren.",
+"Si tiene un PC cliente local que no puede lanzar una aplicación de Internet correctamente a través del cortafuegos NAT, en ese caso, podrá abrir el cliente hasta el acceso de dos vías ilimitado a Internet definiendo un centro virtual DMZ.",
+"Si un PC client local ne peut pas lancer Internet correctement de derrière un pare-feu NAT, vous pouvez ouvrir au client un accès Internet illimité deux-voies en définissant un hôte DMZ virtuel.",
+"Se è presente un PC client locale sul quale non è possibile eseguire correttamente un'applicazione Internet con il firewall NAT attivato, è possibile impostare l'accesso Internet privo di limitazioni a due vie per il client definendo un host DMZ virtuale.",
+"Als u een lokale client-pc hebt die een internettoepassing niet kan uitvoeren vanachter de NAT/firewall, kunt u de client onbeperkte internettoegang (naar binnen en naar buiten) verschaffen door het definiëren van een virtuele DMZ-host.",
+"Se tiver um PC cliente local que não possa executar correctamente uma aplicação da Internet a partir da firewall NAT, pode abrir o cliente para acesso bidireccional da Internet sem restrições definindo um Anfitrião DMZ Virtual.",
+"Pokud některý s místních klientských PC nedokáže správné pracovat s internetovými aplikacemi za bránou NAT firewall, můžete pro něj nastavit obousměrný neomezený přístup k Internetu definováním Virtuálního hostitele DMZ.",
+"W przypadku klienta lokalnego, który nie może uruchomić aplikacji internetowej z uwagi na firewall, możliwe jest otworzenia dla klienta dwustronnego dostępu do internetu poprzez określenie nazwy serwera wirtualnego DMZ.",
+"Daca aveti un calculator care nu poate rula o aplicatie din spatele firewall-ului NAT, atunci puteti sa permiteti acestui PC acces nerestrictionat la internet prin stabilirea unui Host Virtual DMZ.",
+"Если ваш  клиентский PC не может запустить интернет приложение из-за брандмауэра, вы можете открыть двусторонний незапрещенный интернет доступ используя виртуальный DMZ Host.",
+"Pokiaľ máte lokálneho PC klienta, ktorý nemôže pracovať s internetovými aplikáciami správne za NAT firewall, potom môžete klientov neobmedzený obojsmerný prístup k Internetu definovaním Virtuálneho DMZ Host.",
+"",
+""
+);
+var fwDmzInfoshort=new Array
+(
+"If one of the client PC in your LAN can’t work properly behind NAT firewall, you can setup Virtual DMZ Hos",
+"Wenn Sie einen lokalen Client-PC haben, der hinter der NAT-Firewall eine Internet-Anwendung nicht ordnungs",
+"Si tiene un PC cliente local que no puede lanzar una aplicación de Internet correctamente a través del cor",
+"Si un PC client local ne peut pas lancer Internet correctement de derrière un pare-feu NAT, vous pouvez ou",
+"Se è presente un PC client locale sul quale non è possibile eseguire correttamente un'applicazione Interne",
+"Als u een lokale client-pc hebt die een internettoepassing niet kan uitvoeren vanachter de NAT/firewall, k",
+"Se tiver um PC cliente local que não possa executar correctamente uma aplicação da Internet a partir da fi",
+"Pokud některý s místních klientských PC nedokáže správné pracovat s internetovými aplikacemi za bránou NAT",
+"W przypadku klienta lokalnego, który nie może uruchomić aplikacji internetowej z uwagi na firewall, możliw",
+"Daca aveti un calculator care nu poate rula o aplicatie din spatele firewall-ului NAT, atunci puteti sa pe",
+"Если ваш  клиентский PC не может запустить интернет приложение из-за брандмауэра, вы можете открыть двусто",
+"Pokiaľ máte lokálneho PC klienta, ktorý nemôže pracovať s internetovými aplikáciami správne za NAT firewal",
+"",
+""
+);
+var fwUrlTable=new Array
+(
+"Current URL Blocking Table",
+"Aktuelle URL-Blockierungstabelle",
+"Cuadro actual del bloqueo de URL",
+"Table de blocage URL actuelle",
+"Tabella dei blocchi URL correnti",
+"Tabel huidige URL-blokkering",
+"Tabela de bloqueio de URL actual",
+"Tabulka aktuálně blokovaných URL",
+"Tabela obecnie blokowanych URL.",
+"Tabela Blocare URL curenta",
+"Текущая таблица URL блокировок",
+"Tabuľka terajších blokovaných URL",
+"現有URL阻斷表",
+"现有URL阻断表"
+);
+var wlbasicStrMacAddr6=new Array
+(
+"MAC address 6",
+"MAC-Adresse 6",
+"Dirección MAC 6",
+"Adresse MAC 6",
+"Indirizzo MAC 6",
+"MAC-adres",
+"Endereço MAC 6",
+"MAC adresa 6",
+"Adres 6 MAC",
+"Adresa MAC 6",
+"MAC адрес 6",
+"MAC Adresa 6",
+"MAC位址6",
+"MAC位址6"
+);
+var wlDataRate=new Array
+(
+"Data Rate",
+"Datenübertragungsgeschwindigkeit",
+"Velocidad de datos",
+"Débit",
+"Velocità di trasmissione dei dati",
+"Overdrachtssnelheid",
+"Velocidade de dados",
+"Rychlost přenosu dat",
+"Prędkość danych",
+"Rat de Date",
+"Скорость передачи данных",
+"Rozsah dátumu",
+"資料速率",
+"数据速率"
+);
+var wlencryptStrShouldBe=new Array
+(
+" value. It should be ",
+" Wert. Dieser sollte sein ",
+" valor. Debería ser ",
+" valeur. Elle doit contenir ",
+" valore. Deve essere ",
+" waarde. Het moet zijn ",
+" valor. Deve ser ",
+" hodnota. Měla by být ",
+"Wartość winna wynosić ",
+"valoare. Ar trebui sa fie",
+"значение. Должно быть",
+"hodnot. Musí byť.",
+"數值應該",
+"数值应该"
+);
+var fwUrl=new Array
+(
+"URL Blocking",
+"URL-Blockierung",
+"Bloqueo de URL",
+"Blocage URL",
+"Blocco URL",
+"URL-blokkering",
+"Bloqueio de URL",
+"Blokování URL",
+"Blokowanie URL",
+"Blocare URL",
+"URL блокировка",
+"URL Blokovanie",
+"URL阻斷",
+"URL阻断"
+);
+var wlBasicInfo=new Array
+(
+"This page allows you to define ESSID and Channel for the wireless connection. These parameters are used by the wireless stations to connect to this Access Point.",
+"Dieser Seite ermöglicht Ihnen das Festlegen der ESSID und des Kanals für die drahtlose Verbindung. Diese Parameter werden für die drahtlosen Stationen verwendet, um eine Verbindung mit dem Access Point herzustellen. ",
+"Esta página le permite definir el ESSID y el canal para la conexión inalámbrica. Estos parámetros se utilizan para las estaciones inalámbricas para conectarse al punto de acceso. ",
+"Cette page vous permet de définir votre ESSID et le canal pour la connexion sans fil. Ces paramètres sont utilisés pour que les stations sans fil se connectent au point d'accès. ",
+"Questa pagina consente di definire l'ESSID e il canale per la connessione wireless. Questi parametri vengono utilizzati per connettere le stazioni wireless al Punto di accesso. ",
+"Op deze pagina kunt u de ESSID en het kanaal voor de draadloze verbinding definiëren. Deze parameters worden gebruikt om de draadloze stations te verbinden met het accesspoint. ",
+"Esta página permite definir o ESSID e o Canal para a ligação sem fios. Estes parâmetros são utilizados para estações sem fios para ligação ao Ponto de acesso. ",
+"Tato stránka umožňuje definovat ESSID a kanálu pro bezdrátové připojení. Tyto parametry jsou používány bezdrátovými stanicemi pro připojení k přístupovému bodu. ",
+"Strona ta pozwala użytkownikowi na określenie nazwy oraz kanału połączenia sieci bezprzewodowej. Parametry te stosowane są dla stacji bezprzewodowych w celu połączenia z punkem dostępowym.",
+"Aceasta pagina va permite sa definiti ESSID-ul si canalul pentru conexiunea wireless. Acesti parametri sunt folositi de statiile wireless pentru conectarea la Access Point.",
+"На этой странице можно установить ESSID и канал беспроводной связи. Эти параметры используются беспроводными станциями для связи с точкой доступа.",
+"Táto stránka dovoľuje definovanie ESSID a kanálu pre bezdrôtové pripojenie. Tieto parametre, ktoré sú použíte pre bezdrôtové stanice pri pripojenie k prístupovému bodu.",
+"",
+""
+);
+var wlBasicInfoshort=new Array
+(
+"This page allows you to define ESSID and Channel for the wireless connection. These parameters are used by",
+"Dieser Seite ermöglicht Ihnen das Festlegen der ESSID und des Kanals für die drahtlose Verbindung. Diese P",
+"Esta página le permite definir el ESSID y el canal para la conexión inalámbrica. Estos parámetros se utili",
+"Cette page vous permet de définir votre ESSID et le canal pour la connexion sans fil. Ces paramètres sont ",
+"Questa pagina consente di definire l'ESSID e il canale per la connessione wireless. Questi parametri vengo",
+"Op deze pagina kunt u de ESSID en het kanaal voor de draadloze verbinding definiëren. Deze parameters word",
+"Esta página permite definir o ESSID e o Canal para a ligação sem fios. Estes parâmetros são utilizados par",
+"Tato stránka umožňuje definovat ESSID a kanálu pro bezdrátové připojení. Tyto parametry jsou používány bez",
+"Strona ta pozwala użytkownikowi na określenie nazwy oraz kanału połączenia sieci bezprzewodowej. Parametry",
+"Aceasta pagina va permite sa definiti ESSID-ul si canalul pentru conexiunea wireless. Acesti parametri sun",
+"На этой странице можно установить ESSID и канал беспроводной связи. Эти параметры используются беспроводны",
+"Táto stránka dovoľuje definovanie ESSID a kanálu pre bezdrôtové pripojenie. Tieto parametre, ktoré sú použ",
+"",
+""
+);
+var comment=new Array
+(
+"Comment",
+"Kommentar",
+"Comentario",
+"Commentaire",
+"Commento",
+"Opmerking",
+"Comentário",
+"Komentář",
+"Uwagi",
+"Comentariu",
+"Комментарий",
+"Komentár",
+"批註",
+"批注"
+);
+var wlMacAddrFiltering=new Array
+(
+"MAC Address Filtering",
+"MAC-Adressen Filterung",
+"Filtrado de dirección MAC",
+"Filtrage adresse MAC",
+"Filtraggio indirizzo MAC",
+"Filteren op MAC-adres",
+"Filtragem de endereços MAC",
+"Filtrování adres MAC",
+"Adres filtrowanego MAC",
+"Filtru Adresa MAC",
+"Фильтрация MAC",
+"Filtrovanie MAC adries",
+"MAC位址過濾",
+"MAC位址过滤"
+);
+var fwaddpcStrInvIpEnd=new Array
+(
+"Invalid End IP address.",
+"Ungültige End-IP-Adresse.",
+"Dirección IP incorrecta de finalización",
+"Adresse IP de fin incorrecte.",
+"Indirizzo IP finale non valido.",
+"Ongeldig einde IP-adres",
+"Endereço IP final inválido.",
+"Neplatná koncová IP adresa",
+"Niewłaściwy końcowy adres IP",
+"Adresa IP de sfarsit invalida.",
+"Неверен конечный IP адрес",
+"Nesprávny koniec IP adresy.",
+"結束 IP位址是無效的。",
+"结束 IP位址是无效的。"
+);
+var wlencryptStrSrvPort=new Array
+(
+"Port of RADIUS Server",
+"Port des RADIUS Servers",
+"Puerto del servidor RADIUS",
+"Port du serveur RADIUS",
+"Porta del server RADIUS",
+"RADIUS-serverpoort",
+"Porta do Servidor RADIUS",
+"Port RADIUS serveru",
+"Port serwera RADIUS.",
+"Port Server Radius",
+"Порт RADIUS сервера",
+"Port RADIUS serveru",
+"RADIUS伺服器的埠",
+"RADIUS服务器的埠"
+);
+var fwClient=new Array
+(
+"Client PC Description",
+"Client PC-Beschreibung",
+"Descripción del PC cliente",
+"Descriptif PC Client",
+"Descrizione PC client",
+"Beschrijving client-pc",
+"Descrição do PC cliente",
+"Popis klientských počítačů",
+"Charakterystyka klienta PC",
+"Descriere PC client",
+"Описание клиентского PC",
+"Charakteristika klientskeho PC",
+"終端電腦描述",
+"终端计算机描述"
+);
+var fwControlAlertIp=new Array
+(
+"Please enter the IP address when you enable the IP Filtering function.",
+"Bitte geben Sie die IP-Adresse ein, wenn Sie die Funktion der IP-Filterung aktivieren.",
+"Por favor, indique la dirección IP cuando active la función de filtrado de IP.",
+"Veuillez saisir l'adresse IP lorsque vous activez la fonction de filtrage IP.",
+"Inserire l'indirizzo IP al momento dell'attivazione della funzione di filtraggio dell'indirizzo IP.",
+"Voer het IP-adres in als u de IP-filtering inschakelt.",
+"Introduza o endereço IP quando actia função de filtragem de IP.",
+"Povolíte-li funkci filtrování adres IP , zadejte adresu IP.",
+"Wprowadź adres IP po włączeniu filtrowania IP.",
+"Introduceti adresa IP cand activati functia de Filtru IP",
+"При включении функции IP фильтрации, пожалуйста, введите IP адрес",
+"Prosím vložte IP adresu keď zapnúť filtrovanie IP adries.",
+"請輸入IP過濾表的 IP位址。",
+"请输入IP过滤表的 IP位址。"
+);
+var keyolitec=new Array
+(
+"Key",
+"Schlüssel",
+"Clave",
+"Clé",
+"Chiave",
+"Key (sleutel)",
+"Chave",
+"Klíč",
+"Klucz",
+"Cheie",
+"Ключ",
+"Kľúč",
+"金鑰",
+"密钥"
+);
+var botholitec=new Array
+(
+"Both",
+"Beide",
+"Ambos",
+"Les deux",
+"Entrambi",
+"Beide",
+"Ambos",
+"Obojí",
+"Obydwa",
+"Ambele",
+"Оба",
+"Spoločné",
+"兩者",
+"两者"
+);
+var apply1=new Array
+(
+"Apply",
+"Übernehmen",
+"Aplicar",
+"Appliquer",
+"Applica",
+"Toepassen",
+"Aplicar",
+"Použít",
+"Zastosuj",
+"Aplica",
+"Применить",
+"Použiť",
+"套用",
+"套用"
+);
+var cancel1=new Array
+(
+"Cancel",
+"Abbrechen",
+"Cancelar",
+"Annuler",
+"Annulla",
+"Annuleren",
+"Cancelar",
+"Zrušit",
+"Skasuj",
+"Anuleaza",
+"Отменить",
+"Zrušiť",
+"取消",
+"取消"
+);
+var IAPP=new Array
+(
+"IAPP",
+"IAPP",
+"IAPP",
+"IAPP",
+"IAPP",
+"IAPP",
+"IAPP",
+"IAPP",
+"IAPP",
+"IAPP",
+"IAPP",
+"IAPP",
+"IAPP",
+"IAPP"
+);
+var swActCli=new Array
+(
+"Show Active Clients",
+"Aktive Clients anzeigen",
+"Mostrar clientes activos",
+"Montrer clients actifs",
+"Mostra client attivi",
+"Toon actieve clients",
+"Mostrar clientes activos",
+"Zobrazit aktivní klienty",
+"Pokaż aktywnych klientów",
+"Arata Clienti Activi",
+"Показать активных клиентов",
+"Zobraziť aktivných klientov",
+"顯示運作的終端設備",
+"显示运作的终端设备"
+);
+var selSS=new Array
+(
+"Select Site Survey",
+"Standortaufnahme auswählen",
+"Seleccionar el sondeo del centro",
+"Sélectionner Etude de site",
+"Seleziona indagine sito",
+"Open overzicht",
+"Seleccionar inquérito do local",
+"Vybrat zjišťování sítě",
+"Wybierz poszukiwanie sieci",
+"Selecteaza Verificare Site",
+"Выбрать узел связи",
+"Vyberte prehľadávanie stránok",
+"選擇已搜尋的基地台",
+"选择已搜寻的基地台"
+);
+var cloneMac=new Array
+(
+"Clone MAC",
+"MAC klonen",
+"Clonar MAC",
+"Clonage MAC",
+"Clona MAC",
+"Clone MAC",
+"Clonar MAC",
+"Klonovat MAC",
+"Kopiuj MAC",
+"Clonare MAC",
+"Клонировать MAC",
+"Klonovanie MAC",
+"複製MAC",
+"复制MAC"
+);
+var clear=new Array
+(
+"Clear",
+"Löschen",
+"Borrar",
+"Effacer",
+"Cancella",
+"Leegmaken",
+"Apagar",
+"Vymazat",
+"Usuń",
+"Sterge",
+"Стереть",
+"Vymazať",
+"清除",
+"清除"
+);
+var wlChanWidth=new Array
+(
+"Channel Width",
+"Kanalbreite",
+"Ancho de canal",
+"Largeur de canal",
+"Larghezza canale",
+"Frequentiebereik",
+"Largura do canal",
+"Šířka kanálu",
+"Szerokość kanału",
+"Latime Canal",
+"Ширина канала",
+"Dĺžka kanálu",
+"頻道頻寬",
+"频道带宽"
+);
+var wpsmenu=new Array
+(
+"WPS",
+"WPS",
+"WPS",
+"WPS",
+"WPS",
+"WPS",
+"WPS",
+"WPS",
+"WPS",
+"WPS",
+"WPS",
+"WPS",
+"WPS",
+"WPS"
+);
+var wpsInfo=new Array
+(
+"You can change WPS (Wi-Fi Protected Setup) settings in this page. WPS will help your wireless client to connect to this access point automatically.",
+"Diese Seite ermöglicht Ihnen, die Einstellung für WPS (Wi-Fi Protected Setup) zu ändern. WPS kann Ihnen dabei helfen, Ihren Drahtlos-Client automatisch mit dem Access Point zu verbinden. ",
+"Esta página le permite cambiar los parámetros de WPS (configuración Wi-Fi protegida). WPS podrá ayudar a su cliente inalámbrio a conectarse automáticamente al punto de acceso. ",
+"Cette page vous permet de modifier le paramètre WPS (Configuration Wi-Fi protégé). Le WPS peut aider le client sans fil à se connecter automatiquement au point d'accès. ",
+"Questa pagina consente di modificare l'impostazione del WPS (Wi-Fi Protected Setup). Il WPS consente al client wireless di connettersi automaticamente al punto di accesso. ",
+"Op deze pagina kunt u de instellingen van de WPS (Wi-Fi Protected Setup) aanpassen. WPS helpt uw draadloze client automatisch verbinding te maken met het accesspoint. ",
+"Esta página permite alterar a definição de WPS (Wi-Fi Protected Setup -Configuração protegida Wi-Fi). WPS pode ajudar o seu cliente sem fios a estabelecer uma ligação automática ao Ponto de acesso. ",
+"Tato stránka umožňuje změnu nastavení pro WPS (Nastavení ochrany Wi-Fi). WPS pomáhá bezdrátovým klientům v automatickém připojení k přístupovému bodu. ",
+"Strona ta pozwala na zmianę ustawień WPS (ustawienia zabezpieczenia  Wi-Fi). WPS może pomóc klientowi bezprzewodowemu na automatyczne podłączenie do punktu dostępowego. ",
+"Aceasta pagina va permite sa modificati setarile pentru WPS (Wi-Fi Protected Setup). WPS ajuta clientul wireless pentru a se conecta automat la Access Point.",
+"На этой странице можно изменить установки WPS (Wi-Fi Protected Setup). WPS поможет вашим клиентам автоматически подключиться к точке доступа.",
+"Táto stránka dovoľuje zmeniť nastavení pre WPS (Wi-fi protected setup). WPS môže pomôcť vášmu bezdrôtovemé klientu automaticky pripojiť k bezdrôtovému bodu.",
+"",
+""
+);
+var wpsInfoshort=new Array
+(
+"You can change WPS (Wi-Fi Protected Setup) settings in this page. WPS will help your wireless client to con",
+"Diese Seite ermöglicht Ihnen, die Einstellung für WPS (Wi-Fi Protected Setup) zu ändern. WPS kann Ihnen dab",
+"Esta página le permite cambiar los parámetros de WPS (configuración Wi-Fi protegida). WPS podrá ayudar a su",
+"Cette page vous permet de modifier le paramètre WPS (Configuration Wi-Fi protégé). Le WPS peut aider le cli",
+"Questa pagina consente di modificare l'impostazione del WPS (Wi-Fi Protected Setup). Il WPS consente al cli",
+"Op deze pagina kunt u de instellingen van de WPS (Wi-Fi Protected Setup) aanpassen. WPS helpt uw draadloze ",
+"Esta página permite alterar a definição de WPS (Wi-Fi Protected Setup -Configuração protegida Wi-Fi). WPS p",
+"Tato stránka umožňuje změnu nastavení pro WPS (Nastavení ochrany Wi-Fi). WPS pomáhá bezdrátovým klientům v ",
+"Strona ta pozwala na zmianę ustawień WPS (ustawienia zabezpieczenia  Wi-Fi). WPS może pomóc klientowi bezpr",
+"Aceasta pagina va permite sa modificati setarile pentru WPS (Wi-Fi Protected Setup). WPS ajuta clientul wir",
+"На этой странице можно изменить установки WPS (Wi-Fi Protected Setup). WPS поможет вашим клиентам автоматич",
+"Táto stránka dovoľuje zmeniť nastavení pre WPS (Wi-fi protected setup). WPS môže pomôcť vášmu bezdrôtovemé ",
+"",
+""
+);
+var wpsSetting=new Array
+(
+"WPS(Wi-Fi Protected Setup) Settings",
+"WPS (Wi-Fi Protected Setup) Einstellungen",
+"Configuración WPS (configuración protegida por Wi-Fi)",
+"Paramètres WPS",
+"Impostazioni WPS (Wi-Fi Protected Setup)",
+"WPS (Wi-Fi Protected set-up) instellingen",
+"Definições da WPS (Wi-Fi Protected Setup - Configuração protegida Wi-Fi)",
+"Parametry WPS (Nastavení ochrany Wi-Fi)",
+"Ustawienia WPS (Zabezpieczenia Wi-Fi)",
+"Setari WPS(Wi-Fi Protected Setup)",
+"WPS (Wi-Fi Protected Setup) настройка",
+"Nastavnie WPS (Wi-Fi pretected setup)",
+"WPS 設定",
+"WPS 设定"
+);
+var wpsSetReset=new Array
+(
+"Reset Configuration",
+"Konfiguration zurücksetzen",
+"Reiniciar configuración",
+"Réinitialiser la configuration",
+"Ripristina configurazione",
+"Configuratie resetten",
+"Repor configuração",
+"Resetovat konfiguraci",
+"Wyzeruj konfigurację",
+"Resetare Configurare",
+"Переустановка конфигурации",
+"Resetovanie konfigurácie",
+"重新配置",
+"重新配置"
+);
+var wpsOOB=new Array
+(
+"Reset to Out-Of-Box Configuration",
+"Auf ursprüngliche Werkskonfiguration zurücksetzen",
+"Reiniciar configuración de caja de salida",
+"Réinitialiser la configuration Out-Of-Box",
+"Riporta l'unità alla configurazione iniziale",
+"Resetten naar fabrieksmatige configuratie",
+"Repor para a configuração imediata",
+"Resetovat na konfiguraci Out-Of-Box",
+"Przywróć ustawienia fabryczne",
+"Resetare la setarile din fabrica",
+"Переустановка Out-Of-Box конфигурации",
+"Resetovanie k továrenskej konfigurácií",
+"產品外殼的重置組態",
+"产品外壳的重置组态"
+);
+var reset=new Array
+(
+"Reset",
+"Reset",
+"Reinicio",
+"Réinitialisation",
+"Reset",
+"Resetten",
+"Repor",
+"Reset",
+"Resetuj ",
+"Resetare",
+"Переустановка",
+"Reset",
+"重設",
+"重设"
+);
+var yes=new Array
+(
+"Yes",
+"Ja",
+"Sí",
+"Oui",
+"Sì",
+"Ja",
+"Sim",
+"Ano",
+"Tak",
+"Da",
+"Да",
+"Áno",
+"是",
+"是"
+);
+var no=new Array
+(
+"NO",
+"NEIN",
+"NO",
+"NON",
+"NO",
+"Nee",
+"NÃO",
+"Ne",
+"Nie",
+"Nu",
+"Нет",
+"NIE",
+"否",
+"否"
+);
+var wpsConfigureSetup=new Array
+(
+"Configuration Setup",
+"Konfigurations-Setup",
+"Configuración de parámetros",
+"Configuration",
+"Impostazione configurazione",
+"Configuratie",
+"Definição da configuração",
+"Nastavení konfigurace",
+"Konfiguracja ustawienia",
+"Setarile de Instalare",
+"Настройка конфигурации",
+"Konfigurácia nastavenia",
+"配置安裝",
+"配置安装"
+);
+var wspStatus=new Array
+(
+"WPS Status:",
+"WPS Status:",
+"Estado WPS:",
+"Etat WPS :",
+"Stato WPS:",
+"WPS-status:",
+"Estado de WPS:",
+"Status WPS:",
+"Stan WPS",
+"Stare WPS:",
+"Статус WPS: ",
+"WPS Status:",
+"WPS狀態：",
+"WPS状态："
+);
+var wpsPinCode=new Array
+(
+"Self PinCode:",
+"PinCode wählen:",
+"Código pin propio:",
+"Code Pin auto :",
+"Codice Pin automatico:",
+"Self Pincode:",
+"Código PIN automático:",
+"Samostatný kód PIN:",
+"Własny kod PIN",
+"Cod Pin Propriu:",
+"Собственный пин-код:",
+"Vlastný PIN kód:",
+"自PIN碼：",
+"自PIN码："
+);
+var wpsProxy=new Array
+(
+"Enable Proxy",
+"Proxy aktivieren",
+"ActiProxy",
+"Activer Proxy",
+"Abilita Proxy",
+"Proxy inschakelen",
+"Actiproxy",
+"Povolit Proxy",
+"Ustanów Proxy",
+"Activeaza Proxy",
+"Включить прокси",
+"Zapnúť proxy",
+"啟用Proxy",
+"启用Proxy"
+);
+var wpsRegistrar=new Array
+(
+"Use Internal Registar:",
+"Internes Register verwenden:",
+"Uso del registro interno:",
+"Utiliser registre interne :",
+"Usa registro interno:",
+"Gebruik interne registrar",
+"Utilizar registo interno:",
+"Použít vnitřní registr:",
+"Użyj wewnętrznego administratora ",
+"Foloseste Registrator Intern",
+"Использовать внутренний регистр",
+"Použiť vnútorného zapisovateľa:",
+"使用內部登錄者：",
+"使用内部登录者："
+);
+var deviceConfigure=new Array
+(
+"Device Configure",
+"Gerät konfigurieren",
+"Configurar dispositivo",
+"Configuration périphérique",
+"Configurazione dispositivo",
+"Configureer apparaat",
+"Configurar dispositivo",
+"Konfigurace zařízení",
+"Konfiguracja urządzenia",
+"Configurare Echipament",
+"Конфигурация устройства",
+"Konfigurácia zariadenia",
+"設備配置",
+"设备配置"
+);
+var wpsOption=new Array
+(
+"Configure Option",
+"Optionen konfigurieren",
+"Configurar opción",
+"Option de configuration",
+"Configura opzione",
+"Configureer optie",
+"Configurar opção",
+"Konfigurace možností",
+"Opcje konfiguracji ",
+"Optiuni de configurare",
+"Опции конфигурации",
+"Konfigurácia volieb",
+"配置選項",
+"配置选项"
+);
+var wpsPinMode=new Array
+(
+"Configure via Client PinCode",
+"Über Client PinCode konfigurieren",
+"Configurar mediante el código pin del cliente",
+"Configuration par Code Pin client",
+"Configura tramite il codice PIN del client",
+"Configureer via client-pincode",
+"Configurar através do código PIN do cliente",
+"Konfigurace prostřednictvím klientského kódu PIN",
+"Skonfiguruj za pomocą kodu PIN klienta",
+"Configurare prin Cod Pin de la Client",
+"Настроить через клиентский пин-код",
+"Konfigurácia cez klientsky PIN kód",
+"經由終端 PIN碼做配置",
+"经由终端 PIN码做配置"
+);
+var wpsPubMode=new Array
+(
+"Configure via Push Button",
+"Über Drucktaste konfigurieren",
+"Configurar mediante el botón de pulsación",
+"Configuration par touche de commande",
+"Configura tramite pulsante di opzione",
+"Configureer via toets (PBC)",
+"Configurar através do botão",
+"Konfigurace prostřednictvím stisknutí tlačítka",
+"Skonfiguruj poprzez naciśniecie klawisza",
+"Configurare prin Buton",
+"Настроить с помощью кнопки на корпусе.",
+"Konfigurácia cez tlačidlo",
+"通過按鍵配置",
+"通过按键配置"
+);
+var writePinCode=new Array
+(
+"Write Pin Code",
+"Pin Code schreiben",
+"Indicar código pin",
+"Code Pin Ecriture",
+"Scrivi codice PIN",
+"Schrijf pincode",
+"Escrever código PIN",
+"Zapsat kód PIN",
+"Napisz kod PIN ",
+"Introduceti Codul Pin",
+"Записать пин-код",
+"Napíšte Pin Kód",
+"寫 PIN碼",
+"写 PIN码"
+);
+var pinNumber=new Array
+(
+"Pin Number",
+"Pin-Nummer",
+"Número pin",
+"Numéro Pin",
+"Numero PIN",
+"Teken voor de pincode",
+"Número PIN",
+"Číslo PIN",
+"Numer PIN",
+"Numar Pin",
+"Пин код",
+"PIN číslo",
+"PIN碼",
+"PIN码"
+);
+var wpsStartPbc=new Array
+(
+"Start PBC",
+"PBC starten",
+"Iniciar PBC",
+"Départ PBC",
+"Avvia PBC",
+"Start PBC",
+"PBC inicial",
+"Počáteční PBC",
+"Uruchom PBC",
+"Incepere PBC",
+"Начал. PBC",
+"Začiatok PBC",
+"啟用PBC",
+"启用PBC"
+);
+var wpsStartpin=new Array
+(
+"Start PIN",
+"PIN starten",
+"Iniciar PIN",
+"Départ PIN",
+"Avvia PIN",
+"Start PIN",
+"PIN inicial",
+"Počáteční PIN",
+"Uruchom PIN",
+"Incepere PIN",
+"Начал. PIN",
+"Začiatok PIN",
+"啟用PIN碼",
+"启用PIN码"
+);
+var wpsSetupInfo=new Array
+(
+"Wi-Fi Protected Setup Information",
+"Informationen über Wi-Fi Protected Setup",
+"Información deConfiguración protegida por Wi-Fi",
+"Information sur la configuration Wi-Fi protégée",
+"Informazioni di setup protette sulla rete Wi-Fi",
+"Informatie over Wi-Fi Protected set-up (WPS)",
+"Informações sobre a configuração protegida Wi-Fi",
+"Informace o nastavení ochrany Wi-Fi",
+"Informacje o ustawieniach zabezpieczenia WPS",
+"Informatii Wi-Fi Protected Setup",
+"Wi-Fi защищенная установка информации",
+"Informácie o nastavení WPS",
+"WPS信息",
+"WPS信息"
+);
+var ssid=new Array
+(
+"SSID",
+"SSID",
+"SSID",
+"SSID",
+"SSID",
+"SSID",
+"SSID",
+"SSID",
+"SSID",
+"SSID",
+"SSID",
+"SSID",
+"SSID",
+"SSID"
+);
+var authMode=new Array
+(
+"Authentication Mode",
+"Authentifizierungsmodus",
+"Modo de autenticación",
+"Mode d'authentification",
+"Modalità di autenticazione",
+"Authenticatiestand",
+"Modo de autenticação",
+"Režim autorizace",
+"Tryb upoważnienia ",
+"Mod autentificare",
+"Мода аутентификации",
+"Autentifikačný mód",
+"身份驗證模式",
+"身份验证模式"
+);
+var encryptionType=new Array
+(
+"Encryption Type",
+"Verschlüsselungstyp",
+"Tipo de codificación",
+"Type d'encodage",
+"Tipo di codifica",
+"Soort encryptie",
+"Tipo de encriptação",
+"Typ šifrování",
+"Rodzaj szyfrowania ",
+"Tip Encriptie",
+"Тип кодировки",
+"Typ šifrovania",
+"加密類型",
+"加密类型"
+);
+var psKey=new Array
+(
+"Passphrase Key",
+"Kennwort-Schlüssel",
+"Clave de contraseña",
+"Phrase de securité",
+"Chiave Passphrase",
+"Sleutel voor de netwerksleutel",
+"Chave da frase de acesso",
+"Heslo klíče",
+"Klucz hasła",
+"Cod Passphrase",
+"Пароль",
+"Kľúč vstupnej frázy",
+"通行碼",
+"通行码"
+);
+var wpsAlertInvPin=new Array
+(
+"Invalid pin number! It should be the decimal number (0-9).",
+"Ungültige PIN-Nummer! Es sollte eine Dezimalzahl sein (0-9).",
+"¡Número pin inválido! Deberá ser un número decimal (entre 0-9).",
+"Numéro de pin incorrect ! Il doit s'agir d'un nombre décimal (0-9).",
+"Numero PIN non valido! Deve essere un numero intero (0-9).",
+"Ongeldig teken voor de pincode! Het moet een decimaal teken zijn (0-9).",
+"Número de PIN inválido! Deve ser um número decimal (0 a 9).",
+"Neplatné číslo PIN! Zadejte desítkové číslo z intervalu (0-9).",
+"Niepoprawny numer PIN. Wartość powinna być liczbą dziesiętną (0-9). ",
+"Numar PIN invalid! Trebuie sa fie un numar zecimal (0-9).",
+"Неправильный пин код! Должен быть десятичным числом (0-9)",
+"Nesprávne číslo PIN! Musí to byť celé číslo (0-9).",
+"無效的PIN碼！它應該是十進位碼（0-9）。",
+"无效的PIN码！它应该是十进制码（0-9）。"
+);
+var configSet=new Array
+(
+"Configuration Setup2",
+"Konfigurations-Setup2",
+"Parámetro 2 de configuración",
+"Configuration2",
+"Impostazione configurazione2",
+"Configuratie 2",
+"Definição de configuração 2",
+"Nastavení konfigurace2",
+"Ustawienie 2 konfiguracji",
+"Setari de Instalare 2",
+"Настройка конфигурации 2",
+"Konfigurácia nastavení 2",
+"配置安裝2",
+"配置安装2"
+);
+var deviceSet=new Array
+(
+"Device Configure2",
+"Gerät konfigurieren2",
+"Cofiguración 2 de dispositivo",
+"Configuration périphérique2",
+"Configura dispositivo2",
+"Configuratie apparaat 2",
+"Configurar dispositivo 2",
+"Konfigurace zařízení2",
+"2 konfiguracja urządzenia ",
+"Configurare Echipament 2",
+"Конфигурация устройства 2",
+"Konfigurácia zariadení 2",
+"設備組態2",
+"设备组态2"
+);
+var configRest=new Array
+(
+"Reset Configre2",
+"Konfiguration zurücksetzen2",
+"Reciniciar configuración 2",
+"Reste configuration2",
+"Ripristina configurazione2",
+"Overige configuratie 2",
+"Repor configuração 2",
+"Ostatní konfigurace2",
+"Pozostała konfiguracja 2",
+"Reset Configuratie 2",
+"Оставшаяся конфигурация 2",
+"Zvyšok konfigurácie 2",
+"重設組態2",
+"重设组态2"
+);
+var configMode=new Array
+(
+"Config Mode",
+"Konfigurationsmodus",
+"Modo de configuración",
+"Mode de configuration",
+"Modalità config.",
+"Config Mode",
+"Modo de configuração",
+"Režim konfigurace",
+"Tryb konfiguracyjny ",
+"Mod Configurare",
+"Мода конфигурации",
+"Konfiguračný mód",
+"配置模式",
+"配置模式"
+);
+var registrar=new Array
+(
+"Registrar",
+"Registrieren",
+"Registro",
+"Registre",
+"Responsabile",
+"Registrar",
+"Registar",
+"Registr",
+"Administrator ",
+"Registrator",
+"Сервер",
+"Zapisovateľ",
+"登錄者",
+"登录者"
+);
+var enrollee=new Array
+(
+"Enrollee",
+"Antragsteller",
+"Matriculado",
+"Demandeur",
+"Iscritto",
+"Geregistreerde",
+"Inscrito",
+"Přihlášení",
+"Zapisany użytkownik",
+"Enrollee",
+"Клиент",
+"Účastník kurzu",
+"有登錄在名單的",
+"有登录在名单者"
+);

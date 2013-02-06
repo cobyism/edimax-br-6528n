@@ -1,0 +1,743 @@
+
+RI_handler.o:     file format elf32-bigmips
+
+Sections:
+Idx Name          Size      VMA               LMA               File off  Algn
+  0 .text         00000480  0000000000000000  0000000000000000  00000040  2**4
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  1 .data         00000000  0000000000000000  0000000000000000  000004c0  2**4
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000000  0000000000000000  0000000000000000  000004c0  2**4
+                  ALLOC
+  3 .reginfo      00000018  0000000000000000  0000000000000000  000004c0  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  4 .mdebug       00014b60  0000000000000000  0000000000000000  000004d8  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  5 .note         00000014  0000000000000000  0000000000000000  00015038  2**0
+                  CONTENTS, READONLY
+  6 .rodata       00000160  0000000000000000  0000000000000000  00015050  2**4
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, DATA
+  7 .fixup        00000040  0000000000000000  0000000000000000  000151b0  2**0
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  8 __ex_table    00000040  0000000000000000  0000000000000000  000151f0  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, DATA
+  9 .comment      00000035  0000000000000000  0000000000000000  00015230  2**0
+                  CONTENTS, READONLY
+Disassembly of section .text:
+
+0000000000000000 <emulateIA7546RI>:
+static unsigned int   *computeBranchAddress (struct pt_regs *regs, Branch_t type);
+extern void checkaddress(unsigned long addr);
+
+int emulateIA7546RI(struct pt_regs *regs)
+{
+   0:	27bdffd8 	addiu	$sp,$sp,-40
+   4:	afb20018 	sw	$s2,24($sp)
+   8:	00809021 	move	$s2,$a0
+   c:	afbf0020 	sw	$ra,32($sp)
+  10:	afb3001c 	sw	$s3,28($sp)
+  14:	afb10014 	sw	$s1,20($sp)
+  register ULONG rs;
+  register ULONG rt;
+   union mips_instruction insn;
+  ULONG va;
+  ULONG newVA;
+  ULONG mem;
+  ULONG newPC = 0;
+  ULONG pc;
+  unsigned int byte;
+  int status;
+  int branchDelay;
+  unsigned long value;
+  unsigned long fixup;
+
+  branchDelay = ((0 != (CAUSEF_BD & regs->cp0_cause)) |
+  18:	0c00008a 	jal	228 <isJumpInstruction>
+  1c:	afb00010 	sw	$s0,16($sp)
+  20:	8e4300ac 	lw	$v1,172($s2)
+  24:	00000000 	nop
+  28:	000387c2 	srl	$s0,$v1,0x1f
+  2c:	02028025 	or	$s0,$s0,$v0
+		 isJumpInstruction(regs));
+
+  if (branchDelay) 
+  30:	12000007 	beqz	$s0,50 <emulateIA7546RI+50>
+  34:	00009821 	move	$s3,$zero
+  {
+    newPC = (ULONG) computeBranchAddress (regs,
+  38:	0c00009e 	jal	278 <emulateBranch>
+  3c:	02402021 	move	$a0,$s2
+  40:	02402021 	move	$a0,$s2
+  44:	0c0000f8 	jal	3e0 <computeBranchAddress>
+  48:	00402821 	move	$a1,$v0
+  4c:	00409821 	move	$s3,$v0
+					  emulateBranch(regs));
+  }
+
+   pc = regs->cp0_epc + (branchDelay ? 4:0);
+  50:	8e4200a0 	lw	$v0,160($s2)
+  54:	12000002 	beqz	$s0,60 <emulateIA7546RI+60>
+  58:	00000000 	nop
+  5c:	24420004 	addiu	$v0,$v0,4
+   __get_user(insn.word, (unsigned int *)pc);
+  60:	8c450000 	lw	$a1,0($v0)
+  64:	00001021 	move	$v0,$zero
+
+  /* In case the emulated zero register is somehow trashed. */
+  regs->regs[0] = 0;
+
+  rs = regs->regs[insn.i_format.rs];
+  rt = regs->regs[insn.i_format.rt];
+  68:	00051382 	srl	$v0,$a1,0xe
+  6c:	3042007c 	andi	$v0,$v0,0x7c
+  70:	02424821 	addu	$t1,$s2,$v0
+  74:	000514c2 	srl	$v0,$a1,0x13
+  78:	3042007c 	andi	$v0,$v0,0x7c
+  7c:	02421021 	addu	$v0,$s2,$v0
+
+  va = rs + insn.i_format.simmediate;
+  80:	00051c00 	sll	$v1,$a1,0x10
+  84:	00031c03 	sra	$v1,$v1,0x10
+  88:	ae400018 	sw	$zero,24($s2)
+  8c:	8c420018 	lw	$v0,24($v0)
+  90:	8d260018 	lw	$a2,24($t1)
+  94:	00431021 	addu	$v0,$v0,$v1
+  byte = va & 3;
+  98:	30470003 	andi	$a3,$v0,0x3
+  newVA = va - byte;
+  9c:	00474023 	subu	$t0,$v0,$a3
+
+  status = 0;
+
+  switch (insn.i_format.opcode)
+  a0:	00051e82 	srl	$v1,$a1,0x1a
+  a4:	24020026 	li	$v0,38
+  a8:	10620015 	beq	$v1,$v0,100 <emulateIA7546RI+100>
+  ac:	28620027 	slti	$v0,$v1,39
+  b0:	10400005 	beqz	$v0,c8 <emulateIA7546RI+c8>
+  b4:	24020022 	li	$v0,34
+  b8:	1062000a 	beq	$v1,$v0,e4 <emulateIA7546RI+e4>
+  bc:	00000000 	nop
+  c0:	08000065 	j	194 <emulateIA7546RI+194>
+  c4:	00000000 	nop
+  c8:	2402002a 	li	$v0,42
+  cc:	1062001a 	beq	$v1,$v0,138 <emulateIA7546RI+138>
+  d0:	2402002e 	li	$v0,46
+  d4:	10620021 	beq	$v1,$v0,15c <emulateIA7546RI+15c>
+  d8:	00000000 	nop
+  dc:	08000065 	j	194 <emulateIA7546RI+194>
+  e0:	00000000 	nop
+  {
+  case 0x22:			/* lwl */
+#ifdef __MIPSEB__
+    //mem = *(ULONG *)(va - byte);
+      asm(
+  e4:	8d040000 	lw	$a0,0($t0)
+  e8:	00000000 	nop
+        ".set\tnoat\n"
+        "1:\tlw\t%0,0(%1)\n"
+        "nop\n"
+        ".set\tat\n\t"
+        ".section\t__ex_table,\"a\"\n\t"
+        STR(PTR)"\t1b,%2\n\t"
+        ".previous"
+        :"=&r" (mem)
+        :"r" (newVA), "i" (&&fault)
+        :"$1");
+
+	mem = mem << byte*8;
+  ec:	000718c0 	sll	$v1,$a3,0x3
+  f0:	00642004 	sllv	$a0,$a0,$v1
+
+    rt = (rt & ~(-1UL << byte*8)) | mem;
+  f4:	2402ffff 	li	$v0,-1
+#else /*__MIPSEL__ */
+    //mem = *(ULONG *)(va - byte);
+	asm(
+	".set\tnoat\n"
+	"1:\tlw\t%0,0(%1)\n"
+	"nop\n"
+	".set\tat\n\t"
+	".section\t__ex_table,\"a\"\n\t"
+	STR(PTR)"\t1b,%2\n\t"
+	".previous"
+	:"=&r" (mem)
+	:"r" (newVA), "i" (&&fault)
+	:"$1");
+	
+    mem = mem << (3 - byte)*8;
+
+    rt = (rt & ~(-1UL << (3 - byte)*8)) | mem;
+#endif
+
+	regs->regs[insn.i_format.rt] = rt;
+    status = 1;
+
+    break;
+  f8:	08000048 	j	120 <emulateIA7546RI+120>
+  fc:	00621004 	sllv	$v0,$v0,$v1
+
+  case 0x26:			/* lwr */
+
+#ifdef __MIPSEB__
+    //mem = *(ULONG *)(va - byte);
+    
+	 asm(
+ 100:	8d040000 	lw	$a0,0($t0)
+ 104:	00000000 	nop
+        ".set\tnoat\n"
+        "1:\tlw\t%0,0(%1)\n"
+        "nop\n"
+        ".set\tat\n\t"
+        ".section\t__ex_table,\"a\"\n\t"
+        STR(PTR)"\t1b,%2\n\t"
+        ".previous"
+        :"=&r" (mem)
+        :"r" (newVA), "i" (&&fault)
+        :"$1");
+
+mem = mem >> (3-byte)*8;
+ 108:	24030003 	li	$v1,3
+ 10c:	00671823 	subu	$v1,$v1,$a3
+ 110:	000318c0 	sll	$v1,$v1,0x3
+ 114:	00642006 	srlv	$a0,$a0,$v1
+
+    rt = (rt & ~(-1UL >> (3-byte)*8)) | mem;
+ 118:	2402ffff 	li	$v0,-1
+ 11c:	00621006 	srlv	$v0,$v0,$v1
+ 120:	00021027 	nor	$v0,$zero,$v0
+ 124:	00c21024 	and	$v0,$a2,$v0
+ 128:	00443025 	or	$a2,$v0,$a0
+#else /* __MIPSEL__ */
+    //mem = *(ULONG *)(va - byte);
+	asm(
+	".set\tnoat\n"
+	"1:\tlw\t%0,0(%1)\n"
+	"nop\n"
+	".set\tat\n\t"
+	".section\t__ex_table,\"a\"\n\t"
+	STR(PTR)"\t1b,%2\n\t"
+	".previous"
+	:"=&r" (mem)
+	:"r" (newVA), "i" (&&fault)
+	:"$1");
+    mem = mem >> byte*8;
+
+    rt = (rt & ~(-1UL >> byte*8)) | mem;
+#endif
+	regs->regs[insn.i_format.rt] = rt;
+ 12c:	ad260018 	sw	$a2,24($t1)
+    status = 1;
+
+    break;
+ 130:	0800006b 	j	1ac <emulateIA7546RI+1ac>
+ 134:	24110001 	li	$s1,1
+
+  case 0x2A:			/* swl */
+
+#ifdef __MIPSEB__
+    //mem = *(ULONG *)(va - byte);
+    
+	  asm(
+ 138:	8d040000 	lw	$a0,0($t0)
+ 13c:	00000000 	nop
+        ".set\tnoat\n"
+        "1:\tlw\t%0,0(%1)\n"
+        "nop\n"
+        ".set\tat\n\t"
+        ".section\t__ex_table,\"a\"\n\t"
+        STR(PTR)"\t1b,%2\n\t"
+        ".previous"
+        :"=&r" (mem)
+        :"r" (newVA), "i" (&&fault)
+        :"$1");
+
+
+	mem = mem & ~(-1UL >> byte*8);
+ 140:	000718c0 	sll	$v1,$a3,0x3
+ 144:	2402ffff 	li	$v0,-1
+ 148:	00621006 	srlv	$v0,$v0,$v1
+ 14c:	00021027 	nor	$v0,$zero,$v0
+ 150:	00822024 	and	$a0,$a0,$v0
+
+    rt = (rt >> byte*8) | mem;
+
+#else /* __MIPSEL__ */
+    //mem = *(ULONG *)(va - byte);
+	asm(
+	".set\tnoat\n"
+	"1:\tlw\t%0,0(%1)\n"
+	"nop\n"
+	".set\tat\n\t"
+	".section\t__ex_table,\"a\"\n\t"
+	STR(PTR)"\t1b,%2\n\t"
+	".previous"
+	:"=&r" (mem)
+	:"r" (newVA), "i" (&&fault)
+	:"$1");
+    mem = mem & ~(-1UL >> (3-byte)*8);
+
+    rt = (rt >> (3-byte)*8) | mem;
+#endif
+    *(ULONG *)(va - byte) = rt;
+    status = 1;
+
+    break;
+ 154:	08000061 	j	184 <emulateIA7546RI+184>
+ 158:	00661806 	srlv	$v1,$a2,$v1
+
+  case 0x2E:			/* swr */
+
+#ifdef __MIPSEB__
+    //mem = *(ULONG *)(va - byte);
+    
+	       asm(
+ 15c:	8d040000 	lw	$a0,0($t0)
+ 160:	00000000 	nop
+        ".set\tnoat\n"
+        "1:\tlw\t%0,0(%1)\n"
+        "nop\n"
+        ".set\tat\n\t"
+        ".section\t__ex_table,\"a\"\n\t"
+        STR(PTR)"\t1b,%2\n\t"
+        ".previous"
+        :"=&r" (mem)
+        :"r" (newVA), "i" (&&fault)
+        :"$1");
+
+
+	mem = mem & ~(-1UL << (3-byte)*8);
+ 164:	24030003 	li	$v1,3
+ 168:	00671823 	subu	$v1,$v1,$a3
+ 16c:	000318c0 	sll	$v1,$v1,0x3
+ 170:	2402ffff 	li	$v0,-1
+ 174:	00621004 	sllv	$v0,$v0,$v1
+ 178:	00021027 	nor	$v0,$zero,$v0
+ 17c:	00822024 	and	$a0,$a0,$v0
+
+    rt = (rt << (3-byte)*8) | mem;
+ 180:	00661804 	sllv	$v1,$a2,$v1
+ 184:	00643025 	or	$a2,$v1,$a0
+#else /* __MIPSEL__ */
+    //mem = *(ULONG *)(va - byte);
+	asm(
+	".set\tnoat\n"
+	"1:\tlw\t%0,0(%1)\n"
+	"nop\n"
+	".set\tat\n\t"
+	".section\t__ex_table,\"a\"\n\t"
+	STR(PTR)"\t1b,%2\n\t"
+	".previous"
+	:"=&r" (mem)
+	:"r" (newVA), "i" (&&fault)
+	:"$1");
+    mem = mem & ~(-1UL << byte*8);
+
+    rt = (rt << byte*8) | mem;
+#endif
+
+    *(ULONG *)(va - byte) = rt;
+ 188:	ad060000 	sw	$a2,0($t0)
+    status = 1;
+
+    break;
+ 18c:	0800006b 	j	1ac <emulateIA7546RI+1ac>
+ 190:	24110001 	li	$s1,1
+  default:
+	printk("Unable to handle RI_instr OP = %d\n",insn.i_format.opcode);
+ 194:	3c040000 	lui	$a0,0x0
+ 198:	248400b8 	addiu	$a0,$a0,184
+ 19c:	0c000000 	jal	0 <emulateIA7546RI>
+ 1a0:	00052e82 	srl	$a1,$a1,0x1a
+	while (1);
+ 1a4:	08000069 	j	1a4 <emulateIA7546RI+1a4>
+ 1a8:	00000000 	nop
+    
+  }
+  if (status) 
+ 1ac:	12200009 	beqz	$s1,1d4 <emulateIA7546RI+1d4>
+ 1b0:	00000000 	nop
+  {
+    if (branchDelay) 
+ 1b4:	12000003 	beqz	$s0,1c4 <emulateIA7546RI+1c4>
+ 1b8:	00000000 	nop
+    {
+	  regs->cp0_epc = newPC;
+    }
+ 1bc:	08000075 	j	1d4 <emulateIA7546RI+1d4>
+ 1c0:	ae5300a0 	sw	$s3,160($s2)
+    else 
+    {
+	  regs->cp0_epc += 4;
+ 1c4:	8e4200a0 	lw	$v0,160($s2)
+ 1c8:	00000000 	nop
+ 1cc:	24420004 	addiu	$v0,$v0,4
+ 1d0:	ae4200a0 	sw	$v0,160($s2)
+    }
+  }
+fault:
+      /* Did we have an exception handler installed? */
+      fixup = search_exception_table(regs->cp0_epc);
+ 1d4:	8e4400a0 	lw	$a0,160($s2)
+ 1d8:	0c000000 	jal	0 <emulateIA7546RI>
+ 1dc:	00000000 	nop
+ 1e0:	00408021 	move	$s0,$v0
+	  if (fixup) {
+ 1e4:	12000008 	beqz	$s0,208 <emulateIA7546RI+208>
+ 1e8:	27850232 	addiu	$a1,$gp,562
+			long new_epc;
+			new_epc = fixup_exception(dpf_reg, fixup, regs->cp0_epc);
+			printk(KERN_DEBUG "%s: Forwarding exception at [<%lx>] (%lx)\n",
+ 1ec:	3c040000 	lui	$a0,0x0
+ 1f0:	248400dc 	addiu	$a0,$a0,220
+ 1f4:	8e4600a0 	lw	$a2,160($s2)
+ 1f8:	0c000000 	jal	0 <emulateIA7546RI>
+ 1fc:	02003821 	move	$a3,$s0
+			current->comm, regs->cp0_epc, new_epc);
+			regs->cp0_epc = new_epc;
+			return;
+ 200:	08000083 	j	20c <emulateIA7546RI+20c>
+ 204:	ae5000a0 	sw	$s0,160($s2)
+	  }
+  return (status);
+ 208:	02201021 	move	$v0,$s1
+}
+ 20c:	8fbf0020 	lw	$ra,32($sp)
+ 210:	8fb3001c 	lw	$s3,28($sp)
+ 214:	8fb20018 	lw	$s2,24($sp)
+ 218:	8fb10014 	lw	$s1,20($sp)
+ 21c:	8fb00010 	lw	$s0,16($sp)
+ 220:	03e00008 	jr	$ra
+ 224:	27bd0028 	addiu	$sp,$sp,40
+
+0000000000000228 <isJumpInstruction>:
+
+static int isJumpInstruction(struct pt_regs *regs)
+{
+ 228:	27bdfff0 	addiu	$sp,$sp,-16
+  ULONG pc;
+  union mips_instruction insn;
+
+  pc = regs->cp0_epc;
+ 22c:	8c8200a0 	lw	$v0,160($a0)
+ 230:	00000000 	nop
+  __get_user(insn.word, (unsigned int *)pc);
+ 234:	8c430000 	lw	$v1,0($v0)
+ 238:	00001021 	move	$v0,$zero
+
+  switch (insn.i_format.opcode) 
+ 23c:	00032682 	srl	$a0,$v1,0x1a
+ 240:	14800004 	bnez	$a0,254 <isJumpInstruction+2c>
+ 244:	3062003f 	andi	$v0,$v1,0x3f
+  {
+  case 0x00:			/* Special */
+	if ( (insn.r_format.func == 0x08)   //jr
+ 248:	2442fff8 	addiu	$v0,$v0,-8
+	   | (insn.r_format.func == 0x09))  //jalr
+	{
+		return TRUE;
+	}
+	else
+		return FALSE;
+ 24c:	0800009c 	j	270 <isJumpInstruction+48>
+ 250:	2c420002 	sltiu	$v0,$v0,2
+ 254:	04800006 	bltz	$a0,270 <isJumpInstruction+48>
+ 258:	00001021 	move	$v0,$zero
+ 25c:	28830004 	slti	$v1,$a0,4
+ 260:	10600003 	beqz	$v1,270 <isJumpInstruction+48>
+ 264:	00000000 	nop
+ 268:	28820002 	slti	$v0,$a0,2
+ 26c:	38420001 	xori	$v0,$v0,0x1
+      
+  case 0x02:			/* j */
+  case 0x03:			/* jal */
+    return TRUE;
+
+  default:
+    return FALSE;
+  }
+}
+ 270:	03e00008 	jr	$ra
+ 274:	27bd0010 	addiu	$sp,$sp,16
+
+0000000000000278 <emulateBranch>:
+
+
+static Branch_t emulateBranch(struct pt_regs *regs)
+{
+ 278:	27bdfff0 	addiu	$sp,$sp,-16
+ 27c:	00805021 	move	$t2,$a0
+  register ULONG rs;
+  register ULONG rt;
+  Branch_t branchStatus;
+  ULONG pc;
+  union mips_instruction insn;
+
+  pc = regs->cp0_epc;
+ 280:	8d4900a0 	lw	$t1,160($t2)
+ 284:	00000000 	nop
+  __get_user(insn.word, (unsigned int *)pc);
+ 288:	8d260000 	lw	$a2,0($t1)
+ 28c:	00001021 	move	$v0,$zero
+
+
+  rs = regs->regs[insn.i_format.rs];
+ 290:	00061cc2 	srl	$v1,$a2,0x13
+ 294:	3063007c 	andi	$v1,$v1,0x7c
+ 298:	01431821 	addu	$v1,$t2,$v1
+  rt = regs->regs[insn.i_format.rt];
+ 29c:	00061382 	srl	$v0,$a2,0xe
+ 2a0:	3042007c 	andi	$v0,$v0,0x7c
+ 2a4:	01421021 	addu	$v0,$t2,$v0
+
+  branchStatus = BRANCH_T_NONE;
+  switch(insn.i_format.opcode)
+ 2a8:	00064682 	srl	$t0,$a2,0x1a
+ 2ac:	2d040014 	sltiu	$a0,$t0,20
+ 2b0:	8c670018 	lw	$a3,24($v1)
+ 2b4:	8c430018 	lw	$v1,24($v0)
+ 2b8:	10800046 	beqz	$a0,3d4 <emulateBranch+15c>
+ 2bc:	00002821 	move	$a1,$zero
+ 2c0:	00081080 	sll	$v0,$t0,0x2
+ 2c4:	3c010000 	lui	$at,0x0
+ 2c8:	00220821 	addu	$at,$at,$v0
+ 2cc:	8c220110 	lw	$v0,272($at)
+ 2d0:	00000000 	nop
+ 2d4:	00400008 	jr	$v0
+ 2d8:	00000000 	nop
+  {
+  case 0x00:			/* Special */
+    if ((insn.r_format.func) == 0x08)  /* jr */
+ 2dc:	30c3003f 	andi	$v1,$a2,0x3f
+ 2e0:	24020008 	li	$v0,8
+ 2e4:	14620002 	bne	$v1,$v0,2f0 <emulateBranch+78>
+ 2e8:	24020009 	li	$v0,9
+    {	
+      branchStatus = BRANCH_T_REGISTER;
+ 2ec:	24050003 	li	$a1,3
+    }
+    if ((insn.r_format.func) == 0x09)  /* jalr */
+ 2f0:	14620039 	bne	$v1,$v0,3d8 <emulateBranch+160>
+ 2f4:	00a01021 	move	$v0,$a1
+    {	
+	  regs->regs[insn.r_format.rd] = pc + 8; // skip 2 instruction
+ 2f8:	00061242 	srl	$v0,$a2,0x9
+ 2fc:	3042007c 	andi	$v0,$v0,0x7c
+ 300:	01421021 	addu	$v0,$t2,$v0
+ 304:	25230008 	addiu	$v1,$t1,8
+ 308:	ac430018 	sw	$v1,24($v0)
+      branchStatus = BRANCH_T_REGISTER;
+    }
+    break;
+ 30c:	080000f5 	j	3d4 <emulateBranch+15c>
+ 310:	24050003 	li	$a1,3
+
+  case 0x03:			/* jal */
+	regs->regs[31] = pc + 8; // skip 2 instruction
+ 314:	25220008 	addiu	$v0,$t1,8
+ 318:	ad420094 	sw	$v0,148($t2)
+  case 0x02:			/* j */
+    branchStatus = BRANCH_T_TARGET;
+    break;
+ 31c:	080000f5 	j	3d4 <emulateBranch+15c>
+ 320:	24050002 	li	$a1,2
+
+  case 0x04:			/* beq */
+    if (rs == rt) branchStatus = BRANCH_T_OFFSET;
+ 324:	14e3002c 	bne	$a3,$v1,3d8 <emulateBranch+160>
+ 328:	00a01021 	move	$v0,$a1
+    break;
+ 32c:	080000f5 	j	3d4 <emulateBranch+15c>
+ 330:	24050001 	li	$a1,1
+
+  case 0x05:			/* bne */
+    if (rs != rt) branchStatus = BRANCH_T_OFFSET;
+ 334:	10e30028 	beq	$a3,$v1,3d8 <emulateBranch+160>
+ 338:	00a01021 	move	$v0,$a1
+    break;
+ 33c:	080000f5 	j	3d4 <emulateBranch+15c>
+ 340:	24050001 	li	$a1,1
+
+  case 0x06:			/* blez */
+    if ((signed long) rs <= (signed long) 0)
+ 344:	1ce00024 	bgtz	$a3,3d8 <emulateBranch+160>
+ 348:	00a01021 	move	$v0,$a1
+      branchStatus = BRANCH_T_OFFSET;
+    break;
+ 34c:	080000f5 	j	3d4 <emulateBranch+15c>
+ 350:	24050001 	li	$a1,1
+
+  case 0x07:			/* bgtz */
+    if ((signed long) rs > (signed long) 0)
+ 354:	18e00020 	blez	$a3,3d8 <emulateBranch+160>
+ 358:	00a01021 	move	$v0,$a1
+      branchStatus = BRANCH_T_OFFSET;
+    break;
+ 35c:	080000f5 	j	3d4 <emulateBranch+15c>
+ 360:	24050001 	li	$a1,1
+
+  case 0x01:			/* regimm */
+    switch(insn.i_format.rt) 
+ 364:	00061402 	srl	$v0,$a2,0x10
+ 368:	3043001f 	andi	$v1,$v0,0x1f
+ 36c:	24020001 	li	$v0,1
+ 370:	10620015 	beq	$v1,$v0,3c8 <emulateBranch+150>
+ 374:	28620002 	slti	$v0,$v1,2
+ 378:	10400005 	beqz	$v0,390 <emulateBranch+118>
+ 37c:	24020010 	li	$v0,16
+ 380:	1060000b 	beqz	$v1,3b0 <emulateBranch+138>
+ 384:	00a01021 	move	$v0,$a1
+ 388:	080000f6 	j	3d8 <emulateBranch+160>
+ 38c:	00000000 	nop
+ 390:	10620005 	beq	$v1,$v0,3a8 <emulateBranch+130>
+ 394:	24020011 	li	$v0,17
+ 398:	10620009 	beq	$v1,$v0,3c0 <emulateBranch+148>
+ 39c:	00a01021 	move	$v0,$a1
+ 3a0:	080000f6 	j	3d8 <emulateBranch+160>
+ 3a4:	00000000 	nop
+    {
+    case 0x10:			/* bltzal */
+	  regs->regs[31] = pc + 8; //skip 2 insn
+ 3a8:	25220008 	addiu	$v0,$t1,8
+ 3ac:	ad420094 	sw	$v0,148($t2)
+    case 0x00:			/* bltz */
+      if ((signed long) rs < (signed long) 0)
+ 3b0:	04e10009 	bgez	$a3,3d8 <emulateBranch+160>
+ 3b4:	00a01021 	move	$v0,$a1
+	branchStatus = BRANCH_T_OFFSET;
+      break;
+ 3b8:	080000f5 	j	3d4 <emulateBranch+15c>
+ 3bc:	24050001 	li	$a1,1
+
+    case 0x11:			/* bgezal */
+	  regs->regs[31] = pc + 8; //skip 2 insn
+ 3c0:	25220008 	addiu	$v0,$t1,8
+ 3c4:	ad420094 	sw	$v0,148($t2)
+    case 0x01:			/* bgez */
+      if ((signed long) rs >= (signed long) 0)
+ 3c8:	04e00003 	bltz	$a3,3d8 <emulateBranch+160>
+ 3cc:	00a01021 	move	$v0,$a1
+	branchStatus = BRANCH_T_OFFSET;
+      break;
+    }
+    break;
+
+    /* Todo: bcxf and bcxt */
+
+  case 0x10:			/* cop0 */
+    branchStatus = BRANCH_T_OFFSET;
+    break;
+
+  case 0x11:			/* cop1 */
+    branchStatus = BRANCH_T_OFFSET;
+    break;
+
+  case 0x12:			/* cop2 */
+    branchStatus = BRANCH_T_OFFSET;
+    break;
+
+  case 0x13:			/* cop3 */
+    branchStatus = BRANCH_T_OFFSET;
+ 3d0:	24050001 	li	$a1,1
+    break;
+  }
+
+  return branchStatus;
+ 3d4:	00a01021 	move	$v0,$a1
+}
+ 3d8:	03e00008 	jr	$ra
+ 3dc:	27bd0010 	addiu	$sp,$sp,16
+
+00000000000003e0 <computeBranchAddress>:
+
+
+static UINT *computeBranchAddress (struct pt_regs *regs, Branch_t type)
+{
+ 3e0:	27bdfff0 	addiu	$sp,$sp,-16
+  register ULONG rs;
+  signed int offset;
+
+  ULONG pc;
+  union mips_instruction insn;
+
+  pc = regs->cp0_epc;
+ 3e4:	8c8600a0 	lw	$a2,160($a0)
+ 3e8:	00000000 	nop
+  __get_user(insn.word, (unsigned int *)pc);
+ 3ec:	8cc30000 	lw	$v1,0($a2)
+ 3f0:	00001021 	move	$v0,$zero
+
+  switch (type) 
+ 3f4:	24020001 	li	$v0,1
+ 3f8:	10a2000a 	beq	$a1,$v0,424 <computeBranchAddress+44>
+ 3fc:	00031400 	sll	$v0,$v1,0x10
+ 400:	10a0001a 	beqz	$a1,46c <computeBranchAddress+8c>
+ 404:	24020002 	li	$v0,2
+ 408:	10a2000a 	beq	$a1,$v0,434 <computeBranchAddress+54>
+ 40c:	3c0203ff 	lui	$v0,0x3ff
+ 410:	24020003 	li	$v0,3
+ 414:	10a2000f 	beq	$a1,$v0,454 <computeBranchAddress+74>
+ 418:	00001021 	move	$v0,$zero
+ 41c:	0800011c 	j	470 <computeBranchAddress+90>
+ 420:	00000000 	nop
+  {
+  case BRANCH_T_OFFSET:
+    offset = insn.i_format.simmediate;
+ 424:	00022403 	sra	$a0,$v0,0x10
+    return (pc + 4 + offset);
+ 428:	24820004 	addiu	$v0,$a0,4
+ 42c:	0800011c 	j	470 <computeBranchAddress+90>
+ 430:	00c21021 	addu	$v0,$a2,$v0
+
+  case BRANCH_T_TARGET:
+    offset = insn.j_format.target;
+ 434:	3442ffff 	ori	$v0,$v0,0xffff
+ 438:	00622024 	and	$a0,$v1,$v0
+	return (((pc+4) & 0xf0000000) | (offset << 2)); //?????
+ 43c:	24c20004 	addiu	$v0,$a2,4
+ 440:	3c03f000 	lui	$v1,0xf000
+ 444:	00431024 	and	$v0,$v0,$v1
+ 448:	00041880 	sll	$v1,$a0,0x2
+ 44c:	0800011c 	j	470 <computeBranchAddress+90>
+ 450:	00431025 	or	$v0,$v0,$v1
+
+  case BRANCH_T_REGISTER:
+	rs = regs->regs[insn.i_format.rs];
+ 454:	000314c2 	srl	$v0,$v1,0x13
+ 458:	3042007c 	andi	$v0,$v0,0x7c
+ 45c:	00821021 	addu	$v0,$a0,$v0
+	return rs;
+ 460:	8c420018 	lw	$v0,24($v0)
+ 464:	0800011c 	j	470 <computeBranchAddress+90>
+ 468:	00000000 	nop
+
+  case BRANCH_T_NONE:
+	return (pc + 8);
+ 46c:	24c20008 	addiu	$v0,$a2,8
+
+  default:
+    return (0);
+  }
+}
+ 470:	03e00008 	jr	$ra
+ 474:	27bd0010 	addiu	$sp,$sp,16
+	...
+Disassembly of section .fixup:
+
+0000000000000000 <.fixup>:
+   0:	2402fff2 	li	$v0,-14
+   4:	00002821 	move	$a1,$zero
+   8:	0800001a 	j	68 <emulateIA7546RI+68>
+   c:	00000000 	nop
+  10:	2402fff2 	li	$v0,-14
+  14:	00001821 	move	$v1,$zero
+  18:	0800008f 	j	23c <isJumpInstruction+14>
+  1c:	00000000 	nop
+  20:	2402fff2 	li	$v0,-14
+  24:	00003021 	move	$a2,$zero
+  28:	080000a4 	j	290 <emulateBranch+18>
+  2c:	00000000 	nop
+  30:	2402fff2 	li	$v0,-14
+  34:	00001821 	move	$v1,$zero
+  38:	080000fd 	j	3f4 <computeBranchAddress+14>
+  3c:	00000000 	nop

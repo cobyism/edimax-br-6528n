@@ -1,0 +1,13 @@
+#!/bin/sh
+
+LINUX_VERSION=`uname -r | grep 2.4`
+
+echo "$LINUX_VERSION"
+if [ "$LINUX_VERSION" = "" ]; then
+./lzma-26 $1 $2 $3
+elif [ "$LINUX_VERSION" != "" ]; then
+./lzma-24 $1 $2 $3
+else
+echo "can not find LZMA"
+fi
+

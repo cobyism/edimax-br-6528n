@@ -1,0 +1,178 @@
+##### Mar-15-2010 #####
+Description:
+   Added 8198 nfbi support.
+Files modified:
+-  New Revision: 1477
+   trunk/RLXLinux/bootcode_rtl8196c_98/Makefile
+   trunk/RLXLinux/bootcode_rtl8196c_98/boot/Makefile
+   trunk/RLXLinux/bootcode_rtl8196c_98/boot/include/rtl8196x/asicregs.h
+   trunk/RLXLinux/bootcode_rtl8196c_98/boot/init/ethInt_865x.c
+   trunk/RLXLinux/bootcode_rtl8196c_98/boot/init/eth_tftpd.c
+   trunk/RLXLinux/bootcode_rtl8196c_98/boot/init/main.c
+   trunk/RLXLinux/bootcode_rtl8196c_98/boot/init/rtk.h
+   trunk/RLXLinux/bootcode_rtl8196c_98/boot/init/ver.h
+   trunk/RLXLinux/bootcode_rtl8196c_98/boot/monitor/monitor.c
+   trunk/RLXLinux/bootcode_rtl8196c_98/boot/rtl8196x/swCore.c
+   trunk/RLXLinux/bootcode_rtl8196c_98/boot/rtl8196x/swNic_poll.c
+   trunk/RLXLinux/bootcode_rtl8196c_98/btcode/LzmaDecode.c
+   trunk/RLXLinux/bootcode_rtl8196c_98/btcode/Makefile
+   trunk/RLXLinux/bootcode_rtl8196c_98/btcode/bootload.c
+   trunk/RLXLinux/bootcode_rtl8196c_98/btcode/start.S
+   trunk/RLXLinux/bootcode_rtl8196c_98/btcode/start.h
+   trunk/RLXLinux/bootcode_rtl8196c_98/config.in
+   trunk/RLXLinux/bootcode_rtl8196c_98/btcode/ld-nfbi.script  (add)
+   trunk/RLXLinux/bootcode_rtl8196c_98/def-rtl8198-nfbi-config(add)
+   trunk/RLXLinux/bootcode_rtl8196c_98/boot/rtl8197b.script  (delete)
+   trunk/RLXLinux/bootcode_rtl8196c_98/btcode/rtl8197b.script(delete)
+-----------------------------------------------------------------------------
+ * DATE/WHOM/TYPE:
+ - 2010/06/07, Jason, bug fixed.
+
+ * DIGEST:
+ - Modified  spi flash CS(chip select) error for Single IO flah type.
+
+ * TEST METHOD:
+ - Update the bootcode to the target with the spi flash and test read/write functions. 
+   Check spi CS(chip select) to keep on high level voltage.
+
+ * MODIFIED FILES:
+ - rtl865x/bootcode_rtl8196c_98/oot/init/ver.h - revision: 1.7
+ - rtl865x/bootcode_rtl8196c_98/boot/flash/spi_flash.c - revision: 1.8
+
+ * DESCRIPTION [description about the change]:
+ - Modified  spi flash CS(chip select) error for Single IO flah type.
+   The error causes CS pull low after probing spi flash because the source code prepare to support Qual/Dual IO spi flash.
+   The chip select is pulled low by P/IO mode.
+-----------------------------------------------------------------------------
+ * DATE/WHOM/TYPE:
+ - 2010/03/29, Jason, feature fine-tune
+ 
+ * DIGEST:
+ - Added auto hardware identification for router mode or pocket ap.
+ 
+ * TEST METHOD:
+ - use diffenent hardware to test router or pocket AP mode.
+   Use the different hardware including pocket AP or router to test auto identification.
+ 
+ * MODIFIED FILES:
+ - rtl865x/bootcode_rtl8196c_98/btcode/start.S - revision: 1583
+ - rtl865x/bootcode_rtl8196c_98/config.in - revision: 1597
+ 
+ * DESCRIPTION [description about the change]:
+ - Added auto hardware identification  router or pocket AP mode using hardware strap register(0xb800008).
+-----------------------------------------------------------------------------
+ * DATE/WHOM/TYPE:
+ - 2010/03/29, Jason, feature fine-tune
+ 
+ * DIGEST:
+ - Added auto identification for AP mode or Router mode.
+ 
+ * TEST METHOD:
+ - use diffenent hardware strap pin target to test AP mode and Router mode. Use tftp test OK by download linux.bin or root.bin
+ 
+ * MODIFIED FILES:
+ - rtl865x/bootcode_rtl8196c_98/boot/rtl8196x/swNic_poll.c - revision: 1582
+ - rtl865x/bootcode_rtl8196c_98/boot/include/rtl8196x/asicregs.h - revision: 1582 
+ * DESCRIPTION [description about the change]:
+ - Added auto identification for AP mode or Router mode.
+   Idenfity the bit 20 of the hardware strap register(0xb800008) to decide the AP mode then port list.
+##### Mar-4-2010 #####
+Description:
+   Sync 2.4 bootcode to support 8196C formal chip: 
+   modify for 8196C formal chip bootcode can not upload image(*.bin).
+Files modified:
+-  New Revision: 1439
+   trunk/RLXLinux/bootcode_rtl8196c_98/boot/init/main.c
+
+
+##### Mar-2-2010 #####
+Description:
+   Sync 2.4 bootcode to support 8196C formal chip.
+Files modified:
+-  New Revision: 1422
+   trunk/RLXLinux/bootcode_rtl8196c_98/boot/include/asm/rtl8196.h
+   trunk/RLXLinux/bootcode_rtl8196c_98/boot/include/asm/rtl8196x.h
+   trunk/RLXLinux/bootcode_rtl8196c_98/boot/init/main.c
+   trunk/RLXLinux/bootcode_rtl8196c_98/boot/monitor/monitor.c
+   trunk/RLXLinux/bootcode_rtl8196c_98/boot/rtl8196x/swCore.c
+   trunk/RLXLinux/bootcode_rtl8196c_98/boot/rtl8196x/swNic_poll.c
+   trunk/RLXLinux/bootcode_rtl8196c_98/btcode/start.S
+   trunk/RLXLinux/bootcode_rtl8196c_98/config.in
+
+###### Jun-29-2009 ####
+Description:
+1. Added UART port to GPIO pint support.
+
+###### Jun-08-2009 ####
+Description:
+1. Modified SDRAM clock to 148.5MHz for SPI flash.
+
+#### May-08-2009 ####
+Description:
+1. Modified SDRAM option and add DDR support in rtl8196.
+
+##### Apr-07-2009 ####
+Description:
+1. fix reset led can not function in rtl8196b
+2. modify led config for POST function in rtk platform
+
+##### Apr-06-2009 ####
+Description:
+1. Added Giga boad default config for flash 4M and DDR SDRAM 32M.
+2. Removed the trivial source code and reduced the code size.
+##### Apr-03-2009 ####
+Description:
+1. Modified TFTP checksum error at first time.
+##### Mar-30-2009 #####
+Description:
+1. Add command to config image signature for KLD package
+
+##### Mar-26-2009 #####
+Description:
+1. Add "CONFIG_BOOT_DEBUG_ENABLE" to reduce boot code size
+2. Add "CONFIG_POST_ENABLE" for KLD package
+
+##### Mar-08-2009 #####
+Description:
+1. According to support RSDK 1.3.6a, modified some spi flash coding style.
+Files modified:
+ -bootcode/boot/spi_flash.c
+
+##### Feb-17-2009 #####
+Description:
+1. According to the suggestion from designer of memory controller, 
+   modify the sequence of memory settings to be as follows:
+    1) set Tx and Rx delay
+    2) set DTR
+    3) set DCR
+Files modified:
+    - bootcode\btcode\start.S   (1)
+
+Release version 1.4a, Dec-28-2008
+1. Added SPI flsah support.
+2. Disable unused IP PLL including pcie1, iis and pcm.
+Release version 1.4, Dec-28-2008
+1. Fix the issue that config.bin has low data error after tftp finish.
+2. Fix the reset button doesn't work.
+3. Fix the checksum exception occur when upgrade whole flash image.
+
+Release version 1.4, Nov-28-2008
+1. Add Http server.
+2. Add Dhcp server
+
+Release version 1.3 April-28-2008
+1.Support RTL8652 auto configure
+2.Add LZMA compressing method.
+3.Fix TFTP stability issue.
+4.Added make menuconfig funcions.
+5.Support Linux 2.6 and 2.4 auto booting.
+
+Release version 1.2, Dec-26-2007
+1. Modify the filename comparision for auto-boot
+2. Fix TFTP stability issue
+
+Release version 1.1, Aug-21-2007
+1. Set GPIO port F bit3 to GPIO mode in default
+
+Release version 1.0, Aug-06-2007
+1. First release,  support 8651c+8190 demo board

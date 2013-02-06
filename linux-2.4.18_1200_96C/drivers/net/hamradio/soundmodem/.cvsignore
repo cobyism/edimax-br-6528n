@@ -1,0 +1,10 @@
+.depend
+.*.flags
+gentbl
+sm_tbl_afsk1200.h
+sm_tbl_afsk2666.h
+sm_tbl_psk4800.h
+sm_tbl_hapn4800.h
+sm_tbl_fsk9600.h
+sm_tbl_afsk2400_8.h
+sm_tbl_afsk2400_7.h

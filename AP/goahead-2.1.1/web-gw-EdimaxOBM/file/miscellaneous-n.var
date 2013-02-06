@@ -1,0 +1,3111 @@
+﻿var tlpserverContent=new Array
+(
+"The print server provides LPR and IPP printing methods.<br>You can enable/disable the print server function and change the print server name here.<br>Please assign printer queue name for each printer connected to the USB port.",
+"Der Druckerserver bietet LPR- und IPP-Druckmethoden.<br>Sie können hier die Druckerserver-Funktionen aktivieren/deaktivieren und den Namen des Druckerservers ändern.<br> Bitte weisen Sie für jeden Drucker, der mit dem USB-Anschluss verbunden ist, einen Namen für die Drucker-Warteschlange zu.",
+"El servidor de impresión ofrece métodos de impresión LPR y IPP.<br>Podrá activar/desactila función del servidor de impresión y cambiar el nombre del servidor de impresión aquí.<br>Por favor, atribuya el nombre de extensión de la impresora para cada impresora conectada al puerto USB.",
+"Le serveur d'impression propose les méthodes d'impression LPR et IPP .<br>Vous pouvez activer/désactiver la fonction serveur d'impression et modifier le nom du serveur d'impression ici.<br> Assignez un nom de queue d'impression pour chaque imprimante raccordée au port USB.",
+"Il server stampante offre metodi di stampa LPR e IPP.<br>Qui è possibile attivare/disattivare la funzione server stampante e cambiare il nome del server stampante.<br>Assegnare un nome alla coda di stampa per ciascuna stampante connessa alla porta USB.",
+"De printserver biedt de printmethodes LPR en IPP. <br>U kunt hier de printserverfunctie inschakelen/uitschakelen en en een andere printservernaam invoeren. <br>Voer een wachtrijnaam in voor elke printer die met de USB-poort verbonden is.",
+"O servidor de impressão fornece os métodos de impressão LPR e IPP.<br>Pode activar/desactia função do servidor de impressão e alterar aqui o nome do servidor de impressão.<br>Atribua o nome da fila da impressora para cada impressora ligada à porta USB.",
+"Tiskový server umožňuje metodu tisku LPR a IPP.<br>Zde můžete povolit/zakázat funkci tiskového serveru a změnit název.<br>Pro každou tiskárnu připojenou k USB portu přiřaďte název tiskové fronty.",
+"Serwer druku umożliwia metodę drukowania LPR lub IPP  <br>Umożliwia to włączenie lub wyłączenie funkcji serwera druku i zmianę nazwy serwera druku. <br> Przypisz nazwę kolejki druku dla każdej drukarki podłączonej do portu USB.",
+"Print Serverul ofera urmatoarele metode de printare: LPR si IPP. <br> Puteti activa/dezactiva functia de print server si sa schimbati numele print serverului aici. <br> Alocati un nume pentru fiecare lista de asteptare a imprimantelor conectate la porturile USB.",
+"Принт сервер поддерживает LPR и IPP методы печати.Здесь вы можете включить/выключить опцию принт-сервера и изменить его имя. Пожалуйста назначьте имя каждому принтеру подключенному к USB порту  ",
+"Tlačový server poskytuje metódy tlače LPR alebo IPP. <br> Môžete tu zapnúť/vypnúť funkciu tlačového serveru a zmeniť meno tlačového serveru. <br> Prosím priradte tlačové meno pre každú tlačiareň pripojenú do USB portu.",
+"印表機伺服器提供LPR和IPP的印刷方法。<br>你可以在這裡啟用 /禁用印表機伺服器功能，並更改印表機伺服器的名稱。<br>請指定印表機的USB埠的佇列名稱。",
+"打印机服务器提供LPR和IPP的印刷方法。<br>你可以在这里启用 /禁用打印机服务器功能，并更改打印机服务器的名称。<br>请指定打印机的USB端口的队列名称。"
+);
+var esp=new Array
+(
+"ESP",
+"ESP",
+"ESP",
+"ESP",
+"ESP",
+"ESP",
+"ESP",
+"ESP",
+"ESP",
+"ESP",
+"ESP",
+"ESP",
+"ESP",
+"ESP"
+);
+var file=new Array
+(
+"Please enter a file.",
+"Bitte geben Sie eine Datei ein.",
+"Por favor, indique un archivo.",
+"Entrez un fichier.",
+"Inserire un file.",
+"Voer een bestand in.",
+"Introduza um ficheiro.",
+"Zadejte soubor.",
+"Wprowadż nazwę pliku. ",
+"Introduceti un fisier.",
+"Пожалуйста, введите файл",
+"Prosím vložte súbor.",
+"請輸入一個檔案。",
+"请输入一个档案。"
+);
+var mainMode=new Array
+(
+"Main mode",
+"Hauptmodus",
+"Modo principal",
+"Mode Principal",
+"Modalità principale",
+"Hoofdinstelling",
+"Modo principal",
+"Hlavní režim",
+"Tryb główny ",
+"Mod Principal",
+"Основная мода",
+"Základný mód",
+"主要模式",
+"主要模式"
+);
+var macFilterTable=new Array
+(
+"MAC Address Filtering Table",
+"MAC-Adressen Filterungstabelle",
+"Cuadro de filtrado de dirección MAC",
+"Table de filtrage adresse MAC",
+"Tabella filtraggio indirizzo MAC",
+"Tabel filtering MAC-adres",
+"Tabela de filtragem de endereços MAC",
+"Tabulka filtrovaných adres MAC",
+"Tabela filtrowanych adresów MAC ",
+"Tabela Filtru MAC",
+"Таблица фильтрации MAC адресов",
+"Tabuľka filtra MAC adries",
+"MAC位址過濾表",
+"MAC地址过滤表"
+);
+var save=new Array
+(
+"Save...",
+"Speichern...",
+"Guardar...",
+"Sauvegarder....",
+"Salva...",
+"Opslaan...",
+"Guardar...",
+"Uložit...",
+"Zapisz",
+"Salvati … ",
+"Сохранить…",
+"Uložiť...",
+"儲存",
+"储存"
+);
+var halfd=new Array
+(
+"Half day",
+"Halbtags",
+"Medio día",
+"Demie-journée",
+"Mezza giornata",
+"Halve dag",
+"Meio dia",
+"Půlden",
+"Połowa dnia ",
+"Jumatate de zi",
+"Полдня",
+"Polovica dňa",
+"半天",
+"半天"
+);
+var bit128=new Array
+(
+"128-bit WEP",
+"128-Bit WEP",
+"WEP de 128-bit",
+"WEP 128-bit",
+"WEP a 128-bit",
+"128-bits WEP",
+"WEP de 128 bits",
+"128bitové WEP:",
+"WEP 128 bit",
+"128-bit WEP",
+"128-битовый WEP",
+"128-bit WEP",
+"128位元 WEP",
+"128位 WEP"
+);
+var enabled=new Array
+(
+"Enabled",
+"Aktiviert",
+"Activado",
+"Activée",
+"Attivato",
+"Ingeschakeld",
+"Activado",
+"Povoleno",
+"Włączony",
+"Activat",
+"Включен",
+"Zapnuté",
+"啟用",
+"启用"
+);
+var vpnadvancedAlert=new Array
+(
+"Invalid IKE Life Time! You should set a value between 3600-28800 (1h-8h).",
+"Ungültige IKE Lebensdauer! Sie sollten einen Wert zwischen 3600-28800 (1 - 8 Stunden) einstellen.",
+"¡Duración de vida incorrecta de IKE! Deberá fijar un valor comprendido entre 3600-28800 (1h-8h).",
+"IKE Life Time incorrect ! La valeur doit être comprise entre 3600 et 28800 (1h-8h).",
+"Tempo di vita IKE non valido! Impostare un valore compreso tra 3600 e 28800 (1h-8h).",
+"Ongeldige IKE-duur! U moet een waarde instellen tussen 3600 en 28800 (1u.-8u.).",
+"Tempo de validade IKE inválido! Deve definir um valor entre 3600 e 28800 (1 h a 8 h).",
+"Neplatná doba životnosti IKE! Měli byste nastavit hodnotu mezi 3600-28800 (1 h - 8 h).",
+"Nieważny czas IKE! Powinieneś ustawić wartość między 3600-28800 (1h-8h).",
+"Durata IKE invalida! Introduceti o valoare cuprinsa intre 3600s–28800s(1h-8h).",
+"Неправильное время жизни IKE! Должно быть значение между 3600-28800 (1-8 часов).",
+"Nesprávna hodnota životnosti IKE! Musíte zadať hodnotu mezi 3600-28800 (1h-8h).",
+"IKE存活時間是無效的！你應該設定一個數值在 3600-28800之間（即存活時間在1~8小時之間）。",
+"IKE存活时间是无效的！你应该设定一个数值在 3600-28800之间（即存活时间在1~8小时之间）。"
+);
+var hash=new Array
+(
+"Hash",
+"Hash",
+"Numeral",
+"Empreinte numérique",
+"Hash",
+"Hash (Versleutelen)",
+"Hash",
+"Rušení",
+"Skrót",
+"Hash",
+"Мусор",
+"Hash",
+"哈希數列",
+"哈希数列"
+);
+var passwordSetting=new Array
+(
+"Password Settings",
+"Kennworteinstellungen",
+"Configuración de contraseña",
+"Paramètres Mot de passe",
+"Impostazioni password",
+"Wachtwoorden instellen",
+"Definições da palavra-passe",
+"Nastavení hesla",
+"Ustawienia hasła",
+"Setari Parola",
+"Установка пароля",
+"Nastavenia hesla",
+"密碼設定",
+"密码设定"
+);
+var vpnadvancedAlert2=new Array
+(
+"Invalid Ipsec Key Life! You should set a value between 60-86400 (1m-24h).",
+"Ungültige Ipsec-Schlüssel Standzeit! Sie sollten einen Wert zwischen 60-86400 (1 Minute - -24 Stunden) einstellen.",
+"¡Duración de clave Ipsec inválida! Deberá fijar un valor comprendido entre 60 y-86400 (1m-24h).",
+"Ipsec Key Life incorrect ! La valeur doit être comprise entre 60 et 86400 (1m-24h).",
+"Durata della chiave Ipsec non valida! Impostare un valore compreso tra 60 e 86400 (1m-24h).",
+"Ongeldige duur van de Ipsec Key! U moet een waarde instellen tussen 60 en 28800 (1m.-24u.).",
+"Validade da chave Ipsec inválida! Deve definir um valor entre 60 e 86400 (1 m e 24h).",
+"Neplatná životnost Ipsec klíče! Měli byste nastavit hodnotu mezi 60-86400 (1 min - 24 h).",
+"Nieważny klucz IPSec! Powinieneś ustawić wartość między 60-86400 (1m-24h) ",
+"Durata Ipsec Key invalida! Introduceti o valoare cuprinsa intre 60s – 86400s (1m-24h).",
+"Неправильное время жизни IPSec ключа! Должно быть значение между 60-86400 (1 мин. - 24 часа).",
+"Nesprávna hodnota životnosti Ipsec Musíte zadať hodnotu mezi 60-86400 (1h-8h).",
+"Ipsec金鑰存活時間是無效的！你應該設定一個數值在 60-86400之間（即在1分~24小時之間）。",
+"Ipsec密钥存活时间是无效的！你应该设定一个数值在 60-86400之间（即在1分~24小时之间）。"
+);
+var activeProtocol=new Array
+(
+"Active Protocol",
+"Aktives Protokoll",
+"Protocolo activo",
+"Protocole actif",
+"Protocollo attivo",
+"Actief protocol",
+"Actiprotocolo",
+"Aktivní protokol",
+"Aktywny protokół",
+"Protocoale Active",
+"Активный протокол",
+"Aktívny protokol",
+"啟用協議",
+"启用协议"
+);
+var security=new Array
+(
+"Security",
+"Sicherheit",
+"Seguridad",
+"Sécurité",
+"Sicurezza",
+"Beveiliging",
+"Segurança",
+"Bezpečnost",
+"Zabezpieczenie",
+"Securitate",
+"Безопасность",
+"Bezpečnosť",
+"安全機制",
+"安全机制"
+);
+var wan=new Array
+(
+"WAN",
+"WAN",
+"WAN",
+"WAN",
+"WAN",
+"WAN",
+"WAN",
+"WAN",
+"WAN",
+"WAN",
+"WAN",
+"WAN",
+"廣域網路",
+"广域网"
+);
+var twods=new Array
+(
+"Two days",
+"Zwei Tage",
+"Dos días",
+"Deux jours",
+"Due giorni",
+"Twee dagen",
+"Dois dias",
+"Dva dny",
+"Dwa dni",
+"Doua Zile",
+"Два дня",
+"Dva dni",
+"兩天",
+"两天"
+);
+var oneh=new Array
+(
+"One hour",
+"Eine Stunde",
+"Una hora",
+"Une heure",
+"Un'ora",
+"Een uur",
+"Uma hora",
+"Jedna hodina",
+"Jedna godzina ",
+"O ora",
+"Один час",
+"Jedna hodina",
+"一小時",
+"一小时"
+);
+var authenticaiton=new Array
+(
+"Authenticaiton",
+"Authentifizierung",
+"Autentificación",
+"Authentification",
+"Autenticazione",
+"Authenticatie",
+"Autenticação",
+"Autorizace",
+"Uwierzytelnienie",
+"Autentificare",
+"Аутотентификация",
+"Autentifikácia",
+"認證",
+"认证"
+);
+var system=new Array
+(
+"System",
+"System",
+"Sistema",
+"Système",
+"Sistema",
+"Systeem",
+"Sistema",
+"Systém",
+"System",
+"Sistem",
+"Система",
+"Systém",
+"系統",
+"系统"
+);
+var hmacMd5=new Array
+(
+"HMAC MD5",
+"HMAC MD5",
+"HMAC MD5",
+"HMAC MD5",
+"HMAC MD5",
+"HMAC MD5",
+"HMAC MD5",
+"HMAC MD5",
+"HMAC MDS",
+"HMAC MD5",
+"HMAC MD5",
+"HMAC MD5",
+"HMAC MD5",
+"HMAC MD5"
+);
+var ok=new Array
+(
+"OK",
+"OK",
+"OK",
+"OK",
+"OK",
+"OK",
+"OK",
+"OK",
+"OK",
+"OK",
+"OK",
+"OK",
+"確定",
+"确定"
+);
+var gatewayAddr=new Array
+(
+"gateway address ",
+"Gateway-Adresse ",
+"dirección de la puerta de acceso: ",
+"Adresse Passerelle ",
+"indirizzo gateway ",
+"Gateway-adres ",
+"endereço de gateway ",
+"Adresa brány ",
+"Adres bramki",
+"Adresa Gateway",
+"Адрес шлюза",
+"Adresa brány",
+"閘道器位址",
+"网关地址"
+);
+var usbMass=new Array
+(
+"USB Mass Storage",
+"USB Massenspeicher",
+"Almacenamiento de masa USB",
+"Stockage de masse USB",
+"Dispositivo di archiviazione USB",
+"USB-opslagmedium",
+"Armazenamento de massa USB",
+"USB Mass Storage",
+"Dysk pamięci masowej USB ",
+"Dispozitiv Stocare USB",
+"USB запоминающее устройство",
+"Pamäťové zariadenia USB",
+"USB大容量儲存碟",
+"USB大容量储存碟"
+);
+var dhcpEndAddr=new Array
+(
+"DHCP client end address ",
+"DHCP-Client Endadresse ",
+"Dirección final de cliente DHCP ",
+"Adresse de fin client DHCP ",
+"Client e indirizzo DHCP ",
+"DHCP-client doeladres ",
+"Endereço final do cliente DHCP ",
+"Koncová adresa 1DHCP klienta ",
+"Końcowy adres DHCP klienta",
+"Adresa client DHCP de sfarsit",
+"Кончный адрес DHCP клиента",
+"Konečná adresa DHCP klienta",
+"DHCP終端位址",
+"DHCP终端地址"
+);
+var des3=new Array
+(
+"3DES",
+"3DES",
+"3DES",
+"3DES",
+"3DES",
+"3DES",
+"3DES",
+"3DES",
+"3DES",
+"3DES",
+"3DES",
+"3DES",
+"3DES",
+"3DES"
+);
+var associatedClient=new Array
+(
+"Associated Clients",
+"Verbundene Clients",
+"Clientes asociados",
+"Clients associés",
+"Client associati",
+"Verbonden clients",
+"Clientes associados",
+"Přidružení klienti",
+"Inni klienci",
+"Clienti Asociati ",
+"Ассоциированные клиенты",
+"Pridružený klienti",
+"有關聯的終端設備",
+"有关联的终端设备"
+);
+var command=new Array
+(
+"command :",
+"Befehl :",
+"comando:",
+"Commande :",
+"comando :",
+"commando:",
+"comando:",
+"Příkaz:",
+"Polecenie",
+"comanda :",
+"команды:",
+"príkaz:",
+"命令：",
+"命令："
+);
+var enable=new Array
+(
+"Enable",
+"Aktivieren",
+"Activar",
+"Activer",
+"Attiva",
+"Inschakelen",
+"Activar",
+"Povolit",
+"Włącz",
+"Activare",
+"Включить",
+"Zapnúť",
+"啟用",
+"启用"
+);
+var informatContent=new Array
+(
+"You can use the information to monitor the Access Point\'s MAC address, runtime code and hardware version.",
+"Sie können die Informationen verwenden, um die MAC-Adresse, den Laufzeit-Code und die Hardwareversion des Access Points zu überwachen.",
+"Podrá utilizar la información para controlar la dirección MAC del punto de acceso, el código de funcionamiento y la versión del material.",
+"Vous pouvez utiliser ces informations pour surveiller l'adresse MAC du point d'accès, le code de durée de fonctionnement et la version matérielle.",
+"È possibile usare le informazioni per monitorare l'indirizzo MAC del punto di accesso, il codice di runtime e la versione dell'hardware.",
+"U kunt de informatie gebruiken om het MAC-adres van het accesspoint, de runtime en de hardwareversie te bewaken.",
+"Pode utilizar as informações para monitorizar o endereço MAC do Ponto de acesso, código runtime e versão do hardware.",
+"Informace můžete použít pro zobrazení adresy MAC přístupového bodu, kódu runtime a verze hardwaru.",
+"Możesz wykorzystać informacje do monitorowania adresu MAC punktu dostępowego, wersję oprogramowania sprzętowego oraz wersję sprzętu.",
+"Puteti folosi informatia pentru a monitoriza adres MAC a Access Point-ului, si versiunile codurilor de rulare si hardware.",
+"Вы можете использовать эту информацию для определения MAC адреса точки доступа, кода встроенной программы и номера версии физического устройства",
+"Môžete použiť tieto informácie pre monitorovanie MAC adries Prístupového bodu, kód programu a verziu hardware.",
+"你可以使用這些信息來監控無線接入點的MAC位址，Runtime Code和硬體版本。",
+"你可以使用这些信息来监控无线接入点的MAC地址，Runtime Code和硬件版本。"
+);
+var stationAd=new Array
+(
+"Station-Ad Hoc",
+"Station-Ad Hoc",
+"Estación ad hoc",
+"Station-Ad Hoc",
+"Stazione Ad Hoc",
+"Station-Ad Hoc",
+"Estação Ad Hoc",
+"Stanice Ad Hoc",
+"Stacja Ad-Hoc",
+"Statie Ad Hoc",
+"Станция - Ad Hoc",
+"Stanica- Ad Hoc",
+"Station-Ad Hoc",
+"Station-Ad Hoc"
+);
+var encryption=new Array
+(
+"Encryption",
+"Verschlüsselung",
+"Codificación",
+"Encodage",
+"Codifica",
+"Encryptie",
+"Encriptação",
+"Šifrování",
+"Szyfrowanie ",
+"Encriptie ",
+"Кодировка",
+"Šifrovanie",
+"加密",
+"加密"
+);
+var portName=new Array
+(
+"Port Name ",
+"Portname ",
+"Nombre del puerto ",
+"Nom du port ",
+"Nome della porta ",
+"Poortnaam ",
+"Nome da porta ",
+"Jméno portu ",
+"Nazwa portu",
+"Nume Port",
+"Имя порта",
+"Meno portu",
+"埠名",
+"埠名"
+);
+var ethernet=new Array
+(
+"Ethernet",
+"Ethernet",
+"Ethernet",
+"Ethernet",
+"Ethernet",
+"Ethernet",
+"Ethernet",
+"Ethernet",
+"Sieć",
+"Ethernet",
+"Ethernet",
+"Ethernet",
+"Ethernet",
+"Ethernet"
+);
+var japan=new Array
+(
+"MKK 1-14(Japan)",
+"MKK 1-14 (Japan)",
+"MKK 1-14 (Japón)",
+"MKK 1-14(Japon)",
+"MKK 1-14(Giappone)",
+"MKK 1-14 (Japan)",
+"MKK 1-14 (Japão)",
+"MKK 1-14 (Japonsko)",
+"MKK 1-14 (Japonia)",
+"MKK 1-14(Japan)",
+"MKK 1-14(Япония)",
+"MKK 1-14(Japan)",
+"MKK 1-14（日本）",
+"MKK 1-14（日本）"
+);
+var phase2=new Array
+(
+"Phase 2 (IPSEC SA)",
+"Phase 2 (IPSEC SA)",
+"Fase 2 (IPSEC SA)",
+"Phase 2 (IPSEC SA)",
+"Fase 2 (IPSEC SA)",
+"Phase 2 (IPSEC SA)",
+"Fase 2 (IPSEC SA)",
+"Fáze 2 (IPSEC SA)",
+"Faza 2 (IPSEC SA) ",
+"Etapa 2 (IPSEC SA)",
+"Фаза 2 (IPSEC SA)",
+"Phase 2 (IPSEC SA)",
+"Phase 2 (IPSEC SA)",
+"Phase 2 (IPSEC SA)"
+);
+var wanType=new Array
+(
+"WAN TYPE",
+"WAN TYP",
+"TIPO WAN",
+"TYPE WAN",
+"Tipo DI WAN",
+"WAN TYPE",
+"TIPO DE WAN",
+"Typ sítě WAN",
+"RODZAJ WAN ",
+"Tip WAN",
+"WAN ТИП",
+"TYP WAN",
+"WAN類型",
+"WAN类型"
+);
+var warning=new Array
+(
+"Warning",
+"Warnung",
+"Advertencia",
+"Avertissement",
+"Avvertimento",
+"Waarschuwing",
+"Aviso",
+"Varování",
+"Ostrzeżenie ",
+"Atentie!",
+"Внимание",
+"Upozornenie",
+"警告",
+"警告"
+);
+var advancedSetting=new Array
+(
+"Advanced Setting",
+"Erweiterte Einstellung",
+"Configuración avanzada",
+"Paramètres avancés",
+"Impostazioni avanzate",
+"Advanced Setting",
+"Advanced Setting (Definição avançada)",
+"Pokročilé nastavení",
+"Ustawienia zaawansowane",
+"Setari Avansate",
+"Дополнительные настройки",
+"Pokročilé nastavenia",
+"進階設定",
+"进阶设定"
+);
+var exchange=new Array
+(
+"Exchange Type",
+"Austauschtyp",
+"Tipo de intercambio",
+"Type d'échange",
+"Tipo di scambio",
+"Uitwisselingstype",
+"Tipo de câmbio",
+"Typ výměny",
+"Rodzaj wymiany",
+"Tip de Schimbare",
+"Тип обмена",
+"Výmený typ",
+"交換類型",
+"交换类型"
+);
+var enableControl=new Array
+(
+"Enable Wireless Access Control",
+"WLAN-Zugangssteuerung aktivieren",
+"Actiel control de acceso inalámbrico",
+"Activer le contrôle du point d'accès sans fil",
+"Abilita controllo degli accessi wireless",
+"Schakel draadloze toegangscontrole in",
+"Acticontrolo de acesso sem fios",
+"Povolit řízení přístupu k bezdrátové síti",
+"Włącz kontrolę dostępu bezprzewodowego",
+"Activare Control Acces Wireless",
+"Включить беспроводной контроль доступа",
+"Zapnúť kontrolu bezdrôtového prístupu",
+"啟用無線存取控制",
+"启用无线访问控制"
+);
+var managementIP=new Array
+(
+"Management IP",
+"Verwaltung IP",
+"Gestión de IP",
+"Administration IP",
+"IP gestione",
+"Besturings-IP",
+"IP de gestão",
+"Správa IP",
+"Zarządzany adres IP",
+"IP de Management",
+"IP управление",
+"Správa IP",
+"管理IP",
+"管理IP"
+);
+var radiusServer=new Array
+(
+"Radius Server",
+"Radius Server",
+"Servidor radial",
+"Serveur Radius",
+"Server Radius",
+"Radius-server",
+"Servidor Radius",
+"Radius Server",
+"Serwer Radius",
+"Server Radius",
+"RADIUS сервер",
+"Radius Server",
+"Radius 伺服器",
+"Radius 服务器"
+);
+var france=new Array
+(
+"FRANCE 10-13(France)",
+"FRANCE 10-13 (Frankreich)",
+"FRANCE 10-13 (Francia)",
+"FRANCE 10-13(France)",
+"FRANCIA 10-13(Francia)",
+"FRANCE 10-13 (Frankrijk)",
+"FRANCE 10-13 (França)",
+"FRANCE 10-13 (Francie)",
+"Francja 1-13 (Francja)",
+"Franta 10-13(Franta)",
+"ФРАНЦИЯ 10-13 (Франция)",
+"FRANCE 10-13 (Francúzsko)",
+"10-13法國（法國）",
+"10-13法国（法国）"
+);
+var off=new Array
+(
+"OFFOn",
+"AUS Ein",
+"OFFOn",
+"ARRETMarche",
+"OFFOn",
+"UIT/AAN",
+"Desligado/ligado",
+"OFFOn",
+"Wyłączony/Włączony",
+"OFF / On",
+"Выключено/включено",
+"OFFOn",
+"Off/On",
+"Off/On"
+);
+var wirelessConfig=new Array
+(
+"Wireless Configuration",
+"WLAN-Konfiguration",
+"Configuración inalámbrica",
+"Configuration sans fil",
+"Configurazione wireless",
+"Draadloze configuratie",
+"Configuração sem fios",
+"Konfigurace bezdrátové sítě",
+"Konfiguracja bezprzewodowa",
+"Configuratie Wireless",
+"Конфигурация беспроводной связи",
+"Konfigurácia bezdrôtového pripojenia",
+"無線配置",
+"无线配置"
+);
+var opmodeContent3=new Array
+(
+"In this mode, all  ethernet ports  are bridged together and the wireless client will connect to ISP access point. The NAT is enabled and PCs in ethernet ports share the same IP to ISP through wireless LAN. You must set the wireless to client mode first and connect to the ISP AP in Site-Survey page.  The connection type can be setup in WAN page by using PPPOE, DHCP client, PPTP client or static IP.",
+"In diesem Modus sind alle Ethernetports miteinander verbunden und der WLAN-Client wird sich mit dem Access Point des Internetdienstanbieters verbinden. NAT ist aktiviert und die PCs an den Ethernetports teilen sich per WLAN die gleiche IP zum Internetdienstanbieter. Sie müssen zuerst den WLAN zu Client-Modus einstellen und auf der Standardaufnahme-Seite eine Verbindung mit dem Access Point des Internetdienstanbieters herstellen.  Die Verbindungsart kann auf der WAN-Seite mit PPPOE, DHCP-Client, PPTP-Client oder statischer IP konfiguriert werden.",
+"En este modo, todos los puertos Ethernet están unidos juntos y el cliente inalámbrico se conectará al punto de acceso ISP. La NAT está activada y los PC en los puertos ethernet comparten la misma IP a ISP a través del LAN inalámbrico. Deberá fijar el inalámbrico en el modo de cliente primeramente y conectarse al AP ISP en la página de la encuesta del centro.  El tipo de conexión puede configurarse en la página WAN utilizando PPPOE, el cliente DHCP, el cliente PPTP o la IP estática.",
+"Dans ce mode, tous les ports ethernet sont pontés ensemble et le client sans fil se connection au point d'accès FAI. Le NAT est activé et le PC des ports ethernet partagent la même IP vers le FAI grâce au LAN sans fil. Vous devez d'abord définir les paramètres sans fil du mode client puis vous connecter au PA FAI sur la page Etude sur Site.  Le type de connexion peut être configuré dans la page WAN en utilisant PPPOE, Client DHCP, Client PPTP ou IP fixe.",
+"In questa modalità, tutte le porte ethernet sono collegate per mezzo di ponti e il client wireless si connette al punto di accesso dell'ISP. La funzione NAT è attivata e i PC sulle porte ethernet condividono lo stesso IP dell'ISP tramite la LAN wireless. Impostare la rete senza fili in modalità client e connettersi all'AP dell'ISP nella pagina Indagine sito.  Il tipo di connessione può essere impostato nella pagina WAN utilizzando il PPPOE, il client DHCP o PPTP o l'IP statico.",
+"In deze stand vormen alle ethernetpoorten samen een bridge en de draadloze client zoekt verbinding met het accesspoint van de ISP. De NAT is ingeschakeld en de pc's in de ethernetpoorten delen dezelfde IP naar de ISP via het draadloze LAN. Stel eerst de 'wireless to client' in en maak dan via de pagina 'Site-Survey' (locatieoverzicht) verbinding met het accesspoint van de ISP.  Het aansluittype kan geconfigureerd worden op de WAN-pagina, met gebruik van PPPOE, DHCP-client, PPTP-client of statisch IP.",
+"Neste modo, todas as portas Ethernet são ligadas e o cliente sem fios é ligado ao ponto de acesso do ISP. A NAT é activada e os PC nas portas Ethernet partilham o mesmo IP para o ISP através da rede local sem fios. Deve definir primeiro o sem fios para o modo cliente e estabelecer ligação ao PA do ISP na página Inquérito do local.  O tipo de ligação pode ser configurado na página WAN utilizando PPPOE, cliente DHCP, cliente PPTP ou IP estático.",
+"V tomto režimu jsou všechny ethernetové porty propojeny a bezdrátový klient se připojí k přístupovému bodu ISP. Funkce NAT je povolena a počítače v internetových portech sdílí stejnou IP adresu ISP prostřednictvím bezdrátové sítě. Nejprve musíte nastavit bezdrátovou síť do klientského režimu a připojit k přístupovému bodu ISP na stránce zjišťování sítí.  Typ připojení lze nastavení na stránce WAN pomocí PPPOE, DHCP klienta, PPTP klienta nebo statické IP.",
+"W trybie tym wszystkie porty sa połączone razem a klient zostaje bezprzewowodowo podłączony do punktu dostępowego dostawcy internetu. NAT jest włączony a komputer i współdzielą ten sam adres IP poprzez bezprzewodową sieć LAN dostarczaną przez ISP. Konieczne jest ustawivar enie trybu klienta bezprzewodowego i wyszukanie dostępnej sieci. Rodzaj połączenia konfiguruje się na stronie wyboru typu połączenia WAN: PPPoE, DHCP, PPTP lub stały adres IP.",
+"In acest mod, toate porturile Ethernet sunt legate intre ele si clientii wireless se vor conecta la access pointul ISP-ului. Functia NAT este activata si calculatoarele din porturile Ethernet impart acelasi IP catre ISP prin reteaua wireless. Prima data trebuie sa setati wireless-ul in modul client si sa va conectati la ISP in pagina de Cautare Retele. Tipul de conexiune poate fi configurat din pagina WAN selecatand PPPoE, DHCP, PPTP sau IP Static.",
+"В этой моде, все Ethernet порты соединены вместе и беспроводной клиент подключится к ISP точке доступа. NAT включен и компьютеры, присоединенные к Ethernet портам, подключены к ISP через беспроводную LAN сеть. Вы должны установить клиентскую моду беспроводной связи и подключиться к ISP точке доступа на странице Обзора Сайтов. Тип связи может быть установлен на странице WAN с использованием PPPoE, DHCP клиента, PPTP клиента или статического IP.",
+"V tomto móde budú všetky ethernetové porty prepojené dohromady a bezdrôtový klien sa pripojí k prístupovému bodu ISP. NAT je zapnuté a PC pripojené do ethernetových portov zdieľajú rovnakú IP pre ISP cez bezdrôtovú LAN. Najskôr musíte nastaviť bezdrôtové pripojenie do klientského módu a potom sa pripojiť k prístupovému bodu ISP na Site-Survey stránke. Typ pripojenia môže byť nastavený na stránke WAN pomocou PPPoE, DHCP klienta, PPTP klienta alebo statickej IP.",
+"In this mode, all  ethernet ports  are bridged together and the wireless client will connect to ISP access point. The NAT is enabled and PCs in ethernet ports share the same IP to ISP through wireless LAN. You must set the wireless to client mode first and connect to the ISP AP in Site-Survey page.  The connection type can be setup in WAN page by using PPPOE, DHCP client, PPTP client or static IP.",
+"In this mode, all  ethernet ports  are bridged together and the wireless client will connect to ISP access point. The NAT is enabled and PCs in ethernet ports share the same IP to ISP through wireless LAN. You must set the wireless to client mode first and connect to the ISP AP in Site-Survey page.  The connection type can be setup in WAN page by using PPPOE, DHCP client, PPTP client or static IP."
+);
+var domainNameIP=new Array
+(
+"Domain Name Server IP ",
+"Domain Name Server-IP ",
+"IP del servidor del nombre de dominio ",
+"IP DNS ",
+"IP Domain Name Server ",
+"IP-adres domeinnaamserver ",
+"IP do servidor do nome do domínio ",
+"IP adresa DNS ",
+"Nazwa domeny serwera IP",
+"IP Domain Name Server",
+"IP адрес DNS сервера",
+"Doménové meno servera IP",
+"網域名稱伺服器的IP",
+"域名服务器的IP"
+);
+var ecapsulation=new Array
+(
+"Encapsulation",
+"Verkapselung",
+"Encapsulación",
+"Encapsulation",
+"Incapsulamento",
+"Encapsulatie",
+"Encapsulamento",
+"Shrnutí",
+"Enkapsulacja",
+"Incapsulare",
+"Инкапсуляция",
+"Zapuzdrenie",
+"Encapsulation",
+"Encapsulation"
+);
+var printServer=new Array
+(
+"Print Server",
+"i-Watcher",
+"Servidor de impresión",
+"Serveur d'impression",
+"Server stampante",
+"Printerserver",
+"Servidor de impressão",
+"Tiskový server",
+"Serwer druku",
+"Print Server",
+"Принт-сервер",
+"Tlačový server",
+"印表機伺服器",
+"打印机服务器"
+);
+var debug=new Array
+(
+"Debug",
+"Fehlerbehebung",
+"Desbloqueo",
+"Débogage",
+"Debug",
+"Debuggen",
+"Depurar",
+"Ladění",
+"Usuwanie błędów ",
+"Debug",
+"Отладка",
+"Ladenia",
+"除錯",
+"除错"
+);
+var doc=new Array
+(
+"DOC 1-11(Canada)",
+"DOC 1-11(Kanada)",
+"DOC 1-11(Canadá)",
+"DOC 1-11(Canada)",
+"DOC 1-11(Canada)",
+"DOC 1-11 (Canada)",
+"DOC 1-11(Canadá)",
+"DOC 1-11 (Kanada)",
+"DOC1-11 (Kanada)",
+"DOC 1-11(Canada)",
+"DOC 1-11(Канада)",
+"DOC 1-11(Kanada)",
+"DOC 1-11(加拿大)",
+"DOC 1-11(加拿大)"
+);
+var dh5=new Array
+(
+"DH5(modp1536)",
+"DH5(modp1536)",
+"DH5 (modp1536)",
+"DH5(modp1536)",
+"DH5(modp1536)",
+"DH5(modp1536)",
+"DH5(modp1536)",
+"DH5 (modp1536)",
+"DH5 (modp1536)",
+"DH5(modp1536)",
+"DH5(modp1536)",
+"DH5(modp1536)",
+"DH5(modp1536)",
+"DH5(modp1536)"
+);
+var wpaShare=new Array
+(
+"WPA-shared key",
+"WPA-Shared Key",
+"Clave WPA compartida",
+"Clé partagée WPA",
+"Chiave WPA condivisa",
+"WPA-shared key (Netwerksleutel)",
+"Chave partilhada WPA",
+"WPA sdílený klíč",
+"Wspólny klucz WPA ",
+"Cheie Preshared WPA",
+"WPA-совместимый ключ ",
+"WPA - zdieľaný kľúč",
+"WPA共享金鑰",
+"WPA共享密钥"
+);
+var nic0=new Array
+(
+"NIC0 address ",
+"NIC0 Adresse ",
+"Dirección NIC0 ",
+"Adresse NIC0 ",
+"Indirizzo NIC0 ",
+"NIC0-adres ",
+"Endereço NIC0 ",
+"Adresa NIC0 ",
+"Adres NICO",
+"Adresa NIC0",
+"NICO адрес",
+"adresa NIC0",
+"NIC 0的位址",
+"NIC 0的地址"
+);
+var enableSta=new Array
+(
+"Enable Static Routing",
+"Statisches Routing aktivieren",
+"Actienrutación estática",
+"Activer routage statique",
+"Abilita routing statico",
+"Statische routing inschakelen",
+"Actiencaminhamento estático",
+"Povolit statické směrování",
+"Włącz routing statyczny",
+"Activare Routare Statica",
+"Включить статическую маршрутизацию",
+"Zapnúť statické presmerovanie",
+"啟用靜態路由",
+"启用静态路由"
+);
+var sysutiliAlert=new Array
+(
+"Invalid Domain Name. It should be in (0~9 or a~z or -).",
+"Ungültiger Domainname. Dieser sollte sein (0~9 oder a~z oder -).",
+"Nombre de dominio inválido. Deberá ser en (0~9 o a~z o -).",
+"Nom de domaine incorrect. Il doit être composer des caractères suivants 0~9 ou a~z ou -).",
+"Nome di dominio non valido. Dovrebbe contenere i caratteri (0~9 o a~z o -).",
+"Ongeldige domeinnaam. Geldige tekens zijn (0~9 of a~z of -).",
+"Nome de domínio inválido. Deve ser (0 a 9 ou a~z ou -).",
+"Neplatné doménové jméno. Mělo by být v rozsahu (0~9 nebo a~z nebo -).",
+"Nieważna nazwa domeny. Nazwa winna być (0-9 lub a-z lub -)",
+"Nume Domeniu Invalid. Trebuie sa contina caractere 0 – 9; a – z sau –",
+"Неправильное имя домена. Должно быть 0-9 или A-Z или -.",
+"Nesprávne meno domény. Musí byť v rozsahu (0~9 alebo a~z alebo -).",
+"無效的網域名稱。應該在(0〜9, a〜z, - )",
+"无效的域名。应该在(0〜9, a〜z, - )"
+);
+var hdVersion=new Array
+(
+"Hardware Version",
+"Hardwareversion",
+"Versión del material",
+"Version matérielle",
+"Versione dell'hardware",
+"Hardwareversie",
+"Versão do hardware",
+"Verze hardwaru",
+"Wersja sprzętu",
+"Versiune Hardware",
+"Версия физического устройства",
+"Verzia Hardware",
+"硬體版本",
+"硬件版本"
+);
+var sysutiliAlert5=new Array
+(
+"Invalid DHCP client address range!Ending address should be greater than starting address.",
+"Ungültiger DHCP-Client Adressbereich! Die Endadresse sollte größer als die Startadresse sein.",
+"¡Dirección incorrecta de cliente DHCP! La dirección final deberá ser mayor que la dirección de inicio.",
+"Intercalle d'adresses clients DHCP incorrect ! L'adresse de fin doit être supérieure à l'adresse de début.",
+"Intervallo dell'indirizzo client DHCP non valido! L'indirizzo finale deve essere maggiore dell'indirizzo iniziale.",
+"Ongeldig bereik DHCP client-adres! Eindadres moet hoger zijn dan startadres.",
+"Intervalo de endereços de cliente DHCP inválido!O endereço final deve ser superior ao endereço inicial.",
+"Neplatný rozsah adres DHCP klientů! Koncová adresa by měla být vyšší než počáteční.",
+"Nieprawidłowy zakres adresu klienta DHCP. Adres końcowy powinien być większy niż adres początkowy. ",
+"Raza adrese clienti DHCP invalida! Adresa de sfarsit trebuie sa fie mai mare decat cea de inceput.",
+"Неправильный диапазон адресов DHCP клиентов! Конечный адрес должен быть больше начального адреса.",
+"Nesprávny rozsah adries DHCP klienta! Koniec adries musí byť väčší než začiatok adries.",
+"無效的DHCP終端的位址範圍！結束位址應大於起始位址。",
+"无效的DHCP终端的地址范围！结束地址应大于起始地址。"
+);
+var nic1=new Array
+(
+"NIC1 address ",
+"NIC1 Adresse ",
+"Dirección NIC1 ",
+"Adresse NIC1 ",
+"Indirizzo NIC1 ",
+"NIC1-adres ",
+"Endereço NIC1 ",
+"Adresa NIC1 ",
+"Adres NIC1",
+"Adresa NIC1",
+"NIC1 адрес.",
+"Adresa NIC1",
+"NIC 1的位址",
+"NIC 1的地址"
+);
+var macAddrFilter=new Array
+(
+"MAC Address Filtering",
+"MAC-Adressen Filterung",
+"Filtrado de dirección MAC",
+"Filtrage adresse MAC",
+"Filtraggio indirizzo MAC",
+"Filteren op MAC-adres",
+"Filtragem de endereços MAC",
+"Filtrování adres MAC",
+"Adres filtrowania MAC ",
+"Filtru adresa MAC",
+"Фильтрация MAC адреса",
+"Filtrovanie adries MAC",
+"MAC位址過濾",
+"MAC地址过滤"
+);
+var halfh=new Array
+(
+"Half hour",
+"Halbstündlich",
+"Media hora",
+"Demie-heure",
+"Mezz'ora",
+"Half uur",
+"Meia hora",
+"Půl hodiny",
+"Pół godziny",
+"Jumatate de ora",
+"Полчаса",
+"Pol hodina",
+"半小時",
+"半小时"
+);
+var dh2=new Array
+(
+"DH2(modp1024)",
+"DH2(modp1024)",
+"DH2 (modp1024)",
+"DH2(modp1024)",
+"DH2(modp1024)",
+"DH2(modp1024)",
+"DH2(modp1024)",
+"DH2 (modp1024)",
+"DH2(modp1024)",
+"DH2(modp1024)",
+"DH2(modp1024)",
+"DH2(modp1024)",
+"DH2(modp1024)",
+"DH2(modp1024)"
+);
+var upTime=new Array
+(
+"Up time",
+"Betriebszeit",
+"Fecha de finalización",
+"Temps utilisable",
+"Tempo di attività",
+"Actieve tijdsduur",
+"Tempo activo",
+"Doba provozu",
+"Czas pracy ",
+"Timp de rulare",
+"Время непрерывной работы",
+"Doba nepreručovanej prevádzky",
+"可用時間",
+"可用时间"
+);
+var sha1=new Array
+(
+"SHA1",
+"SHA1",
+"SHA1",
+"SHA1",
+"SHA1",
+"SHA1",
+"SHA1",
+"SHA1",
+"SHA1",
+"SHA1",
+"SHA1",
+"SHA1",
+"SHA1",
+"SHA1"
+);
+var staticRoute=new Array
+(
+"Static Routing",
+"Statisches Routing",
+"Enrutamiento estático",
+"Routage statique",
+"Routing statico",
+"Statische routing",
+"Encaminhamento estático",
+"Statické směrování",
+"Routing statyczny",
+"Routare Statica",
+"Статическая маршрутизация",
+"Statické presmerovanie",
+"靜態路由",
+"静态路由"
+);
+var add=new Array
+(
+"Add",
+"Hinzufügen",
+"Añadir",
+"Ajouter",
+"Aggiungi",
+"Voeg toe",
+"Adicionar",
+"Přidat",
+"Dodaj ",
+"Adaugare",
+"Добавить",
+"Pridať",
+"新增",
+"新增"
+);
+var wep=new Array
+(
+"WEP",
+"WEP",
+"WEP",
+"WEP",
+"WEP",
+"WEP",
+"WEP",
+"WEP",
+"WEP 128 bit",
+"WEP",
+"WEP",
+"WEP",
+"WEP",
+"WEP"
+);
+var tlupgradeConfirm=new Array
+(
+"Do you wish to continue with the upgrade process?",
+"Möchten Sie mit dem Aktualisierungsvorgang fortfahren?",
+"¿Desea seguir con el proceso de actualización?",
+"Souhaitez-vous poursuivre la mise à niveau ?",
+"Continuare con il processo di aggiornamento?",
+"Wilt u doorgaan met het upgraden?",
+"Pretende continuar o processo de actualização?",
+"Chcete pokračovat v procesu aktualizace?",
+"Czy chcesz kontynuować aktualizację? ",
+"Doriti sa continuati procesul de upgrade?",
+"Вы хотите продолжить процесс замены?",
+"Skutočne si prajete pokračovať v procese aktualizácie?",
+"你想繼續升級過程嗎？",
+"你想继续升级过程吗？"
+);
+var startIP=new Array
+(
+"Start IP ",
+"Start IP ",
+"IP de inicio ",
+"IP de début ",
+"IP iniziale ",
+"Start-IP ",
+"IP inicial ",
+"Počáteční IP ",
+"Początkowy IP",
+"IP de Start",
+"Стартовый IP",
+"Žačiatočná IP",
+"起始IP",
+"起始IP"
+);
+var sysutiliAlert2=new Array
+(
+"Password is not matched.",
+"Kennwort stimmt nicht überein.",
+"La contraseña no coincide.",
+"Le mot de passe ne corespond pas.",
+"La password non corrisponde.",
+"Wachtwoord komt niet overeen.",
+"A palavra-passe não corresponde.",
+"Heslo nesouhlasí.",
+"Nieprawidłowe hasło ",
+"Paroal nu este aceeasi.",
+"Пароль не совпадает",
+"Heslo nie je správne.",
+"密碼無法匹配。",
+"密码无法匹配。"
+);
+var upload=new Array
+(
+"Upload",
+"Upload",
+"Carga",
+"Transfert ascendant",
+"Upload",
+"Uploaden",
+"Enviar",
+"Odesílání",
+"Załaduj ",
+"Upload",
+"Заменить",
+"Vyslať",
+"上載",
+"上载"
+);
+var encryptiContent=new Array
+(
+"This page allows your data being transmitted over the wireless network securely. If this function is enabled, please make sure your wireless stations are using the same encryption keys as the Access Point.",
+"Diese Seite ermöglicht, dass Ihre Daten sicher über das Drahtlosnetzwerk übertragen werden. Wenn diese Funktion aktiviert ist, stellen Sie bitte sicher, dass Ihre drahtlosen Stationen den gleichen Netzwerkschlüssel wie der Access Point verwenden.",
+"Esta página permite que sus datos sean transmitidos a la red inalámbrica en toda seguridad. Si esta función está activada, por favor, compruebe que sus estaciones inalámbricas utilizan las mismas claves de codificación como Punto de Acceso.",
+"Cette page permet de transmettre vos données sur le réseau sans fil de façon sécurisée. Si cette fonction est activée, assurez-vous que vos stations sans fil utilisent les mêmes clé d'encodage que le point d'accès.",
+"Questa pagina consente la trasmissione sicura dei dati sulla rete wireless. Se questa funzione è attivata, assicurarsi che le stazioni wireless utilizzino le stesse chiavi di codifica del punto di accesso.",
+"Deze pagina maakt het mogelijk uw data veilig over het draadloze netwerk te versturen. Zorg er als deze functie is ingeschakeld voor dat uw draadloze stations dezelfde encryptiesleutel gebruiken als uw accesspoint.",
+"Esta página permite transmitir os seus dados pela rede sem fios de maneira segura. Se esta função estiver activada, verifique se as suas estações sem fios estão a utilizar as mesmas chaves de encriptação que o Ponto de acesso.",
+"Tato stránka umožňuje nastavení bezpečného odesílání dat v bezdrátové síti. Je-li funkce aktivní, ujistěte se, že bezdrátové stanice používají stejný šifrovací klíč jako přístupový bod.",
+"Dzieki tej stronie możliwe jest bezpieczne przesyłanie danych w sieci bezprzewodowej. Po włączeniu tej funkcji należy sprawdzić czy stacja bezprzewodowa wykorzystuje ten sam klucz szyfrowania co punkt dostępu. ",
+"Aceasta pagina va permite sa securizati datele transmise prin reteaua wireless. Daca activati aceasta functie, asigurati-va ca statiile wireless folosesc acelesi chei de criptare ca si Access Point-ul.",
+"Эта страница позволит вам безопасно передавать данные через беспроводную сеть. Если эта функция включена, пожалуйста, убедитесь, что ваша беспроводная станция использует тот же ключ кодировки что и точка доступа.",
+"Táto stránka dovoľuje nastaviť bezpečné posielanie vašich dát cez bezdrôtovú sieť. Ak je táto funkcia zapnuta, prosím uistite sa, že vaše bezdrôtové stanice používajú rovnaký šifrovací kľúč ako Prístupový bod.",
+"本頁面可讓你透過無線網路安全來傳輸封包。",
+"本页面可让你透过无线网络安全来传输封包。"
+);
+var ipp=new Array
+(
+"IPP ",
+"IPP ",
+"IPP ",
+"IPP ",
+"IPP ",
+"IPP ",
+"IPP ",
+"IPP ",
+"IPP",
+"IPP ",
+"IPP ",
+"IPP",
+"IPP",
+"IPP"
+);
+var twohs=new Array
+(
+"Two hours",
+"Zwei Stunden",
+"Dos horas",
+"Deux heures",
+"Due ore",
+"Twee uur",
+"Duas horas",
+"Dvě hodiny",
+"Dwie godziny ",
+"Doua Ore",
+"Два часа",
+"Dve hodiny",
+"兩小時",
+"两小时"
+);
+var tlupgradeContent=new Array
+(
+"This tool allows you to upgrade the Broadband router\'s system firmware. <br>Enter the path and name of the upgrade file and then click the APPLY button below. You will be prompted to confirm the upgrade.",
+"Dieses Tool ermöglicht Ihnen die Systemfirmware des Breitbandrouters zu aktualisieren. <br>Geben Sie Pfad und Namen der Upgrade-Datei ein und klicken Sie anschließend auf die Schaltfläche ÜBERNEHMEN darunter. Sie werden aufgefordert, das Upgrade zu bestätigen.",
+"Esta herramienta le permite actualizar el firmware de sistema del enrutador de banda ancha. <br>Indique el camino y el nombre del archivo de actualización y a continuación, pulse el botón APLICAR indicado más abajo. Le aparecerá un mensaje para confirmar la actualización.",
+"Cet outil vous permet de mettre à jour le microprogramme du système du routeur à large bande. <br>Entrez le chemin et le nom du fichier de mise à jour puis cliquez sur la touche APPLIQUER ci-dessous. Il vous est demandé de confirmer la mise à jour.",
+"Questo strumento consente di aggiornare il firmware di sistema del router a banda larga. <br>Inserire il percorso e il nome del file di aggiornamento e fare clic sul pulsante APPLICA sottostante. Verrà richiesto di confermare l'aggiornamento.",
+"Deze voorziening maakt het mogelijk de systeemfirmware van de breedbandrouter te upgraden. <br>Voer het pad en de naam van het upgrade-bestand in en klik dan op APPLY (Toepassen) hieronder. Het systeem vraagt u het upgraden te bevestigen.",
+"Esta ferramentas permite actualizar o firmware do sistema do router de banda larga. <br>Introduza o caminho e o nome do ficheiro de actualização e depois clique no botão APPLY (Aplicar) indicado abaixo. Ser-lhe-á solicitado para confirmar a actualização.",
+"Tento nástroj vám umožňuje aktualizovat firmware širokopásmového směrovače. <br>Zadejte cestu a název souboru aktualizace a pak klepněte na tlačítko APPLY (Použít) níže. Budete vyzváni k potvrzení aktualizace firmwaru.",
+"Narzędzie to pozwala na aktualizację oprogramowania sprzętowego routera. <br> Podaj ścieżkę dostępu do pliku z oprogramowaniem i kliknij przycisk “Zastosuj” poniżej. Zostaniesz poproszony o potwierdzenie aktualizacji.",
+"Aceasta unealta va ofera posibilitatea sa upgradati firmwareul routerului. Introduceti locatia si numele fisierului de upgradare si apoi faceti click pe butonul de Aplicare de mai jos.  Vi se va cere sa confirmati actiunea.",
+"Эта опция позволит вам заменить встроенную программу маршрутизатора. Введите путь и имя файла для замены и затем нажмите кнопку ПРИМЕНИТЬ. Появится окно для подтверждения замены.",
+"Tento nástroj dovoľuje aktualizovať systémový firmware Bezdrôtového routeru. <br> Vložte cestu a názov aktualizačného súboru a potom kliknite na tlačidlo POUŽIŤ. Budete vyzvaný pre potvrdenie aktualizácie.",
+"此工具允許你升級寬頻路由器的系統韌體。輸入要升級的路徑和檔案名稱，然後單擊套用按鈕，將出現你確認升級的提示。",
+"此工具允许你升级宽带路由器的系统韧体。输入要升级的路径和文件名，然后单击套用按钮，将出现你确认升级的提示。"
+);
+var staAndInf=new Array
+(
+"Status and Information",
+"Status und Information",
+"Estado e información",
+"Etat et Informations",
+"Stato e informazioni",
+"Status en bevestiging",
+"Estado e informações",
+"Stav a informace",
+"Stan i informacja ",
+"Stare si Informatii",
+"Статус и Информация",
+"Stav a Informácie",
+"狀態和資訊",
+"状态和信息"
+);
+var select=new Array
+(
+"Select",
+"Auswählen",
+"Seleccionar",
+"Selectionner",
+"Seleziona",
+"Selecteer",
+"Seleccionar",
+"Výběr",
+"Wybierz",
+"Selectare",
+"Выбрать ",
+"Vybrať",
+"選擇",
+"选择"
+);
+var accept=new Array
+(
+"Accept",
+"Annehmen",
+"Aceptar",
+"Accepter",
+"Accetta",
+"Accepteer",
+"Aceitar",
+"Přijmout",
+"Zaakceptuj",
+"Accepta",
+"Принять",
+"Akceptovať",
+"接受",
+"接受"
+);
+var dhcpStartAddr=new Array
+(
+"DHCP client start address ",
+"DHCP-Client Startadresse ",
+"Dirección inicial de cliente DHCP ",
+"Adresse de début client DHCP ",
+"Indirizzo iniziale client DHCP ",
+"DHCP-client startadres ",
+"Endereço inicial do cliente DHCP ",
+"Počáteční adresa DHCP klienta ",
+"Adres początkowy klienta DHCP",
+"Adresa de Start clienti DHCP",
+"Стартовый адрес DHCP клиента",
+"Začiatočná adresa DHCP klienta",
+"DHCP終端的起始位址",
+"DHCP终端的起始地址"
+);
+var macfilteConfirm=new Array
+(
+"\'Do you really want to delete the selected entry?\'",
+"\'Möchten Sie den gewählten Eintrag wirklich löschen?\'",
+"¿Desea realmente eliminar la entrada seleccionada?",
+"\'Souhaitez-vous vraiment supprimer l'entrée sélectionnée ?\'",
+"\'Eliminare l'immissione selezionata?\'",
+"\'Weet u zeker dat u de selectie wilt verwijderen?\'",
+"\'Pretende mesmo apagar a entrada seleccionada?\'",
+"\'Opravdu chcete vymazat vybranou hodnotu?\'",
+"Czy naprawdę chcesz skasować wybrane wpisy?",
+"\'Sunteti sigur ca vreti sa stergeti inregistrarile selectate?\'",
+"Вы действительно хотите удалить выбранный компонент?",
+"\'Skutočne si prajete zmazať vybrané zadanie?\'",
+"你真的要刪除所選的項目？",
+"你真的要删除所选的项目？"
+);
+var tlstorageContent=new Array
+(
+"Please make sure the USB Mass Storage device is insert to USB port correctly",
+"Bitte stellen Sie sicher, dass das USB-Massenspeichergerät richtig in den USB-Anschluss gesteckt ist",
+"Por favor, compruebe que el dispositivo de almacenamiento de masa USB se ha introducido en el puerto USB correctamente.",
+"Assurez-vous que le périphérique de stockage de masse USB est bien inséré dans le port USB.",
+"Assicurarsi che il dispositivo di archiviazione USB sia inserito correttamente nella porta USB",
+"Controleer of het USB-opslagapparaat correct is aangesloten op de USB-poort",
+"Certifique-se de que o dispositivo de armazenamento de massa USB está inserido correctamente na porta USB",
+"Ujistěte se, že zařízení USB Mass Storage je do portu USB zasunuto správně",
+"Sprawdź czy urządzenie pamięci USB zostało prawidłowo podłączone do portu USB",
+"Asigurati-va ca Dispozitivl de Stocare USB este corect introdus in portul USB",
+"Пожалуйста, убедитесь, что USB запоминающее устройство правильно подключено к порту USB",
+"Prosím uistite sa, že pamäťové zariadenie USB je správne pripojené k USB portu.",
+"請確認 USB大容量儲存設備已正常插入到USB埠",
+"请确认 USB大容量储存设备已正常插入到USB埠"
+);
+var twowks=new Array
+(
+"Two weeks",
+"Zwei Wochen",
+"Dos semanas",
+"Deux semaines",
+"Due settimane",
+"Twee weken",
+"Duas semanas",
+"Dva týdny",
+"Dwa tygodnie ",
+"Doua Saptamani",
+"Две недели",
+"2 týždne.",
+"兩個星期",
+"两个星期"
+);
+var vpnadvancedAlert3=new Array
+(
+"Remember to press \"Apply Change\" button to save change",
+"Denken Sie daran, die Schaltfläche \"Änderung übernehmen\" zu klicken, um die Änderungen zu speichern",
+"Recuerde pulsar el botón de \"Aplicar cambios\" para guardar los cambios",
+"Souvenez-vous d'appuyer sur \"Appliquer les changements\" pour sauvegarder vos modifications",
+"Ricordarsi di premere il pulsante \"Applica modifica\" per salvare la modifica",
+"Vergeet niet op \"Apply Change\" (Wijzigingen toepassen) te klikken om de wijziging op te slaan",
+"Prima o botão \"Apply Change\" (Aplicar alteração) para guardar as alterações",
+"Nezapomeňte stisknout tlačítko \„Použít změny\" pro uložení změn",
+"Pamiętaj aby wcisnąć \"Zastosuj zmiany\", aby zachować zmiany",
+"Nu uitati sa apasati butonul \"Aplica Schimbari\" pentru a salva modificarile",
+"Не забудьте нажать кнопку \"Применить Изменения\" для сохранения изменений.",
+"Pamätajte si stlačiť tlačidlo \"Potvrdiť zmeny\" pre uloženie zmien.",
+"請記住，按\“套用更改\”按鈕保存更改",
+"请记住，按\“套用更改\”按钮保存更改"
+);
+var macFilter=new Array
+(
+"MAC Filtering",
+"MAC-Filterung",
+"Filtrado MAC",
+"Filtrage MAC",
+"Filtraggio MAC",
+"MAC-filtering",
+"Filtragem de MAC",
+"Filtrování adres MAC",
+"Filtrowanie MAC",
+"Filtru MAC",
+"MAC фильтрация",
+"Filtrácia MAC",
+"MAC過濾",
+"MAC过滤"
+);
+var runtimeCode=new Array
+(
+"Runtime Code Version",
+"Laufzeitcode Version",
+"Versión del código de funcionamiento",
+"Version code de durée de fonctionnement",
+"Versione codice runtime",
+"Runtimeversie",
+"Versão do código de runtime",
+"Verze runtime kódu",
+"Wersja oprogramowania sprzętowego",
+"Versiune Cod Runtime",
+"Код версии встроенной программы",
+"Verzia programového kódu",
+"Runtime Code Version",
+"Runtime Code Version"
+);
+var endIP=new Array
+(
+"End IP ",
+"End-IP ",
+"IP final ",
+"IP de fin ",
+"IP finale ",
+"Doel-IP ",
+"IP final ",
+"Koncová IP ",
+"Końcowy IP",
+"IP de Sfarsit",
+"Конечный IP",
+"Konečná IP",
+"結束 IP",
+"结束 IP"
+);
+var europe=new Array
+(
+"ETST 1-13(Europe)",
+"ETST 1-13(Europa)",
+"ETST 1-13 (Europa)",
+"ETST 1-13(Europe)",
+"ETST 1-13(Europa)",
+"ETST 1-13 (Europa)",
+"ETST 1-13 (Europa)",
+"ETST 1-13 (Evropa)",
+"ETST1-13 (Europa)",
+"ETST 1-13(Europa)",
+"ETST 1-13(Европа)",
+"ETST 1-13(Europe)",
+"ETST 1-13（歐洲）",
+"ETST 1-13（欧洲）"
+);
+var configTool=new Array
+(
+"Configuration Tool",
+"Konfigurations-Tool",
+"Herramienta de configuración",
+"Outil de Configuration",
+"Strumento di configurazione",
+"Configuratiegereedschap",
+"Ferramenta de configuração",
+"Konfigurační nástroje",
+"Narzędzia konfiguracji",
+"Unelte de Configurare",
+"Инструменты конфигурации",
+"Konfiguračný nástroj",
+"配置工具",
+"配置工具"
+);
+var delAll=new Array
+(
+"Delete All",
+"Alle löschen",
+"Borrar todos",
+"Tout supprimer",
+"Elimina tutto",
+"Alles wissen",
+"Apagar tudo",
+"Vymazat vše",
+"Skasuj wszystkie ",
+"Sterge Tot",
+"Удалить все",
+"Vymazať všetky",
+"刪除全部",
+"删除全部"
+);
+var licenceContent=new Array
+(
+"If your Internet service fee is charged by the time connected. We strongly suggest that you should power off the Router when you get off line.",
+"Wenn Ihr Internetanbieter die Gebühren nach Verbindungszeit abrechnet, empfehlen wir Ihnen dringend, den Router auszuschalten, wenn Sie offline gehen.",
+"Si su tasa de servicio a Internet se aplica en función del tiempo conectado. Le recomendamos encarecidamente que apague el enrutador cuando se desconecte.",
+"Si vos droits aux services Internet sont facturés à la durée de connexion. Nous vous recommandons fortement d'éteindre le routeur lorsque vous vous déconnectez.",
+"Se la tariffa di connessione a Internet viene addebitata in base al tempo di connessione. Consigliamo vivamente di spegnere il router quando ci si disconnette.",
+"Als u voor uw internet betaalt naar ratio van de tijd dat u verbinding hebt, raden we u met klem aan de router uit te schakelen als u offline gaat.",
+"Se a sua taxa de serviço da Internet for cobrado de acordo com o tempo de ligação. Recomendamos vivamente que desligue o router quando estiver offline.",
+"Je-li vaše platba za internetové služby účtována podle doby připojení, velmi doporučujeme při nepoužívání sítě směrovač vypínat.",
+"Jeśli usługa dostępu do sieci jest płatna na podstawie  czasu podłączenia do sieci, proponujemy wyłączenie routera po rozłączeniu z siecią. ",
+"Daca serviciul internet este taxat dupa timpul de conectare, recomandam inchiderea routerului cand nu mai folositi internetul.",
+"Если ваше подключение к Интернету оплачивается по времени, мы настоятельно рекомендуем выключать питание маршрутизатора когда вы его не используете.",
+"Pokiaľ platí za internetové služby, podľa doby pripojenia, dôrazne vám odporúčame vypnúť router ak ste prestali pracovať s internetom.",
+"If your Internet service fee is charged by the time connected. We strongly suggest that you should power off the Router when you get off line.",
+"If your Internet service fee is charged by the time connected. We strongly suggest that you should power off the Router when you get off line."
+);
+var reject=new Array
+(
+"Reject",
+"Ablehnen",
+"Rechazar",
+"Rejeter",
+"Rifiuta",
+"Verwerpen",
+"Rejeitar",
+"Odmítnout",
+"Odrzuć",
+"Respinge",
+"Отклонить",
+"Odmietnuť",
+"拒絕",
+"拒绝"
+);
+var DHCPServer=new Array
+(
+"DHCP Server ",
+" DHCP-Server  ",
+"Servidor DHCP ",
+"Serveur DHCP ",
+"Server DHCP ",
+" DHCP-server  ",
+"Servidor DHCP ",
+"DHCP server ",
+"Serwer DHCP",
+"Server DHCP",
+"DHCP сервер",
+"DHCP Server ",
+"DHCP伺服器",
+"DHCP服务器"
+);
+var restoreToDef=new Array
+(
+"Restore to Factory Default : ",
+"Zurücksetzen auf Werkseinstellungen: ",
+"Recuperar parámetros de fábrica: ",
+"Restaurer les paramètres d'usine par défaut : ",
+"Riporta alle impostazioni di fabbrica: ",
+"Terugzetten naar fabrieksinstellingen: ",
+"Repor para a predefinição de origem: ",
+"Obnovit výchozí tovární nastavení: ",
+"Przywróć ustawienia fabryczne ",
+"Revenire la Setarile din Fabrica : ",
+"Восстановить заводские настройки:",
+"Obnoviť továrenske nastavenia:",
+"還原到出廠預設：",
+"还原到出厂预设："
+);
+var channelNum=new Array
+(
+"Channel Number",
+"Kanalnummer",
+"Número de canal",
+"Numéro de canal",
+"Numero canale",
+"Kanaalnummer",
+"Número do canal",
+"Číslo kanálu",
+"Numer kanału",
+"Numar Canal",
+"Номер канала",
+"Číslo kanálu",
+"頻道編號",
+"频道编号"
+);
+var subMask=new Array
+(
+"Subnet Mask ",
+"Subnetzmaske ",
+"Máscara de subred ",
+"Masque de sous réseau ",
+"Maschera sottorete ",
+"Subnetmasker ",
+"Máscara de subrede ",
+"Maska podsítě ",
+"Maska podsieci",
+"Masca Subretea",
+"Маска подсети",
+"Maska podsiete",
+"子網路遮罩",
+"子网掩码"
+);
+var mode=new Array
+(
+"Mode",
+"Modus",
+"Modo",
+"Mode",
+"Modalità",
+"Stand",
+"Modo",
+"Režim",
+"Tryb ",
+"Mod",
+"Мода",
+"Mód",
+"模式",
+"模式"
+);
+var phase1=new Array
+(
+"Phase 1 (ISAKMP SA)",
+"Phase 1 (ISAKMP SA)",
+"Fase 1 (ISAKMP SA)",
+"Phase 1 (ISAKMP SA)",
+"Fase 1 (ISAKMP SA)",
+"Phase 1 (ISAKMP SA)",
+"Fase 1 (ISAKMP SA)",
+"Fáze 1 (ISAKMP SA)",
+"Faza 1 (ISAKMP SA)",
+"Etapa 1 (ISAKMP SA)",
+"Фаза 1 (ISAKMP SA) ",
+"Phase 1 (ISAKMP SA)",
+"Phase 1 (ISAKMP SA)",
+"Phase 1 (ISAKMP SA)"
+);
+var systemUtility=new Array
+(
+"System Utility",
+"System-Dienstprogramm",
+"Utilidad del sistema",
+"Utilitaire système",
+"Utility di sistema",
+"Toepasbaar systeem",
+"Utilitário do sistema",
+"Systémové nástroje",
+"Narzędzia systemowe",
+"Utilitare Sistem",
+"системная утилита",
+"Systémový program",
+"系統工具",
+"系统工具"
+);
+var hmacSha1=new Array
+(
+"HMAC SHA1",
+"HMAC SHA1",
+"HMAC SHA1",
+"HMAC SHA1",
+"HMAC SHA1",
+"HMAC SHA1",
+"HMAC SHA1",
+"HMAC SHA1",
+"HMAC SHA1",
+"HMAC SHA1",
+"HMAC SHA1",
+"HMAC SHA1",
+"HMAC SHA1",
+"HMAC SHA1"
+);
+var clear=new Array
+(
+"Clear",
+"Löschen",
+"Borrar",
+"Effacer",
+"Cancella",
+"Leegmaken",
+"Apagar",
+"Vymazat",
+"Wyczyść",
+"Sterge",
+"Стереть",
+"Vyčistiť",
+"清除",
+"清除"
+);
+var defaultGateIP=new Array
+(
+"Default Gateway IP ",
+"Standardgateway IP ",
+"Puerta predefinida IP ",
+"IP Passerelle par défaut ",
+"IP gateway predefinito ",
+"Standaard gateway-IP ",
+"IP do gateway predefinido ",
+"IP adresa výchozí brány ",
+"Bramka domyślna IP",
+"IP Gateway Implicit",
+"IP адрес шлюза по умолчанию",
+"Prednastavená IP brány",
+"預設閘道器的IP",
+"默认网关的IP"
+);
+var resetContent2=new Array
+(
+"It may take some time to complete this process and restart the system.Please don\'t turn off the Access Point before the process is complete.",
+"Es kann einige Zeit dauern, bis dieser Vorgang abgeschlossen und das System neu gestartet ist. Bitte schalten Sie den Access Point nicht aus, bevor der Vorgang abgeschlossen ist.",
+"Podrá tardar un tiempo en completar este proceso y reiniciar el sistema. Por favor, no apague el punto de acceso antes de que se complete el proceso.",
+"L'achèvement de ce processus peut prendre du temps et redémarrer le système. Merci de ne pas éteindre le point d'accès avant la fin du processus.",
+"Il completamento di questo processo e il riavvio del computer potrebbero richiedere alcuni minuti. Non spegnere il punto di accesso prima del termine del processo.",
+"Het kan even duren voor dit proces voltooid is en het systeem herstart. Schakel het accesspoint niet uit voor het proces voltooid is.",
+"Pode demorar algum tempo a completar este processo e a reiniciar o sistema. Não desligue o Ponto de acesso antes do processo estar concluído.",
+"Dokončení tohoto procesu a restartování systému může trvat určitou dobu. Nevypínejte přístupový bod před dokončením tohoto procesu.",
+"Zakończenie tego procesu oraz ponowne uruchomienie systemu może trochę potrwać. Prosimy nie wyłączać punktu dostępowego przed zakończeniem procesu. ",
+"Completarea acestei operatiuni si repornirea sistemului pot dura mai mult. Nu inchideti Access Pointul inainte de terminarea procesului.",
+"Требуется некоторое время для завершения процесса и перезапуска системы. Пожалуйста, не выключайте точку доступа до завершения процесса.",
+"Dokončenie tohto procesu a reštart systému trvá určitú dobu. Prosím nevypínajte Prístupový bod predtým než je proces kompletný.",
+"這個過程未完成之前，請不要關閉寬頻路由器，因為系統需要一些時間來完成這個程序，然後會再重新啟動系統。。",
+"这个过程未完成之前，请不要关闭宽带路由器，因为系统需要一些时间来完成这个程序，然后会再重新启动系统。。"
+);
+var on=new Array
+(
+"On",
+"Ein",
+"Encendido",
+"Allumé",
+"Acceso",
+"Aan",
+"Ligado",
+"Svítí",
+"Włączone",
+"Pornit",
+"Включен",
+"Zapnúť",
+"開",
+"开"
+);
+var dnsAddr=new Array
+(
+"DNS address ",
+"DNS-Adresse ",
+"Dirección DNS: ",
+"Adresse DNS ",
+"Indirizzo DNS ",
+"DNS-adres ",
+"Endereço DNS ",
+"Adresa DNS ",
+"Adres DNS",
+"Adresa DNS",
+"DNS адрес",
+"Adresa DNS",
+"DNS位址",
+"DNS地址"
+);
+var null1=new Array
+(
+"NULL",
+"NULL",
+"NINGUNA",
+"NUL",
+"NULL",
+"NULL",
+"NULO",
+"NULL",
+"PUSTE",
+"NUL",
+"NULL",
+"NULL",
+"空",
+"空"
+);
+var spain=new Array
+(
+"SPAIN 10-11(Spain)",
+"SPAIN 10-11(Spanien)",
+"SPAIN 10-11 (España)",
+"SPAIN 10-11(Espagne)",
+"SPAGNA 10-11(Spagna)",
+"SPAIN 10-11 (Spanje)",
+"SPAIN 10-11(Espanha)",
+"SPAIN 10-11 (Španělsko)",
+"Hiszpania 1-11 (Hiszpania)",
+"SPANIA 10-11(Spania)",
+"ИСПАНИЯ 10-11(Испания)",
+"SPAIN 10-11(Spain)",
+"SPAIN 10-11(Spain)",
+"SPAIN 10-11(Spain)"
+);
+var printerServerName=new Array
+(
+"PrinterServer Name ",
+"Druckerserver Name ",
+"Nombre del servidor de impresión ",
+"Nom Serveur d'impression ",
+"Nome ServerStampante ",
+"Printerservernaam ",
+"Nome do servidor de impressão ",
+"Název tiskového serveru ",
+"Nazwa serwera druku",
+"Nume Printer Server",
+"Имя принт-сервера",
+"Meno tlačového serveru",
+"印表機伺服器名稱",
+"打印机服务器名称"
+);
+var macfilteConfirm2=new Array
+(
+"\'Do you really want to delete the all entries?\'",
+"\'Möchten Sie wirklich alle Einträge löschen?\'",
+"¿Desea realmente eliminar todas las entradas?",
+"\'Souhaitez-vous vraiment supprimer toutes les entrées ?\'",
+"\'Eliminare tutte le immissioni?\'",
+"\'Weet u zeker dat u alle invoer wilt verwijderen?\'",
+"\'Pretende mesmo apagar todas as entradas?\'",
+"\'Opravdu chcete vymazat všechny zadané hodnoty?\'",
+"Czy naprawdę cchesz skasować wszystkie wpisy?",
+"\'Sunteti sigur ca vreti sa stergeti toate inregistrarile?\ '",
+"Вы действительно хотите удалить все компоненты?",
+"\'Skutočne si prajete vymazať všetky zadania?\'",
+"你真的要刪除所有項？",
+"你真的要删除所有项？"
+);
+var apBridgePM=new Array
+(
+"AP Bridge-Point to Multi-Point",
+"AP Bridgepunkt zu Mehrpunkt",
+"AP de punto puente a multi-punto",
+"Pont PA-Point à Points multiples",
+"AP Bridge-Point to Multi-Point",
+"AP bridge-punt naar multi-punt",
+"Ponto de bridge do PA para multi-ponto",
+"AP Bridge-Point to Multi-Point",
+"Mostek AP-Point to Multi-Point",
+"AP Bridge-Point to Multi-Point",
+"AP Bridge-Point to Multi-Point",
+"AP Bridge-Point to Multi-Point",
+"AP Bridge-Point to Multi-Point",
+"AP Bridge-Point to Multi-Point"
+);
+var lanConfig=new Array
+(
+"LAN Configuration",
+"LAN-Konfiguration",
+"Configuración LAN",
+"Configuration LAN",
+"Configurazione LAN",
+"LAN-configuratie",
+"Configuração da rede local",
+"Konfigurace LAN",
+"Konfiguracja LAN",
+"Configuratie LAN",
+"LAN конфигурация",
+"Konfigurácia LAN",
+"區域網路配置",
+"局域网络配置"
+);
+var sysutiliAlert6=new Array
+(
+"IP address was modified, you have to re-connect the WebServer with the new address.",
+"Wenn die IP-Adresse geändert wurde, müssen Sie den WebServer mit der neuen Adresse wieder verbinden.",
+"La dirección IP fue modificada, deberá volver a conectar el Servidor Web con la nueva dirección.",
+"L'adresse IP a été modifiée, vous devez vous reconnecter au serveur Web avec la nouvelle adresse.",
+"L'indirizzo IP è stato modificato, è necessario riconnettersi a WebServer con il nuovo indirizzo.",
+"IP-adres is gewijzigd, maak opnieuw verbinding met de webserver met het nieuwe adres.",
+"O endereço IP foi modificado, tem estabelecer novamente ligação ao Servidor Web com o novo endereço.",
+"IP adresa byla změněna, musíte znovu připojit webový server s novou adresou.",
+"Adres IP został zmodyfikowany - konieczne jest  ponowne połączenie ze stroną pod nowym adresem IP",
+"Adresa IP a fost modificata, trebuie sa va reconectati la noua adresa.",
+"IP адрес изменен, вы должны переподключиться к веб интерфейсу с новым IP адресом.",
+"IP adresa bola zmenená, musíte sa opätovne pripojiť k webovému serveru s novou adresou.",
+"IP位址已被修改，你必須重新使用新的IP位址連接網頁。",
+"IP地址已被修改，你必须重新使用新的IP地址连接网页。"
+);
+var apBridgeWds=new Array
+(
+"AP Bridge-WDS",
+"AP Bridge-WDS",
+"WDS de puente AP",
+"Pont PA-WDS",
+"AP Bridge-WDS",
+"AP Bridge-WDS",
+"Bridge-WDS do PA",
+"AP Bridge-WDS",
+"Mostek AP-WDS",
+"AP Bridge-WDS",
+"AP Bridge-WDS",
+"AP Bridge-WDS",
+"AP Bridge-WDS",
+"AP Bridge-WDS"
+);
+var defualtGat=new Array
+(
+"Default Gateway",
+"Standard Gateway",
+"Puerta predefinida",
+"Passerelle par défaut",
+"Gateway Predefinito",
+"Standaard Gateway",
+"Gateway predefinida",
+"Výchozí brána",
+"Brama domyślna",
+"Gateway Implicit ",
+"Шлюз по умолчанию",
+"Prednastavená brána",
+"預設閘道器",
+"默认网关"
+);
+var wpaRadius=new Array
+(
+"WPA-RADIUS",
+"WPA-RADIUS",
+"WPA-RADIUS",
+"WPA-RADIUS",
+"WPA-RADIUS",
+"WPA-RADIUS",
+"WPA-RADIUS",
+"WPA-RADIUS",
+"WPA-RADIUS",
+"WPA-RADIUS",
+"WPA-RADIUS",
+"WPA-RADIUS",
+"WPA-RADIUS",
+"WPA-RADIUS"
+);
+var backSet=new Array
+(
+"Backup Settings : ",
+"Sicherungseinstellungen: ",
+"Configuración de la copia de seguridad: ",
+"Paramètres de sauvegarde : ",
+"Impostazioni di backup: ",
+"Backupinstellingen: ",
+"Definições de cópia de segurança: ",
+"Zálohování nastavení: ",
+"Zachowaj ustawienia:",
+"Setari Backup: ",
+"Сохранить конфигурацию:",
+"Záloha nastavení:",
+"備份設定",
+"备份设定"
+);
+var domainName=new Array
+(
+"Domain Name ",
+"Domainname ",
+"Nombre de dominio ",
+"Nom de domaine ",
+"Nome di dominio ",
+"Domeinnaam ",
+"Nome do domínio ",
+"Doménové jméno ",
+"Nazwa domeny ",
+"Nume Domeniu",
+"Доменное имя",
+"Meno domény",
+"網域名稱",
+"域名"
+);
+var ap=new Array
+(
+"AP",
+"AP",
+"AP",
+"PA",
+"AP",
+"AP",
+"PA",
+"Přístupový bod",
+"AP",
+"AP",
+"AP",
+"AP",
+"AP",
+"AP"
+);
+var number=new Array
+(
+"Number",
+"Nummer",
+"Número",
+"Numéro",
+"Numero",
+"Nummer",
+"Número",
+"Číslo",
+"Numer ",
+"Numar",
+"Номер",
+"Číslo",
+"數字",
+"数字"
+);
+var leaseTime=new Array
+(
+"Lease Time ",
+"Lease-Zeit ",
+"Tiempo de espera ",
+"Temps de location ",
+"Tempo di lease ",
+"Lease Time (Gebruikstijd van het adres) ",
+"Tempo de concessão ",
+"Doba pronájmu ",
+"Czas wynajmowania ",
+"Timp Alocat",
+"Время аренды",
+"Doba prenájmu",
+"租用時間",
+"租用时间"
+);
+var wepMode=new Array
+(
+"WEP Mode ",
+"WEP-Modus ",
+"Modo WEP ",
+"Mode WEP ",
+"Modalità WEP ",
+"WEP-stand ",
+"Modo WEP ",
+"Režim WEP ",
+"Tryb WEP",
+"Mod WEP",
+"WEP мода",
+"WEP mód",
+"WEP的模式",
+"WEP的模式"
+);
+var bit64=new Array
+(
+"64-bit WEP",
+"64-Bit WEP",
+"WEP de 64-bit",
+"WEP 64-bit",
+"WEP a 64-bit",
+"64-bits WEP",
+"WEP de 64 bits",
+"64bitové WEP:",
+"WEP 64-bit",
+"64-bit WEP",
+"64-битный WEP",
+"64-bit WEP",
+"64-bit WEP",
+"64-bit WEP"
+);
+var keyLifeTime=new Array
+(
+"Key Life Time (secs)",
+"Schlüssel Standzeit (Sekunden)",
+"Duración de vida clave (seg)",
+"Durée de vie clé (secs)",
+"Durata della chiave (sec.)",
+"Key Life Time (Geldigheid van de sleutel, seconden)",
+"Tempo de validade da chave (em segundos)",
+"Doba životnosti klíče (s)",
+"Czas obowiązywania klucza",
+"Durata cheie (sec)",
+"Время жизни ключа (секунды)",
+"Životnosť kľúča (sekundy)",
+"金鑰的存活時間(秒)",
+"密钥的存活时间(秒)"
+);
+var contoolContent=new Array
+(
+"Use the \"Backup\" tool to save the Access Point\'s current configurations to a file named \"config.bin\". You can then use the \"Restore\" tool to restore the saved configuration to the Access Point.  Alternatively, you can use the \"Restore to Factory Default\" tool to force the Access Point to perform System Reset and restore the original factory settings.",
+"Verwenden Sie das \"Sicherung\"-Tool, um die gegenwärtige Konfiguration des Access Point in einer Datei namens \"config.bin\" zu speichern. Sie können das \"Wiederherstellen\"-Tool verwenden, um die gespeicherte Konfiguration des Access Points wiederherzustellen.  Alternativ können Sie das Tool \"Zurücksetzen auf Werkseinstellungen\" nutzen, um das System des Access Points zurückzusetzen und die ursprünglichen Werkseinstellungen wiederherzustellen.",
+"Utilice la herramienta de \"Copia de seguridad\" para guardar la configuración actual del Punto de Acceso en un archivo llamado \"config.bin\". A continuación, podrá utilizar la herramienta \"Reinicio\" para recuperar la configuración guardada en el Punto de Acceso.  Alternativamente, podrá utilizar la herramienta \"Recuperar los parámetros configurados de fábrica\" para obligar al Punto de Acceso a realizar un reinicio del sistema y recuperar los parámetros originales de fábrica.",
+"Utilisez l'outil \"Copie de Sauvegarde\" pour sauvegarder la configuration actuelle du point d'accès dans un fichier nommé \"config.bin\". Vous pouvez ensuite utiliser l'outil \"Restaurer\" pour restaurer la configuration sauvegardée dans le point d'accès.  Vous pouvez aussi utiliser l'outil \"Restaurer avec les paramètres d'usine par défaut\" pour forcer le point d'accès à se réinitialiser et à restaurer ses paramètres d'origine.",
+"Usare lo strumento \"Backup\" per salvare le configurazioni correnti del punto di accesso in un file chiamato \"config.bin\". È quindi possibile usare lo strumento \"Ripristina\" per ripristinare la configurazione salvata sul punto di accesso.  In alternativa, è possibile usare lo strumento \"Ripristina impostazioni di fabbrica\" per forzare il punto di accesso ad eseguire un reset di sistema e ripristinare le impostazioni originali di fabbrica.",
+"Gebruik \"Backup\" om de huidige configuratie van het accesspoint op te slaan in een bestand met de naam \"config.bin\". U kunt daarna \"Restore\" gebruiken om de opgeslagen configuratie terug te zetten op het accesspoint.  Of u kunt \"Restore to Factory Default\" gebruiken om het accesspoint geforceerd te resetten en de originele fabrieksinstellingen terug te zetten.",
+"Utilize a ferramenta \"Backup\" (Cópia de segurança) para guardar as configurações actuais do Ponto de acesso num ficheiro designado \"config.bin\". Em seguida, utilize a ferramenta \"Restore\" (Reposição) para repor a configuração guardada para o Ponto de acesso.  Como alternativa, pode utilizar a ferramenta \"Restore to Factory Default\" (Repor para a predefinição de origem) para que o Ponto de acesso possa efectuar a reposição dos sistema e repor as predefinições de origem.",
+"Použijte nástroj \„Backup\" (zálohování) pro uložení aktuální konfigurace Přístupového bodu do souboru se jménem \„config.bin\" na vašem PC. Potom můžete použít nástroj \„Obnovení\" pro obnovení uložené konfigurace přístupového bodu.  Alternativně můžete použít nástroj \„Obnovit  výchozí tovární nastavení\", pomocí kterého provede Přístupový bod inicializaci vypnutím napájení a obnoví nastavení na výchozí tovární hodnoty.",
+"Użyj narzędzia \"Zachowaj\", aby zapisać obecne ustawienia punktu dostępu w pliku o nazwie \"config.bin\". Następnie możesz skorzystać z narzędzia \"Przywróć\" aby przywrócic zapisaną konfigurację punktu dostępowego. Możesz także użyć funkcji \"Przywróć ustawienia fabryczne\", aby zresetować punkt dostępu i przywrócić ustawienia fabryczne.",
+"Folositi unealta de Backup pentru a salva configuratiile curente ale routerului intr-un fisier denumit config.bin. Puteti apoi folosi aceatsa unealta pentru a restaura configuratia salvata pentru routerul. Alternativ, puteti folosi optiunea de Resetare la Optvar iunile din Fabrica pentru a forta routerul sa efectueze restartarea sistemului si sa revina la setarile din fabrica.",
+"Используйте опцию \"Сохранить кофигурацию\" для сохранения текущей конфигурации точки доступа в файл \"config.bin\". Вы затем можете использовать опцию \"Восстановить конфигурацию\" для восстановления сохраненной конфигурации в маршрутизаторе. Как альтернативу, вы можете использовать опцию \"Восстановить заводские настройки\", чтобы запустиь системную переустановку и восстановить оригинальные заводские настройки.",
+"Použite nástroj pre uloženie terajšie konfigurácie Prístupového bodu do súboru pomenovaného . Potom môžete použiť funkciu pre obnovenie uloženej konfigurácie Prístupového bodu. Eventuálne môžete nástroj pre spustenie Systémového resetu Prístupového bodu a obnovenie pôvodných továrenských nastaveni.",
+"使用\“備份 \”工具來儲存你的設定檔。使用\“還原 \”工具來恢復你的設定檔。使用\“還原為出廠預設值\”工具，強迫寬頻路由器恢復至出廠設定值。",
+"使用\“备份 \”工具来储存你的配置文件。使用\“还原 \”工具来恢复你的配置文件。使用\“还原为出厂默认值\”工具，强迫宽带路由器恢复至出厂设定值。"
+);
+var home=new Array
+(
+"Home",
+"Home",
+"Inicio",
+"Accueil",
+"Home",
+"Beginpagina",
+"Início",
+"Domů",
+"Dom",
+"Pagina Principala",
+"Главное меню",
+"Domov",
+"首頁",
+"首页"
+);
+var disable=new Array
+(
+"Disable",
+"Deaktivieren",
+"Desactivar",
+"Désactiver",
+"Disattiva",
+"Uitschakelen",
+"Desactivar",
+"Zakázat",
+"Wyłącz",
+"Dezactivare",
+"Выключить",
+"Vypnúť",
+"停用",
+"停用"
+);
+var currentPassword=new Array
+(
+"Current Password ",
+"Aktuelles Kennwort： ",
+"Contraseña actual ",
+"Mot de passe actuel ",
+"Password corrente ",
+"Huidig wachtwoord ",
+"Palavra-passe actual ",
+"Aktuální heslo ",
+"Obecne hasło",
+"Parola Curenta ",
+"Текщий пароль",
+"Aktuálne heslo",
+"現在的密碼",
+"现在的密码"
+);
+var pfs=new Array
+(
+"PFS",
+"PFS",
+"PFS",
+"PFS",
+"PFS",
+"PFS",
+"PFS",
+"PFS",
+"PFS",
+"PFS",
+"PFS",
+"PFS",
+"PFS",
+"PFS"
+);
+var resetConfirm=new Array
+(
+"Do you really want to reset the Access Point ??",
+"Möchten Sie den Access Point wirklich zurücksetzen??",
+"¿Desea realmente reiniciar el Punto de Acceso?",
+"Souhaitez-vous vraiment réinitialiser le point d'accès ??",
+"Resettare il punto di accesso??",
+"Weet u zeker dat u het accesspoint wilt resteen?",
+"Pretende mesmo repor o Ponto de acesso??",
+"Opravdu chcete resetovat přístupový bod??",
+"Czy naprawdę chcesz zresetować punkt dostępu?",
+"Sunteti sigur ca vreti sa resetati Access Point-ul ??",
+"Вы действительно хотите переустановить точку доступа?",
+"Skutočne si prajete resetovať Prístupový bod??",
+"你確定要重置無線接入點？？",
+"你确定要重置无线接入点？？"
+);
+var hopCount=new Array
+(
+"Hop Count",
+"Hop Count",
+"Cómputo superior",
+"Compte Hop",
+"Hop Count",
+"Hop Count (Stappen tellen)",
+"Contagem  de conjunto",
+"Hop Count",
+"Liczba skoków",
+"Contor Hopuri",
+"Счетчик прыжков",
+"Hop Count",
+"Hop Count",
+"Hop Count"
+);
+var interface1=new Array
+(
+"Interface",
+"Schnittstelle",
+"Interfaz",
+"Interface",
+"Interfaccia",
+"Interface",
+"Interface",
+"Rozhraní",
+"Interfejs",
+"Interfata",
+"Интерфейс",
+"Rozhranie",
+"界面",
+"界面"
+);
+var fcc=new Array
+(
+"FCC 1-11(U.S.)",
+"FCC 1-11(U.S.)",
+"FCC 1-11 (U.S.)",
+"FCC 1-11(U.S.)",
+"FCC 1-11(U.S.)",
+"FCC 1-11 (USA)",
+"FCC 1-11(U.S.)",
+"FCC 1-11 (USA)",
+"FCC1-11(U.S.)",
+"FCC 1-11(U.S.)",
+"FCC 1-11(США)",
+"FCC 1-11(U.S.)",
+"FCC 1-11(美國)",
+"FCC 1-11(美国)"
+);
+var printServerFeature=new Array
+(
+"PrintServer Feature ",
+"Druckerserver-Funktion ",
+"Función del servidor de impresión ",
+"Caractéristique du serveur d'impression ",
+"Funzione ServerStampante ",
+"Printserverfunctie ",
+"Funcionalidade do servidor de impressão ",
+"Funkce tiskového serveru ",
+"Funkcja serwera druku",
+"Caracteristici Print Server",
+"Свойства принт-сервера",
+"Funkcia tlačového serveru",
+"印表機伺服器功能",
+"打印机服务器功能"
+);
+var newPassword=new Array
+(
+"New Password ",
+"Neues Kennwort： ",
+"Nueva contraseña ",
+"Nouveau mot de passe ",
+"Nuova password ",
+"Nieuw wachtwoord ",
+"Nova palavra-passe ",
+"Nové heslo ",
+"Nowe hasło",
+"Parola Noua",
+"Новый пароль",
+"Nové heslo",
+"新密碼",
+"新密码"
+);
+var destinateIP=new Array
+(
+"Destination LAN IP",
+"Ziel-LAN-IP",
+"IP LAN de destino",
+"IP LAN de destination",
+"IP LAN di destinazione",
+"Destination LAN IP",
+"IP da rede local de destino",
+"Cílová IP adresa LAN",
+"Docelowy adres IP LAN",
+"IP LAN Destinatar",
+"IP адрес LAN назначения",
+"Destinácia IP LAN",
+"最終的區域網路IP位址",
+"最终的局域网络IP地址"
+);
+var firmwareUp=new Array
+(
+"Firmware Upgrade",
+"Firmware-Upgrade",
+"Actualizar el Firmware",
+"Mise à niveau du microprogramme",
+"Aggiornamento del firmware",
+"Upgrade Firmware (Upgraden van firmware)",
+"Actualização de firmware",
+"Aktualizace firmwaru",
+"Aktualizacja oprogramowania ",
+"Upgrade de Firmware",
+"Замена встроенной программы",
+"Aktualizácia firmware",
+"韌體升級",
+"韧体升级"
+);
+var advancedVPN=new Array
+(
+"Advanced VPN Setting",
+"Erweiterte VPN-Einstellung",
+"Configuración VPN avanzada",
+"Paramètres VPN avancés",
+"Impostazione VPN avanzata",
+"Geavanceerde VPN-instellingen",
+"Definição VPN avançada",
+"Pokročilé nastavení VPN",
+"Ustawienia zaawansowane VPN",
+"Setari Avansate VPN",
+"Дополнительные VPN настройки",
+"Pokročilé nastavenia VPN",
+"VPN進階設定",
+"VPN进阶设定"
+);
+var state=new Array
+(
+"Status",
+"Status",
+"Estado",
+"Etat",
+"Stato",
+"Status",
+"Estado",
+"Stav",
+"Stan",
+"Stare",
+"Состояние",
+"Stav",
+"狀態",
+"状态"
+);
+var stationInfra=new Array
+(
+"Station-Infrastructure",
+"Station-Infrastruktur",
+"Infraestructura de estación",
+"Station-Infrastructure",
+"Stazione-Infrastruttura",
+"Station-Infrastructuur",
+"Infra-estrutura da estação",
+"Stanice-Infrastruktura",
+"Station-Infrastructure",
+"Station-Infrastructure",
+"Station-Infrastructure",
+"Infraštruktúra Stanice",
+"Station-Infrastructure",
+"Station-Infrastructure"
+);
+var wirelessISP=new Array
+(
+" Wireless ISP",
+" WLAN Internetdienstanbieter",
+" ISP inalámbrico",
+" FAI sans fil",
+" ISP wireless",
+" Draadloze ISP",
+" ISP sem fios",
+" Bezdrátový ISP",
+"Bezprzewodowy ISP",
+"ISP Wireless",
+"ISP беспроводной связи",
+"Bezdrôtový ISP",
+"無線 ISP",
+"无线 ISP"
+);
+var apBridgePP=new Array
+(
+"AP Bridge-Point to Point",
+"AP Bridge-Punkt zu Punkt",
+"AP de punto puente a punto",
+"Pont PA-Point à Point",
+"AP Bridge-Point to Point",
+"AP bridge-punt naar punt",
+"Ponto de bridge do PA para ponto",
+"AP Bridge-Point to Point",
+"Mostek AP - Point to Point",
+"AP Bridge-Point to Point",
+"AP Bridge-Point to Point",
+"AP Bridge-Point to Point",
+"AP Bridge-Point to Point",
+"AP Bridge-Point to Point"
+);
+var oned=new Array
+(
+"One day",
+"Ein Tag",
+"Un día",
+"Un jour",
+"Un giorno",
+"Een dag",
+"Um dia",
+"Jeden den",
+"Jeden dzień",
+"O zi",
+"Один день",
+"Jeden deň",
+"一天",
+"一天"
+);
+var IPAddr=new Array
+(
+"IP address ",
+"IP-Adresse ",
+"Dirección IP ",
+"Adresse IP ",
+"Indirizzo IP ",
+"IP-adres ",
+"Endereço IP ",
+"IP adresa ",
+"Adres IP ",
+"Adresa IP",
+"IP адрес",
+"Adresa IP",
+"IP 位址",
+"IP 地址"
+);
+var debugContent=new Array
+(
+"The page function is used by writer debuging. Please type command. Apply successfully when the command is matched.",
+"Die Seitenfunktion wird bei der Fehlerbehebung verwendet. Bitte geben Sie den Befehl ein. Die Übernahme ist erfolgreich, wenn der Befehl übereinstimmt.",
+"La función de página se utiliza por el desbloqueador de escritura. Por favor, indique el comando. Aplique correctamente cuando el comando coincida.",
+"La fonction page est utilisée par le debogage d'écriture. Saisissez la commande. L'application est réussie lorsque la commande trouve correspondance.",
+"La funzione della pagina viene utilizzata dal debugging di scrittura. Digitare il comando. Applicazione riuscita quando il comando corrisponde.",
+"Op deze pagina vindt u de writer debuggen. Typ het commando in. Wordt uitgevoerd als het commando past.",
+"A função da página é utilizada para depuração de gravação. Introduza o comando. Aplique com sucesso quando o comando corresponder.",
+"Funkce této stránky se používá při ladění. Zadejte příkaz. Úspěšně se použije, pokud je příkaz shodný.",
+"Na stronie tej możliwa jest analiza błędów. Wpisz komendę. Zastosuj po poprawnym wpisaniu komendy.",
+"Functia din aceasta pagina este folosita pentru debuging. Introduceti comanda. Aplicati cu succes cand comanda este recunoscuta.",
+"Страница используется для записи событий отладки. Пожалуйста, наберите команду. Примените ее успешно, если команда корректная.",
+"Funkcia stránky sa používa pre vyhľadávanie chýb. Prosím napíšte príkaz. Pokiaľ príkaz odpovedaná je úspešne použitý.",
+"The page function is used by writer debuging. Please type command. Apply successfully when the command is matched.",
+"The page function is used by writer debuging. Please type command. Apply successfully when the command is matched."
+);
+var upgrade=new Array
+(
+"Upgrade",
+"Upgrade",
+"Actualización",
+"Mise à niveau",
+"Aggiorna",
+"Upgraden",
+"Actualizar",
+"Aktualizace",
+"Aktualizacja",
+"Upgrade",
+"Заменить",
+"Aktualizácia",
+"升級",
+"升级"
+);
+var basicSetting=new Array
+(
+"Basic Setting",
+"Grundeinstellung",
+"Configuración básica",
+"Paramètres de base",
+"Impostazione di base",
+"Basisinstellingen",
+"Definição básica",
+"Základní nastavení",
+"Ustawienia podstawowe ",
+"Setari de Baza",
+"Базовые настройки",
+"Základné nastavenia",
+"基本設定",
+"基本设定"
+);
+var lan=new Array
+(
+"LAN",
+"LAN",
+"LAN",
+"LAN",
+"LAN",
+"LAN",
+"Rede local",
+"LAN",
+"LAN",
+"LAN",
+"LAN",
+"LAN",
+"區域網路",
+"局域网络"
+);
+var contoolConfirm=new Array
+(
+"Do you really want to reset the current settings to default?",
+"Möchten Sie die aktuellen Einstellungen wirklich auf Standard zurücksetzen?",
+"¿Desea realmente reiniciar los parámetros actuales a los de fábrica?",
+"Souhaitez-vous vraiment réinitialiser les paramètres en cours par défaut ?",
+"Riportare le impostazioni correnti ai valori predefiniti?",
+"Weet u zeker dat u de huidige instellingen wilt terugzetten naar standaard?",
+"Pretende mesmo repor as definições actuais para os valores de origem?",
+"Opravdu chcete resetovat aktuální nastavení na výchozí hodnoty?",
+"Czy naprawdę chcesz skasować obecne ustawienia na domyślne? ",
+"Doriti sa resetati setarile la cele din fabrica?",
+"Вы действительно хотите переустановить текущие настройки на заводские?",
+"Skutočne si prajete resetovať terajšie nastavenia do prednastavených?",
+"你確定要重置現有設定成為出廠預設值？",
+"你确定要重置现有设定成为出厂默认值？"
+);
+var reenterPassword=new Array
+(
+"Re-Enter Password ",
+"Kennwort bestätigen ",
+"Volver a introducir la contraseña ",
+"Re-saisissez le mot de passe ",
+"Reinserire la password ",
+"Voer wachtwoord opnieuw in ",
+"Introduzir a palavra-passe novamente ",
+"Zadejte heslo znovu ",
+"Wprowadź ponownie hasło",
+"Reintroduceti Parola",
+"Введите пароль заново",
+"Opätovne zadajte heslo",
+"請再次輸入密碼",
+"请再次输入密码"
+);
+var currentSta=new Array
+(
+"Current Static Routing Table",
+"Aktuelle statische Routing-Tabelle",
+"Cuadro de enrutación estática actual",
+"Table de routage statique en cours",
+"Tabella di routing statico corrente",
+"Tabel van huidige statische routing",
+"Tabela de encaminhamento estático actual",
+"Tabulka aktuální statického směrování",
+"Obecna tabela statycznego routingu",
+"Tabela Curenta Routare Statica",
+"Текущая таблица статической маршрутизации",
+"Tabuľka aktuálne statického presmerovanie",
+"現有靜態路由表",
+"现有静态路由表"
+);
+var delSelected=new Array
+(
+"Delete Selected",
+"Gewählte löschen",
+"Borrar selección",
+"Supprimer la sélection",
+"Elimina selezionato",
+"Wis selectie",
+"Apagar opções seleccionadas",
+"Vymazat vybrané",
+"Skasuj wybrane opcje ",
+"Sterge Selectia",
+"Удалить выбранное",
+"Vymazať vybrané",
+"刪除選擇",
+"删除选择"
+);
+var opmodeContent2=new Array
+(
+"In this mode, the device is supposed to connect to internet via ADSL/Cable Modem. The NAT is enabled and PCs in  LAN ports share the same IP to ISP through WAN port. The connection type can be setup in WAN page by using PPPOE, DHCP client, PPTP client or static IP.",
+"In diesem Modus wird davon ausgegangen, dass das Gerät per ADSL-/Kabelmodem mit dem Internet verbunden wird. NAT ist aktiviert und die PCs in den LAN-Ports teilen sich die gleiche IP, um über den WAN-Port eine Verbindung mit dem Internetdienstanbieter herzustellen. Die Verbindungsart kann auf der WAN-Seite mit PPPOE, DHCP-Client, PPTP-Client oder statischer IP konfiguriert werden.",
+"En este modo, el dispositivo debe conectarse a Internet mediante el módem ADSL/por cable. El NAT está activado y los PC en los puertos LAN comparten el mismo IP a ISP a través del puerto WAN. El tipo de conexión puede configurarse en la página WAN utilizando PPPOE, el cliente DHCP, el cliente PPTP o la IP estática.",
+"Dans ce mode, le périphérique est supposé se connecter à Internet par un modem câble/ADSL. Le NAT est activé et les PC des ports LAN partagent la même IP FAI grâce au port WAN. Le type de connexion peut être configuré dans la page WAN en utilisant PPPOE, Client DHCP, Client PPTP ou IP fixe.",
+"In questa modalità, il dispositivo si dovrebbe connettere a Internet tramite il modem via cavo/ADSL. La NAT è attivata e i PC sulle porte LAN condividono lo stesso IP dell'ISP tramite la porta WAN. Il tipo di connessione può essere impostato nella pagina WAN utilizzando il PPPOE, il client DHCP o PPTP o l'IP statico.",
+"In deze stand moet het apparaat verbinding maken met internet via een ADSL/kabelmodem. De NAT wordt ingeschakeld en pc's in LAN-poorten delen het IP-adres naar de ISP via de WAN-poort. Het aansluittype kan geconfigureerd worden op de WAN-pagina, met gebruik van PPPOE, DHCP-client, PPTP-client of statisch IP.",
+"Neste modo, o dispositivo é suposto estabelecer ligação à Internet através do modem por cabo/ADSL. A NAT é activada e os PC nas portas da rede local partilham o mesmo IP para o ISP através da porta WAN. O tipo de ligação pode ser configurado na página WAN utilizando PPPOE, cliente DHCP, cliente PPTP ou IP estático.",
+"V tomto režimu zařízení předpokládá, že je připojeno k internetu pomocí ADSL/kabelového modemu. Funkce NAT je povolena a počítače připojené k portům LAN sdílejí stejnou IP adresu k ISP prostřednictvím portu WAN. Typ připojení lze nastavení na stránce WAN pomocí PPPOE, DHCP klienta, PPTP klienta nebo statické IP.",
+"W trybie tym urządzenie jest podłaczone do internetu poprzez ADSL/modem kablowy. Właczony zostaje NAT a komputery w sieci LAN współdzielą ten sam IP portu WAN. Rodzaj połączenia może być ustawiony na stronie WAN używając PPPOE, klienta DHCP, klienta PPTP lub statycznego IP.   ",
+"In acest mod, echipamentul ar trebui sa se conecteze la internet printr-un modem ADSL / Cablu. Functia NAT este activata si PC-urile din porturile LAN au acelasi IP spre ISP prin portul WAN. Tipul de conexiune poate fi configurat din pagina WAN selecatand PPPoE, DHCP, PPTP sau IP Static.",
+"Предполагается, что в этой моде устройство подключено к Интернету через ADSL/кабельный модем. NAT включен и компьютера локальной сети подключены к ISP через WAN порт. Тип связи может быть установлен на странице WAN c использованием PPPoE, DHCP клиента, PPTP клиента или статического IP.",
+"V tomto móde bude zariadeniu určené pripojiť sa k internetu cez ADSL/Káblový modem. NAT je zapnúté a LAN porty PC zdieľajú rovnakú IP pre ISP cez WAN port. Typ pripojenia môže byť nastaven na stránke WNA použitím PPPOE, DHCP klienta, PPTP klienta alebo statickej IP.",
+"In this mode, the device is supposed to connect to internet via ADSL/Cable Modem. The NAT is enabled and PCs in  LAN ports share the same IP to ISP through WAN port. The connection type can be setup in WAN page by using PPPOE, DHCP client, PPTP client or static IP.",
+"In this mode, the device is supposed to connect to internet via ADSL/Cable Modem. The NAT is enabled and PCs in  LAN ports share the same IP to ISP through Wvar AN port. The connection type can be setup in WAN page by using PPPOE, DHCP client, PPTP client or static IP."
+);
+var lpr=new Array
+(
+"LPR ",
+"LPR ",
+"LPR ",
+"LPR ",
+"LPR ",
+"LPR ",
+"LPR ",
+"LPR ",
+"LPR",
+"LPR ",
+"LPR ",
+"LPR",
+"LPR",
+"LPR"
+);
+var tunnelMode=new Array
+(
+"Tunnel mode",
+"Tunnel-Modus",
+"Modo túnel",
+"Mode tunnel",
+"Modalità tunnel",
+"Tunnelstand",
+"Modo de túnel",
+"Tunelový režim",
+"Tryb tunelu",
+"Mod Tunel",
+"Туннельная мода",
+"Mód tunelu",
+"通道模式",
+"信道模式"
+);
+var macfilteContent2=new Array
+(
+"It allows to entry 20 sets address only.",
+"Es ermöglicht die Eingabe von nur 20 Adressen.",
+"Permite introducir hasta 20 direcciones exclusivamente",
+"Il n'est permis d'entrer que 20 adresses.",
+"Consente l'inserimento di indirizzi non oltre i 20 caratteri.",
+"U mag maar 20 adressen invoeren.",
+"Permite introduzir apenas 20 conjuntos de endereços.",
+"Umožňuje zadání pouze 20 sad adres.",
+"Pozwala to na wpisanie tylko 20 adresów.  ",
+"Permite introducerea a 20 de seturi de adrese.",
+"Разрешено вводить до 20 адресов",
+"Vždy dovoľuje zadať len 20 sád adries.",
+"只允許建立20組。",
+"只允许建立20组。"
+);
+var dh1=new Array
+(
+"DH1(modp768)",
+"DH1(modp768)",
+"DH1 (modp768)",
+"DH1(modp768)",
+"DH1(modp768)",
+"DH1(modp768)",
+"DH1(modp768)",
+"DH1(modp768)",
+"DH1 (modp768)",
+"DH1(modp768)",
+"DH1(modp768)",
+"DH1(modp768)",
+"DH1(modp768)",
+"DH1(modp768)"
+);
+var forever=new Array
+(
+"Forever",
+"Immer",
+"Siempre",
+"Pour toujours",
+"Sempre",
+"Voorgoed",
+"Para sempre",
+"Trvale",
+"Na zawsze ",
+"Totdeauna",
+"Всегда",
+"Navždy",
+"永遠",
+"永远"
+);
+var sysutiliAlert4=new Array
+(
+"Invalid DHCP client start IP address!It should not be the same as LAN IP Address.",
+"Ungültige DHCP-Client Start-IP-Adresse! Diese sollte nicht der LAN IP-Adresse entsprechen.",
+"¡Dirección IP de inicio de cliente DHCP incorrecta! No deberá ser la misma que la dirección IP LAN.",
+"Adresse IP de début client DHCP incorrecte ! Elle doit être la même que l'adresse IP LAN.",
+"Indirizzo IP iniziale del client DHCP non valido! Il valore non deve coincidere con l'indirizzo IP della LAN.",
+"Ongeldig DHCP-client start IP-adres! Het mag niet gelijk zijn aan het LAN IP-adres.",
+"Endereço IP inicial do cliente DHCP inválido!Não deve ser igual ao endereço IP LAN.",
+"Neplatná počáteční adresa DHCP klienta! Neměla by být stejná jako IP adresa LAN.",
+"Nieprawidłowy początkowy adres IP klienta DHCP!  Wartośc nie może być taka sama jak adres IP LAN.",
+"Adresa IP de start client DHCP invalida! Nu trebuie sa fie aceeasi cu adresa IP LAN.",
+"Неправильный стартовый IP адрес DHCP клиентов! Должен быть таким же как IP адрес LAN сети.",
+"Nesprávna začiatočná IP adresa DHCP klienta! Nesmie byť rovnaká ako IP adresa LAN.",
+"DHCP終端啟始IP是無效的！它必須與區域網路IP位址同一網段",
+"DHCP终端启始IP是无效的！它必须与局域网络IP地址同一网段"
+);
+var hwsetContent=new Array
+(
+"The page can set hardware configuration.These settings are only for more technically advanced users. These settings should not be changed under general condition.",
+"Auf der Seite kann die Hardwarekonfiguration eingestellt werden. Diese Einstellungen sind nur für technisch fortgeschrittene Benutzer gedacht. Im Normalfall sollten diese Einstellungen nicht geändert werden.",
+"La página podrá fijar la configuración material. Estos parámetros se indican exclusivamente para los usuarios más avanzados técnicamente. Estos parámetros no deben cambiarse en condiciones generales.",
+"Cette page permet d'effectuer le paramétrage matériel. Ces paramètres ne sont à la disposition que des utilisateurs techniquement compétents. En règle générale, ces paramètres ne doivent pas être modifiés.",
+"La pagina consente di impostare la configurazione hardware. Queste impostazioni sono riservate esclusivamente agli utenti con competenze tecniche avanzate. Queste impostazioni non devono essere modificate in condizioni normali.",
+"Op deze pagina kunt u de hardwareconfiguratie instellen. Deze instellingen zijn alleen bedoeld voor gebruikers met technische ervaring. In het algemeen hoeven deze instellingen niet veranderd te worden.",
+"A página pode definir a configuração do hardware. Estas definições destinam-se apenas a utilizadores mais avançados em termos técnicos. Estas definições não devem ser alteradas em condições gerais.",
+"Stránka umožňuje nastavení konfigurace hardwaru. Tato nastavení jsou určena pouze pro technicky pokročilejší uživatele. Za normálních podmínek by tato nastavení neměla být měněna.",
+"Na stronie tej możliwe jest ustawienia konfiguracji sprzętu. Ustawienia przeznaczone są dla zaawansowanych użytkowników. Ustawienia nie powinny być zmieniane w normalnych warunkach.",
+"In aceasta pagina se pot face configurari hardware. Aceste setari sunt pentru utilizatori avansati. Aceste setari nu trebuie modificate in conditii generale.",
+"На этой странице можно установить конфигурацию физического устройства. Эти настройки только для технически подготовленных пользователей. Эти настройки не рекомендуется изменять для большинства применений.",
+"Táto stránka umožňuje zmeniť konfiguráciu hardware. Tieto nastavenia sú určené len pre technicky zdatných úživateľov. Tieto nastavenia sa nesmú meniť pri normálnej prevádzky.",
+"該網頁可以設置硬體配置。這些設定僅適用於有技術能力的使用者，請不要隨意改變。",
+"该网页可以设置硬件配置。这些设定仅适用于有技术能力的使用者，请不要随意改变。"
+);
+var cancel=new Array
+(
+"Cancel",
+"Abbrechen",
+"Cancelar",
+"Annuler",
+"Annulla",
+"Annuleren",
+"Cancelar",
+"Zrušit",
+"Anuluj",
+"Anulare",
+"Выйти",
+"Zrušiť",
+"取消",
+"取消"
+);
+var onewk=new Array
+(
+"One week",
+"Eine Woche",
+"Una semana",
+"Une semaine",
+"Una settimana",
+"Een week.",
+"Uma semana",
+"Jeden týden",
+"Jeden tydzień",
+"O Saptamana",
+"Одна неделя",
+"Jeden týždeň",
+"一周",
+"一周"
+);
+var md5=new Array
+(
+"MD5",
+"MD5",
+"MD5",
+"MD5",
+"MD5",
+"MD5",
+"MD5",
+"MD5",
+"MD5",
+"MD5",
+"MD5",
+"MD5",
+"MD5",
+"MD5"
+);
+var regDomain=new Array
+(
+"regulation domain ",
+"Regulierungsdomain ",
+"dominio de regulación ",
+"Domaine de régulation ",
+"dominio normativo ",
+"regio ",
+"dominio de regulação ",
+"Regulace domény ",
+"Ustawienia domeny",
+"Domeniu regulare",
+"Регулирующий домен",
+"regulácia domény",
+"regulation domain ",
+"regulation domain"
+);
+var opmodeContent=new Array
+(
+"You can setup different modes to LAN and WLAN interface for NAT and bridging function.",
+"Sie können verschiedene Modi der LAN- und WLAN-Schnittstelle für die NAT- und Bridge-Funktion einstellen.",
+"Podrá configurar distintos modos en la interfaz LAN y WLAN para la función de puente y NAT.",
+"Vous pouvez définir plusieurs mode aux interfaces LAN et WLAN pour la fonction NAT et Pontage.",
+"È possibile impostare svariate modalità dell'interfaccia LAN e WLAN per la funzione di bridging e la NAT.",
+"U kunt op het LAN- en WLAN-interface verschillende standen instellen voor de NAT en de bridgingfunctie.",
+"Pode configurar modos diferentes para interface LAN e WLAN para a função de NAT e de transição.",
+"Pro funkce NAT a přemostění pro LAN a WLAN rozhraní můžete nastavit odlišné režimy.",
+"Możesz skonfigurować różne tryby interfejsu LAN oraz WLAN z funkcją NAT.",
+"Puteti seta moduri diferite pentru interfetele LAN si WLAN, pentru functiile NAT si bridge.",
+"Вы можете установить различные моды на LAN и WLAN интерфейсы для NAT и функции моста",
+"Môžete zadať rozdielne módy pre rozhranie LAN a WAN pre NAT a funkciu bridging.",
+"你可以因應NAT和橋接功能來設定LAN與WLAN的模式。",
+"你可以因应NAT和桥接功能来设定LAN与WLAN的模式。"
+);
+var disabled=new Array
+(
+"Disabled",
+"Deaktiviert",
+"Desactivado",
+"Désactiver",
+"Disattivato",
+"Uitgeschakeld",
+"Desactivado",
+"Vypnuto",
+"Wyłączony",
+"Dezactivat",
+"Выключен",
+"Vypnutý",
+"關閉",
+"关闭"
+);
+var tlupgradeAlert=new Array
+(
+"At the end of the upgrade, the Broadband router may not respond to commands for as long as one minute. This is normal behavior and do not turn off Broadband router during the time.",
+"Am Ende des Aktualisierungsvorganges wird der Breitbandrouter unter Umständen eine Minute lang nicht auf Befehle reagieren. Das ist ganz normal, schalten Sie den Breitbandrouter daher während dieser Zeit nicht aus.",
+"Al final de la actualización, el enrutador de banda ancha puede que no responda a los comandos durante un minuto. Esto es un comportamiento normal y no apaga el enrutador de banda ancha durante dicho tiempo.",
+"A la fin de la mise à jour, le routeur peut ne pas répondre aux commandes pendant une minute. Celà est normal, n'éteignez surtout pas le routeur.",
+"Al termine dell'aggiornamento, il router a banda larga potrebbe non rispondere ai comandi per circa un minuto. Questo comportamento è normale; evitare di spegnere il router a banda larga durante questo periodo.",
+"Aan het einde van het upgradeproces kan de breedbandrouter ongeveer een minuut lang niet reageren op commando's. Dit is een normaal verschijnsel, zet de breedbandrouter in die tijd niet af.",
+"No final da actualização, o router de banda larga pode não responder aos comandos durante cerca de um minuto. Isto é normal, não desligue o router de banda larga durante este período de tempo.",
+"Na konci aktualizace nemusí širokopásmový směrovač reagovat na příkazy téměř jednu minutu. To je normální chování a během této doby širokopásmový směrovač nevypínejte.",
+"Pod koniec aktualizacji router może nie odpowiadać we właściwy sposób nawet przez 1 minutę. Jest to normalne działanie i nie należy wyłączać urządzenia. ",
+"La finalul upgrade-ului, routerul poate sa nu raspunda la comenzi chiar si un minut. Acest comportament este normal. Nu inchideti routerul in acest timp.",
+"В конце замены, маршрутизатор может не отвечать на команды в течение одной минуты. Это нормальное поведение, не выключайте маршрутизатор в течение этого времени.",
+"Koniec aktualizácie, Širokopásmový router nemusíte odpovedať na príkazy dlhšie ako jednu minútu. Je to normálne správanie, nevypínajte Širokopásmový router počas tejto doby.",
+"升級結束後，寬頻路由器可能長達一分鐘沒有任何回應。這是正常行為，請不要隨意關閉寬頻路由器的電源。",
+"升级结束后，宽带路由器可能长达一分钟没有任何响应。这是正常行为，请不要随意关闭宽带路由器的电源。"
+);
+var macAddr=new Array
+(
+"MAC address ",
+"MAC-Adresse ",
+"Dirección MAC ",
+"Adresse MAC ",
+"Indirizzo MAC ",
+"MAC-adres ",
+"Endereço MAC ",
+"MAC adresa ",
+"Adres MAC",
+"Adresa MAC",
+"MAC адрес",
+"adresa MAC",
+"MAC位址",
+"MAC地址"
+);
+var new1=new Array
+(
+"New",
+"Neu",
+"Nuevo",
+"Nouveau",
+"Nuovo",
+"Nieuw",
+"Novo",
+"Nový",
+"Nowy",
+"Nou",
+"Новый",
+"Nový",
+"新增",
+"新增"
+);
+var licenceContent2=new Array
+(
+"We are not responsible for the additional charge if you don\'t power off the Router when not browsing on line.",
+"Wir sind nicht verantwortlich für zusätzlich entstehende Kosten, wenn Sie den Router in der Zeit, in der Sie nicht online sind, nicht ausschalten.",
+"No somos responsables de los gastos adicionales si no apaga el enrutador cuando no navegue en línea.",
+"Nous ne pouvons être tenus responsables des coûts supplémentaires au cas où vous n'éteignez pas votre routeur lorsque vous n'êtes plus en ligne.",
+"Non siamo responsabili delle spese aggiuntive sostenute dall'utente in caso di mancato spegnimento del router quando non si sta navigando.",
+"Wij zijn niet aansprakelijk voor extra kosten als u de router niet uitschakelt als u niet online wilt zijn.",
+"Não nos responsabilizamos pelo custo adicional se não desligar o router quando não estiver a navegar online.",
+"Neodpovídáme za dodatečné platby, nevypnete-li směrovač při nepoužívání linky.",
+"Producent nie ponosi odpowiedzialności za dodatkowe opłaty, w przypadku niewyłączenia routera po wyjściu z sieci.",
+"Nu ne facem responsabili de taxarea aditionala, daca nu opriti routerul cand nu folositi internetul.",
+"Мы не несем ответственности за дополнительную плату если вы не выключили маршрутизатор, когда не использовали его.",
+"Nie sme zodpovedný za dodatočné poplatky, ktoré vám vzniknú, keď nevypnete router po skončení práce na internet.",
+"請注意你的上網費用計費方式，若是採用計時計量制，務必在不需要上網的狀況下要記得離線。避免被ISP業者索取高額網路費用。",
+"请注意你的上网费用计费方式，若是采用计时计量制，务必在不需要上网的状况下要记得脱机。避免被ISP业者索取高额网络费用。"
+);
+var defaultAddr=new Array
+(
+"Default Gateway address ",
+"Standardgateway-Adresse ",
+"Dirección predefinida de la puerta de acceso ",
+"Adresse Passerelle par défaut ",
+"Indirizzo del gateway predefinito ",
+"Standaard gateway-adres ",
+"Endereço do gateway predefinido ",
+"Adresa výchozí brány ",
+"Adres domyślny bramki ",
+"Adresa Gateway Implicit",
+"Адрес шлюза по умолчанию",
+"Prednastavená adresa brány",
+"預設閘道",
+"预设网关"
+);
+var reset=new Array
+(
+"Reset",
+"Reset",
+"Reinicio",
+"Réinitialisation",
+"Reset",
+"Reset",
+"Repor",
+"Reset",
+"Skasuj",
+"Resetare",
+"Переустановить",
+"Reset",
+"重置",
+"重置"
+);
+var sysutiliContent=new Array
+(
+"Enter the IP Address of the Access Point. If you want to use DHCP server service, you should enter a unique IP for the Access Point.",
+"Geben Sie die IP-Adresse des Access Points ein. Wenn Sie den DHCP-Server nutzen möchten, sollten Sie eine eindeutige IP für den Access Point eingeben.",
+"Indique la dirección IP del Punto de Acceso Si desea utilizar el servicio del servidor DHCP, deberá indicar una única IP para el Punto de Acceso.",
+"Saisissez l'adresse IP du point d'accès Si vous souhaitez utiliser un service serveur DHCP, vous devez saisir une IP unique pour le point d'accès.",
+"Inserire l'indirizzo IP del punto di accesso. Se si desidera usare il servizio del server DHCP, inserire un indirizzo IP univoco per il punto di accesso.",
+"Voer het IP-adres van het accesspoint  in. Als u de DHCP-server wilt gebruiken, moet u een uniek IP invoeren voor het accesspoint.",
+"Introduza o endereço IP do Ponto de acesso. Se quiser utilizar o serviço do servidor DHCP, deve introduzir um IP único para o Ponto de acesso.",
+"Zadejte IP adresu Přístupového bodu. Chcete-li používat službu DHCP serveru, měli byste zadat pro Přístupový bod unikátní IP adresu.",
+"Wpisz adres IP punktu dostępowego. Jeśli chcesz korzystać z serweru DHCP powinieneś wpisać IP dla punktu dostępu.",
+"Introduceti adresa IP a Access Pointului. Daca doriti sa folositi serverul DHCP, introduceti o adresa IP unica pentru Access Point.",
+"Введите IP адрес точки доступа. Если вы хотите использовать DHCP сервер, то вам необходимо ввести уникальный IP адрес точки доступа.",
+"Vložte IP adresu Prístupového bodu. Ak chcete použiť služby DHCP, musíte zadať unikátnu IP pre Prístupový bod.",
+"請為無線基地台指定一個 IP位址。",
+"请为无线基地台指定一个 IP地址。"
+);
+var sysutiliAlert3=new Array
+(
+"Cannot accept space character in password. Please try it again.",
+"Die Eingabe von Leerzeichen im Kennwort ist nicht zulässig. Bitte versuchen Sie es erneut.",
+"No puede aceptar el carácter del espacio en la contraseña. Por favor, indíquela de nuevo.",
+"Impossible d'accepter le caractère Espace dans le mot de passe. Réessayez.",
+"La password non può contenere spazi. Provare di nuovo.",
+"Wachtwoord mag geen spatie bevatten. Probeer opnieuw.",
+"O carácter de espaço não é permitido na palavra-passe. Tente novamente.",
+"V hesle nemohou být mezery. Zkuste to laskavě znovu.",
+"Wpisz ponownie. Znak spacji nie jest dozwolony. ",
+"Nu se poate introduce caracterul “spatiu” in parola. Incercati din nou.",
+"Нельзя использовать пробел в пароле. Пожалуйста, попробуйте еще.",
+"Nie je možné akceptovať medzeru v hesle. Prosím zkúste znovu.",
+"不能接受有空格字元的密碼。請再試一次。",
+"不能接受有空格字符的密码。请再试一次。"
+);
+var aes128=new Array
+(
+"AES128",
+"AES128",
+"AES128",
+"AES128",
+"AES128",
+"AES128",
+"AES128",
+"AES128",
+"AES128",
+"AES128",
+"AES128",
+"AES128",
+"AES128",
+"AES128"
+);
+var diffieHellman=new Array
+(
+"Diffie Hellman",
+"Diffie Hellman",
+"Diffie Hellman",
+"Diffie Hellman",
+"Diffie Hellman",
+"Diffie Hellman",
+"Diffie Hellman",
+"Diffie Hellman",
+"Diffie Hellman",
+"Diffie Hellman",
+"Diffie Hellman",
+"Diffie Hellman",
+"Diffie Hellman",
+"Diffie Hellman"
+);
+var restoreSet=new Array
+(
+"Restore Settings : ",
+"Einstellungen wiederherstellen: ",
+"Recuperar configuración: ",
+"Restaurer les paramètres : ",
+"Ripristina impostazioni: ",
+"Instellingen terugzetten: ",
+"Repor definições: ",
+"Obnovit nastavení: ",
+"Przywróć ustawienia ",
+"Restabilire setari: ",
+"Восстановить конфигурацию:",
+"Obnovenie nastavení:",
+"還原設定：",
+"还原设定："
+);
+var univerRep=new Array
+(
+"Universal Repeater",
+"Universal Repeater",
+"Repetidor universal",
+"Répétiteur universel",
+"Ripetitore universale",
+"Universal Repeater",
+"Repetidor universal",
+"Univerzální opakovač",
+"Universal repeater",
+"Universal Repeater",
+"Универсальный повторитель",
+"Univerzálny Repeater",
+"Universal Repeater",
+"Universal Repeater"
+);
+var comment=new Array
+(
+"Comment",
+"Kommentar",
+"Comentario",
+"Commentaire",
+"Commento",
+"Opmerking",
+"Comentário",
+"Komentář",
+"Uwagi",
+"Comentariu",
+"Комментарий",
+"Komentár",
+"註解",
+"批注"
+);
+var hardwareSet=new Array
+(
+"Hardware settings",
+"Hardware-Einstellungen",
+"Configuración material",
+"Paramètres matériels",
+"Impostazioni hardware",
+"Hardware-instellingen",
+"Definições de hardware",
+"Nastavení hardwaru",
+"Ustawienia sprzętu ",
+"Setari Hardware",
+"Установки физического учтройства",
+"Nastavenia hardware",
+"硬體設定",
+"硬件配置"
+);
+var wlanAddr=new Array
+(
+"WLAN address ",
+"WLAN-Adresse ",
+"Dirección WLAN ",
+"Adresse WLAN ",
+"Indirizzo WLAN ",
+"WLAN-adres ",
+"Endereço WLAN ",
+"Adresa WLAN ",
+"Adres WLAN",
+"Adresa WLAN",
+"WLAN адрес",
+"adresa WLAN",
+"無線區域網路位址",
+"无线局域网络地址"
+);
+var apply1=new Array
+(
+"Apply",
+"Übernehmen",
+"Aplicar",
+"Appliquer",
+"Applica",
+"Toepassen",
+"Aplicar",
+"Použít",
+"Zastosuj",
+"Aplica",
+"Применить",
+"POUŽIŤ",
+"套用",
+"套用"
+);
+var cancel1=new Array
+(
+"Cancel",
+"Abbrechen",
+"Cancelar",
+"Annuler",
+"Annulla",
+"Annuleren",
+"Cancelar",
+"Zrušit",
+"Skasuj",
+"Anulare",
+"Выйти",
+"Zrušiť",
+"取消",
+"取消"
+);
+var Relay=new Array
+(
+"DHCP Sever Relay",
+"DHCP Sever Relay",
+"DHCP Sever Relay",
+"DHCP Sever Relay",
+"DHCP Sever Relay",
+"DHCP Sever Relay",
+"DHCP Sever Relay",
+"DHCP Sever Relay",
+"DHCP Sever Relay",
+"DHCP Sever Relay",
+"DHCP Sever Relay",
+"DHCP Sever Relay",
+"DHCP中繼",
+"DHCP中继"
+);

@@ -1,0 +1,18 @@
+Import qw( CONS FINAL );
+
+Program $CONS 'dnrd', qw(
+    args.c
+    cache.c
+    common.c
+    dns.c
+    lib.c
+    main.c
+    master.c
+    query.c
+    relay.c
+    sig.c
+    tcp.c
+    udp.c
+);
+
+Install $CONS $FINAL, 'dnrd';

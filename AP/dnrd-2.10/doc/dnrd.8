@@ -1,0 +1,147 @@
+.TH DNRD 8 "Domain Name Relay Daemon" "DNRD v1.5" "Domain Name Relay Daemon"
+.SH NAME
+dnrd \- proxy name server
+.SH SYNOPSIS
+.hy 0
+.na
+.TP
+.B dnrd
+.RB "[\|" "\-a \fIlocaladdress\fB" | \-\-address=\fIlocaladdress\fB "\|]" 
+.RB "[\|" \-c \ ( off |[ \fIlow :] \fIhigh )| \-\-cache= ( off |[ \fIlow :] \fIhigh )]
+.RB "[\|" \-d | \-\-debug "\|]"
+.RB "[\|" \-h | \-\-help "\|]"
+.RB "[\|" \-k | \-\-kill "\|]"
+.RB "[\|" \-m \ ( off | hosts )| \-\-master= ( off | hosts ")]" 
+.RB "[\|" \-s\ \fIipaddr (: \fIdomain )| \-\-server=\fIipaddr (: \fIdomain )]
+.RB "[\|" "\-u\ \fIuserid" | \-\-uid=\fIuserid "\|]" 
+.RB "[\|" \-v | \-\-version "\|]"
+.SH DESCRIPTION
+This manual page documents version 1.5 of dnrd .
+dnrd is a proxying nameserver.  It forwards DNS queries to the appropriate
+nameserver, but can also act as the primary nameserver for a few machines.
+Proxying is configured on the command line using the 
+.B \-s
+option.  By default,
+dnrd will act as the primary nameserver for hosts found in
+.IR /etc/hosts .
+
+
+.SH OPTIONS
+.TP
+.B \-a
+.TP
+.B \-\-address
+Bind only to the interface with the specified address.  This is a security
+feature.
+
+.TP
+.BR \-c \ ( off |[ \fIlow :] \fIhigh )
+.TP
+.BR \-\-cache= ( off |[ \fIlow :] \fIhigh )
+This option can be used to either turn off caching of DNS responses, or to
+change the high and low watermarks.  The high water mark is the number of
+cached DNS responses that will be kept before we start dropping entries.
+The low water mark is the number of entries to keep around after we've
+started dropping entries.  By default, caching is on, with low and high
+watermarks of 800 and 1000 respectively.
+
+.TP
+.B \-d
+.TP
+.B \-\-debug
+This turns on debugging.  The dnrd process will run in the current console
+and print out debugging information.  If the option is given twice, it will
+also dump out the raw packet contents.
+
+.TP
+.B \-h
+.TP
+.B \-\-help
+Prints out usage information
+
+.TP
+.B \-k
+.TP
+.B \-\-kill
+Kills the currently running dnrd process and immediately returns.
+
+.TP
+.BR \-m \ ( off | hosts )
+.TP
+.BR \-\-master= ( off | hosts )
+dnrd can act as the primary name server for a number of hosts.  By default, it
+will read in
+.I /etc/dnrd/master
+to determine how this is done.  If that file
+doesn't exist, it will act as the primary server for the hosts found in
+.IR /etc/hosts .
+This option allows you to override this default behavior.  Setting it to
+.B off
+turns off all primary server functionality.  Setting it to 
+.B hosts
+causes dnrd to act as the primary server for hosts in
+.I /etc/hosts
+regardless of whether it could find
+.IR /etc/dnrd/master .
+
+.TP
+.BI \-s\  ipaddr \fR(: domain \fR)
+.TP
+.BI \-\-server= ipaddr \fR(: domain \fR)
+This option is used to tell dnrd where to forward DNS queries.  If multiple
+.B \-s
+options are given with no domain names, then  dnrd
+will treat these as redundant DNS servers, and will switch between them
+whenever the current one stops responding.
+.sp
+The 
+.I domain
+option allows dnrd
+to determine which DNS server should get the query based on the domain name
+in the query.  This is useful when you have an internet connection and a
+vpn connection to work, for instance.  In this case, all the
+.B -s
+options should have a domain defined, except for the last one, which will act
+as the "default" name server.
+
+.TP
+.BI \-u\  userid
+.TP
+.BI \-\-userid= userid
+By default, dnrd switches to uid 65535 after starting up.  This is a
+security feature. If dnrd is ever compromised by a buffer-overflow attack,
+the attacker will have gained no useful privileges.  The default uid can
+be overridden using this option.
+.I userid
+can either be a name or a number.
+
+.TP
+.B \-v
+.TP
+.B \-\-version
+Prints out the version number
+
+.SH FILES
+.PP
+.B /etc/dnrd/master
+.PP
+This file is used to configure
+.B dnrd
+as a primary nameserver.
+.PP
+.B /etc/hosts
+.PP
+By default, dnrd will act as a primary nameserver for hosts found in this file.
+.PP
+.B /var/run/dnrd.pid
+.PP
+The currently-running dnrd process' pid is placed into this file.
+It is needed to allow new dnrd processes to find and kill the currently
+running process.
+
+.SH AUTHOR
+.PP
+The original version of dnrd was written by Brad Garcia
+.BR garsh@home\&.com .
+Other contributors are listed in the HISTORY
+file included with the source code.

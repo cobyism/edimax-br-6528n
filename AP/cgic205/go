@@ -1,0 +1,4 @@
+make clean
+. ../../target.def
+
+make index.cgi CC=${CROSS}gcc STRIP=${CROSS}strip LD=${CROSS}ld AR=${CROSS}ar RANLIB=${CROSS}ranlib CLIENT=0

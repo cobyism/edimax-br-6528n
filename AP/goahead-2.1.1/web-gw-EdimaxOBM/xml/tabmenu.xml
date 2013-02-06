@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<main>
+	<menu name="System Log" link="goform/edimaxformsyslog" />
+	<menu name="Security Log" link="E3_sec_log" />
+	<menu name="DHCP client list" link="goform/edimaxformdhcp" />
+	<menu name="Wireless client list" link="goform/edimaxformactive" />
+	<menu name="Internet" link="goform/edimaxformconnection" />
+</main>

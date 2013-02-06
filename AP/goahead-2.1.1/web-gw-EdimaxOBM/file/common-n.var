@@ -1,0 +1,697 @@
+﻿var comValidateKey_wep3=new Array
+(
+"value. It should be",
+"Wert. Dieser sollte sein",
+"valor. Debería ser",
+"valeur. Elle doit contenir",
+"valore. Dovrebbe essere",
+"waarde. Het moet zijn",
+"valor. Deve ser",
+"hodnota. Měla by být",
+"wartość powinna wynosić ",
+"valoare. Ar trebui sa fie ",
+"Значение должно быть",
+"Hodnota. Musí byť.",
+"數值應該是",
+"数值应该是"
+);
+var comSaveChanges_wan2=new Array
+(
+"PPP user name cannot be empty!",
+"PPP Benutzername darf nicht leer sein!",
+"¡el nombre de usuario PPP no puede estar vacío!",
+"Le nom d'utilisateur PPP ne peut pas être vide !",
+"Il nome utente PPP non può essere vuoto!",
+"PPP gebruikersnaam mag niet leeg zijn!",
+"O nome do utilizador PPP não pode estar em branco!",
+"Jméno uživatele PPP nemůže být prázdné!",
+"Nazwa użytkownika PPP nie może być pusta ",
+"Campul user name PPP nu poate fi gol!",
+"PPP имя пользователя не может быть пустым",
+"Meno užívateľa PPP nesmie byť prázdne!",
+"PPP使用者名稱不能是空白！",
+"PPP用户名不能是空白！"
+);
+var invalidIpAddr=new Array
+(
+"Invalid IP address ",
+"Ungültige IP-Adresse ",
+"Dirección IP inválida ",
+"Adresse IP incorrecte ",
+"Indirizzo IP non valido ",
+"Ongeldig IP-adres ",
+"Endereço IP inválido ",
+"IP adresa z nesprávného ",
+"Nieprawidłowy adres IP",
+"Adresa IP invalida.",
+"Неверный IP адрес",
+"Nesprávna IP adresa",
+"無效的IP位址",
+"无效的IP位址"
+);
+var comCheckIPMask6=new Array
+(
+" range in 4rd digit. It should be 0-255.",
+" Bereich an 4. Stelle. Dieser sollte 0-255 sein.",
+" serie de 4º dígito. Debe ser entre 0-255.",
+" intervalle en 4ème chiffre. Il doit être compris entre 0 et 255.",
+" intervallo nella 4a cifra. Dovrebbe essere compreso tra 0 e 255.",
+" bereik van vierde cijferreeks. Het moet liggen tussen 0 en 255.",
+" intervalo no 4º dígito. Deve ser entre 0 e 255.",
+" rozsahu na čtvrté pozici. Zadejte 0-255.",
+"Zakres 4 liczby powinien należeć do zakresu od 0 do 255. ",
+"Introduceti o valoare intre 0 si 255",
+"Число 4го периода должно быть в пределах 0-255",
+"rozsah 4 číslice. Musí byť 0-255.",
+"第4組數字。它應該介於0-255的數字。",
+"第4组数字。它应该介于0-255的数字。"
+);
+var comSaveChanges_wpa2=new Array
+(
+"Invalid port number of RADIUS Server! It should be a decimal number between 1-65535.",
+"Ungültige Portnummer des RADIUS Servers! Es sollte eine Dezimalzahl zwischen 1-65535 sein.",
+"¡Número de puerto inválido del servidor RADIUS! Deberá ser un número decimal comprendido entre 1-65535.",
+"Numéro de port du serveur RADIUS incorrect ! Il doit s'agir d'un nombre décimal compris entre 1et 65535.",
+"Numero di porta del server RADIUS non valido! Dovrebbe essere un numero decimale compreso tra 1 e 65535.",
+"Ongeldig poortnummer van RADIUS-server! Het moet een decimaal getal zijn tussen 1 en 65535.",
+"Número inválido da porta do Servidor RADIUS! Deve ser um número decimal entre 1 e 65535.",
+"Nesprávné číslo portu RADIUS serveru! Zadejte desítkové číslo z intervalu 1-65535.",
+"Nieprawidłowy numer portu serwera RADIUS. Numer winien być liczba dziesiętną od 1 do 65535",
+"Numar de port invalid pentru Radius Server! Introduceti un numar zecimal intre 1 si 65535",
+"Неверный номер порта RADIUS сервера. Он должен быть десятичным числом в пределах 1-65535",
+"Nesprávne číslo portu RADIUS Serveru! Musí byť desatinné číslo medzi 1-65535.",
+"RADIUS伺服器的埠值是無效的！它應該是介於 1-65535的數字。",
+"RADIUS服务器的端口号是无效的！这应该是一个十进制数之间 1-65535。"
+);
+var comCheck_wpa_psk=new Array
+(
+"Pre-Shared Key value should be 64 characters.",
+"Der Pre-Shared Schlüssel sollte 64 Zeichen besitzen.",
+"El valor de la clave pre-compartida deberá ser de 64 caracteres.",
+"La valeur de la clé pré-partagée doit contenir 64 caractères.",
+"Il valore della Pre-Shared Key dovrebbe essere composto da 64 caratteri.",
+"Identiek beveiligingswachtwoord moet uit 64 tekens bestaan.",
+"O valor da chave pré-partilhada deve ter 64 caracteres.",
+"Hodnota přednastaveného klíče by měla mít 64 znaků.",
+"Przydzielony klcuz winien składać się z 64 znaków. ",
+"Lungimea Pre-shared Key trebuie sa fie 64 caractere.",
+"Ключ доступа должен состоять из 64 символов",
+"Hodnota Pre-Shared kľúča musí mať 64 znakov.",
+"公用金鑰的值應為 64個字元。",
+"预共享密钥的值应为 64个字符。"
+);
+var comSaveChanges_wan5=new Array
+(
+"Invalid MTU size! You should set a value between 1400-1492.",
+"Ungültige MTU Größe! Sie sollten einen Wert zwischen 1400-1492 einstellen.",
+"¡Tamaño MTU inválido! Deberá fijar un valor entre 1400-1492.",
+"Taille MTU (Unité Maximale Transférable) incorrecte ! Vous devez définir une valeur comprise entre 1400 et 1492.",
+"Dimensione MTU non valida! Impostare un valore compreso tra 1400 e 1492.",
+"Ongeldig MTU-formaat! U moet een waarde instellen tussen 1400 en 1492.",
+"Tamanho MTU inválido! Deve definir um valor entre 1400 e 1492.",
+"Neplatná velikost MTU! Nastavte hodnotu v rozsahu 1400-1492.",
+"Nieprawidłowa wartość MTU. Powinna ona wynosić od 1400 do 1492",
+"Valoare MTU incorecta. Introduceti o valoare cuprinsa intre 1400 si 1492",
+"Неверный MTU размер. Вам необходимо установить значение между 1400-1492",
+"Nesprávna veľkosť MTU! Musíte zadať hodnotu medzi 1400-1492.",
+"無效的MTU大小！它應該介於1400-1492之間。",
+"无效的MTU大小！它应该介于1400-1492之间。"
+);
+var comValidateKey_wep=new Array
+(
+"The encryption key you selected as the Tx Default Key cannot be blank.",
+"Die von Ihnen ausgewählte Verschlüsselung für den Tx Standardschlüssel darf nicht leer sein.",
+"La clave de codificación que ha seleccionado como clave predefinida tx no puede permanecer en blanco.",
+"La clé d'encodage sélectionnée en tant que clé par défaut Tx ne peut pas rester vide.",
+"La chiave di codifica selezionata come chiave Tx predefinita non può essere vuota.",
+"De encryptiesleutel die u als Tx standaardsleutel hebt gekozen mag niet leeg zijn.",
+"A chave de encriptação que seleccionou como chave predefinida Tr não pode estar em branco.",
+"Šifrovací klíč vybraný jako výchozí klíč Tx nemůže být prázdný.",
+"Klucz kodowania wybrany jako wartość domyślna Tx nie może pozostać pusty",
+"Campul pentru codul Tx default nu poate fi necompletat",
+"Ключ шифрования, выбранный вами как Tx ключ по умолчанию не может быть пустым",
+"Šifrovací kľúč, ktorý ste vybrali ako prednastavený Tx kľúč nesmie byť prázdny.",
+"你選擇要發送的加密金鑰不能是空白。",
+"你选择要发送的加密密钥不能是空白。"
+);
+var invalidDnsAddr2=new Array
+(
+"Invalid DNS2 address ",
+"Ungültige DNS2 Adresse ",
+"Dirección DNS2 incorrecta ",
+"Adresse DNS2 incorrecte ",
+"Indirizzo DNS2 non valido ",
+"Ongeldig DNS2-adres ",
+"Endereço DNS2 inválido ",
+"Neplatná adresa DNS2 ",
+"Nieważny adres DNS2",
+"Adresa DNS2 incorecta",
+"Неверный адрес DNS2 сервера",
+"Nesprávna DNS2 adresa",
+"DNS2位址是無效的 ",
+"无效 DNS2位址"
+);
+var comValidateKey_wep2=new Array
+(
+"Invalid length of Key",
+"Ungültige Schlüssellänge",
+"Largo de la clave inválido",
+"Longueur de clé incorrecte.",
+"Lunghezza della chiave non valida",
+"Ongeldige sleutellengte",
+"Comprimento de chave inválido",
+"Neplatná délka klíče",
+"Nieważna długość klucza ",
+"Lungimea codului incorecta.",
+"Неверная длина ключа",
+"Nesprávna dĺžka Kľúča",
+"金鑰長度是無效的",
+"无效的密钥长度"
+);
+var comSaveChanges_wpa=new Array
+(
+"RADIUS Server port number cannot be empty! It should be a decimal number between 1-65535.",
+"RADIUS Server Portnummer darf nicht leer sein! Es sollte eine Dezimalzahl zwischen 1-65535 sein.",
+"¡El número del puerto RADIUS no puede estar vacío! Deberá ser un número decimal comprendido entre 1-65535.",
+"Le numéro de port du serveur RADIUS ne peut pas être vide ! Il doit s'agir d'un nombre décimal compris entre 1et 65535.",
+"Il campo del numero della porta del server RADIUS non può essere vuoto! Dovrebbe essere un numero decimale compreso tra 1 e 65535.",
+"Poortnummer van de RADIUS-server mag niet leeg zijn! Het moet een decimaal getal zijn tussen 1 en 65535.",
+"O número da porta do Servidor RADIUS não pode estar em branco! Deve ser um número decimal entre 1 e 65535.",
+"Port RADIUS serveru nemůže být prázdný! Zadejte desítkové číslo z intervalu 1-65535.",
+"Nieprawidłowy numer portu serwera RADIUS. Numer winien być liczba dziesiętną od1 do 65535.",
+"Campul port al Radius Server nu poate fi necompletat. Introduceti o valoare intre 1 si 65535",
+"Номер порта Radius сервера не может быть пустым! Он должен быть десятичным числом в пределах 1-65535 ",
+"Číslo portu RADIUS serveru nesmie byť prázdne! Musí to byť desatinné číslo medzi 1-65535.",
+"RADIUS伺服器的埠值不能是空白！它應該介於 1-65535的數字。",
+"RADIUS服务器的埠值不能是空白！它应该是介于 1-65535的数字。"
+);
+var comSaveChanges_wan6=new Array
+(
+"Invalid server IP address!It should be located in the same subnet of local IP address.",
+"Ungültige Server IP-Adresse! Diese sollte sich im gleichen Subnetz der lokalen IP-Adresse befinden.",
+"¡Dirección IP incorrecta del servidor! Deberá ubicarse en la misma subred de la dirección IP local.",
+"Adresse IP serveur incorrecte ! Elle doit se trouver dans le même sous-réseau que l'adresse IP locale.",
+"Indirizzo del server IP non valido! Dovrebbe trovarsi nella stessa sottorete dell'indirizzo IP locale.",
+"Ongeldig IP-adres van de server! Het moet in hetzelfde subnet staan als het lokale IP-adres.",
+"Endereço IP de servidor inválido!Deve estar localizado na mesma subrede do endereço IP local.",
+"Neplatná IP adresa serveru!Měl by být umístěn na stejné podsíti s místní IP adresou.",
+"Nieważny adres IP serwera. Adres powinien należeć tej samej podsieci adresów IP.",
+"Adresa IP a serverului este incorecta. Trebuie sa fie din aceeasi subretea ca si IP-ul local,",
+"Неверный IP адрес сервера",
+"Nesprávna IP adresa serveru! Musí byť umiestnená v rovnakej podsieti ako lokálna IP adresa.",
+"伺服器的IP位址是無效的！它應該位於同一個子網路遮罩。",
+"服务器的IP位址是无效的！它应该位于同一个子网掩码。"
+);
+var comCheckIPMask4=new Array
+(
+"Invalid subnet mask in 2nd digit.It should be the number of 0, 128, 192, 224, 240, 248, 252 or 254",
+"Ungültige Subnetzmaske an 2. Stelle. Es sollte eine Zahl von 0, 128, 192, 224, 240, 248, 252 oder 254 sein",
+"La máscara de subred inválida es el 2º dígito. Deberá ser el número 0, 128, 192, 224, 240, 248, 252 o 254",
+"Le second chiffre du masque de sous-réseau est incorrect.Il doit s'agir d'un des chiffres suivants 0, 128, 192, 224, 240, 248, 252 ou 254",
+"2a cifra della maschera sottorete non valida. Dovrebbe essere un numero quale 0, 128, 192, 224, 240, 248, 252 o 254",
+"Ongeldig subnetmasker in tweede tekenreeks. Het moet 0, 128, 192, 224, 240, 248, 252 of 254 zijn.",
+"Máscara de subrede inválida no 2º dígito. Deve ser um dos seguintes números: 0, 128, 192, 224, 240, 248, 252 ou 254",
+"Neplatná hodnota masky podsítě na druhé pozici. Zadejte číslo 0, 128, 192, 224, 240, 248, 252 nebo 254",
+"Nieprawidłowa wartość drugiej cyfry maski podsieci. Wartość powinna wynosić 0, 128, 192, 224, 240, 248, 252 lub 254.   ",
+"Subnet mask invalid. Ultimul grup de caratere trebuie sa fie 0, 128, 192, 224, 240, 248, 252 sau 254",
+"Неверная маска подсети во 2м периоде. Должно быть одно из чисел ряда 0, 128, 192, 224, 240, 248, 252, 254.",
+"Nesprávna maska podsieti v 2. číslici. Musí to byť číslo 0, 128, 192, 224, 240, 248, 252 alebo 254.",
+"第2組的子網路遮罩是無效的。它應該是 0，128，192，224，240，248，252或254的數字",
+"第2组的子网掩码是无效的。它应该是 0，128，192，224，240，248，252或254的数字"
+);
+var comCheck_wpa_psk2=new Array
+(
+"Invalid Pre-Shared Key value. It should be in hex number (0-9 or a-f).",
+"Ungültiger Pre-Shared Schlüssel. Es sollte eine Hexadezimalzahl sein (0-9 oder a-f).",
+"Valor inválido de la clave pre-compartida. Deberá ser un número hexagonal (0-9 o a-f).",
+"Valeur de la clé pré-partagée incorrecte. Il doit s'agir d'un chiffre hexadécimal (0-9 ou a-f).",
+"Valore della Pre-Shared Key non valido. Deve essere composto da numeri esadecimali (0-9 o a-f).",
+"Ongeldig identiek beveiligingswachtwoord. Het moet hexadecimaal zijn (0-9 of a-f).",
+"Valor da chave pré-partilhada inválido. Deve ser um número hexadecimal (0 a 9 ou a-f).",
+"Neplatná hodnota přednastaveného klíče. Zadejte šestnáctkové číslo (0-9 nebo a-f).",
+"Nieprawidłowa wartość przydzielonego klucza. Wartość powinna być liczbą szesnastkową (0-9 lub a-f). ",
+"Valoarea Pre-Shared Key este invalida. Trebuie sa fie din caractere hexazecimale (0-9 sau a-f)",
+"Неверное значение ключа доступа. Оно должно быть HEX числом (0-9 или A-F)",
+"Nesprávna hodnota pre-shared kľúča. Musí byť hexadecimálne číslo (0-9 alebo a-f).",
+"公用金鑰的值是無效的。它應該是十六進位數字（0-9或A-F）。",
+"公用密钥的值是无效的。它应该是十六进制数字（0-9或A-F）。"
+);
+var comValidateKey_wep5=new Array
+(
+"Invalid length of WEP Key value. It should be",
+"Ungültige Länge des WEP Schlüsselwerts. Dieser sollte sein",
+"Largo incorrecto del valor de la clave WEP. Debería ser",
+"Longueur de la valeur de la clé WEP incorrecte. Elle doit contenir",
+"Lunghezza del valore della chiave WEP non valida. Deve essere",
+"Ongeldige lengte WEP-sleutel. Het moet zijn",
+"Comprimento inválido do valor da chave WEP. Deve ser",
+"Neplatná délka klíče WEP. Měla by být",
+"Nieprawidłowa długość klucza WEP. Wartość winna wynosić  ",
+"Lungime WEP Key incorecta.",
+"Неверная длина WEP ключа. Она должна быть",
+"Nesprávna dĺžka hodnoty WEP kľúča. Musí byť",
+"WEP金鑰長度的值是無效的。它應該是",
+"WEP密钥长度的值是无效的。它应该是"
+);
+var comSaveChanges_wan3=new Array
+(
+"PPP password cannot be empty!",
+"PPP Kennwort darf nicht leer sein!",
+"¡la contraseña PPP no puede estar vacía!",
+"Le mot de passe PPP ne peut pas être vide !",
+"Il campo della password PPP non può essere vuoto!",
+"PPP wachtwoord mag niet leeg zijn!",
+"A palavra-passe PPP não pode estar em branco!",
+"Heslo PPP nemůže být prázdné!",
+"Hasło PPP nie może być puste",
+"Campul password PPP nu poate fi gol!",
+"PPP пароль не может быть пустым",
+"PPP heslo nesmie byť prázdne!",
+"PPP密碼不能是空白！",
+"PPP密码不能是空白！"
+);
+var comCheckIpAddr=new Array
+(
+"IP address cannot be empty! It should be filled with 4 digit numbers as xxx.xxx.xxx.xxx.",
+"IP-Adresse darf nicht leer sein! Diese sollte mit 4-stelligen Zahlen gefüllt werden, beispielsweise xxx.xxx.xxx.xxx.",
+"¡La dirección IP no puede estar vacía! Deberá cumplimentarse con 4 números digitales como xxx.xxx.xxx.xxx.",
+"L'adresse IP ne peut pas être vide ! Elle doit contenir des nombres à 4 chiffres tels que xxx.xxx.xxx.xxx.",
+"Il campo dell'indirizzo IP non può essere vuoto! Deve contenere 4 numeri suddivisi come segue: xxx.xxx.xxx.xxx.",
+"IP-adres mag niet leeg zijn! Het moet gevuld zijn met 4 cijferreeksen zoals xxx.xxx.xxx.xxx.",
+"O endereço IP não pode estar em branco! Deve ser preenchido com 4 números de dígitos, tal como xxx.xxx.xxx.xxx.",
+"IP adresa nemůže být prázdná! Zadejte čtyři čísla ve formátu xxx.xxx.xxx.xxx.",
+"Adres IP nie może być pusty. Adres powinien zostać podany jako 4 cyfrowa liczba xxx.xxx.xxx.xxx",
+"Adresa IP nu poate fi necompletata! Trebuie sa fie de forma xxx.xxx.xxx.xxx",
+"IP адрес не может быть пустым! Он должен быть заполнен цифрами в 4х периодах  xxx.xxx.xxx.xxx.",
+"IP adresa nesmie byť prázdna! Musí byť vyplnená s 4 miestnym číslom ako xxx.xxx.xxx.xxx.",
+"IP位址不能是空白！它應該是由4組(0-255)的數字組成：xxx.xxx.xxx.xxx",
+"IP位址不能是空白！它应该是由4组(0-255)的数字组成：xxx.xxx.xxx.xxx"
+);
+var comCheckIpAddr4=new Array
+(
+" range in 2nd digit. It should be 0-255.",
+" Bereich an 2. Stelle. Dieser sollte 0-255 sein.",
+" serie de 2º dígito. Debe ser entre 0-255.",
+" intervalle en 2ème chiffre. Il doit être compris entre 0 et 255.",
+" intervallo nella 2a cifra. Dovrebbe essere compreso tra 0 e 255.",
+" bereik van tweede cijferreeks. Het moet liggen tussen 0 en 255.",
+" intervalo no 2º dígito. Deve ser entre 0 e 255.",
+" rozsahu na druhé pozici. Zadejte 0-255.",
+"Zakres drugiej cyfry. Powinien wynosić od 0 do 255",
+"Valoare gresita in campul al doilea. Introduceti o valoare cuprinsa intre 0 - 255",
+"Число 2го периода должно быть в пределах 0-255",
+"rozsah v 2. číslici. Musí byť 0-255.",
+"第2組數字。它應該介於0-255的數字。",
+"第2组数字。它应该介于0-255的数字。"
+);
+var comCheckIpAddr3=new Array
+(
+" range in 1st digit. It should be 0-255.",
+" Bereich an 1. Stelle. Dieser sollte 0-255 sein.",
+" serie de 1º dígito. Debe ser entre 0-255.",
+" intervalle en 1er chiffre. Il doit être compris entre 0 et 255.",
+" intervallo nella 1a cifra. Dovrebbe essere compreso tra 0 e 255.",
+" bereik van eerste cijferreeks. Het moet liggen tussen 0 en 255.",
+" intervalo no 1º dígito. Deve ser entre 0 e 255.",
+" rozsahu na první pozici. Zadejte 0-255.",
+"Zakres pierwszej cyfry. Powinien wynosić od 0 do 255",
+"Valoare gresita in primul camp. Introduceti o valoare cuprinsa intre 0 - 255",
+"Число 1го периода должно быть в пределах 0-255",
+"rozsah v 1. číslici. Musí byť 0-255.",
+"第1組數字。它應該介於0-255的數字。",
+"第1组数字。它应该介于0-255的数字。"
+);
+var comCheckIPMask2=new Array
+(
+"Invalid subnet mask value. It should be the decimal number (0-9).",
+"Ungültiger Subnetzmasken-Wert. Es sollte eine Dezimalzahl sein (0-9).",
+"Valor incorrecto de la máscara de subred. Deberá ser un número decimal (entre 0-9).",
+"Valeur de masque de sous-réseau incorrecte. Il doit s'agir d'un nombre décimal (0-9).",
+"Valore della maschera sottorete non valido. Deve essere un numero decimale (0-9).",
+"Ongeldige waarde submasker. Het moet een decimaal teken zijn (0-9).",
+"Valor de máscara de subrede inválido. Deve ser um número decimal (0 a 9).",
+"Neplatná hodnota masky podsítě. Zadejte desítkové číslo z intervalu (0-9).",
+"Nieprawidłowa maska podsieci. Wartość powinna być liczbą dziesiętną (0-9).",
+"Valoare incorecta a subnet mask. Trebuie sa fie un caracter zecimal cumprins intre 0 -9",
+"Неверное значение маски подсети. Оно должно быть десятичным числом (0-9)",
+"Nesprávna hodnota masky podsiete. Musí to byť desatinné číslo (0-9).",
+"無效的子網路遮罩。它應該是十進位數（0-9）。",
+"无效的子网掩码值。它应该是十进制数（0-9）。"
+);
+var comSaveChanges_wan8=new Array
+(
+"Password cannot be empty!",
+"Kennwort darf nicht leer sein!",
+"¡la contraseña no puede estar vacía!",
+"Le mot de passe ne peut pas être vide !",
+"Il campo della password non può essere vuoto!",
+"Wachtwoord mag niet leeg zijn!",
+"A palavra-passe não pode estar em branco!",
+"Heslo nemůže být prázdné!",
+"Należy podać hasło!",
+"Campul Password nu poate fi gol!",
+"Пароль не может быть пустым",
+"Heslo nesmie byť prázdne!",
+"密碼不能是空白！",
+"密码不能为空！"
+);
+var comSaveChanges_wan9=new Array
+(
+"Input MAC address is not complete. It should be 12 digits in hex.",
+"Eingabe der MAC-Adresse ist nicht abgeschlossen. Es sollten 12 Stellen in Hexadezimalzahlen sein.",
+"La dirección MAC indicada no está completa. Deberá tener 12 dígitos en hexagonal.",
+"L'adresse MAC n'est pas complète. Elle doit contenir douze chiffres héxadécimaux.",
+"L'indirizzo MAC inserito non è completo. Deve essere composto da 12 cifre esadecimali.",
+"Input voor MAC-adres is niet compleet. Het moet uit 12 hexadecimale tekens bestaan.",
+"O endereço MAC de entrada não está completo. Deve ter 12 dígitos em números hexadecimais.",
+"Zadání adresy MAC není kompletní. Zadejte 12 šestnáctkových číslic.",
+"Nieprawidłowy adres MAC. Powinien się składać z 12 cyfr w systemie szesnastkowym",
+"Adresa MAC incompleta. Trebuie introduse 12 caractere hexazecimale.",
+"Введенный МАС адрес не полон. Он должен быть 12ти значным HEX числом.",
+"Vložená MAC adresa nie je kompletná. Musí to 12 miestne číslo v hexadecimálnom tvare.",
+"輸入 的MAC位址是不完整的。它應該是12個16進位數字。",
+"输入的 MAC位址是不完整的。它应该是12位16进制。"
+);
+var invalidDefaultGate=new Array
+(
+"Invalid default gateway address ",
+"Ungültige Standardgateway-Adresse ",
+"Dirección incorrecta de la puerta de acceso predefinida ",
+"Adresse de passerelle par défaut incorrecte ",
+"Indirizzo gateway predefinito non valido ",
+"Ongeldig standaard gateway-adres ",
+"Endereço de gateway predefinido inválido ",
+"Neplatná adresa výchozí brány ",
+"Nieprawidłowy domyślny adres bramy",
+"Adresa Gateway Implicit incorecta.",
+"Неверен адрес шлюза по умолчанию",
+"Nesprávna adresa prednastavenej brány",
+"預設閘道位址是無效的",
+"默认网关位址是无效的"
+);
+var invalidRadiusIP=new Array
+(
+"Invalid RADIUS Server IP address ",
+"Ungültige RADIUS Server IP-Adresse ",
+"Dirección IP incorrecta del servidor RADIUS ",
+"Adresse IP du serveur RADIUS incorrecte ",
+"Indirizzo IP del server RADIUS non valido ",
+"Ongeldig IP-adres RADIUS-server ",
+"Endereço IP do Servidor RADIUS inválido ",
+"Neplatná IP adresa RADIUS serveru ",
+"Nieprawidłowy adres IP serwera RADIUS",
+"Adresa Server RADIUS incorecta.",
+"Неверен IP адрес Radius сервера",
+"Nesprávna IP adresa RADIUS serveru",
+"RADIUS伺服器的IP位址是無效的",
+"RADIUS服务器的IP位址是无效的"
+);
+var comSaveChanges_wan7=new Array
+(
+"User name cannot be empty!",
+"Benutzername darf nicht leer sein!",
+"¡el nombre de usuario no puede estar vacío!",
+"Le nom d'utilisateur ne peut pas être vide !",
+"Il campo del nome utente non può essere vuoto!",
+"Gebruikersnaam mag niet leeg zijn!",
+"O nome do utilizador não pode estar em branco!",
+"Jméno uživatele nemůže být prázdné!",
+"Nazwa użytkownika nie może być pusta",
+"Campul User Name nu poate fi gol!",
+"Имя пользователя не может быть пустым",
+"Užívateľské meno nesmie byť prázdne!",
+"使用者名稱不能是空白！",
+"用户名不能为空！"
+);
+var comSaveChanges_wan10=new Array
+(
+"Invalid MAC address. It should be in hex number (0-9 or a-f).",
+"Ungültige MAC-Adresse. Es sollte eine Hexadezimalzahl sein (0-9 oder a-f).",
+"Dirección MAC inválida. Deberá ser un número hexagonal (0-9 o a-f).",
+"Adresse MAC incorrecte. Il doit s'agir d'un chiffre hexadécimal (0-9 ou a-f).",
+"Indirizzo MAC non valido. Deve essere composto da numeri esadecimali (0-9 o a-f).",
+"Ongeldig MAC-adres. Het moet hexadecimaal zijn (0-9 of a-f).",
+"Endereço MAC inválido. Deve ser um número hexadecimal (0 a 9 ou a-f).",
+"Neplatná adresa MAC. Zadejte šestnáctkové číslo (0-9 nebo a-f).",
+"Nieprawidłowy adres MAC. Wartość powinna być liczbą w systemie szesnastkowym (0-9 lub a-f).",
+"Adresa MAC incorecta. Trebuie introduse doar caractere hexazecimale (0-9 sau a-f)",
+"Неверен MAC адрес. Он должен быть HEX числом (0-9 или A-F)",
+"Nesprávna MAC adresa. Musí byť hexadecimálne číslo (0-9 alebo a-f).",
+"無效的MAC位址。它應該是十六進位數字（0-9或A-F）。",
+"无效的MAC位址。它应该是十六进制数字（0-9或A-F）。"
+);
+var invalidDnsAddr1=new Array
+(
+"Invalid DNS1 address ",
+"Ungültige DNS1 Adresse ",
+"Dirección DNS1 inválida ",
+"Adresse DNS1 incorrecte ",
+"Indirizzo DNS1 non valido ",
+"Ongeldig DNS1-adres ",
+"Endereço DNS1 inválido ",
+"Neplatná adresa DNS1 ",
+"Nieprawidłowy adres DNS1",
+"Adresa DNS1 incorecta.",
+"Неверен адрес DNS1 сервера",
+"Nesprávna adresa DNS1",
+"DNS1位址是無效的",
+"无效 的DNS1位址"
+);
+var comValidateKey_wep4=new Array
+(
+"characters.",
+"Zeichen.",
+"caracteres.",
+"caractères.",
+"caratteri.",
+"tekens.",
+"caracteres.",
+"znaků.",
+"znaki",
+"caractere.",
+"Символы",
+"znaky.",
+"字元",
+"字符"
+);
+var comSaveChanges_wan4=new Array
+(
+"Invalid idle time value! You should set a value between 1-1000.",
+"Ungültiger Leerlaufzeit-Wert! Sie sollten einen Wert zwischen 1-1000 einstellen.",
+"¡Valor de tiempo en espera inválido! Deberá fijar un valor entre 1-1000.",
+"Valeur du temps mort incorrecte ! Vous devez définir une valeur comprise entre 1 et 1000.",
+"Valore tempo di inattività non valido! Impostare un valore compreso tra 1 e 1000.",
+"Ongeldige waarde van de idle time! U moet een waarde instellen tussen 1 en 1000.",
+"Valor de tempo de inactividade inválido! Deve definir um valor entre 1 e 1000.",
+"Neplatná hodnota doby nečinnosti! Nastavte hodnotu v rozsahu 1-1000.",
+"Nieprawidłowa wartość czasu bezczynności. Powinna należeć do przedziału 1-1000",
+"Valoarea timp idle invalida. Introduceti o valoare cuprinsa intre  1 - 1000",
+"Неверно значение времени ожидания. Вы должны ввести значение между 1-1000.",
+"Nesprávna hodnota časovača! Musíte zadať hodnotu medzi 1-1000.",
+"閒置時間的值是無效的！它應該介於1-1000之間。",
+"无效的空闲时间价值！它应该介于20-1024之间。"
+);
+var comCheckIPMask=new Array
+(
+"Subnet mask cannot be empty! It should be filled with 4 digit numbers as xxx.xxx.xxx.xxx.",
+"Subnetzmaske darf nicht leer sein! Diese sollte mit 4-stelligen Zahlen gefüllt werden, beispielsweise xxx.xxx.xxx.xxx.",
+"¡La máscara de subred no puede estar vacía! Deberá cumplimentarse con 4 números digitales como xxx.xxx.xxx.xxx.",
+"Le masque de sous-réseau ne peut pas rester vide ! Elle doit contenir des nombres à 4 chiffres tels que xxx.xxx.xxx.xxx.",
+"Il campo della maschera sottorete non può essere vuoto! Deve contenere 4 numeri suddivisi come segue: xxx.xxx.xxx.xxx.",
+"Subnetmasker mag niet leeg zijn! Het moet gevuld zijn met 4 cijferreeksen zoals xxx.xxx.xxx.xxx.",
+"A máscara de subrede não pode estar em branco! Deve ser preenchido com 4 números de dígitos, tal como xxx.xxx.xxx.xxx.",
+"Maska podsítě nemůže být prázdná! Zadejte čtyři čísla ve formátu xxx.xxx.xxx.xxx.",
+"Niewłaściwa maska podsieci. Wartość powinna składać się z liczby w postaci xxx.xxx.xxxx.xxx ",
+"Campul Subnet Mask nu poate fi gol. Completati o adresa de forma xxx.xxx.xxx.xxx",
+"Маска подсети не может быть пустой! Она должна быть заполнена цифрами в 4х периодах  xxx.xxx.xxx.xxx.",
+"Maska podsiete nesmie byť prázdna. Musí byť vyplnená so 4 číslami takto xxx.xxx.xxx.xxx.",
+"子網路遮罩不能是空白！它應該是由4組(0-255)的數字組成：xxx.xxx.xxx.xxx",
+"子网掩码不能是空白！它应该是由4组(0-255)的数字组成：xxx.xxx.xxx.xxx"
+);
+var comSaveChanges_basic=new Array
+(
+"SSID cannot be empty!",
+"SSID darf nicht leer sein!",
+"¡el SSID no puede estar vacío!",
+"Le champ SSID ne peut pas être vide !",
+"Il campo SSID non può essere vuoto!",
+"SSID mag niet leeg zijn!",
+"SSID não pode estar em branco!",
+"SSID nemůže být prázdné!",
+"Należy podać nazwę SSID",
+"Campul SSID nu poate fi gol!",
+"SSID не может быть пустым",
+"SSID nesmie byť prázdne!",
+"SSID不能是空白！",
+"SSID不能是空白！"
+);
+var comCheck_wpa_psk4=new Array
+(
+"Pre-Shared Key value should be less than 64 characters.",
+"Der Wert des Pre-Shared Schlüssels sollte weniger als 64 Zeichen besitzen.",
+"El valor de la clave pre-compartida deberá ser inferior a 64 caracteres.",
+"La valeur de la clé pré-partagée doit contenir moins de 64 caractères.",
+"Il valore della Pre-Shared Key dovrebbe essere composto da meno di 64 caratteri.",
+"Identiek beveiligingswachtwoord moet uit minder dan 64 tekens bestaan.",
+"O valor da chave pré-partilhada deve ter menos de 64 caracteres.",
+"Hodnota přednastaveného klíče by měla být menší než 64 znaků.",
+"Wartość przydzielonego klucza powinna składać się z mniej niż 64 znaków ",
+"Lungimea Pre-shared Key trebuie sa fie mai mica de 64 caractere.",
+"Ключ доступа должен быть короче 64х символов",
+"Hodnota pre-shared kľúča musí mať menej ako 64 znakov.",
+"公用金鑰的值應小於 64個字元。",
+"预共享密钥的值应小于 64个字符。"
+);
+var invalidDnsAddr3=new Array
+(
+"Invalid DNS3 address ",
+"Ungültige DNS3 Adresse ",
+"Dirección DNS3 inválida ",
+"Adresse DNS3 incorrecte ",
+"Indirizzo DNS3 non valido ",
+"Ongeldig DNS3-adres ",
+"Endereço DNS3 inválido ",
+"Neplatná adresa DNS3 ",
+"Nieprawidłowy adres DNS3",
+"Adresa DNS3 incorecta.",
+"Неверен DNS3 адрес",
+"Nesprávna adresa DNS3",
+"DNS3位址是無效的 ",
+"无效 DNS3位址"
+);
+var comCheckIPMask3=new Array
+(
+"Invalid subnet mask in 1st digit.It should be the number of 0, 128, 192, 224, 240, 248, 252 or 254",
+"Ungültige Subnetzmaske an 1. Stelle. Es sollte eine Zahl von 0, 128, 192, 224, 240, 248, 252 oder 254 sein",
+"La máscara de subred inválida es el 1º dígito. Deberá ser el número 0, 128, 192, 224, 240, 248, 252 o 254",
+"Le premier chiffre du masque de sous-réseau est incorrect. Il doit s'agir d'un des chiffres suivants 0, 128, 192, 224, 240, 248, 252 ou 254",
+"1a cifra della maschera sottorete non valida. Dovrebbe essere un numero quale 0, 128, 192, 224, 240, 248, 252 o 254",
+"Ongeldig subnetmasker in eerste tekenreeks. Het moet 0, 128, 192, 224, 240, 248, 252 of 254 zijn.",
+"Máscara de subrede inválida no 1º dígito. Deve ser um dos seguintes números: 0, 128, 192, 224, 240, 248, 252 ou 254",
+"Neplatná hodnota masky podsítě na první pozici. Zadejte číslo 0, 128, 192, 224, 240, 248, 252 nebo 254",
+"Nieprawidłowa wartość pierwszej cyfry maski podsieci. Wartość powinna wynosić 0, 128, 192, 224, 240, 248, 252 lub 254.   ",
+"Valoare invalida in primul camp al subnet mask-ului. Introduceti una din valorile 0, 128, 192, 224, 240, 248, 252 sau 254",
+"Неверная маска подсети в 1м периоде. Должно быть одно из чисел ряда 0, 128, 192, 224, 240, 248, 252, 254.",
+"Nesprávna maska podsiete v 1 číslici. Musí to byť číslo 0, 128, 192, 224, 240, 248, 252 alebo 254.",
+"第1組的子網路遮罩是無效的。這應該是數 0，128，192，224，240，248，252或254",
+"第1组的子网掩码是无效的。这应该是数 0，128，192，224，240，248，252或254"
+);
+var comCheckIpAddr5=new Array
+(
+" range in 3rd digit. It should be 0-255.",
+" Bereich an 3. Stelle. Dieser sollte 0-255 sein.",
+" serie de 3º dígito. Debe ser entre 0-255.",
+" intervalle en 3ème chiffre. Il doit être compris entre 0 et 255.",
+" intervallo nella 3a cifra. Dovrebbe essere compreso tra 0 e 255.",
+" bereik van derde cijferreeks. Het moet liggen tussen 0 en 255.",
+" intervalo no 3º dígito. Deve ser entre 0 e 255.",
+" rozsahu na třetí pozici. Zadejte 0-255.",
+"Trzecia cyfra powinna należeć do zakresu 0-255",
+"Valoare gresita in campul al treilea. Introduceti o valoare cuprinsa intre 0 - 255",
+"Число 3го периода должно быть в пределах 0-255",
+"rozsah v 3. čísle. Musí byť 0-255.",
+"第3組數字。它應該介於0-255的數字。",
+"第3组数字。它应该介于0-255的数字。"
+);
+var comValidateKey_wep6=new Array
+(
+"Invalid key value. It should be in hex number (0-9 or a-f).",
+"Ungültiger Schlüsselwert. Es sollte eine Hexadezimalzahl sein (0-9 oder a-f).",
+"Valor inválido de la clave. Deberá ser un número hexagonal (0-9 o a-f).",
+"Valeur de clé incorrecte. Il doit s'agir d'un chiffre hexadécimal (0-9 ou a-f).",
+"Valore della chiave non valido. Deve essere composto da numeri esadecimali (0-9 o a-f).",
+"Ongeldig beveiligingswachtwoord. Hert moet hexadecimaal zijn (0-9 of a-f).",
+"Valor de chave inválido. Deve ser um número hexadecimal (0 a 9 ou a-f).",
+"Neplatná hodnota klíče. Zadejte šestnáctkové číslo (0-9 nebo a-f).",
+"Nieprawidłowa wartość klucza. Powinna być liczbą w systemie szesnastkowym (0-9 lub a-f).",
+"Valoare key invalida. Trebuie sa fie caractere hexazecimale (0 - 9 sau a - f)",
+"Неверно значение ключа. Оно должно быть HEX числом (0-9 или A-F)",
+"Nesprávna hodnota kľúča. Musí to byť hexadecimálne číslo (0-9 alebo a-f).",
+"無效的金鑰。它應該是十六進位數字（0-9或A-F）。",
+"无效的密钥。它应该是十六进制数字（0-9或A-F）。"
+);
+var comCheck_wpa_psk3=new Array
+(
+"Pre-Shared Key value should be set at least 8 characters.",
+"Der Wert des Pre-Shared Schlüssels sollte mindestens 8 Zeichen besitzen.",
+"El valor de la clave pre-compartida deberá ser de al menos 8 caracteres.",
+"La valeur de la clé pré-partagée doit contenir au moins 8 caractères.",
+"Il valore della Pre-Shared Key dovrebbe essere composto da almeno 8 caratteri.",
+"Identiek beveiligingswachtwoord moet uit minstens 8 tekens bestaan.",
+"O valor da chave pré-partilhada deve ter pelo menos 8 caracteres.",
+"Hodnota přednastaveného klíče by měla být nejméně 8 znaků.",
+"Przydzielona wartość klucza powinna składać się przynajmniej z 8 znaków",
+"Lungimea Pre-Shared key trebuie sa fie minim 8 caractere.",
+"Ключ доступа должен состоять по крайне мере из 8 символов",
+"Hodnota pre-shared kľúča musí mať najmenej 8 znakov.",
+"公用金鑰至少要8個字元。",
+"共享密钥值应设定至少8个字符。"
+);
+var comCheckIPMask5=new Array
+(
+"Invalid subnet mask in 3rd digit.It should be the number of 0, 128, 192, 224, 240, 248, 252 or 254",
+"Ungültige Subnetzmaske an 3. Stelle. Es sollte eine Zahl von 0, 128, 192, 224, 240, 248, 252 oder 254 sein",
+"La máscara de subred inválida es el 3º dígito. Deberá ser el número 0, 128, 192, 224, 240, 248, 252 o 254",
+"Le troisième chiffre du masque de sous-réseau est incorrect.Il doit s'agir d'un des chiffres suivants 0, 128, 192, 224, 240, 248, 252 ou 254",
+"3a cifra della maschera sottorete non valida. Dovrebbe essere un numero quale 0, 128, 192, 224, 240, 248, 252 o 254",
+"Ongeldig subnetmasker in derde tekenreeks. Het moet 0, 128, 192, 224, 240, 248, 252 of 254 zijn.",
+"Máscara de subrede inválida no 3º dígito. Deve ser um dos seguintes números: 0, 128, 192, 224, 240, 248, 252 ou 254",
+"Neplatná hodnota masky podsítě na třetí pozici. Zadejte číslo 0, 128, 192, 224, 240, 248, 252 nebo 254",
+"Nieprawidłowa wartość trzeciej cyfry maski podsieci. Wartość powinna wynosić 0, 128, 192, 224, 240, 248, 252 lub 254.   ",
+"Valoare invalida in al treilea camp al subnet mask-ului. Introduceti una din valorile 0, 128, 192, 224, 240, 248, 252 sau 254",
+"Неверная маска подсети в 3м периоде. Должно быть одно из чисел ряда 0, 128, 192, 224, 240, 248, 252, 254.",
+"Nesprávna maska podsiete v 3. čísle. Musí byť číslo 0, 128, 192, 224, 240, 248, 252 alebo 254.",
+"第1組的子網路遮罩是無效的。它應該是 0，128，192，224，240，248，252或254",
+"第1组的子网掩码是无效的。这应该是数 0，128，192，224，240，248，252或254"
+);
+var comCheckIpAddr2=new Array
+(
+"value. It should be the decimal number (0-9).",
+"Wert. Es sollte eine Dezimalzahl sein (0-9).",
+"valor. Deberá ser un número decimal (entre 0-9).",
+"valeur. Il doit s'agir d'un nombre décimal (0-9).",
+"valore. Deve essere un numero decimale (0-9).",
+"waarde. Het moet een decimaal teken zijn (0-9).",
+"valor. Deve ser um número decimal (0 a 9).",
+"hodnota. Zadejte desítkové číslo z intervalu (0-9).",
+"Wartość powinna być liczbą dziesiętną (0-9)",
+"valoare. Trebuie sa fie un numar zecimal (0 - 9)",
+"Значение. Оно должно быть десятичным числом (0-9)",
+"hodnota. Musí to byť desiatkové číslo (0-9).",
+"它應該是十進位數字（0-9）。",
+"它应该是十进制数（0-9）。"
+);
+var invalidServerIp=new Array
+(
+"Invalid server IP address ",
+"Ungültige Server IP-Adresse ",
+"Dirección IP incorrecta del servidor ",
+"Adresse IP du serveur incorrecte ",
+"Indirizzo IP del server non valido ",
+"Ongeldig server IP-adres ",
+"Endereço IP do servidor inválido ",
+"Neplatná IP adresa serveru ",
+"Nieprawidłowy adres IP serwera",
+"Adresa IP a serverului este incorecta.",
+"Неверен IP адрес сервера",
+"Nesprávna IP adresa serveru",
+"伺服器的IP位址是無效的",
+"无效的服务器的IP位址"
+);
+var comSaveChanges_wan=new Array
+(
+"Invalid gateway address!It should be located in the same subnet of current IP address.",
+"Ungültige Gateway-Adresse! Diese sollte sich im gleichen Subnetz der gegenwärtigen IP-Adresse befinden.",
+"¡Dirección de la puerta de acceso incorrecta! Deberá ubicarse en la misma subred de la dirección IP actual.",
+"Adresse de passerelle incorrecte ! Elle doit se trouver dans le même sous-réseau que l'adresse IP actuelle.",
+"Indirizzo del gateway non valido! Dovrebbe trovarsi nella stessa sottorete dell'indirizzo IP corrente.",
+"Ongeldig gateway-adres van de server! Het moet in hetzelfde subnet staan als het huidige IP-adres.",
+"Endereço de gateway inválido!Deve estar localizado na mesma subrede do endereço IP local.",
+"Neplatná adresa brány!Měla by být umístěna na stejné podsíti s místní IP adresou.",
+"Nieprawidłowy adres bramy. Powinnien należeć do tej samej grupy co adres IP",
+"Adresa gateway Implicit incorecta. Trebuie sa fie in aceeasi subretea ca si IP-ul curent.",
+"Неверен адрес шлюза! Он должен принадлежать той же подсети, что и введенный IP адрес.",
+"Nesprávna adresa brány! Musí to v rovnakej podsieti ako terajšia IP adresa.",
+"閘道位址是無效的！它應位於同一個子網路遮罩。",
+"无效的网关位址！它应位于同一子网当前的IP位址。"
+);

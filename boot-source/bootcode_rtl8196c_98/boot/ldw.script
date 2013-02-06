@@ -1,0 +1,63 @@
+OUTPUT_FORMAT(elf32-tradbigmips)
+OUTPUT_ARCH(mips)
+ENTRY(start)
+SECTIONS
+{
+  /* Read-only sections, merged into text segment: */
+  . = 0x80000000;
+  .init          : { *(.init)		} =0
+  .text  ALIGN (0x8)    :
+  {
+    _ftext = . ;
+    *(.text)
+    *(.rodata)
+    *(.rodata1)
+    . = ALIGN(0x4000);    
+         __iram = . ;
+    *(.iram-rtkwlan)		
+
+    . = ALIGN(0x1000);
+        __load_start_IMEM = .;
+    *(.test98iram)
+        __load_end_IMEM = .;
+
+    /* .gnu.warning sections are handled specially by elf32.em.  */
+    *(.gnu.warning)
+  } =0
+  
+  _etext = .;
+
+  
+
+ 
+  . = .;
+  .data    :
+  {
+    _fdata = . ;
+    *(.data)
+
+        _bootimg_start = .;
+	*(.btimg)
+	_bootimg_end = .;
+
+    CONSTRUCTORS
+     _edata  =  .;
+  PROVIDE (edata = .);
+
+  }
+  
+   .  = ALIGN(4);
+  __bss_start = .;
+  _fbss = .;
+  .sbss      : { *(.sbss) *(.scommon) }
+  .bss       :
+  {
+   *(.dynbss)
+   *(.bss)
+   *(COMMON)
+   .  = ALIGN(4);
+  _end = . ;
+  PROVIDE (end = .);
+  }=0
+
+}

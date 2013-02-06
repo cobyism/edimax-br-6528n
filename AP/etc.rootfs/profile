@@ -1,0 +1,89 @@
+#!/bin/sh
+. /web/FUNCTION_SCRIPT
+date $_DATE_
+ifconfig lo 127.0.0.1 netmask 255.255.255.255
+# for squsah romfs
+DIRS="l2tp usr/share/udhcpc web ppp udhcpc etc/udhcpc etc/udhcpd dnrd run lib/misc linuxigd tmp log dev/pts lock"
+if [ "$_KERNEL_VERSION_26_" = "y" ];then
+mount -t ramfs ramfs /var
+fi
+for dir in $DIRS ; do
+	mkdir -p /var/$dir
+done
+#FILES="hosts resolv.conf ppp/options "
+if [ "$_USB_8712_" = "y" -a "$_MODE_" = "Customer" ]; then
+mount -o loop -t ramfs /dev/ram0 /etc
+cp -Rf /etc.tmp/* /etc
+fi
+FILES="hosts resolv.conf udhcpc/resolv.conf usr/share/udhcpc/resolv.conf etc/udhcpc/resolv.conf ppp/options "
+for file in $FILES ; do
+	echo " " > /var/$file
+done
+ln -s /etc/ppp.ro/ip-up /var/ppp/ip-up
+ln -s /etc/ppp.ro/ip-down /var/ppp/ip-down
+ln -s /var/ppp/link0 /var/ppp/link 	# for miniigd
+cp /etc/tmp/pics* /var/linuxigd
+#build dev to ramfs
+mount -t ramfs ramfs /dev
+mknod -m666 ${ROMFSDIR}/dev/mtdblock0 b 31 0
+mknod -m666 ${ROMFSDIR}/dev/mtdblock1 b 31 1
+if [ "$_LANGUAGE_PACK_" ]; then
+	mknod -m666 ${ROMFSDIR}/dev/mtdblock2 b 31 2
+fi
+#------------------System Node-----------------------#
+mknod -m666 /dev/kmem        c       1       2
+mknod -m666 /dev/null        c       1       3
+mknod -m666 /dev/random c 1 8
+mknod -m666 /dev/urandom     c 1 9
+mknod -m666 /dev/ptmx c 5 2
+mknod -m666 /dev/ttyS0 c 4 64
+mknod -m666 /dev/console c 5 1
+mknod -m666 /dev/flash0      c       200     0
+mknod -m666 /dev/rdm0 c   254   0  #for reg tool
+#------------------PPPoE Node-----------------------#
+mknod -m666 /dev/ptyp0 c 2 0
+mknod -m666 /dev/ttyp0 c 3 0
+mknod -m666 /dev/ttyS1 c 4 65
+mknod -m666 /dev/ppp c 108 0
+#-----------------PPTP Node------------------------#
+mknod -m666 /dev/ptyp1 c 2 1
+mknod -m666 /dev/ptyp2 c 2 2
+mknod -m666 /dev/ptyp3 c 2 3
+mknod -m666 /dev/ttyp1 c 3 1
+mknod -m666 /dev/ttyp2 c 3 2
+mknod -m666 /dev/ttyp3 c 3 3
+#------------------GPIO Node------------------------#
+mkdir -p /dev/pts
+for minor in 0 1 2 3 4 5 6 7 8 9 10 ; do
+	mknod -m666 /dev/pts/$minor c 136 $minor
+done
+if [ "$_WAN3G_" = "y" ]; then
+	mount -t usbfs none /proc/bus/usb
+	mkdir -p /var/wan
+fi
+if [ "$_WISP_7711UN_SWITCH_" = "y" ]; then
+	mount -t usbfs none /proc/bus/usb
+fi
+if [ "$_SUPPORT_REMOTE_SYSLOGD_" = "y" ]; then
+	enable="`flash get REMOTE_SYSLOGD_ENABLE | cut -f 2 -d =`"
+	if [ "$enable" = "1" ]; then
+		ip="`flash get REMOTE_SYSLOGD_SERVERIP | cut -f 2 -d \'`"
+		if [ "$ip" ] && [ "$ip" != "0.0.0.0" ]; then
+			syslogd -C -L -R $ip
+		fi
+	else
+		syslogd -C
+	fi
+else
+	syslogd -C
+fi
+if [ "$_MODE_" = "Customer" ]; then
+	klogd
+fi
+reload&
+if [ "`flash get AP_MODE | cut -f 2 -d =`" = "8" ]; then
+init.sh ap all
+else
+init.sh gw all
+fi
+#setup

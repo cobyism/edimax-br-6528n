@@ -1,0 +1,9495 @@
+var AccessControl=new Array
+(
+"Access Control",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var AccessControlAddPC=new Array
+(
+"Access Control Add PC",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var AccessControlAddPCContent=new Array
+(
+"This page allows users to define service limitation of client PC, including IP address and service type.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var AccessControlContent=new Array
+(
+"For security reason, the Wireless Router features MAC Address Filtering that only allows authorized MAC Addresses associating to the Wireless Router.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var AccessPoint=new Array
+(
+"Access Point",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Account=new Array
+(
+"Account",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var AccountOrEmail=new Array
+(
+"Account / E-mail",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ActiveDHCPClient=new Array
+(
+"Active DHCP Client",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ActiveDHCPClientContent=new Array
+(
+"This table shows the assigned IP address, MAC address and time expired for each DHCP leased client.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ActiveWirelessClientTable=new Array
+(
+"Active Wireless Client Table",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ActiveWirelessClientTableContent=new Array
+(
+"This table shows the MAC address, transmission, receiption packet counters for each associated wireless client.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Add=new Array
+(
+"Add",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var AddPC=new Array
+(
+"Add PC",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var AdvancedSettings=new Array
+(
+"Advanced Settings",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ALGSettings=new Array
+(
+"ALG Settings",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Allow=new Array
+(
+"Allow",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Always=new Array
+(
+"Always",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var APBridgeP2MP=new Array
+(
+"AP Bridge (Point to Multi-Point)",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var APBridgeP2P=new Array
+(
+"AP Bridge (Point to Point)",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var APBridgeWDS=new Array
+(
+"AP Bridge (WDS)",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var APPLY=new Array
+(
+"APPLY",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ApplyToReset=new Array
+(
+"Please press APPLY button to restart the system to make the changes take effect.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var April=new Array
+(
+"April",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var AssignLoginServerManually=new Array
+(
+"Assign login server manually",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var AssociatedClients=new Array
+(
+"Associated Clients",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var August=new Array
+(
+"August",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Authentication=new Array
+(
+"Authentication",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var AuthenticationMode=new Array
+(
+"Authentication Mode",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Auto=new Array
+(
+"Auto",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var AutoMACClone=new Array
+(
+"Auto MAC Clone",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var BACK=new Array
+(
+"BACK",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var BackupSettings=new Array
+(
+"Backup Settings",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Band=new Array
+(
+"Band",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Bandwidth=new Array
+(
+"Bandwidth",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var BasicSettings=new Array
+(
+"Basic Settings",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var BeaconInterval=new Array
+(
+"Beacon Interval",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var BEZEQISRAEL=new Array
+(
+"BEZEQ-ISRAEL",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var bOnly=new Array
+(
+"802.11b only",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var BootCodeVersion=new Array
+(
+"Boot Code Version",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Both=new Array
+(
+"Both",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var BroadcastEssid=new Array
+(
+"Broadcast Essid",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var BSSID=new Array
+(
+"BSSID",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Burst=new Array
+(
+"Burst",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var BurstOfPingOfDeath=new Array
+(
+"Burst of Ping of Death",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var BurstOfSyncFlood=new Array
+(
+"Burst of Sync Flood",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var CANCEL=new Array
+(
+"CANCEL",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var CannotCreateMoreEntries=new Array
+(
+"Cannot create more entries because the number of entries has exceeded the limit.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Channel=new Array
+(
+"Channel",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ChannelNumber=new Array
+(
+"Channel Number",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ChannelWidth=new Array
+(
+"Channel Width",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Characters=new Array
+(
+"Characters",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Clear=new Array
+(
+"Clear",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ClientPCDescription=new Array
+(
+"Client PC Description",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ClientPCIPAddress=new Array
+(
+"Client PC IP Address",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ClientPCMACAddress=new Array
+(
+"Client PC MAC Address",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ClientService=new Array
+(
+"Client Service",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var CloneMAC=new Array
+(
+"Clone MAC",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Close=new Array
+(
+"Close",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Comment=new Array
+(
+"Comment",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ComputerName=new Array
+(
+"Computer Name",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ConfigMode=new Array
+(
+"Config Mode",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ConfigurationTools=new Array
+(
+"Configuration Tools",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ConfigurationToolsContent=new Array
+(
+"Use the \"Backup\" tool to save the Wireless Router\'s current configurations to a file named \"config.bin\". You can then use the \"Restore\" tool to restore the saved configuration to the Wireless Router. Alternatively, you can use the \"Restore to Factory Default\" tool to force the Wireless Router to perform System Reset and restore the original factory settings.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ConfigureByClientPinCode=new Array
+(
+"Configure by Client PinCode",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ConfigureByPushButton=new Array
+(
+"Configure by Push Button",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Configured=new Array
+(
+"Configured",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ConfirmPassword=new Array
+(
+"Confirm Password",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Connect=new Array
+(
+"Connect",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ConnectionID=new Array
+(
+"Connection ID",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ConnectionType=new Array
+(
+"Connection Type",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ConnectOnDemand=new Array
+(
+"Connect on Demand",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ConnectToServerFailed=new Array
+(
+"Connect to server failed.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ConnectToServerSuccessFully=new Array
+(
+"Connect to server successfully.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var CONTINUE=new Array
+(
+"CONTINUE",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ContinueOrApply=new Array
+(
+"You may press CONTINUE button to continue configuring other settings or press APPLY button to restart the system to make the changes take effect.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Continuous=new Array
+(
+"Continuous",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var CtsProtect=new Array
+(
+"CTS Protect",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var CurrentDMZTable=new Array
+(
+"Current DMZ Table",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var CurrentMACFilteringTable=new Array
+(
+"Current MAC Filtering Table",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var CurrentPassword=new Array
+(
+"Current Password",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var CurrentPortForwardingTable=new Array
+(
+"Current Port Forwarding Table",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var CurrentQoSTable=new Array
+(
+"Current QoS Table",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var CurrentStaticRoutingTable=new Array
+(
+"Current Static Routing Table",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var CurrentTime=new Array
+(
+"Current Time",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var CurrentTriggerPortTable=new Array
+(
+"Current Trigger-Port Table",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var CurrentURLBlockingTable=new Array
+(
+"Current URL Blocking Table",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var CurrentVirtualServerTable=new Array
+(
+"Current Virtual Server Table",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var DataRate=new Array
+(
+"Data Rate",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var DaylightSavings=new Array
+(
+"Daylight Savings",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var DDNS=new Array
+(
+"DDNS",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var DDNSContent=new Array
+(
+"DDNS (DynamicDNS) allows users to map the static domain name to a dynamic IP address. You must get a account, password and your static domain name from the DDNS service providers. Our products have DDNS support for www.dyndns.org and www.tzo.com now.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var DDNSPassword=new Array
+(
+"DDNS Password",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var December=new Array
+(
+"December",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var DefaultGateway=new Array
+(
+"Default Gateway",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var DefaultKeyCannotBeBlank=new Array
+(
+"The encryption key selected as the Default Tx Key cannot be blank.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var DefaultTxKey=new Array
+(
+"Default Tx Key",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Delete=new Array
+(
+"Delete",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var DeleteAll=new Array
+(
+"Delete All",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Deny=new Array
+(
+"Deny",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var DestinationLANIP=new Array
+(
+"Destination LAN IP",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var DetailDescription=new Array
+(
+"Detail Description",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var DeviceConfigure=new Array
+(
+"Device Configure",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var DeviceStatus=new Array
+(
+"Device Status",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var DeviceStatusContent=new Array
+(
+"View the current setting status of this device.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var DHCPClientEndIP=new Array
+(
+"DHCP Client End IP",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var DHCPClientIPRange=new Array
+(
+"DHCP Client IP Range",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var DHCPClientStartIP=new Array
+(
+"DHCP Client Start IP",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var DHCPServer=new Array
+(
+"DHCP Server",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Disable=new Array
+(
+"Disable",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var DiscardPingFromWAN=new Array
+(
+"Discard Ping from WAN",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Disconnect=new Array
+(
+"Disconnect",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var DMZ=new Array
+(
+"DMZ",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var DNS=new Array
+(
+"DNS",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var DNSAddess=new Array
+(
+"DNS Address",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var DNSContent=new Array
+(
+"A DNS (Domain Name System) server is like an index of IP Addresses and Web Addresses. If you type a Web address into your browser, such as www.broadbandrouter.com, a DNS server will find that name in its index and find the matching IP address. Most ISPs provide a DNS server for speed and convenience. Since your Service Provider may connect you to the Internet through dynamic IP settings, it is likely that the DNS server IP Address is also provided dynamically. However, if there is a DNS server that you would rather use, you need to specify the IP Address of that DNS server. The primary DNS will be used for domain name access first, in case the primary DNS access failures, the secondary DNS will be used.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var DomainName=new Array
+(
+"Domain Name",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Done=new Array
+(
+"Done",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var DoS=new Array
+(
+"DoS",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var DoSContent=new Array
+(
+"The Wireless Router\'s firewall can block common hacker attacks, including DoS, Discard Ping from WAN and Port Scan.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var DoSModule=new Array
+(
+"DoS Module",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Download=new Array
+(
+"Download",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var DownloadBandwidth=new Array
+(
+"Download Bandwidth",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var DoYouReallyWantToDeleteAll=new Array
+(
+"Do you really want to delete all entries?",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var DoYouReallyWantToDeleteSelected=new Array
+(
+"Do you really want to delete selected entries?",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var DTIMPeriod=new Array
+(
+"DTIM Period",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var DynamicDNS=new Array
+(
+"Dynamic DNS",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var DynamicIP=new Array
+(
+"Dynamic IP",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var DynamicIPContentMain=new Array
+(
+"Obtains an IP Address automatically from your Service Provider.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var DynamicIPContentNormal=new Array
+(
+"The Host Name is optional, but may be required by some Service Providers. The default MAC Address is set to the WAN physical interface on the Wireless Router. If required by your Service Provider, you can use the \'Clone MAC Address\' button to copy the MAC Address of the Network Interface Card installed in your PC and replace the WAN MAC Address with this MAC Address.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var DynamicIPContentWizard=new Array
+(
+"Cable Modem",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var DynamicIPRenewSuccessfully=new Array
+(
+"Dynamic IP renew successfully.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Edit=new Array
+(
+"Edit",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Enable=new Array
+(
+"Enable",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Enable8021xAuthentication=new Array
+(
+"Enable 802.1x Authentication",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var EnableSomething=new Array
+(
+"Enable #####",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var EnableStaticDHCPLeases=new Array
+(
+"Enable Static DHCP Leases",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Encryption=new Array
+(
+"Encryption",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var EncryptionKey=new Array
+(
+"Encryption Key",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var EndIPAddress=new Array
+(
+"End IP Address",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Enrollee=new Array
+(
+"Enrollee",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var EnterIPWhenEnableIPFiltering=new Array
+(
+"Please enter the IP address when you enable the IP Filtering function.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var EnterMACWhenEnableMACFiltering=new Array
+(
+"Please enter the MAC when you enable the MAC Filtering function.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ESSID=new Array
+(
+"ESSID",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var EthernetLAN=new Array
+(
+"Ethernet LAN",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var EthernetWAN=new Array
+(
+"Ethernet WAN",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var February=new Array
+(
+"February",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var FileFormat=new Array
+(
+"File Format",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Firewall=new Array
+(
+"Firewall",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var FirewallContent=new Array
+(
+"The Wireless Router provides extensive firewall protection by restricting connection parameters, thus limiting the risk of hacker attack, and defending against a wide array of common attacks. However, for applications that require unrestricted access to the Internet, you can configure a specific client/server as a Demilitarized Zone (DMZ).",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var FirewallModule=new Array
+(
+"Firewall Module",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var FirmwareUpgrade=new Array
+(
+"Firmware Upgrade",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var FirmwareUpgradeAlert=new Array
+(
+"At the end of the upgrade, the Wireless Router may not respond to commands for as long as one minute. This is normal behavior and do not turn off Wireless Router during the time.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var FirmwareUpgradeConfirm=new Array
+(
+"Do you wish to continue with the upgrade process?",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var FirmwareUpgradeContent=new Array
+(
+"This tool allows you to upgrade the Wireless Router\'s system firmware. Enter the path and name of the upgrade file and then click the APPLY button below. You will be prompted to confirm the upgrade.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var FirmwareUpgradeContent0=new Array
+(
+"The system will automatically reboot the router after you finished the firmware upgrade process. If you don\'t complete the firmware upgrade process in the \"next\" step, you have to reboot the router.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ForBEZEQISRAELOnly=new Array
+(
+"For BEZEQ network in ISRAEL use only",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Forever=new Array
+(
+"Forever",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var FragmentThreshold=new Array
+(
+"Fragment Threshold",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var GeneralSetup=new Array
+(
+"General Setup",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var GeneralSetupContent=new Array
+(
+"The Wireless Router supports advanced functions like Virtual Server, Access Control, Hacker Attack Detection and DMZ. We highly recommend you keep the default settings.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var gOnly=new Array
+(
+"802.11g only",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Guarantee=new Array
+(
+"Guarantee",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var HalfAnHour=new Array
+(
+"Half an hour",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var HalfOfADay=new Array
+(
+"Half of a day",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var HardwareVersion=new Array
+(
+"Hardware Version",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Home=new Array
+(
+"Home",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var HopCount=new Array
+(
+"Hop Count",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var HostAddress=new Array
+(
+"Host Address",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var HostID=new Array
+(
+"Host ID",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var HostName=new Array
+(
+"Host Name",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var HostPassword=new Array
+(
+"Host Password",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Hour=new Array
+(
+"Hour",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var IAPP=new Array
+(
+"IAPP",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var IdleTimeOut=new Array
+(
+"Idle Time Out",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var IGMPModule=new Array
+(
+"IGMP Module",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var IGMPSettings=new Array
+(
+"IGMP Settings",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var IGMPSettingsContent=new Array
+(
+"The Internet Group Management Protocol (IGMP) is a communications protocol used to manage the membership of Internet Protocol multicast groups. IGMP is used by IP hosts and adjacent multicast routers to establish multicast group memberships. It is an integral part of the IP multicast specification, like ICMP for unicast connections. IGMP can be used for online video and gaming, and allows more efficient use of resources when supporting these uses.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Interface=new Array
+(
+"Interface",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var InternetConnection=new Array
+(
+"Internet Connection",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var InternetConnectionContent=new Array
+(
+"View the current internet connection status and related information.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var InvalidSomething=new Array
+(
+"Invalid #####.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var IPAddress=new Array
+(
+"IP Address",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var IPAddressInfo=new Array
+(
+"3. IP Address Info",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var IPChangedNeedReconnect=new Array
+(
+"IP Address has been modified. You will have to re-connect to the web server with the new assigned IP Address.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var IPFiltering=new Array
+(
+"IP Filtering",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var IPv6Bridge=new Array
+(
+"IPv6 Bridge",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ISAddress=new Array
+(
+"IS Address",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ItAllowsSomeEntriesOnly=new Array
+(
+"It allows ##### entries only.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ItShouldBe4DigitInIpFormat=new Array
+(
+"It should be filled with 4 decimal numbers such as xxx.xxx.xxx.xxx",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ItShouldBeFQDNOrIP=new Array
+(
+"It should be FQDN or IP Address.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var January=new Array
+(
+"January",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var July=new Array
+(
+"July",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var June=new Array
+(
+"June",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Key=new Array
+(
+"Key",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var KeyFormat=new Array
+(
+"Key Format",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var KeyLength=new Array
+(
+"Key Length",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var L2TP=new Array
+(
+"L2TP",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var L2TPContentMain=new Array
+(
+"Layer Two Tunneling Protocol is a common connection method used in xDSL connections.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var L2TPDisconnected=new Array
+(
+"L2TP disconnected.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var L2TPGateway=new Array
+(
+"L2TP Gateway",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var L2TPSettings=new Array
+(
+"L2TP Settings",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var LAN=new Array
+(
+"LAN",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var LANConfiguration=new Array
+(
+"LAN Configuration",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var LANContent=new Array
+(
+"You can enable the Wireless Router\'s DHCP server to dynamically allocate IP Addresses to your LAN client PCs. The Wireless Router must have an IP Address in the Local Area Network.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var LANIP=new Array
+(
+"LAN IP",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var LeaseTime=new Array
+(
+"Lease Time",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var LengthOfSomethingShouldBeHowmany=new Array
+(
+"Length of ##### should be ####@.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var LocalEndIP=new Array
+(
+"Local End IP",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var LocalIPAddress=new Array
+(
+"Local IP Address",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var LocalPortRange=new Array
+(
+"Local Port Range",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var LocalStartIP=new Array
+(
+"Local Start IP",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var LongPreamble=new Array
+(
+"Long Preamble",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var MACAddress=new Array
+(
+"MAC Address",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var MACAddress1=new Array
+(
+"MAC Address 1",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var MACAddress2=new Array
+(
+"MAC Address 2",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var MACAddress3=new Array
+(
+"MAC Address 3",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var MACAddress4=new Array
+(
+"MAC Address 4",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var MACAddressFilteringTable=new Array
+(
+"MAC Address Filtering Table",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var MACFiltering=new Array
+(
+"MAC Filtering",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Manual=new Array
+(
+"Manual",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var March=new Array
+(
+"March",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Maximum=new Array
+(
+"Maximum",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var May=new Array
+(
+"May",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Minute=new Array
+(
+"Minute",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var MixedMode=new Array
+(
+"Mixed Mode",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Mode=new Array
+(
+"Mode",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Model=new Array
+(
+"Model",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var MoreConfiguration=new Array
+(
+"More Configuration",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var MoveDown=new Array
+(
+"Move Down",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var MoveUp=new Array
+(
+"Move Up",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var MTU=new Array
+(
+"MTU",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var MultipleSSID=new Array
+(
+"Multiple SSID",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var MultipleSSIDContent=new Array
+(
+"This page allows you to configure the wireless settings for Multiple ESSIDs. The wireless security settings for these ESSIDs can be configured in Security page.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Name=new Array
+(
+"Name",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var NAT=new Array
+(
+"NAT",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var natALGComArrayAmanda=new Array
+(
+"Support for Amanda backup tool protocol.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var natALGComArrayEgg=new Array
+(
+"Support for eggdrop bot networks.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var natALGComArrayFTP=new Array
+(
+"Support for FTP.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var natALGComArrayH323=new Array
+(
+"Support for H323/netmeeting.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var natALGComArrayIPsec=new Array
+(
+"Support for IPsec passthrough",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var natALGComArrayIRC=new Array
+(
+"Allows DCC to work though NAT and connection tracking.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var natALGComArrayMMS=new Array
+(
+"Support for Microsoft Streaming Media Services protocol.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var natALGComArrayMSN=new Array
+(
+"Support for MSN file tranfer.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var natALGComArrayQuake3=new Array
+(
+"Support for Quake III Arena connection tracking and nat.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var natALGComArrayStarcraft=new Array
+(
+"Support for Starcraft/Battle.net game protocol.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var natALGComArrayTalk=new Array
+(
+"Allows netfilter to track talk connections.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var natALGComArrayTFTP=new Array
+(
+"Support for TFTP.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var NATContent=new Array
+(
+"NAT (Network Address Translation) allows multiple users at your local site to access the Internet through a single Public IP Address or multiple Public IP Addresses. NAT provides Firewall protection from hacker attacks and has the flexibility to allow you to map Private IP Addresses to Public IP Addresses for key services such as the Web or FTP.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var NATModule=new Array
+(
+"NAT Module",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var NDataRate=new Array
+(
+"N Data Rate",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var NewPassword=new Array
+(
+"New Password",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var NEXT=new Array
+(
+"NEXT",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var None=new Array
+(
+"None",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var November=new Array
+(
+"November",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ObtainIPAddressAutomatically=new Array
+(
+"Obtain an IP Address Automatically",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var October=new Array
+(
+"October",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var OFF=new Array
+(
+"OFF",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var OFFLINE=new Array
+(
+"OFFLINE",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var OK=new Array
+(
+"OK",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ON=new Array
+(
+"ON",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var OneDay=new Array
+(
+"One day",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var OneHour=new Array
+(
+"One hour",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var OneWeek=new Array
+(
+"One week",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var OperatingRatesMod=new Array
+(
+"Operating Rates Mode",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Optional=new Array
+(
+"Optional",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PacketOfPingOfDeath=new Array
+(
+"Packet of Ping of Death",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PacketOfSyncFlood=new Array
+(
+"Packet of Sync Flood",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Packets=new Array
+(
+"Packet(s)",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PacketsReceived=new Array
+(
+"Packets Received",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PacketsSent=new Array
+(
+"Packets Sent",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Passphrase=new Array
+(
+"Passphrase",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PassphraseKey=new Array
+(
+"Passphrase Key",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Password=new Array
+(
+"Password",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PasswordNoSpace=new Array
+(
+"Password should not contain space characters.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PasswordNotMatch=new Array
+(
+"New passwords do not match.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PasswordOrKey=new Array
+(
+"Password / Key",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PasswordSettings=new Array
+(
+"Password Settings",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PasswordSettingsContent=new Array
+(
+"You can change the password required while logging into the wireless router\'s web-based management system. By default, the password is 1234. So please assign a password to the Administrator as soon as possible, and store it in a safe place. Passwords can contain 0 to 30 alphanumeric characters, and are case sensitive.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Per=new Array
+(
+"per",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PhyMode=new Array
+(
+"802.11 PhyMode",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PinCode=new Array
+(
+"PinCode",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PinCodeSelf=new Array
+(
+"PinCode Self",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PingOfDeath=new Array
+(
+"Ping of Death",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PopularApplications=new Array
+(
+"Popular Applications",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Port=new Array
+(
+"Port",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PortForwarding=new Array
+(
+"Port Forwarding",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PortForwardingContent=new Array
+(
+"Entries in this table allow you to automatically redirect common network services to a specific machine behind the NAT firewall. These settings are only necessary if you wish to host some sort of server like a web server or mail server on the private local network behind your Gateway\'s NAT firewall.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PortNumber=new Array
+(
+"Port Number",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PortRange=new Array
+(
+"Port Range",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PortScan=new Array
+(
+"Port Scan",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PowerSaving=new Array
+(
+"Power Saving",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PPPoE=new Array
+(
+"PPPoE",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PPPoEContentMain=new Array
+(
+"PPP over Ethernet is a common connection method used in xDSL connections.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PPPoEContentWizard=new Array
+(
+"Enter the User Name and Password required by your ISP in the appropriate fields. If your ISP has provided you with a \"Service Name\" enter it in the Service Name field, otherwise, leave it blank.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PPPoEDisconnected=new Array
+(
+"PPPoE disconnected.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PPPoEPassthrough=new Array
+(
+"PPPoE Passthrough",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PPTP=new Array
+(
+"PPTP",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PPTPDisconnected=new Array
+(
+"PPTP disconnected.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PPTPGateway=new Array
+(
+"PPTP Gateway",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PPTPSettings=new Array
+(
+"PPTP Settings",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PreambleType=new Array
+(
+"Preamble Type",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PreSharedKey=new Array
+(
+"Pre-shared Key",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PreSharedKeyFormat=new Array
+(
+"Pre-shared Key Format",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PrimaryDNS=new Array
+(
+"Primary DNS",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PrintServer=new Array
+(
+"Print Server",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Priority=new Array
+(
+"Priority",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PrivateIP=new Array
+(
+"Private IP",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PrivatePort=new Array
+(
+"Private Port",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Protect=new Array
+(
+"Protect",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Protocol=new Array
+(
+"Protocol",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Provider=new Array
+(
+"Provider",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PSKAtLeast8Char=new Array
+(
+"Pre-Shared Key value should be set at least 8 characters.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PSKLessThan64Char=new Array
+(
+"Pre-shared key value should be less than 64 characters.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PublicIP=new Array
+(
+"Public IP",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PublicPort=new Array
+(
+"Public Port",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var QoS=new Array
+(
+"QoS",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var QoSAddContent=new Array
+(
+"This page allows users to add/modify the QoS rule\'s settings.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var QoSContent=new Array
+(
+"QoS (Quality of Service) refers to the capability of a network to provide better service to selected network traffic. The primary goal of QoS is to provide priority including dedicated bandwidth, controlled jitter and latency (required by some real-time and interactive traffic), and improved loss characteristics. Also important is making sure that providing priority for one or more flows does not make other flows fail.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var QuickSetup=new Array
+(
+"Quick Setup",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var QuickSetupContent=new Array
+(
+"The Quick Setup provides only the necessary configurations to connect your Wireless Router to your Internet Service Provider (ISP) through an external cable or a DSL modem.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var RadiusServerIPAddress=new Array
+(
+"RADIUS Server IP Address",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var RadiusServerPassword=new Array
+(
+"RADIUS Server Password",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var RadiusServerPort=new Array
+(
+"RADIUS Server Port",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Refresh=new Array
+(
+"Refresh",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Registrar=new Array
+(
+"Registrar",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ReloadSettingsSuccessfully=new Array
+(
+"Reload settings successfully.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var RemainedBandwidth=new Array
+(
+"Remained Bandwidth",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var RemoteEndIP=new Array
+(
+"Remote End IP",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var RemoteIPAddress=new Array
+(
+"Remote IP Address",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var RemoteManagement=new Array
+(
+"Remote Management",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var RemotePortRange=new Array
+(
+"Remote Port Range",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var RemoteStartIP=new Array
+(
+"Remote Start IP",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Reset=new Array
+(
+"Reset",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ResetAlert=new Array
+(
+"Do you really want to reset the current settings to default?",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ResetConfirm=new Array
+(
+"Do you really want to reset the Wireless Router?",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ResetTakeSomeTime=new Array
+(
+"It may take some time to complete this process and restart the system. Please don\'t turn off the Wireless Router before the process is complete.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var RestoreSettings=new Array
+(
+"Restore Settings",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var RestoreToFactoryDefault=new Array
+(
+"Restore to Factory Default",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var RIPD=new Array
+(
+"RIPD",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var RootAPSSID=new Array
+(
+"Root AP SSID",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var RTSThreshold=new Array
+(
+"RTS Threshold",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var RuleName=new Array
+(
+"Rule Name",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var RuntimeCodeVersion=new Array
+(
+"Runtime Code Version",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Save=new Array
+(
+"Save",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SaveSettingsSuccessfully=new Array
+(
+"Save settings successfully!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Second=new Array
+(
+"Second",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SecondaryDNS=new Array
+(
+"Secondary DNS",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Security=new Array
+(
+"Security",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SecurityLog=new Array
+(
+"Security Log",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SecurityLogContent=new Array
+(
+"View any attempts that have been made to illegally gain access to your network.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SecuritySettings=new Array
+(
+"Security Settings",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Select=new Array
+(
+"Select",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SelectLanguage=new Array
+(
+"Select Language",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SelectSSID=new Array
+(
+"Select SSID",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var September=new Array
+(
+"September",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ServerIPAddress=new Array
+(
+"Server IP Address",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ServiceName=new Array
+(
+"Service Name",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SetDDNSDomainNameFailed=new Array
+(
+"Set DDNS domain name failed.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SetDDNSPasswordFailed=new Array
+(
+"Set DDNS password failed.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SetDDNSTypeFailed=new Array
+(
+"Set DDNS type failed.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SetDDNSUserFailed=new Array
+(
+"Set DDNS user failed.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SetEnabledFlagFailed=new Array
+(
+"Set enabled flag failed.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SetTypeCableModem=new Array
+(
+"Cable Modem",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SetTypeCableModemContent=new Array
+(
+"A connection through a cable modem requires minimal configuration. When you set up an account with your Cable provider, the Cable provider and your Wireless Router will automatically establish a connection, so you probably do not need to enter anything more.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SetTypeContent=new Array
+(
+"Specify the WAN connection type required by your Internet Service Provider. Specify a Cable modem, Fixed-IP xDSL, PPPoE xDSL or PPTP xDSL connection.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SetTypeFixedIPDSL=new Array
+(
+"Fixed-IP xDSL",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SetTypeFixedIPDSLContent=new Array
+(
+"Some xDSL Internet Service Providers may assign a Fixed IP Address for your Wireless Router. If you have been provided with this information, choose this option and enter the assigned IP Address, Subnet Mask, Gateway IP Address and DNS IP Address for your Wireless Router.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SetTypeL2TPDSL=new Array
+(
+"L2TP xDSL",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SetTypeL2TPDSLContent=new Array
+(
+"Layer Two Tunneling Protocol is a common connection method used in xDSL connections.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SetTypePPPoEDSL=new Array
+(
+"PPPoE xDSL",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SetTypePPPoEDSLContent=new Array
+(
+"If you connect to the Internet using an xDSL Modem and your ISP has provided you with a Password and a Service Name, then your ISP uses PPPoE to establish a connection. You must choose this option and enter the required information.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SetTypePPTPDSL=new Array
+(
+"PPTP xDSL",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SetTypePPTPDSLContent=new Array
+(
+"If you connect to the Internet using an xDSL Modem and your ISP has provided you with a Password, Local IP Address, Remote IP Address and a Connection ID, then your ISP uses PPTP to establish a connection. You must choose this option and enter the required information.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SetTypeTelBP=new Array
+(
+"Telstra Big Pond",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SetTypeTelBPContent=new Array
+(
+"If your Internet service is provided by Telstra Big Pond in Australia, you will need to enter your information below, This information is provided by Teistra BigPond. ",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ShortPreamble=new Array
+(
+"Short Preamble",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ShowActiveClients=new Array
+(
+"Show Active Clients",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Signal=new Array
+(
+"Signal",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SiteSurvey=new Array
+(
+"Site Survey",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SNMP=new Array
+(
+"SNMP",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SomethingAndSomethingShouldInSameSubnet=new Array
+(
+"##### and ####@ should be in the same subnet.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SomethingCannotBeEmpty=new Array
+(
+"##### cannot be empty.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SomethingCannotContainQuotationMarks=new Array
+(
+"##### cannot not contain quotation marks.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SomethingConsistOnlyAlphanumeric=new Array
+(
+"##### should consist of alphanumeric charecters only.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SomethingConsistOnlyHexadecimal=new Array
+(
+"##### should consist of hexadecimal numbers only.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SomethingShouldBeDecimal=new Array
+(
+"##### should be a decimal number.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SomethingShouldBeMACAddressNumbersWith255=new Array
+(
+"##### should be one of 0, 128, 192, 224, 240, 248, 252, 254 and 255.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SomethingShouldBeMACAddressNumbersWithout255=new Array
+(
+"##### should be one of 0, 128, 192, 224, 240, 248, 252 and 254.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SomethingShouldBeMinToMax=new Array
+(
+"##### should be a decimal number between ####@ and ###@#.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SomethingShouldconsist12Hex=new Array
+(
+"##### should consist of 12 hexadecimal numbers.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SomethingShouldLessThanSomething=new Array
+(
+"##### should be less than ####@.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SpanningTree=new Array
+(
+"802.1d Spanning Tree",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SpecialApplications=new Array
+(
+"Special Applications",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SpecialApplicationsContent=new Array
+(
+"Some applications require multiple connections, such as Internet gaming, video conferencing, Internet telephony and others. These applications cannot work when Network Address Translation (NAT) is enabled. If you need to run applications that require multiple connections, specify the port normally associated with an application in the \"Trigger Port\" field,select the protocol type as TCP or UDP, then enter the public ports associated with the trigger port to open them for inbound traffic. Note:The range of the Trigger Port is 1 to 65535.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SSID=new Array
+(
+"SSID",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var StartIPAddress=new Array
+(
+"Start IP Address",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var StartPBC=new Array
+(
+"Start PBC",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var StartPIN=new Array
+(
+"Start PIN",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var StaticDHCPLeaseTable=new Array
+(
+"Static DHCP Lease Table",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var StaticIP=new Array
+(
+"Static IP",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var StaticIPContentMain=new Array
+(
+"Uses a Static IP Address. Your Service Provider gives a Static IP Address to access Internet services.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var StaticIPContentWizard=new Array
+(
+"Enter the IP Address, Subnet Mask, Gateway IP Address and DNS IP Address provided to you by your ISP in the appropriate fields.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var StaticRouting=new Array
+(
+"Static Routing",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var StationAdHoc=new Array
+(
+"Station (Ad Hoc)",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var StationInfrastructure=new Array
+(
+"Station (Infrastructure)",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Statistics=new Array
+(
+"Statistics",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var StatisticsContent=new Array
+(
+"This page shows the packet counters for transmission and reception regarding to networks.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Status=new Array
+(
+"Status",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var StatusContent=new Array
+(
+"You can use the Status page to monitor the connection status for the Wireless Router\'s; WAN/LAN interfaces, firmware and hardware version numbers, any illegal attempts to access your network, and information on all DHCP client PCs currently connected to your network.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var StatusContent=new Array
+(
+"The Wireless Router\'s status information provides the following information about your Wireless Router: Hardware/Firmware version, Serial Number, and its current operating status.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SubnetMask=new Array
+(
+"Subnet Mask",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SyncFlood=new Array
+(
+"Sync Flood",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var System=new Array
+(
+"System",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SystemContent=new Array
+(
+"This page includes the basic configuration tools for the Wireless Router\'s remote management access function.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SystemLog=new Array
+(
+"System Log",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SystemLogContent=new Array
+(
+"View the system operation information. You can see the system start up time, connection process and etc., here.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var SystemRestarting=new Array
+(
+"System is restarting, please wait for a while.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var TCPPortToOpen=new Array
+(
+"TCP Port to Open",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var TelBP=new Array
+(
+"Telstra Big Pond",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var TelBPContentMain=new Array
+(
+"Telstra Big Pond is a Internet service is provided in Australia.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var TelBPContentNormal=new Array
+(
+"If your Internet service is provided by Telstra Big Pond in Australia, you will need to enter your information below, This information is provided by Teistra BigPond.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var TheEntry=new Array
+(
+"The entry",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var TheFirstNumber=new Array
+(
+"The first number",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var TheFourthNumber=new Array
+(
+"The fourth number",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var TheSecondNumber=new Array
+(
+"The second number",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var TheThirdNumber=new Array
+(
+"The third number",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var TimeExpired=new Array
+(
+"Time Expired",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var TimeFrom=new Array
+(
+"Time From",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var TimeServerAddress=new Array
+(
+"Time Server Address",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var TimeZone=new Array
+(
+"Time Zone",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var TimeZoneContent=new Array
+(
+"Set the time zone of the Wireless Router. This information is used for log entries and firewall settings.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var To=new Array
+(
+"To",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Tools=new Array
+(
+"Tools",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ToolsContent=new Array
+(
+"Wireless Router Tools - Tools include Configuration tools, Firmware upgrade and Reset.Configuration tools allow you to Backup, Restore, or Restore to Factory Default setting for your Wireless Router. The Firmware upgrade tool allows you to upgrade your Wireless Router\'s firmware. The RESET tool allows you to reset your Wireless Router.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var ToolsContent1=new Array
+(
+"The Tools Settings section includes the basic configuration tools, such as Save, Restore Configuration Settings, and Upgrade System Firmware.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var TotalDownloadBandwidth=new Array
+(
+"Total Download Bandwidth",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var TotalUploadBandwidth=new Array
+(
+"Total Upload Bandwidth",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var TrafficType=new Array
+(
+"Traffic Type",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var TransmitBurstMode=new Array
+(
+"Transmit Burst Mode",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var TransmitRate=new Array
+(
+"Transmit Rate",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var TwoDays=new Array
+(
+"Two days",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var TwoHours=new Array
+(
+"Two hours",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var TwoWeeks=new Array
+(
+"Two weeks",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var TxPower=new Array
+(
+"Tx Power",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Type=new Array
+(
+"Type",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var UDPPortToOpen=new Array
+(
+"UDP Port to Open",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Unconfigured=new Array
+(
+"Unconfigured",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var UniversalRepeater=new Array
+(
+"Universal Repeater",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var UpdateSuccessfully=new Array
+(
+"Update successfully.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Upload=new Array
+(
+"Upload",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var UploadBandwidth=new Array
+(
+"Upload Bandwidth",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var UPnPModule=new Array
+(
+"UPnP Module",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var UPnPSettings=new Array
+(
+"UPnP Settings",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var UpTime=new Array
+(
+"Up Time",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var URLBlocking=new Array
+(
+"URL Blocking",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var URLKeyword=new Array
+(
+"URL/Keyword",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var USBMASSStorage=new Array
+(
+"USB MASS Storage",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var UseFollowingIPAddress=new Array
+(
+"Use The Following IP Address",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var UseInternalMD5RadiusServer=new Array
+(
+"Use internal MD5 RADIUS Server",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var UserDefineService=new Array
+(
+"User Define Service",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var UserName=new Array
+(
+"User Name",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var VirtualServer=new Array
+(
+"Virtual Server",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var VirtualServerContent=new Array
+(
+"You can configure the Wireless Router as a Virtual Server so that remote users accessing services such as the Web or FTP at your local site via Public IP Addresses can be automatically redirected to local servers configured with Private IP Addresses. In other words, depending on the requested service (TCP/UDP) port number, the Wireless Router redirects the external service request to the appropriate internal server (located at one of your LAN\'s Pirvate IP Address). ",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var WAN=new Array
+(
+"WAN",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var WANContent=new Array
+(
+"The Wireless Router can connect to your Internet Service Provider with the following methods.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var WANInterfaceSettings=new Array
+(
+"WAN Interface Settings",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var WANPort=new Array
+(
+"WAN Port",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var WANType=new Array
+(
+"2. WAN Type",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var wanqosAlertChkNum=new Array
+(
+"You can only select one entry!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var WDSSecureSettings=new Array
+(
+"WDS Security Settings",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var WDSSecureSettingsContent=new Array
+(
+"This page allows you setup the WDS security. The value depends on your AP Security settings.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var Wireless=new Array
+(
+"Wireless",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var WirelessAccessLog=new Array
+(
+"Wireless Access Log",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var WirelessConfiguration=new Array
+(
+"Wireless Configuration",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var WirelessContent=new Array
+(
+"The Wireless Router can be quickly configured as a wireless access point for roaming clients by setting the access identifier and channel number. It also supports data encryption and client filtering.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var WirelessLAN=new Array
+(
+"Wireless LAN",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var WirelessMACAddress=new Array
+(
+"Wireless MAC Address",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var WirelessModule=new Array
+(
+"Wireless Module",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var WirelessRouter=new Array
+(
+"Wireless Router",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var WirelessSiteSurvey=new Array
+(
+"Wireless Site Survey",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var WirelessSiteSurveyContent=new Array
+(
+"This page provides tool to scan the wireless network. If any Access Point or IBSS is found, you could choose to connect it manually when client mode is enabled.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var WizardTimeZone=new Array
+(
+"1. Time Zone",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var WMM=new Array
+(
+"WMM",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var WPAPreSharedKey=new Array
+(
+"WPA pre-shared key",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var WPARADIUS=new Array
+(
+"WPA RADIUS",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var WPAUnicastCipherSuite=new Array
+(
+"WPA Unicast Cipher Suite",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var WPS=new Array
+(
+"WPS",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var WPSContent=new Array
+(
+"This page allows you to change the setting for WPS (Wi-Fi Protected Setup). WPS can help your wireless client automatically connect to the Wireless Router.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var WPSInformation=new Array
+(
+"WPS Information",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var WPSStatus=new Array
+(
+"WPS Status",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var UpdateSuccessfully=new Array
+(
+"Update successfully.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var PortFWOverlapped=new Array
+(
+"Setting port range has overlapped with used port numbers!",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var firmware_upgrading=new Array
+(
+"Firmware upgrading, please wait.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var upgrade_accomplished=new Array
+(
+"Upgrade Accomplished.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var upgrade_accomplished_content=new Array
+(
+"You should be able to reconnect to the router by refreshing the web page now. If not, please restart the router by reconnecting the power line manually.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var wpsProxy=new Array
+(
+"Enable WPS Proxy",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var wlshedule_s2=new Array
+(
+"Wireless Schedule",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var wlshedule_s3=new Array
+(
+"weekday",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var wlshedule_s4=new Array
+(
+"Sunday",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var wlshedule_s5=new Array
+(
+"Monday",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var wlshedule_s6=new Array
+(
+"Tuesday",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var wlshedule_s7=new Array
+(
+"Wednesday",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var wlshedule_s8=new Array
+(
+"Thursday",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var wlshedule_s9=new Array
+(
+"Friday",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var wlshedule_s10=new Array
+(
+"Saturday",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var wlshedule_s11=new Array
+(
+"time",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var wlshedule_s12=new Array
+(
+"hour",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var wlshedule_s13=new Array
+(
+"minute",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var wlshedule_s14=new Array
+(
+"command",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var wlshedule_s15=new Array
+(
+"wireless on",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var wlshedule_s16=new Array
+(
+"wireless off",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var wlshedule_s17=new Array
+(
+"weekday",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var wlshedule_s18=new Array
+(
+"time",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var wlshedule_s19=new Array
+(
+"command",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var wlshedule_s20=new Array
+(
+"select",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var file=new Array
+(
+"Please enter a file.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var wandipAlert2=new Array
+(
+"Invalid MAC address. It should be in hex number (0-9 or a-f).",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var tpacket=new Array
+(
+"Tx Packets",
+"",
+"",
+""
+);
+var rpacket=new Array
+(
+"Rx Packets",
+"",
+"",
+""
+);
+var txrate=new Array
+(
+"Tx Rate (Mbps)",
+"",
+"",
+""
+);
+var ExpiredTime=new Array
+(
+"Expired Time (s)",
+"",
+"",
+""
+);
+var Parental=new Array
+(
+"Parental Control",
+"",
+"",
+""
+);
+var wandipAlert3=new Array
+(
+"Hostname cannot contain \" & ' character.",
+"",
+"",
+""
+);
+var asplanip=new Array
+(
+"Setup your LAN IP address here. If you don\'t have any idea of how to choose an IP address for your LAN, you can use default setting, which will work in most cases.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);var asplanipshort=new Array
+(
+"Setup your LAN IP address here. If you don\'t have any idea of how to choose an IP address for your LAN,",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspdhcpserver=new Array
+(
+"Input the parameters of DHCP server here, if you don\'t have any idea, you can use default settings:<br><br>Start IP / End IP: Input the starting / ending IP address of DHCP server.<br><br>Domain name: Input the domain name of your network, you can leave it blank if you don\'t have one.<br><br>DNS1 / DNS2 address: Input the IP address of your DNS server, DO NOT input hostname here.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var aspdhcpservershort=new Array
+(
+"Input the parameters of DHCP server here, if you don\'t have any idea, you can use default settings:",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var StaticDHCPLeasesTable=new Array
+(
+"Normally this router will assign LAN IP address to clients by random order. If you want to assign specific LAN IP address to a certain computer on your LAN. Check Enable Static DHCP Leases to enable this function.Input the MAC address and the IP address is respective field and then click \"Add\" button to build a static DHCP lease.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);var StaticDHCPLeasesTableshort=new Array
+(
+"Normally this router will assign LAN IP address to clients by random order. If you want to assign specific LAN IP address to a certain computer on your LAN.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var natALGComArrayL2TP=new Array
+(
+"Support for L2TP passthrough.",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+);
+var detectDynamic=new Array
+(
+"Select \"Dynamic IP\" if your Internet service provider gives you IP address automatically(e.g. cable Internet providers)."
+);
+var detectStatic=new Array
+(
+"Select \"Static IP\" if your Internet service provider has given you a fixed IP address."
+);
+var detectPPPoE=new Array
+(
+"Select \"PPPoE\" if you are using ADSL(username and password required)."
+);
+var detectPPTP=new Array
+(
+"If your PPTP service provider gives you dynamic IP addresses, select \"Obtain an IP address automatically\". If your IP address is fixed, input the one provided by your ISP(username and password required)."
+);
+var detectL2TP=new Array
+(
+"If your L2TP service provider gives you dynamic IP addresses, select \"Obtain an IP address automatically\". If your IP address is fixed, input the one provided by your ISP(username and password required)."
+);
+var wan_ipv6_settings=new Array
+(
+"WAN IPv6 Settings",
+"WAN IPv6 Einstellungen",
+"Configuración de WAN IPv6 ",
+"Paramètres IPv6 WAN",
+"Impostazioni interfaccia WAN IPv6 ",
+"WAN IPv6 instellingen",
+"Definições de IPv6 de WAN",
+"Nastavení IPv6 rozhraní WAN",
+"Ustawienia interfejsu WAN IPv6",
+"Setări WAN IPv6",
+"IPv6 настройки",
+"Nastavenia IPv6 siete WAN",
+"設定WAN IPv6",
+"设置 IPv6 广域网"
+);
+var ipv6_link_local_address=new Array
+(
+"IPv6 Link-Local Address",
+"IPv6 Link-Local-Adresse",
+"Dirección local de conexión IPv6",
+"Adresse lien local IPv6",
+"IPv6 Indirizzo link locale",
+"IPv6 link-local adres",
+"Endereço local de ligação IPv6",
+"Lokální linková adresa IPv6",
+"Link IPv6-Adres lokalny",
+"Adresă link local IPv6",
+"IPv6 локальный адрес",
+"Adresa IPv6 lokálneho pripojenia",
+"IPv6 本地鏈結位址",
+"IPv6 本地链结地址"
+);
+var ipv6_address=new Array
+(
+"IPv6 Address",
+"IPv6 Adresse",
+"Dirección IPv6",
+"Adresse IPv6",
+"IPv6 Indirizzo",
+"IPv6 adres",
+"Endereço de IPv6",
+"Adresa IPv6",
+"Adres IPv6",
+"Adresă link local IPv6",
+"IPv6 адрес",
+"Adresa IPv6",
+"IPv6 位址",
+"IPv6 地址"
+);
+var ipv6_subnet_prefix_length=new Array
+(
+"Subnet Prefix Length",
+"Subnetz Vorzeichenlänge",
+"Longitud del prefijo de subred",
+"Longueur de préfixe de sous-réseau",
+"Lunghezza prefisso sottorete ",
+"Subnet Prefix lengte",
+"Comprimento do prefixo de sub-rede",
+"Délka prefixu podsítě",
+"Długość prefiksu podsieci",
+"Lungime prefix Subnet",
+"Длина префикса подсети",
+"Dĺžka predpony podsiete",
+"Subnet Prefix Length",
+"Subnet Prefix Length"
+);
+var ipv6_default_gateway=new Array
+(
+"Default Gateway",
+"Standardgateway",
+"Puerta de enlace predefinida",
+"Passerelle par défaut",
+"Gateway predefinito",
+"Voorkeursgateway",
+"Gateway predefinido",
+"Výchozí brána",
+"Domyślna bramka",
+"Gateway implicit",
+"Шлюз по умолчанию",
+"Predvolená brána",
+"預設閘道",
+"默认网关"
+);
+var ipv6_remote_ipv4_address=new Array
+(
+"Remote IPv4 Address",
+"Remote IPv4-Adresse",
+"Dirección IPv4 remota",
+"Adresse IPv4 déportée",
+"Indirizzo IPv4 remoto",
+"Remote (extern) IPc4 adres",
+"Endereço de IPv4 remoto",
+"Vzdálená adresa IPv4",
+"Zdalny adres IPv4",
+"Adresă IPv4 la distanţă",
+"Удаленный IPv4 адрес",
+"Vzdialená adresa IPv4",
+"遠端 IPv4位址",
+"远程 IPv4地址"
+);
+var ipv6_remote_ipv6_address=new Array
+(
+"Remote IPv6 Address",
+"Remote IPv6-Adresse",
+"Dirección IPv6 remota",
+"Adresse IPv6 déportée",
+"Indirizzo IPv9 remoto",
+"Remote (extern) IPv6 adres",
+"Endereço de IPv6 remoto",
+"Vzdálená adresa IPv6",
+"Zdalny adres IPv6",
+"Adresă IPv6 la distanţă",
+"Удаленный IPv6 адрес",
+"Vzdialená adresa IPv6",
+"遠端 IPv6位址",
+"远程 IPv6地址"
+);
+var ipv6_local_ipv4_address=new Array
+(
+"Local IPv4 Address",
+"Lokale IPv4-Adresse",
+"Dirección IPv4 local",
+"Adresse IPv4 locale",
+"Indirizzo IPv4 locale",
+"Lokaal IPv4 adres",
+"Endereço de IPv4 local",
+"Místní adresa IPv4",
+"Lokalny adres IPv4",
+"Adresă IPv4 locală",
+"Локальный IPv4 адрес",
+"Miestna adresa IPv4",
+"本地 IPv4位址",
+"本地 IPv4地址"
+);
+var ipv6_local_ipv6_address=new Array
+(
+"Local IPv6 Address",
+"Lokale IPv6-Adresse",
+"Dirección IPv6 local",
+"Adresse IPv6 locale",
+"Indirizzo IPv6 locale",
+"Lokaal IPv6 adres",
+"Endereço de IPv6 local",
+"Místní adresa IPv6",
+"Lokalny adres IPv6",
+"Adresă IPv6 locală",
+"Локальный IPv6 адрес",
+"Miestna adresa IPv6",
+"本地 IPv6位址",
+"本地 IPv6地址"
+);
+var ipv6_username=new Array
+(
+"User Name",
+"Benutzername",
+"Nombre de usuario",
+"Nom d'utilisateur",
+"Nome utente",
+"Gebruikersnaam",
+"Nome de utilizador",
+"Jméno uživatele",
+"Nazwa użytkownika",
+"Nume utilizator",
+"Имя пользователя",
+"Používateľské meno",
+"用戶名稱",
+"用户名称"
+);
+var ipv6_password=new Array
+(
+"Password",
+"Kennwort",
+"Contraseña",
+"Mot de Passe",
+"Password",
+"Wachtwoord",
+"Palavra-passe",
+"Heslo",
+"Hasło",
+"Parolă",
+"Пароль",
+"Heslo",
+"密碼",
+"密码"
+);
+var ipv6_service_name=new Array
+(
+"Service Name",
+"Servicename",
+"Nombre del servicio",
+"Nom du service",
+"Nome servizio",
+"Servicenaam",
+"Nome do serviço",
+"Název služby",
+"Nazwa usługi",
+"Nume serviciu",
+"Сервис",
+"Názov služby",
+"服務名稱",
+"服务名称"
+);
+var ipv6_connect_type=new Array
+(
+"Connection Type",
+"Verbindungsart",
+"Tipo de conexión",
+"Type de connexion",
+"Tipo di connessione",
+"Verbindingstype",
+"Tipo de ligação",
+"Typ připojení",
+"Typ połączenia",
+"Tip conexiune",
+"Тип подключения",
+"Typ pripojenia",
+"連接類型",
+"连接类型"
+);
+var ipv6_continuous=new Array
+(
+"Continuous",
+"Dauerhaft",
+"Continua",
+"En continu",
+"Continuo",
+"Doorlopend",
+"Contínua",
+"Nepřetržité",
+"Ciągły",
+"continuu",
+"Непрерывно",
+"Priebežné",
+"永遠連線",
+"永远联机"
+);
+var ipv6_connect_on_demand=new Array
+(
+"Connect on Demand",
+"Verbindung nach Bedarf",
+"Conectar bajo pedido",
+"Connexion sur demande",
+"Connetti su richiesta",
+"Verbinding op aanvraag",
+"Ligação mediante pedido",
+"Připojení na vyžádání",
+"Połącz na żądanie",
+"Conectare la cerere",
+"Подключение по требованию",
+"Pripojiť na požiadanie",
+"有需求才連線",
+"有需求才联机"
+);
+var ipv6_manual=new Array
+(
+"Manual",
+"Manuell",
+"Manual",
+"Manuel",
+"Manuale",
+"Gebruikershandleiding",
+"Manual",
+"Ručně",
+"Ręczne",
+"Manual",
+"Вручную",
+"Ručne",
+"手動連線",
+"手动联机"
+);
+var ipv6_idle_timeout=new Array
+(
+"Idle Time Out",
+"Ungenutzte Zeit abgelaufen",
+"Tiempo en espera",
+"Dépassement temps mort",
+"Time out inattivo",
+"Idle time-out",
+"Desligar tempo de inactividade",
+"Vypršení času nečinnosti",
+"Limit czasu przerwy",
+"Timp inactiv",
+"Время ожидания",
+"Časový limit nečinnosti vypršal",
+"閒置超時",
+"闲置超时"
+);
+var ipv6_minutes=new Array
+(
+"minutes",
+"Minuten",
+"minutos",
+"minutes",
+"minuti",
+"minuten",
+"minutos",
+"minut",
+"minuty",
+"minute",
+"мин.",
+"minúty",
+"分鐘",
+"分钟"
+);
+var ipv6_server=new Array
+(
+"Server",
+"Server",
+"Servidor",
+"Serveur",
+"Server",
+"Server",
+"Servidor",
+"Server",
+"Serwer",
+"Server",
+"Сервер",
+"Server",
+"伺服器",
+"服务器"
+);
+var ipv6_dns_mode=new Array
+(
+"DNS Mode",
+"DNS-Modus",
+"Modo DNS",
+"Mode DNS",
+"Modalità DNS",
+"DNS-modus",
+"Modo DNS",
+"Režim DNS",
+"Tryb DNS",
+"Mod DNS",
+"Режим DNS",
+"Režim DNS",
+"DNS模式",
+"DNS模式"
+);
+var ipv6_auto=new Array
+(
+"Auto",
+"Automatisch",
+"Auto",
+"Auto",
+"Auto",
+"Auto",
+"Automático",
+"Automaticky",
+"Automatyczny",
+"Auto",
+"Автоматически",
+"Automaticky",
+"自動取得",
+"自动取得"
+);
+var ipv6_primary_dns=new Array
+(
+"Primary DNS",
+"Primäres DNS",
+"DNS primaria",
+"DNS primaire",
+"DNS primario",
+"Primaire DNS",
+"DNS principal",
+"Primární DNS",
+"Główny DNS",
+"DNS primar",
+"Первичный DNS",
+"Primárny server DNS",
+"DNS 1",
+"DNS 1"
+);
+var ipv6_secondary_dns=new Array
+(
+"Secondary DNS",
+"Sekundäres DNS",
+"DNS secundario",
+"DNS secondaire",
+"DNS secondario",
+"Secundaire DNS",
+"DNS secundário",
+"Sekundární DNS",
+"Pomocniczy DNS",
+"DNS secundar",
+"Вторичный DNS",
+"Sekundárny server DNS",
+"DNS 2",
+"DNS 2"
+);
+var lan_ipv6_settings=new Array
+(
+"LAN IPv6 Settings",
+"LAN IPv6-Einstellungen",
+"Configuración de LAN IPv6",
+"Paramètres IPv6 LAN",
+"Impostazioni LAN IPv6",
+"LAN IPv6 instellingen",
+"Definições de IPv6 de rede local",
+"Nastavení IPv6 rozhraní LAN",
+"Ustawienia interfejsu LAN IPv6",
+"Setări LAN IPv6",
+"LAN IPv6 настройки",
+"Nastavenia IPv6 siete LAN",
+"設置LAN IPv6",
+"设置 IPv6 区域网"
+);
+var ipv6_disable=new Array
+(
+"Disable",
+"Deaktivieren",
+"Desactivar",
+"Désactiver",
+"Disattiva",
+"Uitschakelen",
+"Desactivar",
+"Zakázat",
+"Wyłącz",
+"Dezactivare",
+"Отключить",
+"Vypnúť",
+"關閉",
+"关闭"
+);
+var ipv6_ra_interval=new Array
+(
+"RA Interval",
+"RA Intervall",
+"Intervalo RA",
+"Intervalle RA",
+"Intervallo RA",
+"RA-interval",
+"Intervalo de RA",
+"Interval RA",
+"Okres RA",
+"Interval RA",
+"RA интервал",
+"Interval RA",
+"RA Interval",
+"RA Interval"
+);
+var ipv6_seconds=new Array
+(
+"seconds",
+"Sekunden",
+"segundos",
+"secondes",
+"secondi",
+"Seconden",
+"segundos",
+"sekund",
+"sekund",
+"secunde",
+"сек.",
+"sekúnd",
+"秒",
+"秒"
+);
+var ipv6_dhcp_client_start_ipv6=new Array
+(
+"DHCP Client Start IPv6",
+"DHCP Client Start-IPc6",
+"IPv6 inicial de cliente DHCP",
+"IPv6 de début client DHCP",
+"IPv6 Inizio client DHCP",
+"DHCP Client Start IPv6",
+"Cliente DHCP IPv6 inicial",
+"Počáteční IPv6 adresa DHCP klienta",
+"Początkowy IPv6 klienta DHCP",
+"DHCP start client IPv6",
+"Начальный DHCP IPv6 адрес",
+"Počiatočná adresa IPv6 klienta DHCP",
+"客戶端 DHCP 啟始IPv6",
+"客户端 DHCP 启始IPv6"
+);
+var ipv6_dhcp_client_end_ipv6=new Array
+(
+"DHCP Client End IPv6",
+"DHCP Client End-IPc6",
+"IPv6 final de cliente DHCP",
+"IPv6 de fin client DHCP",
+"IPv6 Fine client DHCP",
+"DHCP Client End IPv6",
+"Cliente DHCP IPv6 final",
+"Koncová IPv6 adresa DHCP klienta",
+"Końcowy IPv6 klienta DHCP",
+"DHCP final client IPv6",
+"Конечный DHCP IPv6 адрес",
+"Koncová adresa IPv6 klienta DHCP",
+"客戶端 DHCP 結束IPv6",
+"客户端 DHCP 结束IPv6"
+);
+var ipv6_lifetime=new Array
+(
+"Lifetime",
+"Laufzeit",
+"Tiempo de vida",
+"Durée de vie",
+"Durata",
+"Levensduur",
+"Vida útil",
+"Životnost",
+"Czas życia",
+"Durată de viaţă",
+"Время жизни",
+"Životnosť",
+"生命週期",
+"生命周期"
+);
+var keyHide=new Array
+(
+"hide",
+"Verbergen",
+"Ocultar",
+"Cacher",
+"Nascondere",
+"Verbergen",
+"Ocultar",
+"Skrýt",
+"Ukryj",
+"Ascundere",
+"скрыть",
+"Skryť",
+"隱藏",
+"隐藏"
+);

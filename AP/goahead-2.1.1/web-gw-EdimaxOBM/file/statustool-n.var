@@ -1,0 +1,1360 @@
+﻿var channelNum=new Array
+(
+"Channel Number",
+"Kanalnummer",
+"Número de canal",
+"Numéro de canal",
+"Numero canale",
+"Kanaalnummer",
+"Número do canal",
+"Číslo kanálu",
+"Numer kanału",
+"Numarul Canalului ",
+"Номер канала",
+"Číslo kanálu",
+"頻道編號",
+"频道编号"
+);
+var firmReset=new Array
+(
+"In the event that the system stops responding correctly or stops functioning, you can perform a Reset. Your settings will not be changed. To perform the reset, click on the APPLY button below. You will be asked to confirm your decision. Reset will be completed when the Power LED light stops blinking.",
+"In dem Fall, dass das System nicht mehr ordnungsgemäß reagiert oder den Betrieb eingestellt, können Sie einen Reset durchführen. Ihre Einstellungen werden nicht geändert. Um den Reset durchzuführen, klicken Sie auf die Schaltfläche ÜBERNEHMEN im unteren Bereich. Sie werden aufgefordert, Ihre Entscheidung zu bestätigen. Der Reset ist abgeschlossen, wenn die Power-LED nicht mehr blinkt.",
+"Si el sistema deja de responder correctamente o deja de funcionar, podrá realizar un Reinicio. Sus parámetros no se cambiarán. Para realizar el reinicio, pulse en el botón APLICAR ubicado más abajo. Se le pedirá que confirme su decisión. El reinicio se completará cuando la luz de potencia LED deje de pestañear.",
+"Si le système cesse de répondre ou de fonctionner correctement, vous pouvez le réinitialiser. Vos paramètres ne changeront pas. Pour effectuer une réinitialisation, cliquez sur la touche APPLIQUER ci-dessous. Il vous est demandé de confirmer votre sélection. La réinitialisation est complète lorsque le voyant d'alimentation cesse de clignoter.",
+"Nel caso in cui il sistema smetta di rispondere correttamente o di funzionare, è possibile eseguire un ripristino. Le impostazioni non verranno modificate. Per eseguire il ripristino, fare clic sul pulsante APPLICA riportato in seguito. Verrà richiesto di confermare la scelta. Il reset sarà completato quando l'indicatore luminoso dell'accensione smette di lampeggiare.",
+"Mocht het systeem niet meer juist reageren of helemaal stoppen, dan kunt u het resetten. Uw instellingen worden dan niet veranderd. Om een reset uit te voeren, klikt u op de knop APPLY (Toepassen) hieronder. Het systeem vraagt u om bevestiging. Het resetten is voltooid als het LED-powerlampje niet meer knippert.",
+"No caso do sistema deixar de responder correctamente ou parar de funcionar, pode efectuar uma reposição. As suas definições não serão alteradas. Para efectuar a reposição, clique no botão APPLY (Aplicar) indicado abaixo. Ser-lhe-á solicitado para confirmar a sua opção. A reposição será concluída quando o indicador luminoso LED parar de piscar.",
+"V případě, že systém nereaguje správně nebo jakýmkoliv způsobem přestane fungovat, můžete jej inicializovat. Vaše nastavení se nezmění. Inicializaci aktivujte klepnutím na tlačítko APPLY (použít). Bude vyžadováno potvrzení vašeho rozhodnutí. Resetování je dokončeno, jakmile přestane blikat kontrolka napájení.",
+"W przypadku braku odpowiedzi urządzenia lub braku działania możliwe jest zresetowanie urządzenia. Ustawienia nie ulegną zmianie. Aby przeprowadzić resetowanie kliknij na poniższy przycisk ZASTOSUJ. Nastepnie zostaniesz poproszony o potwierdzenie polecenia. Resetowanie zostanie zakończone, kiedy dioda zasilania przestanie mrugać.",
+"In cazul in care sistemul nu mai raspunde corect sau se blocheaza, puteti efectua operatiunea Reset. Setarile dumeavoastra nu se vor schimba.Pentru a efectua Reset apasati pe butonul de Aplicare de mai jos. Vi se va cere sa confirmati decizia.  Actiunea de resetare va fi completa atunci cand LED-ul power se opreste din clipit. ",
+"Если система перестала отвечать корректно или перестала функционировать, вы можете сделать переустановку. Ваши настройки не изменятся. Для запуска переустановки кликните на кнопку ПРИМЕНИТЬ. Появится окно для подтверждения вашего решения. Переустановка будет завершена, когда LED индикатор питания перестанет мигать.",
+"Pri udalosti, keď systém prestane správne odpovedať alebo fungovať, môžete vykonať Reset. Vaše nastavenia nebudú zmenené. Pre urobenie resetu, kliknite na tlačidlo APPLY dole. Bude požiadaný o potvrdenie vášho rozhodnutia. Reset bude kompletný, keď prestane blikať LED Power.",
+"",
+""
+);
+var firmResetshort=new Array
+(
+"In the event that the system stops responding correctly or stops functioning, you can perform a Reset. You",
+"In dem Fall, dass das System nicht mehr ordnungsgemäß reagiert oder den Betrieb eingestellt, können Sie ei",
+"Si el sistema deja de responder correctamente o deja de funcionar, podrá realizar un Reinicio. Sus parámet",
+"Si le système cesse de répondre ou de fonctionner correctement, vous pouvez le réinitialiser. Vos paramètr",
+"Nel caso in cui il sistema smetta di rispondere correttamente o di funzionare, è possibile eseguire un rip",
+"Mocht het systeem niet meer juist reageren of helemaal stoppen, dan kunt u het resetten. Uw instellingen w",
+"No caso do sistema deixar de responder correctamente ou parar de funcionar, pode efectuar uma reposição. A",
+"V případě, že systém nereaguje správně nebo jakýmkoliv způsobem přestane fungovat, můžete jej inicializova",
+"W przypadku braku odpowiedzi urządzenia lub braku działania możliwe jest zresetowanie urządzenia. Ustawien",
+"In cazul in care sistemul nu mai raspunde corect sau se blocheaza, puteti efectua operatiunea Reset. Setar",
+"Если система перестала отвечать корректно или перестала функционировать, вы можете сделать переустановку. ",
+"Pri udalosti, keď systém prestane správne odpovedať alebo fungovať, môžete vykonať Reset. Vaše nastavenia ",
+"",
+""
+);
+var subnetMask=new Array
+(
+"Subnet Mask ",
+"Subnetzmaske ",
+"Máscara de subred ",
+"Masque de sous réseau ",
+"Maschera sottorete ",
+"Subnetmasker ",
+"Máscara de subrede ",
+"Maska podsítě ",
+"Maska podsieci",
+"Masca de subretea",
+"Маска подсети",
+"Maska podsiete",
+"子網路遮罩",
+"子网掩码"
+);
+var mode=new Array
+(
+"Mode",
+"Modus",
+"Modo",
+"Mode",
+"Modalità",
+"Stand",
+"Modo",
+"Režim",
+"Tryb",
+"Mod",
+"Мода",
+"Mód",
+"模式",
+"模式"
+);
+var clear=new Array
+(
+"Clear",
+"Löschen",
+"Borrar",
+"Effacer",
+"Cancella",
+"Leegmaken",
+"Apagar",
+"Vymazat",
+"Wyczyść",
+"Stergeti",
+"Стереть",
+"Vyčistiť",
+"清除",
+"清除"
+);
+var statDeviceDoc=new Array
+(
+" View the current setting status of this device.",
+" Anzeige des gegenwärtigen Einstellungsstatus dieses Geräts.",
+" Ver el estado actual de configuración de este dispositivo.",
+" Visualiser l'état des paramètres actuels de ce périphérique.",
+" Visualizza lo stato corrente delle impostazioni di questo dispositivo.",
+" Bekijk de huidige instellingen van dit apparaat.",
+" Veja o estado da definição actual deste dispositivo.",
+" Zobrazení aktuálního nastavení zařízení.",
+"Sprawdź aktualne ustawienia urządzenia ",
+"Vizualizati setarile curente ale echipamentului. ",
+"Посмотрите текущий статус настроек этого устройства",
+"Prezrite terajší stav nastavení tohto zariadenia.",
+"查看此設備的現有設定。",
+"查看此设备的现有设定。"
+);
+var firmInfo=new Array
+(
+"The system will automatically reboot the router after you finished the firmware upgrade process. You can download the latest firmware from Edimax website.",
+"Das System wird den Router automatisch neu booten, wenn Sie den Firmware-Aktualisierungsvorgang abgeschlossen haben. Wenn Sie den Firmware-Aktualisierungsvorgang im Schritt \"Weiter\" nicht abschließen, müssen Sie den Router neu booten.",
+"El sistema reiniciará automáticamente el enrutador una vez que haya terminado el proceso de actualización del firmware. Si no completa el proceso de actualización del firmware en la etapa \"siguiente\", tendrá que reiniciar el enrutador.",
+"Le système redémarre automatiquement le routeur après que vous ayez terminé la mise à jour du microprogramme. Si vous souhaitez terminer la mise à jour du microprogramme à l'étape \"suivante\", vous devez redémarrez votre routeur.",
+"Il sistema riavvierà automaticamente il sistema dopo aver terminato il processo di aggiornamento del firmware. Se non si completa il processo di aggiornamento del firmware nel passaggio \"successivo\", sarà necessario riavviare il router.",
+"Het systeem zal de router automatisch rebooten nadat u het upgraden van de firmware voltooid hebt. Als u het upgraden van de firmware in de volgende stap niet voltooit, moet u de router rebooten.",
+"O sistema irá reiniciar automaticamente o router depois de terminar o processo de actualização do firmware. Se não completar o processo de actualização do firmware no passo \"seguinte\", terá de reiniciar o router.",
+"Systém automaticky restartuje směrovač po dokončení procesu aktualizace firmwaru. Nedokončíte-li proces aktualizace firmwaru v \„dalším\„ kroku, musíte směrovač restartovat.",
+"Router automatycznie się ponownie uruchomi po zakończeniu aktualizacji oprogramowania. Jeśli aktualizacja oprogramowania nie zostanie ukończona, konieczne będzie ponowne uruchomienie routera.",
+"Sistemul va restarta routerul in mod automat dupa ce ati terminat actiunea de upgradare a firmaware-ului. Daca nu terminati procesul de upgradare a firmaware-ului in pasul urmator, va trebui sa restartati routerul dumneavoastra.",
+"Ситема автоматически перезапустит маршрутизатор после завершения процесса замены встроенной программы. Если вы не закончили процесс замены встроенной программы с помощью шага \"Далее\", то вы должны перезапустить маршрутизатор вручную.",
+"Systém automatický reštartuje router potom ako skončíte s procesom aktualizácie firmware. Pokiaľ nedokončíte proces aktualizácie firmware v nasledujúcom kroku, musíte reštartovať router",
+"The system will automatically reboot the router A-Fter you finished the firmware upgrade process. You can download the latest firmware from Edimax website.",
+"The system will automatically reboot the router A-Fter you finished the firmware upgrade process. You can download the latest firmware from Edimax website."
+);
+var essid=new Array
+(
+"ESSID",
+"ESSID",
+"ESSID",
+"ESSID",
+"ESSID",
+"ESSID",
+"ESSID",
+"ESSID",
+"Nazwa sieci",
+"ESSID",
+"ESSID",
+"ESSID",
+"ESSID",
+"ESSID"
+);
+var primaryDNS=new Array
+(
+"Primary DNS",
+"Primäre DNS",
+"DNS primaria",
+"DNS primaire",
+"DNS primario",
+"Primair DNS",
+"DNS principal",
+"Primární DNS",
+"Podstawowy DNS",
+"DNS Primar",
+"Предпочитаемый DNS",
+"Primárny DNS",
+"主要的 DNS",
+"主要的 DNS"
+);
+var save=new Array
+(
+"Save",
+"Speichern",
+"Guardar",
+"Sauvegarder",
+"Salva",
+"Opslaan",
+"Guardar",
+"Uložit",
+"Zapisz",
+"Salvati",
+"Сохранить",
+"Uložiť",
+"儲存",
+"储存"
+);
+var refresh=new Array
+(
+"Refresh",
+"Aktualisieren",
+"Actualizar",
+"Actualiser",
+"Aggiorna",
+"Vernieuwen",
+"Actualizar",
+"Obnovit",
+"Odśwież",
+"Reimprospatare",
+"Обновить",
+"Obnoviť",
+"重新整理",
+"重新整理"
+);
+var statInternetDoc=new Array
+(
+" View the current internet connection status and related information.",
+" Anzeige des gegenwärtigen Internetverbindungsstatus und zugehöriger Informationen.",
+" Ver el estado actual de la conexión a Internet y la información relacionada.",
+" Visualiser l'état de la connexion Internet actuelle et les informations qui y sont associées.",
+" Visualizza lo stato corrente della connessione a Internet e le informazioni collegate.",
+" Bekijk de huidige internetverbinding en daarmee samenhangende informatie.",
+" Veja o estado da ligação à Internet e as informações relacionadas.",
+" Zobrazení aktuálního stavu připojení k Internetu a odpovídajících informací.",
+"Sprawdź stan połączenia z internetem oraz dotyczące go informacje ",
+"Vizualizati starea conexiunii de internet si informatiile asociate cu aceasta.",
+"Здесь вы можете посмотреть текущий статус интернет подключения и относящуюся к этому информацию.",
+"Prezrite terajší stav internetového pripojenia a súvisiacich informácií.",
+"查看現行的Internet連接狀態和相關資訊。",
+"查看现行的Internet连接状态和相关信息。"
+);
+var statDHCP=new Array
+(
+"Active DHCP Client",
+"Aktiver DHCP-Client",
+"Cliente DHCP activo",
+"Client DHCP actif",
+"Client DHCP attivo",
+"Actieve DHCP-client",
+"Actio cliente DHCP",
+"Aktivní DHCP klient",
+"Aktywni klienci DHCP",
+"Clienti DHCP",
+"Активные DHCP клиенты",
+"Aktívny DHCP klient",
+"已啟用的DHCP終端",
+"已启用的DHCP终端"
+);
+var tools=new Array
+(
+"Tools",
+"Tools",
+"Herramientas",
+"Outils",
+"Strumenti",
+"Gereedschappen",
+"Ferramentas",
+"Nástroje",
+"Narzędzia ",
+"Unelte",
+"Инструменты",
+"Nástroje",
+"工具",
+"工具"
+);
+var secondaryDNS=new Array
+(
+"Secondary DNS",
+"Sekundärer DNS",
+"DNS segundario",
+"DNS secondaire",
+"DNS secondario",
+"Tweede DNS",
+"DNS secundário",
+"Sekundární DNS",
+"Drugi DNS",
+" DNS Secundar",
+"Альтернативный DNS",
+"Sekundárny DNS",
+"次要的 DNS",
+"次要的 DNS"
+);
+var verRuntimeCode=new Array
+(
+"Runtime Code Version",
+"Laufzeitcode Version",
+"Versión del código de funcionamiento",
+"Version code de durée de fonctionnement",
+"Versione codice runtime",
+"Runtimeversie",
+"Versão do código de runtime",
+"Verze runtime kódu",
+"Wersja oprogramowania sprzętowego",
+"Versiune Firmware",
+"Код версии",
+"Verzia spúšťacieho kódu",
+"Runtime Code版本",
+"Runtime Code版本"
+);
+var statSecurityDoc=new Array
+(
+"View any attempts that have been made to illegally gain access to your network.",
+"Anzeige aller Versuche, bei denen ein illegaler Zugriff auf Ihr Netzwerk versucht wurde.",
+"Ver cualquier intento que se haya realizado para acceder ilegalmente a su red.",
+"Visualiser toutes les tentatives faites pour accéder illégalement à votre réseau.",
+"Visualizza tutti i tentativi di accesso illegali alla rete.",
+"Bekijk pogingen die gedaan zijn om illegaal toegang tot uw netwerk te krijgen.",
+"Ver quaisquer tentativas que tenham sido feitas para aceder ilegalmente à sua rede.",
+"Zobrazení všech pokusů o ilegální přístup do vaší sítě, které byly provedeny.",
+"Sprawdź próby uzyskania nielegalnego dostępu do twojej sieci.",
+"Vizualizati  orice incercare care a fost facuta pentru a obtine acces illegal la reteaua dumneavoastra.",
+"Здесь можно увидеть любые попытки нелегального доступа к вашей сети.",
+"Prehľad všetkých pokus, ktoré boli prevedené s cieľom ilegálne získať prístup do vašej siete.",
+"查看企圖非法進入你的網路。",
+"查看企图非法进入你的网络。"
+);
+var cfgtoolsDoc=new Array
+(
+"Use the \"Backup\" tool to save this Broadband router\'s current configurations to a file named as \"config.bin\". You can then use the \"Restore\" tool to restore the saved configuration to the Broadband router. Alternatively, you can use the \"Restore to Factory Default\" tool to force the Broadband router to perform System Reset and restore original factory settings.",
+"Verwenden Sie das \"Sicherung\"-Tool, um die gegenwärtige Konfiguration des Breitbandrouters in einer Datei namens \"config.bin\" zu speichern. Sie können das \"Wiederherstellen\"-Tool verwenden, um die gespeicherte Konfiguration des Breitbandrouters wiederherzustellen.  Alternativ können Sie das Tool \"Zurücksetzen auf Werkseinstellungen\" nutzen, um das System des Breitbandrouters zurückzusetzen und die ursprünglichen Werkseinstellungen wiederherzustellen.",
+"Utilice la herramienta de \"Copia de seguridad\" para guardar la configuración actual del enrutador de banda ancha en un archivo llamado \"config.bin\". A continuación, podrá utilizar la herramienta \"Reinicio\" para recuperar la configuración guardada en el enrutador de banda ancha.  Alternativamente, podrá utilizar la herramienta \"Recuperar los parámetros configurados de fábrica\" para obligar al Enrutador de banda ancha a realizar un reinicio del sistema y recuperar los parámetros originales de fábrica.",
+"Utilisez l'outil \"Copie de Sauvegarde\" pour sauvegarder la configuration actuelle du routeur à large bande dans un fichier nommé \"config.bin\". Vous pouvez ensuite utiliser l'outil \"Restaurer\" pour restaurer la configuration sauvegardée dans le routeur.  Vous pouvez aussi utiliser l'outil \"Restaurer avec les paramètres d'usine par défaut\" pour forcer le routeur à se réinitialiser et à restaurer ses paramètres d'origine.",
+"Usare lo strumento \"Backup\" per salvare le configurazioni correnti del router a banda larga in un file chiamato \"config.bin\". È quindi possibile usare lo strumento \"Ripristina\" per ripristinare la configurazione salvata sul router a banda larga.  In alternativa, è possibile usare lo strumento \"Ripristina impostazioni di fabbrica\" per forzare il router a banda larga ad eseguire un reset di sistema e ripristinare le impostazioni originali di fabbrica.",
+"Gebruik \"Backup\" om de huidige configuratie van de breedbandrouter op te slaan in een bestand met de naam \"config.bin\". U kunt daarna \"Restore\" gebruiken om de opgeslagen configuratie terug te zetten op de breedbandrouter.  Of u kunt \"Restore to Factory Default\" gebruiken om de breedbandrouter geforceerd te resetten en de originele fabrieksinstellingen terug te zetten.",
+"Utilize a ferramenta \"Backup\" (Cópia de segurança) para guardar as configurações actuais do router de banda larga num ficheiro designado \"config.bin\". Em seguida, utilize a ferramenta \"Restore\" (Reposição) para repor a configuração guardada no router de banda larga.  Como alternativa, pode utilizar a ferramenta \"Restore to Factory Default\" (Repor para a predefinição de origem) para que o router de banda possa efectuar a reposição do sistema e repor as predefinições de origem.",
+"Použijte nástroj \„Backup\" (zálohování) pro uložení aktuální konfigurace širokopásmového směrovače do souboru se jménem \„config.bin\" na vašem PC. Potom můžete použít nástroj \„Obnovení\" pro obnovení uložené konfigurace širokopásmového směrovače.  Alternativně můžete použít nástroj \„Obnovit  výchozí tovární nastavení\", pomocí kterého provede širokopásmový směrovač inicializaci vypnutím napájení a obnoví nastavení na výchozí tovární hodnoty.",
+"Przy użyciu narzędzia \"Zapisz ustawienia\" możliwe jest zapisywanie obecnej konfiguracji routera szerokopasmowego w pliku o nazwie \"config.bin\". Nastepnie możesz wybrać polecenie \"Przywróć\", aby przywrócić zapisaną konfigurację. Możesz także użyć polecenia \"Przywróć ustawienia fabryczne\", aby przywrócic domyślną konfigurację.",
+"Folositi unealta de Backup pentru a salva configuratiile curente ale routerului intr-un fisier denumit config.bin. Puteti apoi folosi aceatra unealta pentru a restaura convar figuratia salvata pentru router. Alternativ, puteti folosi optiunea de Resetare la Setarile din Fabrica pentru a forta routerul sa efectueze restartarea sistemului si sa revina la setarile din fabrica.",
+"Используйте Backup инструмент для сохранения текущих настроек в файл config.bin. Вы можете использовать кнопку Восстановить для переустановки сохраненной конфигурации на маршрутизатор. Как альтернативу вы можете использовать опцию Восстановить Заводскую Настройку, чтобы перезапустить питание маршрутизатора и восстановить оригинальные заводские установки.",
+"Použite nástroj (BackUp) pre uloženie terajšej konfigurácie širokopásmového routeru to súboru \"config.bin\".  Môžete použiť nástroj (Restore) pre obnovenie uloženej konfigurácie širokopásmového routeru. Alternatívne, môžete použiť nástroj \"Restore to Factory Default\", ktorý urobí systémový reset širokopásmového routeru a obnoví pôvodné továrenské nastavenia.",
+"",
+""
+);
+var cfgtoolsDocshort=new Array
+(
+"Use the \"Backup\" tool to save this Broadband router\'s current configurations to a file named as \"config.bi",
+"Verwenden Sie das \"Sicherung\"-Tool, um die gegenwärtige Konfiguration des Breitbandrouters in einer Date",
+"Utilice la herramienta de \"Copia de seguridad\" para guardar la configuración actual del enrutador de ban",
+"Utilisez l'outil \"Copie de Sauvegarde\" pour sauvegarder la configuration actuelle du routeur à large ban",
+"Usare lo strumento \"Backup\" per salvare le configurazioni correnti del router a banda larga in un file c",
+"Gebruik \"Backup\" om de huidige configuratie van de breedbandrouter op te slaan in een bestand met de naa",
+"Utilize a ferramenta \"Backup\" (Cópia de segurança) para guardar as configurações actuais do router de ba",
+"Použijte nástroj \„Backup\" (zálohování) pro uložení aktuální konfigurace širokopásmového směrovače do sou",
+"Przy użyciu narzędzia \"Zapisz ustawienia\" możliwe jest zapisywanie obecnej konfiguracji routera szerokop",
+"Folositi unealta de Backup pentru a salva configuratiile curente ale routerului intr-un fisier denumit con",
+"Используйте Backup инструмент для сохранения текущих настроек в файл config.bin. Вы можете использовать кн",
+"Použite nástroj (BackUp) pre uloženie terajšej konfigurácie širokopásmového routeru to súboru \"config.bin",
+"",
+""
+);
+var toolsDoc=new Array
+(
+"The Tools Settings section includes the basic configuration tools, such as Save, Restore Configuration Settings, and Upgrade System Firmware.",
+"Der Abschnitt Tools-Einstellungen beinhaltet grundlegende Konfigurationstools, beispielsweise Speichern, Konfigurationseinstellungen wiederherstellen und Systemfirmware aktualisieren.",
+"La sección de configuración de herramientas incluye las herramientas de configuración básicas, como Guardar, Recuperar los parámetros de configuración, y actualizar el firmware del sistema.",
+"La section Paramètres des Outils contient les outils de configuration de base tels que la sauvegarde ou la restauration des paramètres de configuration et la mise à jour du microprogramme du système.",
+"La sezione Impostazioni strumenti comprende gli strumenti di configurazione di base quali Salva, Ripristina impostazioni di configurazione e Aggiorna firmware di sistema.",
+"De sectie \"Tools Settings\" (Gereedschappen/Instellingen) bevat de basis configuratiegereedschappen, zoals Save (Opslaan), Restore Configuration Settings (Configuratie-instellingen terugzetten), en Upgrade System Firmware (Upgraden van de systeemfirmware).",
+"A secção Definições de ferramentas inclui ferramentas de configuração básica, tais como Guardar, Repor definições de configuração e Actualizar o firmware do sistema.",
+"Oddíl Nastavení nástrojů obsahuje základní konfigurační nástroje: Uložit, Obnovit nastavení konfigurace a Aktualizovat firmware systému.",
+"Narzędzie ustawień obejmuje podstawowe polecenia konfiguracji takie jak Zapisz, Przywróć ustawienia konfiguracji, Aktualizacja oprogramowania systemowego.   ",
+"Sectia de Setare a Uneltelor include uneltele de baza pentru configurare, cum ar fi Salvare, Revenire  la Setarile de configurare si upgradarea de firmware.",
+"Секция Инструменты Настройки включает базовые инструменты конфигурации, такие, как Сохранить, Восстановить Настройки Конфигурации, Заменить встроенную прогамму ",
+"Sekcia nastavenia Nástrojov obsahuje základné konfiguračné nástroje, ako Uložiť, Obnoviť konfiguračné nastavenia alebo aktualizovať systémový firmware",
+"在工具設定部分包括基本配定工具，如儲存，還原系統設定，韌體升級等等。",
+"在工具设定部分包括基本配定工具，如储存，还原系统设定，韧体升级等等。"
+);
+var security=new Array
+(
+"Security",
+"Sicherheit",
+"Seguridad",
+"Sécurité",
+"Sicurezza",
+"Beveiliging",
+"Segurança",
+"Bezpečnost",
+"Zabezpieczenia",
+"Securitate",
+"Шифрование",
+"Bezpečnosť",
+"安全機制",
+"安全机制"
+);
+var statSecurity=new Array
+(
+"Security Log",
+"Sicherheits Log-Datei",
+"Registro de seguridad",
+"Journal Sécurité",
+"Registro sicurezza",
+"Beveiligingslogboek",
+"Registo de segurança",
+"Bezpečnostní protokol",
+"Dziennik bezpieczeństwa",
+"Log de securitate",
+"Log безопасности",
+"Bezpečnostný záznam",
+"安全日誌",
+"安全日志"
+);
+var cfgWireless=new Array
+(
+"Wireless Configuration",
+"WLAN-Konfiguration",
+"Configuración inalámbrica",
+"Configuration sans fil",
+"Configurazione wireless",
+"Draadloze configuratie",
+"Configuração sem fios",
+"Konfigurace bezdrátové sítě",
+"Konfiguracja sieci bezprzewodowej",
+"Configurarea Wireless",
+"Настройка беспроводной связи",
+"Bezdrôtová konfigurácia",
+"無線配置",
+"无线配置"
+);
+var tlconAlert=new Array
+(
+"Do you really want to reset the current settings to default?",
+"Möchten Sie die aktuellen Einstellungen wirklich auf Standard zurücksetzen?",
+"¿Desea realmente reiniciar los parámetros actuales a los de fábrica?",
+"Souhaitez-vous vraiment réinitialiser les paramètres en cours par défaut ?",
+"Riportare le impostazioni correnti ai valori predefiniti?",
+"Weet u zeker dat u de huidige instellingen wilt terugzetten naar standaard?",
+"Pretende mesmo repor as definições actuais para os valores de origem?",
+"Opravdu chcete resetovat aktuální nastavení na výchozí hodnoty?",
+"Czy naprawdę chcesz skasować obecne ustawienia i przywrócić domyślne?  ",
+"Vreti sa resetati setarile actuale si sa reveniti la cele din fabrica?",
+"Вы действительно хотите заменить текущие настройки на заводские?",
+"Skutočne chcete zmeniť terajšie nastavenie na prednastavené?",
+"你確定的要重置現有的設定成為出廠預設值？",
+"你确定的要重置现有的设定成为出厂默认值？"
+);
+var statSystem=new Array
+(
+"System Log",
+"System Log",
+"Registro de sistema",
+"SYSLOG",
+"Registro di sistema",
+"Systeem logboek",
+"Registo do sistema",
+"Protokol systému",
+"Dziennik systemu",
+"Log de sistem",
+"Системный Log",
+"Systémový záznam",
+"系統日誌",
+"系统日志"
+);
+var sentPackets=new Array
+(
+"Sent Packets",
+"Gesendete Pakete",
+"Paquetes enviados",
+"Paquets envoyés",
+"Invia pacchetti",
+"Verzonden pakketten",
+"Pacotes enviados",
+"Odeslané pakety",
+"Wysłane pakiety",
+"Pachete trimise",
+"Отправленные пакеты",
+"Odoslané pakety",
+"發送的封包",
+"发送的封包"
+);
+var macAddress=new Array
+(
+"MAC Address ",
+"MAC-Adresse ",
+"Dirección MAC ",
+"Adresse MAC ",
+"Indirizzo MAC ",
+"MAC-adres ",
+"Endereço MAC ",
+"MAC adresa ",
+"Adres MAC",
+"Adresa MAC ",
+"MAC адрес",
+"MAC adresa",
+"MAC位址",
+"MAC地址"
+);
+var system=new Array
+(
+"System",
+"System",
+"Sistema",
+"Système",
+"Sistema",
+"Systeem",
+"Sistema",
+"Systém",
+"System",
+"Sistem",
+"Система",
+"Systémový záznam",
+"系統",
+"系统"
+);
+var ipAddress=new Array
+(
+"IP Address ",
+"IP-Adresse ",
+"Dirección IP ",
+"Adresse IP ",
+"Indirizzo IP ",
+"IP-adres ",
+"Endereço IP ",
+"IP adresa ",
+"Adres IP",
+"Adresa IP  ",
+"IP адрес",
+"IP adresa",
+"IP 位址",
+"IP 地址"
+);
+var statDevice=new Array
+(
+"Device Status",
+"Gerätestatus",
+"Estado del dispositivo",
+"Etat du périphérique",
+"Stato dispositivo",
+"Status van het apparaat",
+"Estado do dispositivo",
+"Stav zařízení",
+"Stan urządzenia  ",
+"Starea echipamentului",
+"Статус устройства",
+"Status zariadení",
+"設備狀態",
+"设备状态"
+);
+var cfgLAN=new Array
+(
+"LAN Configuration",
+"LAN-Konfiguration",
+"Configuración LAN",
+"Configuration LAN",
+"Configurazione LAN",
+"LAN-configuratie",
+"Configuração da rede local",
+"Konfigurace LAN",
+"Konfiguracja LAN ",
+"Configurarea LAN ",
+"LAN конфигурация",
+"Konfigurácia LAN",
+"網路配置",
+"网络配置"
+);
+var cfgtools=new Array
+(
+"Configuration Tools",
+"Konfigurations-Tools",
+"Herramientas de configuración",
+"Outils de Configuration",
+"Strumenti di configurazione",
+"Configuratietools",
+"Ferramentas de configuração",
+"Konfigurační nástroje",
+"Narzędzia konfiguracji ",
+"Unelte de configurare",
+"Инструменты конфигурации",
+"Konfiguračné nástroje",
+"配置工具",
+"配置工具"
+);
+var backup=new Array
+(
+"Backup Settings",
+"Sicherungseinstellungen:",
+"Configuración de la copia de seguridad",
+"Paramètres de sauvegarde",
+"Impostazioni di backup:",
+"Backupinstellingen",
+"Definições de cópia de segurança",
+"Zálohování nastavení",
+"Zapis konfiguracji",
+"Setari de Backup",
+"Сохранить конфигурацию",
+"Nastavenia zálohy",
+"備份設定",
+"备份设定"
+);
+var disable=new Array
+(
+"Disable",
+"Deaktivieren",
+"Desactivar",
+"Désactiver",
+"Disattiva",
+"Uitgeschakeld",
+"Desactivar",
+"Zakázat",
+"Wyłącz",
+"Dezactivare",
+"Выключено",
+"Vypnúť",
+"停用",
+"停用"
+);
+var enable=new Array
+(
+"Enable",
+"Aktivieren",
+"Activar",
+"Activer",
+"Attiva",
+"Inschakelen",
+"Activar",
+"Povolit",
+"Włącz",
+"Activare",
+"Включено",
+"Zapnúť",
+"啟用",
+"启用"
+);
+var firmDoc=new Array
+(
+"This tool allows you to upgrade the Broadband router\'s system firmware. <br> Enter the path and name of the upgrade file and then click the APPLY button below. You will be prompted to confirm the upgrade.",
+"Dieses Tool ermöglicht Ihnen die Systemfirmware des Breitbandrouters zu aktualisieren. <br>Geben Sie Pfad und Namen der Upgrade-Datei ein und klicken Sie anschließend auf die Schaltfläche ÜBERNEHMEN darunter. Sie werden aufgefordert, das Upgrade zu bestätigen.",
+"Esta herramienta le permite actualizar el firmware de sistema del enrutador de banda ancha. <br>Indique el camino y el nombre del archivo de actualización y a continuación, pulse el botón APLICAR indicado más abajo. Le aparecerá un mensaje para confirmar la actualización.",
+"Cet outil vous permet de mettre à jour le microprogramme du système du routeur à large bande. <br>Entrez le chemin et le nom du fichier de mise à jour puis cliquez sur la touche APPLIQUER ci-dessous. Il vous est demandé de confirmer la mise à jour.",
+"Questo strumento consente di aggiornare il firmware di sistema del router a banda larga. <br>Inserire il percorso e il nome del file di aggiornamento e fare clic sul pulsante APPLICA sottostante. Verrà richiesto di confermare l'aggiornamento.",
+"Deze voorziening maakt het mogelijk de systeemfirmware van de breedbandrouter te upgraden. <br>Voer het pad en de naam van het upgrade-bestand in en klik dan op APPLY (Toepassen) hieronder. Het systeem vraagt u het upgraden te bevestigen.",
+"Esta ferramenta permite actualizar o firmware do sistema do router de banda larga. <br> Introduza o caminho e o nome do ficheiro de actualização e depois clique no botão APPLY (Aplicar) indicado abaixo. Ser-lhe-á solicitado para confirmar a actualização.",
+"Tento nástroj vám umožňuje aktualizovat firmware širokopásmového směrovače. <br>Zadejte cestu a název souboru aktualizace a pak klepněte na tlačítko APPLY (Použít) níže. Budete vyzváni k potvrzení aktualizace firmwaru.",
+"Narzędzie to pozwala na uaktualnienie wersji oprogramowania systemowego routera szerokopasmowego. Podaj ścieżkę dostępu do aktualizującego pliku, a następnie kliknij przycisk ZASTOSUJ. Następnie zostaniesz poproszony o potwierdzenie aktualizacji.",
+"Aceasta unealta va ofera posibilitatea sa upgradati firmwareul routerului. Introduceti locatia si numele fisierului de upgradare si apoi faceti click pe butonul de Aplicare de mai jos.  Vi se va cere sa confirmati actiunea.",
+"Эта опция позволяет вам заменить встроенную программу маршрутизатора. Введите путь и имя файла и затем нажмите кнопку ПРИМЕНИТЬ. Появится окно для подтверждения замены.",
+"Tento nástroj vám dovoľuje aktualizovať firmware širokopásmového routeru.<br< Vložte meno a cestu pre aktualizačný súbor a potom kliknite dole na tlačidlo APPLY. Bude vyzvaný k potvrdeniu aktualizácie.",
+"",
+""
+);
+var firmDocshort=new Array
+(
+"This tool allows you to upgrade the Broadband router\'s system firmware. <br> Enter the path and name of th",
+"Dieses Tool ermöglicht Ihnen die Systemfirmware des Breitbandrouters zu aktualisieren. <br>Geben Sie Pfad u",
+"Esta herramienta le permite actualizar el firmware de sistema del enrutador de banda ancha. <br>Indique el ",
+"Cet outil vous permet de mettre à jour le microprogramme du système du routeur à large bande. <br>Entrez le",
+"Questo strumento consente di aggiornare il firmware di sistema del router a banda larga. <br>Inserire il pe",
+"Deze voorziening maakt het mogelijk de systeemfirmware van de breedbandrouter te upgraden. <br>Voer het pad",
+"Esta ferramenta permite actualizar o firmware do sistema do router de banda larga. <br> Introduza o caminho",
+"Tento nástroj vám umožňuje aktualizovat firmware širokopásmového směrovače. <br>Zadejte cestu a název soubo",
+"Narzędzie to pozwala na uaktualnienie wersji oprogramowania systemowego routera szerokopasmowego. Podaj ści",
+"Aceasta unealta va ofera posibilitatea sa upgradati firmwareul routerului. Introduceti locatia si numele fi",
+"Эта опция позволяет вам заменить встроенную программу маршрутизатора. Введите путь и имя файла и затем нажм",
+"Tento nástroj vám dovoľuje aktualizovať firmware širokopásmového routeru.<br< Vložte meno a cestu pre aktua",
+"",
+""
+);
+var statInternet=new Array
+(
+"Internet Connection",
+"Internetverbindung",
+"Conexión a Internet",
+"Connexion Internet",
+"Connessione a Internet",
+"Internetverbinding",
+"Ligação à Internet",
+"Internetové připojení",
+"Połączenie z internetem",
+"Conexiune internet ",
+"Интернет подключение",
+"Internetové pripojenie",
+"Internet連接",
+"Internet连接"
+);
+var statDHCPDoc=new Array
+(
+"This table shows the assigned IP address, MAC address and time expired for each DHCP leased client.<br>",
+"Diese Tabelle zeigt die zugewiesene IP-Adresse, MAC-Adresse und die Zeit, die für jeden DHCP Leased-Client verstrichen ist.<br>",
+"Esta tabla muestra la dirección IP atribuida, la dirección MAC y el tiempo incurrido para cada cliente DHCP.<br>",
+"Ce tableau vous montre l'adresse IP et l'adresse MAC assignées ainsi que la durée écoulée pour chaque client DHCP loué.<br>",
+"Questa tabella mostra l'indirizzo IP e l'indirizzo MAC assegnati e il tempo di scadenza per ciascun client lease DHCP.<br>",
+"Deze tabel toont het toegewezen IP-adres, MAC-adres en de tijd die verstreken is per DHCP-leased client.<br>",
+"Esta tabela mostra o endereço IP, endereço MAC atribuídos e o tempo de validade para cada cliente DHCP concedido.<br>",
+"Tabulka zobrazuje přiřazené IP adresy, MAC adresy a čas uplynulý pro každého pronajmutého klienta DHCP.<br>",
+"W tabeli tej przedstawiono przydzielony adres IP, adres MAC, adres i czas ważności klienta DHCP.",
+"Acest tabel arata adresele IP alocate, adresele MAC si timpul expirat pentru fiecare client DHCP inregistrat.",
+"Эта таблица показывает назначенный IP адрес, MAC адрес и время аренды для каждого DHCP клиента.",
+"Táto tabuľka ukazuje IP adresy, MAC adresy a ubehnutý čas pre každého prenajatého DHCP klienta. <br>",
+"此列表顯示已分配IP位址，MAC位址和時間期限。",
+"此列表显示已分配IP地址，MAC地址和时间期限。"
+);
+var associatedClients=new Array
+(
+"Associated Clients",
+"Verbundene Clients",
+"Clientes asociados",
+"Clients associés",
+"Client associati",
+"Verbonden clients",
+"Clientes associados",
+"Přidružení klienti",
+"Połączeni klienci ",
+"Clienti asociati",
+"Ассоциированные клиенты.",
+"Priradené klientov",
+"有關聯的終端設備",
+"有关联的终端设备"
+);
+var currentTime=new Array
+(
+"Current Time",
+"Gegenwärtige Zeit",
+"Hora actual",
+"Heure actuelle",
+"Ora corrente",
+"Huidige tijd",
+"Hora actual",
+"Aktuální čas",
+"Aktualny czas ",
+"Timpul Actual",
+"Текущее время",
+"Terajší čas",
+"現在時間",
+"现在时间"
+);
+var ethernetLAN=new Array
+(
+"Ethernet LAN",
+"Ethernet LAN",
+"Ethernet LAN",
+"LAN Ethernet",
+"LAN Ethernet",
+"Ethernet LAN",
+"Rede local da Ethernet",
+"Ethernet LAN",
+"Przewodowa sieć LAN",
+"R eteaua ",
+"Ethernet LAN",
+"Ethernet LAN",
+"以太區域網路",
+"以太局域网络"
+);
+var toolset=new Array
+(
+"Tools Setting",
+"Tools-Einstellung",
+"Configuración de herramientas",
+"Paramètres des outils",
+"Impostazione strumenti",
+"Instellingen gereedschappen",
+"Definição das ferramentas",
+"Nastavení nástrojů",
+"Ustawienia narzędzi ",
+"Setari Unelte",
+"Инструменты настройки",
+"Nastavenia nástrojov",
+"工具設定",
+"工具设定"
+);
+var statInfoDoc=new Array
+(
+"You can use the Status page to monitor the connection status for the Broadband router\'s; WAN/LAN interfaces, firmware and hardware version numbers, any illegal attempts to access your network, and information on all DHCP client PCs currently connected to your network.",
+"Sie können die Statusseite verwenden, um den Verbindungsstatus des Breitbandrouters zu überwachen, des Weiteren WAN/LAN-Schnittstellen, Firmware und Hardwareversionsnummern, alle illegalen Versuche auf Ihr Netzwerk zuzugreifen, und Informationen über alle gegenwärtig mit ihrem Netzwerk verbundenen DHCP-Client-PCs.",
+"Podrá utilizar la página de estado para controlar el estado de conexión del enrutador de banda ancha; Las interfaces WAN/LAN interfaces, los números de versión de su firmware y hardware, cualquier intento ilegal para acceder a su red, y la información sobre todos los PC clientes DHCP actualmente conectados a su red.",
+"Vous pouvez utiliser la page Etat pour surveiller l'état de la connexion du routeur, des interfaces WAN/LAN, le numéro de version logicielle et matérielle, les tentatives d'accès non autorisées à votre réseau et les informations sur tous les PC clients DHCP actuellement connectés au réseau.",
+"È possibile usare la pagina Stato per monitorare lo stato della connessione del router a banda larga; interfacce LWAN/LAN, numeri di versione di firmware e hardware, tentativi di accesso illegali alla rete, e informazioni su tutti i PC client DHCP attualmente connessi alla rete.",
+"U kunt de statuspagina gebruiken om de status van de verbinding van de breedbandrouter te beheren; WAN/LAN interfaces, firmware- en hardwarenummers, eventuele illegale pogingen om toegang tot uw netwerk te krijgen, en informatie over alle DHCP client-pc's die momenteel met uw netwerk verbonden zijn.",
+"Pode utilizar a página Estado para monitorizar o estado da ligação do router de banda larga; interfaces WAN/LAN, números de versão firmware e hardware, quaisquer tentativas ilegais de acesso à sua rede e informações sobre todos os PC cliente DHCP ligados à sua rede.",
+"Stránku Stav můžete použít pro monitorování stavu připojení širokopásmového směrovače, rozhraní WAN/LAN, čísla verze firmwaru a hardwaru širokopásmového směrovačel, nedovolených přístupů k síti a informací o všech DHCP klientských počítačích, aktuálně připojených do sítě.",
+"Strona stanu routera może być wykorzystywana do monitorowania stanu połaczenia routera szerokopasmowego, ustawień LAN/WAN, numerów wersji oprogramowania i sprzętu, nielegalnych prób uzyskania dostępu do sieci i informacji dotyczących klientów DHCP, aktualnie podłączonych do sieci.",
+"Puteti folosi pagina de Stare pentru a monitoriza starea conexiunii pentru router, pentru interfatele WAN/LAN, numerele versiunilor pentru firmware si hardware,pentru orice incercari ilegale de accesare a retelei dumneavoastra   si pentru informatii despre toate calculatoarele clientilor DHCP ai dumneavoastra conectati la retea.",
+"Вы можете использовать страницу Статус для определения статуса связи WAN/LAN интерфейсов маршрутизатора, номера версий встроенной программы и физического устройства, любых нелегальных попыток доступа в вашу сеть, информации обо всех DHCP клиентах, подключенных к сети в настоящее время.",
+"Môžete použiť stránku Status pre monitorovanie stavu pripojenia širokopásmového routeru, WAN/LAN rozhraní, verzií firmware a hardware, všetkých ilegálnych pokus pre prístup do vašej siete, a informácií o všetkých DHCP klientov PC momentálne pripojených do vašej siete",
+"You can use the Status page to monitor the connection status for the Broadband router\'s; WAN/LAN interfaces, firmware and hardware version numbers, any illegal attempts to access your network, and information on all DHCP client PCs currently connected to your network.",
+"You can use the Status page to monitor the connection status for the Broadband router\'s; WAN/LAN interfaces, firmware and hardware version numbers, any illegal attempts to access your network, and information on all DHCP client PCs currently connected to your network."
+);
+var sta2info=new Array
+(
+"Status and Information",
+"Status und Information",
+"Estado e información",
+"Etat et Informations",
+"Stato e informazioni",
+"Status en bevestiging",
+"Estado e informações",
+"Stav a informace",
+"Informacje o stanie urządzenia",
+"Stare si Informatii",
+"Статус и Информация",
+"Stav a informácie",
+"狀態和資訊",
+"状态和信息"
+);
+var model=new Array
+(
+"Model",
+"Modell",
+"Modelo",
+"Modèle",
+"Modello",
+"Model",
+"Modelo",
+"Model",
+"Model",
+"Model",
+"Модель",
+"Model",
+"模型",
+"模型"
+);
+var restore=new Array
+(
+"Restore Settings",
+"Einstellungen wiederherstellen",
+"Recuperar configuración",
+"Restaurer les paramètres",
+"Ripristina impostazioni",
+"Instellingen terugzetten",
+"Repor definições",
+"Obnovit nastavení:",
+"Przywróć ustawienia z pliku",
+"Restabilire Setari Salvate",
+"Настройка Восстановления",
+"Obnovenie nastavení",
+"Restore 設定",
+"Restore 设定"
+);
+var receivedPackets=new Array
+(
+"Received Packets",
+"Empfangene Pakete",
+"Paquetes recibidos",
+"Paquets reçus",
+"Pacchetti ricevuti",
+"Ontvangen pakketten",
+"Pacotes recebidos",
+"Přijaté pakety",
+"Otrzymane pakiety",
+"Pachete primite",
+"Принятые пакеты",
+"Prijaté pakety",
+"已接收的封包",
+"已接收的封包"
+);
+var ethernetWAN=new Array
+(
+"Ethernet WAN",
+"Ethernet WAN",
+"Ethernet WAN",
+"WAN Ethernet",
+"WAN Ethernet",
+"Ethernet WAN",
+"WAN Ethernet",
+"Ethernet WAN",
+"Przewodowa sieć WAN",
+"Ethernet WAN",
+"Ethernet WAN",
+"Ethernet WAN",
+"以太廣域網路",
+"以太广域网"
+);
+var wirelessLAN=new Array
+(
+"Wireless LAN",
+"Wireless LAN",
+"LAN inalámbrico",
+"LAN sans fil",
+"LAN wireless",
+"Draadloos LAN",
+"Rede local sem fios",
+"Bezdrátová síť LAN",
+"Bezprzewodowa sieć LAN ",
+"Reteaua Wireless ",
+"Беспроводная сеть LAN",
+"Bezdrôtová LAN",
+"無線區域網路",
+"无线局域网络"
+);
+var verHardware=new Array
+(
+"Hardware Version",
+"Hardwareversion",
+"Versión del material",
+"Version matérielle",
+"Versione dell'hardware",
+"Hardwareversie",
+"Versão do hardware",
+"Verze hardwaru",
+"Wersja sprzętu ",
+"Versiunea Hardware ",
+"Версия физического устройства",
+"Verzia hardware",
+"硬體版本",
+"硬件版本"
+);
+var firewareUpgrade=new Array
+(
+"Firmware Upgrade",
+"Firmware-Upgrade",
+"Actualizar el Firmware",
+"Mise à niveau du microprogramme",
+"Aggiornamento del firmware",
+"Upgrade Firmware (Upgraden van firmware)",
+"Actualização de firmware",
+"Aktualizace firmwaru",
+"Aktualizacja oprogramowania sprzętowego ",
+"Ugradare Firmware ",
+"Замена встроенной программы",
+"Aktualizácia firmware",
+"韌體升級",
+"韧体升级"
+);
+var verBootCode=new Array
+(
+"Boot Code Version",
+"Boot Code Version",
+"Reiniciar versión del código",
+"Version du code Boot",
+"Versione codice di avvio",
+"Versie van de bootcode",
+"Versão do código de arranque",
+"Verze bootovacího kódu",
+"Wersja oprogramowania startowego",
+"Versiune Cod Bootare",
+"Версия кода загрузки",
+"Verzia boot kódu",
+"Boot Code 版本",
+"Boot Code 版本"
+);
+var upTime=new Array
+(
+"Up time",
+"Betriebszeit",
+"Fecha de finalización",
+"Temps d’utilisation",
+"Tempo di attività",
+"Actieve tijdsduur",
+"Tempo de actividade",
+"Doba provozu",
+"Czas połączenia",
+"Timp ",
+"Максимальное время",
+"Čas nepretržitej prevádzky",
+"時間",
+"时间"
+);
+var status=new Array
+(
+"Status",
+"Status",
+"Estado",
+"Etat",
+"Stato",
+"Status",
+"Estado",
+"Stav",
+"Stan",
+"Stare",
+"Статус",
+"Stav a informácie",
+"狀態",
+"状态"
+);
+var attainIpPtc=new Array
+(
+"IP Address Mode",
+"IP-Protokoll erreichen",
+"Lograr el protocolo IP",
+"Atteindre protocole IP",
+"Acquisisci protocollo IP",
+"Haal IP-protocol",
+"Obter o protocolo IP",
+"Dosažený IP protokol",
+"Uzyskany protokół IP ",
+"Protocol obtinere IP",
+"Статус интернет связи",
+"Priradený AP protokol",
+"實現 IP協議",
+"实现 IP协议"
+);
+var reset=new Array
+(
+"Reset",
+"Reset",
+"Reinicio",
+"Réinitialisation",
+"Reset",
+"Reset",
+"Repor",
+"Reset",
+"Resetuj",
+"Resetati",
+"Переустановка",
+"Reset",
+"重設",
+"重设"
+);
+var timeExpired=new Array
+(
+"Time Expired",
+"Verstrichene Zeit",
+"Tiempo incurrido",
+"Durée écoulée",
+"Tempo scaduto",
+"Verstreken tijd",
+"Tempo expirado",
+"Uplynulý čas",
+"Czas dzierżawy",
+"Timp expirat",
+"Время аренды",
+"Uplynulý čas",
+"時間已過期",
+"时间已过期"
+);
+var upload=new Array
+(
+"Upload",
+"Upload",
+"Carga",
+"Transfert ascendant",
+"Upload",
+"Uploaden",
+"Enviar",
+"Odesílání",
+"Załaduj ",
+"Incarcare",
+"Заменить",
+"Odoslať",
+"上載",
+"上载"
+);
+var rstFactory=new Array
+(
+"Restore to Factory Default",
+"Zurücksetzen auf Werkseinstellungen",
+"Recuperar parámetros de fábrica",
+"Restaurer les paramètres d'usine par défaut",
+"Riporta alle impostazioni di fabbrica",
+"Terugzetten naar fabrieksinstellingen",
+"Repor para a predefinição de origem",
+"Obnovit výchozí tovární nastavení:",
+"Przywróć ustawienia fabryczne ",
+"Resetare la setarile din fabrica",
+"Восстановить заводские настройки",
+"Návrat k továrenským nastaveniam",
+"恢復到出廠預設值",
+"恢复到出厂默认值"
+);
+var statStatisticsDoc=new Array
+(
+" This page shows the packet counters for transmission and reception regarding to networks. <br?/>",
+" Diese Seite zeigt den Zähler für gesendete und empfangene Pakete hinsichtlich der Netzwerke an. <br?/>",
+" Esta página muestra los contadores del paquete para la transmisión y la recepción de las redes. <br?/>",
+" Cette page montre les compteurs de paquets transmis et réceptionnés en fonction des réseaux. <br?/>",
+" Questa pagina visualizza il conteggio dei pacchetti in entrata e in uscita delle reti. <br?/>",
+" Deze pagina toont een telling van de verzonden en ontvangen pakketten in samenhang met de netwerken. <br?/>",
+" Esta página mostra os contadores de pacote para transmissão e recepção relacionados com redes. <br?/>",
+" Tato stránka zobrazuje počítadla paketů pro vysílání nebo příjem týkající se sítě. <br?/>",
+"Na stronie tej wyświetlane są liczniki pakietów wysłanych i otrzymanych w sieci. ",
+" Aceasta pagina arata contoarele de pachete pentru transmisiile si receptiile in legatura cu reteaua .",
+"На этой странице показаны сетевые счетчики приема и передачи данных.",
+"Táto stránka ukazuje počítadlo paketov pre prenos ",
+" This page shows the packet counters for transmission and reception regarding to networks. ",
+" This page shows the packet counters for transmission and reception regarding to networks."
+);
+var tlUsbStore=new Array
+(
+"USB MASS Storage",
+"USB Massenspeicher",
+"Almacenamiento de masa USB",
+"Stockage de masse USB",
+"Dispositivo di archiviazione USB",
+"USB-opslagmedium",
+"Armazenamento de massa USB",
+"USB Mass Storage",
+"Dysk pamięci USB",
+"Stocare USB",
+"Накопитель памяти USB",
+"USB pamäťové zariadenie",
+"USB大容量儲存",
+"USB大容量储存"
+);
+var tlresetAlert=new Array
+(
+"It may take some time to complete this process and restart the system. Please don\'t turn off the Broadband router before the process is complete.",
+"Es kann einige Zeit dauern, bis dieser Vorgang abgeschlossen und das System neu gestartet ist. Bitte schalten Sie den Access Point nicht aus, bevor der Vorgang abgeschlossen ist.",
+"Podrá tardar un tiempo para completar este proceso y reiniciar el sistema. Por favor, no apague el enrutador de banda ancha antes de que se termine el proceso.",
+"L'achèvement de cette opération peut prendre du temps et redémarrer le système. N'éteignez pas le routeur avant la fin de l'opération.",
+"Il completamento del processo e il riavvio del sistema potrebbero richiedere alcuni minuti. Evitare di spegnere il router a banda larga prima che il processo sia portato a termine.",
+"Het kan even duren voor het proces voltooid is en het systeem herstart. Zet de breedbandrouter niet af voor het proces voltooid is.",
+"Pode demorar algum tempo a completar este processo e a reiniciar o sistema. Não desligue o router de banda larga antes do processo estar concluído.",
+"Dokončení tohoto procesu a restart systému může trvat určitou dobu. Nevypínejte širokopásmový směrovač před dokončením procesu.",
+"Zakończenie procesu oraz ponowne uruchomienie mogą zająć trochę czasu. Nie wyłączaj routera szerokopasmowego przed zakończeniem tej operacji. ",
+"Se poate sa dureze ceva timp pentru indeplinirea acestui proces si pentru a restarta sistemul. Va rugam sa nu inchideti routerul pana cand procesul nu este terminat.  ",
+"Требуется некоторое время для окончания процесса и перезапуска системы. Пожалуйста, не выключайте маршрутизатор до окончания процесса.",
+"Môže trvať určitú dobu pre kompletizáciu tohto procesu a reštartovanie systému. Prosím nevypínajte širokopásmový router predtým než proces kompletný.",
+"這個過程未完成之前，請不要關閉寬頻路由器，因為系統需要一些時間來完成這個程序，然後會再重新啟動系統。。",
+"这个过程未完成之前，请不要关闭宽带路由器，因为系统需要一些时间来完成这个程序，然后会再重新启动系统。。"
+);
+var statSystemDoc=new Array
+(
+"View the system operation information. You can see the system start up time, connection process...etc. here.",
+"Anzeige der Systembetriebsinformation. Hier können Sie die System-Startzeit, den Verbindungsvorgang usw. anzeigen lassen.",
+"Ver la información de funcionamiento del sistema. Podrá ver la hora de inicio del sistema, el proceso de conexion, etc aquí.",
+"Visualiser les informations sur le fonctionnement du système. Vous pouvez y voir l'heure de démarrage du système, etc....",
+"Visualizza le informazioni operative del sistema. Qui sono riportati l'ora di avvio del sistema, il processo di connessione...ecc.",
+"Bekijk de informatie over de systeembesturing. U kunt hier de startsnelheid bekijken, de verbindingswijze, etc.",
+"Veja as informações sobre o funcionamento do sistema. Pode visualizar aqui o tempo de arranque do sistema, o processo de ligação...etc.",
+"Zobrazení systémových provozních informací. Zde můžete vidět dobu provozu systému, proces připojení...atd.",
+"Sprawdź informacje o pracy systemu dotyczące czasu włączenia, długości połączenia, itd.",
+"Priviti informatii cu privire la sistemul de operare. Pueti observa aici timpul de pornire a sistemului, pocesul de conectare, etc.  ",
+"Оперативная системная информация. Здесь вы можете увидеть время запуска системы, процессы связи и др.",
+"Prehľad informácií o systémových operáciách. Môžete tu vidieť dobu štartu systému, proces pripojenia atd.",
+"查看系統運作資訊，你可以看到系統的啟動時間，連接過程 ...等等。",
+"查看系统运作信息，你可以看到系统的启动时间，连接过程 ...等等。"
+);
+var tlresetConfirm=new Array
+(
+"Do you really want to reset the Broadband router ??",
+"Möchten Sie den Breitbandrouter wirklich zurücksetzen?",
+"¿Desea realmente reiniciar el Enrutador de banda ancha?",
+"Souhaitez-vous vraiment réinitialiser le routeur à lage bande ??",
+"Resettare il router a banda larga??",
+"Weet u zeker dat u de breedbandrouter wilt resetten?",
+"Pretende mesmo repor o router de banda larga?",
+"Opravdu chcete resetovat širokopásmový směrovač??",
+"Czy na pewno chcesz zresetować router szerokopasmowy?",
+"Vreti sa resetati routerul? ",
+"Вы действительно хотите переустановить маршрутизатор? ",
+"Skutočne si prajete vyresetovať širokopásmový router?",
+"你確定要重置寬頻路由器嗎？",
+"你确定要重置宽带路由器吗？"
+);
+var statStatistics=new Array
+(
+"Statistics",
+"Statistik",
+"Estadísticas",
+"Statistiques",
+"Statistiche",
+"Statistieken",
+"Estatísticas",
+"Statistika",
+"Statystyki",
+"Statistici",
+"Статистика",
+"Štatistiky",
+"統計",
+"统计"
+);
+var defaultGateway=new Array
+(
+"Default Gateway ",
+"Standardgateway ",
+"Puerta predefinida ",
+"Passerelle par défaut ",
+"Gateway predefinito ",
+"Standaard Gateway ",
+"Gateway predefinido ",
+"Výchozí brána ",
+"Brama domyślna ",
+"Gateway Implicit",
+"Шлюз по умолчанию",
+"Prednastavená brána",
+"預設閘道器",
+"默认网关"
+);
+var DhcpServer=new Array
+(
+"DHCP Server",
+" DHCP-Server ",
+"Servidor DHCP",
+"Serveur DHCP",
+"Server DHCP",
+" DHCP-server ",
+"Servidor DHCP",
+"DHCP server",
+"Serwer DHCP",
+"Server DHCP ",
+"DHCP сервер",
+"DHCP Server",
+"DHCP伺服器",
+"DHCP服务器"
+);
+var next1=new Array
+(
+"Next",
+"Weiter",
+"Siguiente",
+"Suivant",
+"Avanti",
+"Volgende",
+"Seguinte",
+"Další",
+"Dalej",
+"Urmatorul",
+"Далее",
+"Ďalší",
+"下一個",
+"下一个"
+);
+var apply1=new Array
+(
+"Apply",
+"Übernehmen",
+"Aplicar",
+"Appliquer",
+"Applica",
+"Toepassen",
+"Aplicar",
+"Použít",
+"Zastosuj",
+"Aplicati",
+"Применить",
+"Potvrdiť",
+"套用",
+"套用"
+);
+var cancel1=new Array
+(
+"Cancel",
+"Abbrechen",
+"Cancelar",
+"Annuler",
+"Annulla",
+"Annuleren",
+"Cancelar",
+"Zrušit",
+"Skasuj",
+"Renuntati",
+"Выйти",
+"Zrušiť",
+"取消",
+"取消"
+);
+var restart=new Array
+(
+"Restart",
+"Restart",
+"Restart",
+"Restart",
+"Restart",
+"Reset",
+"Restart",
+"Restart",
+"Restart",
+"Restart",
+"Restart",
+"Restart",
+"重新開始",
+"重新开始"
+);
+var statIPLIST=new Array
+(
+"IP Address List",
+"IP Address List",
+"IP Address List",
+"IP Address List",
+"IP Address List",
+"IP Address List",
+"IP Address List",
+"IP Address List",
+"IP Address List",
+"IP Address List",
+"IP Address List",
+"IP Address List",
+"IP位址列表",
+"IP地址列表"
+);
+var statIPLISTDoc=new Array
+(
+"This table shows the IP address list for each client.",
+"This table shows the IP address list for each client.",
+"This table shows the IP address list for each client.",
+"This table shows the IP address list for each client.",
+"This table shows the IP address list for each client.",
+"This table shows the IP address list for each client.",
+"This table shows the IP address list for each client.",
+"This table shows the IP address list for each client.",
+"This table shows the IP address list for each client.",
+"This table shows the IP address list for each client.",
+"This table shows the IP address list for each client.",
+"This table shows the IP address list for each client.",
+"此列表會顯示每個終端的IP位址。",
+"此列表会显示每个终端的IP地址。"
+);
+var statDeviceName=new Array
+(
+"Device Name",
+"Device Name",
+"Device Name",
+"Device Name",
+"Device Name",
+"Device Name",
+"Device Name",
+"Device Name",
+"Device Name",
+"Device Name",
+"Device Name",
+"Device Name",
+"設備名稱",
+"设备名称"
+);
+var asphomesyshelp=new Array
+(
+"Displays this router’s system information",
+"Displays this router’s system information",
+"Displays this router’s system information",
+"Displays this router’s system information",
+"Displays this router’s system information",
+"Displays this router’s system information",
+"Displays this router’s system information",
+"Displays this router’s system information",
+"Displays this router’s system information",
+"Displays this router’s system information",
+"Displays this router’s system information",
+"Displays this router’s system information",
+"",
+""
+);
+var asphomeInternethelp=new Array
+(
+"Displays Internet connection status and the summary of current configuration",
+"Displays Internet connection status and the summary of current configuration",
+"Displays Internet connection status and the summary of current configuration",
+"Displays Internet connection status and the summary of current configuration",
+"Displays Internet connection status and the summary of current configuration",
+"Displays Internet connection status and the summary of current configuration",
+"Displays Internet connection status and the summary of current configuration",
+"Displays Internet connection status and the summary of current configuration",
+"Displays Internet connection status and the summary of current configuration",
+"Displays Internet connection status and the summary of current configuration",
+"Displays Internet connection status and the summary of current configuration",
+"Displays Internet connection status and the summary of current configuration",
+"",
+""
+);
+var asphomeWlConfighelp=new Array
+(
+"Displays the summary of current wireless network configuration",
+"Displays the summary of current wireless network configuration",
+"Displays the summary of current wireless network configuration",
+"Displays the summary of current wireless network configuration",
+"Displays the summary of current wireless network configuration",
+"Displays the summary of current wireless network configuration",
+"Displays the summary of current wireless network configuration",
+"Displays the summary of current wireless network configuration",
+"Displays the summary of current wireless network configuration",
+"Displays the summary of current wireless network configuration",
+"Displays the summary of current wireless network configuration",
+"Displays the summary of current wireless network configuration",
+"",
+""
+);
+var asphomeLANConfighelp=new Array
+(
+"Displays the summary of current Local Area Network configuration",
+"Displays the summary of current Local Area Network configuration",
+"Displays the summary of current Local Area Network configuration",
+"Displays the summary of current Local Area Network configuration",
+"Displays the summary of current Local Area Network configuration",
+"Displays the summary of current Local Area Network configuration",
+"Displays the summary of current Local Area Network configuration",
+"Displays the summary of current Local Area Network configuration",
+"Displays the summary of current Local Area Network configuration",
+"Displays the summary of current Local Area Network configuration",
+"Displays the summary of current Local Area Network configuration",
+"Displays the summary of current Local Area Network configuration",
+"",
+""
+);

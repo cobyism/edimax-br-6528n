@@ -1,0 +1,11 @@
+
+include /home/RTL8196C/target.def
+include /home/RTL8196C/define/FUNCTION_SCRIPT
+CC=$(CROSS)gcc
+STRIP=$(CROSS)strip
+LD=$(CROSS)ld
+AR=$(CROSS)ar
+RANLIB=$(CROSS)ranlib
+CAS=$(CROSS)gcc -c
+CPP=$(CROSS)gcc -E
+PLATFORM=${4}

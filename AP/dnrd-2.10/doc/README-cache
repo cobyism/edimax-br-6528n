@@ -1,0 +1,23 @@
+  * Local Cache
+  
+    dnrd does now local caching if not turned off with the `--cache=off'
+    command line switch.  This is done by storing complete DNS server
+    responses in a local cache area which expires from time to time.
+  
+    Normal responses are held for at least 60 minutes but not longer than
+    6 hours. Negative responses (nslooku tells `Non existent host/domain')
+    are stored for only five minutes.  These settings are defined in
+    cache.h
+
+    The cache knows also a high- and a lowwater mark.  If after an expire
+    the number of stored items is above the highwater mark (default 1000),
+    cache items are removed until the lowwater mark (default 750) is
+    reached.  The values can be set with `--cache=[<low>:]high' on the
+    command line.
+
+
+
+
+- --
+Wolfgang Zekoll <wzk@quietsche-entchen.de>
+

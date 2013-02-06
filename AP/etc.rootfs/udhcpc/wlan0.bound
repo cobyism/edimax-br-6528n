@@ -1,0 +1,107 @@
+#!/bin/sh
+# udhcpc bound script
+
+RESOLV_CONF="/etc/udhcpc/resolv.conf"
+
+DHCPC_LOG=/var/log/dhcpc.log
+DHCPC_TMP=/tmp/dhcpc.tmp
+
+#create include file
+#/bin/create_flash.sh
+
+#include file
+. /var/flash.inc 
+
+rm -f $DHCPC_TMP
+
+echo "" >> $DHCPC_TMP
+NOW_TIME=`date +"%F %T"`
+echo "# [$NOW_TIME]: start DHCP client log #" >> $DHCPC_TMP
+echo "" >> $DHCPC_TMP
+
+cat /tmp/pktmask >> $DHCPC_TMP
+
+echo "orig_subnet=$subnet" >> $DHCPC_TMP
+
+if [ -f $DHCPC_LOG ]; then
+	#include dhcpc old setting
+	. $DHCPC_LOG
+	
+	if [ "$subnet" = "0.0.0.0" ]; then
+		subnet=$OLD_SUBNET
+	fi
+fi
+
+echo "OLD_IP=$ip" >> $DHCPC_TMP
+echo "OLD_BROADCAST=$broadcast" >> $DHCPC_TMP
+echo "OLD_SUBNET=$subnet" >> $DHCPC_TMP
+echo "OLD_ROUTER=\"$router\"" >> $DHCPC_TMP
+echo "OLD_DOMAIN=$domain" >> $DHCPC_TMP
+echo "OLD_DNS=\"$dns\"" >> $DHCPC_TMP
+echo "" >> $DHCPC_TMP
+
+cp -f $DHCPC_TMP $DHCPC_LOG
+
+[ -n "$broadcast" ] && BROADCAST="broadcast $broadcast"
+[ -n "$subnet" ] && NETMASK="netmask $subnet"
+
+/sbin/ifconfig $interface $ip $BROADCAST $NETMASK
+
+# Lance 2004.01.06
+echo -n > $RESOLV_CONF
+[ -n "$domain" ] && echo domain $domain >> $RESOLV_CONF
+
+for i in $dns
+do
+    echo adding dns $i
+    echo nameserver $i >> $RESOLV_CONF
+done
+# end
+
+if [ "$router" ]
+then
+	/bin/del-route.sh
+	echo "deleting routers"
+	while route del -net default gw 0.0.0.0 dev $interface
+	do :
+	done
+
+	for i in $router
+	do
+		route add -net default gw $i dev $interface
+
+		/bin/cat /etc/resolv.master /etc/udhcpc/resolv.conf > /etc/resolv.conf 2> /dev/null
+
+		# PPTP
+		if [ "$WAN_MODE" = "3" ]; then
+			route add -host $PPTP_GATEWAY gw $i
+			break;
+		fi
+		# L2TP
+		if [ "$WAN_MODE" = "6" ]; then
+			route add -host $L2TP_GATEWAY gw $i
+			break;
+		fi
+		
+#		route add -net default gw $i dev $interface
+		break
+	done
+fi
+
+#echo -n > $RESOLV_CONF
+#[ -n "$domain" ] && echo domain $domain >> $RESOLV_CONF
+
+#for i in $dns
+#do
+#    echo adding dns $i
+#    echo nameserver $i >> $RESOLV_CONF
+#done
+
+if [ "$WAN_MODE" = "0" ]; then
+	/etc/ppp/ip-up dhcpc
+fi
+
+# Lance 2004.01.06
+#if [ "$WAN_MODE" = "6" ] || [ "$WAN_MODE" = "3" ]; then
+#	/bin/disconnect.sh pptp 
+#fi

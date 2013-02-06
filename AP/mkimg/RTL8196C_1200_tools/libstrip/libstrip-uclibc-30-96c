@@ -1,0 +1,168 @@
+#!/usr/bin/perl -w
+# vi: set ts=4:
+
+# Libstrip - A utility to optimize libraries for specific executables
+# Copyright (C) 2001  David A. Schleef <ds@schleef.org>
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of version 2 of the GNU General Public License as
+# published by the Free Software Foundation.
+#
+# This is a surprisingly simple script that gets a list of
+# unresolved symbols in a list of executables specified on the
+# command line, and then relinks the uClibc shared object file
+# with only the those symbols and their dependencies.  This
+# results in a shared object that is optimized for the executables
+# listed, and thus may not work with other executables.
+#
+# Example: optimizing uClibc for BusyBox
+#  Compile uClibc and BusyBox as normal.  Then, in this
+#  directory, run:
+#    libstrip path/to/busybox
+#  After the script completes, there should be a new
+#  libuClibc-0.9.5.so in the current directory, which
+#  is optimized for busybox.
+#
+# How it works:
+#  The uClibc Makefiles create libuClibc.so by first creating
+#  the ar archive libc.a with all the object files, then links
+#  the final libuClibc.so by using 'ld --shared --whole-archive'.
+#  We take advantage of the linker command line option --undefined,
+#  which pulls in a symbol and all its dependencies, and so relink
+#  the library using --undefined for each symbol in place of
+#  --whole-archive.  The linker script is used only to avoid
+#  having very long command lines.
+
+#$topdir="../..";
+
+
+# This is the name of the default ldscript for shared libs.  The
+# file name will be different for other architectures.
+#$ldscript="/toolchain/rsdk/linux/uclibc/lib/ldscripts/elf32btsmip.xs";
+
+$vers = '0.9.30';
+#$rsdk = '/home/tonywu/risc/rlx_linux/toolchain/rsdk-1.3.6-5181-EB-2.6.23-0.9.30';
+#$rsdk = '/home/tonywu/risc/rlx_linux/toolchain/rsdk-1.3.6-5181-EL-2.6.23-0.9.30';
+$rsdk = '../../../../toolchain/rtl8196c-toolchain-1.1/rsdk-96c/rsdk-1.3.6-4181-EB-2.4.25-0.9.30'; #'/toolchain/rsdk/linux/uclibc';
+$ldscript = $rsdk . '/lib/ldscripts/elf32btsmip.xs';
+
+my @syms;
+my @allsyms;
+my $s;
+my @usedlib;
+
+push @usedlib, "libuClibc-$vers.so";
+push @usedlib, "libcrypt-$vers.so";
+push @usedlib, "libpthread-$vers.so";
+#push @usedlib, "libgmp.so.3";
+
+while($exec = shift @ARGV){
+	#print "$exec\n";
+	@syms=`mips-uclibc-nm --dynamic $exec`;
+	for $s (@syms){
+		chomp $s;
+		if($s =~ m/^.{8} [BUV] (.+)/){
+			my $x = $1;
+			if(!grep { m/^$x$/; } @allsyms){
+				unshift @allsyms, $x;
+			}
+		}
+	}
+}
+
+open(LDSCRIPT, ">ldscript");
+print LDSCRIPT "INCLUDE $ldscript\n";
+for $s (@allsyms) {
+	print LDSCRIPT "EXTERN($s)\n";
+}
+
+print LDSCRIPT "EXTERN(gmtime_r)\n";
+print LDSCRIPT "EXTERN(gmtime)\n";
+
+@libs = ();
+push @libs, "$rsdk/lib/libc.a";
+push @libs, "$rsdk/lib/uclibc_nonshared.a";
+push @libs, "$rsdk/lib/libgcc.a";
+&gen_library_step1("libuClibc-$vers.so", "libc.so.0", @libs);
+
+@libs = ();
+push @libs, "$rsdk/lib/libcrypt.a";
+push @libs, "$rsdk/lib/libgcc.a";
+&gen_library_step1("libcrypt-$vers.so", "libcrypt.so", @libs);
+
+@libs = ();
+push @libs, "$rsdk/lib/libpthread.a";
+push @libs, "$rsdk/lib/libgcc.a";
+&gen_library_step1("libpthread-$vers.so", "libpthread.so.0", @libs);
+
+
+##############################################
+## second parse un-resolved in library
+##############################################
+while($exec = shift @usedlib){
+	#print "$exec\n";
+	@syms=`mips-uclibc-nm --dynamic $exec`;
+	for $s (@syms){
+		chomp $s;
+		if ($s =~ m/^.{8} [BUV] (.+)/){
+			my $x = $1;
+			if(!grep { m/^$x$/; } @allsyms){
+				unshift @allsyms, $x;
+			}
+		}
+	}
+}
+
+for $s (@allsyms) {
+	print LDSCRIPT "EXTERN($s)\n";
+}
+
+@libs = ();
+push @libs, "$rsdk/lib/libc.a";
+push @libs, "$rsdk/lib/uclibc_nonshared.a";
+push @libs, "$rsdk/lib/libgcc.a";
+&gen_library_step2("libuClibc-$vers.so", "libc.so.0", @libs);
+
+@libs = ();
+push @libs, "$rsdk/lib/libcrypt.a";
+push @libs, "$rsdk/lib/libgcc.a";
+&gen_library_step2("libcrypt-$vers.so", "libcrypt.so", @libs);
+
+@libs = ();
+push @libs, "$rsdk/lib/libpthread.a";
+push @libs, "$rsdk/lib/libgcc.a";
+&gen_library_step2("libpthread-$vers.so", "libpthread.so.0", @libs);
+
+# rock: remove null library
+#`mips-uclibc-gcc -s -nostdlib -Wl,-warn-common -shared -o libnull.so \\
+#    /toolchain/rsdk/linux/uclibc/lib/libgcc.a`;
+#$size = -s "libnull.so";
+#$size .= "c";
+#`find *.so* -size $size -exec rm {} \\;`;
+
+
+sub gen_library_step1
+{
+  local($sofile) = shift;
+  local($soname) = shift;
+  local(@solibs) = @_;
+
+  $line  = "mips-uclibc-gcc -nostdlib -Wl,-warn-common -shared ";
+  $line .= "-o $sofile -Wl,-soname,$soname -Wl,--script=ldscript @solibs";
+
+  print $line, "\n";
+
+  system($line);
+}
+
+sub gen_library_step2
+{
+  local($sofile) = shift;
+  local($soname) = shift;
+  local(@solibs) = @_;
+
+  $line  = "mips-uclibc-gcc -s -nostdlib -Wl,-warn-common -shared ";
+  $line .= "-o $sofile -Wl,-soname,$soname -Wl,--script=ldscript @solibs";
+
+  system($line);
+}

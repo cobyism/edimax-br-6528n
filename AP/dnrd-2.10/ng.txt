@@ -1,0 +1,87 @@
+Debug: cache low/high: 800/1000
+Debug: initialising master DNS database
+Debug: no master configuration: /etc/dnrd/master
+Debug: initialising from /etc/hosts, domain= <none>
+Debug: /etc/hosts: 3 records
+Debug: added authority for 0.0.127.in-addr.arpa
+Debug: added authority for 30.20.172.in-addr.arpa
+Debug: 7 records in master DNS database
+Debug: Received DNS query for "www.deja.com"
+
+- -- query
+000 - 0E 7C 01 00 00 01 00 00 00 00 00 00 03 77 77 77  .|...........www
+010 - 04 64 65 6A 61 03 63 6F 6D 00 00 01 00 01        .deja.com.....
+
+
+id= 3708, q= 0, opc= 0, aa= 0, wr/ra= 1/0, trunc= 0, rcode= 0 [0100]
+qd= 1
+  name= www.deja.com., type= 1, class= 1
+ans= 0
+ns= 0
+ar= 0
+
+Debug: Forwarding the query to DNS server 172.20.1.10
+Debug: Received DNS reply for "www.deja.com"
+
+- -- reply
+000 - 00 00 81 80 00 01 00 03 00 00 00 00 03 77 77 77  .............www
+010 - 04 64 65 6A 61 03 63 6F 6D 00 00 01 00 01 C0 0C  .deja.com.......
+020 - 00 05 00 01 00 00 01 64 00 10 06 67 72 6F 75 70  .......d...group
+030 - 73 06 67 6F 6F 67 6C 65 C0 15 C0 2A 00 01 00 01  s.google...*....
+040 - 00 00 00 90 00 04 D8 EF 23 77 C0 2A 00 01 00 01  ........#w.*....
+050 - 00 00 00 90 00 04 D8 EF 33 77                    ........3w
+
+
+id= 0, q= 1, opc= 16, aa= 0, wr/ra= 1/1, trunc= 0, rcode= 0 [8180]
+qd= 1
+  name= www.deja.com., type= 1, class= 1
+ans= 3
+  name= www.deja.com., type= 5, class= 1, ttl= 356
+  name= groups.google.com., type= 1, class= 1, ttl= 144
+  name= groups.google.com., type= 1, class= 1, ttl= 144
+ns= 0
+ar= 0
+
+Debug: cache: added www.deja.com, type= 1, class: 1, ans= 3
+Debug: Forwarding the reply to the host
+Debug: Received DNS query for "100.1.168.192.in-addr.arpa"
+
+- -- query
+000 - 0E 7D 01 00 00 01 00 00 00 00 00 00 03 31 30 30  .}...........100
+010 - 01 31 03 31 36 38 03 31 39 32 07 69 6E 2D 61 64  .1.168.192.in-ad
+020 - 64 72 04 61 72 70 61 00 00 0C 00 01              dr.arpa.....
+
+
+id= 3709, q= 0, opc= 0, aa= 0, wr/ra= 1/0, trunc= 0, rcode= 0 [0100]
+qd= 1
+  name= 100.1.168.192.in-addr.arpa., type= 12, class= 1
+ans= 0
+ns= 0
+ar= 0
+
+Debug: Forwarding the query to DNS server 172.20.1.10
+Debug: Received DNS reply for "100.1.168.192.in-addr.arpa"
+
+- -- reply
+000 - 00 01 81 83 00 01 00 00 00 01 00 00 03 31 30 30  .............100
+010 - 01 31 03 31 36 38 03 31 39 32 07 69 6E 2D 61 64  .1.168.192.in-ad
+020 - 64 72 04 61 72 70 61 00 00 0C 00 01 C0 12 00 06  dr.arpa.........
+030 - 00 01 00 00 01 5E 00 41 08 70 72 69 73 6F 6E 65  .....^.A.prisone
+040 - 72 04 69 61 6E 61 03 6F 72 67 00 0A 68 6F 73 74  r.iana.org..host
+050 - 6D 61 73 74 65 72 0C 72 6F 6F 74 2D 73 65 72 76  master.root-serv
+060 - 65 72 73 C0 46 77 54 B7 E0 00 00 07 08 00 00 03  ers.FwT.........
+070 - 84 00 09 3A 80 00 00 03 48                       ...:....H
+
+
+id= 1, q= 1, opc= 16, aa= 0, wr/ra= 1/1, trunc= 0, rcode= 3 [8183]
+qd= 1
+  name= 100.1.168.192.in-addr.arpa., type= 12, class= 1
+ans= 0
+ns= 1
+  name= 168.192.in-addr.arpa., type= 6, class= 1, ttl= 350
+ar= 0
+
+Debug: cache: added 100.1.168.192.in-addr.arpa, type= 12, class: 1, ans= 0
+Debug: Forwarding the reply to the host
+
+

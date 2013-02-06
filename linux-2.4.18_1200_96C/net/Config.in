@@ -1,0 +1,131 @@
+#
+# Network configuration
+#
+mainmenu_option next_comment
+comment 'Networking options'
+tristate 'Packet socket' CONFIG_PACKET
+if [ "$CONFIG_PACKET" != "n" ]; then
+   bool '  Packet socket: mmapped IO' CONFIG_PACKET_MMAP
+fi
+
+tristate 'Netlink device emulation' CONFIG_NETLINK_DEV
+
+bool 'Network packet filtering (replaces ipchains)' CONFIG_NETFILTER
+if [ "$CONFIG_NETFILTER" = "y" ]; then
+   bool '  Network packet filtering debugging' CONFIG_NETFILTER_DEBUG
+fi
+bool 'Socket Filtering'  CONFIG_FILTER
+tristate 'Unix domain sockets' CONFIG_UNIX
+bool 'TCP/IP networking' CONFIG_INET
+if [ "$CONFIG_INET" = "y" ]; then
+   source net/ipv4/Config.in
+   if [ "$CONFIG_EXPERIMENTAL" = "y" ]; then
+#   IPv6 as module will cause a CRASH if you try to unload it
+      tristate '  The IPv6 protocol (EXPERIMENTAL)' CONFIG_IPV6
+      if [ "$CONFIG_IPV6" != "n" ]; then
+	 source net/ipv6/Config.in
+      fi
+   fi
+   if [ "$CONFIG_EXPERIMENTAL" = "y" ]; then
+      source net/khttpd/Config.in
+   fi
+fi
+if [ "$CONFIG_EXPERIMENTAL" = "y" ]; then
+   bool 'Asynchronous Transfer Mode (ATM) (EXPERIMENTAL)' CONFIG_ATM
+   if [ "$CONFIG_ATM" = "y" ]; then
+      if [ "$CONFIG_INET" = "y" ]; then
+	 bool '  Classical IP over ATM' CONFIG_ATM_CLIP
+	 if [ "$CONFIG_ATM_CLIP" = "y" ]; then
+	    bool '    Do NOT send ICMP if no neighbour' CONFIG_ATM_CLIP_NO_ICMP
+	 fi
+      fi
+      tristate '  LAN Emulation (LANE) support' CONFIG_ATM_LANE
+      if [ "$CONFIG_INET" = "y" -a "$CONFIG_ATM_LANE" != "n" ]; then
+	 tristate '    Multi-Protocol Over ATM (MPOA) support' CONFIG_ATM_MPOA
+      fi
+   fi
+
+   dep_tristate '802.1Q VLAN Support (EXPERIMENTAL)' CONFIG_VLAN_8021Q $CONFIG_EXPERIMENTAL
+
+fi
+
+comment ' '
+tristate 'The IPX protocol' CONFIG_IPX
+if [ "$CONFIG_IPX" != "n" ]; then
+   source net/ipx/Config.in
+fi
+tristate 'Appletalk protocol support' CONFIG_ATALK
+tristate 'DECnet Support' CONFIG_DECNET
+if [ "$CONFIG_DECNET" != "n" ]; then
+   source net/decnet/Config.in
+fi
+dep_tristate '802.1d Ethernet Bridging' CONFIG_BRIDGE $CONFIG_INET
+if [ "$CONFIG_EXPERIMENTAL" = "y" ]; then
+   tristate 'CCITT X.25 Packet Layer (EXPERIMENTAL)' CONFIG_X25
+   tristate 'LAPB Data Link Driver (EXPERIMENTAL)' CONFIG_LAPB
+   bool '802.2 LLC (EXPERIMENTAL)' CONFIG_LLC
+   bool 'Frame Diverter (EXPERIMENTAL)' CONFIG_NET_DIVERT
+#   if [ "$CONFIG_LLC" = "y" ]; then
+#      bool '  Netbeui (EXPERIMENTAL)' CONFIG_NETBEUI
+#   fi
+   if [ "$CONFIG_INET" = "y" ]; then
+      tristate 'Acorn Econet/AUN protocols (EXPERIMENTAL)' CONFIG_ECONET
+   fi
+   if [ "$CONFIG_ECONET" != "n" ]; then
+      bool '  AUN over UDP' CONFIG_ECONET_AUNUDP
+      bool '  Native Econet' CONFIG_ECONET_NATIVE
+   fi
+   tristate 'WAN router' CONFIG_WAN_ROUTER
+   bool 'Fast switching (read help!)' CONFIG_NET_FASTROUTE
+   bool 'Forwarding between high speed interfaces' CONFIG_NET_HW_FLOWCONTROL
+fi
+
+mainmenu_option next_comment
+comment 'QoS and/or fair queueing'
+bool 'QoS and/or fair queueing' CONFIG_NET_SCHED
+if [ "$CONFIG_NET_SCHED" = "y" ]; then
+   source net/sched/Config.in
+fi
+#bool 'Network code profiler' CONFIG_NET_PROFILE
+endmenu
+
+mainmenu_option next_comment
+comment 'IP Security Protocol (FreeS/WAN IPSEC)'
+tristate 'IP Security Protocol (FreeS/WAN IPSEC)' CONFIG_IPSEC
+if [ "$CONFIG_IPSEC" != "n" ]; then
+  source net/ipsec/Config.in
+fi
+endmenu
+
+bool 'RealTek IPSEC Enhancement' CONFIG_RTL_IPSEC
+if [ "$CONFIG_RTL_IPSEC" = "y" ]; then
+	bool '  Enable RealTek IPSEC Crypto Engine' CONFIG_RTL_IPSEC_HW
+	bool '  Enable IPSec Logging for klogd' CONFIG_RTL_IPSEC_USER_LOG
+	bool '  Enable RealTek IPSEC Protocol SPEEDUP' CONFIG_RTL_IPSEC_SPEEDUP
+fi
+
+comment 'RealTek FAST NAT'
+
+
+bool 'Realtek IPTables Fast Path' CONFIG_RTK_IPTABLES_FAST_PATH
+if [ "$CONFIG_RTL8196C" = "y" -o "$CONFIG_RTL8198" = "y" ]; then
+bool 'Domain name query Support' CONFIG_DOMAIN_NAME_QUERY_SUPPORT
+fi
+bool 'RealTek Ethernet Driver Speedup support' CONFIG_DRIVER_SPEEDUP
+if [ "$CONFIG_DRIVER_SPEEDUP" = "y" ]; then
+   define_bool DRIVER_SPEEDUP y
+   define_bool DELAY_RX y
+fi
+
+bool 'RealTek VLAN support' CONFIG_RTK_VLAN_SUPPORT
+
+if [ "$CONFIG_RTK_VLAN_SUPPORT" = "y" ]; then
+	dep_bool '   Selective Routing Type' CONFIG_RTK_VLAN_ROUTETYPE $CONFIG_RTK_VLAN_SUPPORT
+	dep_bool '      Enable LAN-WAN L2 forwarding (un-tagged traffic) ' CONFIG_RTK_STB_PORT_SUPPORT $CONFIG_RTK_VLAN_ROUTETYPE
+fi
+
+bool 'RealTek IPv6 Pass Through support' CONFIG_RTK_IPV6_PASSTHRU_SUPPORT
+bool 'RealTek VLC Speedup Support' CONFIG_RTK_VLC_SPEEDUP_SUPPORT
+bool 'RealTek IPV6 MLD Support' CONFIG_RTL865X_SUPPORT_IPV6_MLD
+
+endmenu

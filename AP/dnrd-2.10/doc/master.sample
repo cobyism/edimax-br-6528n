@@ -1,0 +1,36 @@
+#
+# /etc/dnrd/master
+#
+
+#
+# Sample configuration file for dnrd master DNS.  Edit for your local.
+#
+
+#
+# Define the default domain for the following non full qualified domain
+# names.  The domain name servers for the domain are dns.quietsche-entchen.de
+# and um1.pce.de.  Our dnrd is authorative for this domain.
+#
+domain quietsche-entchen.de dns um1.pce.de +auth
+
+194.77.140.12	dns.quietsche-entchen.de
+194.77.140.11	gw giotto
+194.77.140.10	bind k400
+
+#
+# Add out WWW server to the database.  This host is outside our local
+# network but because dnrd is authoritative it will produce a negative
+# response instead of forwarding.
+#
+194.77.141.17	www
+
+
+#
+# Define another domain.  No nameservers, no authority, just for fast
+# lookups.
+#
+domain pce.de
+
+194.77.140.1	um1
+
+

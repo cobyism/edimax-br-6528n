@@ -1,0 +1,20 @@
+# This is run first except when booting in single-user mode
+#
+#::sysinit:/etc/rc.sh
+::sysinit:/etc/init.d/rcS
+
+# /bin/sh invocations on selected ttys
+#
+# Start an "askfirst" shell on the console (whatever that may be)
+::askfirst:-/bin/sh
+# Start an "askfirst" shell on /dev/tty2-4
+#tty2::askfirst:-/bin/sh
+#tty3::askfirst:-/bin/sh
+#tty4::askfirst:-/bin/sh
+
+# Stuff to do when restarting the init process
+::restart:/sbin/init
+
+# Stuff to do before rebooting
+::ctrlaltdel:/sbin/reboot
+::shutdown:/etc/shutdown
