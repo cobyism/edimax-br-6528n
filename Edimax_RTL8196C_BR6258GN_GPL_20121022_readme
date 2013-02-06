@@ -1,0 +1,26 @@
+Building Image
+================================================================================
+OS:
+	CentOS 5.8 (CentOS 5.8-i386-DVD.iso) - test ok
+
+Prepare:
+	1. Install CentOS 5.8 and select all of software development tools
+
+Building:
+	1. Build process require 'root' privileges
+	2. cd /home
+	3. tar zxvf Edimax_RTL8196C_BR6258GN_GPL_20121022.tar.gz
+	4. cd RTL8196C
+	5. ./BUILD.sh
+		If see the kernel configuration screen, directly exit and save
+		Image path: image/BR6258GN/EdimaxOBM/Tester/BR6258GN_EdimaxOBM_GPL_1.10_upg.bin
+
+Non-GPL:
+       * bin/flash
+       * bin/webs
+       * bin/mini_upnpd
+       * bin/wscd
+       * bin/lld2d
+       * bin/miniigd
+       * bin/acltd
+       * lib/mini_upnp.so
